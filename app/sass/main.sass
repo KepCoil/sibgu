@@ -2,6 +2,12 @@
 @import "libs"
 @import "vars"
 
+// plugins css
+@import "../libs/OwlCarousel/dist/assets/owl.carousel.min.css"
+
+
+/* GLOBAL STYLES */
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -26,7 +32,7 @@
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
-
+s
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -38,17 +44,21 @@ html, body
 	height: 100%
 
 body
-	font-size: 15px
+	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.4
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+
+p
+	margin: 10px 0
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 
-@import "media" // Всегда в конце
+@import "media"
+
