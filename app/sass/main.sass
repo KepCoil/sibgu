@@ -2,63 +2,121 @@
 @import "libs"
 @import "vars"
 
-// plugins css
-@import "../libs/OwlCarousel/dist/assets/owl.carousel.min.css"
+@import "global-styles"
 
 
-/* GLOBAL STYLES */
-
-*
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box
-
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-s
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-html, body
-	height: 100%
-
-body
-	font-size: 16px
-	min-width: 320px
+/* HEADER */
+.main-head
+	color: #fff
+	margin-bottom: 20px
+.top-line
+	background-color: $dark-blue
 	position: relative
-	line-height: 1.4
-	font-family: $default-font
-	overflow-x: hidden
-	opacity: 1
+	border-bottom: 1px solid $light-line
+	padding: 14px 0
+	.logo-img-wrap
+		width: 226px
+		height: 233px
+		background-color: #fff
+		border-radius: 0 0 50% 50%
+		position: absolute
+		top: 0
+		box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+		padding: 20px 13px 10px 13px
+		margin-right: 25px
+		img
+			width: 200px
+			height: 200px
+	.left-links
+		margin-left: 240px
+		a
+			font-size: 14px
+			font-family: "OpenSans-Regular", sans-serif
+			color: $yellow
+			margin-right: 25px
+			border-bottom: 1px solid  $yellow
+			transition: color $main-trans, border-bottom-color $main-trans
+			&:hover,&:focus
+				text-decoration: none
+				border-bottom: 1px solid transparent
 
-p
-	margin: 10px 0
+.head-content
+	height: 400px
+	padding: 35px 0 70px 0
+	background-color: $blue
+	.main-title
+		margin: 0 0 0 250px
+		display: inline-block
+	.other-func
+		// height: 150px
+		background: $dark-blue
+		float: right
+		padding: 20px 25px
+		a
+			font-size: 24px
+			font-family: "MyriadPro-SemiBold", sans-serif
+			display: block
+			margin-bottom: 15px
+			text-decoration: none
+			border: none
+			color: #fff
+			i
+				margin-right: 10px
+			&:hover, &:focus
+				color: $yellow
+		a.info-uni
+			font-family: "MyriadPro-Regular", sans-serif
+			font-size: 20px
+			color: $yellow
+			border-bottom: 1px solid $yellow
+			transition: color $main-trans, border-bottom-color $main-trans
+			margin-bottom: 0
+			&:hover, &:focus
+				border-bottom: 1px solid transparent
 
-.img-responsive
+.navbar-style
+	background-color: $dark-blue
+	border-top: 1px solid rgba(255,255,255,0.3)
+	border-bottom: 1px solid rgba(255,255,255,0.3)
+	border-radius: 0
+	
+.navbar-collapse
+	ul
+		>li
+			a
+				border: none
+				color: #fff
+				font-size: 16px
+				font-family: "OpenSans-SemiBold", sans-serif
+				text-transform: uppercase
+	.dropdown-menu
+		margin-bottom: 0
+		background-color: #f7f7f7
+		padding: 20px 15px
+		li
+			background-color: #f7f7f7
+			a
+				color: #222
+				text-transform: none
+				padding: 8px 0
+				border-bottom: 1px solid $dark-line
+				font-family: "OpenSans-Regular", sans-serif
+				color: #314177
+			&:last-child
+				a
+					border-bottom: none
+
+		
+
+/* END HEADER */
+
+.reshetnev
+	text-transform: none
 	display: block
-	max-width: 100%
-	height: auto
+	margin-top: 5px
+	font-family: "MyriadPro-Regular", sans-serif
+	font-size: 30px
+	margin-bottom: 0
 
 @import "media"
 
