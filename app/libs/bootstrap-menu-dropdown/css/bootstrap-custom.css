@@ -623,7 +623,7 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  transform: translateX(5px);
+  transform: translateX(8px);
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
