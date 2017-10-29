@@ -8,27 +8,27 @@
 /* HEADER */
 .main-head
 	color: #fff
-	// margin-bottom: 20px
+	margin-bottom: 20px
 .top-line
 	background-color: $dark-blue
 	position: relative
 	border-bottom: 1px solid $light-line
-	.logo-wrap
+	padding: 14px 0
+	.logo-img-wrap
 		width: 226px
 		height: 233px
 		background-color: #fff
 		border-radius: 0 0 50% 50%
 		position: absolute
-		display: block
 		top: 0
-		left: 0
 		box-shadow: 0 2px 4px rgba(0,0,0,0.3)
 		padding: 20px 13px 10px 13px
 		margin-right: 25px
 		img
 			width: 200px
 			height: 200px
-	.quick-links
+	.left-links
+		margin-left: 240px
 		a
 			font-size: 14px
 			font-family: "OpenSans-Regular", sans-serif
@@ -39,8 +39,8 @@
 			&:hover,&:focus
 				text-decoration: none
 				border-bottom: 1px solid transparent
-	.flag-links
-		padding: 15px
+	.right-links
+		text-align: right
 
 .head-content
 	height: 400px
@@ -50,6 +50,7 @@
 		margin: 0 0 0 250px
 		display: inline-block
 	.other-func
+		// height: 150px
 		background: $dark-blue
 		float: right
 		padding: 20px 25px
@@ -75,16 +76,39 @@
 			&:hover, &:focus
 				border-bottom: 1px solid transparent
 
-.navbar
+.navbar-style
 	background-color: $dark-blue
 	border-top: 1px solid rgba(255,255,255,0.3)
 	border-bottom: 1px solid rgba(255,255,255,0.3)
 	border-radius: 0
-	.navbar-nav
-		>li
-			>a
-				border-bottom: none
 	
+.navbar-collapse
+	ul
+		>li
+			a
+				border: none
+				color: #fff
+				font-size: 16px
+				font-family: "OpenSans-SemiBold", sans-serif
+				text-transform: uppercase
+	.dropdown-menu
+		margin-bottom: 0
+		background-color: #f7f7f7
+		padding: 20px
+		li
+			background-color: #f7f7f7
+			border-bottom: 1px solid $dark-line
+			a
+				color: #222
+				text-transform: none
+				padding: 8px 8px 8px 0px
+				font-family: "OpenSans-Regular", sans-serif
+				color: #314177
+				transition: transform $main-trans
+			&:last-child
+				border-bottom: none
+
+		
 
 /* END HEADER */
 
@@ -95,9 +119,6 @@
 	font-family: "MyriadPro-Regular", sans-serif
 	font-size: 30px
 	margin-bottom: 0
-
-.sect-news
-	background-color: $blue
 
 @import "media"
 
