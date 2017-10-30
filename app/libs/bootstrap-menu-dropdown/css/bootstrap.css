@@ -1280,7 +1280,7 @@ tbody.collapse.in {
   background-color: #e7e7e7;
   color: #555555;
 }
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
@@ -1301,7 +1301,7 @@ tbody.collapse.in {
     color: #cccccc;
     background-color: transparent;
   }
-}
+}*/
 .navbar-default .navbar-link {
   color: #777777;
 }

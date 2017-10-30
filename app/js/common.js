@@ -1,5 +1,7 @@
 $(function() {
 
-	// Custom JS
+	$(".hamburger--spin").click(function() {
+		$(this).toggleClass("is-active");
+	});
 
 });

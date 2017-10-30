@@ -18,19 +18,19 @@
 	.head-content
 		padding: 25px 0 70px 0 
 		.main-title
-			margin-left: 210px
+			margin-left: 220px
+			font-size: 28px
+			line-height: 32px
+		.reshetnev
+			font-size: 28px
 		.other-func
-			padding: 20px 25px
+			padding: 15px 20px
 			a
 				font-size: 22px
 				margin-bottom: 12px
 			a.info-uni
 				font-size: 18px
-	.main-title
-		font-size: 28px
-		line-height: 32px
-	.reshetnev
-		font-size: 28px
+	
 
 /* for 1600px */
 @media only screen and (max-width : 1580px)
@@ -43,7 +43,6 @@
 	.reshetnev
 		font-size: 25px
 	.head-content
-		.main-title
 		.other-func
 			padding: 15px 20px
 			a
@@ -57,15 +56,51 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1260px)
 	.top-line
+		.main-logo-wrap
+			width: 181px
 		.quick-links-wrap
-			width: 410px
+			width: 420px
 		.res-links-wrap
-			width: 308px
+			width: 293px
+		.res-links
+			.res-links-btn
+			font-size: 14px
+		.main-logo
+			width: 181px
+			height: 188px
+			img
+				width: 155px
+				height: 155px
+
+	.head-content
+		.main-title
+			margin-left: 200px
+			font-size: 20px
+			line-height: 24px
+		.reshetnev
+			font-size: 20px
+		.other-func
+			padding: 10px 15px
+			a
+				font-size: 16px
+				margin-bottom: 8px
+			a.info-uni
+				font-size: 14px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	// .navbar-nav .open .dropdown-menu>li>a
+	.navbar-nav
+		.open
+			.dropdown-menu
+				padding: 0
+				>li
+					>a
+						padding: 10px 15px 10px 25px
+					&:last-child
+						a
+							padding-bottom: 25px
 
 
 /* Small Devices, Tablets */
@@ -102,7 +137,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	.hamburger
+		display: none
 
 
 /* Large Devices, Wide Screens */
