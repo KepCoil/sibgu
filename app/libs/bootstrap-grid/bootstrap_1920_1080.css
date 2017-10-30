@@ -314,9 +314,9 @@ hr {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
   .container {
-    width: 1170px;
+    width: 1240px;
   }
 }
 @media (min-width: 1580px) {
