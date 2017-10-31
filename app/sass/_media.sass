@@ -71,7 +71,6 @@
 			img
 				width: 155px
 				height: 155px
-
 	.head-content
 		.main-title
 			margin-left: 200px
@@ -86,31 +85,104 @@
 				margin-bottom: 8px
 			a.info-uni
 				font-size: 14px
+	.navbar
+		.navbar-nav
+			>li
+				>a
+					font-size: 12px
+					padding: 15px 10px
+	// .dropdown-menu
+	// 	padding: 10px
+	// 	font-size: 12px
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	// .navbar-nav .open .dropdown-menu>li>a
-	.navbar-nav
-		.open
-			.dropdown-menu
-				padding: 0
-				>li
-					>a
-						padding: 10px 15px 10px 25px
-					&:last-child
-						a
-							padding-bottom: 25px
+@media only screen and (max-width : 991px)
+	.top-line
+		.main-logo-wrap
+			margin-left: 15px
+			width: 140px
+		.main-logo
+			width: 140px
+			height: 150px
+			padding: 20px 10px 10px 10px
+			img
+				width: 120px
+				height: 120px
+		.quick-links-wrap
+			display: none
+		.res-links-wrap
+			display: none
+		.flag-links-wrap
+			float: right
+	.head-content
+		padding: 15px 0 20px 0
+		.row
+			margin: 0
+		.main-title
+			margin-left: 155px
+		.other-func
+			float: none
+			margin-top: 30px
+			a.info-uni
+				display: inline-block
+	.navbar
+		.navbar-nav
+			>li 
+				>a
+					font-size: 14px
+					padding: 15px 20px
+			.open
+				.dropdown-menu
+					>li
+						>a
+							padding: 10px 15px 10px 25px
+						&:last-child
+							a
+								padding-bottom: 25px
+	.nav
+		.pers-account,
+		.edu-curriculum
+			display: block
+		.pers-account
+			border-top: 1px solid $light-line
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
 
+@media only screen and (max-width : 620px)
+	.head-content
+		.main-title
+			font-size: 18px
+			line-height: 22px
+		.reshetnev
+			font-size: 18px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.top-line
+		.main-logo-wrap
+			margin-left: 15px
+			width: 80px
+		.main-logo
+			width: 70px
+			height: 75px
+			padding: 10px 5px 5px 5px
+			img
+				width: 60px
+				height: 60px
+	.head-content
+		.main-title
+			margin: 20px 0 0 0
+			text-align: center
+			display: block
+		.other-func 
+			a.info-uni
+				font-size: 13px
 
 
 /* Custom, iPhone Retina */
