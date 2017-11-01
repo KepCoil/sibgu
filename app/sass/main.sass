@@ -131,11 +131,29 @@
 			&:hover, &:focus
 				border-bottom: 1px solid transparent
 
+.reshetnev
+	text-transform: none
+	display: block
+	margin-top: 5px
+	font-family: "MyriadPro-Regular", sans-serif
+	font-size: 30px
+	margin-bottom: 0
+
+.nav
+	.pers-account,
+	.edu-curriculum
+		display: none
+	
 .navbar
 	background-color: $dark-blue
 	border-top: 1px solid rgba(255,255,255,0.3)
 	border-bottom: 1px solid rgba(255,255,255,0.3)
 	border-radius: 0
+	padding: 0
+	margin-bottom: 0
+	min-height: 0
+	.container
+		padding: 0
 	.navbar-header
 		margin: 0
 	.navbar-nav
@@ -150,53 +168,67 @@
 		margin: 0
 		border: 0
 		// box-shadow: 0 5px 5px -5px rgba(0,0,0,.4)
-	
+
+.dropdown-menu
+	margin-bottom: 0
+	background-color: #f7f7f7
+	padding: 10px 20px 20px 20px
+	border-radius: 0
+	border: none
+	li
+		background-color: #f7f7f7
+		border-bottom: 1px solid $dark-line
+		a
+			color: #314177
+			text-transform: none
+			padding: 8px 8px 8px 0px
+			font-family: "OpenSans-Regular", sans-serif
+			border: none
+			transition: transform $main-trans
+		&:last-child
+			border-bottom: none
 
 /* END HEADER */
 
-.reshetnev
-	text-transform: none
-	display: block
-	margin-top: 5px
-	font-family: "MyriadPro-Regular", sans-serif
-	font-size: 30px
-	margin-bottom: 0
-
-.sect-news
-	background-color: $blue
-	height: 5px
-
+/* TARGET NAV and SLIDER */
 .navaslider
-	height: 550px
+	// height: 550px
 	position: relative
 	background-color: $dark-blue
 	margin-bottom: 20px
-	.container
-		margin: 0
-		padding: 0
+	// .container, .row
+	// 	margin: 0
+	// 	padding: 0
 
-.target-menu
-	background-color: $dark-blue
-	height: 550px
-	// position: absolute
-	width: 320px
-	z-index: 1
-	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2);
-	display: inline-block
-	a
-		color: #fff
 .wrap-target-menu
-	// float: right
-	width: 50%
+	height: 550px
+	width: 320px
+	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
+	position: absolute
+	z-index: 1
+	background-color: $dark-blue
+.target-menu
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		padding-left: 15px
+		a
+			color: #fff
+	// background-color: $dark-blue
+	// position: absolute
+	// display: inline-block
+	// a
+	// 	color: #fff
+
 .wrap-main-slider
-	width: 50%
-.main-slider
+	left: 320px
 	position: relative
-	// width: calc(100% - 320px)
+.main-slider
 	.slider-item
 		position: relative
 		height: 550px
-		// float: left
+		float: left
 		width: 100%
 		.slide-img
 			position: absolute
@@ -216,6 +248,25 @@
 				height: 100%
 				position: absolute
 
+/* END TARGET NAV and SLIDER */
+
+/* SECTIONS NEWS */
+.grid-news
+	// height: 550px
+	.col-first-news
+		padding-left: 0
+		padding: 10px
+	.col-other-news
+		padding: 0
+	.col-md-8
+		padding: 10px
+	.wrap-item-news
+		a
+
+			&:hover, &:focus
+
+
+
 .wrap-div1,
 .wrap-div2
 	width: 49%
@@ -227,7 +278,16 @@
 	width: 320px
 	background-color: yellow
 
+/* END SECTIONS */
+
+
+/* FOOTER */
 .main-footer
 	height: 400px
+
+
+/* END FOOTER */
+
+
 @import "media"
 

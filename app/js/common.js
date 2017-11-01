@@ -6,11 +6,11 @@ $(function() {
 
 
 	/* Main slider*/
-	// $('#js-main-slider').owlCarousel({
-	// 	loop: true,
-	// 	items: 1,
-	// 	nav:true,
-	// 	itemClass: "slider-item",
-	// })
+	$('#js-main-slider').owlCarousel({
+		loop: true,
+		items: 1,
+		// nav: false,
+		itemClass: "slider-item",
+	})
 
 });
