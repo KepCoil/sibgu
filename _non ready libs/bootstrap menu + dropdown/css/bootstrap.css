@@ -900,7 +900,7 @@ tbody.collapse.in {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: none;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -1226,8 +1226,8 @@ tbody.collapse.in {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  /*background-color: #f8f8f8;
+  border-color: #e7e7e7;*/
 }
 .navbar-default .navbar-brand {
   color: #777777;
