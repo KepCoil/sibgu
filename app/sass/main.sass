@@ -6,94 +6,95 @@
 
 
 /* HEADER */
-.main-head
-	color: #fff
-	// margin-bottom: 20px
-.top-line
-	background-color: $dark-blue
-	position: relative
-	border-bottom: 1px solid $light-line
-	padding: 5px 0
-	.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .flag-links-wrap
+.main-site-sibgu
+	.main-head
+		color: #fff
+		// margin-bottom: 20px
+	.top-line
+		background-color: $dark-blue
 		position: relative
-		padding: 0 15px
-		float: left
-		min-height: 1px
-	.main-logo-wrap
-		width: 226px
-		padding: 0
-	.quick-links-wrap
-		width: 1191px
-		padding: 10px 15px 10px 25px
-	.res-links-wrap
-		width: 371px
-	.flag-links-wrap
-		width: 76px
-	.main-logo
-		width: 226px
-		height: 233px
-		background-color: #fff
-		border-radius: 0 0 50% 50%
-		position: absolute
-		display: block
-		top: -10px
-		left: 0
-		box-shadow: 0 2px 4px rgba(0,0,0,0.3)
-		padding: 20px 13px 10px 13px
-		// margin-right: 25px
-		img
-			width: 200px
-			height: 200px
-	.quick-links
-		a
-			font-size: 14px
-			font-family: "OpenSans-Regular", sans-serif
-			color: $yellow
-			margin-right: 25px
-			border-bottom: 1px solid  $yellow
-			transition: color $main-trans, border-bottom-color $main-trans
-			&:hover,&:focus
-				text-decoration: none
-				border-bottom: 1px solid transparent
-	.res-links
-		.dropdown
-			text-align: right
-			.dropdown-menu
-				padding: 10px 15px
-				a
-					font-size: 13px
-		.res-links-btn
+		border-bottom: 1px solid $light-line
+		padding: 5px 0
+		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .flag-links-wrap
+			position: relative
+			padding: 0 15px
+			float: left
+			min-height: 1px
+		.main-logo-wrap
+			width: 226px
 			padding: 0
-			background: none
-			border: none
-			color: $yellow
-			padding: 10px 0
-	.flag-links
-		img
-			width: 40px
-			height: 30px
-		.btn-ru, .dropdown-flags, a, li
-			padding: 0
-			border: 0
-			margin: 0
-		.btn-ru
-			padding: 5px 3px
-			background-color: transparent
-		.dropdown-flags
-			top: auto
-			li
+		.quick-links-wrap
+			width: 1191px
+			padding: 10px 15px 10px 25px
+		.res-links-wrap
+			width: 371px
+		.flag-links-wrap
+			width: 76px
+		.main-logo
+			width: 226px
+			height: 233px
+			background-color: #fff
+			border-radius: 0 0 50% 50%
+			position: absolute
+			display: block
+			top: -10px
+			left: 0
+			box-shadow: 0 2px 4px rgba(0,0,0,0.3)
+			padding: 20px 13px 10px 13px
+			// margin-right: 25px
+			img
+				width: 200px
+				height: 200px
+		.quick-links
+			a
+				font-size: 14px
+				font-family: "OpenSans-Regular", sans-serif
+				color: $yellow
+				margin-right: 25px
+				border-bottom: 1px solid  $yellow
+				transition: color $main-trans, border-bottom-color $main-trans
+				&:hover,&:focus
+					text-decoration: none
+					border-bottom: 1px solid transparent
+		.res-links
+			.dropdown
+				text-align: right
+				.dropdown-menu
+					padding: 10px 15px
+					a
+						font-size: 13px
+			.res-links-btn
+				padding: 0
+				background: none
+				border: none
+				color: $yellow
+				padding: 10px 0
+		.flag-links
+			img
+				width: 40px
+				height: 30px
+			.btn-ru, .dropdown-flags, a, li
+				padding: 0
+				border: 0
+				margin: 0
+			.btn-ru
 				padding: 5px 3px
-				a
-					&:hover,
-					&:focus,
-					&:active
-						transform: none
-	.flag-links.open
-		.btn-ru
-			background-color: #f7f7f7
-		img
-			box-shadow: 0 0 3px rgba(0,0,0,.6)
-				
+				background-color: transparent
+			.dropdown-flags
+				top: auto
+				li
+					padding: 5px 3px
+					a
+						&:hover,
+						&:focus,
+						&:active
+							transform: none
+		.flag-links.open
+			.btn-ru
+				background-color: #f7f7f7
+			img
+				box-shadow: 0 0 3px rgba(0,0,0,.6)
+					
 
 
 .head-content
@@ -104,7 +105,7 @@
 	.main-title
 		margin: 0 0 0 250px
 		display: inline-block
-		text-shadow: 1px 1px 1px rgba(0,0,0,.4)
+		text-shadow: $text-shadow
 	.other-func
 		background: $dark-blue
 		float: right
@@ -139,54 +140,66 @@
 	font-size: 30px
 	margin-bottom: 0
 
-.nav
-	.pers-account,
-	.edu-curriculum
-		display: none
-	
-.navbar
-	background-color: $dark-blue
-	border-top: 1px solid rgba(255,255,255,0.3)
-	border-bottom: 1px solid rgba(255,255,255,0.3)
-	border-radius: 0
-	padding: 0
-	margin-bottom: 0
-	min-height: 0
-	.container
-		padding: 0
-	.navbar-header
-		margin: 0
-	.navbar-nav
-		margin: 0
-		>li
-			>a
-				border-bottom: none
-				&:hover,
-				&:focus
-					color: $yellow
-	.navbar-collapse
-		margin: 0
-		border: 0
-		// box-shadow: 0 5px 5px -5px rgba(0,0,0,.4)
+.main-site-sibgu
+	.nav
+		.pers-account,
+		.email-link,
+		.edu-curriculum
+			display: none
 
-.dropdown-menu
-	margin-bottom: 0
-	background-color: #f7f7f7
-	padding: 10px 20px 20px 20px
-	border-radius: 0
-	border: none
-	li
+.main-site-sibgu	
+	.navbar
+		background-color: $dark-blue
+		border-top: 1px solid rgba(255,255,255,0.3)
+		border-bottom: 1px solid rgba(255,255,255,0.3)
+		border-radius: 0
+		padding: 0
+		margin-bottom: 0
+		min-height: 0
+		.container
+			padding: 0
+		.navbar-header
+			margin: 0
+		.navbar-nav
+			margin: 0
+			>li
+				>a
+					border-bottom: none
+					&:hover
+						color: $yellow
+			// >li.dropdown
+			// 	>a
+			// 		&:hover
+			// 			color: $yellow
+			>li.dropdown.open
+				>a
+					color: $blue
+					&:hover, &:focus, &:active
+						color: $blue
+		.navbar-collapse
+			margin: 0
+			border: 0
+			// box-shadow: 0 5px 5px -5px rgba(0,0,0,.4)
+
+	.dropdown-menu
+		margin-bottom: 0
 		background-color: #f7f7f7
-		border-bottom: 1px solid $dark-line
-		a
-			color: #314177
-			text-transform: none
-			padding: 8px 8px 8px 0px
-			font-family: "OpenSans-Regular", sans-serif
-			border: none
-			transition: transform $main-trans
-		&:last-child
-			border-bottom: none
+		padding: 10px 20px 20px 20px
+		border-radius: 0
+		border: none
+		li
+			background-color: #f7f7f7
+			border-bottom: 1px solid $dark-line
+			a
+				color: #314177
+				text-transform: none
+				padding: 8px 8px 8px 0px
+				font-family: "OpenSans-Regular", sans-serif
+				border: none
+				transition: transform $main-trans
+			&:last-child
+				border-bottom: none
+
 
 /* END HEADER */
 
@@ -254,26 +267,60 @@
 .news-sect
 	// height: 550px
 	h2
-		margin-bottom: 30px
-	.col-first-news
-		padding: 10px
-	.col-other-news
+		margin-bottom: 20px
+	.col-first-news,
+	.col-other-news,
+	.col-md-8,
+	.col-md-15
 		padding: 0
-	.col-md-8
-		padding: 10px
 	.wrap-item-news
 		height: 240px
-		&::before
-			content: ''
-			background-color: rgba(0,0,0,.1)
-			top: 0
-			left: 0
-			width: 100%
-			height: 100%
+		display: table
+		position: relative
+		overflow: hidden
+		margin: 5px
+		a
+			display: table-row
 			position: relative
-		img
-			height: 240px
-			width: 100%
+			overflow: hidden
+			&:before
+				content: ''
+				background-color: rgba(0,0,0,.1)
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				position: absolute
+			img
+				transition: transform 1.5s ease-out
+			&:hover
+				// background-color: rgba(0,0,0,.2)
+				img
+					transform: scale(1.08)
+		.wrap-news-content
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			padding: 30px
+			color: #fff
+			.news-content
+				position: relative
+				display: block
+				width: 100%
+				height: 100%
+				time,h3
+					position: absolute
+					font-size: 28px
+					line-height: 34px
+					font-family: "MyriadPro-Semibold", sans-serif
+					text-shadow: 1px 3px 3px rgba(0,0,0,.6)
+					margin: 0
+				time
+					top: 0
+				h3
+					bottom: 0
 	.wrap-first-news
 		height: 500px
 		img
@@ -281,12 +328,16 @@
 	.wrap-target-other-news
 		width: 100%
 		text-align: center
+		// &::before
+		// 	background-color: transparent
 		.target-other-news
 			display: block
 			width: 100%
 			height: 100%
 			background-color: $blue
 			border: 10px solid $dark-blue
+			&:before
+				background-color: transparent
 			&:hover, &:focus
 				span
 					color: $yellow
@@ -343,7 +394,7 @@
 					border-radius: 50%
 					z-index: 3
 					top: 53%
-					transform: translateY(-50%)
+					transform: translateY(-48%)
 				&:before
 					left: 8px
 				&:after
@@ -357,7 +408,7 @@
 				font-size: 32px
 				height: 100%
 				text-align: center
-				padding-top: 24px
+				padding-top: 26px
 		.event-month
 			font-size: 28px
 			font-family: "MyriadPro-Semibold", sans-serif
