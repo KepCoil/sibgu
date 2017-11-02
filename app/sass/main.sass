@@ -254,7 +254,7 @@
 .news-sect
 	// height: 550px
 	h2
-		margin-bottom: 15px
+		margin-bottom: 30px
 	.col-first-news
 		padding: 10px
 	.col-other-news
@@ -304,37 +304,76 @@
 
 
 /* SECTION EVENT */
-.calendar-icon
-	font-size: 1em
-	display: block
-	position: relative
-	width: 80px
-	height: 75px
-	background-color: #ebf0f2
-	// margin: 2em auto
-	border-radius: 0.6em
-	box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
-	overflow: hidden
-	span
-		position: absolute
-		top: 0
-		padding: 0.4em 0
-		width: 100%
-		height: 22px
-		color: #fff
-		background-color: #ff4b39
-		// border-bottom: 1px dashed #f37302
-		box-shadow: 0 2px 0 #ea402e
-	strong
-		width: 100%
-		font-size: 
-		color: #333
-		position: absolute
-		font-family: "MyriadPro-Bold", sans-serif
-		font-size: 32px
-		height: 100%
-		text-align: center
-		padding-top: 25px
+.event-item
+	padding: 0 20px
+	.wrap-date-event
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 10px
+		.calendar-icon
+			font-size: 1em
+			display: inline-block
+			position: relative
+			width: 80px
+			height: 75px
+			background-color: #ebf0f2
+			// margin: 2em auto
+			border-radius: 0.6em
+			box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+			overflow: hidden
+			margin-right: 10px
+			span
+				position: absolute
+				top: 0
+				padding: 0.4em 0
+				width: 100%
+				height: 22px
+				color: #fff
+				background-color: #ff4b39
+				// border-bottom: 1px dashed #f37302
+				box-shadow: 0 2px 0 #ea402e
+				display: block
+				&:before, &:after
+					content: ''
+					display: block
+					position: absolute
+					width: 12px
+					height: 12px
+					background-color: #eee
+					border: 5px solid #ea402e
+					border-radius: 50%
+					z-index: 3
+					top: 53%
+					transform: translateY(-50%)
+				&:before
+					left: 8px
+				&:after
+					right: 8px
+			strong
+				width: 100%
+				font-size: 
+				color: #333
+				position: absolute
+				font-family: "MyriadPro-Bold", sans-serif
+				font-size: 32px
+				height: 100%
+				text-align: center
+				padding-top: 24px
+		.event-month
+			font-size: 28px
+			font-family: "MyriadPro-Semibold", sans-serif
+			display: inline-block
+			position: relative
+			color: #333;
+			top: 50%
+			transform: translateY(-50%)
+	.event-content
+		h3
+			margin: 15px 0
+			font-size: 21px
+			line-height: 26px
+		p
+			margin: 0
+			font-size: 17px
 /* END SECTION EVENT */
 
 
