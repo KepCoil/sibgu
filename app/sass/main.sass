@@ -274,16 +274,31 @@
 	.col-md-15
 		padding: 0
 	.wrap-item-news
-		height: 240px
-		display: table
+		height: 250px
 		position: relative
+		display: inline-grid
 		overflow: hidden
-		margin: 5px
+		// margin: 5px
+		padding: 5px
+		width: 100%
 		a
-			display: table-row
+			display: block
 			position: relative
 			overflow: hidden
-			&:before
+			border-bottom: none
+			&:hover
+				img
+					transform: scale(1.08)
+			img
+				transition: transform 1.5s ease-out
+				display: block
+				width: 100%
+				height: 100%
+		.news-img-wrap
+			display: block
+			width: 100%
+			height: 100%
+			&::before
 				content: ''
 				background-color: rgba(0,0,0,.1)
 				top: 0
@@ -291,19 +306,14 @@
 				width: 100%
 				height: 100%
 				position: absolute
-			img
-				transition: transform 1.5s ease-out
-			&:hover
-				// background-color: rgba(0,0,0,.2)
-				img
-					transform: scale(1.08)
+			
 		.wrap-news-content
 			position: absolute
 			top: 0
 			right: 0
 			bottom: 0
 			left: 0
-			padding: 30px
+			padding: 15px
 			color: #fff
 			.news-content
 				position: relative
@@ -312,8 +322,8 @@
 				height: 100%
 				time,h3
 					position: absolute
-					font-size: 28px
-					line-height: 34px
+					font-size: 20px
+					line-height: 24px
 					font-family: "MyriadPro-Semibold", sans-serif
 					text-shadow: 1px 3px 3px rgba(0,0,0,.6)
 					margin: 0
@@ -325,6 +335,12 @@
 		height: 500px
 		img
 			height: 500px
+		.wrap-news-content
+			padding: 30px
+			.news-content
+				time,h3
+					font-size: 28px
+					line-height: 34px
 	.wrap-target-other-news
 		width: 100%
 		text-align: center
