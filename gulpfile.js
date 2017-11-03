@@ -28,11 +28,11 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
 		'app/libs/bootstrap-menu-dropdown/js/bootstrap.min.js',
-		'app/js/common.min.js', // Всегда в конце
+		'app/libs/OwlCarousel/dist/owl.carousel.min.js',
+		// 'app/js/common.min.js' // Всегда в конце
 		])
-	.pipe(concat('scripts.min.js'))
+	.pipe(concat('libs.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));

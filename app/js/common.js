@@ -6,11 +6,19 @@ $(function() {
 
 
 	/* Main slider*/
-	$('#js-main-slider').owlCarousel({
-		loop: true,
-		items: 1,
-		// nav: false,
-		itemClass: "slider-item",
-	})
+	// $('#js-main-slider').owlCarousel({
+	// 	loop: true,
+	// 	items: 1,
+	// 	// nav: false,
+	// 	itemClass: "slider-item",
+	// });
+
+	/*  slider */
+	// $("#js-comment-student-slider").owlCarousel({
+	// 	loop: true,
+	// 	items: 2,
+	// 	nav: false,
+	// 	// itemClass: "slider-item",
+	// })
 
 });

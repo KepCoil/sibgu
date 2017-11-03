@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
+	<title>СибГУ им. М.Ф.Решетнева</title>
+
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,14 +16,14 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#253666">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#253666">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#253666">
 
 	<!-- style -->
-	<style>body { opacity: 0; overflow-x: hidden;} html {}</style>
+	<style>body { opacity: 0; overflow-x: hidden;}</style>
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -160,9 +161,29 @@
 								<li><a href="#">Структура</a></li>
 							</ul>
 						</li>
-						<li class="pers-account"><a href="#">Личный кабинет</a></li>
-						<li class="email-link"><a href="#">Почта</a></li>
-						<li class="edu-curriculum"><a href="#">Расписание</a></li>
+
+						<ul>
+							<li class="pers-account">
+								<a href="#">
+									<i class="fa fa-id-card" aria-hidden="true"></i>
+									<span>Личный кабинет</span>
+								</a>
+							</li>
+							<li class="pers-account">
+								<a href="#">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<span>Почта</span>
+								</a>
+							</li>
+							<li class="pers-account">
+								<a href="#">
+									<i class="fa fa-table" aria-hidden="true"></i>
+									<span>Расписание</span>
+								</a>
+							</li>
+						</ul>
+						
+
 					</ul>
 					
 				</div>
@@ -393,7 +414,7 @@
 					<a href="#">Календарь событий</a>
 					<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 				</span>
-				
+
 			</div>
 		</section>
 
@@ -423,8 +444,32 @@
 			<div class="container">
 				<h2>Студенты об университете</h2>
 				<div class="row">
-					<div class="col-md-24">
-						123
+					<div class="col-xxlg-20 col-xxlg-offset-2 col-xlg-22 col-xlg-offset-1">
+						
+						<div id="js-comment-student-slider" class="clearfix">
+
+							<div class="wrap-comment clearfix">
+								<div class="wrap-comment-img">
+									<img src="img/students-promo/stud-1.jpg" alt="Студент1">
+								</div>
+								<div class="wrap-comment-content">
+									<blockquote>Мне нравится, что благодаря нашему университету студенты общаются между собой, делятся своими идеями и вдохновением. Они учатся чему-то новому. У нас можно и НУЖНО развиваться, есть много коллективов и организаций, вступив в которые, вы уже не сможете представить свою жизнь без этого движения и той работы, которую делаете. Приятно отдавать себя работе с мероприятиями, а взамен на это получать заряд новой энергии на дальнейшие планы. Самое главное, что я определенно люблю то место, где учусь. Чудесно чувствовать свой университет вторым домом. </blockquote>
+									<span>Деунежева Марианна <br>студентка факультета физики</span>
+								</div>
+							</div>
+
+							<div class="wrap-comment clearfix">
+								<div class="wrap-comment-img">
+									<img src="img/students-promo/stud-2.jpg" alt="Студент1">
+								</div>
+								<div class="wrap-comment-content">
+									<blockquote>Сегодня наш университет является флагманом развития и воспитания молодёжи. Особый подход специалистов и качество оборудования позволяют готовить кадровый резерв, способный решать задачи различного характера. Студенческая жизнь университета наполнена большим количеством интересных и полезных мероприятий. Разнообразие общественных объединений и организаций нашего ВУЗа позволят каждому реализовать себя в науке, творчестве, спорте и других сферах деятельности. СибГУ им. М.Ф.Решетнева – это качественное образование, яркая студенческая жизнь и многообещающее будущее!</blockquote>
+									<span>Федотов Андрей <br>студент факультета математики</span>
+								</div>
+							</div>
+
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -472,7 +517,8 @@
 
 
 	<!-- scripts -->
-	<script src="js/scripts.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.min.js"></script>
 
 </body>
 </html>
