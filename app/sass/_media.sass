@@ -54,6 +54,21 @@
 					font-size: 16px
 		.event-item
 			padding: 0 10px
+		.news-sect 
+			.wrap-item-news
+				height: 220px
+				.wrap-news-content
+					.news-content
+						time,h3
+							font-size: 16px
+							line-height: 20px
+			.wrap-first-news
+				height: 440px
+				.wrap-news-content
+					.news-content
+						time,h3
+							font-size: 24px
+							line-height: 28px
 
 
 /* Large Devices, Wide Screens */
@@ -100,7 +115,26 @@
 		// 	font-size: 12px
 		.event-item
 			padding: 0
-
+		.news-sect 
+			.wrap-item-news
+				height: 180px
+				.wrap-news-content
+					.news-content
+						time,h3
+							position: absolute
+							font-size: 13px
+							line-height: 16px
+			.wrap-first-news
+				height: 360px
+				.wrap-news-content
+					.news-content
+						time,h3
+							font-size: 18px
+							line-height: 22px
+			.wrap-target-other-news
+				.target-other-news
+					span
+						font-size: 20px	
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -147,14 +181,13 @@
 							&:last-child
 								a
 									padding-bottom: 25px
-		.main-site-sibgu
-			.nav
-				.pers-account,
-				.email-link,
-				.edu-curriculum
-					display: block
-				.pers-account
-					border-top: 1px solid $light-line
+		.nav
+			.pers-account,
+			.email-link,
+			.edu-curriculum
+				display: block
+			.pers-account
+				border-top: 1px solid $light-line
 		.event-item
 			margin-bottom: 50px
 
@@ -195,6 +228,24 @@
 			.other-func 
 				a.info-uni
 					font-size: 13px
+
+@media only screen and (max-width : 360px)
+	.main-site-sibgu
+		.news-sect
+			.col-item-news
+				width: 100%
+				.wrap-target-other-news
+					display: none
+				.other-link
+					display: block
+			.wrap-first-news
+				height: 180px
+				.wrap-news-content
+					padding: 15px
+					.news-content
+						time,h3
+							font-size: 13px
+							line-height: 16px
 
 
 /* Custom, iPhone Retina */

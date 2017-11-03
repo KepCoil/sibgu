@@ -265,20 +265,17 @@
 
 /* SECTION NEWS */
 .news-sect
-	// height: 550px
 	h2
 		margin-bottom: 20px
-	.col-first-news,
-	.col-other-news,
-	.col-md-8,
-	.col-md-15
+	.col-item-news
 		padding: 0
+		.other-link
+			display: none
 	.wrap-item-news
 		height: 250px
 		position: relative
-		display: inline-grid
+		display: block
 		overflow: hidden
-		// margin: 5px
 		padding: 5px
 		width: 100%
 		a
@@ -286,6 +283,8 @@
 			position: relative
 			overflow: hidden
 			border-bottom: none
+			height: 100%
+			width: 100%
 			&:hover
 				img
 					transform: scale(1.08)
@@ -371,6 +370,9 @@
 
 
 /* SECTION EVENT */
+.events-sect
+	.other-link
+		margin-top: -20px
 .event-item
 	padding: 0 20px
 	.wrap-date-event
