@@ -142,10 +142,28 @@
 
 .main-site-sibgu
 	.nav
-		.pers-account,
-		.email-link,
-		.edu-curriculum
+		.mobile-quick-link
 			display: none
+			list-style-type: none
+			padding: 0
+			&:last-child
+				border-right: 0
+			li
+				float: left
+				width: 33.33333333%
+				text-align: center
+				border-right: 1px solid $light-line
+				padding: 10px 5px
+			a
+				color: $yellow
+				border: none
+				i, span
+					display: block
+				i
+					font-size: 44px
+					margin-bottom: 7px
+				span
+					font-size: 14px
 
 .main-site-sibgu	
 	.navbar
@@ -303,7 +321,7 @@
 			color: #fff
 			&::before
 				content: ''
-				background-color: rgba(0,0,0,.1)
+				background-color: rgba(0,0,0,.2)
 				top: 0
 				left: 0
 				width: 100%
@@ -316,10 +334,10 @@
 				height: 100%
 				time,h3
 					position: absolute
-					font-size: 20px
-					line-height: 24px
+					font-size: 18px
+					line-height: 21px
 					font-family: "MyriadPro-Semibold", sans-serif
-					text-shadow: 1px 3px 3px rgba(0,0,0,.6)
+					text-shadow: 1px 3px 3px rgba(0,0,0,.9)
 					margin: 0
 				time
 					top: 0
@@ -363,9 +381,6 @@
 
 
 /* SECTION EVENT */
-.events-sect
-	.other-link
-		margin-top: -20px
 .event-item
 	padding: 0 20px
 	.wrap-date-event
@@ -444,11 +459,74 @@
 /* END SECTION EVENT */
 
 
+
+/* SECTION RECTOR */
+.rector-sect
+	.wrap-rector-img
+		border: 16px solid $dark-blue
+	.wrap-rector-content
+		margin: 30px 0 0 0
+		font-size: 18px
+		line-height: 24px
+		text-align: justify
+		font-family: "MyriadPro-Regular", sans-serif
+		border-radius: 1px
+		strong
+			font-size: 20px
+			display: block
+			margin-bottom: 20px
+		span
+			font-family: "MyriadPro-Semibold", sans-serif
+		.signature-rector
+			text-align: right
+			font-family: "MyriadPro-SemiBoldItalic", sans-serif
+			font-size: 20px
+			margin: 40px 0 0 0
+
+/* END SECTION RECTOR */
+
+
+
+/* SECTION INFOGRAPFICS */
+.infographics-sect
+	padding-bottom: 0
+.wrap-infographics-items
+	text-align: center
+.wrap-infographics-content
+	text-align: center
+	color: #444
+	img
+		width: 170px
+		height: 170px
+		display: inline-block
+	strong
+		display: block
+		margin: 25px 0 5px 0
+		font-size: 36px
+		font-family: "MyriadPro-SemiBold", sans-serif
+	p
+		margin: 0 0 50px 0
+		font-size: 17px
+/* END SECTION INFOGRAPFICS */
+
+
+
 /* SECTION STUDENTS COMMENT */
 .comment-students-sect
+	.comment-student-slider
+		.owl-dots
+			margin-top: 30px
+			text-align: center
+			.owl-dot
+				width: 15px
+				height: 15px
+				background-color: #fff
+				display: inline-block
+				border-radius: 50%
+				margin: 0 5px
+			.owl-dot.active
+				background-color: $yellow
 	.wrap-comment
-		width: 50%
-		float: left
 		padding: 0 20px
 	.wrap-comment-img
 		float: left
@@ -459,22 +537,25 @@
 			width: 180px
 			height: 270px
 	.wrap-comment-content
-		font-size: 16px
-		line-height: 22px
+		font-size: 15px
+		line-height: 20px
 		margin: 15px 0
 		blockquote
-			margin: 0 0 20px 0
+			margin: 0
 			text-align: justify
+			padding: 20px 0
 		span
 			display: block
 			text-align: right
+			font-size: 16px
 			font-family: "MyriadPro-Italic", sans-serif
-			font-size: 18px
-			text-decoration: underline
-
-
-
 /* END SECTION STUDENTS COMMENT */
+
+
+
+/* SECTION COMPANY - PARTNERS */
+
+/* END SECTION COMPANY - PARTNERS */
 
 
 

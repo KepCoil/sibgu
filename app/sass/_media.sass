@@ -31,6 +31,10 @@
 					margin-bottom: 12px
 				a.info-uni
 					font-size: 18px
+		.col-rector-img
+			width: 30%
+		.col-rector-content
+			width: 70%
 	
 
 /* for 1600px */
@@ -60,8 +64,8 @@
 				.wrap-news-content
 					.news-content
 						time,h3
-							font-size: 16px
-							line-height: 20px
+							font-size: 15px
+							line-height: 18px
 			.wrap-first-news
 				height: 440px
 				.wrap-news-content
@@ -69,6 +73,11 @@
 						time,h3
 							font-size: 24px
 							line-height: 28px
+		.rector-sect
+			.col-rector-img
+				width: 35%
+			.col-rector-content
+				width: 65%
 
 
 /* Large Devices, Wide Screens */
@@ -110,9 +119,6 @@
 					>a
 						font-size: 12px
 						padding: 15px 10px
-		// .dropdown-menu
-		// 	padding: 10px
-		// 	font-size: 12px
 		.event-item
 			padding: 0
 		.news-sect 
@@ -135,6 +141,16 @@
 				.target-other-news
 					span
 						font-size: 20px	
+		.rector-sect
+			.wrap-rector-content
+				margin-top: 15px
+				font-size: 15px
+				line-height: 19px
+				strong
+					font-size: 18px
+				.signature-rector
+					font-size: 18px
+					margin-top: 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -182,15 +198,26 @@
 								a
 									padding-bottom: 25px
 		.nav
-			.pers-account,
-			.email-link,
-			.edu-curriculum
+			.mobile-quick-link
 				display: block
-			.pers-account
 				border-top: 1px solid $light-line
 		.event-item
 			margin-bottom: 50px
-
+		.events-sect
+			.other-link
+				margin-top: -20px
+		.rector-sect
+			.col-rector-img
+				width: 100%
+			.col-rector-content
+				width: 100%
+			.wrap-rector-img
+				width: 300px
+				margin: 0 auto
+			.wrap-rector-content
+				.signature-rector
+					margin-top: 30px
+			
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -204,6 +231,17 @@
 				line-height: 22px
 			.reshetnev
 				font-size: 18px
+		.comment-students-sect
+	.comment-student-slider
+		.wrap-comment-img
+			float: none
+			margin: 0 auto 15px auto
+			border: 12px solid $dark-blue
+			border-radius: 1px
+			width: 180px
+			height: 270px
+			width: 204px
+			height: 294px
 
 
 /* Extra Small Devices, Phones */
@@ -228,6 +266,28 @@
 			.other-func 
 				a.info-uni
 					font-size: 13px
+		.nav
+			.mobile-quick-link
+				a
+					i
+						font-size: 30px
+						margin-bottom: 5px
+					span
+						font-size: 10px
+		.wrap-infographics-content
+			img
+				width: 135px
+				height: 135px
+			strong
+				font-size: 28px
+				margin-top: 15px
+			p
+				margin: 0 0 30px 0
+				font-size: 15px
+		.rector-sect
+			.wrap-rector-img
+				width: 100%
+			
 
 @media only screen and (max-width : 360px)
 	.main-site-sibgu
@@ -244,8 +304,16 @@
 					padding: 15px
 					.news-content
 						time,h3
-							font-size: 13px
-							line-height: 16px
+							font-size: 14px
+							line-height: 17px
+		.wrap-infographics-content
+			img
+				width: 125px
+				height: 125px
+			strong
+				font-size: 26px
+			p
+				font-size: 13px
 
 
 /* Custom, iPhone Retina */

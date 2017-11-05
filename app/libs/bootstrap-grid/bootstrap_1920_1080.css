@@ -4,15 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/docs/3.3/customize/?id=9beaf31b947a080020cc29ce7fa042e8)
- * Config saved to config.json and https://gist.github.com/9beaf31b947a080020cc29ce7fa042e8
- */
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -298,6 +289,8 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+/*! custom grid 1920 width */
 .container {
   margin-right: auto;
   margin-left: auto;
