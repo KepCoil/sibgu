@@ -222,63 +222,111 @@
 /* END HEADER */
 
 /* TARGET NAV and SLIDER */
+
+/* v2 */
 .navaslider
-	// height: 550px
+	height: 500px
 	position: relative
 	background-color: $dark-blue
-	margin-bottom: 20px
-	// .container, .row
-	// 	margin: 0
-	// 	padding: 0
-
-.wrap-target-menu
-	height: 550px
-	width: 320px
-	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
-	position: absolute
-	z-index: 1
-	background-color: $dark-blue
-.target-menu
-	ul
-		list-style-type: none
-		padding: 0
-		margin: 0
-		padding-left: 15px
-		a
-			color: #fff
-	// background-color: $dark-blue
-	// position: absolute
-	// display: inline-block
-	// a
-	// 	color: #fff
-
-.wrap-main-slider
-	left: 320px
+	// .container
+	// 	pr
+.wrap-navaslider-content
 	position: relative
-.main-slider
-	.slider-item
-		position: relative
-		height: 550px
+	>div
 		float: left
-		width: 100%
-		.slide-img
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			bottom: 0
-			width: 100%
-			height: 100%
-			background-size: cover
-			&::before
-				content: ''
-				background-color: rgba(0,0,0,0.1)
-				top: 0
-				left: 0
-				width: 100%
-				height: 100%
-				position: absolute
+.wrap-target-menu
+	// position: absolute
+	z-index: 5
+	height: 500px
+	width: 250px
+	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
+	padding: 30px 0
+	ul
+		margin: 0
+		padding: 0 30px 0 0
+		list-style-type: none
+		&:last-child
+			a
+				// border-bottom: none
+		li
+			a
+				color: #fff
+				padding: 15px 0
+				display: block
+				font-size: 26px
+				text-transform: uppercase
+				font-family: "OpenSansCondensed-Bold", sans-serif
+				letter-spacing: 1px
+				border-bottom: 1px solid $light-line
+				&:hover
+					color: $yellow
+				i
+					position: relative
+					width: 45px
+				i.icon-academec
+					width: 40px
+.main-slider
+	
 
+
+
+/* v1 */
+// .navaslider
+// 	// height: 550px
+// 	position: relative
+// 	background-color: $dark-blue
+// 	margin-bottom: 20px
+// 	// .container, .row
+// 	// 	margin: 0
+// 	// 	padding: 0
+
+// .wrap-target-menu
+// 	height: 550px
+// 	width: 320px
+// 	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
+// 	position: absolute
+// 	z-index: 1
+// 	background-color: $dark-blue
+// .target-menu
+// 	ul
+// 		list-style-type: none
+// 		padding: 0
+// 		margin: 0
+// 		padding-left: 15px
+// 		a
+// 			color: #fff
+// 	// background-color: $dark-blue
+// 	// position: absolute
+// 	// display: inline-block
+// 	// a
+// 	// 	color: #fff
+
+// .wrap-main-slider
+// 	left: 320px
+// 	position: relative
+// .main-slider
+// 	.slider-item
+// 		position: relative
+// 		height: 550px
+// 		float: left
+// 		width: 100%
+// 		.slide-img
+// 			position: absolute
+// 			top: 0
+// 			left: 0
+// 			right: 0
+// 			bottom: 0
+// 			width: 100%
+// 			height: 100%
+// 			background-size: cover
+// 			&::before
+// 				content: ''
+// 				background-color: rgba(0,0,0,0.1)
+// 				top: 0
+// 				left: 0
+// 				width: 100%
+// 				height: 100%
+// 				position: absolute
 /* END TARGET NAV and SLIDER */
 
 /* SECTION NEWS */
@@ -554,7 +602,19 @@
 
 
 /* SECTION COMPANY - PARTNERS */
-
+.pa-sect
+	.wrap-pa-item
+		text-align: center
+		img
+			width: 210px
+			height: 120px
+		strong
+			font-weight: 500
+			font-size: 22px
+			line-height: 26px
+			color: #444
+			display: block
+			margin: 25px 0
 /* END SECTION COMPANY - PARTNERS */
 
 

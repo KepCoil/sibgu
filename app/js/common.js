@@ -17,6 +17,7 @@ $(function() {
 	$("#js-comment-student-slider").owlCarousel({
 		loop: true,
 		items: 2,
+		// slideBy: 2,
 	   responsiveClass:true,
 	   responsive:{
 	      0:{
