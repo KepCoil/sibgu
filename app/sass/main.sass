@@ -225,30 +225,28 @@
 
 /* v2 */
 .navaslider
-	height: 500px
+	height: 550px
 	position: relative
 	background-color: $dark-blue
-	// .container
-	// 	pr
+	border-bottom: 1px solid $light-line
 .wrap-navaslider-content
 	position: relative
-	>div
-		float: left
+	// >div
+	// 	float: left
 .wrap-target-menu
-	// position: absolute
 	z-index: 5
-	height: 500px
+	height: 550px
 	width: 250px
 	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
-	padding: 30px 0
+	padding: 30px 30px 30px 0
 	ul
 		margin: 0
-		padding: 0 30px 0 0
+		padding: 0
 		list-style-type: none
-		&:last-child
-			a
-				// border-bottom: none
 		li
+			border-bottom: 1px solid $light-line
+			&:last-child
+				border-bottom: none
 			a
 				color: #fff
 				padding: 15px 0
@@ -257,7 +255,7 @@
 				text-transform: uppercase
 				font-family: "OpenSansCondensed-Bold", sans-serif
 				letter-spacing: 1px
-				border-bottom: 1px solid $light-line
+				border-bottom: none
 				&:hover
 					color: $yellow
 				i
@@ -435,26 +433,25 @@
 		border-bottom: 1px solid $dark-line
 		padding-bottom: 10px
 		.calendar-icon
-			font-size: 1em
 			display: inline-block
 			position: relative
 			width: 80px
 			height: 75px
 			background-color: #ebf0f2
-			border-radius: 0.6em
+			border-radius: 7px
 			box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
 			overflow: hidden
 			margin-right: 10px
 			span
+				display: block
 				position: absolute
 				top: 0
-				padding: 0.4em 0
 				width: 100%
 				height: 22px
 				color: #fff
 				background-color: #ff4b39
 				box-shadow: 0 2px 0 #ea402e
-				display: block
+				border-radius: 7px 7px 0 0
 				&:before, &:after
 					content: ''
 					display: block
@@ -465,8 +462,8 @@
 					border: 5px solid #ea402e
 					border-radius: 50%
 					z-index: 3
-					top: 53%
-					transform: translateY(-48%)
+					top: 55%
+					transform: translateY(-50%)
 				&:before
 					left: 8px
 				&:after
@@ -525,11 +522,12 @@
 			margin-bottom: 20px
 		span
 			font-family: "MyriadPro-Semibold", sans-serif
-		.signature-rector
-			text-align: right
-			font-family: "MyriadPro-SemiBoldItalic", sans-serif
-			font-size: 20px
-			margin: 40px 0 0 0
+	.signature-rector
+		display: block
+		text-align: right
+		font-family: "MyriadPro-SemiBoldItalic", sans-serif
+		font-size: 20px
+		margin: 40px 0 0 0
 
 /* END SECTION RECTOR */
 
@@ -538,23 +536,24 @@
 /* SECTION INFOGRAPFICS */
 .infographics-sect
 	padding-bottom: 0
-.wrap-infographics-items
-	text-align: center
-.wrap-infographics-content
-	text-align: center
-	color: #444
-	img
-		width: 170px
-		height: 170px
-		display: inline-block
-	strong
-		display: block
-		margin: 25px 0 5px 0
-		font-size: 36px
-		font-family: "MyriadPro-SemiBold", sans-serif
-	p
-		margin: 0 0 50px 0
-		font-size: 17px
+	.wrap-infographics-items
+		text-align: center
+	.wrap-infographics-content
+		text-align: center
+		color: #444
+		margin-bottom: 30px
+		img
+			width: 170px
+			height: 170px
+			display: inline-block
+		strong
+			display: block
+			margin: 25px 0 5px 0
+			font-size: 36px
+			font-family: "MyriadPro-SemiBold", sans-serif
+		p
+			margin: 0 0 50px 0
+			font-size: 17px
 /* END SECTION INFOGRAPFICS */
 
 
@@ -605,6 +604,7 @@
 .pa-sect
 	.wrap-pa-item
 		text-align: center
+		margin-bottom: 30px
 		img
 			width: 210px
 			height: 120px
@@ -617,8 +617,37 @@
 			margin: 25px 0
 /* END SECTION COMPANY - PARTNERS */
 
+/* FOOTER */
+.foot-first-level
+	padding: 60px 0 100px
+	.wrap-foot-first-level
+		padding-bottom: 50px
+		margin: 0 50px
+		border-bottom: 1px solid $light-line
+		.col-md-6
+			padding: 0 30px
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+	.wrap-foot-links
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li
+			a
+				color: #f3f3f3
+				text-decoration: underline
+				font-family: "OpenSans-Regular", sans-serif
+				padding: 5px 0
+				display: inline-block
+				border: none
+				transition: all $main-trans
+				&:hover
+					text-decoration: none
 
 
+/* ПОМОЙКА */
 .wrap-div1,
 .wrap-div2
 	width: 49%
@@ -633,9 +662,7 @@
 
 
 
-/* FOOTER */
-.main-footer
-	height: 400px
+
 
 
 /* END FOOTER */

@@ -29,4 +29,15 @@ $(function() {
 	   }
 	});
 
+	function eqH () {
+		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
+		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
+	};
+
+	eqH();
+
+	$(window).resize(function() {
+		eqH();
+	});
+
 });
