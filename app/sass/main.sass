@@ -587,7 +587,7 @@
 		font-size: 15px
 		line-height: 20px
 		margin: 15px 0
-		blockquote
+		p
 			margin: 0
 			text-align: justify
 			padding: 20px 0
@@ -619,9 +619,17 @@
 
 /* FOOTER */
 .main-footer
-	color: #f3f3f3
 	a
-		color: #f3f3f3
+		color: #fff
+		border-bottom: 1px solid #fff
+		transition: all $main-trans
+		&:hover
+			border-color: transparent
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+
 .foot-first-level
 	padding: 60px 0 100px
 	.wrap-foot-level
@@ -636,7 +644,7 @@
 		padding-bottom: 50px
 		border-bottom: 1px solid $light-line
 	.second-foot-line
-		padding: 30px 0
+		padding: 40px 0
 		h5
 			margin: 0 0 20px 0
 			font-size: 20px
@@ -649,13 +657,22 @@
 		li
 			display: block
 			padding: 7px 0
-			a
-				font-family: "OpenSans-Regular", sans-serif
-				border-bottom: 1px solid #f3f3f3
-				transition: all $main-trans
-				&:hover
-					border-color: transparent
+	.second-foot-line
+		.foot-contacts-content
+			li
+				display: block
+				margin-bottom: 15px
+				font-size: 16px
+		.foot-contacts-content-col-2
+			margin-top: 46px
+			strong
+				font-weight: normal
+				font-family: "OpenSans-Semibold", sans-serif
 
+.foot-second-level
+	height: 70px
+	background-color: $dark-blue
+	border-top: 1px solid $light-line
 
 /* ПОМОЙКА */
 .wrap-div1,
