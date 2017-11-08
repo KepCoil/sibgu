@@ -14,7 +14,7 @@
 		background-color: $dark-blue
 		position: relative
 		border-bottom: 1px solid $light-line
-		padding: 5px 0
+		padding: 2px 0
 		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .flag-links-wrap
 			position: relative
 			padding: 0 15px
@@ -98,7 +98,7 @@
 
 
 .head-content
-	padding: 35px 0 70px 0
+	padding: 35px 0 50px 0
 	background-color: $blue
 	.row
 		margin-right: 0
@@ -231,14 +231,15 @@
 	border-bottom: 1px solid $light-line
 .wrap-navaslider-content
 	position: relative
-	// >div
-	// 	float: left
+	>div
+		float: left
 .wrap-target-menu
 	z-index: 5
 	height: 550px
 	width: 275px
 	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
 	padding: 30px 30px 30px 0
+	display: inline-block
 	ul
 		margin: 0
 		padding: 0
@@ -263,10 +264,34 @@
 					width: 45px
 				i.icon-academec
 					width: 39px
-.main-slider
+
+.main-slider.owl-carousel
+	position: absolute
+	// width: 1600px
+	height: 550px
+	margin-left: 275px
+	.owl-stage-outer
+		height: 100%
+		.owl-stage
+			height: 100%
+			.owl-item
+				height: 100%
+				.wrap-main-slide
+					height: 100%
+					&:before
+						content: ''
+						background-color: rgba(0,0,0,0.15)
+						top: 0
+						left: 0
+						width: 100%
+						height: 100%
+						position: absolute
+					.slide-img
+						max-width: 100%
+						height: 100%
+						background-size: cover
+
 	
-
-
 
 /* v1 */
 // .navaslider
@@ -631,7 +656,7 @@
 		list-style-type: none
 
 .foot-first-level
-	padding: 60px 0 100px
+	padding: 50px 0 20px 0
 	.wrap-foot-level
 		margin: 0 50px
 		.col-md-6
@@ -646,10 +671,13 @@
 	.second-foot-line
 		padding: 40px 0
 		h5
-			margin: 0 0 20px 0
+			margin: 0 0 15px 0
 			font-size: 20px
 			text-transform: uppercase
 			font-family: "OpenSans-Semibold", sans-serif
+		.col-md-6
+			&:nth-child(2)
+				border-right: 1px solid $light-line
 	.wrap-foot-links
 		list-style-type: none
 		padding: 0
@@ -662,17 +690,48 @@
 			li
 				display: block
 				margin-bottom: 15px
-				font-size: 16px
+				font-size: 15px
 		.foot-contacts-content-col-2
-			margin-top: 46px
+			margin-top: 41px
 			strong
 				font-weight: normal
 				font-family: "OpenSans-Semibold", sans-serif
+	.wrap-foot-contancts
+		.foot-feedback
+			p
+				font-size: 14px
+				margin: 0 0 15px 0
+			.button-light-blue
+				padding: 8px 16px
+				background-color: #4f8fcd
+				display: inline-block
+				border: 2px solid lighten(#4f8fcd, 5%)
+				border-radius: 2px
+				text-transform: uppercase
+				// font-size: 16px
+				font-family: "OpenSans-Semibold", sans-serif
+				&:hover, &:focus
+					background-color: lighten(#4f8fcd, 2%)
+				&:active
+					background-color: darken(#4f8fcd, 5%)
+		.foot-social-list
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				margin-right: 12px
+			a
+				border: none
+			img
+				width: 40px
+				height: 40px
 
 .foot-second-level
-	height: 70px
+	padding: 30px 0
 	background-color: $dark-blue
 	border-top: 1px solid $light-line
+	.uit
+		text-align: right
 
 /* ПОМОЙКА */
 .wrap-div1,

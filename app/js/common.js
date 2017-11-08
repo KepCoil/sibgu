@@ -6,12 +6,11 @@ $(function() {
 
 
 	/* Main slider*/
-	// $('#js-main-slider').owlCarousel({
-	// 	loop: true,
-	// 	items: 1,
-	// 	// nav: false,
-	// 	itemClass: "slider-item",
-	// });
+	$('#js-main-slider').owlCarousel({
+		loop: true,
+		items: 1,
+		// itemClass: "slider-item"
+	});
 
 	/*  Student slider */
 	$("#js-comment-student-slider").owlCarousel({
@@ -32,6 +31,7 @@ $(function() {
 	function eqH () {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
+		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 	};
 
 	eqH();
