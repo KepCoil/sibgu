@@ -155,7 +155,7 @@
 				&:last-child
 					border-right: 0
 			a
-				color: $yellow
+				color: #fff
 				border: none
 				i, span
 					display: block
@@ -233,37 +233,39 @@
 	position: relative
 	>div
 		float: left
-.wrap-target-menu
+.dekstop-target-menu
 	z-index: 5
 	height: 550px
 	width: 275px
 	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
 	padding: 30px 30px 30px 0
 	display: inline-block
-	ul
-		margin: 0
-		padding: 0
-		list-style-type: none
-		li
-			border-bottom: 1px solid $light-line
-			&:last-child
-				border-bottom: none
-			a
-				color: #fff
-				padding: 15px 0
-				display: block
-				font-size: 26px
-				text-transform: uppercase
-				font-family: "OpenSansCondensed-Bold", sans-serif
-				letter-spacing: 1px
-				border-bottom: none
-				&:hover
-					color: $yellow
-				i
-					position: relative
-					width: 45px
-				i.icon-academec
-					width: 39px
+.wrap-target-menu
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		border-bottom: 1px solid $light-line
+		&:last-child
+			border-bottom: none
+		a
+			color: #fff
+			padding: 15px 0
+			display: block
+			font-size: 26px
+			text-transform: uppercase
+			font-family: "OpenSansCondensed-Bold", sans-serif
+			letter-spacing: 1px
+			border-bottom: none
+			&:hover
+				color: $yellow
+			i
+				position: relative
+				width: 45px
+			i.icon-academec
+				width: 39px
+.mobile-target-menu
+	display: none
 
 .main-slider.owl-carousel
 	position: absolute
@@ -354,8 +356,14 @@
 
 /* SECTION NEWS */
 .news-sect
+	padding-bottom: 45px
+	.container
+		// padding-left: 10px
+		// padding-right: 10px
+	.row-news
+		margin: 0 -5px
 	h2
-		margin-bottom: 35px
+		margin: 0 0 35px 0
 	.col-item-news
 		padding: 0
 		.other-link

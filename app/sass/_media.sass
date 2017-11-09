@@ -211,9 +211,9 @@
 			.mobile-quick-link
 				display: block
 				border-top: 1px solid $light-line
-		.event-item
-			margin-bottom: 50px
 		.events-sect
+			.event-item
+				margin-bottom: 50px
 			.other-link
 				margin-top: -20px
 		.rector-sect
@@ -227,6 +227,63 @@
 			.wrap-rector-content
 				.signature-rector
 					margin-top: 30px
+
+		.navaslider
+			.container
+				padding: 0
+			.dekstop-target-menu
+				display: none
+			.main-slider.owl-carousel
+				margin-left: 0
+
+		/* v1 */		
+		// .mobile-target-menu
+		// 	display: block
+		// 	padding: 15px 0
+		// 	border-top: 1px solid $light-line
+		// 	border-bottom: 1px solid $light-line
+		// 	li
+		// 		a
+		// 			color: #fff
+		// 			font-size: 22px
+		// 			padding: 10px 0
+		// 			&:hover
+		// 				color: $yellow
+		// 			i
+		// 				width: 35px
+		// 			i.icon-academec
+		// 				width: 30px
+
+		/* v2 */					
+		.mobile-target-menu
+			display: block
+			border-top: 1px solid $light-line
+			border-bottom: 1px solid $light-line
+			.container
+				padding: 0
+			li
+				width: 20%
+				float: left
+				border-bottom: none
+				border-right: 1px solid $light-line
+				padding: 10px 5px
+				text-align: center
+				&:last-child
+					border-right: none
+				a
+					color: #fff
+					font-size: 14px
+					&:hover
+						color: $yellow
+				i
+					font-size: 44px
+					display: block
+					text-align: center
+					width: 100%
+					margin-bottom: 10px
+				i.icon-academec
+					width: 100%
+
 
 		.foot-first-level
 			padding: 20px 0
@@ -249,7 +306,7 @@
 			 .foot-contacts-content-col-2
 		.uit
 			display: none
-
+		
 			
 
 			
@@ -272,16 +329,26 @@
 			.reshetnev
 				font-size: 18px
 		.comment-students-sect
-	.comment-student-slider
-		.wrap-comment-img
-			float: none
-			margin: 0 auto 15px auto
-			border: 12px solid $dark-blue
-			border-radius: 1px
-			width: 180px
-			height: 270px
-			width: 204px
-			height: 294px
+			.comment-student-slider
+				.wrap-comment-img
+					float: none
+					margin: 0 auto 15px auto
+					border: 12px solid $dark-blue
+					border-radius: 1px
+					width: 180px
+					height: 270px
+					width: 204px
+					height: 294px
+		/* v2 */
+		.mobile-target-menu
+			li
+				padding: 10px 5px
+				a
+					font-size: 12px
+					letter-spacing: 0
+				i
+					font-size: 36px
+					margin-bottom: 10px
 
 
 /* Extra Small Devices, Phones */
@@ -329,6 +396,16 @@
 			.wrap-rector-img
 				width: 100%
 				margin: 0
+
+		/* v2 */
+		.mobile-target-menu
+			li
+				padding: 0 5px
+				a
+					font-size: 10px
+				i
+					font-size: 30px
+					margin-bottom: 5px
 			
 
 @media only screen and (max-width : 375px)
@@ -340,6 +417,7 @@
 					display: none
 				.other-link
 					display: block
+					padding: 0 5px
 			.wrap-first-news
 				height: 180px
 				.wrap-news-content
@@ -357,6 +435,16 @@
 					font-size: 26px
 				p
 					font-size: 13px
+
+		/* v2 */
+		.mobile-target-menu
+			li
+				padding: 0 5px
+				a
+					font-size: 9px
+				i
+					font-size: 30px
+					margin-bottom: 5px
 
 
 /* Custom, iPhone Retina */
