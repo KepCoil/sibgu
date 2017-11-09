@@ -28,6 +28,23 @@ $(function() {
 	   }
 	});
 
+	/*  PA slider */
+	// $("#js-slider-pa").owlCarousel({
+	// 	loop: true,
+	// 	items: 1,
+	// 	itemClass: "wrap-pa-item",
+	// 	slideBy: 2,
+	//    responsiveClass:true,
+	//    responsive:{
+	//       0:{
+	//          items:1,
+	//       },
+	//       992:{
+	//          items:2
+	//       }
+	//    }
+	// });
+
 	function eqH () {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
