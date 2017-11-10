@@ -5965,6 +5965,8 @@ h6, .h6 {
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2px 0; }
+  .main-site-sibgu .top-line .container {
+    padding: 0; }
   .main-site-sibgu .top-line .main-logo-wrap, .main-site-sibgu .top-line .quick-links-wrap, .main-site-sibgu .top-line .res-links-wrap, .main-site-sibgu .top-line .flag-links-wrap {
     position: relative;
     padding: 0 15px;
@@ -5974,10 +5976,10 @@ h6, .h6 {
     width: 226px;
     padding: 0; }
   .main-site-sibgu .top-line .quick-links-wrap {
-    width: 1191px;
+    width: 1195px;
     padding: 10px 15px 10px 25px; }
   .main-site-sibgu .top-line .res-links-wrap {
-    width: 371px; }
+    width: 375px; }
   .main-site-sibgu .top-line .flag-links-wrap {
     width: 76px; }
     .main-site-sibgu .top-line .flag-links-wrap button.btn {
@@ -6050,8 +6052,8 @@ h6, .h6 {
 .head-content {
   padding: 35px 0 50px 0;
   background-color: #314177; }
-  .head-content .row {
-    margin-right: 0; }
+  .head-content .container {
+    padding: 0; }
   .head-content .main-title {
     margin: 0 0 0 250px;
     display: inline-block;
@@ -6059,12 +6061,12 @@ h6, .h6 {
   .head-content .other-func {
     background: #253666;
     float: right;
-    padding: 20px 25px; }
+    padding: 12px 25px; }
     .head-content .other-func a {
       font-size: 24px;
       font-family: "MyriadPro-SemiBold", sans-serif;
       display: block;
-      margin-bottom: 15px;
+      margin: 12px 0;
       text-decoration: none;
       border: none;
       color: #fff; }
@@ -6079,8 +6081,7 @@ h6, .h6 {
       border-bottom: 1px solid #ffe082;
       -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
       -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
-      transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
-      margin-bottom: 0; }
+      transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out; }
       .head-content .other-func a.info-uni:hover, .head-content .other-func a.info-uni:focus {
         border-bottom: 1px solid transparent; }
 
@@ -6145,11 +6146,13 @@ h6, .h6 {
 .main-site-sibgu .dropdown-menu {
   margin-bottom: 0;
   background-color: #f7f7f7;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 15px 20px 15px;
   -webkit-border-radius: 0;
           border-radius: 0;
   border: none;
-  min-width: auto; }
+  min-width: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   .main-site-sibgu .dropdown-menu li {
     background-color: #f7f7f7;
     border-bottom: 1px solid #aaaaaa; }
@@ -6212,8 +6215,6 @@ h6, .h6 {
       .wrap-target-menu li a i {
         position: relative;
         width: 45px; }
-      .wrap-target-menu li a i.icon-academec {
-        width: 39px; }
 
 .mobile-target-menu {
   display: none; }
@@ -6661,7 +6662,7 @@ h6, .h6 {
   .main-site-sibgu .top-line .main-logo-wrap {
     width: 196px; }
   .main-site-sibgu .top-line .quick-links-wrap {
-    width: 917px; }
+    width: 913px; }
   .main-site-sibgu .top-line .main-logo {
     width: 196px;
     height: 203px; }
@@ -6691,7 +6692,7 @@ h6, .h6 {
 /* for 1600px */
 @media only screen and (max-width: 1580px) {
   .main-site-sibgu .top-line .quick-links-wrap {
-    width: 597px; }
+    width: 593px; }
   .main-site-sibgu .main-title {
     font-size: 25px;
     line-height: 29px; }
@@ -6731,8 +6732,6 @@ h6, .h6 {
     font-size: 22px; }
   .main-site-sibgu .wrap-target-menu li i {
     width: 35px; }
-  .main-site-sibgu .wrap-target-menu li i.icon-academec {
-    width: 30px; }
   .main-site-sibgu .main-slider.owl-carousel {
     left: 220px; } }
 
@@ -6741,9 +6740,9 @@ h6, .h6 {
   .main-site-sibgu .top-line .main-logo-wrap {
     width: 181px; }
   .main-site-sibgu .top-line .quick-links-wrap {
-    width: 420px; }
+    width: 443px; }
   .main-site-sibgu .top-line .res-links-wrap {
-    width: 293px; }
+    width: 270px; }
   .main-site-sibgu .top-line .res-links {
     font-size: 14px; }
   .main-site-sibgu .top-line .main-logo {
@@ -6820,8 +6819,8 @@ h6, .h6 {
       float: right; }
     .main-site-sibgu .head-content {
       padding: 15px 0 20px 0; }
-      .main-site-sibgu .head-content .row {
-        margin: 0; }
+      .main-site-sibgu .head-content .container {
+        padding: 0 15px; }
       .main-site-sibgu .head-content .main-title {
         margin-left: 155px; }
       .main-site-sibgu .head-content .other-func {
@@ -6887,8 +6886,6 @@ h6, .h6 {
           text-align: center;
           width: 100%;
           margin-bottom: 10px; }
-        .main-site-sibgu .mobile-target-menu li i.icon-academec {
-          width: 100%; }
     .main-site-sibgu .foot-first-level {
       padding: 20px 0; }
       .main-site-sibgu .foot-first-level .wrap-foot-level {
