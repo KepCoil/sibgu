@@ -1,18 +1,19 @@
-const gulp           = require('gulp'),
-		gutil          = require('gulp-util' ),
-		sass           = require('gulp-sass'),
-		browserSync    = require('browser-sync'),
-		concat         = require('gulp-concat'),
-		uglify         = require('gulp-uglify'),
-		cleanCSS       = require('gulp-clean-css'),
-		rename         = require('gulp-rename'),
-		del            = require('del'),
-		imagemin       = require('gulp-imagemin'),
-		cache          = require('gulp-cache'),
-		autoprefixer   = require('gulp-autoprefixer'),
-		ftp            = require('vinyl-ftp'),
-		notify         = require("gulp-notify"),
-		rsync          = require('gulp-rsync');
+var 
+	gulp           = require('gulp'),
+	gutil          = require('gulp-util' ),
+	sass           = require('gulp-sass'),
+	browserSync    = require('browser-sync'),
+	concat         = require('gulp-concat'),
+	uglify         = require('gulp-uglify'),
+	cleanCSS       = require('gulp-clean-css'),
+	rename         = require('gulp-rename'),
+	del            = require('del'),
+	imagemin       = require('gulp-imagemin'),
+	cache          = require('gulp-cache'),
+	autoprefixer   = require('gulp-autoprefixer'),
+	ftp            = require('vinyl-ftp'),
+	notify         = require("gulp-notify"),
+	rsync          = require('gulp-rsync');
 
 // Пользовательские скрипты проекта
 
@@ -20,8 +21,8 @@ gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
 		])
-	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	// .pipe(concat('common.min.js'))
+	// .pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
 
