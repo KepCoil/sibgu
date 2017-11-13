@@ -61,6 +61,7 @@
 		.res-links
 			.dropdown
 				text-align: right
+				z-index: 9999
 				.dropdown-menu
 					padding: 10px 15px
 					a
@@ -84,6 +85,7 @@
 				background-color: transparent
 			.dropdown-flags
 				top: auto
+				min-width: auto
 				li
 					padding: 5px 3px
 					a
@@ -194,6 +196,7 @@
 		.navbar-collapse
 			margin: 0
 			border: 0
+			padding: 0
 	.dropdown-menu
 		margin-bottom: 0
 		background-color: #f7f7f7
@@ -201,19 +204,19 @@
 		border-radius: 0
 		border: none
 		box-shadow: none
-		// min-width: 320px
 		li
 			background-color: #f7f7f7
 			border-bottom: 1px solid $dark-line
 			a
-				color: #314177
+				color: $blue !important
 				text-transform: none
 				padding: 8px 8px 8px 0px
 				font-family: "OpenSans-Regular", sans-serif
 				border: none
 				transition: transform $main-trans
 				display: block
-				// white-space: normal
+			&:hover, &:focus, &:active
+				color: $blue !important
 			&:last-child
 				border-bottom: none
 
