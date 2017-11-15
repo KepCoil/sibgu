@@ -32,13 +32,19 @@ $(function() {
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
-		// autoplay: true,
+		autoplay: true,
 		autoplayTimeout: 7000
 	});
 
 	/* Костыль для пункта меню Сведенья о доходах ...*/
 	$(".nav .dropdown-menu li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
 		.html('Сведения о доходах, об имуществе и обязательствах имущественного<br/>характера руководителя и членов его семьи');
+
+	/* Анимированные цифры */
+	 // $(".statistics-counter").counterUp({
+  //       delay: 50,
+  //       time: 3000
+  //   });	
 
 	/*  Student slider */
 	$("#js-comment-student-slider").owlCarousel({
