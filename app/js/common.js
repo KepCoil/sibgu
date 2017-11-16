@@ -1,8 +1,21 @@
 $(function() {
 
+
 	$(".hamburger--spin").click(function() {
 		$(this).toggleClass("is-active");
 	});
+
+	$(".wrap-home-common-menu >ul .droplist").hover(function() {
+		$(this).children("ul").stop().slideToggle(250);
+		$(this).toggleClass("droplist-open");
+	}, function() {
+		$(this).children("ul").stop().slideUp(250);
+		$(this).removeClass("droplist-open");
+	});
+
+	$(".wrap-home-common-menu >ul li a").click(function() {
+		return false
+	})
 
 	function mainSliderResize() {
 		var 
@@ -37,7 +50,7 @@ $(function() {
 	});
 
 	/* Костыль для пункта меню Сведенья о доходах ...*/
-	$(".nav .dropdown-menu li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
+	$(".home-common-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
 		.html('Сведения о доходах, об имуществе и обязательствах имущественного<br/>характера руководителя и членов его семьи');
 
 	/* Анимированные цифры */

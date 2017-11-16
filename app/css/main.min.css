@@ -6048,6 +6048,70 @@ main #wrap {
   color: #fff;
   background-color: transparent; }
 
+.home-common-menu {
+  background-color: #253666;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .home-common-menu .container {
+    padding: 0; }
+  .home-common-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .home-common-menu ul li {
+      display: inline-block; }
+      .home-common-menu ul li a {
+        display: block;
+        font-family: "OpenSans-SemiBold", sans-serif;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        text-transform: uppercase; }
+        .home-common-menu ul li a:hover {
+          color: #314177;
+          background-color: #f7f7f7; }
+        .home-common-menu ul li a i {
+          font-size: 12px;
+          margin-top: -1px;
+          position: relative;
+          top: -1px;
+          margin-left: 7px; }
+  .home-common-menu .droplist-content {
+    position: absolute;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 15px 20px 15px;
+    background-color: #f7f7f7;
+    display: none; }
+    .home-common-menu .droplist-content li {
+      display: block;
+      border-bottom: 1px solid #aaa; }
+      .home-common-menu .droplist-content li:last-child {
+        border-bottom: none; }
+      .home-common-menu .droplist-content li a {
+        color: #314177;
+        padding: 10px 8px 10px 0px;
+        font-family: "OpenSans-Regular", sans-serif;
+        text-transform: none;
+        font-size: 14px;
+        line-height: 14px;
+        -webkit-transition: -webkit-transform 0.25s ease-out;
+        transition: -webkit-transform 0.25s ease-out;
+        -o-transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+        .home-common-menu .droplist-content li a:hover {
+          color: #314177;
+          -webkit-transform: translateX(8px);
+              -ms-transform: translateX(8px);
+                  transform: translateX(8px); }
+  .home-common-menu .droplist-open {
+    background-color: #f7f7f7; }
+    .home-common-menu .droplist-open a {
+      color: #314177; }
+      .home-common-menu .droplist-open a:hover {
+        color: #314177; }
+
 /* HEADER */
 #wrapwrap .main-head {
   color: #fff; }
@@ -6487,13 +6551,13 @@ main #wrap {
 /* END SECTION RECTOR */
 /* SECTION INFOGRAPFICS */
 .infographics-sect {
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
   .infographics-sect .wrap-infographics-items {
     text-align: center; }
   .infographics-sect .wrap-infographics-content {
     text-align: center;
     color: #444;
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
     .infographics-sect .wrap-infographics-content img {
       width: 170px;
       height: 170px;
@@ -6764,9 +6828,9 @@ main #wrap {
       margin: 9px 0; }
     #wrapwrap .head-content .other-func a.info-uni {
       font-size: 14px; }
-  #wrapwrap .navbar .navbar-nav > li > a {
-    font-size: 12px;
-    padding: 15px 10px; }
+  #wrapwrap .wrap-home-common-menu > ul > li > a {
+    font-size: 13px;
+    padding: 15px 8px; }
   #wrapwrap .event-item {
     padding: 0; }
   #wrapwrap .news-sect .wrap-item-news {
@@ -6829,13 +6893,8 @@ main #wrap {
         #wrapwrap .head-content .other-func a.info-uni {
           display: inline-block;
           margin-top: 0; }
-    #wrapwrap .navbar .navbar-nav > li > a {
-      font-size: 14px;
-      padding: 15px 20px; }
-    #wrapwrap .navbar .navbar-nav .open .dropdown-menu > li > a {
-      padding: 10px 15px 10px 25px; }
-    #wrapwrap .navbar .navbar-nav .open .dropdown-menu > li:last-child a {
-      padding-bottom: 25px; }
+    #wrapwrap .home-common-menu {
+      display: none; }
     #wrapwrap .nav .mobile-quick-link {
       display: block;
       border-top: 1px solid rgba(255, 255, 255, 0.2); }
@@ -6852,6 +6911,10 @@ main #wrap {
       margin: 0 auto; }
     #wrapwrap .rector-sect .wrap-rector-content .signature-rector {
       margin-top: 30px; }
+    #wrapwrap .infographics-sect {
+      padding-bottom: 30px; }
+      #wrapwrap .infographics-sect .wrap-infographics-content {
+        margin-bottom: 20px; }
     #wrapwrap .navaslider {
       height: 350px; }
       #wrapwrap .navaslider .container {
