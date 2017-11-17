@@ -1,16 +1,33 @@
 $(function() {
 
+	// Кнопка мобильного меню
 	$(".hamburger--spin").click(function() {
 		$(this).toggleClass("is-active");
 	});
 
+	// Выпадающие меню
+	$(".wrap-home-common-menu >ul .droplist").hover(function() {
+		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
+		$(this).toggleClass("droplist-open");
+	}, function() {
+		$(this).children("ul").stop(true, true).slideUp(250);
+		$(this).removeClass("droplist-open");
+	});
+	
+	// Неклибальность верхний ссылок меню общей информации
+	$(".wrap-home-common-menu >ul >li >a").click(function() {
+		return false
+	});
+
+
+	// Функция пересчета ширины слайдера в зависимости от ширины экрана
 	function mainSliderResize() {
 		var 
-			windowSize = $(window).width(),
-			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-			sliderWidth = 0;
+		windowSize = $(window).width(),
+		marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+		paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+		targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+		sliderWidth = 0;
 
 		if (windowSize >= 992) {
 			sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
@@ -24,11 +41,8 @@ $(function() {
 
 	mainSliderResize();
 
-	$(window).resize(function() {
-		mainSliderResize();
-	});
 
-	/* Main slider*/
+	// Слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
@@ -36,42 +50,73 @@ $(function() {
 		autoplayTimeout: 7000
 	});
 
-	/* Костыль для пункта меню Сведенья о доходах ...*/
-	$(".nav .dropdown-menu li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
+
+	// Костыль для пункта меню "Сведенья о доходах..."
+	$(".home-common-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
 		.html('Сведения о доходах, об имуществе и обязательствах имущественного<br/>характера руководителя и членов его семьи');
 
-	/* Анимированные цифры */
-	 // $(".statistics-counter").counterUp({
-  //       delay: 50,
-  //       time: 3000
-  //   });	
 
-	/*  Student slider */
+	// Анимированные цифры (Требуется библиотеки waypoints и counterUp)
+	// $(".statistics-counter").counterUp({
+	// 	delay: 50,
+	// 	time: 3000
+	// });	
+
+
+	// Слайдер секции "Отзывы студентов"
 	$("#js-comment-student-slider").owlCarousel({
 		loop: true,
 		items: 2,
 		// slideBy: 2,
-	   responsiveClass:true,
-	   responsive:{
-	      0:{
-	         items:1,
-	      },
-	      992:{
-	         items:2
-	      }
-	   }
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+			},
+			992:{
+				items:2
+			}
+		}
 	});
 
-	function eqH () {
+	// Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992
+	function enablePaSlider() {
+		
+		var windowWidth = $(window).width();
+
+		if (windowWidth <= 992) {
+			$("#js-pa-slider").owlCarousel({
+				loop: true,
+				items: 4,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+					},
+					768:{
+						items:2,
+					}
+				}
+			});
+		}
+	}
+	enablePaSlider();
+
+
+	// Функция уравнивания высоты items
+	function eqH() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 	};
-
 	eqH();
 
+
+	// Вызов функций при ресайзе экрана 
 	$(window).resize(function() {
 		eqH();
+		mainSliderResize();
+		enablePaSlider();
 	});
 
 });

@@ -129,12 +129,18 @@
 					margin: 9px 0
 				a.info-uni
 					font-size: 14px
-		.navbar
-			.navbar-nav
-				>li
+		.wrap-home-common-menu 
+			>ul 
+				>li 
 					>a
-						font-size: 12px
-						padding: 15px 10px
+						font-size: 13px
+						padding: 15px 8px
+		// .navbar
+		// 	.navbar-nav
+		// 		>li
+		// 			>a
+		// 				font-size: 12px
+		// 				padding: 15px 10px
 		.event-item
 			padding: 0
 		.news-sect 
@@ -168,11 +174,28 @@
 					font-size: 18px
 					margin-top: 15px
 
-@media only screen and (max-width : 1260px) and (min-width: 991px)
+
+@media only screen and (max-width : 1260px) and (min-width: 992px)
 	#wrapwrap
 		.first-foot-line
 			a
 				font-size: 13px
+		.pa-sect
+			.wrap-pa-item
+				img
+					width: 190px
+					height: 110px
+				strong
+					font-size: 17px
+					line-height: 22px
+		.foot-first-level 
+			.wrap-foot-contancts 
+				.foot-social-list
+					li
+						margin-right: 8px
+					img
+						width: 35px
+						height: 35px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -206,20 +229,22 @@
 				a.info-uni
 					display: inline-block
 					margin-top: 0
-		.navbar
-			.navbar-nav
-				>li 
-					>a
-						font-size: 14px
-						padding: 15px 20px
-				.open
-					.dropdown-menu
-						>li
-							>a
-								padding: 10px 15px 10px 25px
-							&:last-child
-								a
-									padding-bottom: 25px
+		.home-common-menu
+			display: none
+		// .navbar
+		// 	.navbar-nav
+		// 		>li 
+		// 			>a
+		// 				font-size: 14px
+		// 				padding: 15px 20px
+		// 		.open
+		// 			.dropdown-menu
+		// 				>li
+		// 					>a
+		// 						padding: 10px 15px 10px 25px
+		// 					&:last-child
+		// 						a
+		// 							padding-bottom: 25px
 		.nav
 			.mobile-quick-link
 				display: block
@@ -240,7 +265,10 @@
 			.wrap-rector-content
 				.signature-rector
 					margin-top: 30px
-
+		.infographics-sect
+			padding-bottom: 30px 
+			.wrap-infographics-content
+				margin-bottom: 20px
 		.navaslider
 			height: 350px
 			.container
