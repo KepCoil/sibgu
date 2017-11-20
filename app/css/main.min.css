@@ -5901,27 +5901,32 @@ h1, .h1, .main-title {
 h2, .h2 {
   font-size: 28px;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: left; }
 
 h3, .h3 {
   font-size: 26px;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: left; }
 
 h4, .h4 {
   font-size: 24px;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: left; }
 
 h5, .h5 {
   font-size: 20px;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: left; }
 
 h6, .h6 {
   font-size: 18px;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-align: left; }
 
 main #wrap {
   padding: 50px 0; }
@@ -5960,6 +5965,14 @@ main #wrap {
 .main-footer {
   background-color: #314177;
   color: #fff; }
+
+.inner-title {
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #314177;
+  margin: 40px 0 25px 0;
+  text-align: left; }
 
 /* bootstrap custom menu & dropdown */
 #wrapwrap .navbar-nav .mobile-quick-link {

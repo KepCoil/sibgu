@@ -15,7 +15,7 @@ $(function() {
 	});
 	
 	// Неклибальность верхний ссылок меню общей информации
-	$(".wrap-home-common-menu >ul >li >a").click(function() {
+	$(".wrap-main-menu >ul >li >a").click(function() {
 		return false
 	});
 
