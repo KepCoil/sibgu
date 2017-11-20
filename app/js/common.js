@@ -6,7 +6,7 @@ $(function() {
 	});
 
 	// Выпадающие меню
-	$(".wrap-home-common-menu >ul .droplist").hover(function() {
+	$(".wrap-main-menu >ul .droplist").hover(function() {
 		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
 		$(this).toggleClass("droplist-open");
 	}, function() {
@@ -20,14 +20,18 @@ $(function() {
 	});
 
 
+	// Костыль для пункта меню "Сведенья о доходах..."
+	var ppp = $(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
+		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+
 	// Функция пересчета ширины слайдера в зависимости от ширины экрана
 	function mainSliderResize() {
 		var 
-		windowSize = $(window).width(),
-		marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-		paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-		targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-		sliderWidth = 0;
+			windowSize = $(window).width(),
+			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+			sliderWidth = 0;
 
 		if (windowSize >= 992) {
 			sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
@@ -49,13 +53,9 @@ $(function() {
 		autoplay: true,
 		autoplayTimeout: 7000
 	});
+	
 
-
-	// Костыль для пункта меню "Сведенья о доходах..."
-	$(".home-common-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-		.html('Сведения о доходах, об имуществе и обязательствах имущественного<br/>характера руководителя и членов его семьи');
-
-
+	console.log(ppp);
 	// Анимированные цифры (Требуется библиотеки waypoints и counterUp)
 	// $(".statistics-counter").counterUp({
 	// 	delay: 50,

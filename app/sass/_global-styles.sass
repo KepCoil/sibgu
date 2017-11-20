@@ -207,7 +207,7 @@ main
 					color: #fff
 					background-color: transparent
 
-.home-common-menu
+.main-menu
 	background-color: $dark-blue
 	border-top: 1px solid $light-line
 	border-bottom: 1px solid $light-line
@@ -264,4 +264,20 @@ main
 			color: $blue
 			&:hover
 				color: $blue
+	.wrap-inner-table-menu
+		display: table
+		border-left: 1px solid $light-line
+		border-right: 1px solid $light-line
+		.row-inner-menu
+			display: table-row
+			&:first-child
+				>li
+					border-bottom: 1px solid $light-line
+			>li
+				display: table-cell
+				border-right: 1px solid $light-line
+				&:last-child
+					border-right: none
+				>a
+					padding: 10px 15px
 				
