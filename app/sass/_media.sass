@@ -195,10 +195,16 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	#wrapwrap
+		.mobile-menu-button-wrap
+			display: inline-block
+		.head-content 
+			.other-func
+				display: none
 		.top-line
 			.main-logo-wrap
-				margin-left: 15px
-				width: 140px
+				// margin-left: 15px
+				// width: 140px
+				display: none
 			.main-logo
 				width: 140px
 				height: 150px
@@ -217,7 +223,9 @@
 			.container
 				padding: 0 15px
 			.main-title
-				margin-left: 155px
+				margin-left: 0
+				display: block
+				// text-align: center
 			.other-func
 				float: none
 				margin-top: 30px
@@ -390,10 +398,10 @@
 					width: 60px
 					height: 60px
 		.head-content
-			.main-title
-				margin: 20px 0 0 0
-				text-align: center
-				display: block
+			// .main-title
+			// 	margin: 20px 0 0 0
+			// 	text-align: center
+			// 	display: block
 			.other-func 
 				a.info-uni
 					font-size: 13px
@@ -496,8 +504,13 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	#wrapwrap
-		.hamburger
+		.mobile-menu-button-wrap
 			display: none
+		.mobile-main-logo
+			display: none
+	// 	.hamburger
+	// 		display: none
+
 
 
 /* Large Devices, Wide Screens */

@@ -1,9 +1,48 @@
 $(function() {
 
-	// Кнопка мобильного меню
-	$(".hamburger--spin").click(function() {
-		$(this).toggleClass("is-active");
+
+	/* МОБИЛЬНОЕ МЕНЮ */
+
+	// Перенос оба меню
+	var 
+		commonMenuContent  = $("#js-main-common-menu").html(),
+		commonAuditContent = $("#js-main-audit-menu").html();
+	
+	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
+	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
+
+	// Плагин mmenu
+	$("#js-mobile-mmenu").mmenu({
+		extensions: ['fx-menu-slide', 'pagedim-black', 'border-full', "multiline"],
+		navbar: {
+			title: "Меню",
+		},
+		"navbars": [{
+			"position": "bottom",
+			"content": [
+				"<a class='fa fa-id-card mob-qlinks'	href='#'>	<span>Личный кабинет</span></a>",
+				"<a class='fa fa-envelope mob-qlinks'	href='#'>	<span>Почта</span></a>",
+				"<a class='fa fa-table mob-qlinks'		href='#'>	<span>Расписание занятий</span></a>"
+			]
+		}]
 	});
+
+	$("#js-mobile-mmenu").find(".mm-next").addClass("mm-fullsubopen");
+
+
+	// Кнопка
+	var API = $("#js-mobile-mmenu").data("mmenu");
+	$("#js-button-mobile-mmenu").click(function() {
+		API.open();
+	});
+	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
+
+
+
+	// Кнопка мобильного меню
+	// $(".hamburger--spin").click(function() {
+	// 	$(this).toggleClass("is-active");
+	// });
 
 	// Выпадающие меню
 	$(".wrap-main-menu >ul .droplist").hover(function() {
@@ -22,101 +61,101 @@ $(function() {
 
 	// Костыль для пункта меню "Сведенья о доходах..."
 	var ppp = $(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
 	// Функция пересчета ширины слайдера в зависимости от ширины экрана
-	function mainSliderResize() {
-		var 
-			windowSize = $(window).width(),
-			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-			sliderWidth = 0;
+	// function mainSliderResize() {
+	// 	var 
+	// 	windowSize = $(window).width(),
+	// 	marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+	// 	paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+	// 	targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+	// 	sliderWidth = 0;
 
-		if (windowSize >= 992) {
-			sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
-		}
-		else {
-			sliderWidth = "100%";
-		}
+	// 	if (windowSize >= 992) {
+	// 		sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
+	// 	}
+	// 	else {
+	// 		sliderWidth = "100%";
+	// 	}
 
-		$("#js-main-slider").width(sliderWidth);
-	};
+	// 	$("#js-main-slider").width(sliderWidth);
+	// };
 
-	mainSliderResize();
+	// mainSliderResize();
 
 
-	// Слайдер на главной странице
-	$('#js-main-slider').owlCarousel({
-		loop: true,
-		items: 1,
-		autoplay: true,
-		autoplayTimeout: 7000
-	});
+	// // Слайдер на главной странице
+	// $('#js-main-slider').owlCarousel({
+	// 	loop: true,
+	// 	items: 1,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 7000
+	// });
 	
 
-	console.log(ppp);
-	// Анимированные цифры (Требуется библиотеки waypoints и counterUp)
-	// $(".statistics-counter").counterUp({
-	// 	delay: 50,
-	// 	time: 3000
-	// });	
+	// console.log(ppp);
+	// // Анимированные цифры (Требуется библиотеки waypoints и counterUp)
+	// // $(".statistics-counter").counterUp({
+	// // 	delay: 50,
+	// // 	time: 3000
+	// // });	
 
 
-	// Слайдер секции "Отзывы студентов"
-	$("#js-comment-student-slider").owlCarousel({
-		loop: true,
-		items: 2,
-		// slideBy: 2,
-		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-			},
-			992:{
-				items:2
-			}
-		}
-	});
+	// // Слайдер секции "Отзывы студентов"
+	// $("#js-comment-student-slider").owlCarousel({
+	// 	loop: true,
+	// 	items: 2,
+	// 	// slideBy: 2,
+	// 	responsiveClass:true,
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 		},
+	// 		992:{
+	// 			items:2
+	// 		}
+	// 	}
+	// });
 
-	// Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992
-	function enablePaSlider() {
+	// // Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992
+	// function enablePaSlider() {
 		
-		var windowWidth = $(window).width();
+	// 	var windowWidth = $(window).width();
 
-		if (windowWidth <= 992) {
-			$("#js-pa-slider").owlCarousel({
-				loop: true,
-				items: 4,
-				responsiveClass:true,
-				responsive:{
-					0:{
-						items:1,
-					},
-					768:{
-						items:2,
-					}
-				}
-			});
-		}
-	}
-	enablePaSlider();
-
-
-	// Функция уравнивания высоты items
-	function eqH() {
-		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
-		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
-		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
-	};
-	eqH();
+	// 	if (windowWidth <= 992) {
+	// 		$("#js-pa-slider").owlCarousel({
+	// 			loop: true,
+	// 			items: 4,
+	// 			responsiveClass:true,
+	// 			responsive:{
+	// 				0:{
+	// 					items:1,
+	// 				},
+	// 				768:{
+	// 					items:2,
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+	// }
+	// enablePaSlider();
 
 
-	// Вызов функций при ресайзе экрана 
-	$(window).resize(function() {
-		eqH();
-		mainSliderResize();
-		enablePaSlider();
-	});
+	// // Функция уравнивания высоты items
+	// function eqH() {
+	// 	$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
+	// 	$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
+	// 	$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
+	// };
+	// eqH();
+
+
+	// // Вызов функций при ресайзе экрана 
+	// $(window).resize(function() {
+	// 	eqH();
+	// 	mainSliderResize();
+	// 	enablePaSlider();
+	// });
 
 });

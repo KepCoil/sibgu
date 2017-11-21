@@ -30,6 +30,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap-menu-dropdown/js/bootstrap.min.js',
+		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/equal-heights/jquery.equalheights.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		// 'app/js/common.min.js' // Всегда в конце
@@ -75,45 +76,6 @@ gulp.task('imagemin', function() {
 	.pipe(gulp.dest('dist/img')); 
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
-
-	var buildFiles = gulp.src([
-		'app/*.html',
-		'app/.htaccess',
-		]).pipe(gulp.dest('dist'));
-
-	var buildCss = gulp.src([
-		'app/css/main.min.css',
-		]).pipe(gulp.dest('dist/css'));
-
-	var buildJs = gulp.src([
-		'app/js/scripts.min.js',
-		]).pipe(gulp.dest('dist/js'));
-
-	var buildFonts = gulp.src([
-		'app/fonts/**/*',
-		]).pipe(gulp.dest('dist/fonts'));
-
-});
-
-gulp.task('deploy', function() {
-
-	var conn = ftp.create({
-		host:      'hostname.com',
-		user:      'username',
-		password:  'userpassword',
-		parallel:  10,
-		log: gutil.log
-	});
-
-	var globs = [
-	'dist/**',
-	'dist/.htaccess',
-	];
-	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/path/to/folder/on/server'));
-
-});
 
 gulp.task('rsync', function() {
 	return gulp.src('dist/**')
