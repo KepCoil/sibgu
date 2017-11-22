@@ -8647,12 +8647,13 @@ main #wrap {
     width: 226px;
     padding: 0; }
   #wrapwrap .top-line .quick-links-wrap {
-    width: 1195px;
+    width: 1210px;
     padding: 10px 15px 10px 25px; }
   #wrapwrap .top-line .res-links-wrap {
     width: 375px; }
   #wrapwrap .top-line .flag-links-wrap {
-    width: 76px; }
+    width: 61px;
+    padding-right: 0; }
     #wrapwrap .top-line .flag-links-wrap button.btn {
       -webkit-border-radius: 0;
               border-radius: 0; }
@@ -9268,7 +9269,7 @@ main #wrap {
   #wrapwrap .top-line .main-logo-wrap {
     width: 196px; }
   #wrapwrap .top-line .quick-links-wrap {
-    width: 913px; }
+    width: 928px; }
   #wrapwrap .top-line .main-logo {
     width: 196px;
     height: 203px; }
@@ -9297,7 +9298,7 @@ main #wrap {
 /* for 1600px */
 @media only screen and (max-width: 1580px) {
   #wrapwrap .top-line .quick-links-wrap {
-    width: 593px; }
+    width: 608px; }
   #wrapwrap .main-title {
     font-size: 25px;
     line-height: 29px; }
@@ -9344,7 +9345,7 @@ main #wrap {
   #wrapwrap .top-line .main-logo-wrap {
     width: 181px; }
   #wrapwrap .top-line .quick-links-wrap {
-    width: 443px; }
+    width: 458px; }
   #wrapwrap .top-line .res-links-wrap {
     width: 270px; }
   #wrapwrap .top-line .res-links {
@@ -9397,14 +9398,14 @@ main #wrap {
       margin-top: 15px; } }
 
 @media only screen and (max-width: 1260px) and (min-width: 992px) {
-  #wrapwrap .first-foot-line a {
-    font-size: 13px; }
   #wrapwrap .pa-sect .wrap-pa-item img {
     width: 190px;
     height: 110px; }
   #wrapwrap .pa-sect .wrap-pa-item strong {
     font-size: 17px;
     line-height: 22px; }
+  #wrapwrap .first-foot-line a {
+    font-size: 13px; }
   #wrapwrap .foot-first-level .wrap-foot-contancts .foot-social-list li {
     margin-right: 8px; }
   #wrapwrap .foot-first-level .wrap-foot-contancts .foot-social-list img {
@@ -9418,6 +9419,9 @@ main #wrap {
     /* v2 */ }
     #wrapwrap .top-line {
       padding: 5px 0; }
+      #wrapwrap .top-line .flag-links-wrap {
+        padding-right: 15px;
+        width: 76px; }
     #wrapwrap .mobile-menu-button-wrap {
       display: inline-block; }
     #wrapwrap .main-title-wrap {
@@ -9558,7 +9562,7 @@ main #wrap {
       #wrapwrap .head-content .main-title-wrap .mobile-logo-img-wrap {
         width: 50px;
         height: 50px;
-        padding: 5px;
+        padding: 4px;
         margin-right: 10px; }
       #wrapwrap .head-content .main-title-wrap .main-title {
         font-size: 12px;
@@ -9657,6 +9661,12 @@ main #wrap {
       #wrapwrap .mobile-target-menu li i {
         font-size: 30px;
         margin-bottom: 5px; } }
+
+@media only screen and (max-width: 359px) {
+  #wrapwrap .head-content .main-title-wrap .main-title {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 5px 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
