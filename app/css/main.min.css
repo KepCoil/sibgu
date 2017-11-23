@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "MyriadPro-Regular";
   font-weight: normal;
@@ -8440,24 +8441,25 @@ h6, .h6 {
   text-align: left; }
 
 /* MOBILE MMENU MENU */
-#wrapwrap .mobile-mmenu {
+#js-mobile-mmenu {
   z-index: 5000;
   -webkit-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2); }
-  #wrapwrap .mobile-mmenu a {
+  #js-mobile-mmenu a {
     border-bottom: none; }
-  #wrapwrap .mobile-mmenu i.fa {
+  #js-mobile-mmenu i.fa {
     display: none; }
-  #wrapwrap .mobile-mmenu .mm-navbars-bottom {
+  #js-mobile-mmenu .mm-navbars-bottom {
     padding: 0 5px; }
-    #wrapwrap .mobile-mmenu .mm-navbars-bottom .mob-qlinks {
+    #js-mobile-mmenu .mm-navbars-bottom .mob-qlinks {
       font-size: 25px; }
-      #wrapwrap .mobile-mmenu .mm-navbars-bottom .mob-qlinks span {
+      #js-mobile-mmenu .mm-navbars-bottom .mob-qlinks span {
         display: block;
         font-size: 9px;
         margin-top: 8px;
         font-family: "MyriadPro-Semibold", sans-serif; }
 
+/* КОНЕЦ MOBILE MMENU MENU */
 /* bootstrap custom menu & dropdown */
 #wrapwrap .navbar-nav .mobile-quick-link {
   display: none;
