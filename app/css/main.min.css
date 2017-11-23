@@ -8395,9 +8395,6 @@ h6, .h6 {
   font-weight: normal;
   text-align: left; }
 
-main #wrap {
-  padding: 50px 0; }
-
 .main-sect {
   padding: 50px 0; }
   .main-sect h2 {
@@ -8814,9 +8811,6 @@ main #wrap {
       .wrap-target-menu li a i {
         position: relative;
         width: 45px; }
-
-.mobile-target-menu {
-  display: none; }
 
 .main-slider.owl-carousel {
   position: absolute;
@@ -9502,32 +9496,6 @@ main #wrap {
       #wrapwrap .navaslider .main-slider.owl-carousel {
         left: 0;
         height: 350px; }
-    #wrapwrap .mobile-target-menu {
-      display: block;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-      #wrapwrap .mobile-target-menu .container {
-        padding: 0; }
-      #wrapwrap .mobile-target-menu li {
-        width: 20%;
-        float: left;
-        border-bottom: none;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 10px 5px;
-        text-align: center; }
-        #wrapwrap .mobile-target-menu li:last-child {
-          border-right: none; }
-        #wrapwrap .mobile-target-menu li a {
-          color: #fff;
-          font-size: 14px; }
-          #wrapwrap .mobile-target-menu li a:hover {
-            color: #ffe082; }
-        #wrapwrap .mobile-target-menu li i {
-          font-size: 44px;
-          display: block;
-          text-align: center;
-          width: 100%;
-          margin-bottom: 10px; }
     #wrapwrap .foot-first-level {
       padding: 20px 0; }
       #wrapwrap .foot-first-level .wrap-foot-level {
@@ -9567,8 +9535,9 @@ main #wrap {
       #wrapwrap .head-content .main-title-wrap .main-title {
         font-size: 12px;
         line-height: 14px;
-        padding: 0; }
+        padding: 4px 0; }
       #wrapwrap .head-content .main-title-wrap .reshetnev {
+        margin-top: 3px;
         font-size: 10px; }
     #wrapwrap .comment-students-sect .comment-student-slider .wrap-comment-img {
       float: none;
@@ -9579,15 +9548,7 @@ main #wrap {
       width: 180px;
       height: 270px;
       width: 204px;
-      height: 294px; }
-    #wrapwrap .mobile-target-menu li {
-      padding: 10px 5px; }
-      #wrapwrap .mobile-target-menu li a {
-        font-size: 12px;
-        letter-spacing: 0; }
-      #wrapwrap .mobile-target-menu li i {
-        font-size: 36px;
-        margin-bottom: 10px; } }
+      height: 294px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -9621,14 +9582,7 @@ main #wrap {
       font-size: 15px; }
     #wrapwrap .rector-sect .wrap-rector-img {
       width: 100%;
-      margin: 0; }
-    #wrapwrap .mobile-target-menu li {
-      padding: 0 5px; }
-      #wrapwrap .mobile-target-menu li a {
-        font-size: 10px; }
-      #wrapwrap .mobile-target-menu li i {
-        font-size: 30px;
-        margin-bottom: 5px; } }
+      margin: 0; } }
 
 @media only screen and (max-width: 375px) {
   #wrapwrap {
@@ -9653,14 +9607,7 @@ main #wrap {
     #wrapwrap .infographics-sect .wrap-infographics-content strong {
       font-size: 26px; }
     #wrapwrap .infographics-sect .wrap-infographics-content p {
-      font-size: 13px; }
-    #wrapwrap .mobile-target-menu li {
-      padding: 0 5px; }
-      #wrapwrap .mobile-target-menu li a {
-        font-size: 9px; }
-      #wrapwrap .mobile-target-menu li i {
-        font-size: 30px;
-        margin-bottom: 5px; } }
+      font-size: 13px; } }
 
 @media only screen and (max-width: 359px) {
   #wrapwrap .head-content .main-title-wrap .main-title {

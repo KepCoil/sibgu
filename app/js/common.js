@@ -5,8 +5,8 @@ $(function() {
 
 	// Перенос оба меню
 	var 
-		commonMenuContent  = $("#js-main-common-menu").html(),
-		commonAuditContent = $("#js-main-audit-menu").html();
+	commonMenuContent  = $("#js-main-common-menu").html(),
+	commonAuditContent = $("#js-main-audit-menu").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
@@ -20,9 +20,9 @@ $(function() {
 		"navbars": [{
 			"position": "bottom",
 			"content": [
-				"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
-				"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
-				"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
+			"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
+			"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
+			"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
 			]
 		}]
 	});
@@ -58,28 +58,39 @@ $(function() {
 		return false
 	});
 
-
 	// Костыль для пункта меню "Сведенья о доходах..."
 	var ppp = $(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
 	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
+
+
+
+
+	/* JS ТОЛЬКО ДЛЯ ГЛАВНОЙ СТРАНИЦЫ */
+
 	// Функция пересчета ширины слайдера в зависимости от ширины экрана
 	function mainSliderResize() {
-		var 
-		windowSize = $(window).width(),
-		marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-		paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-		targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-		sliderWidth = 0;
+		
+		if (!$("body").is(".navaslider")) {
+			return;		
+		} else {
+			var 
+				windowSize = $(window).width(),
+				marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+				paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+				targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+				sliderWidth = 0;
 
-		if (windowSize >= 992) {
-			sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
-		}
-		else {
-			sliderWidth = "100%";
-		}
+			if (windowSize >= 992) {
+				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
+			}
+			else {
+				sliderWidth = "100%";
+			};
 
-		$("#js-main-slider").width(sliderWidth);
+			$("#js-main-slider").width(sliderWidth);
+		}
+		
 	};
 
 	mainSliderResize();
@@ -93,7 +104,6 @@ $(function() {
 		autoplayTimeout: 7000
 	});
 	
-
 
 	// Слайдер секции "Отзывы студентов"
 	$("#js-comment-student-slider").owlCarousel({
@@ -132,6 +142,7 @@ $(function() {
 			});
 		}
 	}
+	
 	enablePaSlider();
 
 
@@ -150,5 +161,8 @@ $(function() {
 		mainSliderResize();
 		enablePaSlider();
 	});
+
+
+	/* JS ТОЛЬКО ДЛЯ ГЛАВНОЙ СТРАНИЦЫ */
 
 });
