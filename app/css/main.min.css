@@ -8581,7 +8581,9 @@ h6, .h6 {
     min-width: 160px;
     padding: 5px 15px 20px 15px;
     background-color: #f7f7f7;
-    display: none; }
+    display: none;
+    -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5); }
     .main-menu .droplist-content li {
       display: block;
       border-bottom: 1px solid #aaa; }
@@ -9045,7 +9047,6 @@ h6, .h6 {
   margin: 30px 0 0 0;
   font-size: 18px;
   line-height: 24px;
-  text-align: justify;
   font-family: "MyriadPro-Regular", sans-serif;
   -webkit-border-radius: 1px;
           border-radius: 1px; }
@@ -9120,7 +9121,6 @@ h6, .h6 {
   line-height: 20px; }
   .comment-students-sect .wrap-comment-content p {
     margin: 0;
-    text-align: justify;
     padding: 20px 0; }
   .comment-students-sect .wrap-comment-content span {
     display: block;

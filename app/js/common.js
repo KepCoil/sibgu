@@ -5,8 +5,8 @@ $(function() {
 
 	// Перенос оба меню
 	var 
-	commonMenuContent  = $("#js-main-common-menu").html(),
-	commonAuditContent = $("#js-main-audit-menu").html();
+		commonMenuContent  = $("#js-main-common-menu").html(),
+		commonAuditContent = $("#js-main-audit-menu").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
@@ -55,12 +55,12 @@ $(function() {
 	
 	// Неклибальность верхний ссылок меню общей информации
 	$(".wrap-main-menu >ul >li >a").click(function() {
-		return false
+		return false;
 	});
 
 	// Костыль для пункта меню "Сведенья о доходах..."
-	var ppp = $(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+	$(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
+		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
 
 
@@ -73,7 +73,8 @@ $(function() {
 		
 		if (!$("body").is(".navaslider")) {
 			return;		
-		} else {
+		} 
+		else {
 			var 
 				windowSize = $(window).width(),
 				marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
@@ -109,7 +110,6 @@ $(function() {
 	$("#js-comment-student-slider").owlCarousel({
 		loop: true,
 		items: 2,
-		// slideBy: 2,
 		responsiveClass:true,
 		responsive:{
 			0:{
