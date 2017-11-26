@@ -28,8 +28,8 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/bootstrap-menu-dropdown/js/bootstrap.min.js',
+		// 'app/libs/jquery/dist/jquery.min.js',
+		// 'app/libs/bootstrap-menu-dropdown/js/bootstrap.min.js',
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/equal-heights/jquery.equalheights.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',

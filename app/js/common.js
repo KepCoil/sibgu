@@ -5,8 +5,8 @@ $(function() {
 
 	// Перенос оба меню
 	var 
-		commonMenuContent  = $("#js-main-common-menu").html(),
-		commonAuditContent = $("#js-main-audit-menu").html();
+	commonMenuContent  = $("#js-main-common-menu").html(),
+	commonAuditContent = $("#js-main-audit-menu").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
@@ -31,10 +31,23 @@ $(function() {
 
 
 	// Кнопка
-	var mobileMenuAPI = $("#js-mobile-mmenu").data("mmenu");
-	$("#js-button-mobile-mmenu").click(function() {
+	var 
+		mobileMenuAPI 	  = $("#js-mobile-mmenu").data("mmenu"),
+		buttonMobileMenu = $("#js-button-mobile-mmenu");
+
+	buttonMobileMenu.click(function() {
 		mobileMenuAPI.open();
+		$(this).toggleClass("is-active");
 	});
+	console.log("lol");
+
+	mobileMenuAPI.closePanel($("#js-button-mobile-mmenu").removeClass("is-active"));
+
+	// mobileMenuAPI.bind("closePanel", function() {
+	// 	console.log("lol");
+	// 	buttonMobileMenu.removeClass("is-active");
+ //   });
+
 	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
 
@@ -60,7 +73,7 @@ $(function() {
 
 	// Костыль для пункта меню "Сведенья о доходах..."
 	$(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
 
 
@@ -76,11 +89,11 @@ $(function() {
 		} 
 		else {
 			var 
-				windowSize = $(window).width(),
-				marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-				paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-				targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-				sliderWidth = 0;
+			windowSize = $(window).width(),
+			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+			sliderWidth = 0;
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
