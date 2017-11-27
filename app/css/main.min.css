@@ -4258,7 +4258,7 @@ em.mm-counter + a.mm-next + label.mm-check + a, em.mm-counter + a.mm-next + labe
   /*  opacity: 0.7;*/ }
 
 .hamburger-box {
-  width: 40px;
+  width: 35px;
   height: 24px;
   display: inline-block;
   position: relative; }
@@ -4269,8 +4269,8 @@ em.mm-counter + a.mm-next + label.mm-check + a, em.mm-counter + a.mm-next + labe
   /* margin-top: -2px; */ }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
-  height: 5px;
+  width: 35px;
+  height: 4px;
   background-color: #fff;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -4290,10 +4290,10 @@ em.mm-counter + a.mm-next + label.mm-check + a, em.mm-counter + a.mm-next + labe
   display: block; }
 
 .hamburger-inner::before {
-  top: -12px; }
+  top: -10px; }
 
 .hamburger-inner::after {
-  bottom: -12px; }
+  bottom: -10px; }
 
 /*
    * Spin
@@ -7464,7 +7464,7 @@ h6, .h6 {
       right: 0;
       bottom: 0;
       left: 0;
-      padding: 15px;
+      padding: 5%;
       color: #fff; }
       .news-sect .wrap-item-news .wrap-news-content::before {
         content: '';
@@ -7643,13 +7643,13 @@ h6, .h6 {
 /* END SECTION RECTOR */
 /* SECTION INFOGRAPFICS */
 .infographics-sect {
-  padding-bottom: 10px; }
+  padding-bottom: 0; }
   .infographics-sect .wrap-infographics-items {
     text-align: center; }
   .infographics-sect .wrap-infographics-content {
     text-align: center;
     color: #444;
-    margin-bottom: 40px; }
+    margin-bottom: 50px; }
     .infographics-sect .wrap-infographics-content img {
       width: 170px;
       height: 170px;
@@ -8062,9 +8062,9 @@ h6, .h6 {
     #wrapwrap .rector-sect .wrap-rector-content .signature-rector {
       margin-top: 30px; }
     #wrapwrap .infographics-sect {
-      padding-bottom: 30px; }
+      padding-bottom: 20px; }
       #wrapwrap .infographics-sect .wrap-infographics-content {
-        margin-bottom: 20px; }
+        margin-bottom: 30px; }
     #wrapwrap .navaslider {
       height: 350px; }
       #wrapwrap .navaslider .container {
@@ -8174,11 +8174,6 @@ h6, .h6 {
         padding: 0 5px; }
     #wrapwrap .news-sect .wrap-first-news {
       height: 180px; }
-      #wrapwrap .news-sect .wrap-first-news .wrap-news-content {
-        padding: 15px; }
-        #wrapwrap .news-sect .wrap-first-news .wrap-news-content .news-content time, #wrapwrap .news-sect .wrap-first-news .wrap-news-content .news-content h3 {
-          font-size: 14px;
-          line-height: 17px; }
     #wrapwrap .infographics-sect .wrap-infographics-content img {
       width: 125px;
       height: 125px; }

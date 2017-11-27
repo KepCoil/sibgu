@@ -36,18 +36,18 @@ $(function() {
 		buttonMobileMenu = $("#js-button-mobile-mmenu");
 
 	buttonMobileMenu.click(function() {
-		mobileMenuAPI.open();
-		$(this).toggleClass("is-active");
-	});
-	console.log("lol");
 
-	mobileMenuAPI.closePanel($("#js-button-mobile-mmenu").removeClass("is-active"));
+		mobileMenuAPI.open();
+		// $(this).toggleClass("is-active");
+	});
+	// console.log("lol");
+
+	// mobileMenuAPI.closePanel($("#js-button-mobile-mmenu").removeClass("is-active"));
 
 	// mobileMenuAPI.bind("closePanel", function() {
 	// 	console.log("lol");
 	// 	buttonMobileMenu.removeClass("is-active");
  //   });
-
 	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
 
