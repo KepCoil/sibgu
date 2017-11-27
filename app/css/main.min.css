@@ -7495,7 +7495,7 @@ h6, .h6 {
     .news-sect .wrap-first-news img {
       height: 500px; }
     .news-sect .wrap-first-news .wrap-news-content {
-      padding: 30px; }
+      padding: 5%; }
       .news-sect .wrap-first-news .wrap-news-content .news-content time, .news-sect .wrap-first-news .wrap-news-content .news-content h3 {
         font-size: 28px;
         line-height: 34px; }
