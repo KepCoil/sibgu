@@ -164,6 +164,17 @@ $(function() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
+
+
+		// Для страницы новостей
+		var 
+			windowWidth = $(window).width();
+		if (windowWidth >= 768) {
+			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
+		} else {
+			$(".wrap-cards-news .wrap-news-content").height('auto');
+		}
+
 	};
 	eqH();
 

@@ -214,6 +214,20 @@
 						height: 100%
 						background-size: cover
 						background-position: center top
+	// .owl-dots
+	// 	position: absolute
+	// 	bottom: 5px
+	// 	.owl-dot
+	// 		float: left
+	// 		display: inline-block
+	// 		width: 20px
+	// 		height: 20px
+	// 		margin: 5px
+	// 		border-radius: 50%
+	// 		border: 3px solid $yellow
+	// 		box-shadow: 
+	// 	.owl-dot.active
+	// 		background-color: $yellow
 /* END TARGET NAV and SLIDER */
 
 
@@ -632,6 +646,71 @@
 		text-align: right
 
 /* END FOOTER */
+
+
+/* NEWS PAGE */
+.wrap-cards-news
+	.wrap-card-item-news
+		background-color: $grey-bgc
+		margin: 15px 0
+		.news-img
+			height: 280px
+			width: 100%
+			display: block
+			background-size: cover
+			background-position: center
+	a:hover
+		.wrap-news-content
+			h3
+		.other-link
+	.wrap-news-content
+		display: block
+		padding: 0 15px
+		margin: 30px 0
+		color: $default-color
+		time
+			display: block
+			font-size: 17px
+		h3
+			margin: 15px 0 20px 0
+		p
+			margin: 0
+	.wrap-other-link
+		display: block
+		padding: 0 15px 30px 15px
+		.other-link
+			margin: 0
+			border-bottom: 1px solid $dark-blue
+
+#div_nav_panel
+	padding: 0
+	margin: 30px 0
+	#nav_panel
+		margin: 0
+		padding: 0
+		text-align: center
+		li
+			display: inline-block
+			button
+				display: block
+				width: 40px
+				height: 40px
+				border: 1px solid $dark-line
+				font-family: "OpenSans-SemiBold", sans-serif
+				padding: 0
+				font-size: 18px
+				line-height: 18px
+				margin: 3px
+				transition: background-color $main-trans, color $main-trans
+				cursor: pointer
+				&:hover
+					background-color: $blue
+					color: #fff
+			button.active
+				background-color: $dark-blue
+				color: #fff
+		
+/* END NEWS PAGE */
 
 
 @import "media"
