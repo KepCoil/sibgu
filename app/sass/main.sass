@@ -267,11 +267,6 @@
 				background-position: center
 				position: absolute
 				transition: transform 1.5s ease-out
-			// img
-			// 	transition: transform 1.5s ease-out
-			// 	display: block
-			// 	width: 100%
-			// 	height: 100%
 		.wrap-news-content
 			position: absolute
 			top: 0
@@ -653,34 +648,57 @@
 	.wrap-card-item-news
 		background-color: $grey-bgc
 		margin: 15px 0
-		.news-img
+		.wrap-news-img
+			overflow: hidden
 			height: 280px
+			display: block
+			position: relative
+		.news-img
 			width: 100%
+			height: 100%
 			display: block
 			background-size: cover
 			background-position: center
-	a:hover
-		.wrap-news-content
-			h3
-		.other-link
-	.wrap-news-content
-		display: block
-		padding: 0 15px
-		margin: 30px 0
-		color: $default-color
-		time
+			transition: transform 1.5s ease-out
+		a
 			display: block
-			font-size: 17px
-		h3
-			margin: 15px 0 20px 0
-		p
-			margin: 0
-	.wrap-other-link
-		display: block
-		padding: 0 15px 30px 15px
+			overflow: hidden
+			border: none
+			&:hover
+				.news-img
+					transform: scale(1.08)
+				.wrap-news-content
+					h3
+						border-bottom: 1px solid $default-color
 		.other-link
-			margin: 0
-			border-bottom: 1px solid $dark-blue
+		.wrap-news-content
+			display: block
+			padding: 0 15px
+			margin: 30px 0
+			color: $default-color
+			time
+				display: block
+				font-size: 17px
+			.wrap-news-title
+				display: block
+				margin: 15px 0 20px 0
+				h3
+					display: inline
+					border-bottom: 1px solid transparent
+					transition: border-color $main-trans
+			p
+				margin: 0
+		.wrap-other-link
+			display: block
+			padding: 0 15px 30px 15px
+			&:hover
+				.other-link
+					border-color: transparent
+			.other-link
+				margin: 0
+				transition: border-color $main-trans
+				border-bottom: 1px solid $dark-blue
+				font-size: 20px
 
 #div_nav_panel
 	padding: 0
