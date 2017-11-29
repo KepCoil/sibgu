@@ -7868,8 +7868,6 @@ h6, .h6 {
       -webkit-transform: scale(1.08);
           -ms-transform: scale(1.08);
               transform: scale(1.08); }
-    .wrap-cards-news .wrap-card-item-news a:hover .wrap-news-content h3 {
-      border-bottom: 1px solid #212529; }
   .wrap-cards-news .wrap-card-item-news .wrap-news-content {
     display: block;
     padding: 0 15px;
@@ -7887,6 +7885,8 @@ h6, .h6 {
         -webkit-transition: border-color 0.25s ease-out;
         -o-transition: border-color 0.25s ease-out;
         transition: border-color 0.25s ease-out; }
+        .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title h3:hover {
+          border-bottom: 1px solid #212529; }
     .wrap-cards-news .wrap-card-item-news .wrap-news-content p {
       margin: 0; }
   .wrap-cards-news .wrap-card-item-news .wrap-other-link {
@@ -7924,7 +7924,9 @@ h6, .h6 {
         -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
         -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
         transition: background-color 0.25s ease-out, color 0.25s ease-out;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-border-radius: 0;
+                border-radius: 0; }
         #div_nav_panel #nav_panel li button:hover {
           background-color: #314177;
           color: #fff; }

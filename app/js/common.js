@@ -32,8 +32,8 @@ $(function() {
 
 	// Кнопка
 	var 
-		mobileMenuAPI 	  = $("#js-mobile-mmenu").data("mmenu"),
-		buttonMobileMenu = $("#js-button-mobile-mmenu");
+	mobileMenuAPI 	  = $("#js-mobile-mmenu").data("mmenu"),
+	buttonMobileMenu = $("#js-button-mobile-mmenu");
 
 	buttonMobileMenu.click(function() {
 
@@ -48,7 +48,7 @@ $(function() {
 	// 	console.log("lol");
 	// 	buttonMobileMenu.removeClass("is-active");
  //   });
-	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
+ /* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
 
 
@@ -110,6 +110,43 @@ $(function() {
 	mainSliderResize();
 
 
+	$(window).scroll(function(){
+
+		if (($("body").is(".wrap-inner-table-menu"))) {
+			console.log("1");
+			return;
+		} 
+		else {
+			var
+				heightHeader = $(".main-head").outerHeight() - $(".main-menu").outerHeight(),
+				heightMenu   = $(".main-menu").outerHeight(),
+				top 			 = $(this).scrollTop();;
+			
+			if (( heightHeader - top) <= heightMenu) {
+				$(".main-menu").css({
+					'top': '0',
+					'position': 'fixed',
+					'width': '100%',
+					'height': heightMenu,
+					'z-index': 5,
+					'opacity': 0.8
+				});
+			}
+			else if (top < (heightHeader + heightMenu)  && top > 0) {
+				$('.main-menu').css({
+					'top': 'auto',
+					'position': 'static',
+					'opacity': 1
+				});
+			}
+			// else if (top < heightMenu) {
+			// 	$('.main-menu').css({'top':'auto'})
+			// }
+		}
+     
+  });
+
+
 	// Слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
 		loop: true,
@@ -168,7 +205,7 @@ $(function() {
 
 		// Для страницы новостей
 		var 
-			windowWidth = $(window).width();
+		windowWidth = $(window).width();
 		if (windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
 		} else {

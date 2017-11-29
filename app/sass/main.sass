@@ -667,9 +667,6 @@
 			&:hover
 				.news-img
 					transform: scale(1.08)
-				.wrap-news-content
-					h3
-						border-bottom: 1px solid $default-color
 		.other-link
 		.wrap-news-content
 			display: block
@@ -686,6 +683,8 @@
 					display: inline
 					border-bottom: 1px solid transparent
 					transition: border-color $main-trans
+					&:hover
+						border-bottom: 1px solid $default-color
 			p
 				margin: 0
 		.wrap-other-link
@@ -721,6 +720,7 @@
 				margin: 3px
 				transition: background-color $main-trans, color $main-trans
 				cursor: pointer
+				border-radius: 0
 				&:hover
 					background-color: $blue
 					color: #fff
