@@ -7419,7 +7419,7 @@ h6, .h6 {
             height: 100%;
             -webkit-background-size: cover;
                     background-size: cover;
-            background-position: center top; }
+            background-position: top center; }
 
 /* END TARGET NAV and SLIDER */
 /* SECTION NEWS */
@@ -7456,7 +7456,7 @@ h6, .h6 {
         height: 100%;
         -webkit-background-size: cover;
                 background-size: cover;
-        background-position: center;
+        background-position: top center;
         position: absolute;
         -webkit-transition: -webkit-transform 1.5s ease-out;
         transition: -webkit-transform 1.5s ease-out;
@@ -7854,7 +7854,7 @@ h6, .h6 {
     display: block;
     -webkit-background-size: cover;
             background-size: cover;
-    background-position: center;
+    background-position: top center;
     -webkit-transition: -webkit-transform 1.5s ease-out;
     transition: -webkit-transform 1.5s ease-out;
     -o-transition: transform 1.5s ease-out;
@@ -7943,7 +7943,7 @@ h6, .h6 {
   .wrap-mega-news .wrap-mega-img .mega-img {
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: top center;
     -webkit-background-size: cover;
             background-size: cover;
     position: absolute; }
