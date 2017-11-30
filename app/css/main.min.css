@@ -7489,7 +7489,7 @@ h6, .h6 {
           font-size: 18px;
           line-height: 21px;
           font-family: "MyriadPro-Semibold", sans-serif;
-          text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.9);
+          text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
           margin: 0; }
         .news-sect .wrap-item-news .wrap-news-content .news-content time {
           top: 0; }
@@ -7935,6 +7935,66 @@ h6, .h6 {
         color: #fff; }
 
 /* END NEWS PAGE */
+/* MEGA NEWS PAGE */
+.wrap-mega-news .wrap-mega-img {
+  height: 800px;
+  position: relative;
+  overflow: hidden; }
+  .wrap-mega-news .wrap-mega-img .mega-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    position: absolute; }
+    .wrap-mega-news .wrap-mega-img .mega-img::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.2);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+  .wrap-mega-news .wrap-mega-img .container {
+    position: relative;
+    height: 100%;
+    padding: 0; }
+  .wrap-mega-news .wrap-mega-img .wrap-mega-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 30px 15px; }
+    .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
+        font-family: "MyriadPro-Semibold", sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+        position: absolute; }
+      .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time {
+        top: 0; }
+      .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
+        bottom: 0;
+        margin-bottom: 0; }
+
+.wrap-mega-news .wrap-mega-content {
+  margin-top: 20px; }
+
+/* END MEGA NEWS PAGE */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
@@ -8068,7 +8128,12 @@ h6, .h6 {
       font-size: 18px; }
     #wrapwrap .rector-sect .wrap-rector-content .signature-rector {
       font-size: 18px;
-      margin-top: 15px; } }
+      margin-top: 15px; }
+  #wrapwrap .wrap-mega-news .wrap-mega-img {
+    height: 600px; }
+    #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
+      font-size: 36px;
+      line-height: 44px; } }
 
 @media only screen and (max-width: 1260px) and (min-width: 992px) {
   #wrapwrap .pa-sect .wrap-pa-item img {
@@ -8197,7 +8262,14 @@ h6, .h6 {
     display: none; }
   #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button.active {
     display: block;
-    margin: 0 0 0 3px; } }
+    margin: 0 0 0 3px; }
+  #wrapwrap .wrap-mega-news .wrap-mega-img {
+    height: 500px; }
+    #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content {
+      padding: 15px; }
+      #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
+        font-size: 24px;
+        line-height: 32px; } }
 
 @media only screen and (max-width: 620px) {
   #wrapwrap .head-content .main-title-wrap {
@@ -8259,7 +8331,12 @@ h6, .h6 {
     font-size: 15px; }
   #wrapwrap .rector-sect .wrap-rector-img {
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+  #wrapwrap .wrap-mega-news .wrap-mega-img {
+    height: 350px; }
+    #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
+      font-size: 18px;
+      line-height: 24px; } }
 
 @media only screen and (max-width: 375px) {
   #wrapwrap .news-sect .col-item-news {

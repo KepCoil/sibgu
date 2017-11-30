@@ -67,7 +67,7 @@ $(function() {
 	});
 	
 	// Неклибальность верхний ссылок меню общей информации
-	$(".wrap-main-menu >ul >li >a").click(function() {
+	$(".wrap-main-menu #js-main-common-menu >li >a").click(function() {
 		return false;
 	});
 
@@ -110,41 +110,41 @@ $(function() {
 	mainSliderResize();
 
 
-	$(window).scroll(function(){
+	// $(window).scroll(function(){
 
-		if (($("body").is(".wrap-inner-table-menu"))) {
-			console.log("1");
-			return;
-		} 
-		else {
-			var
-				heightHeader = $(".main-head").outerHeight() - $(".main-menu").outerHeight(),
-				heightMenu   = $(".main-menu").outerHeight(),
-				top 			 = $(this).scrollTop();;
+	// 	if (($("body").is(".wrap-inner-table-menu"))) {
+	// 		console.log("1");
+	// 		return;
+	// 	} 
+	// 	else {
+	// 		var
+	// 			heightHeader = $(".main-head").outerHeight() - $(".main-menu").outerHeight(),
+	// 			heightMenu   = $(".main-menu").outerHeight(),
+	// 			top 			 = $(this).scrollTop();;
 			
-			if (( heightHeader - top) <= heightMenu) {
-				$(".main-menu").css({
-					'top': '0',
-					'position': 'fixed',
-					'width': '100%',
-					'height': heightMenu,
-					'z-index': 5,
-					'opacity': 0.8
-				});
-			}
-			else if (top < (heightHeader + heightMenu)  && top > 0) {
-				$('.main-menu').css({
-					'top': 'auto',
-					'position': 'static',
-					'opacity': 1
-				});
-			}
-			// else if (top < heightMenu) {
-			// 	$('.main-menu').css({'top':'auto'})
-			// }
-		}
+	// 		if (( heightHeader - top) <= heightMenu) {
+	// 			$(".main-menu").css({
+	// 				'top': '0',
+	// 				'position': 'fixed',
+	// 				'width': '100%',
+	// 				'height': heightMenu,
+	// 				'z-index': 5,
+	// 				'opacity': 0.8
+	// 			});
+	// 		}
+	// 		else if (top < (heightHeader + heightMenu)  && top > 0) {
+	// 			$('.main-menu').css({
+	// 				'top': 'auto',
+	// 				'position': 'static',
+	// 				'opacity': 1
+	// 			});
+	// 		}
+	// 		else if (top < heightMenu) {
+	// 			$('.main-menu').css({'top':'auto'})
+	// 		}
+	// 	}
      
-  });
+ //  });
 
 
 	// Слайдер на главной странице

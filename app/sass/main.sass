@@ -293,7 +293,7 @@
 					font-size: 18px
 					line-height: 21px
 					font-family: "MyriadPro-Semibold", sans-serif
-					text-shadow: 1px 3px 3px rgba(0,0,0,.9)
+					text-shadow: 3px 3px 3px rgba(0,0,0,.9)
 					margin: 0
 				time
 					top: 0
@@ -729,6 +729,67 @@
 				color: #fff
 		
 /* END NEWS PAGE */
+
+
+/* MEGA NEWS PAGE */
+.wrap-mega-news
+	.wrap-mega-img
+		height: 800px
+		position: relative
+		overflow: hidden
+		.mega-img
+			width: 100%
+			height: 100%
+			background-position: center
+			background-size: cover
+			position: absolute
+			&::before
+				content: ''
+				background-color: rgba(0, 0, 0, 0.2)
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				position: absolute
+		.container
+			position: relative
+			height: 100%
+			padding: 0
+		.wrap-mega-img-content
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			color: #fff
+			padding: 30px 15px
+			.mega-img-content
+				position: relative
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				time, .mega-title
+					font-family: "MyriadPro-Semibold", sans-serif
+					font-size: 40px
+					line-height: 48px
+					text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9)
+					position: absolute
+				time
+					top: 0
+				.mega-title
+					bottom: 0
+					margin-bottom: 0
+	.wrap-mega-content
+		margin-top: 20px
+
+/* END MEGA NEWS PAGE */
 
 
 @import "media"
