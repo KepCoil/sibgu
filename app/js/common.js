@@ -66,34 +66,33 @@ $(function() {
 		$(this).removeClass("droplist-open");
 	});
 	
-	// Неклибальность верхний ссылок меню общей информации
-	$(".wrap-main-menu #js-main-common-menu >li >a").click(function() {
+	// Неклибальность ссылок меню на внутренних страницах
+	$(".wrap-main-menu #js-main-common-menu >li.droplist >a").click(function() {
 		return false;
 	});
 
+
 	// Костыль для пункта меню "Сведенья о доходах..."
 	$(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
 
-
-
-
-	/* JS ТОЛЬКО ДЛЯ ГЛАВНОЙ СТРАНИЦЫ */
 
 	// Функция пересчета ширины слайдера в зависимости от ширины экрана
 	function mainSliderResize() {
+
+		var searchSlider = $("div").is(".navaslider");
 		
-		if (!$("body").is(".navaslider")) {
+		if (!searchSlider) {
 			return;		
 		} 
 		else {
 			var 
-			windowSize = $(window).width(),
-			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-			sliderWidth = 0;
+				windowSize = $(window).width(),
+				marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+				paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+				targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+				sliderWidth = 0;
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
@@ -110,41 +109,41 @@ $(function() {
 	mainSliderResize();
 
 
-	// $(window).scroll(function(){
+	function getTopHeightMenu() {
+		var 
+			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
 
-	// 	if (($("body").is(".wrap-inner-table-menu"))) {
-	// 		console.log("1");
+		$(".main-menu.inner-menu").css({'top': heightHeader});
+
+	}
+
+	getTopHeightMenu();
+
+
+	// Функция для фиксирования меню на внутренних страниц при прокрутке
+	// function fixTableMenuScrolling() {
+
+	// 	var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
+
+	// 	if (!searchInnerMenu) {
 	// 		return;
 	// 	} 
 	// 	else {
+
 	// 		var
-	// 			heightHeader = $(".main-head").outerHeight() - $(".main-menu").outerHeight(),
-	// 			heightMenu   = $(".main-menu").outerHeight(),
-	// 			top 			 = $(this).scrollTop();;
-			
-	// 		if (( heightHeader - top) <= heightMenu) {
-	// 			$(".main-menu").css({
-	// 				'top': '0',
-	// 				'position': 'fixed',
-	// 				'width': '100%',
-	// 				'height': heightMenu,
-	// 				'z-index': 5,
-	// 				'opacity': 0.8
-	// 			});
+	// 			menuWrap     = $(".main-menu.inner-menu"),
+	// 			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
+	// 			// heightMenu   = $(".main-menu").outerHeight(),
+	// 			top 			 = $(window).scrollTop();
+
+	// 		if (top + 0 < heightHeader) {
+	// 			menuWrap.css('top', (heightHeader - top));
+	// 		} else {
+	// 			menuWrap.css('top', 0);
 	// 		}
-	// 		else if (top < (heightHeader + heightMenu)  && top > 0) {
-	// 			$('.main-menu').css({
-	// 				'top': 'auto',
-	// 				'position': 'static',
-	// 				'opacity': 1
-	// 			});
-	// 		}
-	// 		else if (top < heightMenu) {
-	// 			$('.main-menu').css({'top':'auto'})
-	// 		}
+
 	// 	}
-     
- //  });
+	// };
 
 
 	// Слайдер на главной странице
@@ -204,8 +203,8 @@ $(function() {
 
 
 		// Для страницы новостей
-		var 
-		windowWidth = $(window).width();
+		var windowWidth = $(window).width();
+		
 		if (windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
 		} else {
@@ -216,7 +215,7 @@ $(function() {
 	eqH();
 
 
-	// Вызов функций при ресайзе экрана 
+	// Функции при ресайзе экрана
 	$(window).resize(function() {
 		eqH();
 		mainSliderResize();
@@ -224,6 +223,9 @@ $(function() {
 	});
 
 
-	/* JS ТОЛЬКО ДЛЯ ГЛАВНОЙ СТРАНИЦЫ */
+	// Функции при скролле
+	$(window).scroll(function() {
+		fixTableMenuScrolling();
+	});
 
 });

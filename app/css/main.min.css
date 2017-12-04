@@ -7002,7 +7002,7 @@ h6, .h6 {
     .other-link a:hover, .other-link a:focus {
       border-color: transparent; }
 
-.main-footer {
+footer {
   background-color: #314177;
   color: #fff;
   margin-top: 20px; }
