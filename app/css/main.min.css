@@ -7002,7 +7002,7 @@ h6, .h6 {
     .other-link a:hover, .other-link a:focus {
       border-color: transparent; }
 
-footer {
+#wrapwrap footer {
   background-color: #314177;
   color: #fff;
   margin-top: 20px; }
@@ -7751,16 +7751,16 @@ footer {
 
 /* END SECTION COMPANY - PARTNERS */
 /* FOOTER */
-.main-footer a {
+#wrapwrap footer a {
   color: #fff;
   border-bottom: 1px solid #fff;
   -webkit-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out; }
-  .main-footer a:hover {
+  #wrapwrap footer a:hover {
     border-color: transparent; }
 
-.main-footer ul {
+#wrapwrap footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
