@@ -121,29 +121,29 @@ $(function() {
 
 
 	// Функция для фиксирования меню на внутренних страниц при прокрутке
-	// function fixTableMenuScrolling() {
+	function fixTableMenuScrolling() {
 
-	// 	var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
+		var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
 
-	// 	if (!searchInnerMenu) {
-	// 		return;
-	// 	} 
-	// 	else {
+		if (!searchInnerMenu) {
+			return;
+		} 
+		else {
 
-	// 		var
-	// 			menuWrap     = $(".main-menu.inner-menu"),
-	// 			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
-	// 			// heightMenu   = $(".main-menu").outerHeight(),
-	// 			top 			 = $(window).scrollTop();
+			var
+				menuWrap     = $(".main-menu.inner-menu"),
+				heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
+				// heightMenu   = $(".main-menu").outerHeight(),
+				top 			 = $(window).scrollTop();
 
-	// 		if (top + 0 < heightHeader) {
-	// 			menuWrap.css('top', (heightHeader - top));
-	// 		} else {
-	// 			menuWrap.css('top', 0);
-	// 		}
+			if (top + 0 < heightHeader) {
+				menuWrap.css('top', (heightHeader - top));
+			} else {
+				menuWrap.css('top', 0);
+			}
 
-	// 	}
-	// };
+		}
+	};
 
 
 	// Слайдер на главной странице
