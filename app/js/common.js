@@ -145,6 +145,8 @@ $(function() {
 		}
 	};
 
+	fixTableMenuScrolling();
+
 
 	// Слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
@@ -220,6 +222,7 @@ $(function() {
 		eqH();
 		mainSliderResize();
 		enablePaSlider();
+		fixTableMenuScrolling();
 	});
 
 

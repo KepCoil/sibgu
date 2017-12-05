@@ -804,5 +804,77 @@
 /* END COMMON NEWS PAGE */
 
 
+/* EVENTS LIST PAGE */
+.wrap-events-list
+	.wrap-events-category
+		background-color: $grey-bgc
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+		li
+			padding: 16px 20px
+			border-bottom: 1px solid $dark-line
+			&:last-child
+				border-bottom: none
+			a
+				border: none
+				color: $blue
+				text-transform: uppercase
+				position: relative
+				display: block
+				font-size: 17px
+				font-family: "OpenSans-Semibold", sans-serif
+				span
+					display: inline-block
+				i
+					// position: absolute
+					// right: 0
+					// font-size: 24px
+	.wrap-events-date-filter
+		border-bottom: 1px solid $dark-line
+		margin-bottom: 30px
+		ul
+			list-style-type: none
+			margin: 0 0 15px 0
+			padding: 0
+			margin-bottom: 10px
+			li
+				display: inline-block
+				margin-right: 25px
+			li.active
+				a
+					color: $blue
+			a
+				border: none
+				text-transform: lowercase 
+				color: $default-color
+				font-size: 16px
+				&:hover
+					color: $blue
+	.wrap-events-content
+		.table-events
+			th
+				text-transform: uppercase
+				font-family: "OpenSans-Semibold", sans-serif
+				font-weight: normal
+			td
+				padding: 20px 8px
+			.title-width-150
+				width: 160px
+			.title-width-200
+				width: 220px
+			time
+				display: block
+			.event-title
+				a
+					color: $default-color
+					border-color: $default-color
+					&:hover
+						border-color: transparent
+
+/* END EVENTS LIST PAGE */
+
+
 @import "media"
 
