@@ -27,8 +27,7 @@
 </head>
 
 <body id="wrapwrap" class="main-site-sibgu">
-
-
+	
 	<header class="main-head">
 
 		<div class="top-line">
