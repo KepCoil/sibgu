@@ -813,18 +813,26 @@
 			margin: 0
 			padding: 0
 		li
-			padding: 16px 20px
 			border-bottom: 1px solid $dark-line
 			&:last-child
 				border-bottom: none
+			&.active
+				a
+					background-color: $blue
+					color: #fff
 			a
 				border: none
 				color: $blue
+				padding: 16px 20px
 				text-transform: uppercase
 				position: relative
 				display: block
 				font-size: 17px
 				font-family: "OpenSans-Semibold", sans-serif
+				transition: background-color $main-trans
+				&:hover
+					background-color: $blue
+					color: #fff
 				span
 					display: inline-block
 				i
@@ -838,40 +846,49 @@
 			list-style-type: none
 			margin: 0 0 15px 0
 			padding: 0
-			margin-bottom: 10px
+			margin-bottom: 15px
 			li
 				display: inline-block
-				margin-right: 25px
+				margin-right: 12px
 			li.active
 				a
-					color: $blue
+					color: #fff
+					background-color: $blue
 			a
 				border: none
 				text-transform: lowercase 
 				color: $default-color
 				font-size: 16px
+				padding: 4px 8px
+				transition: background-color $main-trans
 				&:hover
-					color: $blue
+					background-color: $blue
+					color: #fff
 	.wrap-events-content
 		.table-events
-			th
-				text-transform: uppercase
-				font-family: "OpenSans-Semibold", sans-serif
-				font-weight: normal
-			td
-				padding: 20px 8px
-			.title-width-150
-				width: 160px
-			.title-width-200
-				width: 220px
-			time
-				display: block
-			.event-title
-				a
-					color: $default-color
-					border-color: $default-color
-					&:hover
-						border-color: transparent
+			thead
+				th
+					text-transform: uppercase
+					font-family: "OpenSans-Semibold", sans-serif
+					font-weight: normal
+				th:first-child
+					width: 150px
+				th.fix-width-180
+					width: 180px
+			tbody
+				td
+					padding: 16px 8px
+				time
+					display: block
+					span:first-child
+						margin-bottom: 5px
+						display: inline-block
+				.event-title
+					a
+						color: $default-color
+						border-color: $default-color
+						&:hover
+							border-color: transparent
 
 /* END EVENTS LIST PAGE */
 
