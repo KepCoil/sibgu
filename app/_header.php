@@ -27,7 +27,9 @@
 			<div class="res-links-wrap">
 				<div class="res-links">
 					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle res-links-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<!-- id="dropdownMenu1" -->
+						<!-- <button class="btn btn-default dropdown-toggle res-links-btn" type="button"  id="js-button-info-resources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> -->
+						<button id="js-button-info-resources" class="res-links-btn" type="button">
 							Информационные ресурсы
 							<span class="caret"></span>
 						</button>

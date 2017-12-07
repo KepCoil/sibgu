@@ -7116,7 +7116,7 @@ h6, .h6 {
   background-color: transparent; }
 
 #wrap {
-  margin: 120px 0 30px 0; }
+  margin: 30px 0 30px 0; }
 
 .main-menu {
   background-color: #253666;
@@ -7199,10 +7199,8 @@ h6, .h6 {
         .main-menu .wrap-inner-table-menu .row-inner-menu > li > a {
           padding: 10px 15px; }
 
-.main-menu.inner-menu {
-  position: fixed;
-  width: 100%;
-  z-index: 5; }
+.wrap-info-resources.mm-menu.mm-offcanvas {
+  z-index: 999; }
 
 /* HEADER */
 #wrapwrap .main-head {
