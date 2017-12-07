@@ -2,11 +2,11 @@
 <?php include("_header.php") ?>
 <?php include("_inner-menu.php") ?>
 
-<main class="home-page-content">
+<main>
 	<div id="wrap">
 		<div class="container">
 			<div class="wrap-events-list">
-				<h2 class="inner-title">События</h2>
+				<h2 class="inner-title">Все мероприятия</h2>
 				<div class="row">
 					<div class="col-lg-19 col-md-18">
 						<div class="wrap-events-date-filter">
@@ -25,7 +25,6 @@
 											<th>Дата</th>
 											<th>Мероприятия</th>
 											<th class="fix-width-180">Место проведения</th>
-											<th class="fix-width-180">Категория</th>
 											<th class="fix-width-180">Контакты</th>
 										</tr>
 									</thead>
@@ -37,7 +36,6 @@
 											</td>
 											<td class="event-title"><a href="#">Краевой форум одаренных детей Красноярского края «Поколение НТИ»</a></td>
 											<td>пр. Мира 82, ауд. 338</td>
-											<td>Культура</td>
 											<td>+7 (391) 212-26-55</td>
 										</tr>
 										<tr>
@@ -47,7 +45,6 @@
 											</td>
 											<td class="event-title"><a href="#">Мастер-класс для абитуриентов по направлению «Биотехнология»</a></td>
 											<td>пр. Мира 82, ауд. 338 </td>
-											<td>Иные мероприятия</td>
 											<td>+7 (391) 212-26-55</td>
 										</tr>
 										<tr>
@@ -57,7 +54,6 @@
 											</td>
 											<td class="event-title"><a href="#">ХII Региональная научно-практическая конференция «Основные тенденции развития Российского законодательства»</a></td>
 											<td>пр. Мира 82, ауд. 338 </td>
-											<td>Иные мероприятия</td>
 											<td>+7 (391) 212-26-55</td>
 										</tr>
 										<tr>
@@ -67,7 +63,6 @@
 											</td>
 											<td class="event-title"><a href="#">Творческий конкурс «Бессмертные идеи», посвященный Всемирному дню философии</a></td>
 											<td>пр. Мира 82, ауд. 338 </td>
-											<td>Иные мероприятия</td>
 											<td>+7 (391) 212-26-55</td>
 										</tr>
 									</tbody>

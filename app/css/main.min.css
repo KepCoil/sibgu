@@ -6998,13 +6998,9 @@ h6, .h6 {
     .other-link a:hover, .other-link a:focus {
       border-color: transparent; }
 
-#wrapwrap footer {
-  background-color: #314177;
-  color: #fff;
-  margin-top: 20px; }
-
 .inner-title {
-  font-size: 30px;
+  font-size: 28px;
+  line-height: 34px;
   text-transform: uppercase;
   font-family: "OpenSans-Semibold", sans-serif;
   color: #314177;
@@ -7120,7 +7116,7 @@ h6, .h6 {
   background-color: transparent; }
 
 #wrap {
-  margin: 120px 0 40px 0; }
+  margin: 120px 0 30px 0; }
 
 .main-menu {
   background-color: #253666;
@@ -7755,19 +7751,24 @@ h6, .h6 {
 
 /* END SECTION COMPANY - PARTNERS */
 /* FOOTER */
-#wrapwrap footer a {
+footer {
+  background-color: #314177;
   color: #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out; }
-  #wrapwrap footer a:hover {
-    border-color: transparent; }
-
-#wrapwrap footer ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
+  margin-top: 20px; }
+  footer a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    margin-top: 20px; }
+    footer a:hover, footer a:focus, footer a:active {
+      border-color: transparent;
+      color: #fff; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
 
 .foot-first-level {
   padding: 50px 0 20px 0; }
@@ -7820,9 +7821,11 @@ h6, .h6 {
     text-transform: uppercase;
     font-family: "OpenSans-Semibold", sans-serif; }
     .foot-first-level .wrap-foot-contancts .foot-feedback .button-light-blue:hover, .foot-first-level .wrap-foot-contancts .foot-feedback .button-light-blue:focus {
-      background-color: #5794cf; }
+      background-color: #5794cf;
+      color: #fff; }
     .foot-first-level .wrap-foot-contancts .foot-feedback .button-light-blue:active {
-      background-color: #3b82c7; }
+      background-color: #3b82c7;
+      color: #fff; }
   .foot-first-level .wrap-foot-contancts .foot-social-list {
     margin: 0;
     padding: 0; }
@@ -7908,7 +7911,7 @@ h6, .h6 {
 
 #div_nav_panel {
   padding: 0;
-  margin: 30px 0; }
+  margin: 10px 0; }
   #div_nav_panel #nav_panel {
     margin: 0;
     padding: 0;
@@ -7943,7 +7946,8 @@ h6, .h6 {
 .wrap-mega-news .wrap-mega-img {
   height: 800px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  top: -40px; }
   .wrap-mega-news .wrap-mega-img .mega-img {
     width: 100%;
     height: 100%;
@@ -8000,8 +8004,11 @@ h6, .h6 {
 
 /* END MEGA NEWS PAGE */
 /* COMMON NEWS PAGE */
+.common-news .inner-title {
+  text-transform: none; }
+
 .common-news .date-public {
-  font-size: 18px;
+  font-size: 17px;
   display: block;
   margin-bottom: 30px;
   color: #555;
@@ -8095,6 +8102,27 @@ h6, .h6 {
     border-color: transparent; }
 
 /* END EVENTS LIST PAGE */
+/* EVENT PAGE */
+.wrap-event-content .inner-title {
+  text-transform: none; }
+
+.wrap-event-content .event-category {
+  font-size: 17px;
+  display: block;
+  margin-bottom: 30px;
+  color: #555;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px; }
+
+.wrap-event-content .event-date,
+.wrap-event-content .event-location,
+.wrap-event-content .event-contact {
+  margin-bottom: 10px; }
+
+.wrap-event-content .event-text {
+  margin: 20px 0; }
+
+/* END EVENT PAGE */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
@@ -8253,7 +8281,7 @@ h6, .h6 {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
   #wrapwrap #wrap {
-    margin-top: 40px; }
+    margin-top: 30px; }
   #wrapwrap .top-line {
     padding: 5px 0; }
     #wrapwrap .top-line .flag-links-wrap {
@@ -8358,6 +8386,13 @@ h6, .h6 {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  #wrapwrap .main-sect h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px; }
+  #wrapwrap .inner-title {
+    font-size: 20px;
+    line-height: 24px; }
   #wrapwrap .foot-first-level .second-foot-line .foot-contacts-content-col-2 {
     margin-top: 0; }
   #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button {

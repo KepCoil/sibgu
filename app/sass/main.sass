@@ -550,18 +550,22 @@
 
 
 /* FOOTER */
-#wrapwrap
-	footer
-		a
+footer
+	background-color: $blue
+	color: #fff
+	margin-top: 20px
+	a
+		color: #fff
+		border-bottom: 1px solid #fff
+		transition: all $main-trans
+		margin-top: 20px
+		&:hover, &:focus, &:active
+			border-color: transparent
 			color: #fff
-			border-bottom: 1px solid #fff
-			transition: all $main-trans
-			&:hover
-				border-color: transparent
-		ul
-			margin: 0
-			padding: 0
-			list-style-type: none
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
 
 .foot-first-level
 	padding: 50px 0 20px 0
@@ -616,12 +620,13 @@
 				border: 2px solid lighten(#4f8fcd, 5%)
 				border-radius: 2px
 				text-transform: uppercase
-				// font-size: 16px
 				font-family: "OpenSans-Semibold", sans-serif
 				&:hover, &:focus
 					background-color: lighten(#4f8fcd, 2%)
+					color: #fff
 				&:active
 					background-color: darken(#4f8fcd, 5%)
+					color: #fff
 		.foot-social-list
 			margin: 0
 			padding: 0
@@ -702,7 +707,7 @@
 
 #div_nav_panel
 	padding: 0
-	margin: 30px 0
+	margin: 10px 0
 	#nav_panel
 		margin: 0
 		padding: 0
@@ -738,6 +743,7 @@
 		height: 800px
 		position: relative
 		overflow: hidden
+		top: -40px
 		.mega-img
 			width: 100%
 			height: 100%
@@ -794,8 +800,10 @@
 
 /* COMMON NEWS PAGE */
 .common-news
+	.inner-title
+		text-transform: none
 	.date-public
-		font-size: 18px
+		font-size: 17px
 		display: block
 		margin-bottom: 30px
 		color: #555
@@ -889,9 +897,29 @@
 						border-color: $default-color
 						&:hover
 							border-color: transparent
-
 /* END EVENTS LIST PAGE */
 
 
-@import "media"
+/* EVENT PAGE */
+.wrap-event-content
+	.inner-title
+		text-transform: none
+	.event-category
+		font-size: 17px
+		display: block
+		margin-bottom: 30px
+		color: #555
+		border-bottom: 1px solid #aaa
+		padding-bottom: 10px
+	.event-date,
+	.event-location,
+	.event-contact
+		margin-bottom: 10px
+	.event-text
+		margin: 20px 0
 
+/* END EVENT PAGE */
+
+
+
+@import "media"

@@ -2,7 +2,7 @@
 <?php include("_header.php") ?>
 <?php include("_inner-menu.php") ?>
 
-<main class="home-page-content">
+<main>
 	<div id="wrap">
 		<div class="container">
 			<h2 class="inner-title">Официальные документы</h2>

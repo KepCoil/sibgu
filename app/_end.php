@@ -1,3 +1,5 @@
+
+
 <div id="js-mobile-mmenu" class="mobile-mmenu">
 	<ul>
 		<li id="js-item-main-common-menu" class="droplist">
@@ -25,6 +27,7 @@
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="libs/bootstrap-table/bootstrap-table.css">
 <!--  -->
 
 <script src="js/libs.min.js"></script>

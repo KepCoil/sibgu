@@ -1,51 +1,10 @@
 <?php include("_head.php") ?>
 <?php include("_header.php") ?>
+<?php include("_index-main-menu.php") ?>
+<?php include("_navaslider.php") ?>
 
 
-<div class="navaslider">
-	<div class="container">
-		<div class="wrap-navaslider-content clearfix">
-			<div class="dekstop-target-menu">
-				<ul id="js-main-audit-menu" class="wrap-target-menu">
-					<li>
-						<a href="#"><i class="fa fa-user" aria-hidden="true"></i>Абитуриенту</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-book" aria-hidden="true"></i>Студенту</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Школьнику</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-graduation-cap icon-academec" aria-hidden="true"></i> Выпускнику</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Ученому</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a>
-					</li>
-				</ul>
-			</div>
-			<div id="js-main-slider" class="main-slider owl-carousel">
-				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider-1.jpg);"></div>
-					<!-- <img src="img/slider/slider-1.jpg" alt="Слайд 1"> -->
-				</div>
-				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider-2.jpg);"></div>
-					<!-- <img src="img/slider/slider-2.jpg" alt="Слайд 2"> -->
-				</div>
-				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider3.jpg);"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<main class="home-page-content">
+<main>
 
 	<section class="main-sect white-sect news-sect">
 		<div class="container">
@@ -160,7 +119,7 @@
 
 	<section class="main-sect grey-sect events-sect">
 		<div class="container">
-			<h2>Ближайщие события</h2>
+			<h2>Ближайщие мероприятия</h2>
 			<div class="row">
 				<div class="col-xxlg-20 col-xxlg-offset-2 col-xlg-22 col-xlg-offset-1">
 					<div class="col-md-6 col-sm-12 col-xs-24">
@@ -234,7 +193,7 @@
 			</div>
 
 			<span class="other-link">
-				<a href="#">Календарь событий</a>
+				<a href="#">Все мероприятия</a>
 				<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 			</span>
 
