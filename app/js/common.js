@@ -1,5 +1,10 @@
 $(function() {
 
+	if(document.all && !document.addEventListener){
+		console.log("ie");
+		alert("ie");
+	}
+
 
 	/* МОБИЛЬНОЕ МЕНЮ */
 

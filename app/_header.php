@@ -1,3 +1,9 @@
+<script>
+	if(document.all && !document.addEventListener){
+		console.log("ie");
+		alert("ie");
+	}
+</script>
 <header class="main-head">
 	<div class="top-line">
 		<div class="container">
