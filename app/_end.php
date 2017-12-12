@@ -1,18 +1,3 @@
-<div id="js-info-resources" class="wrap-info-resources">
-	<ul>
-		<li>
-			<a href="#">Институты</a>
-			<ul>
-				<li><a href="#">Привет</a></li>
-				<li><a href="#">Здравствуйте</a></li>
-				<li><a href="#">Hello</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Культура</a></li>
-		<li><a href="#">Внутренние ресурсы</a></li>
-	</ul>
-</div>
-
 <div id="js-mobile-mmenu" class="mobile-mmenu">
 	<ul>
 		<li id="js-item-main-common-menu" class="droplist">

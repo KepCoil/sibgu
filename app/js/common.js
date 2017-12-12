@@ -63,30 +63,6 @@ $(function() {
 	// });
 
 
-
-	/* Информационные ресурсы */
-	$("#js-info-resources").mmenu({
-		extensions: ['fx-menu-slide', 'pagedim-black', 'border-full', "multiline"],
-		"offCanvas": {
-			"position": "right"
-		},
-		navbar: {
-			title: "Информационные ресурсы"
-		}
-	});
-
-	var 
-	infoResourcesAPI 	  = $("#js-info-resources").data("mmenu"),
-	buttonInfoResources = $("#js-button-info-resources");
-
-	buttonInfoResources.click(function() {
-
-		infoResourcesAPI.open();
-	});
-	/* Конец информационные ресурсы */
-
-
-
 	// Выпадающие меню
 	$(".wrap-main-menu >ul .droplist").hover(function() {
 		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);

@@ -10,7 +10,7 @@
 				<div class="row">
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_1.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -25,11 +25,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_2.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -44,11 +44,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_3.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -63,11 +63,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_4.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -82,11 +82,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_1.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -101,11 +101,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_2.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -120,11 +120,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_3.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -139,11 +139,11 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 					<div class="col-xlg-6 col-lg-8 col-md-8 col-sm-12">
-						<div class="wrap-card-item-news">
+						<article class="wrap-card-item-news">
 							<a href="#">
 								<span class="wrap-news-img"><span class="news-img" style="background-image: url(img/news/news1/news_4.jpg)"></span></span>
 								<span class="wrap-news-content">
@@ -158,7 +158,7 @@
 									</span>
 								</span>
 							</a>
-						</div>
+						</article>
 					</div>
 
 				</div>

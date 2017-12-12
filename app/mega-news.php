@@ -5,10 +5,10 @@
 
 <main>
 	<div id="wrap">
-		<div class="wrap-mega-news">
+		<article class="wrap-mega-news">
 
 			<div class="wrap-mega-img">
-				<div class="mega-img" style="background-image: url(img/news/big-news/mega-news.jpg);"></div>
+				<div class="mega-img" style="background-image: url(img/news/big-news/mega-news-2.jpg);"></div>
 				<div class="container">
 					<div class="wrap-mega-img-content">
 						<div class="mega-img-content">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 
-		</div>
+		</article>
 	</div>
 
 </main>

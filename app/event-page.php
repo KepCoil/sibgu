@@ -7,7 +7,7 @@
 	<div id="wrap">
 		<div class="container">
 
-			<div class="wrap-event-content">
+			<article class="wrap-event-content">
 				<h2 class="inner-title">ХII Региональная научно-практическая конференция «Основные тенденции развития Российского законодательства»</h2>
 				<div class="event-category">Конференции</div>
 				<div class="event-content">
@@ -31,7 +31,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 
 		</div>
 	</div>

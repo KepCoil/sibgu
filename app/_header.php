@@ -33,21 +33,19 @@
 			<div class="res-links-wrap">
 				<div class="res-links">
 					<div class="dropdown">
-						<!-- id="dropdownMenu1" -->
-						<!-- <button class="btn btn-default dropdown-toggle res-links-btn" type="button"  id="js-button-info-resources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> -->
-						<button id="js-button-info-resources" class="res-links-btn" type="button">
+						<button id="dropdownMenu1" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							Информационные ресурсы
 							<span class="caret"></span>
 						</button>
 
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="#">Сайт абитуриентам</a></li>
-							<li><a href="#">Центр трудостройства студентов и выпускников</a></li>
-							<li><a href="#">Проект LAPROCOM</a></li>
-							<li><a href="#">Управление международных и <br>внешнеэкономический связей</a></li>
-							<li><a href="#">Хрустальный апельсин</a></li>
-							<li><a href="#">Ресурсный центр иностранных языков</a></li>
-							<li><a href="#">Обсерватория СибГУ</a></li>
+							<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
+							<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
+							<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
+							<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
+							<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
+							<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
+							<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
 						</ul>
 					</div>
 				</div>

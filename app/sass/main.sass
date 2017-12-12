@@ -65,14 +65,18 @@
 				z-index: 1000
 				.dropdown-menu
 					padding: 10px 15px
+					margin: 0
 					a
 						font-size: 13px
-			.res-links-btn
-				padding: 0
-				background: none
-				border: none
-				color: $yellow
-				padding: 10px 0
+				.res-links-btn
+					background: none
+					border: none
+					color: $yellow
+					padding: 10px 15px
+			.dropdown.open
+				.res-links-btn
+					background-color: #f7f7f7
+					color: $blue
 		.flag-links
 			img
 				width: 40px
@@ -550,102 +554,104 @@
 
 
 /* FOOTER */
-footer
-	background-color: $blue
-	color: #fff
-	margin-top: 20px
-	a
-		color: #fff
-		border-bottom: 1px solid #fff
-		transition: all $main-trans
-		margin-top: 20px
-		&:hover, &:focus, &:active
-			border-color: transparent
-			color: #fff
-	ul
-		margin: 0
-		padding: 0
-		list-style-type: none
 
-.foot-first-level
-	padding: 50px 0 20px 0
-	.wrap-foot-level
-		margin: 0 15px
-		.col-md-6
-			padding: 0 30px
-			&:first-child
-				padding-left: 0
-			&:last-child
-				padding-right: 0
-	.first-foot-line
-		padding-bottom: 50px
-		border-bottom: 1px solid $light-line
-	.second-foot-line
-		padding: 40px 0
-		h5
-			margin: 0 0 15px 0
-			font-size: 20px
-			text-transform: uppercase
-			font-family: "OpenSans-Semibold", sans-serif
-		.col-md-6
-			&:nth-child(2)
-				border-right: 1px solid $light-line
-	.wrap-foot-links
-		list-style-type: none
-		padding: 0
-		margin: 0
-		li
-			display: block
-			padding: 7px 0
-	.second-foot-line
-		.foot-contacts-content
-			li
-				display: block
-				margin-bottom: 15px
-				font-size: 15px
-		.foot-contacts-content-col-2
-			margin-top: 41px
-			strong
-				font-weight: normal
-				font-family: "OpenSans-Semibold", sans-serif
-	.wrap-foot-contancts
-		.foot-feedback
-			p
-				font-size: 14px
-				margin: 0 0 15px 0
-			.button-light-blue
-				padding: 8px 16px
-				background-color: #4f8fcd
-				display: inline-block
-				border: 2px solid lighten(#4f8fcd, 5%)
-				border-radius: 2px
-				text-transform: uppercase
-				font-family: "OpenSans-Semibold", sans-serif
-				&:hover, &:focus
-					background-color: lighten(#4f8fcd, 2%)
-					color: #fff
-				&:active
-					background-color: darken(#4f8fcd, 5%)
-					color: #fff
-		.foot-social-list
+#wrapwrap 
+	>footer.main-footer
+		background-color: $blue
+		color: #fff
+		margin-top: 20px
+		a
+			color: #fff
+			border-bottom: 1px solid #fff
+			transition: all $main-trans
+			margin-top: 20px
+			&:hover, &:focus, &:active
+				border-color: transparent
+				color: #fff
+		ul
 			margin: 0
 			padding: 0
+			list-style-type: none
+		address
+			font-style: normal
+			font-family: "OpenSans-Regular", sans-serif
+		.foot-first-level
+			padding: 50px 0 20px 0
+		.wrap-foot-level
+			margin: 0
+			.col-md-6
+				padding: 0 30px
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+		.first-foot-line
+			padding-bottom: 50px
+			border-bottom: 1px solid $light-line
+		.second-foot-line
+			padding: 40px 0
+			h5
+				margin: 0 0 15px 0
+				font-size: 20px
+				text-transform: uppercase
+				font-family: "OpenSans-Semibold", sans-serif
+			.col-md-6
+				&:nth-child(2)
+					border-right: 1px solid $light-line
+		.wrap-foot-links
+			list-style-type: none
+			padding: 0
+			margin: 0
 			li
-				display: inline-block
-				margin-right: 12px
-			a
-				border: none
-			img
-				width: 40px
-				height: 40px
-
-.foot-second-level
-	padding: 30px 0
-	background-color: $dark-blue
-	border-top: 1px solid $light-line
-	.uit
-		text-align: right
-
+				display: block
+				padding: 7px 0
+		.second-foot-line
+			.foot-contacts-content
+				li
+					display: block
+					margin-bottom: 15px
+					font-size: 15px
+			.foot-contacts-content-col-2
+				margin-top: 41px
+				strong
+					font-weight: normal
+					font-family: "OpenSans-Semibold", sans-serif
+		.wrap-foot-contancts
+			.foot-feedback
+				p
+					font-size: 14px
+					margin: 0
+				.button-light-blue
+					padding: 8px 16px
+					background-color: #4f8fcd
+					display: inline-block
+					border: 2px solid lighten(#4f8fcd, 5%)
+					border-radius: 2px
+					text-transform: uppercase
+					font-family: "OpenSans-Semibold", sans-serif
+					&:hover, &:focus
+						background-color: lighten(#4f8fcd, 2%)
+						color: #fff
+					&:active
+						background-color: darken(#4f8fcd, 5%)
+						color: #fff
+			.foot-social-list
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+					margin-right: 12px
+				a
+					border: none
+				img
+					width: 40px
+					height: 40px
+		.foot-second-level
+			padding: 30px 0
+			background-color: $dark-blue
+			border-top: 1px solid $light-line
+			.uit
+				text-align: right
 /* END FOOTER */
 
 
@@ -750,7 +756,7 @@ footer
 		.mega-img
 			width: 100%
 			height: 100%
-			background-position: top center
+			background-position: center -50px
 			background-size: cover
 			position: absolute
 			&::before
