@@ -7258,7 +7258,8 @@ h6, .h6 {
     z-index: 1000; }
     #wrapwrap .top-line .res-links .dropdown .dropdown-menu {
       padding: 10px 15px;
-      margin: 0; }
+      margin: 0;
+      right: 0; }
       #wrapwrap .top-line .res-links .dropdown .dropdown-menu a {
         font-size: 13px; }
     #wrapwrap .top-line .res-links .dropdown .res-links-btn {
@@ -7268,7 +7269,9 @@ h6, .h6 {
       padding: 10px 15px; }
   #wrapwrap .top-line .res-links .dropdown.open .res-links-btn {
     background-color: #f7f7f7;
-    color: #314177; }
+    color: #314177;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
   #wrapwrap .top-line .flag-links img {
     width: 40px;
     height: 30px; }

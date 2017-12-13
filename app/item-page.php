@@ -73,10 +73,10 @@
 					<div class="wrap-standart-item">
 						<a href="http://ctsv.sibsau.ru/">
 							<span class="wrap-icon">
-								<i class="fa fa-user"></i>
+								<i class="fa fa-briefcase"></i>
 							</span>
 							<span class="standart-item-content">
-								<h3>Трудоустроиство студентов и выпускников</h3>
+								<h3>Трудоустройство студентов и выпускников</h3>
 								<p>Веб-ресурс "Центр трудоустройства студентов и выпускников"</p>
 							</span>
 						</a>
@@ -97,9 +97,9 @@
 				</div>
 				<div class="col-lg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
-						<a href="/page/sports-culture">
+						<a href="/page/creativity">
 							<span class="wrap-icon">
-								<i class="fa fa-flag-checkered"></i>
+								<i class="fa fa-microphone"></i>
 							</span>
 							<span class="standart-item-content">
 								<h3>Культура и творчество</h3>

@@ -40,6 +40,7 @@
 
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 							<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
+							<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
 							<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
 							<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
 							<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
@@ -51,6 +52,7 @@
 							<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ им. академика М.Ф. Решетнева в г. Железногорске</a></li>
 							<li><a target="_blank" href="http://zhf.sibsau.ru/">Новосибирский институт дополнительного образования (филиал СибГУ М.Ф. Решетнева в г.Новосибирске)</a></li>
 						</ul>
+						
 					</div>
 				</div>
 			</div>
