@@ -331,3 +331,43 @@ h6, .h6
 
 .wrap-info-resources.mm-menu.mm-offcanvas
 	z-index: 999
+
+/* Template standard page items */
+.wrap-standart-item
+	text-align: center
+	margin-bottom: 30px
+	overflow: hidden
+	span
+		display: block
+	a
+		display: block
+		color: #fff
+		border: 10px solid $dark-blue
+		padding: 10% 5%
+		background-color: $blue
+		&:hover
+			i
+				transform: scale(1.1)
+	h3
+		margin: 20px 0 15px 0
+		color: $yellow
+	.wrap-icon
+		i
+			font-size: 75px
+			color: $yellow
+			transition: transform $main-trans
+.item-no-work
+	a
+		cursor: no-drop
+		color: #666
+		border-color: darken($grey-bgc, 25%)
+		background-color: $grey-bgc
+		&:hover
+			i
+				transform: none
+	h3
+		color: #666
+	.wrap-icon
+		i
+			color: #666
+/* END template standard page items */

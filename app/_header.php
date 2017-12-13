@@ -41,11 +41,15 @@
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 							<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
 							<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
+							<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
 							<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
+							<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
 							<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
 							<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
 							<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
 							<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
+							<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ им. академика М.Ф. Решетнева в г. Железногорске</a></li>
+							<li><a target="_blank" href="http://zhf.sibsau.ru/">Новосибирский институт дополнительного образования (филиал СибГУ М.Ф. Решетнева в г.Новосибирске)</a></li>
 						</ul>
 					</div>
 				</div>
