@@ -223,6 +223,13 @@ $(function() {
 	};
 	eqH();
 
+	// Версия для слабовидящих
+	$("#js-eye-version").click(function() {
+		var panelControls = $(".wrap-eye-panel-controls").html();
+		console.log(panelControls);
+		$("body").prepend(panelControls);
+	});
+
 
 	// Функции при ресайзе экрана
 	$(window).resize(function() {

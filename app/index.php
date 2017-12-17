@@ -3,7 +3,6 @@
 <?php include("_index-main-menu.php") ?>
 <?php include("_navaslider.php") ?>
 
-
 <main>
 
 	<section class="main-sect white-sect news-sect">

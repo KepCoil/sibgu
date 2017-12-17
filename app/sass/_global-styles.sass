@@ -23,7 +23,6 @@
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
-s
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -342,7 +341,8 @@ h6, .h6
 	a
 		display: block
 		color: #fff
-		border: 10px solid $dark-blue
+		border: none
+		// border: 10px solid $dark-blue
 		padding: 10% 5%
 		background-color: $blue
 		&:hover
@@ -360,7 +360,8 @@ h6, .h6
 	a
 		cursor: no-drop
 		color: #666
-		border-color: darken($grey-bgc, 25%)
+		border: none
+		// border-color: darken($grey-bgc, 25%)
 		background-color: $grey-bgc
 		&:hover
 			i
@@ -371,3 +372,121 @@ h6, .h6
 		i
 			color: #666
 /* END template standard page items */
+
+
+/* VERSION EYE */
+.eye-panel-controls
+	z-index: 5000
+	background-color: $grey-bgc
+	padding: 0 15px
+	font-family: "MyriadPro-Bold", sans-serif
+	border-top: 1px solid $dark-line
+	border-bottom: 1px solid $dark-line
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	strong
+		font-weight: normal
+		font-size: 17px
+	.eye-controls
+		>li
+			float: left
+			width: 25%
+			text-align: center
+			border-right: 1px solid $dark-line
+			padding: 20px 0
+			line-height: 1.6
+			height: 75px
+			&:last-child
+				border-right: none
+	.font-size-controls, 
+	.color-controls
+		>li
+			display: inline-block
+			vertical-align: middle	
+	.btn-standart-version
+		padding: 3px 15px
+		i
+			margin-right: 7px
+			font-size: 20px	
+	.font-size-controls
+		>li
+			button
+				border: none
+				background-color: transparent
+				padding: 0 5px
+		>li:first-child
+			margin-right: 8px
+		>li:nth-child(2)
+			button
+				font-size: 16px
+		>li:nth-child(3)
+			button
+				font-size: 20px
+		>li:nth-child(4)
+			button
+				font-size: 24px
+
+	.color-controls
+		>li
+			margin-right: 5px
+			&:last-child
+				margin-right: 0
+			button
+				padding: 5px 10px
+		>li:first-child
+			margin-right: 8px
+		>li:nth-child(2)
+			button
+				border: 1px solid #000
+				background-color: #fff
+				color: #000
+		>li:nth-child(3)
+			button
+				border: 1px solid #fff
+				background-color: #000
+				color: #fff
+		>li:nth-child(4)
+			button
+				border: 1px solid #fff
+				background-color: $blue
+				color: #fff
+
+.wrap-toggle-img
+	position: relative
+	top: 5px
+	.switch:empty
+		visibility: hidden
+	.switch:empty ~ label
+		position: relative
+		cursor: pointer
+		user-select: none
+		line-height: 1.6
+		left: -25px
+		font-weight: normal
+		font-size: 17px
+	.switch:empty ~ label:before,
+	.switch:empty ~ label:after
+		content: ''
+		position: absolute
+		display: block
+		top: 0
+		bottom: 0
+		left: 125px
+		width: 50px
+		transition: all 100ms ease-in
+		background-color: #c33
+	.switch:empty ~ label:after,
+		width: 22px
+		top: 2px
+		bottom: 2px
+		margin-left: 2px
+		background-color: #fff
+	.switch:checked ~ label:before
+		background-color: #393
+	.switch:checked ~ label:after
+		margin-left: 26px
+
+
+/* END VERSION EYE */

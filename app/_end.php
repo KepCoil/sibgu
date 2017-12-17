@@ -4,12 +4,14 @@
 			<a href="#">Меню</a>
 		</li>
 		<li id="js-item-main-audit-menu" class="droplist">
-			<a href="#">Целевые разделы и ссылки</a>
+			<a href="#">Целевые разделы</a>
 		</li>
 		<li><a href="#">Сведения об образовательной организации</a></li>
 		<li><a href="#">Доступное образование</a></li>
 	</ul>
 </div>
+
+<?php include("_eye-version.php") ?>
 
 
 <!-- scripts -->

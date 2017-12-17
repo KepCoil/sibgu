@@ -7159,7 +7159,7 @@ h6, .h6 {
   .wrap-standart-item a {
     display: block;
     color: #fff;
-    border: 10px solid #253666;
+    border: none;
     padding: 10% 5%;
     background-color: #314177; }
     .wrap-standart-item a:hover i {
@@ -7181,7 +7181,7 @@ h6, .h6 {
 .item-no-work a {
   cursor: no-drop;
   color: #666;
-  border-color: #aeaeae;
+  border: none;
   background-color: #eee; }
   .item-no-work a:hover i {
     -webkit-transform: none;
@@ -7195,6 +7195,114 @@ h6, .h6 {
   color: #666; }
 
 /* END template standard page items */
+/* VERSION EYE */
+.eye-panel-controls {
+  z-index: 5000;
+  background-color: #eee;
+  padding: 0 15px;
+  font-family: "MyriadPro-Bold", sans-serif;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa; }
+  .eye-panel-controls ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .eye-panel-controls strong {
+    font-weight: normal;
+    font-size: 17px; }
+  .eye-panel-controls .eye-controls > li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #aaaaaa;
+    padding: 20px 0;
+    line-height: 1.6;
+    height: 75px; }
+    .eye-panel-controls .eye-controls > li:last-child {
+      border-right: none; }
+  .eye-panel-controls .font-size-controls > li,
+  .eye-panel-controls .color-controls > li {
+    display: inline-block;
+    vertical-align: middle; }
+  .eye-panel-controls .btn-standart-version {
+    padding: 3px 15px; }
+    .eye-panel-controls .btn-standart-version i {
+      margin-right: 7px;
+      font-size: 20px; }
+  .eye-panel-controls .font-size-controls > li button {
+    border: none;
+    background-color: transparent;
+    padding: 0 5px; }
+  .eye-panel-controls .font-size-controls > li:first-child {
+    margin-right: 8px; }
+  .eye-panel-controls .font-size-controls > li:nth-child(2) button {
+    font-size: 16px; }
+  .eye-panel-controls .font-size-controls > li:nth-child(3) button {
+    font-size: 20px; }
+  .eye-panel-controls .font-size-controls > li:nth-child(4) button {
+    font-size: 24px; }
+  .eye-panel-controls .color-controls > li {
+    margin-right: 5px; }
+    .eye-panel-controls .color-controls > li:last-child {
+      margin-right: 0; }
+    .eye-panel-controls .color-controls > li button {
+      padding: 5px 10px; }
+  .eye-panel-controls .color-controls > li:first-child {
+    margin-right: 8px; }
+  .eye-panel-controls .color-controls > li:nth-child(2) button {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000; }
+  .eye-panel-controls .color-controls > li:nth-child(3) button {
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff; }
+  .eye-panel-controls .color-controls > li:nth-child(4) button {
+    border: 1px solid #fff;
+    background-color: #314177;
+    color: #fff; }
+
+.wrap-toggle-img {
+  position: relative;
+  top: 5px; }
+  .wrap-toggle-img .switch:empty {
+    visibility: hidden; }
+  .wrap-toggle-img .switch:empty ~ label {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    line-height: 1.6;
+    left: -25px;
+    font-weight: normal;
+    font-size: 17px; }
+  .wrap-toggle-img .switch:empty ~ label:before,
+  .wrap-toggle-img .switch:empty ~ label:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 125px;
+    width: 50px;
+    -webkit-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    background-color: #c33; }
+  .wrap-toggle-img .switch:empty ~ label:after {
+    width: 22px;
+    top: 2px;
+    bottom: 2px;
+    margin-left: 2px;
+    background-color: #fff; }
+  .wrap-toggle-img .switch:checked ~ label:before {
+    background-color: #393; }
+  .wrap-toggle-img .switch:checked ~ label:after {
+    margin-left: 26px; }
+
+/* END VERSION EYE */
 /* HEADER */
 #wrapwrap .main-head {
   color: #fff; }
@@ -7709,7 +7817,7 @@ h6, .h6 {
 /* END SECTION STUDENTS COMMENT */
 /* SECTION COMPANY - PARTNERS */
 .pa-sect {
-  padding-bottom: 0; }
+  padding-bottom: 20px; }
   .pa-sect .col-md-6 {
     text-align: center; }
   .pa-sect .wrap-pa-item {
@@ -7750,8 +7858,7 @@ h6, .h6 {
 /* FOOTER */
 #wrapwrap > footer {
   background-color: #314177;
-  color: #fff;
-  margin-top: 20px; }
+  color: #fff; }
   #wrapwrap > footer a {
     color: #fff;
     border-bottom: 1px solid #fff;

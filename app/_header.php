@@ -1,3 +1,5 @@
+<!-- <?php include("_eye-version.php") ?> -->
+
 <script>
 	if(document.all && !document.addEventListener){
 		console.log("ie");
@@ -87,7 +89,7 @@
 				</a>
 			</div>
 			<div class="other-func">
-				<a href="#"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
+				<a href="#" id="js-eye-version"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
 				<a href="#"><i class="fa fa-wheelchair" aria-hidden="true"></i>Доступное образования</a>
 				<a class="info-uni" href="#">Сведения об образовательной организации</a>
 			</div>
