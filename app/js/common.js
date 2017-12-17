@@ -64,7 +64,7 @@ $(function() {
 
 
 	// Выпадающие меню
-	$(".wrap-main-menu >ul .droplist").hover(function() {
+	$(".ul-inner-menu >li.droplist").hover(function() {
 		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
 		$(this).toggleClass("droplist-open");
 	}, function() {
@@ -115,43 +115,43 @@ $(function() {
 	mainSliderResize();
 
 
-	function getTopHeightMenu() {
-		var 
-			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
+	// function getTopHeightMenu() {
+	// 	var 
+	// 		heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
 
-		$(".main-menu.inner-menu").css({'top': heightHeader});
+	// 	$(".main-menu.inner-menu").css({'top': heightHeader});
 
-	}
+	// }
 
-	getTopHeightMenu();
+	// getTopHeightMenu();
 
 
-	// Функция для фиксирования меню на внутренних страниц при прокрутке
-	function fixTableMenuScrolling() {
+	// // Функция для фиксирования меню на внутренних страниц при прокрутке
+	// function fixTableMenuScrolling() {
 
-		var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
+	// 	var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
 
-		if (!searchInnerMenu) {
-			return;
-		} 
-		else {
+	// 	if (!searchInnerMenu) {
+	// 		return;
+	// 	} 
+	// 	else {
 
-			var
-				menuWrap     = $(".main-menu.inner-menu"),
-				heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
-				// heightMenu   = $(".main-menu").outerHeight(),
-				top 			 = $(window).scrollTop();
+	// 		var
+	// 			menuWrap     = $(".main-menu.inner-menu"),
+	// 			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
+	// 			// heightMenu   = $(".main-menu").outerHeight(),
+	// 			top 			 = $(window).scrollTop();
 
-			if (top + 0 < heightHeader) {
-				menuWrap.css('top', (heightHeader - top));
-			} else {
-				menuWrap.css('top', 0);
-			}
+	// 		if (top + 0 < heightHeader) {
+	// 			menuWrap.css('top', (heightHeader - top));
+	// 		} else {
+	// 			menuWrap.css('top', 0);
+	// 		}
 
-		}
-	};
+	// 	}
+	// };
 
-	fixTableMenuScrolling();
+	// fixTableMenuScrolling();
 
 
 	// Слайдер на главной странице

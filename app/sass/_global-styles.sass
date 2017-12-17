@@ -305,22 +305,39 @@ h6, .h6
 			color: $blue
 			&:hover
 				color: $blue
-	.wrap-inner-table-menu
-		display: table
-		border-left: 1px solid $light-line
-		border-right: 1px solid $light-line
-		.row-inner-menu
-			display: table-row
-			&:first-child
-				>li
-					border-bottom: 1px solid $light-line
+
+	.wrap-main-menu
+		.wrap-inner-common-menu
+			border-bottom: 1px solid $light-line
+		.inner-common-menu
 			>li
-				display: table-cell
-				border-right: 1px solid $light-line
-				&:last-child
-					border-right: none
 				>a
-					padding: 10px 15px
+					text-transform: none
+		.inner-audit-menu
+			>li
+				>a
+					color: $yellow
+					background-color: transparent
+					&:hover
+						background-color: $grey-bgc
+						color: $blue
+	/* TABLE VERSION MENU */
+	// .wrap-inner-table-menu
+	// 	display: table
+	// 	border-left: 1px solid $light-line
+	// 	border-right: 1px solid $light-line
+	// 	.row-inner-menu
+	// 		display: table-row
+	// 		&:first-child
+	// 			>li
+	// 				border-bottom: 1px solid $light-line
+	// 		>li
+	// 			display: table-cell
+	// 			border-right: 1px solid $light-line
+	// 			&:last-child
+	// 				border-right: none
+	// 			>a
+	// 				padding: 10px 15px
 
 // .main-menu.inner-menu
 // 	position: fixed
