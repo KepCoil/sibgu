@@ -1,9 +1,11 @@
 $(function() {
 
-	if(document.all && !document.addEventListener){
-		console.log("ie");
-		alert("ie");
-	}
+	/* СКРИПТ ПРОВЕРКИ НА IE 8 И НИЖЕ */
+	// if(document.all && !document.addEventListener){
+	// 	console.log("ie");
+	// 	alert("ie");
+	// }
+	/*  */
 
 
 	/* МОБИЛЬНОЕ МЕНЮ */
@@ -11,10 +13,12 @@ $(function() {
 	// Перенос оба меню
 	var 
 	commonMenuContent  = $("#js-main-common-menu").html(),
-	commonAuditContent = $("#js-main-audit-menu").html();
+	commonAuditContent = $("#js-main-audit-menu").html(),
+	resLinksContent 	 = $("#js-res-links").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
+	$("#js-item-res-links-menu").append("<ul>" + resLinksContent  + "</ul>");
 
 	// Плагин mmenu
 	$("#js-mobile-mmenu").mmenu({
@@ -25,9 +29,9 @@ $(function() {
 		"navbars": [{
 			"position": "bottom",
 			"content": [
-			"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
-			"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
-			"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
+				"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
+				"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
+				"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
 			]
 		}]
 	});
@@ -45,22 +49,9 @@ $(function() {
 		mobileMenuAPI.open();
 		// $(this).toggleClass("is-active");
 	});
-	// console.log("lol");
 
-	// mobileMenuAPI.closePanel($("#js-button-mobile-mmenu").removeClass("is-active"));
+	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
-	// mobileMenuAPI.bind("closePanel", function() {
-	// 	console.log("lol");
-	// 	buttonMobileMenu.removeClass("is-active");
- //   });
- /* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
-
-
-
-	// Кнопка мобильного меню
-	// $(".hamburger--spin").click(function() {
-	// 	$(this).toggleClass("is-active");
-	// });
 
 
 	// Выпадающие меню
@@ -84,7 +75,7 @@ $(function() {
 
 
 
-	// Функция пересчета ширины слайдера в зависимости от ширины экрана
+	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
 	function mainSliderResize() {
 
 		var searchSlider = $("div").is(".navaslider");
@@ -113,8 +104,10 @@ $(function() {
 	};
 
 	mainSliderResize();
+	/* Конец функции пересчета ширины слайдера в зависимости от ширины экрана */
 
 
+	/* ФИКСИРОВАННОЕ МЕНЮ НА ВНУТР. СТРАНИЦАХ */
 	// function getTopHeightMenu() {
 	// 	var 
 	// 		heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
@@ -126,7 +119,7 @@ $(function() {
 	// getTopHeightMenu();
 
 
-	// // Функция для фиксирования меню на внутренних страниц при прокрутке
+	// Функция для фиксирования меню на внутренних страниц при прокрутке
 	// function fixTableMenuScrolling() {
 
 	// 	var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
@@ -150,8 +143,9 @@ $(function() {
 
 	// 	}
 	// };
-
+	
 	// fixTableMenuScrolling();
+	/* КОНЕЦ ФИКСИРОВАННОЕ МЕНЮ НА ВНУТР. СТРАНИЦАХ */
 
 
 	// Слайдер на главной странице
@@ -199,11 +193,11 @@ $(function() {
 			});
 		}
 	}
-	
 	enablePaSlider();
 
 
-	// Функция уравнивания высоты items
+
+	// Функция уравнивания высоты различных элементов
 	function eqH() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
@@ -223,12 +217,29 @@ $(function() {
 	};
 	eqH();
 
-	// Версия для слабовидящих
-	$("#js-eye-version").click(function() {
-		var panelControls = $(".wrap-eye-panel-controls").html();
-		console.log(panelControls);
-		$("body").prepend(panelControls);
+
+	/* ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
+	$("#js-button-eye-version").click(function() {
+
+		if ($("#js-eye-version").hasClass("hidden")) {
+			$("#js-eye-version").removeClass("hidden");
+		} else {
+			$("#js-eye-version").addClass("hidden");
+		}
+
+		return false;
 	});
+
+	$("#js-close-button-eye-version").click(function() {
+		$("#js-eye-version").addClass("hidden");
+	});
+
+	if(!$("#toggle-img").prop("checked")) {
+		$("body").addClass("img-disable");
+	} else {
+		$("body").removeClass("img-disable");
+	}
+	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
 
 	// Функции при ресайзе экрана
@@ -236,13 +247,13 @@ $(function() {
 		eqH();
 		mainSliderResize();
 		enablePaSlider();
-		fixTableMenuScrolling();
+		// fixTableMenuScrolling();
 	});
 
 
 	// Функции при скролле
 	$(window).scroll(function() {
-		fixTableMenuScrolling();
+		// fixTableMenuScrolling();
 	});
 
 });

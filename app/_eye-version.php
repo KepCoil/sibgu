@@ -1,8 +1,8 @@
-<div class="wrap-eye-panel-controls hidden">
+<div id="js-eye-version" class="wrap-eye-panel-controls hidden">
 	<div class="eye-panel-controls">
 		<ul class="eye-controls clearfix">
 			<li>
-				<button class="btn-standart-version">
+				<button id="js-close-button-eye-version" class="btn-standart-version">
 					<i class="fa fa-eye" aria-hidden="true"></i>
 					<strong>Версия по умолчанию</strong>
 				</button>
@@ -25,7 +25,7 @@
 			</li>
 			<li>
 				<div class="wrap-toggle-img">
-					<input id="toggle-img" class="switch" checked="checked" name="toggle-img" type="checkbox">
+					<input id="toggle-img" class="switch-state-img" checked="checked" name="toggle-img" type="checkbox">
 					<label for="toggle-img">Изображения:</label>
 				</div>
 			</li>

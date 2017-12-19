@@ -1,11 +1,4 @@
-<!-- <?php include("_eye-version.php") ?> -->
 
-<script>
-	if(document.all && !document.addEventListener){
-		console.log("ie");
-		alert("ie");
-	}
-</script>
 <header class="main-head">
 	<div class="top-line">
 		<div class="container">
@@ -40,7 +33,7 @@
 							<span class="caret"></span>
 						</button>
 
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<ul id="js-res-links" class="dropdown-menu" aria-labelledby="dropdownMenu1">
 							<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
 							<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
 							<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
@@ -89,7 +82,7 @@
 				</a>
 			</div>
 			<div class="other-func">
-				<a href="#" id="js-eye-version"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
+				<a href="#" id="js-button-eye-version"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
 				<a href="#"><i class="fa fa-wheelchair" aria-hidden="true"></i>Доступное образования</a>
 				<a class="info-uni" href="#">Сведения об образовательной организации</a>
 			</div>

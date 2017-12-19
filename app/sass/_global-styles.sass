@@ -41,11 +41,14 @@ body
 	font-family: $default-font, Helvetica, sans-serif
 	color: #212529
 	font-size: 15px
-	line-height: 1.3
+	line-height: 1.4
 	font-weight: normal
 
 p
 	margin: 10px 0
+@media only screen and (max-width : 991px)
+	p[align=justify]
+		text-align: left
 a
 	color: #337ab7
 	border-bottom: 1px solid #337ab7
@@ -309,10 +312,10 @@ h6, .h6
 	.wrap-main-menu
 		.wrap-inner-common-menu
 			border-bottom: 1px solid $light-line
-		.inner-common-menu
-			>li
-				>a
-					text-transform: none
+		// .inner-common-menu
+		// 	>li
+		// 		>a
+		// 			text-transform: none
 		.inner-audit-menu
 			>li
 				>a
@@ -392,13 +395,18 @@ h6, .h6
 
 
 /* VERSION EYE */
-.eye-panel-controls
-	z-index: 5000
+.wrap-eye-panel-controls
+	position: fixed
+	width: 100%
+	top: 0
+	z-index: 9999
 	background-color: $grey-bgc
-	padding: 0 15px
 	font-family: "MyriadPro-Bold", sans-serif
 	border-top: 1px solid $dark-line
 	border-bottom: 1px solid $dark-line
+.eye-panel-controls
+	padding: 0 15px
+	
 	ul
 		list-style-type: none
 		margin: 0
@@ -412,9 +420,9 @@ h6, .h6
 			width: 25%
 			text-align: center
 			border-right: 1px solid $dark-line
-			padding: 20px 0
+			padding: 15px 0
 			line-height: 1.6
-			height: 75px
+			height: 68px
 			&:last-child
 				border-right: none
 	.font-size-controls, 
@@ -473,9 +481,9 @@ h6, .h6
 .wrap-toggle-img
 	position: relative
 	top: 5px
-	.switch:empty
+	.switch-state-img:empty
 		visibility: hidden
-	.switch:empty ~ label
+	.switch-state-img:empty ~ label
 		position: relative
 		cursor: pointer
 		user-select: none
@@ -483,8 +491,8 @@ h6, .h6
 		left: -25px
 		font-weight: normal
 		font-size: 17px
-	.switch:empty ~ label:before,
-	.switch:empty ~ label:after
+	.switch-state-img:empty ~ label:before,
+	.switch-state-img:empty ~ label:after
 		content: ''
 		position: absolute
 		display: block
@@ -494,16 +502,21 @@ h6, .h6
 		width: 50px
 		transition: all 100ms ease-in
 		background-color: #c33
-	.switch:empty ~ label:after,
+	.switch-state-img:empty ~ label:after,
 		width: 22px
 		top: 2px
 		bottom: 2px
 		margin-left: 2px
 		background-color: #fff
-	.switch:checked ~ label:before
+	.switch-state-img:checked ~ label:before
 		background-color: #393
-	.switch:checked ~ label:after
+	.switch-state-img:checked ~ label:after
 		margin-left: 26px
 
+
+// Отключение картинок
+.img-disable
+	// img
+	// 	visibility: hidden
 
 /* END VERSION EYE */

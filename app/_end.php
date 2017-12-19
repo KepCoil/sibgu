@@ -8,6 +8,9 @@
 		</li>
 		<li><a href="#">Сведения об образовательной организации</a></li>
 		<li><a href="#">Доступное образование</a></li>
+		<li id="js-item-res-links-menu" class="droplist">
+			<a href="#">Информационные ресурсы</a>
+		</li>
 	</ul>
 </div>
 
@@ -23,7 +26,7 @@
 <![endif]-->
 
 
-<!-- ЛЮБА ЭТО ПОДКЛЮЧАТЬ НЕ НАДО :)))))) -->
+<!-- НЕ ПОДКЛЮЧАТЬ. odoo уже содержит данные скрипты -->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
