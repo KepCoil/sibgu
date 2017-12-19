@@ -7046,7 +7046,7 @@ h6, .h6 {
           box-shadow: none; }
   #wrapwrap .dropdown-menu li {
     background-color: #f7f7f7;
-    border-bottom: 1px solid #aaaaaa; }
+    border-bottom: 1px solid #aaa; }
     #wrapwrap .dropdown-menu li a {
       color: #314177 !important;
       text-transform: none;
@@ -7201,8 +7201,8 @@ h6, .h6 {
   z-index: 9999;
   background-color: #eee;
   font-family: "MyriadPro-Bold", sans-serif;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa; }
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa; }
 
 .eye-panel-controls {
   padding: 0 15px; }
@@ -7217,7 +7217,7 @@ h6, .h6 {
     float: left;
     width: 25%;
     text-align: center;
-    border-right: 1px solid #aaaaaa;
+    border-right: 1px solid #aaa;
     padding: 15px 0;
     line-height: 1.6;
     height: 68px; }
@@ -7648,7 +7648,7 @@ h6, .h6 {
 .event-item {
   padding: 0 20px; }
   .event-item .wrap-date-event {
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaa;
     padding-bottom: 10px; }
     .event-item .wrap-date-event .calendar-icon {
       display: inline-block;
@@ -8036,7 +8036,7 @@ h6, .h6 {
         display: block;
         width: 40px;
         height: 40px;
-        border: 1px solid #aaaaaa;
+        border: 1px solid #aaa;
         font-family: "OpenSans-SemiBold", sans-serif;
         padding: 0;
         font-size: 18px;
@@ -8138,7 +8138,7 @@ h6, .h6 {
     margin: 0;
     padding: 0; }
   .wrap-events-list .wrap-events-category li {
-    border-bottom: 1px solid #aaaaaa; }
+    border-bottom: 1px solid #aaa; }
     .wrap-events-list .wrap-events-category li:last-child {
       border-bottom: none; }
     .wrap-events-list .wrap-events-category li.active a {
@@ -8163,7 +8163,7 @@ h6, .h6 {
         display: inline-block; }
 
 .wrap-events-list .wrap-events-date-filter {
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaa;
   margin-bottom: 30px; }
   .wrap-events-list .wrap-events-date-filter ul {
     list-style-type: none;
@@ -8237,6 +8237,41 @@ h6, .h6 {
   margin: 20px 0; }
 
 /* END EVENT PAGE */
+/* DIS PAGE */
+.wrap-dis-page .dis-title {
+  text-transform: none; }
+
+.wrap-dis-page .dis-meta-info i {
+  margin-right: 8px; }
+
+.wrap-dis-page .dis-meta-info {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px; }
+
+.wrap-dis-page .dis-text {
+  margin: 20px 0 30px 0; }
+
+.wrap-dis-page .dis-docs {
+  background-color: #eee;
+  padding: 25px;
+  margin-bottom: 15px; }
+  .wrap-dis-page .dis-docs h3 {
+    margin-top: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "OpenSans-SemiBold", sans-serif; }
+  .wrap-dis-page .dis-docs ul {
+    padding-left: 15px;
+    margin: 0; }
+    .wrap-dis-page .dis-docs ul li {
+      margin-bottom: 5px; }
+      .wrap-dis-page .dis-docs ul li a {
+        color: #314177;
+        border-color: #314177; }
+        .wrap-dis-page .dis-docs ul li a:hover {
+          border-color: transparent; }
+
+/* END DIS PAGE */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */

@@ -202,6 +202,7 @@ $(function() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
+		$(".dis-docs").height('auto').equalHeights();
 
 
 		var windowWidth = $(window).width();
