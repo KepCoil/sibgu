@@ -16,7 +16,6 @@
 
 <?php include("_eye-version.php") ?>
 
-
 <!-- scripts -->
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -26,7 +25,8 @@
 <![endif]-->
 
 
-<!-- НЕ ПОДКЛЮЧАТЬ. odoo уже содержит данные скрипты -->
+
+<!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты -->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
