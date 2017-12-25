@@ -118,7 +118,7 @@
 
 	<section class="main-sect grey-sect events-sect">
 		<div class="container">
-			<h2>Ближайщие мероприятия</h2>
+			<h2>Текущие мероприятия</h2>
 			<div class="row">
 				<div class="col-xxlg-20 col-xxlg-offset-2 col-xlg-22 col-xlg-offset-1">
 					<div class="col-md-6 col-sm-12 col-xs-24">

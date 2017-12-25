@@ -8280,6 +8280,22 @@ h6, .h6 {
           border-color: transparent; }
 
 /* END DIS PAGE */
+/* YA MAPS */
+.list-filials {
+  margin-bottom: 30px; }
+  .list-filials > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .list-filials > ul > li {
+      margin-bottom: 30px; }
+      .list-filials > ul > li > a {
+        text-transform: uppercase;
+        border-bottom: none; }
+      .list-filials > ul > li > ol {
+        padding-left: 20px; }
+
+/* END YA MAPS */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
