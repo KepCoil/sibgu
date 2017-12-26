@@ -11,60 +11,67 @@
 				</button>
 			</div>
 
-			<div class="main-logo-wrap clearfix">
-				<a class="main-logo" href="#">
-					<img src="img/main_logo.png" alt="Логотип СибГУ им. М.Ф. Решетнева">
-				</a>
-			</div>
-
-			<div class="quick-links-wrap">
-				<div class="quick-links">
-					<a href="#">Личный кабинет</a>
-					<a href="#">Почта</a>
-					<a href="#">Расписание занятий</a>
+			<div class="top-line-left-content">
+				<div class="main-logo-wrap clearfix">
+					<a class="main-logo" href="#">
+						<img src="img/main_logo.png" alt="Логотип СибГУ им. М.Ф. Решетнева">
+					</a>
 				</div>
-			</div>
 
-			<div class="res-links-wrap">
-				<div class="res-links">
-					<div class="dropdown">
-						<button id="dropdownMenu1" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Информационные ресурсы
-							<span class="caret"></span>
-						</button>
-
-						<ul id="js-res-links" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
-							<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
-							<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
-							<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
-							<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
-							<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
-							<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
-							<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
-							<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
-							<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
-							<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ им. академика М.Ф. Решетнева в г. Железногорске</a></li>
-							<li><a target="_blank" href="http://zhf.sibsau.ru/">Новосибирский институт дополнительного образования (филиал СибГУ М.Ф. Решетнева в г.Новосибирске)</a></li>
-						</ul>
-						
+				<div class="quick-links-wrap">
+					<div class="quick-links">
+						<a href="#">Личный кабинет</a>
+						<a href="#">Почта</a>
+						<a href="#">Расписание занятий</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="flag-links-wrap">
-				<div class="dropdown flag-links">
-					<button class="btn btn-default dropdown-toggle btn-ru" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						<img class="img-responsive" src="img/flags/ru.svg" alt="RU">
-					</button>
-					<ul class="dropdown-menu dropdown-flags" aria-labelledby="dropdownMenu1">
-						<li><a href="#"><img class="img-responsive" src="img/flags/gb.svg" alt="EN"></a></li>
-						<li><a href="#"><img class="img-responsive" src="img/flags/cn.svg" alt="CH"></a></li>
-						<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN"></a></li>
-						<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG"></a></li>
-					</ul>
+
+			<div class="top-line-right-content">
+				<div class="res-links-wrap">
+					<div class="res-links">
+						<div class="dropdown">
+							<button id="dropdownMenu1" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Информационные ресурсы
+								<span class="caret"></span>
+							</button>
+
+							<ul id="js-res-links" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
+								<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
+								<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
+								<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
+								<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
+								<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
+								<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
+								<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
+								<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
+								<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
+								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ им. академика М.Ф. Решетнева в г. Железногорске</a></li>
+								<li><a target="_blank" href="http://zhf.sibsau.ru/">Новосибирский институт дополнительного образования (филиал СибГУ М.Ф. Решетнева в г.Новосибирске)</a></li>
+							</ul>
+
+						</div>
+					</div>
 				</div>
+
+				<div class="flag-links-wrap">
+					<div class="dropdown flag-links">
+						<button class="btn btn-default dropdown-toggle btn-ru" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img class="img-responsive" src="img/flags/ru.svg" alt="RU">
+						</button>
+						<ul class="dropdown-menu dropdown-flags" aria-labelledby="dropdownMenu1">
+							<li><a href="#"><img class="img-responsive" src="img/flags/gb.svg" alt="EN"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/cn.svg" alt="CH"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG"></a></li>
+						</ul>
+					</div>
+				</div>
+
 			</div>
+	
 
 		</div>
 	</div>

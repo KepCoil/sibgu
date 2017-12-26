@@ -7329,6 +7329,10 @@ h6, .h6 {
   padding: 2px 0; }
   #wrapwrap .top-line .container {
     padding: 0; }
+  #wrapwrap .top-line .top-line-left-content {
+    float: left; }
+  #wrapwrap .top-line .top-line-right-content {
+    float: right; }
   #wrapwrap .top-line .main-logo-wrap, #wrapwrap .top-line .quick-links-wrap, #wrapwrap .top-line .res-links-wrap, #wrapwrap .top-line .flag-links-wrap {
     position: relative;
     padding: 0 15px;
@@ -7338,10 +7342,7 @@ h6, .h6 {
     width: 226px;
     padding: 0; }
   #wrapwrap .top-line .quick-links-wrap {
-    width: 1210px;
     padding: 10px 15px 10px 25px; }
-  #wrapwrap .top-line .res-links-wrap {
-    width: 375px; }
   #wrapwrap .top-line .flag-links-wrap {
     width: 61px;
     padding-right: 0; }
@@ -8311,8 +8312,6 @@ h6, .h6 {
 @media only screen and (max-width: 1900px) {
   #wrapwrap .top-line .main-logo-wrap {
     width: 196px; }
-  #wrapwrap .top-line .quick-links-wrap {
-    width: 928px; }
   #wrapwrap .top-line .main-logo {
     width: 196px;
     height: 203px; }
@@ -8342,8 +8341,6 @@ h6, .h6 {
 
 /* for 1600px */
 @media only screen and (max-width: 1580px) {
-  #wrapwrap .top-line .quick-links-wrap {
-    width: 608px; }
   #wrapwrap .main-title {
     font-size: 25px;
     line-height: 29px; }
@@ -8389,10 +8386,6 @@ h6, .h6 {
 @media only screen and (max-width: 1260px) {
   #wrapwrap .top-line .main-logo-wrap {
     width: 181px; }
-  #wrapwrap .top-line .quick-links-wrap {
-    width: 458px; }
-  #wrapwrap .top-line .res-links-wrap {
-    width: 270px; }
   #wrapwrap .top-line .res-links {
     font-size: 14px; }
   #wrapwrap .top-line .main-logo {
