@@ -8291,7 +8291,8 @@ h6, .h6 {
       margin-bottom: 30px; }
       .list-filials > ul > li > a {
         text-transform: uppercase;
-        border-bottom: none; }
+        border-bottom: none;
+        cursor: default; }
       .list-filials > ul > li > ol {
         padding-left: 40px;
         list-style-type: decimal; }
