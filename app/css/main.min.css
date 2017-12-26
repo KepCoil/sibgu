@@ -8293,7 +8293,8 @@ h6, .h6 {
         text-transform: uppercase;
         border-bottom: none; }
       .list-filials > ul > li > ol {
-        padding-left: 20px; }
+        padding-left: 40px;
+        list-style-type: decimal; }
 
 /* END YA MAPS */
 /* $blue: #2f4077 */
