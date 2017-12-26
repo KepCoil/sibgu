@@ -104,49 +104,6 @@ $(function() {
 	};
 
 	mainSliderResize();
-	/* Конец функции пересчета ширины слайдера в зависимости от ширины экрана */
-
-
-	/* ФИКСИРОВАННОЕ МЕНЮ НА ВНУТР. СТРАНИЦАХ */
-	// function getTopHeightMenu() {
-	// 	var 
-	// 		heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
-
-	// 	$(".main-menu.inner-menu").css({'top': heightHeader});
-
-	// }
-
-	// getTopHeightMenu();
-
-
-	// Функция для фиксирования меню на внутренних страниц при прокрутке
-	// function fixTableMenuScrolling() {
-
-	// 	var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
-
-	// 	if (!searchInnerMenu) {
-	// 		return;
-	// 	} 
-	// 	else {
-
-	// 		var
-	// 			menuWrap     = $(".main-menu.inner-menu"),
-	// 			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
-	// 			// heightMenu   = $(".main-menu").outerHeight(),
-	// 			top 			 = $(window).scrollTop();
-
-	// 		if (top + 0 < heightHeader) {
-	// 			menuWrap.css('top', (heightHeader - top));
-	// 		} else {
-	// 			menuWrap.css('top', 0);
-	// 		}
-
-	// 	}
-	// };
-	
-	// fixTableMenuScrolling();
-	/* КОНЕЦ ФИКСИРОВАННОЕ МЕНЮ НА ВНУТР. СТРАНИЦАХ */
-
 
 	// Слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
@@ -248,13 +205,20 @@ $(function() {
 		eqH();
 		mainSliderResize();
 		enablePaSlider();
-		// fixTableMenuScrolling();
 	});
 
 
-	// Функции при скролле
+	// Фиксация внутрненного меню при скролле
 	$(window).scroll(function() {
-		// fixTableMenuScrolling();
+		var 
+		headerHeight = $(".main-head").outerHeight(),
+		innerMenu = $(".inner-menu");
+
+		if ($(this).scrollTop() > headerHeight) {
+			innerMenu.addClass("fixed-inner-menu");
+		} else {
+			innerMenu.removeClass("fixed-inner-menu");
+		}
 	});
 
 });
