@@ -50,15 +50,18 @@ p
 	p[align=justify]
 		text-align: left
 a
-	color: #076fc8
-	border-bottom: 1px solid #076fc8
-	transition: color $main-trans, border-bottom-color $main-trans
-	outline: none !important
 	text-decoration: none
-	&:hover, &:focus
-		color: #512DA8
+	outline: none !important
+	transition: color $main-trans, border-bottom-color $main-trans, background-color $main-trans
+	&:hover, &:focus, &:active
 		text-decoration: none
-		border-bottom: 1px solid #512DA8
+#wrap
+	a
+		color: #076fc8
+		border-bottom: 1px solid #076fc8
+		&:hover, &:focus
+			color: #512DA8
+			border-bottom: 1px solid #512DA8
 button
 	outline: none !important
 

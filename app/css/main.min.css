@@ -6919,16 +6919,19 @@ p {
     text-align: left; } }
 
 a {
-  color: #076fc8;
-  border-bottom: 1px solid #076fc8;
-  -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
-  -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
-  transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
+  text-decoration: none;
   outline: none !important;
-  text-decoration: none; }
-  a:hover, a:focus {
+  -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out;
+  transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out; }
+  a:hover, a:focus, a:active {
+    text-decoration: none; }
+
+#wrap a {
+  color: #076fc8;
+  border-bottom: 1px solid #076fc8; }
+  #wrap a:hover, #wrap a:focus {
     color: #512DA8;
-    text-decoration: none;
     border-bottom: 1px solid #512DA8; }
 
 button {
