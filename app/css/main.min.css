@@ -6919,16 +6919,17 @@ p {
     text-align: left; } }
 
 a {
-  color: #337ab7;
-  border-bottom: 1px solid #337ab7;
+  color: #076fc8;
+  border-bottom: 1px solid #076fc8;
   -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
   -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
   transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
-  outline: none !important; }
+  outline: none !important;
+  text-decoration: none; }
   a:hover, a:focus {
-    color: #337ab7;
+    color: #512DA8;
     text-decoration: none;
-    border-bottom: 1px solid transparent; }
+    border-bottom: 1px solid #512DA8; }
 
 button {
   outline: none !important; }
@@ -7884,13 +7885,13 @@ h6, .h6 {
   #wrapwrap > footer a {
     color: #fff;
     border-bottom: 1px solid #fff;
-    -webkit-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+    -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
+    transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out;
     margin-top: 20px; }
     #wrapwrap > footer a:hover, #wrapwrap > footer a:focus, #wrapwrap > footer a:active {
-      border-color: transparent;
-      color: #fff; }
+      border-color: #ffe082;
+      color: #ffe082; }
   #wrapwrap > footer ul {
     margin: 0;
     padding: 0;
