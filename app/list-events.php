@@ -11,10 +11,9 @@
 					<div class="col-lg-19 col-md-18">
 						<div class="wrap-events-date-filter">
 							<ul>
-								<li class="active"><a href="#">День</a></li>
-								<li><a href="#">Неделя</a></li>
-								<li><a href="#">Месяц</a></li>
-								<li><a href="#">Год</a></li>
+								<li class="active"><a href="#">Текущие</a></li>
+								<li><a href="#">Будущие</a></li>
+								<li><a href="#">Прошедщие</a></li>
 							</ul>
 						</div>
 						<div class="wrap-events-content">
