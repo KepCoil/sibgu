@@ -208,17 +208,25 @@ $(function() {
 	});
 
 
-	// Фиксация внутрненного меню при скролле
+	// Фиксация меню на внутр. страницах при скролле
+	var
+		marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
+		defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
+
 	$(window).scroll(function() {
 		var 
-		headerHeight = $(".main-head").outerHeight(),
-		innerMenu = $(".inner-menu");
+			headerHeight 			= $(".main-head").outerHeight(),
+			innerMenu 				= $(".inner-menu"),
+			wrap 						= $("#wrap");
 
 		if ($(this).scrollTop() > headerHeight) {
 			innerMenu.addClass("fixed-inner-menu");
+			wrap.css({"marginTop": marginTopMainContent});
 		} else {
 			innerMenu.removeClass("fixed-inner-menu");
+			wrap.css({"marginTop": defaultMarginTop});
 		}
 	});
+
 
 });
