@@ -199,12 +199,20 @@ $(function() {
 	}
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
+	// Функция перерасчета высоты карты в завимисимости от высоты экрана
+	function resizeHeightMapFilials() {
+		var heightMapFilials = parseInt($(window).height() * 0.7);
+		$("#js-corpuses-map").css({"height": heightMapFilials});
+	};
+	resizeHeightMapFilials();
+
 
 	// Функции при ресайзе экрана
 	$(window).resize(function() {
 		eqH();
 		mainSliderResize();
 		enablePaSlider();
+		resizeHeightMapFilials();
 	});
 
 
@@ -227,6 +235,10 @@ $(function() {
 			wrap.css({"marginTop": defaultMarginTop});
 		}
 	});
+
+	
+
+	
 
 
 });

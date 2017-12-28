@@ -10,8 +10,8 @@
 			<div class="list-filials"></div>
 		</div>
 
-		<div id="js-corpuses-map" class="ya-maps" style="width: 100%; height: 600px; margin-bottom: -50px;"></div>
-		
+		<div id="js-corpuses-map" class="ya-maps" style="width: 100%; height: 500px; margin-bottom: -50px;"></div>
+
 		<script src="libs/yandex-map/yandex-api.js"></script>
 		<script>
 			/* https://tech.yandex.ru/maps/jsbox/2.1/object_list */
@@ -301,12 +301,12 @@
 			function init() {
 
 				// Создаем карты
-				var myMap = new ymaps.Map('js-corpuses-map', {
+				var mapFilials = new ymaps.Map('js-corpuses-map', {
 					center: [56.01839, 92.86717],
 					zoom: 13,
 					controls : ["zoomControl", "fullscreenControl"]
 				});
-				myMap.behaviors.enable('scrollZoom');
+				mapFilials.behaviors.enable('scrollZoom');
 
 				var menu = $('<ul class="filials-list"></ul>');
 	            
@@ -323,7 +323,7 @@
 						collection = new ymaps.GeoObjectCollection(null, { preset: group.color});
 
 					// Добавляем коллекцию на карту.
-					myMap.geoObjects.add(collection);
+					mapFilials.geoObjects.add(collection);
 					// Добавляем подменю.
 					menuItem
 		            .append(submenu)
@@ -351,7 +351,7 @@
 						.appendTo(submenu)
 						.find('a')
 						.bind('click', function () {
-							$('html, body').animate({scrollTop: $("#js-corpuses-map").offset().top}, 500);
+							$('html, body').animate({scrollTop: $("#js-corpuses-map").offset().top-105}, 500);
 							placemark.balloon.open();
 							return false;
 						});
