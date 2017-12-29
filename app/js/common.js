@@ -110,7 +110,7 @@ $(function() {
 		loop: true,
 		items: 1,
 		autoplay: true,
-		autoplayTimeout: 7000
+		autoplayTimeout: 10000
 	});
 	
 
@@ -220,14 +220,15 @@ $(function() {
 	var
 		marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
 		defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
-
+		
 	$(window).scroll(function() {
 		var 
 			headerHeight 			= $(".main-head").outerHeight(),
 			innerMenu 				= $(".inner-menu"),
-			wrap 						= $("#wrap");
+			wrap 						= $("#wrap"),
+			dekstopVers 			= $(".inner-menu").is(":visible");
 
-		if ($(this).scrollTop() > headerHeight) {
+		if ( ($(this).scrollTop() > headerHeight) && (dekstopVers) ) {
 			innerMenu.addClass("fixed-inner-menu");
 			wrap.css({"marginTop": marginTopMainContent});
 		} else {
