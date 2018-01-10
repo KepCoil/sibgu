@@ -75,10 +75,10 @@
 				<ul id="js-main-audit-menu" class="ul-inner-menu inner-audit-menu">
 					<li><a href="#">Абитуриенту</a></li>
 					<li><a href="#">Студенту</a></li>
-					<li><a href="#">Школьнику</a></li>
-					<li><a href="#">Выпускнику</a></li>
+					<li><a href="#">Сотруднику</a></li>
 					<li><a href="#">Ученому</a></li>
-					<li><a href="#">Работнику</a></li>
+					<li><a href="#">Школьнику</a></li>
+					<li><a href="#">Выпускнику</a></li>	
 				</ul>
 			</div>
 		</div>

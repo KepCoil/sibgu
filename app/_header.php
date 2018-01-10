@@ -48,8 +48,9 @@
 								<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
 								<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
 								<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
-								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ им. академика М.Ф. Решетнева в г. Железногорске</a></li>
-								<li><a target="_blank" href="http://zhf.sibsau.ru/">Новосибирский институт дополнительного образования (филиал СибГУ М.Ф. Решетнева в г.Новосибирске)</a></li>
+								<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
+								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
+								<li><a target="_blank" href="http://zhf.sibsau.ru/">Филиал СибГУ г.Новосибирске</a></li>
 							</ul>
 
 						</div>

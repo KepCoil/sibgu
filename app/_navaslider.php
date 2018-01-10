@@ -10,17 +10,19 @@
 						<a href="#"><i class="fa fa-book" aria-hidden="true"></i>Студенту</a>
 					</li>
 					<li>
+						<a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-flask" aria-hidden="true"></i>Ученому</a>
+					</li>
+					<li>
 						<a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Школьнику</a>
 					</li>
 					<li>
 						<a href="#"><i class="fa fa-graduation-cap icon-academec" aria-hidden="true"></i> Выпускнику</a>
 					</li>
-					<li>
-						<a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Ученому</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a>
-					</li>
+					
+					
 				</ul>
 			</div>
 			<div id="js-main-slider" class="main-slider owl-carousel">
