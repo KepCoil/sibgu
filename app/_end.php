@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-table/bootstrap-table.css">
+	<script src="libs/bootstrap-tabs/bootstrap.js"></script>
 <!--  -->
 
 <script src="js/libs.min.js"></script>
