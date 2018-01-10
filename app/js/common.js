@@ -1,15 +1,24 @@
 $(function() {
 
+	/* СКРИПТ ПРОВЕРКИ НА IE 8 И НИЖЕ */
+	// if(document.all && !document.addEventListener){
+	// 	console.log("ie");
+	// 	alert("ie");
+	// }
+	/*  */
+
 
 	/* МОБИЛЬНОЕ МЕНЮ */
 
 	// Перенос оба меню
 	var 
 	commonMenuContent  = $("#js-main-common-menu").html(),
-	commonAuditContent = $("#js-main-audit-menu").html();
+	commonAuditContent = $("#js-main-audit-menu").html(),
+	resLinksContent 	 = $("#js-res-links").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
+	$("#js-item-res-links-menu").append("<ul>" + resLinksContent  + "</ul>");
 
 	// Плагин mmenu
 	$("#js-mobile-mmenu").mmenu({
@@ -20,9 +29,9 @@ $(function() {
 		"navbars": [{
 			"position": "bottom",
 			"content": [
-			"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
-			"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
-			"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
+				"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
+				"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
+				"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
 			]
 		}]
 	});
@@ -40,25 +49,13 @@ $(function() {
 		mobileMenuAPI.open();
 		// $(this).toggleClass("is-active");
 	});
-	// console.log("lol");
 
-	// mobileMenuAPI.closePanel($("#js-button-mobile-mmenu").removeClass("is-active"));
-
-	// mobileMenuAPI.bind("closePanel", function() {
-	// 	console.log("lol");
-	// 	buttonMobileMenu.removeClass("is-active");
- //   });
- /* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
+	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
 
-
-	// Кнопка мобильного меню
-	// $(".hamburger--spin").click(function() {
-	// 	$(this).toggleClass("is-active");
-	// });
 
 	// Выпадающие меню
-	$(".wrap-main-menu >ul .droplist").hover(function() {
+	$(".ul-inner-menu >li.droplist").hover(function() {
 		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
 		$(this).toggleClass("droplist-open");
 	}, function() {
@@ -78,7 +75,7 @@ $(function() {
 
 
 
-	// Функция пересчета ширины слайдера в зависимости от ширины экрана
+	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
 	function mainSliderResize() {
 
 		var searchSlider = $("div").is(".navaslider");
@@ -108,52 +105,12 @@ $(function() {
 
 	mainSliderResize();
 
-
-	function getTopHeightMenu() {
-		var 
-			heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight();
-
-		$(".main-menu.inner-menu").css({'top': heightHeader});
-
-	}
-
-	getTopHeightMenu();
-
-
-	// Функция для фиксирования меню на внутренних страниц при прокрутке
-	function fixTableMenuScrolling() {
-
-		var searchInnerMenu = $("div").is(".wrap-inner-table-menu");
-
-		if (!searchInnerMenu) {
-			return;
-		} 
-		else {
-
-			var
-				menuWrap     = $(".main-menu.inner-menu"),
-				heightHeader = $(".top-line").outerHeight() + $(".head-content").outerHeight(),
-				// heightMenu   = $(".main-menu").outerHeight(),
-				top 			 = $(window).scrollTop();
-
-			if (top + 0 < heightHeader) {
-				menuWrap.css('top', (heightHeader - top));
-			} else {
-				menuWrap.css('top', 0);
-			}
-
-		}
-	};
-
-	fixTableMenuScrolling();
-
-
 	// Слайдер на главной странице
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
 		autoplay: true,
-		autoplayTimeout: 7000
+		autoplayTimeout: 10000
 	});
 	
 
@@ -193,28 +150,61 @@ $(function() {
 			});
 		}
 	}
-	
 	enablePaSlider();
 
 
-	// Функция уравнивания высоты items
+
+	// Функция уравнивания высоты различных элементов
 	function eqH() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
+		$(".dis-docs").height('auto').equalHeights();
 
 
-		// Для страницы новостей
 		var windowWidth = $(window).width();
 		
 		if (windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
+			$(".standart-item-content").height('auto').equalHeights();
 		} else {
 			$(".wrap-cards-news .wrap-news-content").height('auto');
+			$(".standart-item-content").height('auto');
 		}
 
 	};
 	eqH();
+
+
+	/* ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
+	$("#js-button-eye-version").click(function() {
+
+		if ($("#js-eye-version").hasClass("hidden")) {
+			$("#js-eye-version").removeClass("hidden");
+		} else {
+			$("#js-eye-version").addClass("hidden");
+		}
+
+		return false;
+	});
+
+	$("#js-close-button-eye-version").click(function() {
+		$("#js-eye-version").addClass("hidden");
+	});
+
+	if(!$("#toggle-img").prop("checked")) {
+		$("body").addClass("img-disable");
+	} else {
+		$("body").removeClass("img-disable");
+	}
+	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
+
+	// Функция перерасчета высоты карты в завимисимости от высоты экрана
+	function resizeHeightMapFilials() {
+		var heightMapFilials = parseInt($(window).height() * 0.7);
+		$("#js-corpuses-map").css({"height": heightMapFilials});
+	};
+	resizeHeightMapFilials();
 
 
 	// Функции при ресайзе экрана
@@ -222,13 +212,34 @@ $(function() {
 		eqH();
 		mainSliderResize();
 		enablePaSlider();
-		fixTableMenuScrolling();
+		resizeHeightMapFilials();
 	});
 
 
-	// Функции при скролле
+	// Фиксация меню на внутр. страницах при скролле
+	var
+		marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
+		defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
+		
 	$(window).scroll(function() {
-		fixTableMenuScrolling();
+		var 
+			headerHeight 			= $(".main-head").outerHeight(),
+			innerMenu 				= $(".inner-menu"),
+			wrap 						= $("#wrap"),
+			dekstopVers 			= $(".inner-menu").is(":visible");
+
+		if ( ($(this).scrollTop() > headerHeight) && (dekstopVers) ) {
+			innerMenu.addClass("fixed-inner-menu");
+			wrap.css({"marginTop": marginTopMainContent});
+		} else {
+			innerMenu.removeClass("fixed-inner-menu");
+			wrap.css({"marginTop": defaultMarginTop});
+		}
 	});
+
+	
+
+	
+
 
 });

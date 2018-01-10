@@ -8,8 +8,6 @@
 		.top-line
 			.main-logo-wrap
 				width: 196px
-			.quick-links-wrap
-				width: 928px
 			.main-logo
 				width: 196px
 				height: 203px
@@ -34,14 +32,16 @@
 			width: 30%
 		.col-rector-content
 			width: 70%
+		.wrap-events-list 
+			.wrap-events-category 
+				li 
+					a
+						font-size: 15px
 	
 
 /* for 1600px */
 @media only screen and (max-width : 1580px)
 	#wrapwrap
-		.top-line
-			.quick-links-wrap
-				width: 608px
 		.main-title
 			font-size: 25px
 			line-height: 29px
@@ -92,7 +92,7 @@
 				i
 					width: 35px
 		.main-slider.owl-carousel
-			left: 220px
+			left: 220px	
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1260px)
@@ -100,10 +100,6 @@
 		.top-line
 			.main-logo-wrap
 				width: 181px
-			.quick-links-wrap
-				width: 458px
-			.res-links-wrap
-				width: 270px
 			.res-links
 				.res-links-btn
 				font-size: 14px
@@ -128,12 +124,11 @@
 				a.info-uni
 					font-size: 14px
 		.main-menu
-			.wrap-main-menu
-				>ul
-					>li 
-						>a
-							font-size: 13px
-							padding: 15px 10px 
+			ul.ul-inner-menu
+				>li 
+					>a
+						font-size: 13px
+						padding: 15px 10px 
 		.event-item
 			padding: 0
 		.news-sect 
@@ -174,6 +169,12 @@
 						time, .mega-title
 							font-size: 36px
 							line-height: 44px
+		.eye-panel-controls
+			strong
+				font-size: 15px
+		.wrap-toggle-img
+			.switch-state-img:empty ~ label
+				font-size: 15px
 
 
 @media only screen and (max-width : 1260px) and (min-width: 992px)
@@ -197,12 +198,18 @@
 					img
 						width: 35px
 						height: 35px
+		.wrap-events-list 
+			.wrap-events-category 
+				li 
+					a
+						font-size: 13px
+						padding: 12px 20px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	#wrapwrap
 		#wrap
-			margin-top: 40px
+			margin-top: 20px
 		.top-line
 			padding: 5px 0
 			.flag-links-wrap
@@ -292,33 +299,42 @@
 			.main-slider.owl-carousel
 				left: 0
 				height: 350px
-		.foot-first-level
-			padding: 20px 0
-			.wrap-foot-level
-				padding: 0
-				.col-md-6
-					padding: 15px 0
-				.col-sm-12
-					padding-right: 15px
-				li
-					a
-						font-size: 15px
+		>footer 		
+			.foot-first-level
+				padding: 20px 0
+				.wrap-foot-level
+					padding: 0
+					.col-md-6
+						padding: 15px 0
+					.col-sm-12
+						padding-right: 15px
+					li
+						a
+							font-size: 15px
+				.second-foot-line
+					padding: 20px 0 0 0
+					.col-md-6:nth-child(2)
+						border-right: 0
 			.second-foot-line
-				padding: 20px 0 0 0
-
-		.second-foot-line
-			.col-md-6
-				&:nth-child(2)
-					border-right: none
-			 .foot-contacts-content-col-2
+				.col-md-6
+					&:nth-child(2)
+						border-right: none
 		.uit
 			display: none
-		
+				
 			
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	#wrapwrap
+		.main-sect 
+			h2
+				font-size: 28px
+				line-height: 32px
+				margin-bottom: 30px
+		.inner-title
+			font-size: 22px
+			line-height: 28px
 		.foot-first-level
 			.second-foot-line 
 				.foot-contacts-content-col-2
@@ -340,6 +356,8 @@
 						time, .mega-title
 							font-size: 24px
 							line-height: 32px
+		.wrap-standart-item
+			margin-bottom: 15px
 			
 
 @media only screen and (max-width : 620px)
@@ -425,6 +443,13 @@
 						time, .mega-title
 							font-size: 18px
 							line-height: 24px
+		.wrap-standart-item
+			h3
+				font-size: 18px
+			.wrap-icon
+				i
+					font-size: 50px
+
 			
 
 @media only screen and (max-width : 375px)
@@ -462,6 +487,11 @@
 					font-size: 10px
 					line-height: 12px
 					padding: 5px 0
+		.wrap-events-list 
+			.wrap-events-date-filter 
+				ul 
+					li
+						margin-right: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

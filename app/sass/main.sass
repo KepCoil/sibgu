@@ -16,6 +16,10 @@
 		padding: 2px 0
 		.container
 			padding: 0
+		.top-line-left-content
+			float: left
+		.top-line-right-content
+			float: right
 		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .flag-links-wrap
 			position: relative
 			padding: 0 15px
@@ -25,10 +29,7 @@
 			width: 226px
 			padding: 0
 		.quick-links-wrap
-			width: 1210px
 			padding: 10px 15px 10px 25px
-		.res-links-wrap
-			width: 375px
 		.flag-links-wrap
 			width: 61px
 			padding-right: 0
@@ -64,15 +65,23 @@
 				text-align: right
 				z-index: 1000
 				.dropdown-menu
+					min-width: 320px
 					padding: 10px 15px
+					margin: 0
+					right: 0
+					box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
 					a
 						font-size: 13px
-			.res-links-btn
-				padding: 0
-				background: none
-				border: none
-				color: $yellow
-				padding: 10px 0
+				.res-links-btn
+					background: none
+					border: none
+					color: $yellow
+					padding: 10px 15px
+			.dropdown.open
+				.res-links-btn
+					background-color: #f7f7f7
+					color: $blue
+					border-radius: 0
 		.flag-links
 			img
 				width: 40px
@@ -126,7 +135,7 @@
 			color: #fff
 			i
 				margin-right: 10px
-			&:hover, &:focus
+			&:hover
 				color: $yellow
 		a.info-uni
 			font-family: "MyriadPro-Regular", sans-serif
@@ -134,7 +143,7 @@
 			color: $yellow
 			border-bottom: 1px solid $yellow
 			transition: color $main-trans, border-bottom-color $main-trans
-			&:hover, &:focus
+			&:hover
 				border-bottom: 1px solid transparent
 
 .reshetnev
@@ -234,7 +243,6 @@
 
 /* SECTION NEWS */
 .news-sect
-	padding-bottom: 45px
 	.row-news
 		margin: 0 -5px
 	h2
@@ -510,7 +518,7 @@
 
 /* SECTION COMPANY - PARTNERS */
 .pa-sect
-	padding-bottom: 0
+	padding-bottom: 20px
 	.col-md-6
 		text-align: center
 	.wrap-pa-item
@@ -550,97 +558,103 @@
 
 
 /* FOOTER */
-#wrapwrap
-	footer
+
+#wrapwrap 
+	>footer
+		background-color: $blue
+		color: #fff
 		a
 			color: #fff
 			border-bottom: 1px solid #fff
-			transition: all $main-trans
-			&:hover
-				border-color: transparent
+			transition: color $main-trans, border-bottom-color $main-trans
+			margin-top: 20px
+			&:hover, &:focus, &:active
+				border-color: $yellow
+				color: $yellow
 		ul
 			margin: 0
 			padding: 0
 			list-style-type: none
-
-.foot-first-level
-	padding: 50px 0 20px 0
-	.wrap-foot-level
-		margin: 0 15px
-		.col-md-6
-			padding: 0 30px
-			&:first-child
-				padding-left: 0
-			&:last-child
-				padding-right: 0
-	.first-foot-line
-		padding-bottom: 50px
-		border-bottom: 1px solid $light-line
-	.second-foot-line
-		padding: 40px 0
-		h5
-			margin: 0 0 15px 0
-			font-size: 20px
-			text-transform: uppercase
-			font-family: "OpenSans-Semibold", sans-serif
-		.col-md-6
-			&:nth-child(2)
-				border-right: 1px solid $light-line
-	.wrap-foot-links
-		list-style-type: none
-		padding: 0
-		margin: 0
-		li
-			display: block
-			padding: 7px 0
-	.second-foot-line
-		.foot-contacts-content
+		address
+			font-style: normal
+			font-family: "OpenSans-Regular", sans-serif
+		.foot-first-level
+			padding: 50px 0 20px 0
+		.wrap-foot-level
+			margin: 0
+			.col-md-6
+				padding: 0 30px
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+		.first-foot-line
+			padding-bottom: 50px
+			border-bottom: 1px solid $light-line
+		.second-foot-line
+			padding: 40px 0
+			h5
+				margin: 0 0 15px 0
+				font-size: 20px
+				text-transform: uppercase
+				font-family: "OpenSans-Semibold", sans-serif
+			.col-md-6
+				&:nth-child(2)
+					border-right: 1px solid $light-line
+		.wrap-foot-links
+			list-style-type: none
+			padding: 0
+			margin: 0
 			li
 				display: block
-				margin-bottom: 15px
-				font-size: 15px
-		.foot-contacts-content-col-2
-			margin-top: 41px
-			strong
-				font-weight: normal
-				font-family: "OpenSans-Semibold", sans-serif
-	.wrap-foot-contancts
-		.foot-feedback
-			p
-				font-size: 14px
-				margin: 0 0 15px 0
-			.button-light-blue
-				padding: 8px 16px
-				background-color: #4f8fcd
-				display: inline-block
-				border: 2px solid lighten(#4f8fcd, 5%)
-				border-radius: 2px
-				text-transform: uppercase
-				// font-size: 16px
-				font-family: "OpenSans-Semibold", sans-serif
-				&:hover, &:focus
-					background-color: lighten(#4f8fcd, 2%)
-				&:active
-					background-color: darken(#4f8fcd, 5%)
-		.foot-social-list
-			margin: 0
-			padding: 0
-			li
-				display: inline-block
-				margin-right: 12px
-			a
-				border: none
-			img
-				width: 40px
-				height: 40px
-
-.foot-second-level
-	padding: 30px 0
-	background-color: $dark-blue
-	border-top: 1px solid $light-line
-	.uit
-		text-align: right
-
+				padding: 7px 0
+		.second-foot-line
+			.foot-contacts-content
+				li
+					display: block
+					margin-bottom: 15px
+					font-size: 15px
+			.foot-contacts-content-col-2
+				margin-top: 41px
+				strong
+					font-weight: normal
+					font-family: "OpenSans-Semibold", sans-serif
+		.wrap-foot-contancts
+			.foot-feedback
+				p
+					font-size: 14px
+					margin: 0
+				.button-light-blue
+					padding: 8px 16px
+					background-color: #4f8fcd
+					display: inline-block
+					border: 2px solid lighten(#4f8fcd, 5%)
+					border-radius: 2px
+					text-transform: uppercase
+					font-family: "OpenSans-Semibold", sans-serif
+					&:hover, &:focus
+						background-color: lighten(#4f8fcd, 2%)
+						color: #fff
+					&:active
+						background-color: darken(#4f8fcd, 5%)
+						color: #fff
+			.foot-social-list
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+					margin-right: 12px
+				a
+					border: none
+				img
+					width: 40px
+					height: 40px
+		.foot-second-level
+			padding: 30px 0
+			background-color: $dark-blue
+			border-top: 1px solid $light-line
+			.uit
+				text-align: right
 /* END FOOTER */
 
 
@@ -677,10 +691,12 @@
 			time
 				display: block
 				font-size: 17px
+				color: #555
 			.wrap-news-title
 				display: block
 				margin: 15px 0 20px 0
 				h3
+					font-size: 20px
 					display: inline
 					border-bottom: 1px solid transparent
 					transition: border-color $main-trans
@@ -690,6 +706,7 @@
 				margin: 0
 		.wrap-other-link
 			display: block
+			font-size: 20px
 			padding: 0 15px 30px 15px
 			&:hover
 				.other-link
@@ -698,11 +715,11 @@
 				margin: 0
 				transition: border-color $main-trans
 				border-bottom: 1px solid $dark-blue
-				font-size: 20px
+				font-size: 18px
 
 #div_nav_panel
 	padding: 0
-	margin: 30px 0
+	margin: 10px 0
 	#nav_panel
 		margin: 0
 		padding: 0
@@ -738,10 +755,11 @@
 		height: 800px
 		position: relative
 		overflow: hidden
+		top: -30px
 		.mega-img
 			width: 100%
 			height: 100%
-			background-position: top center
+			background-position: center -50px
 			background-size: cover
 			position: absolute
 			&::before
@@ -788,14 +806,16 @@
 					bottom: 0
 					margin-bottom: 0
 	.wrap-mega-content
-		margin-top: 20px
-
+		margin-top: -10px
 /* END MEGA NEWS PAGE */
+
 
 /* COMMON NEWS PAGE */
 .common-news
+	.inner-title
+		text-transform: none
 	.date-public
-		font-size: 18px
+		font-size: 17px
 		display: block
 		margin-bottom: 30px
 		color: #555
@@ -889,9 +909,86 @@
 						border-color: $default-color
 						&:hover
 							border-color: transparent
-
+#wrapwrap
+	.wrap-events-content
+			table.table-events
+				table-layout: auto
 /* END EVENTS LIST PAGE */
 
 
-@import "media"
+/* EVENT PAGE */
+.wrap-event-content
+	.inner-title
+		text-transform: none
+	.event-category
+		font-size: 17px
+		display: block
+		margin-bottom: 30px
+		color: #555
+		border-bottom: 1px solid #aaa
+		padding-bottom: 10px
+	.event-date,
+	.event-location,
+	.event-contact
+		margin-bottom: 10px
+		strong
+			display: block
+	.event-text
+		margin: 20px 0
 
+/* END EVENT PAGE */
+
+
+/* DIS PAGE */
+.wrap-dis-page
+	.dis-title
+		text-transform: none
+	.dis-meta-info
+		i
+			margin-right: 8px
+	.dis-meta-info
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 5px
+		.dis-link
+			a
+	.dis-text
+		margin: 20px 0 30px 0
+	.dis-docs
+		background-color: $grey-bgc
+		padding: 25px
+		margin-bottom: 15px
+		h3
+			margin-top: 0
+			font-size: 20px
+			text-transform: uppercase
+			font-family: "OpenSans-SemiBold", sans-serif
+		ul
+			padding-left: 15px
+			margin: 0
+			li
+				margin-bottom: 5px
+				a
+					color: $blue
+					border-color: $blue
+					&:hover
+						border-color: transparent
+/* END DIS PAGE */
+
+/* YA MAPS */
+.list-filials
+	margin-bottom: 30px
+	>ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		>li
+			margin-bottom: 30px
+			>a
+				text-transform: uppercase
+				border-bottom: none
+				cursor: default
+			>ol
+				padding-left: 40px
+				list-style-type: decimal
+/* END YA MAPS */
+@import "media"
