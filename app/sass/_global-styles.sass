@@ -56,10 +56,12 @@ a
 	transition: color $main-trans, border-bottom-color $main-trans, background-color $main-trans
 	color: #076fc8
 	border-bottom: 1px solid #076fc8
-	&:hover, &:focus, &:active
+	&:hover, &:active
 		text-decoration: none
 		color: $accent-links
 		border-bottom: 1px solid $accent-links
+	&:focus
+		text-decoration: none
 			
 button
 	outline: none !important
@@ -556,3 +558,7 @@ h2.inner-title
 			background-color: $blue
 			color: $yellow
 			border: 0
+
+/* Snippet "Well" */
+.well
+	border-radius: 0

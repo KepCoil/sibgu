@@ -206,6 +206,25 @@ $(function() {
 	};
 	resizeHeightMapFilials();
 
+	/*Mansory plugin */
+	// function alo() {
+		
+	// 	$('.filials-list').masonry({
+	// 		itemSelector: '.fialial-item',
+	// 	});
+	// };
+	// setTimeout(alo, 3000);
+
+
+
+	// if($(".map-filials").length) {
+ //  		$('.filials-list').masonry({
+	// 		itemSelector: '.fialial-item',
+	// 	});
+	// 	console.log('mansory');
+	// }
+	
+	/*End Mansory plugin*/
 
 	// Функции при ресайзе экрана
 	$(window).resize(function() {

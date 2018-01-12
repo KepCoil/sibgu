@@ -66,9 +66,10 @@
 				z-index: 1000
 				.dropdown-menu
 					min-width: 320px
+					right: 0
+					left: auto
 					padding: 10px 15px
 					margin: 0
-					right: 0
 					box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
 					a
 						font-size: 13px
@@ -975,8 +976,28 @@
 /* END DIS PAGE */
 
 /* YA MAPS */
-.list-filials
-	margin-bottom: 30px
+.map-filials
+	margin-bottom: 15px
+	.fialial-item
+		background-color: #f7f7f7
+		padding: 15px
+		margin-bottom: 15px
+		border-left-width: 15px
+		border-left-style: solid
+		&:first-child
+			border-color: darken(#1e98ff, 10%)
+		&:nth-child(2)
+			border-color: darken(#56db40, 10%)
+		&:nth-child(3)
+			border-color: darken(#ed4543, 10%)
+		&:nth-child(4)
+			border-color: darken(#b3b3b3, 10%)
+		&:nth-child(5)
+			border-color: darken(#ffd21e, 10%)
+		&:nth-child(6)
+			border-color: darken(#ff931e, 10%)
+	.fialial-item-size
+		width: 100%
 	>ul
 		list-style-type: none
 		margin: 0
@@ -987,6 +1008,14 @@
 				text-transform: uppercase
 				border-bottom: none
 				cursor: default
+				font-family: "OpenSans-SemiBold", sans-serif
+				color: $default-color
+				margin-bottom: 5px
+				display: inline-block
+				font-size: 17px
+				&:hover, &:focus, &:active
+					color: $default-color
+					border-color: $default-color
 			>ol
 				padding-left: 40px
 				list-style-type: decimal

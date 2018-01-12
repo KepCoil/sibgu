@@ -7,7 +7,7 @@
 
 		<div class="container">
 			<h2 class="inner-title">Карта корпусов</h2>
-			<div class="list-filials"></div>
+			<div class="map-filials"></div>
 		</div>
 
 		<div id="js-corpuses-map" class="ya-maps" style="width: 100%; height: 500px; margin-bottom: -50px;"></div>
@@ -54,17 +54,17 @@
 					{
 						center: [56.01567452751124,92.97995877450201],
 						name: 'Корпус «Е»',
-						address: 'пр.им. газеты «Красноярский рабочий», 48Б',
+						address: 'пр.им. газеты «Красноярский рабочий», 48б',
 						caption: 'Корпус «Е»'
 					},
 					{
 						center: [56.01182893485795,92.97388147819159],
 						name: 'Корпус «К», «Км»',
-						address: 'пр.им. газеты «Красноярский рабочий», 31А',
+						address: 'пр.им. газеты «Красноярский рабочий», 31а',
 						caption: 'Корпус «К», «Км»'
 					},
 					{
-						center: [56.01195388972735,92.97381090939007],
+						center: [56.012703374205444,92.97420847605736],
 						name: 'Корпус «Л»',
 						address: 'пр.им. газеты «Красноярский рабочий», 31',
 						caption: 'Корпус «Л»'
@@ -102,7 +102,7 @@
 					{
 						center: [55.99935221241152,92.95020144802034],
 						name: 'Корпус «С1», «С2»',
-						address: 'ул. Семафорная, 433',
+						address: 'ул. Семафорная, 433/1',
 						caption: 'Корпус «С1», «С2»'
 					},
 					{
@@ -269,12 +269,12 @@
 						address: 'ул. Сад Крутовского, 11г',
 						caption: 'Сад Крутовского'
 					},
-					{
-						center: [56.01298301124437,92.86801421070865],
-						name: 'Профессорская столовая',
-						address: 'ул. Ленина, 73',
-						caption: 'Профессорская столовая'
-					},
+					// {
+					// 	center: [56.01298301124437,92.86801421070865],
+					// 	name: 'Профессорская столовая',
+					// 	address: 'ул. Ленина, 73',
+					// 	caption: 'Профессорская столовая'
+					// },
 					{
 						center: [56.01288946916109,92.97409328769679],
 						name: 'Мед. пункт в корпусе «Л»',
@@ -361,14 +361,12 @@
 					{
 						center: [56.01446356871627,92.86889399999998],
 						name: 'Общежитие №8, Дом молодых ученых',
-						address: 'ул. Марковского, 57А',
+						address: 'ул. Марковского, 57а',
 						caption: 'Общежитие №8'
 					}
 					]
 				},
 			];
-
-			console.log(groups);
 
 			ymaps.ready(init);
 			function init() {
@@ -390,7 +388,7 @@
 				function createMenuGroup (group) {
 					// Пункт меню.
 					var 
-						menuItem = $('<li><a href="#">' + group.name + '</a></li>'),
+						menuItem = $('<li class="fialial-item"><a href="#">' + group.name + '</a></li>'),
 						submenu = $('<ol class="submenu"></ol>'),
 						// Коллекция для геообъектов группы.
 						collection = new ymaps.GeoObjectCollection(null, { preset: group.color});
@@ -437,8 +435,8 @@
 				}
 
 				// Добавим меню в нужный блок
-				menu.appendTo($('.list-filials'));
-			}
+				menu.appendTo($('.map-filials'));
+			};
 		</script>
 
 </div>

@@ -15,9 +15,9 @@
 					<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Спорт</a></li>
 					<li role="presentation"><a href="#mer" role="tab" data-toggle="tab">Мероприятия</a></li>
 					<li role="presentation"><a href="#sob" role="tab" data-toggle="tab">События</a></li>
+					<li role="presentation"><a href="#test" role="tab" data-toggle="tab">Тест</a></li>
 				</ul>
 
-				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="home">
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своих имени, скатился путь. Раз реторический заманивший за пояс грустный, парадигматическая если курсивных скатился на берегу одна семь, деревни, назад строчка?</p>
@@ -54,6 +54,9 @@
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это великий она моей залетают правилами вершину заглавных всемогущая но, осталось, продолжил заголовок. Одна первую образ, журчит грамматики дорогу великий.</p>
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Скатился языкового осталось но проектах!</p>
 						<a href="#">События</a>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="test">
+						123
 					</div>
 				</div>
 
