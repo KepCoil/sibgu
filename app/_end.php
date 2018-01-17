@@ -14,8 +14,6 @@
 	</ul>
 </div>
 
-<?php include("_eye-version.php") ?>
-
 <!-- scripts -->
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -36,6 +34,8 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
+<!-- id=wrapwrap -->
+</div>
 
 </body>
 </html>

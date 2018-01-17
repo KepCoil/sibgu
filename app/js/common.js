@@ -199,6 +199,8 @@ $(function() {
 	}
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
+	
+
 	// Функция перерасчета высоты карты в завимисимости от высоты экрана
 	function resizeHeightMapFilials() {
 		var heightMapFilials = parseInt($(window).height() * 0.7);
@@ -206,25 +208,7 @@ $(function() {
 	};
 	resizeHeightMapFilials();
 
-	/*Mansory plugin */
-	// function alo() {
-		
-	// 	$('.filials-list').masonry({
-	// 		itemSelector: '.fialial-item',
-	// 	});
-	// };
-	// setTimeout(alo, 3000);
 
-
-
-	// if($(".map-filials").length) {
- //  		$('.filials-list').masonry({
-	// 		itemSelector: '.fialial-item',
-	// 	});
-	// 	console.log('mansory');
-	// }
-	
-	/*End Mansory plugin*/
 
 	// Функции при ресайзе экрана
 	$(window).resize(function() {

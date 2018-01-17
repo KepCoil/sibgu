@@ -1,3 +1,4 @@
+<?php include("_eye-version.php") ?>
 
 <header class="main-head">
 	<div class="top-line">

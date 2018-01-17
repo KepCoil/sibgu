@@ -26,5 +26,6 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body id="wrapwrap" class="main-site-sibgu">
-
+<body class="main-site-sibgu">
+	
+	<div id="wrapwrap">
