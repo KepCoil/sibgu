@@ -24,6 +24,11 @@
 	<!-- style -->
 	<style>body { opacity: 0; overflow-x: hidden;}</style>
 	<link rel="stylesheet" href="css/main.min.css">
+	<!-- <style>
+		html {
+			font-size: 150%
+		}
+	</style> -->
 </head>
 
 <body class="main-site-sibgu">
