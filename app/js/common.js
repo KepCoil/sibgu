@@ -177,12 +177,14 @@ $(function() {
 
 
 	/* ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
+	var pathFileSpecVersion = '<link href="css/spec-version.min.css" rel="stylesheet">'
 	$("#js-button-eye-version").click(function() {
 
 		if ($("#js-eye-version").hasClass("hidden")) {
 			$("#js-eye-version").removeClass("hidden");
 		} else {
 			$("#js-eye-version").addClass("hidden");
+			$("head").append(pathFileSpecVersion);
 		}
 
 		return false;
@@ -192,11 +194,13 @@ $(function() {
 		$("#js-eye-version").addClass("hidden");
 	});
 
-	if(!$("#toggle-img").prop("checked")) {
-		$("body").addClass("img-disable");
-	} else {
-		$("body").removeClass("img-disable");
-	}
+	// if(!$("#toggle-img").prop("checked")) {
+	// 	$("body").addClass("img-disable");
+	// } else {
+	// 	$("body").removeClass("img-disable");
+	// }
+
+	
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
 	

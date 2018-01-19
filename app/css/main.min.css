@@ -7364,6 +7364,8 @@ h2.inner-title {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     padding: 20px 13px 10px 13px; }
     #wrapwrap .top-line .main-logo img {
+      display: block !important;
+      visibility: visible !important;
       width: 200px;
       height: 200px; }
   #wrapwrap .top-line .quick-links a {
@@ -7390,7 +7392,7 @@ h2.inner-title {
       -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
               box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5); }
       #wrapwrap .top-line .res-links .dropdown .dropdown-menu a {
-        font-size: 13px; }
+        font-size: 0.8125rem; }
     #wrapwrap .top-line .res-links .dropdown .res-links-btn {
       background: none;
       border: none;
@@ -7403,7 +7405,8 @@ h2.inner-title {
             border-radius: 0; }
   #wrapwrap .top-line .flag-links img {
     width: 40px;
-    height: 30px; }
+    height: 30px;
+    visibility: visible !important; }
   #wrapwrap .top-line .flag-links .btn-ru, #wrapwrap .top-line .flag-links .dropdown-flags, #wrapwrap .top-line .flag-links a, #wrapwrap .top-line .flag-links li {
     padding: 0;
     border: 0;
@@ -7963,7 +7966,8 @@ h2.inner-title {
       border: none; }
     #wrapwrap > footer .wrap-foot-contancts .foot-social-list img {
       width: 40px;
-      height: 40px; }
+      height: 40px;
+      visibility: visible !important; }
   #wrapwrap > footer .foot-second-level {
     padding: 30px 0;
     background-color: #253666;
@@ -8082,7 +8086,8 @@ h2.inner-title {
     background-position: center -50px;
     -webkit-background-size: cover;
             background-size: cover;
-    position: absolute; }
+    position: absolute;
+    background-repeat: no-repeat; }
     .wrap-mega-news .wrap-mega-img .mega-img::before {
       content: '';
       background-color: rgba(0, 0, 0, 0.2);
@@ -8117,7 +8122,7 @@ h2.inner-title {
       bottom: 0; }
       .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
         font-family: "MyriadPro-Semibold", sans-serif;
-        font-size: 40px;
+        font-size: 2.25rem;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
         position: absolute; }
       .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time {
@@ -8135,7 +8140,7 @@ h2.inner-title {
   text-transform: none; }
 
 .common-news .date-public {
-  font-size: 17px;
+  font-size: 1.0625rem;
   display: block;
   margin-bottom: 30px;
   color: #555;
@@ -8164,7 +8169,7 @@ h2.inner-title {
       text-transform: uppercase;
       position: relative;
       display: block;
-      font-size: 17px;
+      font-size: 1.0625rem;
       font-family: "OpenSans-Semibold", sans-serif;
       -webkit-transition: background-color 0.25s ease-out;
       -o-transition: background-color 0.25s ease-out;
@@ -8373,6 +8378,8 @@ h2.inner-title {
 
 /* for 1600px */
 @media only screen and (max-width: 1580px) {
+  html {
+    font-size: 95%; }
   #wrapwrap .main-title {
     font-size: 25px;
     line-height: 29px; }
@@ -8416,10 +8423,10 @@ h2.inner-title {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1260px) {
+  html {
+    font-size: 90%; }
   #wrapwrap .top-line .main-logo-wrap {
     width: 181px; }
-  #wrapwrap .top-line .res-links {
-    font-size: 14px; }
   #wrapwrap .top-line .main-logo {
     width: 181px;
     height: 188px; }
@@ -8440,8 +8447,7 @@ h2.inner-title {
     #wrapwrap .head-content .other-func a.info-uni {
       font-size: 14px; }
   #wrapwrap .main-menu ul.ul-inner-menu > li > a {
-    font-size: 13px;
-    padding: 15px 10px; }
+    padding: 15px 8px; }
   #wrapwrap .event-item {
     padding: 0; }
   #wrapwrap .news-sect .wrap-item-news {
@@ -8467,10 +8473,10 @@ h2.inner-title {
       font-size: 18px;
       margin-top: 15px; }
   #wrapwrap .wrap-mega-news .wrap-mega-img {
-    height: 600px; }
+    height: 500px; }
     #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
       font-size: 36px;
-      line-height: 44px; }
+      line-height: 1.2; }
   #wrapwrap .eye-panel-controls strong {
     font-size: 15px; }
   #wrapwrap .wrap-toggle-img .switch-state-img:empty ~ label {
@@ -8593,8 +8599,6 @@ h2.inner-title {
         padding: 15px 0; }
       #wrapwrap > footer .foot-first-level .wrap-foot-level .col-sm-12 {
         padding-right: 15px; }
-      #wrapwrap > footer .foot-first-level .wrap-foot-level li a {
-        font-size: 15px; }
     #wrapwrap > footer .foot-first-level .second-foot-line {
       padding: 20px 0 0 0; }
       #wrapwrap > footer .foot-first-level .second-foot-line .col-md-6:nth-child(2) {
@@ -8606,9 +8610,9 @@ h2.inner-title {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 85%; }
   #wrapwrap .main-sect h2 {
-    font-size: 28px;
-    line-height: 32px;
     margin-bottom: 30px; }
   #wrapwrap .inner-title {
     font-size: 22px;
@@ -8621,12 +8625,12 @@ h2.inner-title {
     display: block;
     margin: 0 0 0 3px; }
   #wrapwrap .wrap-mega-news .wrap-mega-img {
-    height: 500px; }
+    height: 320px; }
     #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content {
       padding: 15px; }
       #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
         font-size: 24px;
-        line-height: 32px; }
+        line-height: 1.2; }
   #wrapwrap .wrap-standart-item {
     margin-bottom: 15px; } }
 
@@ -8662,6 +8666,8 @@ h2.inner-title {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 80%; }
   #wrapwrap .top-line .main-logo-wrap {
     margin-left: 15px;
     width: 80px; }
@@ -8692,10 +8698,10 @@ h2.inner-title {
     width: 100%;
     margin: 0; }
   #wrapwrap .wrap-mega-news .wrap-mega-img {
-    height: 350px; }
+    height: 200px; }
     #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
       font-size: 18px;
-      line-height: 24px; }
+      line-height: 1.2; }
   #wrapwrap .wrap-standart-item h3 {
     font-size: 18px; }
   #wrapwrap .wrap-standart-item .wrap-icon i {

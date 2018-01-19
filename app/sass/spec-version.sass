@@ -1,0 +1,38 @@
+@import "vars"
+
+html.font-size-normal
+	font-size: 100%
+
+html.font-size-medium
+	font-size: 120%
+
+html.font-size-large
+	font-size: 150%
+
+html.disable-img
+	#wrapwrap
+		img
+			visibility: hidden !important
+
+		/* картинки новостей на главной */
+		.news-sect 
+			.wrap-item-news 
+				a 
+					.news-img
+						visibility: hidden !important
+
+		/* слайдер на главной */
+		.main-slider.owl-carousel 
+			.owl-stage-outer 
+				.owl-stage 
+					.owl-item 
+						.wrap-main-slide 
+							.slide-img
+								visibility: hidden !important
+
+		/* карточки новостей */						
+		.wrap-cards-news 
+			.wrap-card-item-news 
+				.news-img
+					visibility: hidden !important
+					background-color: red

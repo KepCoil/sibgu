@@ -47,6 +47,8 @@
 			box-shadow: 0 2px 4px rgba(0,0,0,0.3)
 			padding: 20px 13px 10px 13px
 			img
+				display: block !important
+				visibility: visible !important
 				width: 200px
 				height: 200px
 		.quick-links
@@ -72,7 +74,7 @@
 					margin: 0
 					box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
 					a
-						font-size: 13px
+						font-size: 0.8125rem
 				.res-links-btn
 					background: none
 					border: none
@@ -87,6 +89,7 @@
 			img
 				width: 40px
 				height: 30px
+				visibility: visible !important
 			.btn-ru, .dropdown-flags, a, li
 				padding: 0
 				border: 0
@@ -647,6 +650,7 @@
 				img
 					width: 40px
 					height: 40px
+					visibility: visible !important
 		.foot-second-level
 			padding: 30px 0
 			background-color: $dark-blue
@@ -759,6 +763,7 @@
 			background-position: center -50px
 			background-size: cover
 			position: absolute
+			background-repeat: no-repeat
 			&::before
 				content: ''
 				background-color: rgba(0, 0, 0, 0.2)
@@ -793,7 +798,7 @@
 				bottom: 0
 				time, .mega-title
 					font-family: "MyriadPro-Semibold", sans-serif
-					font-size: 40px
+					font-size: 2.25rem
 					text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9)
 					position: absolute
 				time
@@ -811,7 +816,7 @@
 	.inner-title
 		text-transform: none
 	.date-public
-		font-size: 17px
+		font-size: 1.0625rem
 		display: block
 		margin-bottom: 30px
 		color: #555
@@ -843,7 +848,7 @@
 				text-transform: uppercase
 				position: relative
 				display: block
-				font-size: 17px
+				font-size: 1.0625rem
 				font-family: "OpenSans-Semibold", sans-serif
 				transition: background-color $main-trans
 				&:hover
