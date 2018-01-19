@@ -1,5 +1,66 @@
 @charset "UTF-8";
 /* $blue: #2f4077 */
+/* WHITE THEME */
+#wrapwrap .top-line,
+#wrapwrap .main-sect,
+#wrapwrap .main-head,
+#wrapwrap .main-menu,
+#wrapwrap .navaslider,
+#wrapwrap .foot-first-level,
+#wrapwrap #wrap {
+  border-bottom: 1px solid #000; }
+
+#wrapwrap .top-line .main-logo img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+#wrapwrap .head-content .main-title {
+  color: #000;
+  text-shadow: none; }
+
+#wrapwrap .head-content .other-func a {
+  color: #000; }
+
+#wrapwrap .main-sect {
+  border-bottom: 1px solid #000; }
+  #wrapwrap .main-sect h2 {
+    color: #000; }
+
+#wrapwrap .blue-sect {
+  color: #000; }
+
+#wrapwrap .event-item .wrap-date-event .calendar-icon span {
+  background-color: #000;
+  -webkit-box-shadow: 0 2px 0 #000;
+          box-shadow: 0 2px 0 #000; }
+
+#wrapwrap .event-item .wrap-date-event .calendar-icon span::before,
+#wrapwrap .event-item .wrap-date-event .calendar-icon span::after {
+  border-color: #eee; }
+
+#wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot {
+  background-color: #565656; }
+
+#wrapwrap .main-menu ul li a {
+  color: #000; }
+
+#wrapwrap .wrap-target-menu li a {
+  color: #000; }
+
+#wrapwrap .other-link {
+  color: #000; }
+  #wrapwrap .other-link a {
+    color: #000;
+    border-color: #000; }
+
+#wrapwrap > footer {
+  color: #000; }
+  #wrapwrap > footer a {
+    color: #000; }
+
 html.font-size-normal {
   font-size: 100%; }
 
