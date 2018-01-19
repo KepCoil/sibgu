@@ -13,7 +13,8 @@ html.disable-img #wrapwrap {
   /* картинки новостей на главной */
   /* слайдер на главной */
   /* карточки новостей */
-  /* mega новость */ }
+  /* mega новость */
+  /* остальные улучшения */ }
   html.disable-img #wrapwrap img {
     visibility: hidden !important; }
   html.disable-img #wrapwrap .news-sect .wrap-item-news a {
@@ -32,3 +33,18 @@ html.disable-img #wrapwrap {
     background-color: #565656; }
     html.disable-img #wrapwrap .wrap-mega-news .wrap-mega-img .mega-img {
       visibility: hidden !important; }
+  html.disable-img #wrapwrap .rector-sect .col-rector-img {
+    display: none; }
+  html.disable-img #wrapwrap .rector-sect .col-rector-content {
+    width: 100%; }
+  html.disable-img #wrapwrap .rector-sect .wrap-rector-img {
+    border-color: transparent; }
+  html.disable-img #wrapwrap .comment-students-sect .wrap-comment-img {
+    border-color: transparent;
+    display: none; }
+  html.disable-img #wrapwrap footer .wrap-foot-contancts .foot-social-list img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
