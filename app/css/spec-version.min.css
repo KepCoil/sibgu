@@ -1,66 +1,5 @@
 @charset "UTF-8";
 /* $blue: #2f4077 */
-/* WHITE THEME */
-#wrapwrap .top-line,
-#wrapwrap .main-sect,
-#wrapwrap .main-head,
-#wrapwrap .main-menu,
-#wrapwrap .navaslider,
-#wrapwrap .foot-first-level,
-#wrapwrap #wrap {
-  border-bottom: 1px solid #000; }
-
-#wrapwrap .top-line .main-logo img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%); }
-
-#wrapwrap .head-content .main-title {
-  color: #000;
-  text-shadow: none; }
-
-#wrapwrap .head-content .other-func a {
-  color: #000; }
-
-#wrapwrap .main-sect {
-  border-bottom: 1px solid #000; }
-  #wrapwrap .main-sect h2 {
-    color: #000; }
-
-#wrapwrap .blue-sect {
-  color: #000; }
-
-#wrapwrap .event-item .wrap-date-event .calendar-icon span {
-  background-color: #000;
-  -webkit-box-shadow: 0 2px 0 #000;
-          box-shadow: 0 2px 0 #000; }
-
-#wrapwrap .event-item .wrap-date-event .calendar-icon span::before,
-#wrapwrap .event-item .wrap-date-event .calendar-icon span::after {
-  border-color: #eee; }
-
-#wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot {
-  background-color: #565656; }
-
-#wrapwrap .main-menu ul li a {
-  color: #000; }
-
-#wrapwrap .wrap-target-menu li a {
-  color: #000; }
-
-#wrapwrap .other-link {
-  color: #000; }
-  #wrapwrap .other-link a {
-    color: #000;
-    border-color: #000; }
-
-#wrapwrap > footer {
-  color: #000; }
-  #wrapwrap > footer a {
-    color: #000; }
-
 html.font-size-normal {
   font-size: 100%; }
 
@@ -70,6 +9,168 @@ html.font-size-medium {
 html.font-size-large {
   font-size: 150%; }
 
+/* $blue: #2f4077 */
+/* WHITE THEME */
+html.white-theme body {
+  color: #000; }
+
+html.white-theme h2.inner-title {
+  color: #000; }
+
+html.white-theme a {
+  color: #000;
+  border-color: #000; }
+  html.white-theme a:hover {
+    border-color: transparent; }
+
+html.white-theme #wrapwrap .top-line,
+html.white-theme #wrapwrap .main-sect,
+html.white-theme #wrapwrap .main-head,
+html.white-theme #wrapwrap .main-menu,
+html.white-theme #wrapwrap .navaslider,
+html.white-theme #wrapwrap .main-footer,
+html.white-theme #wrapwrap .foot-first-level,
+html.white-theme #wrapwrap #wrap {
+  border-bottom: 1px solid #000; }
+
+html.white-theme #wrapwrap .top-line .main-logo img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+html.white-theme #wrapwrap .top-line .res-links .dropdown.open .res-links-btn {
+  color: #000; }
+
+html.white-theme #wrapwrap .top-line .flag-links .btn-ru {
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap .top-line .flag-links li {
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap .dropdown-menu li a {
+  color: #000; }
+
+html.white-theme #wrapwrap .head-content .main-title {
+  color: #000;
+  text-shadow: none; }
+
+html.white-theme #wrapwrap .head-content .other-func {
+  background-color: #f0f0f0; }
+  html.white-theme #wrapwrap .head-content .other-func a {
+    color: #000; }
+
+html.white-theme #wrapwrap .wrap-target-menu li a {
+  color: #000; }
+
+html.white-theme #wrapwrap .main-sect {
+  border-bottom: 1px solid #000; }
+  html.white-theme #wrapwrap .main-sect h2 {
+    color: #000; }
+
+html.white-theme #wrapwrap .grey-sect {
+  background-color: #fff; }
+
+html.white-theme #wrapwrap .blue-sect {
+  color: #000; }
+
+html.white-theme #wrapwrap .news-sect .wrap-target-other-news .target-other-news {
+  border-color: #ccc; }
+  html.white-theme #wrapwrap .news-sect .wrap-target-other-news .target-other-news span {
+    color: #000; }
+
+html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span {
+  background-color: #333;
+  -webkit-box-shadow: 0 2px 0 #000;
+          box-shadow: 0 2px 0 #000; }
+
+html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span::before,
+html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span::after {
+  border-color: #eee; }
+
+html.white-theme #wrapwrap .rector-sect .wrap-rector-img {
+  border-color: #ccc; }
+
+html.white-theme #wrapwrap .comment-students-sect .wrap-comment-img {
+  border-color: #ccc; }
+
+html.white-theme #wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot {
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot.active {
+  background-color: #333; }
+
+html.white-theme #wrapwrap .main-menu ul li a {
+  color: #000; }
+
+html.white-theme #wrapwrap .wrap-target-menu li a.head-content {
+  color: #000; }
+
+html.white-theme #wrapwrap .other-link {
+  color: #000;
+  border-color: #000; }
+  html.white-theme #wrapwrap .other-link a {
+    color: #000;
+    border-color: #000; }
+
+html.white-theme #wrapwrap footer {
+  color: #000; }
+  html.white-theme #wrapwrap footer a {
+    color: #000;
+    border-color: #000; }
+  html.white-theme #wrapwrap footer .wrap-foot-contancts .foot-social-list img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  html.white-theme #wrapwrap footer .wrap-foot-contancts .foot-feedback .button-light-blue {
+    background-color: #ccc;
+    color: #000;
+    border-color: #b3b3b3; }
+
+html.white-theme #wrapwrap .main-menu .wrap-main-menu .wrap-inner-common-menu {
+  border-color: #000; }
+
+html.white-theme #wrapwrap .tabs-container .nav-tabs > li.active > a,
+html.white-theme #wrapwrap .tabs-container .nav-tabs > li.active > a:hover,
+html.white-theme #wrapwrap .tabs-container .nav-tabs > li.active > a:focus {
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap .tabs-container .nav-tabs > li > a:hover,
+html.white-theme #wrapwrap .tabs-container .nav-tabs > li > a:focus {
+  color: #000; }
+
+html.white-theme #wrapwrap .wrap-dis-page .dis-docs ul li a {
+  color: #000;
+  border-color: #000; }
+
+html.white-theme #wrapwrap .wrap-events-list .wrap-events-date-filter ul li.active a {
+  color: #000;
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap .wrap-events-list .wrap-events-date-filter ul li a:hover {
+  color: #000;
+  background-color: #f0f0f0; }
+
+html.white-theme #wrapwrap .wrap-events-list .wrap-events-category li a {
+  color: #000; }
+
+html.white-theme #wrapwrap .wrap-events-list .wrap-events-category li.active a {
+  background-color: #ccc; }
+
+html.white-theme #wrapwrap #div_nav_panel #nav_panel li button.active, html.white-theme #wrapwrap #div_nav_panel #nav_panel li button:hover {
+  background-color: #ccc;
+  color: #000; }
+
+/* $blue: #2f4077 */
+/* BLACK THEME */
+/* NON READY */
+/* $blue: #2f4077 */
+/* BLUE THEME */
+/* NON READY */
+/* $blue: #2f4077 */
 html.disable-img #wrapwrap {
   /* картинки новостей на главной */
   /* слайдер на главной */
@@ -78,34 +179,20 @@ html.disable-img #wrapwrap {
   /* остальные улучшения */ }
   html.disable-img #wrapwrap img {
     visibility: hidden !important; }
-  html.disable-img #wrapwrap .news-sect .wrap-item-news a {
-    background-color: #565656; }
-    html.disable-img #wrapwrap .news-sect .wrap-item-news a .news-img {
-      visibility: hidden !important; }
-  html.disable-img #wrapwrap .news-sect .wrap-target-other-news .target-other-news {
-    border-color: #565656; }
+  html.disable-img #wrapwrap .news-sect .wrap-item-news a .news-img {
+    visibility: hidden !important; }
   html.disable-img #wrapwrap .main-slider.owl-carousel .owl-stage-outer .owl-stage .owl-item .wrap-main-slide .slide-img {
     visibility: hidden !important; }
   html.disable-img #wrapwrap .wrap-cards-news .wrap-card-item-news .wrap-news-img {
     display: none; }
   html.disable-img #wrapwrap .wrap-cards-news .wrap-card-item-news .news-img {
     visibility: hidden !important; }
-  html.disable-img #wrapwrap .wrap-mega-news .wrap-mega-img {
-    background-color: #565656; }
-    html.disable-img #wrapwrap .wrap-mega-news .wrap-mega-img .mega-img {
-      visibility: hidden !important; }
+  html.disable-img #wrapwrap .wrap-mega-news .wrap-mega-img .mega-img {
+    visibility: hidden !important; }
   html.disable-img #wrapwrap .rector-sect .col-rector-img {
     display: none; }
   html.disable-img #wrapwrap .rector-sect .col-rector-content {
     width: 100%; }
-  html.disable-img #wrapwrap .rector-sect .wrap-rector-img {
-    border-color: transparent; }
   html.disable-img #wrapwrap .comment-students-sect .wrap-comment-img {
     border-color: transparent;
     display: none; }
-  html.disable-img #wrapwrap footer .wrap-foot-contancts .foot-social-list img {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }

@@ -1,0 +1,48 @@
+@import "vars"
+
+html.disable-img
+	#wrapwrap
+
+		img
+			visibility: hidden !important
+
+		/* картинки новостей на главной */
+		.news-sect 
+			.wrap-item-news	
+				a
+					.news-img
+						visibility: hidden !important
+
+		/* слайдер на главной */
+		.main-slider.owl-carousel 
+			.owl-stage-outer 
+				.owl-stage 
+					.owl-item 
+						.wrap-main-slide 
+							.slide-img
+								visibility: hidden !important
+
+		/* карточки новостей */				
+		.wrap-cards-news 
+			.wrap-card-item-news
+				.wrap-news-img
+					display: none
+				.news-img
+					visibility: hidden !important
+
+		/* mega новость */			
+		.wrap-mega-news 
+			.wrap-mega-img
+				.mega-img
+					visibility: hidden !important
+					
+		/* остальные улучшения */
+		.rector-sect
+			.col-rector-img
+				display: none
+			.col-rector-content
+				width: 100%
+		.comment-students-sect 
+			.wrap-comment-img
+				border-color: transparent
+				display: none
