@@ -10,7 +10,7 @@
 				<div class="row">
 					<div class="col-lg-19 col-md-18">
 						<div class="wrap-events-date-filter">
-							<ul>
+							<ul class="clearfix">
 								<li class="active"><a href="#">Текущие</a></li>
 								<li><a href="#">Будущие</a></li>
 								<li><a href="#">Прошедщие</a></li>

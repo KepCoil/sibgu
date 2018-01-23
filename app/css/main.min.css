@@ -8182,19 +8182,22 @@ h2.inner-title {
 
 .wrap-events-list .wrap-events-date-filter {
   border-bottom: 1px solid #aaa;
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
   .wrap-events-list .wrap-events-date-filter ul {
     list-style-type: none;
     margin: 0 0 15px 0;
     padding: 0;
     margin-bottom: 15px; }
     .wrap-events-list .wrap-events-date-filter ul li {
-      display: inline-block;
-      margin-right: 12px; }
+      display: block;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 5px; }
     .wrap-events-list .wrap-events-date-filter ul li.active a {
       color: #fff;
       background-color: #314177; }
     .wrap-events-list .wrap-events-date-filter ul a {
+      display: block;
       border: none;
       text-transform: lowercase;
       color: #212529;
@@ -8732,9 +8735,7 @@ h2.inner-title {
   #wrapwrap .head-content .main-title-wrap .main-title {
     font-size: 10px;
     line-height: 12px;
-    padding: 5px 0; }
-  #wrapwrap .wrap-events-list .wrap-events-date-filter ul li {
-    margin-right: 0; } }
+    padding: 5px 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
