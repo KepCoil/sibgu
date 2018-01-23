@@ -163,7 +163,7 @@
 
 				</div>
 
-				<div id="div_nav_panel" class="col-md-24">
+				<div id="div_nav_panel">
 					<ul id="nav_panel" name="nav_panel" class="pagination">
 
 						<li id="btn_first_page">

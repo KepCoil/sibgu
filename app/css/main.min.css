@@ -7311,7 +7311,7 @@ h2.inner-title {
   .tabs-container .nav-tabs > li.active > a:hover,
   .tabs-container .nav-tabs > li.active > a:focus {
     background-color: #314177;
-    color: #ffe082;
+    color: #fff;
     border: 0; }
 
 /* Snippet "Well" */
@@ -8011,7 +8011,7 @@ h2.inner-title {
 /* NEWS PAGE */
 .wrap-cards-news .wrap-card-item-news {
   background-color: #eee;
-  margin: 15px 0; }
+  margin-bottom: 30px; }
   .wrap-cards-news .wrap-card-item-news .wrap-news-img {
     overflow: hidden;
     height: 280px;
@@ -8072,7 +8072,7 @@ h2.inner-title {
       -o-transition: border-color 0.25s ease-out;
       transition: border-color 0.25s ease-out;
       border-bottom: 1px solid #253666;
-      font-size: 18px; }
+      font-size: 1.125rem; }
 
 #div_nav_panel {
   padding: 0;
@@ -8658,9 +8658,6 @@ h2.inner-title {
     font-size: 85%; }
   #wrapwrap .main-sect h2 {
     margin-bottom: 30px; }
-  #wrapwrap .inner-title {
-    font-size: 22px;
-    line-height: 28px; }
   #wrapwrap .foot-first-level .second-foot-line .foot-contacts-content-col-2 {
     margin-top: 0; }
   #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button {
