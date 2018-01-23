@@ -203,7 +203,14 @@ $(function() {
 	
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
-	
+	/* Bootstrap accordion */
+	$('#accordion, #bs-collapse')
+		.on('show.bs.collapse', function(e) {
+			$(e.target).prev('.panel-heading').addClass('active');
+		})
+		.on('hide.bs.collapse', function(e) {
+			$(e.target).prev('.panel-heading').removeClass('active');
+	});	
 
 	// Функция перерасчета высоты карты в завимисимости от высоты экрана
 	function resizeHeightMapFilials() {

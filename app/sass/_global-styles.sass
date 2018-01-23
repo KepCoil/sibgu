@@ -473,3 +473,33 @@ h2.inner-title
 /* Snippet "Well" */
 .well
 	border-radius: 0
+
+/* Accordion */
+.main-accordion
+	.accordion-item
+		margin: 15px 0
+		.panel-title
+			margin: 0
+			padding: 15px 20px
+			background-color: $grey-bgc
+			border: none
+			font-family: "OpenSans-SemiBold", sans-serif
+			font-size: 1.1rem
+			&:hover
+				.fa, a
+					color: $accent-links
+			.fa
+				font-size: 1.1rem
+				margin-right: 5px
+				transform: rotate(0)
+				transition: transform $main-trans
+			a
+				border: none
+				color: $default-color
+		.panel-heading.active
+			.panel-title
+				.fa
+					transform: rotate(90deg)
+
+					
+/* End accordion */

@@ -7319,6 +7319,38 @@ h2.inner-title {
   -webkit-border-radius: 0;
           border-radius: 0; }
 
+/* Accordion */
+.main-accordion .accordion-item {
+  margin: 15px 0; }
+  .main-accordion .accordion-item .panel-title {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #eee;
+    border: none;
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-size: 1.1rem; }
+    .main-accordion .accordion-item .panel-title:hover .fa, .main-accordion .accordion-item .panel-title:hover a {
+      color: #512DA8; }
+    .main-accordion .accordion-item .panel-title .fa {
+      font-size: 1.1rem;
+      margin-right: 5px;
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transition: -webkit-transform 0.25s ease-out;
+      transition: -webkit-transform 0.25s ease-out;
+      -o-transition: transform 0.25s ease-out;
+      transition: transform 0.25s ease-out;
+      transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+    .main-accordion .accordion-item .panel-title a {
+      border: none;
+      color: #212529; }
+  .main-accordion .accordion-item .panel-heading.active .panel-title .fa {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+/* End accordion */
 /* HEADER */
 #wrapwrap .main-head {
   color: #fff; }
@@ -8346,6 +8378,15 @@ h2.inner-title {
         list-style-type: decimal; }
 
 /* END YA MAPS */
+/* table-jobs */
+.table-jobs th {
+  background-color: #eee;
+  min-width: 200px; }
+
+.table-jobs ul {
+  padding-left: 20px; }
+
+/* end table-jobs */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */

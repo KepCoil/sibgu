@@ -27,15 +27,15 @@
 			</div>
 			<div id="js-main-slider" class="main-slider owl-carousel">
 				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider-1.jpg);"></div>
+					<div class="slide-img" style="background-image: url(img/slider/slide-1.jpg);"></div>
 					<!-- <img src="img/slider/slider-1.jpg" alt="Слайд 1"> -->
 				</div>
 				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider-2.jpg);"></div>
+					<div class="slide-img" style="background-image: url(img/slider/slide-2.jpg);"></div>
 					<!-- <img src="img/slider/slider-2.jpg" alt="Слайд 2"> -->
 				</div>
 				<div class="wrap-main-slide">
-					<div class="slide-img" style="background-image: url(img/slider/slider3.jpg);"></div>
+					<div class="slide-img" style="background-image: url(img/slider/slide-3.jpg);"></div>
 				</div>
 			</div>
 		</div>
