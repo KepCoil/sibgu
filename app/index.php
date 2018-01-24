@@ -379,32 +379,39 @@
 					
 					<div id="js-pa-slider" class="owl-carousel clearfix">
 
-						<div class="col-md-6">
-							<div class="wrap-pa-item">
-								<img src="img/partners/iss.jpg" alt="ОАО ИСС">
-								<strong>ОАО «Информационные<br>стутниковые системы»</strong>
-							</div>
+						<div class="wrap-pa-item">
+							<img src="img/partners/iss.jpg" alt="ОАО ИСС">
+							<strong>ОАО «Информационные<br/>стутниковые системы»</strong>
 						</div>
 
-						<div class="col-md-6">
-							<div class="wrap-pa-item">
-								<img class="img img-rounded img-responsive center-block" src="img/partners/krasmash.svg" alt="Красмаш">
-								<strong>ОАО «Красмаш»</strong>
-							</div>
+						<div class="wrap-pa-item">
+							<img class="img img-rounded img-responsive" src="img/partners/krasmash.svg" alt="Красмаш">
+							<strong>ОАО «Красмаш»</strong>
 						</div>
 
-						<div class="col-md-6">
-							<div class="wrap-pa-item">
-								<img src="img/partners/logo-fic-ksc.png" alt="КНЦ СО РАН">
-								<strong>«Красноярский научный<br>центр» СО РАН</strong>
-							</div>
+						<div class="wrap-pa-item">
+							<img class="img img-rounded img-responsive" src="img/partners/birusa.svg" alt="Бирюса">
+							<strong>ОАО «Красноярский завод<br/>холодильников «Бирюса»</strong>
 						</div>
 
-						<div class="col-md-6">
-							<div class="wrap-pa-item">
-								<img src="img/partners/mashine.jpg" alt="Союз машиностроителей">
-								<strong>Союз машиностроителей<br>России</strong>
-							</div>
+						<div class="wrap-pa-item">
+							<img class="img img-rounded img-responsive" src="img/partners/geo-phisic.svg" alt="Геофизика">
+							<strong>АО ЦКБ<br/>«Геофизика»</strong>
+						</div>
+
+						<div class="wrap-pa-item">
+							<img class="img img-rounded img-responsive" src="img/partners/isk.png" alt="Искра">
+							<strong>АО «КБ «Искра»</strong>
+						</div>
+
+						<div class="wrap-pa-item">
+							<img src="img/partners/logo-fic-ksc.png" alt="КНЦ СО РАН">
+							<strong>«Красноярский научный<br>центр» СО РАН</strong>
+						</div>
+
+						<div class="wrap-pa-item">
+							<img src="img/partners/npp-radio.svg" alt="Радиосвязь">
+							<strong>АО «НПП «Радиосвязь»</strong>
 						</div>
 
 					</div>

@@ -7875,11 +7875,8 @@ h2.inner-title {
 /* SECTION COMPANY - PARTNERS */
 .pa-sect {
   padding-bottom: 20px; }
-  .pa-sect .col-md-6 {
-    text-align: center; }
   .pa-sect .wrap-pa-item {
-    text-align: center;
-    display: inline-block; }
+    text-align: center; }
     .pa-sect .wrap-pa-item img {
       width: 210px;
       height: 120px;

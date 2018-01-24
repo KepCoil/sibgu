@@ -130,27 +130,51 @@ $(function() {
 	});
 
 	// Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992
-	function enablePaSlider() {
+	// function enablePaSlider() {
 		
-		var windowWidth = $(window).width();
+	// 	var windowWidth = $(window).width();
 
-		if (windowWidth <= 992) {
-			$("#js-pa-slider").owlCarousel({
-				loop: true,
-				items: 4,
-				responsiveClass:true,
-				responsive:{
-					0:{
-						items:1,
-					},
-					768:{
-						items:2,
-					}
-				}
-			});
+	// 	if (windowWidth <= 992) {
+	// 		$("#js-pa-slider").owlCarousel({
+	// 			loop: true,
+	// 			items: 4,
+	// 			responsiveClass:true,
+	// 			responsive:{
+	// 				0:{
+	// 					items:1,
+	// 				},
+	// 				768:{
+	// 					items:2,
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+	// }
+	// enablePaSlider();
+
+
+	$("#js-pa-slider").owlCarousel({
+		loop: true,
+		dots: false,
+		// items: 4,
+		autoplay: true,
+		autoplayTimeout: 6000,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items:1,
+			},
+			768:{
+				items:2,
+			},
+			992:{
+				items:3,
+			},
+			1200:{
+				items: 4
+			}
 		}
-	}
-	enablePaSlider();
+	});
 
 
 
@@ -225,7 +249,7 @@ $(function() {
 	$(window).resize(function() {
 		eqH();
 		mainSliderResize();
-		enablePaSlider();
+		// enablePaSlider();
 		resizeHeightMapFilials();
 	});
 
