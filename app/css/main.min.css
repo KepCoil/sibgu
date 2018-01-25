@@ -7321,7 +7321,13 @@ h2.inner-title {
 
 /* Accordion */
 .main-accordion .accordion-item {
-  margin: 15px 0; }
+  margin: 15px 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .main-accordion .accordion-item .panel-heading, .main-accordion .accordion-item .panel-body {
+    padding: 0;
+    border: none; }
   .main-accordion .accordion-item .panel-title {
     margin: 0;
     padding: 15px 20px;
@@ -8380,7 +8386,7 @@ h2.inner-title {
 /* table-jobs */
 .table-jobs th {
   background-color: #eee;
-  min-width: 200px; }
+  width: 200px; }
 
 .table-jobs ul {
   padding-left: 20px; }
