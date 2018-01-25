@@ -6941,12 +6941,16 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.125rem;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px; }
 
 h6, .h6 {
   font-size: 1rem;
   font-family: "MyriadPro-SemiBold", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px; }
 
 #wrap {
   margin: 30px 0 50px 0; }
@@ -6982,13 +6986,16 @@ h6, .h6 {
     .other-link a:hover, .other-link a:focus {
       border-color: transparent; }
 
-h2.inner-title {
+h2.inner-title,
+h2.inner-title--no-caps {
   font-size: 1.75rem;
-  text-transform: uppercase;
   font-family: "OpenSans-Semibold", sans-serif;
   color: #314177;
   margin: 10px 0 25px 0;
   text-align: left; }
+
+h2.inner-title {
+  text-transform: uppercase; }
 
 /* MOBILE MMENU MENU */
 #js-mobile-mmenu {
