@@ -8216,12 +8216,14 @@ h2.inner-title {
     list-style-type: none;
     margin: 0 0 15px 0;
     padding: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
     .wrap-events-list .wrap-events-date-filter ul li {
       display: block;
       float: left;
       margin-right: 10px;
       margin-bottom: 5px; }
+      .wrap-events-list .wrap-events-date-filter ul li:last-child {
+        margin-right: 0; }
     .wrap-events-list .wrap-events-date-filter ul li.active a {
       color: #fff;
       background-color: #314177; }
@@ -8231,7 +8233,7 @@ h2.inner-title {
       text-transform: lowercase;
       color: #212529;
       font-size: 16px;
-      padding: 4px 8px;
+      padding: 5px 8px;
       -webkit-transition: background-color 0.25s ease-out;
       -o-transition: background-color 0.25s ease-out;
       transition: background-color 0.25s ease-out; }

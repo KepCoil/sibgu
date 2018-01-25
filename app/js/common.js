@@ -8,17 +8,18 @@ $(function() {
 	/*  */
 
 
+
 	/* МОБИЛЬНОЕ МЕНЮ */
 
-	// Перенос оба меню
+	// Перенос оба меню (костыль)
 	var 
 	commonMenuContent  = $("#js-main-common-menu").html(),
 	commonAuditContent = $("#js-main-audit-menu").html(),
 	resLinksContent 	 = $("#js-res-links").html();
 	
-	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent + "</ul>");
-	$("#js-item-main-audit-menu").append("<ul>" + commonAuditContent  + "</ul>");
-	$("#js-item-res-links-menu").append("<ul>" + resLinksContent  + "</ul>");
+	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent  + "</ul>");
+	$("#js-item-main-audit-menu").append("<ul>"  + commonAuditContent + "</ul>");
+	$("#js-item-res-links-menu").append("<ul>"   + resLinksContent    + "</ul>");
 
 	// Плагин mmenu
 	$("#js-mobile-mmenu").mmenu({
@@ -26,6 +27,7 @@ $(function() {
 		navbar: {
 			title: "Меню",
 		},
+		// Переносим ссылки ЛК, почта и расп занятий в футер мобильного меню (да костыль)
 		"navbars": [{
 			"position": "bottom",
 			"content": [
@@ -39,7 +41,7 @@ $(function() {
 	$("#js-mobile-mmenu").find(".mm-next").addClass("mm-fullsubopen");
 
 
-	// Кнопка
+	// Кнопка мобильного меню
 	var 
 	mobileMenuAPI 	  = $("#js-mobile-mmenu").data("mmenu"),
 	buttonMobileMenu = $("#js-button-mobile-mmenu");
@@ -54,7 +56,7 @@ $(function() {
 
 
 
-	// Выпадающие меню
+	/* Выпадающие меню */
 	$(".ul-inner-menu >li.droplist").hover(function() {
 		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
 		$(this).toggleClass("droplist-open");
@@ -63,13 +65,15 @@ $(function() {
 		$(this).removeClass("droplist-open");
 	});
 	
-	// Неклибальность ссылок меню на внутренних страницах
+
+	/* Неклибальность ссылок меню на внутренних страницах */
 	$(".wrap-main-menu #js-main-common-menu >li.droplist >a").click(function() {
 		return false;
 	});
 
 
-	// Костыль для пункта меню "Сведенья о доходах..."
+
+	/* Костыль для пункта меню "Сведенья о доходах..." */
 	$(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
 		.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
@@ -102,83 +106,79 @@ $(function() {
 		}
 		
 	};
-
 	mainSliderResize();
+	/* Конец функция пересчета ширины слайдера в зависимости от ширины экрана */
 
-	// Слайдер на главной странице
+
+
+	/* Слайдер на главной странице */
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
 		autoplay: true,
 		autoplayTimeout: 10000
 	});
+
 	
 
-	// Слайдер секции "Отзывы студентов"
+	/* Слайдер секции "Отзывы студентов" */
 	$("#js-comment-student-slider").owlCarousel({
 		loop: true,
 		items: 2,
 		responsiveClass:true,
-		responsive:{
-			0:{
-				items:1,
-			},
-			992:{
-				items:2
-			}
+		responsive: {
+			0:   { items:1 },
+			992: { items:2 }
 		}
 	});
 
-	// Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992
-	// function enablePaSlider() {
-		
-	// 	var windowWidth = $(window).width();
-
-	// 	if (windowWidth <= 992) {
-	// 		$("#js-pa-slider").owlCarousel({
-	// 			loop: true,
-	// 			items: 4,
-	// 			responsiveClass:true,
-	// 			responsive:{
-	// 				0:{
-	// 					items:1,
-	// 				},
-	// 				768:{
-	// 					items:2,
-	// 				}
-	// 			}
-	// 		});
-	// 	}
-	// }
-	// enablePaSlider();
 
 
+	/* Слайдер для парнеров */
 	$("#js-pa-slider").owlCarousel({
-		loop: true,
 		dots: false,
-		// items: 4,
+		loop: true,
 		autoplay: true,
 		autoplayTimeout: 6000,
 		responsiveClass: true,
-		responsive:{
-			0:{
-				items:1,
-			},
-			768:{
-				items:2,
-			},
-			992:{
-				items:3,
-			},
-			1200:{
-				items: 4
-			}
+		responsive: {
+			0:    { items:1 },
+			768:  { items:2 },
+			992:  { items:3 },
+			1200: { items:4 }
 		}
 	});
 
 
 
-	// Функция уравнивания высоты различных элементов
+	/* Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992 */
+	/*
+	function enablePaSlider() {
+		
+		var windowWidth = $(window).width();
+
+		if (windowWidth <= 992) {
+			$("#js-pa-slider").owlCarousel({
+				loop: true,
+				items: 4,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+					},
+					768:{
+						items:2,
+					}
+				}
+			});
+		}
+	}
+	enablePaSlider();
+	*/
+
+
+
+	/* Функция уравнивания высоты различных элементов */
 	function eqH() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
@@ -186,8 +186,8 @@ $(function() {
 		$(".dis-docs").height('auto').equalHeights();
 
 
+		/* Функция equalHeights() при мобильной версии */
 		var windowWidth = $(window).width();
-		
 		if (windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
 			$(".standart-item-content").height('auto').equalHeights();
@@ -227,7 +227,8 @@ $(function() {
 	
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
-	/* Bootstrap accordion */
+
+	/* Bootstrap accordion  */
 	$('#accordion, #bs-collapse')
 		.on('show.bs.collapse', function(e) {
 			$(e.target).prev('.panel-heading').addClass('active');
@@ -235,6 +236,8 @@ $(function() {
 		.on('hide.bs.collapse', function(e) {
 			$(e.target).prev('.panel-heading').removeClass('active');
 	});	
+
+
 
 	// Функция перерасчета высоты карты в завимисимости от высоты экрана
 	function resizeHeightMapFilials() {
@@ -245,26 +248,17 @@ $(function() {
 
 
 
-	// Функции при ресайзе экрана
-	$(window).resize(function() {
-		eqH();
-		mainSliderResize();
-		// enablePaSlider();
-		resizeHeightMapFilials();
-	});
-
-
-	// Фиксация меню на внутр. страницах при скролле
+	/* Фиксация меню на внутр. страницах при скролле */
 	var
 		marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
 		defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
 		
 	$(window).scroll(function() {
 		var 
-			headerHeight 			= $(".main-head").outerHeight(),
-			innerMenu 				= $(".inner-menu"),
-			wrap 						= $("#wrap"),
-			dekstopVers 			= $(".inner-menu").is(":visible");
+			headerHeight 	= $(".main-head").outerHeight(),
+			innerMenu 		= $(".inner-menu"),
+			wrap 				= $("#wrap"),
+			dekstopVers 	= $(".inner-menu").is(":visible");
 
 		if ( ($(this).scrollTop() > headerHeight) && (dekstopVers) ) {
 			innerMenu.addClass("fixed-inner-menu");
@@ -275,7 +269,15 @@ $(function() {
 		}
 	});
 
-	
+
+
+	/* Функции при ресайзе экрана */
+	$(window).resize(function() {
+		eqH();
+		mainSliderResize();
+		resizeHeightMapFilials();
+		// enablePaSlider();
+	});
 
 	
 
