@@ -47,6 +47,7 @@
 
 
 
+							<!-- accordion -->
 							<div id="accordion" class="panel-group main-accordion" role="tablist">
 
 								<div class="panel accordion-item">
@@ -69,9 +70,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-2" aria-expanded="false">
-												Научно-образовательный центр «Ракетно-космические технологии»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-2" aria-expanded="false">Научно-образовательный центр «Ракетно-космические технологии»</a>
 										</h4>
 									</div>
 									<div id="in-div-2" class="panel-collapse collapse" role="tabpanel">
@@ -102,9 +101,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-3" aria-expanded="false">
-												Ресурсный центр коллективного пользования «Космические аппараты и системы»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-3" aria-expanded="false">Ресурсный центр коллективного пользования «Космические аппараты и системы»</a>
 										</h4>
 									</div>
 									<div id="in-div-3" class="panel-collapse collapse" role="tabpanel">
@@ -121,9 +118,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-4" aria-expanded="false">
-												НОЦ «Институт космических исследований и высоких технологий»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-4" aria-expanded="false">НОЦ «Институт космических исследований и высоких технологий»</a>
 										</h4>
 									</div>
 									<div id="in-div-4" class="panel-collapse collapse" role="tabpanel">
@@ -142,9 +137,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-5" aria-expanded="false">
-												Студенческий центр управления полетами малых космических аппаратов (СЦУП)
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-5" aria-expanded="false">Студенческий центр управления полетами малых космических аппаратов (СЦУП)</a>
 										</h4>
 									</div>
 									<div id="in-div-5" class="panel-collapse collapse" role="tabpanel">
@@ -179,9 +172,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-6" aria-expanded="false">
-												Ботанический сад имени Вс.М. Крутовского
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-6" aria-expanded="false">Ботанический сад имени Вс.М. Крутовского</a>
 										</h4>
 									</div>
 									<div id="in-div-6" class="panel-collapse collapse" role="tabpanel">
@@ -196,9 +187,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-7" aria-expanded="false">
-												Биологическая станция "Караульная"
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-7" aria-expanded="false">Биологическая станция "Караульная"</a>
 										</h4>
 									</div>
 									<div id="in-div-7" class="panel-collapse collapse" role="tabpanel">
@@ -220,9 +209,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-8" aria-expanded="false">
-												Институт «Сибгипробиосинтез»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-8" aria-expanded="false">Институт «Сибгипробиосинтез»</a>
 										</h4>
 									</div>
 									<div id="in-div-8" class="panel-collapse collapse" role="tabpanel">
@@ -244,9 +231,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-9" aria-expanded="false">
-												Межрегиональный инновационный учебно-научно-технологический центр лесного комплекса (УНТЦ КАМИ)
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-9" aria-expanded="false">Межрегиональный инновационный учебно-научно-технологический центр лесного комплекса (УНТЦ КАМИ)</a>
 										</h4>
 									</div>
 									<div id="in-div-9" class="panel-collapse collapse" role="tabpanel">
@@ -261,9 +246,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-10" aria-expanded="false">
-												Обсерватория СибГУ им. М.Ф. Решетнева
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-10" aria-expanded="false">Обсерватория СибГУ им. М.Ф. Решетнева</a>
 										</h4>
 									</div>
 									<div id="in-div-10" class="panel-collapse collapse" role="tabpanel">
@@ -278,9 +261,7 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-11" aria-expanded="false">
-												Центр космического мониторинга Земли
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-11" aria-expanded="false">Центр космического мониторинга Земли</a>
 										</h4>
 									</div>
 									<div id="in-div-11" class="panel-collapse collapse" role="tabpanel">
@@ -297,17 +278,15 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-12" aria-expanded="false">
-												Научно-образовательный центр «Замкнутые космические систем
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-12" aria-expanded="false">Научно-образовательный центр «Замкнутые космические систем</a>
 										</h4>
 									</div>
 									<div id="in-div-12" class="panel-collapse collapse" role="tabpanel">
 										<div class="panel-body">
 											<p align="justify">Научно-образовательный центр «Замкнутые космические систем, именуемый в дальнейшем НОЦ, образован для интеграции научного и образовательного потенциала ФГБОУ ВО «Сибирский государственный университет науки и технологий имени академика М.Ф. Решетнева» (СибГУ им. М.Ф. Решетнева), Института биофизики СО РАН (ИБФ СО РАН) и ФГБУН Специальное конструкторско-технологическое бюро «Наука» Красноярского научного центра Сибирского отделения Российской академии наук (СКТБ «Наука» КНЦ СО РАН).</p>
-											<p align="justify"><b>Целью</b> НОЦ является подготовка магистров, аспирантов и докторантов, организация производственных практик, выполнение научных исследований в области создания нового поколения систем жизнеобеспечения высокой степени замкнутости, безопасности и надежности, а также реализация инновационных проектов на основе интеграции научного и образовательного потенциала организаций-участников.</p>
+											<p align="justify"><b>Целью</b>&nbsp;НОЦ является подготовка магистров, аспирантов и докторантов, организация производственных практик, выполнение научных исследований в области создания нового поколения систем жизнеобеспечения высокой степени замкнутости, безопасности и надежности, а также реализация инновационных проектов на основе интеграции научного и образовательного потенциала организаций-участников.</p>
 											<p align="justify">
-												<b>ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ НОЦ</b>
+												<b>ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ НОЦ:</b>
 											</p>
 											<p align="justify"><strong>Основными направлениями деятельности НОЦ являются:</strong></p>
 											<ul>
@@ -340,15 +319,13 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-13" aria-expanded="false">
-												Научно-образовательный центр «Инжиниринг в инфокоммуникациях»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-13" aria-expanded="false">Научно-образовательный центр «Инжиниринг в инфокоммуникациях»</a>
 										</h4>
 									</div>
 									<div id="in-div-13" class="panel-collapse collapse" role="tabpanel">
 										<div class="panel-body">
 											<p align="justify">Научно-образовательный центр «Инжиниринг в инфокоммуникациях» (НОЦ ИИК) был открыт в ноябре 2016г. в СибГУ им. М.Ф. Решетнева на базе сложившейся во взаимодействии с АО «КБ «Искра» интегрированной системы подготовки специалистов, исследований и прикладных научных разработок в области ракетно-космической техники, радиоэлектроники и телекоммуникаций.</p>
-											<p align="justify"><b>Целью</b> НОЦ ИИК является дальнейшее повышение качества и структуры подготовки кадров для потребностей ракетно-космической и радиоэлектронной промышленности в современных условиях и результативности совместных научно-исследовательских работ по проблемам освоения новой техники и технологий за счет развития интеграции научного, образовательного и производственного потенциала СибГУ им. М.Ф. Решетнева и КБ «Искра».</p>
+											<p align="justify"><b>Целью</b>&nbsp;НОЦ ИИК является дальнейшее повышение качества и структуры подготовки кадров для потребностей ракетно-космической и радиоэлектронной промышленности в современных условиях и результативности совместных научно-исследовательских работ по проблемам освоения новой техники и технологий за счет развития интеграции научного, образовательного и производственного потенциала СибГУ им. М.Ф. Решетнева и КБ «Искра».</p>
 
 											<p align="justify">
 												<b>Основные результаты в образовательной деятельности за 2017г.:</b>
@@ -380,15 +357,13 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-14" aria-expanded="false">
-												Научно образовательный центр «Микроэлектронные технологии»
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-14" aria-expanded="false">Научно образовательный центр «Микроэлектронные технологии»</a>
 										</h4>
 									</div>
 									<div id="in-div-14" class="panel-collapse collapse" role="tabpanel">
 										<div class="panel-body">
 											<p align="justify">Научно образовательный центр «Микроэлектронные технологии», в дальнейшем именуемый НОЦ МЭТ, сформирован при Сибирском государственном университете науки и технологий имени академика М.Ф. Решетнева на базе сложившейся во взаимодействии с Институтом физики СО РАН и АО «НПП «Радиосвязь» интегрированной системы подготовки специалистов, исследований и прикладных разработок в области ракетно-космической техники, радиоэлектроники и технологии.</p>
-											<p align="justify"><b>Целью</b> создания НОЦ МЭТ является дальнейшее повышение качества и структуры подготовки кадров для потребностей ракетно-космической и радиоэлектронной промышленности в современных условиях и результативности совместных научно-исследовательских работ по проблемам освоения новой техники и технологий за счет развития интеграции научного, образовательного и производственного потенциала участников.</p>
+											<p align="justify"><b>Целью</b>&nbsp;создания НОЦ МЭТ является дальнейшее повышение качества и структуры подготовки кадров для потребностей ракетно-космической и радиоэлектронной промышленности в современных условиях и результативности совместных научно-исследовательских работ по проблемам освоения новой техники и технологий за счет развития интеграции научного, образовательного и производственного потенциала участников.</p>
 											<p align="justify">
 												<b>Основными задачами НОЦ МЭТ являются:</b>
 											</p>
@@ -410,15 +385,13 @@
 									<div class="panel-heading" role="tab">
 										<h4 class="panel-title">
 											<i class="fa fa-hand-o-right" aria-hidden="true"></i>
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-15" aria-expanded="false">
-												Научно-образовательный центр «Системы управления и информационной безопасности
-											</a>
+											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#in-div-15" aria-expanded="false">Научно-образовательный центр «Системы управления и информационной безопасности</a>
 										</h4>
 									</div>
 									<div id="in-div-15" class="panel-collapse collapse" role="tabpanel">
 										<div class="panel-body">
 											<p align="justify">Научно-образовательный центр «Системы управления и информационной безопасности, именуемый в дальнейшем НОЦ СУИБ, реорганизуется из научно-образовательного центра «Управление космическими системами» для интеграции научного и образовательного потенциала ФГБОУ ВО «Сибирский государственный университет науки и технологий им. академика М.Ф. Решетнева» (далее – Университет) и Учреждения Российской академии наук Института проблем управления им. В.А. Трапезникова РАН (далее – ИПУ РАН).</p>
-											<p align="justify"><b>Целью</b> НОЦ СУИБ является подготовка магистров, аспирантов и докторантов, организация производственных практик, выполнение научных исследований в области разработки математического, алгоритмического и инструментального обеспечения систем управления космическими аппаратами нового поколения, обеспечения информационной безопасности, а также реализация инновационных проектов на основе интеграции научного и образовательного потенциала организаций-участников.</p>
+											<p align="justify"><b>Целью</b>&nbsp;НОЦ СУИБ является подготовка магистров, аспирантов и докторантов, организация производственных практик, выполнение научных исследований в области разработки математического, алгоритмического и инструментального обеспечения систем управления космическими аппаратами нового поколения, обеспечения информационной безопасности, а также реализация инновационных проектов на основе интеграции научного и образовательного потенциала организаций-участников.</p>
 											<p align="justify">
 												<b>Основными задачами НОЦ СУИБ являются:</b>
 											</p>
@@ -443,6 +416,9 @@
 
 
 							</div>
+							<!-- accordion -->
+
+
 
 						</div>
 

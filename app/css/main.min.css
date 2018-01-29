@@ -7054,10 +7054,12 @@ h2.inner-title {
 .main-menu {
   background-color: #253666;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* TABLE VERSION MENU */ }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .main-menu .container {
     padding: 0; }
+  .main-menu.inner-menu ul li a {
+    font-size: 0.875rem;
+    padding: 0.875rem; }
   .main-menu ul {
     list-style-type: none;
     padding: 0;
@@ -7332,9 +7334,15 @@ h2.inner-title {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none; }
-  .main-accordion .accordion-item .panel-heading, .main-accordion .accordion-item .panel-body {
+  .main-accordion .accordion-item .panel-heading {
     padding: 0;
     border: none; }
+  .main-accordion .accordion-item .panel-body {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border: 1px solid #ddd; }
+    .main-accordion .accordion-item .panel-body .table-responsive {
+      margin: -15px; }
   .main-accordion .accordion-item .panel-title {
     margin: 0;
     padding: 15px 20px;

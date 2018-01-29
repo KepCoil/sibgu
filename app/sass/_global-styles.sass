@@ -177,6 +177,10 @@ h2.inner-title
 	border-bottom: 1px solid $light-line
 	.container
 		padding: 0
+	&.inner-menu
+		ul li a
+			font-size: 0.875rem
+			padding: 0.875rem
 	ul
 		list-style-type: none
 		padding: 0
@@ -233,10 +237,6 @@ h2.inner-title
 	.wrap-main-menu
 		.wrap-inner-common-menu
 			border-bottom: 1px solid $light-line
-		// .inner-common-menu
-		// 	>li
-		// 		>a
-		// 			text-transform: none
 		.inner-audit-menu
 			>li
 				>a
@@ -245,28 +245,8 @@ h2.inner-title
 					&:hover
 						background-color: $grey-bgc
 						color: $blue
-	/* TABLE VERSION MENU */
-	// .wrap-inner-table-menu
-	// 	display: table
-	// 	border-left: 1px solid $light-line
-	// 	border-right: 1px solid $light-line
-	// 	.row-inner-menu
-	// 		display: table-row
-	// 		&:first-child
-	// 			>li
-	// 				border-bottom: 1px solid $light-line
-	// 		>li
-	// 			display: table-cell
-	// 			border-right: 1px solid $light-line
-	// 			&:last-child
-	// 				border-right: none
-	// 			>a
-	// 				padding: 10px 15px
 
-// .main-menu.inner-menu
-// 	position: fixed
-// 	width: 100%
-// 	z-index: 5
+
 
 
 .wrap-info-resources.mm-menu.mm-offcanvas
@@ -487,13 +467,18 @@ h2.inner-title
 		margin: 15px 0
 		border: none
 		box-shadow: none
-		.panel-heading, .panel-body
+		.panel-heading
 			padding: 0
 			border: none
+		.panel-body
+			background-color: #f7f7f7
+			padding: 15px
+			border: 1px solid #ddd
+			.table-responsive
+				margin: -15px
 		.panel-title
 			margin: 0
 			padding: 15px 20px
-
 			background-color: $grey-bgc
 			border: none
 			font-family: "OpenSans-SemiBold", sans-serif
