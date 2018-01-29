@@ -1,35 +1,45 @@
 @import "../vars"
 
 /* WHITE THEME */
-// $default-color: #000
-// $dark-blue: #fff
-// $blue: #fff
-// $yellow: #000
+// $default-color: $black
+// $dark-blue: $white
+// $blue: $white
+// $yellow: $black
+
 $white: #fff
 $black: #000
 $grey: #ccc
-
+$light-grey: #f0f0f0
+$dark-grey: #333
 
 html.white-theme
 	body
-		color: #000
+		color: $black
 	h2.inner-title
-		color: #000
+		color: $black
 	a
-		color: #000
-		border-color: #000
+		color: $black
+		border-color: $black
 		&:hover
 			border-color: transparent
 	#wrapwrap
 		.top-line,
+		.head-content,
 		.main-sect,
 		.main-head,
 		.main-menu,
 		.navaslider,
 		.main-footer,
 		.foot-first-level,
-		#wrap
-			border-bottom: 1px solid #000
+		.foot-second-level
+			background-color: $white
+		.foot-first-level,
+		.top-line
+			border-bottom: 1px solid $black
+			border-bottom: 1px solid $black
+		.main-menu,
+		.navaslider
+			border-top: 1px solid $black
 		.top-line
 			.main-logo 
 				img
@@ -41,84 +51,85 @@ html.white-theme
 			.res-links 
 				.dropdown.open
 					.res-links-btn
-						color: #000
+						color: $black
 			.flag-links 
 				.btn-ru
-					background-color: #ccc
+					background-color: $grey
 				.dropdown-flags 
 				li
-					background-color: #ccc
+					background-color: $grey
 		.dropdown-menu 
 			li 
 				a
-					color: #000
+					color: $black
 		.head-content 
 			.main-title
-				color: #000
+				color: $black
 				text-shadow: none
 			.other-func
-				background-color: #f0f0f0
+				background-color: $light-grey
 				a
-					color: #000
+					color: $black
 		.wrap-target-menu 
 			li 
 				a
-					color: #000
+					color: $black
 		.main-sect 
-			border-bottom: 1px solid #000
+			border-bottom: 1px solid $black
 			h2
-				color: #000
+				color: $black
 		.grey-sect
-			background-color: #fff	
+			background-color: $white	
 		.blue-sect
-			color: #000
+			color: $black
 		.news-sect
 			.wrap-target-other-news 
 				.target-other-news
-					border-color: #ccc
+					border-color: $grey
+					background-color: $light-grey
 					span
-						color: #000
+						color: $black
 		.event-item 
 			.wrap-date-event 
 				.calendar-icon 
 					span
-						background-color: #333
-						box-shadow: 0 2px 0 #000
+						background-color: $dark-grey
+						box-shadow: 0 2px 0 $black
 					span::before,
 					span::after
-						border-color: #eee
+						border-color: $grey
 		.rector-sect 
 			.wrap-rector-img
-				border-color: #ccc
+				border-color: $grey
 		.comment-students-sect 
 			.wrap-comment-img
-				border-color: #ccc
+				border-color: $grey
 			.comment-student-slider 
 				.owl-dots 
 					.owl-dot
-						background-color: #ccc
+						background-color: $grey
 					.owl-dot.active
-						background-color: #333
+						background-color: $dark-grey
 		.main-menu 
 			ul 
 				li 
 					a
-						color: #000
+						color: $black
 		.wrap-target-menu 
 			li 
 				a.head-content
-					color: #000
+					color: $black
 		.other-link
-			color: #000
-			border-color: #000
+			color: $black
+			border-color: $black
 			a
-				color: #000
-				border-color: #000
+				color: $black
+				border-color: $black
 		footer
-			color: #000
+			color: $black
 			a
-				color: #000
-				border-color: #000
+				color: $black
+				border-color: $black
 			.wrap-foot-contancts 
 				.foot-social-list 
 					img
@@ -129,50 +140,50 @@ html.white-theme
 						filter: grayscale(100%)
 				.foot-feedback 
 					.button-light-blue
-						background-color: #ccc
-						color: #000
-						border-color: darken(#ccc, 10%)
+						background-color: $grey
+						color: $black
+						border-color: darken($grey, 10%)
 		.main-menu 
 			.wrap-main-menu 
 				.wrap-inner-common-menu
-					border-color: #000
+					border-color: $black
 		.tabs-container .nav-tabs > li.active > a, 
 		.tabs-container .nav-tabs > li.active > a:hover, 
 		.tabs-container .nav-tabs > li.active > a:focus
-			background-color: #ccc
+			background-color: $grey
 		.tabs-container .nav-tabs > li > a:hover, 
 		.tabs-container .nav-tabs > li > a:focus
-			color: #000
+			color: $black
 		.wrap-dis-page 
 			.dis-docs 
 				ul
 					li
 						a
-							color: #000
-							border-color: #000
+							color: $black
+							border-color: $black
 		.wrap-events-list 
 			.wrap-events-date-filter 
 				ul 
 					li.active 
 						a
-							color: #000
-							background-color: #ccc
+							color: $black
+							background-color: $grey
 					li
 						a
 							&:hover
-								color: #000
-								background-color: #f0f0f0
+								color: $black
+								background-color: $light-grey
 			.wrap-events-category 
 				li 
 					a
-						color: #000
+						color: $black
 				li.active 
 					a
-						background-color: #ccc
+						background-color: $grey
 		#div_nav_panel 
 			#nav_panel 
 				li 
 					button
 						&.active, &:hover
-							background-color: #ccc
-							color: #000
+							background-color: $grey
+							color: $black

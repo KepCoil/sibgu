@@ -24,14 +24,24 @@ html.white-theme a {
     border-color: transparent; }
 
 html.white-theme #wrapwrap .top-line,
+html.white-theme #wrapwrap .head-content,
 html.white-theme #wrapwrap .main-sect,
 html.white-theme #wrapwrap .main-head,
 html.white-theme #wrapwrap .main-menu,
 html.white-theme #wrapwrap .navaslider,
 html.white-theme #wrapwrap .main-footer,
 html.white-theme #wrapwrap .foot-first-level,
-html.white-theme #wrapwrap #wrap {
+html.white-theme #wrapwrap .foot-second-level {
+  background-color: #fff; }
+
+html.white-theme #wrapwrap .foot-first-level,
+html.white-theme #wrapwrap .top-line {
+  border-bottom: 1px solid #000;
   border-bottom: 1px solid #000; }
+
+html.white-theme #wrapwrap .main-menu,
+html.white-theme #wrapwrap .navaslider {
+  border-top: 1px solid #000; }
 
 html.white-theme #wrapwrap .top-line .main-logo img {
   -webkit-filter: grayscale(100%);
@@ -76,7 +86,8 @@ html.white-theme #wrapwrap .blue-sect {
   color: #000; }
 
 html.white-theme #wrapwrap .news-sect .wrap-target-other-news .target-other-news {
-  border-color: #ccc; }
+  border-color: #ccc;
+  background-color: #f0f0f0; }
   html.white-theme #wrapwrap .news-sect .wrap-target-other-news .target-other-news span {
     color: #000; }
 
@@ -87,7 +98,7 @@ html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span {
 
 html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span::before,
 html.white-theme #wrapwrap .event-item .wrap-date-event .calendar-icon span::after {
-  border-color: #eee; }
+  border-color: #ccc; }
 
 html.white-theme #wrapwrap .rector-sect .wrap-rector-img {
   border-color: #ccc; }
