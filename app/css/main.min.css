@@ -7071,7 +7071,7 @@ h2.inner-title {
         font-family: "OpenSans-SemiBold", sans-serif;
         color: #fff;
         border: none;
-        padding: 15px;
+        padding: 18px 15px;
         text-transform: uppercase; }
         .main-menu ul li a:hover {
           color: #314177;
@@ -7290,7 +7290,24 @@ h2.inner-title {
 /* END VERSION EYE */
 /* Carousel gallery  */
 .s_image_gallery .carousel .carousel-control {
-  border: none; }
+  border: none;
+  width: 10%;
+  font-size: 2.25rem;
+  opacity: 0.8; }
+  .s_image_gallery .carousel .carousel-control:hover {
+    color: #ffe082; }
+
+.carousel-full-width .item {
+  padding-bottom: 0; }
+  .carousel-full-width .item img {
+    width: 100%;
+    max-height: none;
+    max-width: none; }
+
+.carousel-full-width ul.carousel-indicators {
+  bottom: 40px; }
+  .carousel-full-width ul.carousel-indicators li {
+    border: 2px solid #ffe082; }
 
 /* End Carousel gallery */
 .fixed-inner-menu {
