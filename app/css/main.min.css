@@ -7057,7 +7057,7 @@ h2.inner-title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
   .main-menu .container {
     padding: 0; }
-  .main-menu.inner-menu ul li a {
+  .main-menu.inner-menu .ul-inner-menu > li > a {
     font-size: 0.875rem;
     padding: 0.875rem; }
   .main-menu ul {
