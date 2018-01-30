@@ -1,15 +1,17 @@
 @import "../vars"
 
 
-$white: #fff
-$black: #000
-$grey: #ccc
-$light-grey: #f0f0f0
-$dark-grey: #333
+
+$black: #fff
+$white: #000
+$grey: #444
+$light-grey: #222
+$dark-grey: #333 
 
 html.white-theme
 	body
 		color: $black
+		background-color: $white
 	h2.inner-title
 		color: $black
 	a
@@ -119,10 +121,16 @@ html.white-theme
 					.owl-dot.active
 						background-color: $dark-grey
 		.main-menu 
+			.wrap-main-menu 
+				.wrap-inner-common-menu
+					border-color: $black
 			ul 
 				li 
+					&.droplist-open
+						background-color: $grey
 					a
 						color: $black
+				li.drop
 		.wrap-target-menu 
 			li 
 				a.head-content
@@ -151,10 +159,6 @@ html.white-theme
 						background-color: $grey
 						color: $black
 						border-color: darken($grey, 10%)
-		.main-menu 
-			.wrap-main-menu 
-				.wrap-inner-common-menu
-					border-color: $black
 		.tabs-container .nav-tabs > li.active > a, 
 		.tabs-container .nav-tabs > li.active > a:hover, 
 		.tabs-container .nav-tabs > li.active > a:focus
@@ -202,6 +206,22 @@ html.white-theme
 				color: $black
 			h3
 				color: $black
+		.pa-sect 
+			.wrap-pa-item 
+				strong
+					color: $black
+		.infographics-sect 
+			.wrap-infographics-content
+				color: $black
+
+		.event-item 
+			.wrap-date-event .event-month
+				color: $black
+			.event-content h3 a
+				color: $black
+				&:hover
+					border-color: $black
+
 		.wrap-events-list .wrap-events-category li a:hover
 			background-color: $grey
 		.tabs-container .nav-tabs > li.active > a, 

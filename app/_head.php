@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="disable-img white-theme">
+<html lang="ru" class="white-theme">
 
 <head>
 	<meta charset="utf-8">
