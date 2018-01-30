@@ -1,10 +1,5 @@
 @import "../vars"
 
-/* WHITE THEME */
-// $default-color: $black
-// $dark-blue: $white
-// $blue: $white
-// $yellow: $black
 
 $white: #fff
 $black: #000
@@ -38,9 +33,18 @@ html.white-theme
 			border-bottom: 1px solid $black
 			border-bottom: 1px solid $black
 		.main-menu,
-		.navaslider
+		.navaslider,
+		.main-footer
 			border-top: 1px solid $black
+		.main-sect.pa-sect
+				border: none
+		h2.inner-title, h2.inner-title--no-caps
+			color: $black
 		.top-line
+			.quick-links 
+				a
+					color: $black
+					border-color: $black
 			.main-logo 
 				img
 					-webkit-filter: grayscale(100%)
@@ -49,7 +53,7 @@ html.white-theme
 					-o-filter: grayscale(100%)
 					filter: grayscale(100%)
 			.res-links 
-				.dropdown.open
+				.dropdown, .dropdown.open
 					.res-links-btn
 						color: $black
 			.flag-links 
@@ -70,10 +74,14 @@ html.white-theme
 				background-color: $light-grey
 				a
 					color: $black
+				a.info-uni
+					border-color: $black
 		.wrap-target-menu 
 			li 
 				a
 					color: $black
+		.wrap-inner-audit-menu
+			border-bottom: 1px solid $black
 		.main-sect 
 			border-bottom: 1px solid $black
 			h2
@@ -187,3 +195,19 @@ html.white-theme
 						&.active, &:hover
 							background-color: $grey
 							color: $black
+		.wrap-standart-item
+			a
+				background-color: $grey
+			.wrap-icon i
+				color: $black
+			h3
+				color: $black
+		.wrap-events-list .wrap-events-category li a:hover
+			background-color: $grey
+		.tabs-container .nav-tabs > li.active > a, 
+		.tabs-container .nav-tabs > li.active > a:hover, 
+		.tabs-container .nav-tabs > li.active > a:focus
+			color: $black
+		.main-accordion .accordion-item .panel-title:hover .fa, 
+		.main-accordion .accordion-item .panel-title:hover a
+			color: $black
