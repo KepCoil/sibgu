@@ -1,15 +1,313 @@
-@import "vars"
-/* BLACK THEME */
-/* NON READY */
+@import "../vars"
 
-$black: #fff
-$grey: #444
-$light-grey: #222
-$dark-grey: #333 
 
-/* white */
-// $white: #fff
-// $black: #000
-// $grey: #ccc
-// $light-grey: #f0f0f0
-// $dark-grey: #333
+/* black */
+$black: #000
+$white: #fff
+
+$grey: #333
+$light-grey: #666
+$dark-grey: #222
+
+
+html.black-theme
+	body
+		color: $white
+		background-color: $black
+	h2.inner-title
+		color: $white
+	a
+		color: $white
+		border-color: $white
+		&:hover
+			border-color: transparent
+	.wrap-eye-panel-controls
+		color: $black
+	#wrapwrap
+		.top-line,
+		.head-content,
+		.main-sect,
+		.main-head,
+		.main-menu,
+		.navaslider,
+		.main-footer,
+		.foot-first-level,
+		.foot-second-level
+			background-color: $black
+		.foot-first-level,
+		.top-line
+			border-bottom: 1px solid $white
+		.main-menu,
+		.navaslider,
+		.main-footer
+			border-top: 1px solid $white
+		.main-sect.pa-sect
+				border: none
+		h2.inner-title, h2.inner-title--no-caps
+			color: $white
+		.top-line
+			.quick-links 
+				a
+					color: $white
+					border-color: $white
+			.main-logo 
+				img
+					-webkit-filter: grayscale(100%)
+					-moz-filter: grayscale(100%)
+					-ms-filter: grayscale(100%)
+					-o-filter: grayscale(100%)
+					filter: grayscale(100%)
+			.res-links 
+				.dropdown
+					.res-links-btn
+						color: $white
+				.dropdown.open
+					.res-links-btn, .dropdown-menu, li
+						background-color: $grey
+			.flag-links 
+				.btn-ru
+					background-color: $grey
+				.dropdown-flags 
+				li
+					background-color: $grey
+		.dropdown-menu
+			li
+				border-color: $white
+				a
+					color: $white
+		.head-content 
+			.main-title
+				color: $white
+				text-shadow: none
+			.other-func
+				background-color: $grey
+				a
+					color: $white
+				a.info-uni
+					border-color: $white
+		.wrap-target-menu 
+			li
+				border-color: $white
+				a
+					color: $white
+		.wrap-inner-audit-menu
+			border-bottom: 1px solid $white
+		.main-sect 
+			border-bottom: 1px solid $white
+			h2
+				color: $white
+		.grey-sect
+			background-color: $black	
+		.blue-sect
+			color: $white
+		.news-sect
+			.wrap-target-other-news 
+				.target-other-news
+					border-color: $grey
+					background-color: $light-grey
+					span
+						color: $white
+		.wrap-cards-news 
+			.wrap-card-item-news
+				background-color: $grey
+			.wrap-news-content
+				color: $white
+				time
+					color: $white
+				.wrap-news-title h3:hover
+					border-color: $white
+		.common-news 
+			.date-public
+				color: $white
+				border-color: $white
+		
+		.rector-sect 
+			.wrap-rector-img
+				border-color: $grey
+		.comment-students-sect 
+			.wrap-comment-img
+				border-color: $grey
+			.comment-student-slider 
+				.owl-dots 
+					.owl-dot
+						background-color: $grey
+					.owl-dot.active
+						background-color: $dark-grey
+		.main-menu 
+			.wrap-main-menu 
+				.wrap-inner-common-menu
+					border-color: $white
+				ul
+					>li
+						&.droplist-open
+							a
+								background-color: $grey
+						a
+							color: $white
+							&:hover
+								background-color: $grey
+						.droplist-content
+							background-color: $grey
+							li
+								border-color: $white
+		.wrap-target-menu 
+			li 
+				a.head-content
+					color: $white
+		.other-link
+			color: $white
+			border-color: $white
+			a
+				color: $white
+				border-color: $white
+		footer
+			color: $white
+			a
+				color: $white
+				border-color: $white
+			.wrap-foot-contancts 
+				.foot-social-list 
+					img
+						-webkit-filter: grayscale(100%)
+						-moz-filter: grayscale(100%)
+						-ms-filter: grayscale(100%)
+						-o-filter: grayscale(100%)
+						filter: grayscale(100%)
+				.foot-feedback 
+					.button-light-blue
+						background-color: $grey
+						color: $white
+						border-color: darken($grey, 10%)
+
+		.tabs-container 
+			.nav-tabs
+				>li
+					&.active 
+						>a, >a:hover, >a:focus
+							background-color: $light-grey
+					>a
+						background-color: $dark-grey
+						color: $white
+						&:hover, &:focus
+							background-color: $grey
+			
+		.wrap-dis-page
+			.dis-meta-info
+				border-color: $white
+			.dis-docs 
+				ul
+					li
+						a
+							color: $white
+							border-color: $white
+
+		.wrap-events-list 
+			.wrap-events-date-filter
+				border-color: $white
+				ul 
+					li
+						&.active
+							a
+								color: $white
+								background-color: $grey
+						a
+							color: $white
+							&:hover
+								color: $white
+								background-color: $light-grey
+			.wrap-events-category 
+				li
+					border-color: $white
+					&.active
+						a
+							background-color: $dark-grey
+					a
+						color: $white
+						background-color: $grey
+						&:hover
+							background-color: $light-grey
+			
+		.wrap-events-list	
+			.wrap-events-content 
+				.event-category
+					color: $white
+					border-color: $white
+				.table-events tbody .event-title a
+					color: $white
+					border-color: $white
+		.table > thead > tr > th, 
+		.table > tbody > tr > th, 
+		.table > tfoot > tr > th, 
+		.table > thead > tr > td, 
+		.table > tbody > tr > td, 
+		.table > tfoot > tr > td
+			border-color: $white
+		.table-striped > tbody > tr:nth-of-type(2n+1)
+			background-color: $dark-grey
+		
+
+
+		#div_nav_panel 
+			#nav_panel 
+				li 
+					button
+						color: $white
+						background-color: $dark-grey
+						border-color: $white
+						&.active, &:hover
+							background-color: $light-grey
+							color: $white
+		.wrap-standart-item
+			a
+				background-color: $grey
+			.wrap-icon i
+				color: $white
+			h3
+				color: $white
+		.pa-sect 
+			.wrap-pa-item 
+				strong
+					color: $white
+		.infographics-sect 
+			.wrap-infographics-content
+				color: $white
+
+		.event-item 
+			.wrap-date-event
+				border-color: $white
+				.event-month
+					color: $white
+			.event-content h3 a
+				color: $white
+				&:hover
+					border-color: $white
+			.calendar-icon
+				strong
+					color: $black
+				span
+					background-color: $dark-grey
+					box-shadow: 0 2px 0 $white
+				span::before,
+				span::after
+					border-color: $grey
+				
+		
+		.tabs-container .nav-tabs > li.active > a, 
+		.tabs-container .nav-tabs > li.active > a:hover, 
+		.tabs-container .nav-tabs > li.active > a:focus
+			color: $white
+
+		.main-accordion 
+			.accordion-item 
+				.panel-title
+					background-color: $grey
+					color: $white
+					a, .fa
+						color: $white
+				.panel-body
+					background-color: $light-grey
+					border-color: $grey
+
+		.wrap-dis-page 
+			.dis-docs
+				background-color: $grey

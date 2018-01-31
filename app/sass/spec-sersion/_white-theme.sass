@@ -1,12 +1,14 @@
 @import "../vars"
 
 
+/* white */
+$white: #fff
+$black: #000
 
-$black: #fff
-$white: #000
-$grey: #444
-$light-grey: #222
-$dark-grey: #333 
+$grey: #ccc
+$light-grey: #f0f0f0
+$dark-grey: #333
+
 
 html.white-theme
 	body
@@ -33,7 +35,6 @@ html.white-theme
 		.foot-first-level,
 		.top-line
 			border-bottom: 1px solid $black
-			border-bottom: 1px solid $black
 		.main-menu,
 		.navaslider,
 		.main-footer
@@ -55,17 +56,21 @@ html.white-theme
 					-o-filter: grayscale(100%)
 					filter: grayscale(100%)
 			.res-links 
-				.dropdown, .dropdown.open
+				.dropdown
 					.res-links-btn
 						color: $black
+				.dropdown.open
+					.res-links-btn, .dropdown-menu, li
+						background-color: $grey
 			.flag-links 
 				.btn-ru
 					background-color: $grey
 				.dropdown-flags 
 				li
 					background-color: $grey
-		.dropdown-menu 
-			li 
+		.dropdown-menu
+			li
+				border-color: $black
 				a
 					color: $black
 		.head-content 
@@ -73,13 +78,14 @@ html.white-theme
 				color: $black
 				text-shadow: none
 			.other-func
-				background-color: $light-grey
+				background-color: $grey
 				a
 					color: $black
 				a.info-uni
 					border-color: $black
 		.wrap-target-menu 
-			li 
+			li
+				border-color: $black
 				a
 					color: $black
 		.wrap-inner-audit-menu
@@ -99,15 +105,20 @@ html.white-theme
 					background-color: $light-grey
 					span
 						color: $black
-		.event-item 
-			.wrap-date-event 
-				.calendar-icon 
-					span
-						background-color: $dark-grey
-						box-shadow: 0 2px 0 $black
-					span::before,
-					span::after
-						border-color: $grey
+		.wrap-cards-news 
+			.wrap-card-item-news
+				background-color: $grey
+			.wrap-news-content
+				color: $black
+				time
+					color: $black
+				.wrap-news-title h3:hover
+					border-color: $black
+		.common-news 
+			.date-public
+				color: $black
+				border-color: $black
+		
 		.rector-sect 
 			.wrap-rector-img
 				border-color: $grey
@@ -124,13 +135,19 @@ html.white-theme
 			.wrap-main-menu 
 				.wrap-inner-common-menu
 					border-color: $black
-			ul 
-				li 
-					&.droplist-open
-						background-color: $grey
-					a
-						color: $black
-				li.drop
+				ul
+					>li
+						&.droplist-open
+							a
+								background-color: $grey
+						a
+							color: $black
+							&:hover
+								background-color: $grey
+						.droplist-content
+							background-color: $grey
+							li
+								border-color: $black
 		.wrap-target-menu 
 			li 
 				a.head-content
@@ -159,45 +176,74 @@ html.white-theme
 						background-color: $grey
 						color: $black
 						border-color: darken($grey, 10%)
-		.tabs-container .nav-tabs > li.active > a, 
-		.tabs-container .nav-tabs > li.active > a:hover, 
-		.tabs-container .nav-tabs > li.active > a:focus
-			background-color: $grey
-		.tabs-container .nav-tabs > li > a:hover, 
-		.tabs-container .nav-tabs > li > a:focus
-			color: $black
-		.wrap-dis-page 
+
+		
+			
+		.wrap-dis-page
+			.dis-meta-info
+				border-color: $black
 			.dis-docs 
 				ul
 					li
 						a
 							color: $black
 							border-color: $black
+
 		.wrap-events-list 
-			.wrap-events-date-filter 
+			.wrap-events-date-filter
+				border-color: $black
 				ul 
-					li.active 
+					li
+						&.active
+							a
+								color: $black
+								background-color: $grey
 						a
 							color: $black
-							background-color: $grey
-					li
-						a
 							&:hover
 								color: $black
 								background-color: $light-grey
 			.wrap-events-category 
-				li 
+				li
+					border-color: $black
+					&.active
+						a
+							background-color: $light-grey
 					a
 						color: $black
-				li.active 
-					a
 						background-color: $grey
+						&:hover
+							background-color: $light-grey
+			
+		.wrap-events-list	
+			.wrap-events-content 
+				.event-category
+					color: $black
+					border-color: $black
+				.table-events tbody .event-title a
+					color: $black
+					border-color: $black
+		.table > thead > tr > th, 
+		.table > tbody > tr > th, 
+		.table > tfoot > tr > th, 
+		.table > thead > tr > td, 
+		.table > tbody > tr > td, 
+		.table > tfoot > tr > td
+			border-color: $black
+		.table-striped > tbody > tr:nth-of-type(2n+1)
+			background-color: $light-grey
+		
+
+
 		#div_nav_panel 
 			#nav_panel 
 				li 
 					button
+						color: $black
+						background-color: $grey
+						border-color: $black
 						&.active, &:hover
-							background-color: $grey
+							background-color: $light-grey
 							color: $black
 		.wrap-standart-item
 			a
@@ -215,19 +261,47 @@ html.white-theme
 				color: $black
 
 		.event-item 
-			.wrap-date-event .event-month
-				color: $black
+			.wrap-date-event
+				border-color: $black
+				.event-month
+					color: $black
 			.event-content h3 a
 				color: $black
 				&:hover
 					border-color: $black
+			.calendar-icon
+				strong
+					color: $black
+				span
+					background-color: $dark-grey
+					box-shadow: 0 2px 0 $black
+				span::before,
+				span::after
+					border-color: $grey
+				
+		.tabs-container 
+			.nav-tabs
+				>li
+					&.active 
+						>a, >a:hover, >a:focus
+							background-color: $light-grey
+					>a
+						background-color: $grey
+						color: $black
+						&:hover, &:focus
+							background-color: $grey
 
-		.wrap-events-list .wrap-events-category li a:hover
-			background-color: $grey
-		.tabs-container .nav-tabs > li.active > a, 
-		.tabs-container .nav-tabs > li.active > a:hover, 
-		.tabs-container .nav-tabs > li.active > a:focus
-			color: $black
-		.main-accordion .accordion-item .panel-title:hover .fa, 
-		.main-accordion .accordion-item .panel-title:hover a
-			color: $black
+		.main-accordion 
+			.accordion-item 
+				.panel-title
+					background-color: $grey
+					color: $black
+					a, .fa
+						color: $black
+				.panel-body
+					background-color: $light-grey
+					border-color: $grey
+
+		.wrap-dis-page 
+			.dis-docs
+				background-color: $grey

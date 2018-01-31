@@ -1,175 +1,311 @@
-@import "vars"
-/* BLUE THEME */
-/* NON READY */
+@import "../vars"
 
-// $default-color: #000
-// $dark-blue: #fff
-// $blue: #fff
-// $yellow: #000
 
-// html.white-theme
-// 	body
-// 		color: #000
-// 	h2.inner-title
-// 		color: #000
-// 	a
-// 		color: #000
-// 		border-color: #000
-// 		&:hover
-// 			border-color: transparent
-// 	#wrapwrap
-// 		.top-line,
-// 		.main-sect,
-// 		.main-head,
-// 		.main-menu,
-// 		.navaslider,
-// 		.main-footer,
-// 		.foot-first-level,
-// 		#wrap
-// 			border-bottom: 1px solid #000
-// 		.top-line
-// 			.main-logo 
-// 				img
-// 					-webkit-filter: grayscale(100%)
-// 					-moz-filter: grayscale(100%)
-// 					-ms-filter: grayscale(100%)
-// 					-o-filter: grayscale(100%)
-// 					filter: grayscale(100%)
-// 			.res-links 
-// 				.dropdown.open
-// 					.res-links-btn
-// 						color: #000
-// 			.flag-links 
-// 				.btn-ru
-// 					background-color: #ccc
-// 				.dropdown-flags 
-// 				li
-// 					background-color: #ccc
-// 		.dropdown-menu 
-// 			li 
-// 				a
-// 					color: #000
-// 		.head-content 
-// 			.main-title
-// 				color: #000
-// 				text-shadow: none
-// 			.other-func
-// 				background-color: #f0f0f0
-// 				a
-// 					color: #000
-// 		.wrap-target-menu 
-// 			li 
-// 				a
-// 					color: #000
-// 		.main-sect 
-// 			border-bottom: 1px solid #000
-// 			h2
-// 				color: #000
-// 		.grey-sect
-// 			background-color: #fff	
-// 		.blue-sect
-// 			color: #000
-// 		.news-sect
-// 			.wrap-target-other-news 
-// 				.target-other-news
-// 					border-color: #ccc
-// 					span
-// 						color: #000
-// 		.event-item 
-// 			.wrap-date-event 
-// 				.calendar-icon 
-// 					span
-// 						background-color: #333
-// 						box-shadow: 0 2px 0 #000
-// 					span::before,
-// 					span::after
-// 						border-color: #eee
-// 		.rector-sect 
-// 			.wrap-rector-img
-// 				border-color: #ccc
-// 		.comment-students-sect 
-// 			.wrap-comment-img
-// 				border-color: #ccc
-// 			.comment-student-slider 
-// 				.owl-dots 
-// 					.owl-dot
-// 						background-color: #ccc
-// 					.owl-dot.active
-// 						background-color: #333
-// 		.main-menu 
-// 			ul 
-// 				li 
-// 					a
-// 						color: #000
-// 		.wrap-target-menu 
-// 			li 
-// 				a.head-content
-// 					color: #000
-// 		.other-link
-// 			color: #000
-// 			border-color: #000
-// 			a
-// 				color: #000
-// 				border-color: #000
-// 		footer
-// 			color: #000
-// 			a
-// 				color: #000
-// 				border-color: #000
-// 			.wrap-foot-contancts 
-// 				.foot-social-list 
-// 					img
-// 						-webkit-filter: grayscale(100%)
-// 						-moz-filter: grayscale(100%)
-// 						-ms-filter: grayscale(100%)
-// 						-o-filter: grayscale(100%)
-// 						filter: grayscale(100%)
-// 				.foot-feedback 
-// 					.button-light-blue
-// 						background-color: #ccc
-// 						color: #000
-// 						border-color: darken(#ccc, 10%)
-// 		.main-menu 
-// 			.wrap-main-menu 
-// 				.wrap-inner-common-menu
-// 					border-color: #000
-// 		.tabs-container .nav-tabs > li.active > a, 
-// 		.tabs-container .nav-tabs > li.active > a:hover, 
-// 		.tabs-container .nav-tabs > li.active > a:focus
-// 			background-color: #ccc
-// 		.tabs-container .nav-tabs > li > a:hover, 
-// 		.tabs-container .nav-tabs > li > a:focus
-// 			color: #000
-// 		.wrap-dis-page 
-// 			.dis-docs 
-// 				ul
-// 					li
-// 						a
-// 							color: #000
-// 							border-color: #000
-// 		.wrap-events-list 
-// 			.wrap-events-date-filter 
-// 				ul 
-// 					li.active 
-// 						a
-// 							color: #000
-// 							background-color: #ccc
-// 					li
-// 						a
-// 							&:hover
-// 								color: #000
-// 								background-color: #f0f0f0
-// 			.wrap-events-category 
-// 				li 
-// 					a
-// 						color: #000
-// 				li.active 
-// 					a
-// 						background-color: #ccc
-// 		#div_nav_panel 
-// 			#nav_panel 
-// 				li 
-// 					button
-// 						&.active, &:hover
-// 							background-color: #ccc
-// 							color: #000
+/* blue */
+$bgc_blue: #9dd1ff
+$accent_blue: #063462
+
+$blue: #76baff
+$light-blue: #7bb5f0
+$dark-blue: #4f8ecf
+
+
+html.blue-theme
+	body
+		color: $accent_blue
+		background-color: $bgc_blue
+	h2.inner-title
+		color: $accent_blue
+	a
+		color: $accent_blue
+		border-color: $accent_blue
+		&:hover
+			border-color: transparent
+	#wrapwrap
+		.top-line,
+		.head-content,
+		.main-sect,
+		.main-head,
+		.main-menu,
+		.navaslider,
+		.main-footer,
+		.foot-first-level,
+		.foot-second-level
+			background-color: $bgc_blue
+		.foot-first-level,
+		.top-line
+			border-bottom: 1px solid $accent_blue
+		.main-menu,
+		.navaslider,
+		.main-footer
+			border-top: 1px solid $accent_blue
+		.main-sect.pa-sect
+				border: none
+		h2.inner-title, h2.inner-title--no-caps
+			color: $accent_blue
+		.top-line
+			.quick-links 
+				a
+					color: $accent_blue
+					border-color: $accent_blue
+			.main-logo 
+				img
+					// -webkit-filter: grayscale(100%)
+					// -moz-filter: grayscale(100%)
+					// -ms-filter: grayscale(100%)
+					// -o-filter: grayscale(100%)
+					// filter: grayscale(100%)
+			.res-links 
+				.dropdown
+					.res-links-btn
+						color: $accent_blue
+				.dropdown.open
+					.res-links-btn, .dropdown-menu, li
+						background-color: $blue
+			.flag-links 
+				.btn-ru
+					background-color: $blue
+				.dropdown-flags 
+				li
+					background-color: $blue
+		.dropdown-menu
+			li
+				border-color: $accent_blue
+				a
+					color: $accent_blue
+		.head-content 
+			.main-title
+				color: $accent_blue
+				text-shadow: none
+			.other-func
+				background-color: $blue
+				a
+					color: $accent_blue
+				a.info-uni
+					border-color: $accent_blue
+		.wrap-target-menu 
+			li
+				border-color: $accent_blue
+				a
+					color: $accent_blue
+		.wrap-inner-audit-menu
+			border-bottom: 1px solid $accent_blue
+		.main-sect 
+			border-bottom: 1px solid $accent_blue
+			h2
+				color: $accent_blue
+		.grey-sect
+			background-color: $bgc_blue	
+		.blue-sect
+			color: $accent_blue
+		.news-sect
+			.wrap-target-other-news 
+				.target-other-news
+					border-color: $blue
+					background-color: $light-blue
+					span
+						color: $accent_blue
+		.wrap-cards-news 
+			.wrap-card-item-news
+				background-color: $blue
+			.wrap-news-content
+				color: $accent_blue
+				time
+					color: $accent_blue
+				.wrap-news-title h3:hover
+					border-color: $accent_blue
+		.common-news 
+			.date-public
+				color: $accent_blue
+				border-color: $accent_blue
+		
+		.rector-sect 
+			.wrap-rector-img
+				border-color: $blue
+		.comment-students-sect 
+			.wrap-comment-img
+				border-color: $blue
+			.comment-student-slider 
+				.owl-dots 
+					.owl-dot
+						background-color: $blue
+					.owl-dot.active
+						background-color: $dark-blue
+		.main-menu 
+			.wrap-main-menu 
+				.wrap-inner-common-menu
+					border-color: $accent_blue
+				ul
+					>li
+						&.droplist-open
+							a
+								background-color: $blue
+						a
+							color: $accent_blue
+							&:hover
+								background-color: $blue
+						.droplist-content
+							background-color: $blue
+							li
+								border-color: $accent_blue
+		.wrap-target-menu 
+			li 
+				a.head-content
+					color: $accent_blue
+		.other-link
+			color: $accent_blue
+			border-color: $accent_blue
+			a
+				color: $accent_blue
+				border-color: $accent_blue
+		footer
+			color: $accent_blue
+			a
+				color: $accent_blue
+				border-color: $accent_blue
+			.wrap-foot-contancts 
+				.foot-social-list 
+					img
+						// -webkit-filter: grayscale(100%)
+						// -moz-filter: grayscale(100%)
+						// -ms-filter: grayscale(100%)
+						// -o-filter: grayscale(100%)
+						// filter: grayscale(100%)
+				.foot-feedback 
+					.button-light-blue
+						background-color: $blue
+						color: $accent_blue
+						border-color: darken($blue, 10%)
+
+		.tabs-container 
+			.nav-tabs
+				>li
+					&.active 
+						>a, >a:hover, >a:focus
+							background-color: $light-blue
+					>a
+						background-color: $dark-blue
+						color: $accent_blue
+						&:hover, &:focus
+							background-color: $blue
+			
+		.wrap-dis-page
+			.dis-meta-info
+				border-color: $accent_blue
+			.dis-docs 
+				ul
+					li
+						a
+							color: $accent_blue
+							border-color: $accent_blue
+
+		.wrap-events-list 
+			.wrap-events-date-filter
+				border-color: $accent_blue
+				ul 
+					li
+						&.active
+							a
+								color: $accent_blue
+								background-color: $blue
+						a
+							color: $accent_blue
+							&:hover
+								color: $accent_blue
+								background-color: $light-blue
+			.wrap-events-category 
+				li
+					border-color: $accent_blue
+					&.active
+						a
+							background-color: $dark-blue
+					a
+						color: $accent_blue
+						background-color: $blue
+						&:hover
+							background-color: $light-blue
+			
+		.wrap-event-content 
+			.event-category
+				color: $accent_blue
+				border-color: $accent_blue
+			.table-events tbody .event-title a
+				color: $accent_blue
+				border-color: $accent_blue
+		.table > thead > tr > th, 
+		.table > tbody > tr > th, 
+		.table > tfoot > tr > th, 
+		.table > thead > tr > td, 
+		.table > tbody > tr > td, 
+		.table > tfoot > tr > td
+			border-color: $accent_blue
+
+		.table-striped > tbody > tr:nth-of-type(2n+1)
+			background-color: $dark-blue
+		
+
+
+		#div_nav_panel 
+			#nav_panel 
+				li 
+					button
+						color: $accent_blue
+						background-color: $dark-blue
+						border-color: $accent_blue
+						&.active, &:hover
+							background-color: $light-blue
+							color: $accent_blue
+		.wrap-standart-item
+			a
+				background-color: $blue
+			.wrap-icon i
+				color: $accent_blue
+			h3
+				color: $accent_blue
+		.pa-sect 
+			.wrap-pa-item 
+				strong
+					color: $accent_blue
+		.infographics-sect 
+			.wrap-infographics-content
+				color: $accent_blue
+
+		.event-item 
+			.wrap-date-event
+				border-color: $accent_blue
+				.event-month
+					color: $accent_blue
+			.event-content h3 a
+				color: $accent_blue
+				&:hover
+					border-color: $accent_blue
+			.calendar-icon
+				strong
+					color: $accent_blue
+				span
+					background-color: $dark-blue
+					box-shadow: 0 2px 0 $accent_blue
+				span::before,
+				span::after
+					border-color: $blue
+				
+		
+		.tabs-container .nav-tabs > li.active > a, 
+		.tabs-container .nav-tabs > li.active > a:hover, 
+		.tabs-container .nav-tabs > li.active > a:focus
+			color: $accent_blue
+
+		.main-accordion 
+			.accordion-item 
+				.panel-title
+					background-color: $blue
+					color: $accent_blue
+					a, .fa
+						color: $accent_blue
+				.panel-body
+					background-color: $light-blue
+					border-color: $blue
+
+		.wrap-dis-page 
+			.dis-docs
+				background-color: $blue
