@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="white-theme">
+<html lang="ru" class="">
 
 <head>
 	<meta charset="utf-8">

@@ -296,6 +296,15 @@ h2.inner-title
 			color: #666
 /* END template standard page items */
 
+/* Фиксация внутр. меню при прокрутке */
+.fixed-inner-menu
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 5000
+/* Фиксация внутр. меню при прокрутке */
+
 
 /* VERSION EYE */
 .wrap-eye-panel-controls
@@ -412,45 +421,31 @@ h2.inner-title
 		background-color: #393
 	.switch-state-img:checked ~ label:after
 		margin-left: 26px
-
-
-// Отключение картинок
-.img-disable
-	// img
-	// 	visibility: hidden
-
 /* END VERSION EYE */
 
-/* Carousel gallery  */
-.s_image_gallery
-	.carousel 
-		.carousel-control
-			border: none
-			width: 10%
-			font-size: 2.25rem
-			opacity: 0.8
-			&:hover
-				color: $yellow
 
-.carousel-full-width
-	.item
-		padding-bottom: 0
+
+/* Carousel gallery  */
+.o_gallery.o_slideshow .carousel 
+	.carousel-full-width
 		img
 			width: 100%
 			max-height: none
 			max-width: none
-	ul.carousel-indicators
-		bottom: 40px
-		li
-			border: 2px solid $yellow
+		ul.carousel-indicators
+			bottom: 40px
+			li
+				border: 2px solid $yellow
+		.carousel-control
+				border: none
+				width: 10%
+				font-size: 2.25rem
+				opacity: 0.8
+				&:hover
+					color: $yellow
 /* End Carousel gallery */
 
-.fixed-inner-menu
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	z-index: 5000
+
 
 /* Tabs content */
 .tabs-container
@@ -479,6 +474,7 @@ h2.inner-title
 /* Snippet "Well" */
 .well
 	border-radius: 0
+	
 
 /* Accordion */
 .main-accordion
@@ -490,11 +486,11 @@ h2.inner-title
 			padding: 0
 			border: none
 		.panel-body
-			background-color: #f7f7f7
-			padding: 15px
+			background-color: #fefefe
 			border: 1px solid #ddd
-			.table-responsive
-				margin: -15px
+			padding: 0
+			&-padding
+				padding: 15px
 		.panel-title
 			margin: 0
 			padding: 15px 20px

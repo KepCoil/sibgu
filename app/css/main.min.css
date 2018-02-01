@@ -7177,6 +7177,15 @@ h2.inner-title {
   color: #666; }
 
 /* END template standard page items */
+/* Фиксация внутр. меню при прокрутке */
+.fixed-inner-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5000; }
+
+/* Фиксация внутр. меню при прокрутке */
 /* VERSION EYE */
 .wrap-eye-panel-controls {
   top: 0;
@@ -7289,34 +7298,25 @@ h2.inner-title {
 
 /* END VERSION EYE */
 /* Carousel gallery  */
-.s_image_gallery .carousel .carousel-control {
+.o_gallery.o_slideshow .carousel .carousel-full-width img {
+  width: 100%;
+  max-height: none;
+  max-width: none; }
+
+.o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators {
+  bottom: 40px; }
+  .o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators li {
+    border: 2px solid #ffe082; }
+
+.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control {
   border: none;
   width: 10%;
   font-size: 2.25rem;
   opacity: 0.8; }
-  .s_image_gallery .carousel .carousel-control:hover {
+  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control:hover {
     color: #ffe082; }
 
-.carousel-full-width .item {
-  padding-bottom: 0; }
-  .carousel-full-width .item img {
-    width: 100%;
-    max-height: none;
-    max-width: none; }
-
-.carousel-full-width ul.carousel-indicators {
-  bottom: 40px; }
-  .carousel-full-width ul.carousel-indicators li {
-    border: 2px solid #ffe082; }
-
 /* End Carousel gallery */
-.fixed-inner-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5000; }
-
 /* Tabs content */
 .tabs-container .nav-tabs {
   border: none; }
@@ -7355,11 +7355,11 @@ h2.inner-title {
     padding: 0;
     border: none; }
   .main-accordion .accordion-item .panel-body {
-    background-color: #f7f7f7;
-    padding: 15px;
-    border: 1px solid #ddd; }
-    .main-accordion .accordion-item .panel-body .table-responsive {
-      margin: -15px; }
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    padding: 0; }
+    .main-accordion .accordion-item .panel-body-padding {
+      padding: 15px; }
   .main-accordion .accordion-item .panel-title {
     margin: 0;
     padding: 15px 20px;
@@ -8527,8 +8527,6 @@ h2.inner-title {
       margin: 9px 0; }
     #wrapwrap .head-content .other-func a.info-uni {
       font-size: 14px; }
-  #wrapwrap .main-menu ul.ul-inner-menu > li > a {
-    padding: 15px 8px; }
   #wrapwrap .event-item {
     padding: 0; }
   #wrapwrap .news-sect .wrap-item-news {
@@ -8564,6 +8562,9 @@ h2.inner-title {
     font-size: 15px; } }
 
 @media only screen and (max-width: 1260px) and (min-width: 992px) {
+  #wrapwrap .main-menu ul.ul-inner-menu > li > a {
+    padding: 15px 6px;
+    font-size: 12px; }
   #wrapwrap .pa-sect .wrap-pa-item img {
     width: 190px;
     height: 110px; }
