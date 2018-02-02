@@ -1,4 +1,4 @@
-<?php include("_eye-version.php") ?>
+<?php include("_spec-version.php") ?>
 
 <header class="main-head">
 	<div class="top-line">
@@ -91,7 +91,7 @@
 				</a>
 			</div>
 			<div class="other-func">
-				<a href="#" id="js-button-eye-version"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
+				<a href="#" id="js-button-spec-version"><i class="fa fa-eye" aria-hidden="true"></i>Версия для слабовидящих</a>
 				<a href="#"><i class="fa fa-wheelchair" aria-hidden="true"></i>Доступное образования</a>
 				<a class="info-uni" href="#">Сведения об образовательной организации</a>
 			</div>

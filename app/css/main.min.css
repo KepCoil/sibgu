@@ -7186,72 +7186,90 @@ h2.inner-title {
   z-index: 5000; }
 
 /* Фиксация внутр. меню при прокрутке */
-/* VERSION EYE */
-.wrap-eye-panel-controls {
+/* SPECIAL VERSION */
+.wrap-spec-panel-controls {
   top: 0;
   z-index: 999;
   background-color: #eee;
   font-family: "MyriadPro-Bold", sans-serif;
   border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa; }
+  border-bottom: 1px solid #aaa;
+  font-size: 16px; }
 
-.eye-panel-controls {
+.spec-panel-controls {
   padding: 0 15px; }
-  .eye-panel-controls ul {
+  .spec-panel-controls ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-  .eye-panel-controls strong {
-    font-weight: normal;
-    font-size: 17px; }
-  .eye-panel-controls .eye-controls > li {
+  .spec-panel-controls strong {
+    font-weight: normal; }
+  .spec-panel-controls ul.spec-controls > li {
     float: left;
     width: 25%;
     text-align: center;
     border-right: 1px solid #aaa;
     padding: 15px 0;
-    line-height: 1.6;
-    height: 68px; }
-    .eye-panel-controls .eye-controls > li:last-child {
+    line-height: 1.6; }
+    .spec-panel-controls ul.spec-controls > li:last-child {
       border-right: none; }
-  .eye-panel-controls .font-size-controls > li,
-  .eye-panel-controls .color-controls > li {
+  .spec-panel-controls .font-size-controls > li,
+  .spec-panel-controls .color-controls > li {
     display: inline-block;
     vertical-align: middle; }
-  .eye-panel-controls .btn-standart-version {
+  .spec-panel-controls .btn-standart-version {
     padding: 3px 15px; }
-    .eye-panel-controls .btn-standart-version i {
+    .spec-panel-controls .btn-standart-version i {
       margin-right: 7px;
       font-size: 20px; }
-  .eye-panel-controls .font-size-controls > li button {
+  .spec-panel-controls .font-size-controls > li button {
     border: none;
     background-color: transparent;
-    padding: 0 5px; }
-  .eye-panel-controls .font-size-controls > li:first-child {
+    width: 38px;
+    height: 38px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    vertical-align: middle;
+    display: inline-block; }
+    .spec-panel-controls .font-size-controls > li button.active:before {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      border-bottom: none;
+      border-left: 5px solid #000;
+      border-right: 5px solid #000;
+      border-top: 5px solid #000; }
+  .spec-panel-controls .font-size-controls > li:first-child {
     margin-right: 8px; }
-  .eye-panel-controls .font-size-controls > li:nth-child(2) button {
+  .spec-panel-controls .font-size-controls > li:nth-child(2) button {
     font-size: 16px; }
-  .eye-panel-controls .font-size-controls > li:nth-child(3) button {
+  .spec-panel-controls .font-size-controls > li:nth-child(3) button {
     font-size: 20px; }
-  .eye-panel-controls .font-size-controls > li:nth-child(4) button {
+  .spec-panel-controls .font-size-controls > li:nth-child(4) button {
     font-size: 24px; }
-  .eye-panel-controls .color-controls > li {
+  .spec-panel-controls .color-controls > li {
     margin-right: 5px; }
-    .eye-panel-controls .color-controls > li:last-child {
+    .spec-panel-controls .color-controls > li:last-child {
       margin-right: 0; }
-    .eye-panel-controls .color-controls > li button {
-      padding: 5px 10px; }
-  .eye-panel-controls .color-controls > li:first-child {
+    .spec-panel-controls .color-controls > li button {
+      width: 38px;
+      height: 38px;
+      background-color: red;
+      padding: 0;
+      vertical-align: middle;
+      display: inline-block; }
+  .spec-panel-controls .color-controls > li:first-child {
     margin-right: 8px; }
-  .eye-panel-controls .color-controls > li:nth-child(2) button {
+  .spec-panel-controls .color-controls > li:nth-child(2) button {
     border: 1px solid #000;
     background-color: #fff;
     color: #000; }
-  .eye-panel-controls .color-controls > li:nth-child(3) button {
+  .spec-panel-controls .color-controls > li:nth-child(3) button {
     border: 1px solid #fff;
     background-color: #000;
     color: #fff; }
-  .eye-panel-controls .color-controls > li:nth-child(4) button {
+  .spec-panel-controls .color-controls > li:nth-child(4) button {
     border: 1px solid #fff;
     background-color: #314177;
     color: #fff; }
@@ -7268,10 +7286,9 @@ h2.inner-title {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    line-height: 1.6;
-    left: -25px;
-    font-weight: normal;
-    font-size: 17px; }
+    line-height: 2;
+    left: -40px;
+    font-weight: normal; }
   .wrap-toggle-img .switch-state-img:empty ~ label:before,
   .wrap-toggle-img .switch-state-img:empty ~ label:after {
     content: '';
@@ -7279,24 +7296,27 @@ h2.inner-title {
     display: block;
     top: 0;
     bottom: 0;
-    left: 125px;
-    width: 50px;
+    left: 120px;
+    width: 76px;
     -webkit-transition: all 100ms ease-in;
     -o-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
-    background-color: #c33; }
+    background-color: #111;
+    font-size: 14px; }
   .wrap-toggle-img .switch-state-img:empty ~ label:after {
-    width: 22px;
+    content: 'ВЫКЛ';
+    width: 40px;
     top: 2px;
     bottom: 2px;
     margin-left: 2px;
     background-color: #fff; }
   .wrap-toggle-img .switch-state-img:checked ~ label:before {
-    background-color: #393; }
+    background-color: #666; }
   .wrap-toggle-img .switch-state-img:checked ~ label:after {
-    margin-left: 26px; }
+    content: 'ВКЛ';
+    margin-left: 34px; }
 
-/* END VERSION EYE */
+/* END SPECIAL VERSION */
 /* Carousel gallery  */
 .o_gallery.o_slideshow .carousel .carousel-full-width img {
   width: 100%;
@@ -7304,16 +7324,19 @@ h2.inner-title {
   max-width: none; }
 
 .o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators {
-  bottom: 40px; }
+  bottom: 40px;
+  margin-bottom: 0; }
   .o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators li {
     border: 2px solid #ffe082; }
 
-.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control {
+.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left,
+.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right {
   border: none;
   width: 10%;
   font-size: 2.25rem;
   opacity: 0.8; }
-  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control:hover {
+  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left:hover,
+  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right:hover {
     color: #ffe082; }
 
 /* End Carousel gallery */
@@ -7833,6 +7856,7 @@ h2.inner-title {
   -webkit-border-radius: 1px;
           border-radius: 1px; }
   .rector-sect .wrap-rector-content strong {
+    font-size: 1.25rem;
     font-size: 20px;
     display: block;
     margin-bottom: 20px; }
@@ -8556,7 +8580,7 @@ h2.inner-title {
     #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
       font-size: 36px;
       line-height: 1.2; }
-  #wrapwrap .eye-panel-controls strong {
+  #wrapwrap .spec-panel-controls strong {
     font-size: 15px; }
   #wrapwrap .wrap-toggle-img .switch-state-img:empty ~ label {
     font-size: 15px; } }
@@ -8584,6 +8608,8 @@ h2.inner-title {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  #wrapwrap .wrap-spec-panel-controls {
+    display: none !important; }
   #wrapwrap #wrap {
     margin-top: 20px; }
   #wrapwrap .top-line {

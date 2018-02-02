@@ -47,7 +47,8 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/equal-heights/jquery.equalheights.min.js',
-		'app/libs/owl.carousel/dist/owl.carousel.min.js'
+		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/jquery-cookie/jquery.cookie.js'
 		])
 	.pipe(concat('libs.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)
