@@ -7190,11 +7190,12 @@ h2.inner-title {
 .wrap-spec-panel-controls {
   top: 0;
   z-index: 999;
-  background-color: #eee;
+  background-color: #fff;
   font-family: "MyriadPro-Bold", sans-serif;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #212529; }
 
 .spec-panel-controls {
   padding: 0 15px; }
@@ -7209,8 +7210,8 @@ h2.inner-title {
     width: 25%;
     text-align: center;
     border-right: 1px solid #aaa;
-    padding: 15px 0;
-    line-height: 1.6; }
+    padding: 12px 0;
+    height: 62px; }
     .spec-panel-controls ul.spec-controls > li:last-child {
       border-right: none; }
   .spec-panel-controls .font-size-controls > li,
@@ -7218,7 +7219,8 @@ h2.inner-title {
     display: inline-block;
     vertical-align: middle; }
   .spec-panel-controls .btn-standart-version {
-    padding: 3px 15px; }
+    padding: 3px 15px;
+    height: 38px; }
     .spec-panel-controls .btn-standart-version i {
       margin-right: 7px;
       font-size: 20px; }
@@ -7227,19 +7229,11 @@ h2.inner-title {
     background-color: transparent;
     width: 38px;
     height: 38px;
-    background-color: #ccc;
+    background-color: #eee;
     border: 1px solid #000;
     vertical-align: middle;
-    display: inline-block; }
-    .spec-panel-controls .font-size-controls > li button.active:before {
-      content: '';
-      position: absolute;
-      display: block;
-      bottom: -5px;
-      border-bottom: none;
-      border-left: 5px solid #000;
-      border-right: 5px solid #000;
-      border-top: 5px solid #000; }
+    display: inline-block;
+    line-height: 16px; }
   .spec-panel-controls .font-size-controls > li:first-child {
     margin-right: 8px; }
   .spec-panel-controls .font-size-controls > li:nth-child(2) button {
@@ -7248,17 +7242,17 @@ h2.inner-title {
     font-size: 20px; }
   .spec-panel-controls .font-size-controls > li:nth-child(4) button {
     font-size: 24px; }
-  .spec-panel-controls .color-controls > li {
-    margin-right: 5px; }
-    .spec-panel-controls .color-controls > li:last-child {
-      margin-right: 0; }
-    .spec-panel-controls .color-controls > li button {
-      width: 38px;
-      height: 38px;
-      background-color: red;
-      padding: 0;
-      vertical-align: middle;
-      display: inline-block; }
+  .spec-panel-controls .color-controls > li:last-child {
+    margin-right: 0; }
+  .spec-panel-controls .color-controls > li button {
+    width: 38px;
+    height: 38px;
+    line-height: 16px;
+    font-size: 16px;
+    background-color: red;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-block; }
   .spec-panel-controls .color-controls > li:first-child {
     margin-right: 8px; }
   .spec-panel-controls .color-controls > li:nth-child(2) button {
@@ -7271,7 +7265,7 @@ h2.inner-title {
     color: #fff; }
   .spec-panel-controls .color-controls > li:nth-child(4) button {
     border: 1px solid #fff;
-    background-color: #314177;
+    background-color: #0000ff;
     color: #fff; }
 
 .wrap-toggle-img {
@@ -7301,7 +7295,7 @@ h2.inner-title {
     -webkit-transition: all 100ms ease-in;
     -o-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
-    background-color: #111;
+    background-color: #ff0000;
     font-size: 14px; }
   .wrap-toggle-img .switch-state-img:empty ~ label:after {
     content: 'ВЫКЛ';
@@ -7311,7 +7305,7 @@ h2.inner-title {
     margin-left: 2px;
     background-color: #fff; }
   .wrap-toggle-img .switch-state-img:checked ~ label:before {
-    background-color: #666; }
+    background-color: #008000; }
   .wrap-toggle-img .switch-state-img:checked ~ label:after {
     content: 'ВКЛ';
     margin-left: 34px; }

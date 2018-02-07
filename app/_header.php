@@ -1,4 +1,4 @@
-<?php include("_spec-version.php") ?>
+<?php include '_spec-version.php'; ?>
 
 <header class="main-head">
 	<div class="top-line">

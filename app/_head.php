@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="">
+<html lang="ru">
 
 <head>
 	<meta charset="utf-8">
@@ -24,7 +24,7 @@
 	<!-- style -->
 	<style>body { opacity: 0; overflow-x: hidden;}</style>
 	<link rel="stylesheet" href="css/main.min.css">
-	<!-- <link rel="stylesheet" href="css/spec-version.min.css"> -->
+	<link rel="stylesheet" href="css/spec-version.min.css">
 </head>
 
 <body class="main-site-sibgu">

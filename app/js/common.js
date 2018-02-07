@@ -31,9 +31,9 @@ $(function() {
 		"navbars": [{
 			"position": "bottom",
 			"content": [
-				"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
-				"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
-				"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
+			"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
+			"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
+			"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
 			]
 		}]
 	});
@@ -89,11 +89,11 @@ $(function() {
 		} 
 		else {
 			var 
-				windowSize = $(window).width(),
-				marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-				paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-				targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
-				sliderWidth = 0;
+			windowSize = $(window).width(),
+			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+			sliderWidth = 0;
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
@@ -201,44 +201,264 @@ $(function() {
 
 
 	/* ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
-	var pathFileSpecVersion = '<link href="css/spec-version.min.css" rel="stylesheet">'
-	$("#js-button-spec-version").click(function() {
+	// var pathFileSpecVersion = '<link href="css/spec-version.min.css" rel="stylesheet">';
 
-		if ($("#js-spec-version").hasClass("hidden")) {
-			$("head").append(pathFileSpecVersion);
-			$("#js-spec-version").removeClass("hidden");
-			$("html").addClass("white-theme").addClass("font-size-medium");
+	// // Проверяем куки на наличие спец. версии
+	// $("#js-spec-version").hasClass("hidden")
 
-		} else {
-			$("#js-spec-version").addClass("hidden");
-			$("html").removeClass("white-theme").removeClass("font-size-medium");
-		}
+	// $("#js-button-spec-version").click(function() {
 
-		return false;
-	});
+	// 	if ( $("html").hasClass("default-version") ) {
+	// 		console.log("класс есть");
+	// 	} else {
+	// 		console.log("класса нет");
+	// 	}
 
-	$("#js-close-button-spec-version").click(function() {
-		$("#js-spec-version").addClass("hidden");
-		$("html").removeClass("white-theme").removeClass("font-size-medium");
-	});
+	// 	if ($("#js-spec-version").hasClass("hidden")) {
+	// 		$("head").append(pathFileSpecVersion);
+	// 		$("#js-spec-version").removeClass("hidden");
+	// 		$("html").addClass("white-theme").addClass("font-size-medium");
+	// 	} else {
+	// 		$("#js-spec-version").addClass("hidden");
+	// 		$("html").removeClass("white-theme").removeClass("font-size-medium");
+	// 	}
 
-	// if(!$("#toggle-img").prop("checked")) {
-	// 	$("body").addClass("img-disable");
-	// } else {
-	// 	$("body").removeClass("img-disable");
-	// }
+	// 	return false;
+	// });
+
+	// // function enableSpecVers(flag) {
+	// // 	var 
+	// // }
+
+	// $("#js-close-button-spec-version").click(function() {
+	// 	$("#js-spec-version").addClass("hidden");
+	// 	$("html").removeClass("white-theme").removeClass("font-size-medium");
+	// });
+
+	
+	
 
 	
 	/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 
 
+	// Активация версии для слабовидящих
+	$('#js-button-spec-version').click(function() { 
+		CecutientOn();
+		whiteTheme();
+		mediumFontSize();
+		// window.location.reload();
+		return false;
+	});
+	
+	
+	if ($.cookie("CecutientCookie") == "on"){
+
+		CecutientOn();
+		if ($.cookie("font-size")=="normal")  { normalFontSize(); }
+		if ($.cookie("font-size")=="medium")  { mediumFontSize(); }
+		if ($.cookie("font-size")=="large")   { largeFontSize(); }
+
+		if ($.cookie("theme")=="white") { whiteTheme(); }
+		if ($.cookie("theme")=="black") { blackTheme(); }
+		if ($.cookie("theme")=="blue")  { blueTheme(); }
+
+		if ($.cookie("state-images")=="on")  { imageOn(); }
+		if ($.cookie("state-images")=="off") { imageOff(); }
+	};
+
+	$("#fz-normal").click(function() { normalFontSize(); });
+	$("#fz-medium").click(function() { mediumFontSize(); });
+	$("#fz-large").click(function()  { largeFontSize(); });
+
+	$("#theme-white").click(function() { whiteTheme(); });
+	$("#theme-black").click(function() { blackTheme(); });
+	$("#theme-blue").click(function()  { blueTheme(); });
+
+	function CecutientOn() {
+		$("#js-spec-version").removeClass("hidden");
+		$.cookie("CecutientCookie", "on", {
+			expires: 365,
+			path: '/'
+		});
+		return false;
+	};
+
+
+	$("#img-disable").click(function () {
+
+		if ( $("#img-disable").prop("checked") ) {
+			imageOn();
+		} else {
+			imageOff();
+		};
+		
+	});
+
+	function imageOn() {
+		console.log("включен");
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("disable-img");
+			$("#img-disable").attr('checked', 'checked');
+			$.cookie("state-images", "on", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function imageOff() {
+		console.log("выключен");
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").addClass("disable-img");
+			$("#img-disable").attr('checked', '');
+			$.cookie("state-images", "off", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+
+
+
+	function normalFontSize() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("font-size-medium font-size-large");
+			$("html").addClass("font-size-normal");
+
+			$.cookie("font-size", "normal", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function mediumFontSize() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("font-size-normal font-size-large");
+			$("html").addClass("font-size-medium");
+
+			$.cookie("font-size", "medium", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function largeFontSize() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("font-size-normal font-size-medium");
+			$("html").addClass("font-size-large");
+
+			$.cookie("font-size", "large", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+
+	function whiteTheme() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("black-theme blue-theme");
+			$("html").addClass("white-theme");
+
+			$.cookie("theme", "white", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function blackTheme() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("white-theme blue-theme");
+			$("html").addClass("black-theme");
+
+			$.cookie("theme", "black", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function blueTheme() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("white-theme black-theme");
+			$("html").addClass("blue-theme");
+
+			$.cookie("theme", "blue", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+	function blueTheme() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").removeClass("white-theme black-theme");
+			$("html").addClass("blue-theme");
+
+			$.cookie("theme", "blue", {
+				expires: 365,
+				path: '/'
+			});
+
+			return false;
+		};	
+	};
+
+
+
+
+
+	$("#js-close-button-spec-version").click(function() {
+		$.cookie("CecutientCookie", null);
+		$.cookie("font-size",  null);
+		$.cookie("theme", null);
+		$.cookie("state-images",  null);
+		window.location.reload();
+		return false;
+	});
+
+
+
+
+
+
 	/* Bootstrap accordion  */
 	$('#accordion, #bs-collapse')
-		.on('show.bs.collapse', function(e) {
-			$(e.target).prev('.panel-heading').addClass('active');
-		})
-		.on('hide.bs.collapse', function(e) {
-			$(e.target).prev('.panel-heading').removeClass('active');
+	.on('show.bs.collapse', function(e) {
+		$(e.target).prev('.panel-heading').addClass('active');
+	})
+	.on('hide.bs.collapse', function(e) {
+		$(e.target).prev('.panel-heading').removeClass('active');
 	});	
 
 
@@ -254,15 +474,15 @@ $(function() {
 
 	/* Фиксация меню на внутр. страницах при скролле */
 	var
-		marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
-		defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
-		
+	marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
+	defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
+
 	$(window).scroll(function() {
 		var 
-			headerHeight 	= $(".main-head").outerHeight(),
-			innerMenu 		= $(".inner-menu"),
-			wrap 				= $("#wrap"),
-			dekstopVers 	= $(".inner-menu").is(":visible");
+		headerHeight 	= $(".main-head").outerHeight(),
+		innerMenu 		= $(".inner-menu"),
+		wrap 				= $("#wrap"),
+		dekstopVers 	= $(".inner-menu").is(":visible");
 
 		if ( ($(this).scrollTop() > headerHeight) && (dekstopVers) ) {
 			innerMenu.addClass("fixed-inner-menu");
