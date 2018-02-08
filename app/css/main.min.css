@@ -7484,7 +7484,8 @@ h2.inner-title {
       background: none;
       border: none;
       color: #ffe082;
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      font-size: 0.875rem; }
   #wrapwrap .top-line .res-links .dropdown.open .res-links-btn {
     background-color: #f7f7f7;
     color: #314177;

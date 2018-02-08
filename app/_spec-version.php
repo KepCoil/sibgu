@@ -25,7 +25,7 @@
 			<li>
 
 				<div title="ВКЛ./ВЫКЛ. изображения" class="wrap-toggle-img">
-					<input id="img-disable" class="switch-state-img" checked="checked" name="toggle-img" type="checkbox">
+					<input id="img-disable" class="switch-state-img" name="toggle-img" checked="checked" type="checkbox">
 					<label for="img-disable">Изображения:</label>
 				</div>
 
