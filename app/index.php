@@ -15,7 +15,6 @@
 						<div class="col-md-9 col-item-news col-first-news">
 							<div class="wrap-item-news wrap-first-news">
 								<a href="#">
-									<!-- <img src="img/news/news1/news_1.jpg" alt="Новость" class="img-responsive"> -->
 									<span class="news-img" style="background-image: url(img/news/news1/news_1.jpg)"></span>
 									<span class="wrap-news-content">
 										<span class="news-content">
@@ -32,7 +31,6 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_2.jpg)"></span>
-										<!-- <img src="img/news/news1/news_2.jpg" alt="" class="img-responsive"> -->
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>20.10.2017</time>
@@ -46,7 +44,6 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_3.jpg)"></span>
-										<!-- <img src="img/news/news1/news_3.jpg" alt="" class="img-responsive"> -->
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>19.10.2017</time>
@@ -60,7 +57,6 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_4.jpg)"></span>
-										<!-- <img src="img/news/news1/news_4.jpg" alt="" class="img-responsive"> -->
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>15.10.2017</time>
@@ -74,7 +70,6 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_6.jpg)"></span>
-										<!-- <img src="img/news/news1/news_5.jpg" alt="" class="img-responsive"> -->
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>01.10.2017</time>
@@ -88,7 +83,6 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_7.jpg)"></span>
-										<!-- <img src="img/news/news1/news_6.jpg" alt="" class="img-responsive"> -->
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>25.09.2017</time>

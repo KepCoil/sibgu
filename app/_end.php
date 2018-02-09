@@ -23,7 +23,6 @@
 <![endif]-->
 
 
-
 <!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты -->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
@@ -34,7 +33,8 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
-<!-- id=wrapwrap -->
+
+<!-- id="wrapwrap" -->
 </div>
 
 </body>

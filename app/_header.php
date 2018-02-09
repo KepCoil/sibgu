@@ -1,6 +1,7 @@
 <?php include '_spec-version.php'; ?>
 
 <header class="main-head">
+	
 	<div class="top-line">
 		<div class="container">
 
@@ -95,8 +96,11 @@
 					<i class="fa fa-eye" aria-hidden="true"></i>
 					<span id="js-text-button-spec-version">Версия для слабовидящих</span>
 				</a>
-				<a href="#"><i class="fa fa-wheelchair" aria-hidden="true"></i>Доступное образования</a>
-				<a class="info-uni" href="#">Сведения об образовательной организации</a>
+				<a href="#">
+					<i class="fa fa-wheelchair" aria-hidden="true"></i>
+					<span>Доступное образования</span>
+				</a>
+				<a class="info-uni" href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>
 			</div>
 		</div>
 	</div>

@@ -35,10 +35,11 @@ gulp.task('sass', function() {
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js',
+		'app/js/_main.js',
+		'app/js/_spec-vers.js'
 		])
-	//.pipe(concat('common.min.js'))
-	//.pipe(uglify())
+	.pipe(concat('common.js'))
+	//.pipe(uglify()) // Минимизация JS
 	.pipe(gulp.dest('app/js'));
 });
 
@@ -51,7 +52,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery-cookie/jquery.cookie.js'
 		])
 	.pipe(concat('libs.min.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	// .pipe(uglify()) // Минимизация JS
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
@@ -59,7 +60,7 @@ gulp.task('js', ['common-js'], function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['js']);
 	gulp.watch('app/**/*.html', browserSync.reload);
 	gulp.watch('app/**/*.php', browserSync.reload);
 });
