@@ -260,6 +260,8 @@ $(function() {
 	Брал отсюда
 	http://voltos.ru/jsjquery/versiya-dlya-slabovidyashhix-na-chistom-jquery.html
 	Спасибо большое и низкий поклон
+
+	Изменение настроек просходит путем подстановки определенного класса тегу <html>
 */
 
 $(function() {
@@ -278,8 +280,8 @@ $(function() {
 			$(this).addClass("active");
 			$("#js-text-button-spec-version").text("Версия по умолчанию");
 		};
+
 		return false;
-		
 	});
 
 
@@ -288,7 +290,7 @@ $(function() {
 		CecutientOff();
 		return false;
 	});
-	
+
 
 	// Отключении версии для слабовидяших
 	function CecutientOff() {
@@ -337,7 +339,7 @@ $(function() {
 	};
 
 
-	// Обработчики клика
+	/* Обработчики клика */
 	$("#fz-normal").click(function()   { normalFontSize(); });
 	$("#fz-medium").click(function()   { mediumFontSize(); });
 	$("#fz-large").click(function()    { largeFontSize(); });
@@ -345,20 +347,19 @@ $(function() {
 	$("#theme-white").click(function() { whiteTheme(); });
 	$("#theme-black").click(function() { blackTheme(); });
 	$("#theme-blue").click(function()  { blueTheme(); });
-
-
-	/* Картинки */
+	
 	$("#img-disable").click(function (){
-
 		if ( $("#img-disable").prop("checked") ) {
 			imageOn();
 		} 
 		else {
 			imageOff();
 		};
-		
 	});
+	/* Конец обработчики клика */
 
+
+	/* Картинки */
 	function imageOn() {
 
 		if ($.cookie("CecutientCookie")=="on") {
@@ -439,7 +440,7 @@ $(function() {
 	/* Конец размер шрифта */
 
 
-	/* Цветовая схема */
+	/* Цветовые схемы */
 	function whiteTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
@@ -484,7 +485,7 @@ $(function() {
 			return false;
 		};	
 	};
-	/* Конец цветовая схема */
+	/* Конец цветовые схемы */
 
 
 	/**************************   КОНЕЦ ВЕРСИИ ДЛЯ СЛАБОВИДЯЩИХ   **************************/
