@@ -81,6 +81,7 @@
 
 	<div class="head-content">
 		<div class="container ">
+
 			<div class="main-title-wrap clearfix">
 				<a href="#" class="clearfix">
 					<div class="mobile-logo-img-wrap">
@@ -91,17 +92,23 @@
 					</h1>
 				</a>
 			</div>
+
 			<div class="other-func">
-				<a href="#" id="js-button-spec-version">
+				
+				<div class="other-func-item btn-active-spec-ver" id="js-button-spec-version">
 					<i class="fa fa-eye" aria-hidden="true"></i>
 					<span id="js-text-button-spec-version">Версия для слабовидящих</span>
-				</a>
-				<a href="#">
+				</div>
+
+				<a class="other-func-item" href="/page/ovz">
 					<i class="fa fa-wheelchair" aria-hidden="true"></i>
 					<span>Доступное образования</span>
 				</a>
-				<a class="info-uni" href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>
+
+				<a class="other-func-item info-uni" href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>
+
 			</div>
+
 		</div>
 	</div>
 

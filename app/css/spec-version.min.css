@@ -84,7 +84,7 @@ html.white-theme #wrapwrap .head-content .main-title {
 
 html.white-theme #wrapwrap .head-content .other-func {
   background-color: #ccc; }
-  html.white-theme #wrapwrap .head-content .other-func a {
+  html.white-theme #wrapwrap .head-content .other-func .other-func-item {
     color: #000; }
   html.white-theme #wrapwrap .head-content .other-func a.info-uni {
     border-color: #000; }
@@ -374,7 +374,7 @@ html.black-theme #wrapwrap .head-content .main-title {
 
 html.black-theme #wrapwrap .head-content .other-func {
   background-color: #333; }
-  html.black-theme #wrapwrap .head-content .other-func a {
+  html.black-theme #wrapwrap .head-content .other-func .other-func-item {
     color: #fff; }
   html.black-theme #wrapwrap .head-content .other-func a.info-uni {
     border-color: #fff; }
@@ -659,7 +659,7 @@ html.blue-theme #wrapwrap .head-content .main-title {
 
 html.blue-theme #wrapwrap .head-content .other-func {
   background-color: #76baff; }
-  html.blue-theme #wrapwrap .head-content .other-func a {
+  html.blue-theme #wrapwrap .head-content .other-func .other-func-item {
     color: #063462; }
   html.blue-theme #wrapwrap .head-content .other-func a.info-uni {
     border-color: #063462; }

@@ -7188,6 +7188,7 @@ h2.inner-title {
 /* Фиксация внутр. меню при прокрутке */
 /* SPECIAL VERSION */
 .wrap-spec-panel-controls {
+  position: relative;
   top: 0;
   z-index: 999;
   background-color: #fff;
@@ -7533,7 +7534,7 @@ h2.inner-title {
     background: #253666;
     float: right;
     padding: 12px 25px; }
-    .head-content .other-func a {
+    .head-content .other-func .other-func-item {
       font-size: 24px;
       font-family: "MyriadPro-SemiBold", sans-serif;
       display: block;
@@ -7541,10 +7542,15 @@ h2.inner-title {
       text-decoration: none;
       border: none;
       color: #fff; }
-      .head-content .other-func a i {
+      .head-content .other-func .other-func-item i {
         margin-right: 10px; }
-      .head-content .other-func a:hover {
+      .head-content .other-func .other-func-item:hover {
         color: #ffe082; }
+    .head-content .other-func div.btn-active-spec-ver {
+      cursor: pointer;
+      -webkit-transition: color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out;
+      transition: color 0.25s ease-out; }
     .head-content .other-func a.info-uni {
       font-family: "MyriadPro-Regular", sans-serif;
       font-size: 20px;
