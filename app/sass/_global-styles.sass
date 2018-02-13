@@ -99,24 +99,30 @@ h6, .h6
 	color: #fff
 	h2
 		color: #fff
+
 .other-link
 	display: inline-block
 	margin-top: 30px
 	font-size: 1.375rem
 	color: $dark-blue
 	font-family: "OpenSans-Regular", sans-serif
+	.fa
+		transition: color $main-trans
 	a
 		color: $dark-blue
 		border-color: $dark-blue
-		&:hover, &:focus
-			border-color: transparent
+		&:hover
+			color: $accent-links
+			border-color: $accent-links
+			& + .fa
+				color: $accent-links
 
 h2.inner-title, 
 h2.inner-title--no-caps
 	font-size: 1.75rem
 	font-family: "OpenSans-Semibold", sans-serif
 	color: $blue
-	margin: 10px 0 25px 0
+	margin: 10px 0 30px 0
 	text-align: left
 
 h2.inner-title

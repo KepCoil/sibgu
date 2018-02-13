@@ -412,6 +412,12 @@
 					
 				</div>
 			</div>
+
+			<span class="other-link">
+				<a href="#">Все партнеры</a>
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+			</span>
+
 		</div>
 	</section>
 

@@ -525,7 +525,7 @@
 
 /* SECTION COMPANY - PARTNERS */
 .pa-sect
-	padding-bottom: 20px
+	padding-bottom: 50px
 	.wrap-pa-item
 		text-align: center
 		// display: inline-block
@@ -556,6 +556,8 @@
 			margin: 0 5px
 		.owl-dot.active
 			background-color: $blue
+	.other-link
+		margin-top: 0
 
 /* END SECTION COMPANY - PARTNERS */
 
@@ -1035,5 +1037,99 @@
 	ul
 		padding-left: 20px
 
-/* end table-jobs */
+
+/* Filials page */
+.filial-item
+	margin-bottom: 20px
+	background-color: $grey-bgc
+	a
+		border: none
+		color: $default-color
+		display: block
+		padding: 1rem
+		border-top: 4px solid $grey-bgc
+	&-img
+		float: left
+		margin-right: 1rem
+		img
+			width: 3rem
+			height: 3.75rem
+			display: block
+			max-width: 100%
+	&-content
+		h3
+			font-size: 1.5rem
+			line-height: 3.75rem
+			margin: 0
+			transition: color $main-trans
+	&-lesosib
+		a
+			border-color: #00923f
+			&:hover h3
+				color: #00923f
+	&-zhelez
+		a
+			border-color: #ff1824
+			&:hover h3
+				color: #ff1824
+	&-novosib
+		a
+			border-color: #0036aa
+			&:hover h3
+				color: #0036aa
+	&-saratov
+		a
+			border-color: #0096e0
+			&:hover h3
+				color: #0096e0
+
+
+
+/* Page partners */
+.partners-page
+	.partners-item
+		margin-bottom: 2rem
+		padding-bottom: 1rem
+		border-bottom: 1px solid #eee
+		&:last-child
+			border-bottom: none
+			margin-bottom: 0
+			padding-bottom: 0
+		&-title
+			font-size: 1.5rem
+			margin-bottom: 1rem
+			line-height: 1.1
+			color: $blue
+			margin-top: 0
+		&-tags
+			margin-bottom: 1rem
+			span
+				display: inline-block
+				padding: 5px 8px
+				background-color: $blue
+				color: #fff
+				margin-right: 0.625rem
+				margin-bottom: 0.35rem
+		&-text
+			margin-bottom: 1rem
+		&-links
+			color: $blue
+			font-family: "MyriadPro-SemiBold", sans-serif
+			font-size: 1rem
+			&-item
+				margin-right: 0.625rem
+				display: inline-block
+				.fa
+					position: relative
+					top: 1px
+					margin-right: 3px
+				a
+					color: $blue
+					border-color: $blue
+					font-size: 1rem
+					&:hover
+						color: $accent-links
+						border-color: $accent-links
+
+
 @import "media"

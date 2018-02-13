@@ -183,6 +183,7 @@ $(function() {
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 		$(".dis-docs").height('auto').equalHeights();
+		// $(".filials-page .col-lg-12").height('auto').equalHeights();
 
 
 		/* Функция equalHeights() при мобильной версии */

@@ -6907,8 +6907,8 @@ a {
   border-bottom: 1px solid #076fc8; }
   a:hover, a:active {
     text-decoration: none;
-    color: #512DA8;
-    border-bottom: 1px solid #512DA8; }
+    color: #ea2f1c;
+    border-bottom: 1px solid #ea2f1c; }
   a:focus {
     text-decoration: none; }
 
@@ -6980,18 +6980,25 @@ h6, .h6 {
   font-size: 1.375rem;
   color: #253666;
   font-family: "OpenSans-Regular", sans-serif; }
+  .other-link .fa {
+    -webkit-transition: color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out; }
   .other-link a {
     color: #253666;
     border-color: #253666; }
-    .other-link a:hover, .other-link a:focus {
-      border-color: transparent; }
+    .other-link a:hover {
+      color: #ea2f1c;
+      border-color: #ea2f1c; }
+      .other-link a:hover + .fa {
+        color: #ea2f1c; }
 
 h2.inner-title,
 h2.inner-title--no-caps {
   font-size: 1.75rem;
   font-family: "OpenSans-Semibold", sans-serif;
   color: #314177;
-  margin: 10px 0 25px 0;
+  margin: 10px 0 30px 0;
   text-align: left; }
 
 h2.inner-title {
@@ -7350,7 +7357,7 @@ h2.inner-title {
     margin-bottom: 5px;
     color: #383f45; }
     .tabs-container .nav-tabs > li > a:hover, .tabs-container .nav-tabs > li > a:focus {
-      color: #512DA8; }
+      color: #ea2f1c; }
   .tabs-container .nav-tabs > li.active > a,
   .tabs-container .nav-tabs > li.active > a:hover,
   .tabs-container .nav-tabs > li.active > a:focus {
@@ -7386,7 +7393,7 @@ h2.inner-title {
     font-family: "OpenSans-SemiBold", sans-serif;
     font-size: 1.1rem; }
     .main-accordion .accordion-item .panel-title:hover .fa, .main-accordion .accordion-item .panel-title:hover a {
-      color: #512DA8; }
+      color: #ea2f1c; }
     .main-accordion .accordion-item .panel-title .fa {
       font-size: 1.1rem;
       margin-right: 5px;
@@ -7937,7 +7944,7 @@ h2.inner-title {
 /* END SECTION STUDENTS COMMENT */
 /* SECTION COMPANY - PARTNERS */
 .pa-sect {
-  padding-bottom: 20px; }
+  padding-bottom: 50px; }
   .pa-sect .wrap-pa-item {
     text-align: center; }
     .pa-sect .wrap-pa-item img {
@@ -7969,6 +7976,8 @@ h2.inner-title {
       margin: 0 5px; }
     .pa-sect .owl-dots .owl-dot.active {
       background-color: #314177; }
+  .pa-sect .other-link {
+    margin-top: 0; }
 
 /* END SECTION COMPANY - PARTNERS */
 /* FOOTER */
@@ -8448,7 +8457,93 @@ h2.inner-title {
 .table-jobs ul {
   padding-left: 20px; }
 
-/* end table-jobs */
+/* Filials page */
+.filial-item {
+  margin-bottom: 20px;
+  background-color: #eee; }
+  .filial-item a {
+    border: none;
+    color: #212529;
+    display: block;
+    padding: 1rem;
+    border-top: 4px solid #eee; }
+  .filial-item-img {
+    float: left;
+    margin-right: 1rem; }
+    .filial-item-img img {
+      width: 3rem;
+      height: 3.75rem;
+      display: block;
+      max-width: 100%; }
+  .filial-item-content h3 {
+    font-size: 1.5rem;
+    line-height: 3.75rem;
+    margin: 0;
+    -webkit-transition: color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out; }
+  .filial-item-lesosib a {
+    border-color: #00923f; }
+    .filial-item-lesosib a:hover h3 {
+      color: #00923f; }
+  .filial-item-zhelez a {
+    border-color: #ff1824; }
+    .filial-item-zhelez a:hover h3 {
+      color: #ff1824; }
+  .filial-item-novosib a {
+    border-color: #0036aa; }
+    .filial-item-novosib a:hover h3 {
+      color: #0036aa; }
+  .filial-item-saratov a {
+    border-color: #0096e0; }
+    .filial-item-saratov a:hover h3 {
+      color: #0096e0; }
+
+/* Page partners */
+.partners-page .partners-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee; }
+  .partners-page .partners-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .partners-page .partners-item-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: #314177;
+    margin-top: 0; }
+  .partners-page .partners-item-tags {
+    margin-bottom: 1rem; }
+    .partners-page .partners-item-tags span {
+      display: inline-block;
+      padding: 5px 8px;
+      background-color: #314177;
+      color: #fff;
+      margin-right: 0.625rem;
+      margin-bottom: 0.35rem; }
+  .partners-page .partners-item-text {
+    margin-bottom: 1rem; }
+  .partners-page .partners-item-links {
+    color: #314177;
+    font-family: "MyriadPro-SemiBold", sans-serif;
+    font-size: 1rem; }
+    .partners-page .partners-item-links-item {
+      margin-right: 0.625rem;
+      display: inline-block; }
+      .partners-page .partners-item-links-item .fa {
+        position: relative;
+        top: 1px;
+        margin-right: 3px; }
+      .partners-page .partners-item-links-item a {
+        color: #314177;
+        border-color: #314177;
+        font-size: 1rem; }
+        .partners-page .partners-item-links-item a:hover {
+          color: #ea2f1c;
+          border-color: #ea2f1c; }
+
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
