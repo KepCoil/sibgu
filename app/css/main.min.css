@@ -8536,11 +8536,12 @@ h2.inner-title {
       margin-right: 1.5rem;
       display: inline-block; }
       .partners-page .partners-item-links-item .fa {
-        margin-right: 4px; }
+        margin-right: 4px;
+        position: relative;
+        top: 1px; }
       .partners-page .partners-item-links-item a {
         color: #314177;
-        border-color: #314177;
-        font-size: 1rem; }
+        border-color: #314177; }
         .partners-page .partners-item-links-item a:hover {
           color: #ea2f1c;
           border-color: #ea2f1c; }
