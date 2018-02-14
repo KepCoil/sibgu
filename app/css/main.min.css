@@ -8364,9 +8364,9 @@ h2.inner-title {
 .wrap-event-content .event-location,
 .wrap-event-content .event-contact {
   margin-bottom: 10px; }
-  .wrap-event-content .event-date strong,
-  .wrap-event-content .event-location strong,
-  .wrap-event-content .event-contact strong {
+  .wrap-event-content .event-date .event-block-title,
+  .wrap-event-content .event-location .event-block-title,
+  .wrap-event-content .event-contact .event-block-title {
     display: block; }
 
 .wrap-event-content .event-text {
