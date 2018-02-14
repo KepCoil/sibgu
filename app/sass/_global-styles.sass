@@ -13,6 +13,7 @@ html, body
 
 html
 	font-size: 100%
+
 body
 	min-width: 320px
 	position: relative
@@ -79,9 +80,21 @@ h6, .h6
 	margin-top: 0
 	margin-bottom: 10px
 
+h2.inner-title, 
+h2.inner-title--no-caps
+	font-size: 1.75rem
+	font-family: "OpenSans-Semibold", sans-serif
+	color: $blue
+	margin: 10px 0 30px 0
+	text-align: left
+
+h2.inner-title
+	text-transform: uppercase
+
 #wrap
 	margin: 30px 0 50px 0	
 
+/* Секции главной страницы */
 .main-sect
 	padding: 50px 0
 	h2
@@ -92,6 +105,7 @@ h6, .h6
 		font-weight: normal
 		margin: 0 0 40px 0
 .white-sect
+	background-color: #fff
 .grey-sect
 	background-color: $grey-bgc
 .blue-sect
@@ -99,6 +113,8 @@ h6, .h6
 	color: #fff
 	h2
 		color: #fff
+/* Конец Секции главной страницы */
+
 
 .other-link
 	display: inline-block
@@ -117,16 +133,6 @@ h6, .h6
 			& + .fa
 				color: $accent-links
 
-h2.inner-title, 
-h2.inner-title--no-caps
-	font-size: 1.75rem
-	font-family: "OpenSans-Semibold", sans-serif
-	color: $blue
-	margin: 10px 0 30px 0
-	text-align: left
-
-h2.inner-title
-	text-transform: uppercase
 
 /* MOBILE MMENU MENU */
 #js-mobile-mmenu
@@ -256,9 +262,9 @@ h2.inner-title
 
 
 
-
 .wrap-info-resources.mm-menu.mm-offcanvas
 	z-index: 999
+
 
 /* Template standard page items */
 .wrap-standart-item
@@ -290,7 +296,6 @@ h2.inner-title
 		cursor: no-drop
 		color: #666
 		border: none
-		// border-color: darken($grey-bgc, 25%)
 		background-color: $grey-bgc
 		&:hover
 			i
@@ -302,6 +307,7 @@ h2.inner-title
 			color: #666
 /* END template standard page items */
 
+
 /* Фиксация внутр. меню при прокрутке */
 .fixed-inner-menu
 	position: fixed
@@ -310,6 +316,7 @@ h2.inner-title
 	width: 100%
 	z-index: 5000
 /* Фиксация внутр. меню при прокрутке */
+
 
 
 /* SPECIAL VERSION */
@@ -453,12 +460,11 @@ h2.inner-title
 	.switch-state-img:checked ~ label:after
 		content: 'ВКЛ'
 		margin-left: 34px
-
 /* END SPECIAL VERSION */
 
 
 
-/* Carousel gallery  */
+/* Carousel Odoo gallery  */
 .o_gallery.o_slideshow 
 	.carousel 
 		.carousel-full-width
@@ -479,8 +485,7 @@ h2.inner-title
 				opacity: 0.8
 				&:hover
 					color: $yellow
-/* End Carousel gallery */
-
+/* End Carousel Odoo gallery */
 
 
 /* Tabs content */
@@ -507,7 +512,7 @@ h2.inner-title
 			color: #fff
 			border: 0
 
-/* Snippet "Well" */
+/* Snippet Odoo "Well" */
 .well
 	border-radius: 0
 	

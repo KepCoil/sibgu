@@ -6952,9 +6952,21 @@ h6, .h6 {
   margin-top: 0;
   margin-bottom: 10px; }
 
+h2.inner-title,
+h2.inner-title--no-caps {
+  font-size: 1.75rem;
+  font-family: "OpenSans-Semibold", sans-serif;
+  color: #314177;
+  margin: 10px 0 30px 0;
+  text-align: left; }
+
+h2.inner-title {
+  text-transform: uppercase; }
+
 #wrap {
   margin: 30px 0 50px 0; }
 
+/* Секции главной страницы */
 .main-sect {
   padding: 50px 0; }
   .main-sect h2 {
@@ -6965,6 +6977,9 @@ h6, .h6 {
     font-weight: normal;
     margin: 0 0 40px 0; }
 
+.white-sect {
+  background-color: #fff; }
+
 .grey-sect {
   background-color: #eee; }
 
@@ -6974,6 +6989,7 @@ h6, .h6 {
   .blue-sect h2 {
     color: #fff; }
 
+/* Конец Секции главной страницы */
 .other-link {
   display: inline-block;
   margin-top: 30px;
@@ -6992,17 +7008,6 @@ h6, .h6 {
       border-color: #ea2f1c; }
       .other-link a:hover + .fa {
         color: #ea2f1c; }
-
-h2.inner-title,
-h2.inner-title--no-caps {
-  font-size: 1.75rem;
-  font-family: "OpenSans-Semibold", sans-serif;
-  color: #314177;
-  margin: 10px 0 30px 0;
-  text-align: left; }
-
-h2.inner-title {
-  text-transform: uppercase; }
 
 /* MOBILE MMENU MENU */
 #js-mobile-mmenu {
@@ -7319,7 +7324,7 @@ h2.inner-title {
     margin-left: 34px; }
 
 /* END SPECIAL VERSION */
-/* Carousel gallery  */
+/* Carousel Odoo gallery  */
 .o_gallery.o_slideshow .carousel .carousel-full-width img {
   width: 100%;
   max-height: none;
@@ -7341,7 +7346,7 @@ h2.inner-title {
   .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right:hover {
     color: #ffe082; }
 
-/* End Carousel gallery */
+/* End Carousel Odoo gallery */
 /* Tabs content */
 .tabs-container .nav-tabs {
   border: none; }
@@ -7365,7 +7370,7 @@ h2.inner-title {
     color: #fff;
     border: 0; }
 
-/* Snippet "Well" */
+/* Snippet Odoo "Well" */
 .well {
   -webkit-border-radius: 0;
           border-radius: 0; }
@@ -8530,12 +8535,12 @@ h2.inner-title {
     font-family: "MyriadPro-SemiBold", sans-serif;
     font-size: 1rem; }
     .partners-page .partners-item-links-item {
-      margin-right: 0.625rem;
+      margin-right: 1.5rem;
       display: inline-block; }
       .partners-page .partners-item-links-item .fa {
         position: relative;
         top: 1px;
-        margin-right: 3px; }
+        margin-right: 4px; }
       .partners-page .partners-item-links-item a {
         color: #314177;
         border-color: #314177;

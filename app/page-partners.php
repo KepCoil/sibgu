@@ -17,9 +17,17 @@
 					</div>
 					<div class="partners-item-text">Акционерное общество «Информационные спутниковые системы» имени академика М.Ф. Решетнева» является одной из ведущих фирм России в области создания спутников связи, навигации и геодезии, наземного оборудования, передовых научно-практических решений в области космонавтики.</div>
 					<div class="partners-item-links">
+						<!-- В данном блоке возможны только 2 ссылки:
+							1. на сайт (в 90% случаев БУДЕТ);
+							2. на отдельную страницу подробнее, где инфа о сотрудничество (в 90% случаев НЕ будет)  -->
 						<span class="partners-item-links-item">
 							<i class="fa fa-external-link" aria-hidden="true"></i>
 							<a href="http://www.iss-reshetnev.ru/" target="_blank">Сайт</a>
+						</span>
+
+						<span class="partners-item-links-item">
+							<i class="fa fa-id-card-o" aria-hidden="true"></i>
+							<a href="#" target="_blank">Подробнее</a>
 						</span>
 
 					</div>
