@@ -7200,6 +7200,7 @@ h2.inner-title {
 /* Фиксация внутр. меню при прокрутке */
 /* SPECIAL VERSION */
 .wrap-spec-panel-controls {
+  display: block !important;
   position: relative;
   top: 0;
   z-index: 999;

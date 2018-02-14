@@ -375,12 +375,12 @@
 
 						<div class="wrap-pa-item">
 							<img src="img/partners/iss.jpg" alt="ОАО ИСС">
-							<strong>ОАО «Информационные<br/>стутниковые системы»</strong>
+							<strong>АО «Информационные<br/>стутниковые системы»</strong>
 						</div>
 
 						<div class="wrap-pa-item">
 							<img class="img img-rounded img-responsive" src="img/partners/krasmash.svg" alt="Красмаш">
-							<strong>ОАО «Красмаш»</strong>
+							<strong>АО «Красмаш»</strong>
 						</div>
 
 						<div class="wrap-pa-item">
