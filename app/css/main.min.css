@@ -8531,15 +8531,11 @@ h2.inner-title {
   .partners-page .partners-item-text {
     margin-bottom: 1rem; }
   .partners-page .partners-item-links {
-    color: #314177;
-    font-family: "MyriadPro-SemiBold", sans-serif;
-    font-size: 1rem; }
+    color: #314177; }
     .partners-page .partners-item-links-item {
       margin-right: 1.5rem;
       display: inline-block; }
       .partners-page .partners-item-links-item .fa {
-        position: relative;
-        top: 1px;
         margin-right: 4px; }
       .partners-page .partners-item-links-item a {
         color: #314177;
