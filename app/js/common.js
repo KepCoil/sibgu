@@ -295,10 +295,10 @@ $(function() {
 
 	// Отключении версии для слабовидяших
 	function CecutientOff() {
-		$.cookie("CecutientCookie", null, { path: '/' });
-		$.cookie("font-size",  		 null, { path: '/' });
-		$.cookie("theme", 			 null, { path: '/' });
-		$.cookie("state-images",  	 null, { path: '/' });
+		$.cookie("CecutientCookie", null, { expires: 365, path: '/' });
+		$.cookie("font-size",  		 null, { expires: 365, path: '/' });
+		$.cookie("theme", 			 null, { expires: 365, path: '/' });
+		$.cookie("state-images",  	 null, { expires: 365, path: '/' });
 
 		$("#js-button-spec-version").removeClass("active");
 		$("#js-text-button-spec-version").text("Версия для слабовидящих");
