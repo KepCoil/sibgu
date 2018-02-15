@@ -25,7 +25,7 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
-	.pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(rename({suffix: '.concat', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
 	// .pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))

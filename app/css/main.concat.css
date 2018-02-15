@@ -6884,7 +6884,7 @@ body {
   overflow-x: hidden;
   opacity: 1;
   background-color: #fff;
-  font-family: "OpenSans-Regular", Helvetica, sans-serif, Helvetica, sans-serif;
+  font-family: "OpenSans-Regular", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   color: #212529;
   font-size: 0.9375rem;
   line-height: 1.4;
@@ -8140,12 +8140,13 @@ h2.inner-title {
     font-size: 20px;
     padding: 0 15px 30px 15px; }
     .wrap-cards-news .wrap-card-item-news .wrap-other-link:hover .other-link {
-      border-color: transparent; }
+      color: #ea2f1c;
+      border-color: #ea2f1c; }
     .wrap-cards-news .wrap-card-item-news .wrap-other-link .other-link {
       margin: 0;
-      -webkit-transition: border-color 0.25s ease-out;
-      -o-transition: border-color 0.25s ease-out;
-      transition: border-color 0.25s ease-out;
+      -webkit-transition: color 0.25s ease-out, border-color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out, border-color 0.25s ease-out;
+      transition: color 0.25s ease-out, border-color 0.25s ease-out;
       border-bottom: 1px solid #253666;
       font-size: 1.125rem; }
 
@@ -8406,7 +8407,8 @@ h2.inner-title {
         color: #314177;
         border-color: #314177; }
         .wrap-dis-page .dis-docs ul li a:hover {
-          border-color: transparent; }
+          color: #ea2f1c;
+          border-color: #ea2f1c; }
 
 /* END DIS PAGE */
 /* YA MAPS */
@@ -8973,3 +8975,24 @@ h2.inner-title {
 /* for 1920px */
 @media only screen and (min-width: 1900px) {
   /**/ }
+
+#oe_main_menu_navbar a,
+#oe_snippets a {
+  border: inherit; }
+
+#oe_main_menu_navbar .dropdown-menu > li > a:hover, #oe_main_menu_navbar .dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #ea2f1c; }
+
+#oe_main_menu_navbar .oe_menu_editor .fa {
+  font-size: 14px;
+  padding: 9px 12px; }
+
+#oe_main_menu_navbar .oe_menu_editor .fa.fa-home {
+  padding: 0; }
+
+#oe_main_menu_navbar .oe_menu_editor .input-group-addon, #oe_main_menu_navbar .oe_menu_editor .input-group-btn, #oe_main_menu_navbar .oe_menu_editor .input-group .form-control {
+  display: table-cell; }
+
+#oe_main_menu_navbar .oe_menu_editor .input-group.ui-sortable-handle {
+  margin-bottom: 8px; }

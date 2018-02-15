@@ -689,7 +689,6 @@
 			&:hover
 				.news-img
 					transform: scale(1.08)
-		.other-link
 		.wrap-news-content
 			display: block
 			padding: 0 15px
@@ -717,10 +716,11 @@
 			padding: 0 15px 30px 15px
 			&:hover
 				.other-link
-					border-color: transparent
+					color: $accent-links
+					border-color: $accent-links
 			.other-link
 				margin: 0
-				transition: border-color $main-trans
+				transition: color $main-trans, border-color $main-trans
 				border-bottom: 1px solid $dark-blue
 				font-size: 1.125rem
 
@@ -978,7 +978,8 @@
 					color: $blue
 					border-color: $blue
 					&:hover
-						border-color: transparent
+						color: $accent-links
+						border-color: $accent-links
 /* END DIS PAGE */
 
 /* YA MAPS */
@@ -1130,3 +1131,5 @@
 
 
 @import "media"
+
+@import "admin"
