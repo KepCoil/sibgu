@@ -8985,15 +8985,15 @@ h2.inner-title {
   color: #fff;
   background-color: #ea2f1c; }
 
-#oe_main_menu_navbar .oe_menu_editor .fa {
+.oe_menu_editor .fa {
   font-size: 14px;
   padding: 9px 12px; }
 
-#oe_main_menu_navbar .oe_menu_editor .fa.fa-home {
+.oe_menu_editor .fa.fa-home {
   padding: 0; }
 
-#oe_main_menu_navbar .oe_menu_editor .input-group-addon, #oe_main_menu_navbar .oe_menu_editor .input-group-btn, #oe_main_menu_navbar .oe_menu_editor .input-group .form-control {
+.oe_menu_editor .input-group-addon, .oe_menu_editor .input-group-btn, .oe_menu_editor .input-group .form-control {
   display: table-cell; }
 
-#oe_main_menu_navbar .oe_menu_editor .input-group.ui-sortable-handle {
+.oe_menu_editor .input-group.ui-sortable-handle {
   margin-bottom: 8px; }
