@@ -295,13 +295,12 @@ $(function() {
 
 	// Отключении версии для слабовидяших
 	function CecutientOff() {
+		$.cookie("CecutientCookie", null, { path: '/' });
+		$.cookie("font-size",  		 null, { path: '/' });
+		$.cookie("theme", 			 null, { path: '/' });
+		$.cookie("state-images",  	 null, { path: '/' });
 
-		$.cookie("CecutientCookie", null);
-		$.cookie("font-size",  null);
-		$.cookie("theme", null);
-		$.cookie("state-images",  null);
-
-		$("#js-button-spec-version").removeClass("active")
+		$("#js-button-spec-version").removeClass("active");
 		$("#js-text-button-spec-version").text("Версия для слабовидящих");
 		window.location.reload();
 	};
@@ -332,7 +331,7 @@ $(function() {
 
 		$("#js-spec-version").removeClass("hidden");
 		$.cookie("CecutientCookie", "on", {
-			// expires: 365,
+			expires: 365,
 			path: '/'
 		});
 
@@ -368,7 +367,7 @@ $(function() {
 			$("html").removeClass("disable-img");
 			$("#img-disable").attr('checked', 'checked');
 			$.cookie("state-images", "on", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -383,7 +382,7 @@ $(function() {
 			$("html").addClass("disable-img");
 			$("#img-disable").removeAttr("checked");
 			$.cookie("state-images", "off", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -401,7 +400,7 @@ $(function() {
 			$("html").addClass("font-size-normal");
 
 			$.cookie("font-size", "normal", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -416,7 +415,7 @@ $(function() {
 			$("html").addClass("font-size-medium");
 
 			$.cookie("font-size", "medium", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -431,7 +430,7 @@ $(function() {
 			$("html").addClass("font-size-large");
 
 			$.cookie("font-size", "large", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -449,7 +448,7 @@ $(function() {
 			$("html").addClass("white-theme");
 
 			$.cookie("theme", "white", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -464,7 +463,7 @@ $(function() {
 			$("html").addClass("black-theme");
 
 			$.cookie("theme", "black", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 
@@ -479,7 +478,7 @@ $(function() {
 			$("html").addClass("blue-theme");
 
 			$.cookie("theme", "blue", {
-				// expires: 365,
+				expires: 365,
 				path: '/'
 			});
 

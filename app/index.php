@@ -12,6 +12,7 @@
 
 				<div class="col-md-24">
 					<div class="row-news">
+						
 						<div class="col-md-9 col-item-news col-first-news">
 							<div class="wrap-item-news wrap-first-news">
 								<a href="#">
@@ -40,6 +41,7 @@
 									</a>
 								</div>
 							</div>
+
 							<div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news">
 									<a href="#">
@@ -53,6 +55,7 @@
 									</a>
 								</div>
 							</div>
+
 							<div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news">
 									<a href="#">
@@ -66,6 +69,7 @@
 									</a>
 								</div>
 							</div>
+
 							<div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news">
 									<a href="#">
@@ -79,6 +83,7 @@
 									</a>
 								</div>
 							</div>
+
 							<div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news">
 									<a href="#">
@@ -92,6 +97,7 @@
 									</a>
 								</div>
 							</div>
+
 							<div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news wrap-target-other-news">
 									<a href="#" class="target-other-news">
@@ -103,6 +109,7 @@
 									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 								</span>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -115,6 +122,7 @@
 			<h2>Текущие мероприятия</h2>
 			<div class="row">
 				<div class="col-xxlg-20 col-xxlg-offset-2 col-xlg-22 col-xlg-offset-1">
+					
 					<div class="col-md-6 col-sm-12 col-xs-24">
 						<div class="event-item">
 							<div class="wrap-date-event">
@@ -130,6 +138,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 col-sm-12 col-xs-24">
 						<div class="event-item">
 							<div class="event-item">
@@ -147,6 +156,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 col-sm-12 col-xs-24">
 						<div class="event-item">
 							<div class="event-item">
@@ -164,6 +174,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6 col-sm-12 col-xs-24">
 						<div class="event-item">
 							<div class="event-item">
@@ -200,11 +211,13 @@
 			<div class="row">
 				<div class="col-md-24">
 					<div class="col-xxlg-20 col-xxlg-offset-2 col-xlg-22 col-xlg-offset-1">
+						
 						<div class="col-xxlg-6 col-xlg-8 col-md-6 col-rector-img">
 							<div class="wrap-rector-img">
 								<img class="img-responsive" src="img/rector.jpg" alt="Деревянных Дмитрий Николаевич">
 							</div>
 						</div>
+
 						<div class="col-xxlg-18 col-xlg-8 col-md-18 col-rector-content">
 							<div class="wrap-rector-content">
 								<strong>Дорогие друзья!</strong>
@@ -216,6 +229,7 @@
 							</div>
 							<span class="signature-rector">Деревянных Дмитрий Николаевич</span>
 						</div>
+
 					</div>
 				</div>
 			</div>

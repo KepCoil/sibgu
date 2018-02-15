@@ -7200,7 +7200,7 @@ h2.inner-title {
 /* Фиксация внутр. меню при прокрутке */
 /* SPECIAL VERSION */
 .wrap-spec-panel-controls {
-  display: block !important;
+  display: block;
   position: relative;
   top: 0;
   z-index: 999;
@@ -7463,7 +7463,8 @@ h2.inner-title {
     left: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    padding: 20px 13px 10px 13px; }
+    padding: 20px 13px 10px 13px;
+    border: none; }
     #wrapwrap .top-line .main-logo img {
       display: block !important;
       visibility: visible !important;
