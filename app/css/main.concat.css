@@ -7406,11 +7406,11 @@ h2.inner-title {
       -webkit-transform: rotate(0);
           -ms-transform: rotate(0);
               transform: rotate(0);
-      -webkit-transition: -webkit-transform 0.25s ease-out;
-      transition: -webkit-transform 0.25s ease-out;
-      -o-transition: transform 0.25s ease-out;
-      transition: transform 0.25s ease-out;
-      transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+      -webkit-transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
+      transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
+      -o-transition: color 0.25s ease-out, transform 0.25s ease-out;
+      transition: color 0.25s ease-out, transform 0.25s ease-out;
+      transition: color 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
     .main-accordion .accordion-item .panel-title a {
       border: none;
       color: #212529; }
