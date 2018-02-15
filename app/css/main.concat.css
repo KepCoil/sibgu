@@ -8571,7 +8571,7 @@ h2.inner-title {
       font-size: 28px; }
     #wrapwrap .head-content .other-func {
       padding: 8px 20px; }
-      #wrapwrap .head-content .other-func a {
+      #wrapwrap .head-content .other-func .other-func-item {
         font-size: 22px; }
       #wrapwrap .head-content .other-func a.info-uni {
         font-size: 18px; }
@@ -8593,7 +8593,7 @@ h2.inner-title {
     font-size: 25px; }
   #wrapwrap .head-content .other-func {
     padding: 12px 20px; }
-    #wrapwrap .head-content .other-func a {
+    #wrapwrap .head-content .other-func .other-func-item {
       font-size: 18px; }
     #wrapwrap .head-content .other-func a.info-uni {
       font-size: 16px; }
@@ -8647,7 +8647,7 @@ h2.inner-title {
     font-size: 20px; }
   #wrapwrap .head-content .other-func {
     padding: 10px 15px; }
-    #wrapwrap .head-content .other-func a {
+    #wrapwrap .head-content .other-func .other-func-item {
       font-size: 16px;
       margin: 9px 0; }
     #wrapwrap .head-content .other-func a.info-uni {
