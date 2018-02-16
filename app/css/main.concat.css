@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../libs/bra-carousel/jQuery.Brazzers-Carousel.css);
 @font-face {
   font-family: "MyriadPro-Regular";
   font-weight: normal;
@@ -6924,22 +6925,26 @@ h1, .h1, .main-title {
 
 h2, .h2 {
   font-size: 1.75rem;
+  line-height: 1.3;
   font-family: "MyriadPro-SemiBold", sans-serif;
   font-weight: normal;
   text-align: left; }
 
 h3, .h3 {
   font-size: 1.5rem;
+  line-height: 1.3;
   font-family: "MyriadPro-SemiBold", sans-serif;
   font-weight: normal; }
 
 h4, .h4 {
   font-size: 1.25rem;
+  line-height: 1.3;
   font-family: "MyriadPro-SemiBold", sans-serif;
   font-weight: normal; }
 
 h5, .h5 {
   font-size: 1.125rem;
+  line-height: 1.3;
   font-family: "MyriadPro-SemiBold", sans-serif;
   font-weight: normal;
   margin-top: 0;
@@ -6947,6 +6952,7 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+  line-height: 1.3;
   font-family: "MyriadPro-SemiBold", sans-serif;
   font-weight: normal;
   margin-top: 0;
@@ -6957,11 +6963,14 @@ h2.inner-title--no-caps {
   font-size: 1.75rem;
   font-family: "OpenSans-Semibold", sans-serif;
   color: #314177;
-  margin: 10px 0 30px 0;
+  margin: 0.625rem 0 1.875rem 0;
   text-align: left; }
 
 h2.inner-title {
   text-transform: uppercase; }
+
+h2.inner-title--no-caps {
+  font-size: 1.5rem; }
 
 #wrap {
   margin: 30px 0 50px 0; }
@@ -8092,13 +8101,13 @@ h2.inner-title {
   margin-bottom: 30px; }
   .wrap-cards-news .wrap-card-item-news .wrap-news-img {
     overflow: hidden;
-    height: 280px;
     display: block;
     position: relative; }
   .wrap-cards-news .wrap-card-item-news .news-img {
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
+    padding: 30%;
     -webkit-background-size: cover;
             background-size: cover;
     background-position: top center;
@@ -8118,17 +8127,17 @@ h2.inner-title {
   .wrap-cards-news .wrap-card-item-news .wrap-news-content {
     display: block;
     padding: 0 15px;
-    margin: 30px 0;
+    margin: 1.875rem 0;
     color: #212529; }
     .wrap-cards-news .wrap-card-item-news .wrap-news-content time {
       display: block;
-      font-size: 17px;
+      font-size: 1.0625rem;
       color: #555; }
     .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title {
       display: block;
-      margin: 15px 0 20px 0; }
+      margin: 1rem 0; }
       .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         display: inline;
         border-bottom: 1px solid transparent;
         -webkit-transition: border-color 0.25s ease-out;
@@ -8140,7 +8149,7 @@ h2.inner-title {
       margin: 0; }
   .wrap-cards-news .wrap-card-item-news .wrap-other-link {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 0 15px 30px 15px; }
     .wrap-cards-news .wrap-card-item-news .wrap-other-link:hover .other-link {
       color: #ea2f1c;
@@ -8347,7 +8356,8 @@ h2.inner-title {
   color: #212529;
   border-color: #212529; }
   .wrap-events-list .wrap-events-content .table-events tbody .event-title a:hover {
-    border-color: transparent; }
+    color: #ea2f1c;
+    border-color: #ea2f1c; }
 
 #wrapwrap .wrap-events-content table.table-events {
   table-layout: auto; }
@@ -8552,6 +8562,40 @@ h2.inner-title {
           color: #ea2f1c;
           border-color: #ea2f1c; }
 
+/* Gallery section */
+.photo-gallery .phogal-item {
+  display: block;
+  background-color: #eee;
+  margin-bottom: 30px; }
+  .photo-gallery .phogal-item-content {
+    padding: 20px 15px; }
+    .photo-gallery .phogal-item-content-info {
+      font-size: 0.9rem; }
+      .photo-gallery .phogal-item-content-info time {
+        float: left; }
+      .photo-gallery .phogal-item-content-info span {
+        float: right; }
+      .photo-gallery .phogal-item-content-info .fa {
+        margin-right: 5px;
+        position: relative;
+        top: -1px; }
+  .photo-gallery .phogal-item-link {
+    color: #212529; }
+  .photo-gallery .phogal-item-img-wrap {
+    overflow: hidden;
+    display: block;
+    position: relative; }
+    .photo-gallery .phogal-item-img-wrap .tmb-wrap-table div.active {
+      border-color: #ea2f1c; }
+  .photo-gallery .phogal-item-img {
+    width: 100%;
+    height: 100%;
+    padding: 30%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: top center; }
+
+/* End Gallery section */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */

@@ -175,6 +175,8 @@ $(function() {
 	enablePaSlider();
 	*/
 
+	$(".js-phogal-preview-img").brazzersCarousel();
+
 
 
 	/* Функция уравнивания высоты различных элементов */

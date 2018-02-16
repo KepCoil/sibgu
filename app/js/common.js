@@ -175,6 +175,8 @@ $(function() {
 	enablePaSlider();
 	*/
 
+	$(".js-phogal-preview-img").brazzersCarousel();
+
 
 
 	/* Функция уравнивания высоты различных элементов */
@@ -334,8 +336,6 @@ $(function() {
 			expires: 365,
 			path: '/'
 		});
-
-		return false;
 	};
 
 
@@ -370,8 +370,6 @@ $(function() {
 				expires: 365,
 				path: '/'
 			});
-
-			return false;
 		};	
 	};
 
@@ -386,7 +384,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 	/* Конец картинки */
@@ -404,7 +401,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 
@@ -419,7 +415,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 
@@ -434,7 +429,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 	/* Конец размер шрифта */
@@ -452,7 +446,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 
@@ -467,7 +460,6 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 
@@ -482,10 +474,21 @@ $(function() {
 				path: '/'
 			});
 
-			return false;
 		};	
 	};
 	/* Конец цветовые схемы */
+
+
+
+	/* Отключаем версию для слабовидящих для мобильных устройств, ширина <= 992px */
+	$(window).resize(function() {
+		var windowWidthCecutient = $(window).width();
+		if (windowWidthCecutient <= 992) {
+			console.log('ширина = ' + windowWidthCecutient);
+			CecutientOff();
+		};
+	});
+		
 
 
 	/**************************   КОНЕЦ ВЕРСИИ ДЛЯ СЛАБОВИДЯЩИХ   **************************/

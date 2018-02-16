@@ -673,13 +673,13 @@
 		margin-bottom: 30px
 		.wrap-news-img
 			overflow: hidden
-			height: 280px
 			display: block
 			position: relative
 		.news-img
+			display: block
 			width: 100%
 			height: 100%
-			display: block
+			padding: 30%
 			background-size: cover
 			background-position: top center
 			transition: transform 1.5s ease-out
@@ -693,17 +693,17 @@
 		.wrap-news-content
 			display: block
 			padding: 0 15px
-			margin: 30px 0
+			margin: 1.875rem 0
 			color: $default-color
 			time
 				display: block
-				font-size: 17px
+				font-size: 1.0625rem
 				color: #555
 			.wrap-news-title
 				display: block
-				margin: 15px 0 20px 0
+				margin: 1rem 0
 				h3
-					font-size: 20px
+					font-size: 1.25rem
 					display: inline
 					border-bottom: 1px solid transparent
 					transition: border-color $main-trans
@@ -713,7 +713,7 @@
 				margin: 0
 		.wrap-other-link
 			display: block
-			font-size: 20px
+			font-size: 1.25rem
 			padding: 0 15px 30px 15px
 			&:hover
 				.other-link
@@ -916,7 +916,8 @@
 						color: $default-color
 						border-color: $default-color
 						&:hover
-							border-color: transparent
+							color: $accent-links
+							border-color: $accent-links
 #wrapwrap
 	.wrap-events-content
 			table.table-events
@@ -1130,6 +1131,41 @@
 						color: $accent-links
 						border-color: $accent-links
 
+
+/* Gallery section */
+.photo-gallery
+	.phogal-item
+		display: block
+		background-color: $grey-bgc
+		margin-bottom: 30px
+		&-content
+			padding: 20px 15px
+			&-info
+				font-size: 0.9rem
+				time
+					float: left
+				span
+					float: right
+				.fa
+					margin-right: 5px
+					position: relative
+					top: -1px
+		&-link
+			color: $default-color
+		&-img-wrap
+			overflow: hidden
+			display: block
+			position: relative
+			.tmb-wrap-table div.active
+				border-color: $accent-links
+		&-img
+			width: 100%
+			height: 100%
+			padding: 30%
+			background-size: cover
+			background-position: top center
+
+/* End Gallery section */
 
 @import "media"
 
