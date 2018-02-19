@@ -670,7 +670,7 @@
 .wrap-cards-news
 	.wrap-card-item-news
 		background-color: $grey-bgc
-		margin-bottom: 30px
+		margin-bottom: 1.875rem
 		.wrap-news-img
 			overflow: hidden
 			display: block
@@ -692,7 +692,7 @@
 					transform: scale(1.08)
 		.wrap-news-content
 			display: block
-			padding: 0 15px
+			padding: 0 1rem
 			margin: 1.875rem 0
 			color: $default-color
 			time
@@ -703,31 +703,19 @@
 				display: block
 				margin: 1rem 0
 				h3
-					font-size: 1.25rem
-					display: inline
+					font-size: 1.2rem
+					line-height: 1.2
 					border-bottom: 1px solid transparent
-					transition: border-color $main-trans
+					transition: color $main-trans
 					&:hover
-						border-bottom: 1px solid $default-color
+						color: $accent-links
 			p
 				margin: 0
-		.wrap-other-link
-			display: block
-			font-size: 1.25rem
-			padding: 0 15px 30px 15px
-			&:hover
-				.other-link
-					color: $accent-links
-					border-color: $accent-links
-			.other-link
-				margin: 0
-				transition: color $main-trans, border-color $main-trans
-				border-bottom: 1px solid $dark-blue
-				font-size: 1.125rem
+				
 
 #div_nav_panel
 	padding: 0
-	margin: 10px 0
+	margin: 15px 0 0 0
 	#nav_panel
 		margin: 0
 		padding: 0
@@ -741,16 +729,16 @@
 				border: 1px solid $dark-line
 				font-family: "OpenSans-SemiBold", sans-serif
 				padding: 0
-				font-size: 18px
+				font-size: 1.125rem
 				margin: 3px
 				transition: background-color $main-trans, color $main-trans
 				cursor: pointer
 				border-radius: 0
 				&:hover
-					background-color: $blue
-					color: #fff
+					// background-color: $blue
+					color: $accent-links
 			button.active
-				background-color: $dark-blue
+				background-color: $blue
 				color: #fff
 		
 /* END NEWS PAGE */
@@ -833,35 +821,6 @@
 
 /* EVENTS LIST PAGE */
 .wrap-events-list
-	.wrap-events-category
-		background-color: $grey-bgc
-		ul
-			list-style-type: none
-			margin: 0
-			padding: 0
-		li
-			border-bottom: 1px solid $dark-line
-			&:last-child
-				border-bottom: none
-			&.active
-				a
-					background-color: $blue
-					color: #fff
-			a
-				border: none
-				color: $blue
-				padding: 16px 20px
-				text-transform: uppercase
-				position: relative
-				display: block
-				font-size: 1.0625rem
-				font-family: "OpenSans-Semibold", sans-serif
-				transition: background-color $main-trans
-				&:hover
-					background-color: $blue
-					color: #fff
-				span
-					display: inline-block
 	.wrap-events-date-filter
 		border-bottom: 1px solid $dark-line
 		margin-bottom: 25px
@@ -918,6 +877,37 @@
 						&:hover
 							color: $accent-links
 							border-color: $accent-links
+.wrap-category-list,
+.wrap-events-category
+	background-color: $grey-bgc
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		border-bottom: 1px solid $dark-line
+		&:last-child
+			border-bottom: none
+		&.active
+			a
+				background-color: $blue
+				color: #fff
+		a
+			border: none
+			color: $blue
+			padding: 1rem 1.25rem
+			text-transform: uppercase
+			position: relative
+			display: block
+			font-size: 1rem
+			font-family: "OpenSans-Semibold", sans-serif
+			transition: background-color $main-trans
+			&:hover
+				background-color: $blue
+				color: #fff
+			span
+				display: inline-block
+
 #wrapwrap
 	.wrap-events-content
 			table.table-events
@@ -1142,6 +1132,7 @@
 			padding: 20px 15px
 			&-info
 				font-size: 0.9rem
+				color: #555
 				time
 					float: left
 				span
@@ -1150,22 +1141,74 @@
 					margin-right: 5px
 					position: relative
 					top: -1px
+			&-title
+				h3
+					font-size: 1.1rem
+					line-height: 1.2
 		&-link
-			color: $default-color
-		&-img-wrap
-			overflow: hidden
 			display: block
-			position: relative
+			color: $default-color
+			border: none
+		&-img-wrap
+			.tmb-wrap-table div
+				border-color: rgba(0, 0, 0, 0.4)
 			.tmb-wrap-table div.active
-				border-color: $accent-links
+				border-color: #FBB254
 		&-img
 			width: 100%
 			height: 100%
 			padding: 30%
 			background-size: cover
 			background-position: top center
+			transition: all $main-trans
 
 /* End Gallery section */
+
+
+/* photo gallery switch-items */
+.switch-items-daddy 
+	position: relative
+	&:after 
+		content: ""
+		display: table
+		clear: both
+	.bra-plugin-item 
+		width: 100%
+		position: relative
+		display: none
+		top: 0
+		left: 0
+		&:first-child 
+			display: block
+
+.tmb-wrap 
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	.tmb-wrap-table 
+		display: table
+		height: 100%
+		width: 100%
+
+.tmb-wrap-table 
+	.switcher-col
+		display: table-cell
+		transition: all .3s ease
+		border-bottom: 5px solid transparent
+		padding-top: 10px
+		-webkit-transition: all .25s ease
+		-o-transition: all .25s ease
+		transition: all .25s ease
+		&.active 
+			border-color: #ffe082
+		&:first-child:last-child 
+			border-color: transparent
+/* end photo gallery switch-items */
 
 @import "media"
 

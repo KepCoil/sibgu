@@ -175,8 +175,8 @@ $(function() {
 	enablePaSlider();
 	*/
 
-	$(".js-phogal-preview-img").brazzersCarousel();
 
+	$(".js-phogal-preview-img").switchItems();
 
 
 	/* Функция уравнивания высоты различных элементов */
@@ -185,6 +185,8 @@ $(function() {
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 		$(".dis-docs").height('auto').equalHeights();
+		$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();
+
 		// $(".filials-page .col-lg-12").height('auto').equalHeights();
 
 
