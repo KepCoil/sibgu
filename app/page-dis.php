@@ -36,12 +36,12 @@
 							<div class="dis-docs">
 								<h3>Отзывы:</h3>
 								<ul>
-									<li><a href="#">Отзыв научного руководителя</a></li>
-									<li><a href="#">Отзыв ведущей организации</a></li>
-									<li><a href="#">Отзыв официального оппонента О.Я.Кравца</a></li>
-									<li><a href="#">Отзыв А.А.Карпова</a></li>
-									<li><a href="#">Отзыв официального оппонента Ю.А.Болотовой</a></li>
-									<li><a href="#">Отзыв Е.В.Ислентьева</a></li>
+									<li><a href="events-list.php">Отзыв научного руководителя</a></li>
+									<li><a href="fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf">Отзыв ведущей организации</a></li>
+									<li><a href="img/favicon/favicon.ico">Отзыв официального оппонента О.Я.Кравца</a></li>
+									<li><a href="img/news/big-news/mega-news-2.jpg">Отзыв А.А.Карпова</a></li>
+									<li><a href="img/flags/gb.svg">Отзыв официального оппонента Ю.А.Болотовой</a></li>
+									<li><a href="img/main.logo.src.dis.png">Отзыв Е.В.Ислентьева</a></li>
 									<li><a href="#">Отзыв Л.А.Демидовой</a></li>
 									<li><a href="#">Отзыв Я.В.Славолюбовой</a></li>
 								</ul>

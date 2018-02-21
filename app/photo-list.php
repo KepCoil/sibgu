@@ -19,10 +19,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -47,10 +47,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -75,10 +75,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -103,10 +103,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -131,10 +131,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -159,10 +159,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -187,10 +187,10 @@
 									<div class="phogal-item">
 										<a class="phogal-item-link" href="#">
 											<div class="phogal-item-img-wrap js-phogal-preview-img">
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
-												<div class="phogal-item-img bra-plugin-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_2.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
+												<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
 											</div>
 											<div class="phogal-item-content">
 												<div class="phogal-item-content-info clearfix">
@@ -220,7 +220,7 @@
 						<div class="wrap-category-list">
 							<ul>
 								<li class="active">
-									<a href="#">Все фотографии</a>
+									<a href="#">Все альбомы</a>
 								</li>
 								<li>
 									<a href="#">Мероприятия</a>
@@ -232,7 +232,7 @@
 									<a href="#">Конференции</a>
 								</li>
 								<li>
-									<a href="#">Остальные фотографии</a>
+									<a href="#">Остальные альбомы</a>
 								</li>
 							</ul>
 						</div>

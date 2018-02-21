@@ -2,10 +2,16 @@ $(function() {
 
 	/* СКРИПТ ПРОВЕРКИ НА IE 8 И НИЖЕ */
 	// if(document.all && !document.addEventListener){
-	// 	console.log("ie");
-	// 	alert("ie");
+	//    console.log("ie");
+	//    alert("ie");
 	// }
 	/*  */
+
+	$(".dis-docs a").each(function() { 
+		var getUrl = $(this).attr('href');
+		var checkExt = getUrl.split(".").pop();
+		console.log(checkExt);
+	});
 
 
 	/* МОБИЛЬНОЕ МЕНЮ */
@@ -14,7 +20,7 @@ $(function() {
 	var 
 	commonMenuContent  = $("#js-main-common-menu").html(),
 	commonAuditContent = $("#js-main-audit-menu").html(),
-	resLinksContent 	 = $("#js-res-links").html();
+	resLinksContent    = $("#js-res-links").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent  + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>"  + commonAuditContent + "</ul>");
@@ -30,9 +36,9 @@ $(function() {
 		"navbars": [{
 			"position": "bottom",
 			"content": [
-			"<a class='fa fa-id-card mob-qlinks'	target='_blank'	href='https://pallada.sibsau.ru/page/lks' >		<span>Личный кабинет</span></a>",
-			"<a class='fa fa-envelope mob-qlinks'	target='_blank' 	href='https://webmail.sibsau.ru' >					<span>Почта</span></a>",
-			"<a class='fa fa-table mob-qlinks'		target='_blank'	href='https://timetable.pallada.sibsau.ru/' >	<span>Расписание занятий</span></a>"
+			"<a class='fa fa-id-card mob-qlinks'   target='_blank'   href='https://pallada.sibsau.ru/page/lks' >     <span>Личный кабинет</span></a>",
+			"<a class='fa fa-envelope mob-qlinks'  target='_blank'   href='https://webmail.sibsau.ru' >              <span>Почта</span></a>",
+			"<a class='fa fa-table mob-qlinks'     target='_blank'   href='https://timetable.pallada.sibsau.ru/' >   <span>Расписание занятий</span></a>"
 			]
 		}]
 	});
@@ -42,7 +48,7 @@ $(function() {
 
 	// Кнопка мобильного меню
 	var 
-	mobileMenuAPI 	  = $("#js-mobile-mmenu").data("mmenu"),
+	mobileMenuAPI    = $("#js-mobile-mmenu").data("mmenu"),
 	buttonMobileMenu = $("#js-button-mobile-mmenu");
 
 	buttonMobileMenu.click(function() {
@@ -74,7 +80,7 @@ $(function() {
 
 	/* Костыль для пункта меню "Сведенья о доходах..." */
 	// $(".main-menu .droplist .droplist-content li a:contains('Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи')")
-	// 	.html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
+	//    .html('Сведения о доходах, об имуществе и обязательствах<br/>имущественного характера руководителя и<br/>членов его семьи');
 
 
 
@@ -84,14 +90,14 @@ $(function() {
 		var searchSlider = $("div").is(".navaslider");
 		
 		if (!searchSlider) {
-			return;		
+			return;     
 		} 
 		else {
 			var 
 			windowSize = $(window).width(),
 			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
 			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),	
+			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),   
 			sliderWidth = 0;
 
 			if (windowSize >= 992) {
@@ -176,7 +182,11 @@ $(function() {
 	*/
 
 
+
+
 	$(".js-phogal-preview-img").switchItems();
+
+	$(".js-photo-gallery-init").simpleLightbox();
 
 
 	/* Функция уравнивания высоты различных элементов */
@@ -213,7 +223,7 @@ $(function() {
 	})
 	.on('hide.bs.collapse', function(e) {
 		$(e.target).prev('.panel-heading').removeClass('active');
-	});	
+	});   
 
 
 
@@ -229,14 +239,14 @@ $(function() {
 	/* Фиксация меню на внутр. страницах при скролле */
 	var
 	marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
-	defaultMarginTop		= parseInt($("#wrap").css("marginTop"));
+	defaultMarginTop     = parseInt($("#wrap").css("marginTop"));
 
 	$(window).scroll(function() {
 		var 
-		headerHeight 	= $(".main-head").outerHeight(),
-		innerMenu 		= $(".inner-menu"),
-		wrap 				= $("#wrap"),
-		dekstopVers 	= $(".inner-menu").is(":visible");
+		headerHeight   = $(".main-head").outerHeight(),
+		innerMenu      = $(".inner-menu"),
+		wrap           = $("#wrap"),
+		dekstopVers    = $(".inner-menu").is(":visible");
 
 		if ( ($(this).scrollTop() > headerHeight) && (dekstopVers) ) {
 			innerMenu.addClass("fixed-inner-menu");
