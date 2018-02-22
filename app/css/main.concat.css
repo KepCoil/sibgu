@@ -15848,7 +15848,6 @@ h2.inner-title--no-caps {
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
 
-/* End Gallery section */
 /* photo gallery switch-items */
 .switch-items-daddy {
   position: relative; }
@@ -15896,13 +15895,24 @@ h2.inner-title--no-caps {
 
 /* end photo gallery switch-items */
 /* page photo album  */
+.photo-album-info-meta {
+  margin-bottom: 1.5rem; }
+
+.photo-album-info .table-info-album {
+  width: auto;
+  margin-bottom: 10px; }
+  .photo-album-info .table-info-album th, .photo-album-info .table-info-album td {
+    padding: 10px 30px 10px 10px; }
+  .photo-album-info .table-info-album th {
+    background-color: #eee; }
+
 .photo-album-list .row {
   margin-left: -10px;
   margin-right: -10px; }
 
 .photo-album-list-item {
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: 175px;
   overflow: hidden; }
   .photo-album-list-item-link {
@@ -15921,18 +15931,8 @@ h2.inner-title--no-caps {
   opacity: .95;
   filter: alpha(opacity=95); }
 
-.photo-album-info-meta {
-  margin-bottom: 1.5rem; }
-
-.photo-album-info .table-info-album {
-  width: auto;
-  margin-bottom: 10px; }
-  .photo-album-info .table-info-album th, .photo-album-info .table-info-album td {
-    padding: 10px 30px 10px 10px; }
-  .photo-album-info .table-info-album th {
-    background-color: #eee; }
-
 /* end page photo album */
+/* End Gallery section */
 /* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */

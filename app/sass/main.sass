@@ -1162,8 +1162,6 @@
 			background-position: top center
 			transition: all $main-trans
 
-/* End Gallery section */
-
 
 /* photo gallery switch-items */
 .switch-items-daddy 
@@ -1212,15 +1210,24 @@
 
 
 /* page photo album  */
+.photo-album-info
+	&-meta
+		margin-bottom: 1.5rem
+	.table-info-album
+		width: auto
+		margin-bottom: 10px
+		th, td
+			padding: 10px 30px 10px 10px
+		th
+			background-color: $grey-bgc
+
 .photo-album-list
 	.row
 		margin-left: -10px
 		margin-right: -10px
 	&-item
-		//width: 25%
-		//float: left
 		padding: 10px
-		margin-bottom: 20px
+		margin-bottom: 10px
 		height: 175px
 		overflow: hidden
 		&-link
@@ -1234,22 +1241,15 @@
 			display: inline-block
 			max-width: 100%
 			height: auto
+
 .sl-overlay
 	opacity: .95
 	filter: alpha(opacity=95)
-
-.photo-album-info-meta
-	margin-bottom: 1.5rem
-
-.photo-album-info
-	.table-info-album
-		width: auto
-		margin-bottom: 10px
-		th, td
-			padding: 10px 30px 10px 10px
-		th
-			background-color: $grey-bgc
+			
 /* end page photo album */
+
+/* End Gallery section */
+
 
 @import "media"
 
