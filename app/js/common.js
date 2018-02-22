@@ -183,10 +183,46 @@ $(function() {
 
 
 
+	/* Функционал галлереи */
+	
 
+
+	// Масштабирование картинок
+	$(".js-photo-gallery-init").each(function() {
+		var 
+			th = $(this).height(),
+			tw = $(this).width(),
+			im = $(this).children('img'),
+			ih = im.height(),
+			iw = im.width()
+			nh = im.height(),
+			nw = im.width(),
+			hd = (nh-th) / 2,
+			wd = (nw-tw) / 2;
+
+		if ( ih > iw ) {
+			im.addClass('ww').removeClass('wh');
+		} else { 
+			im.addClass('wh').removeClass('ww');
+		}
+
+		if ( nh < nw ) {
+			im.css({
+				marginLeft: ('-' + wd + 'px'), 
+				marginTop: 0
+			});
+		} else {
+			im.css({marginTop: '-' + 5 + '%' });
+		}
+	});
+
+	// Превью альбома
 	$(".js-phogal-preview-img").switchItems();
 
+	// Активация плагина галлереи
 	$(".js-photo-gallery-init").simpleLightbox();
+
+	/* Конец функционал галлереи */
 
 
 	/* Функция уравнивания высоты различных элементов */

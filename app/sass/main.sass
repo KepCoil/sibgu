@@ -1213,18 +1213,22 @@
 
 /* page photo album  */
 .photo-album-list
-	margin: 0 -10px
+	.row
+		margin-left: -10px
+		margin-right: -10px
 	&-item
-		width: 25%
-		float: left
+		//width: 25%
+		//float: left
+		padding: 10px
 		margin-bottom: 20px
-		padding: 0 10px
-		height: 30%
+		height: 175px
 		overflow: hidden
 		&-link
+			display: block
 			border: none
 			overflow: hidden
-			&:hover
+			height: auto
+			&:hover, &:focus
 				border: none
 		&-preview
 			display: inline-block
@@ -1234,6 +1238,17 @@
 	opacity: .95
 	filter: alpha(opacity=95)
 
+.photo-album-info-meta
+	margin-bottom: 1.5rem
+
+.photo-album-info
+	.table-info-album
+		width: auto
+		margin-bottom: 10px
+		th, td
+			padding: 10px 30px 10px 10px
+		th
+			background-color: $grey-bgc
 /* end page photo album */
 
 @import "media"
