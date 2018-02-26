@@ -179,8 +179,8 @@ h2.inner-title--no-caps
 				font-family: "MyriadPro-Semibold", sans-serif
 	.mm-navbar
 		.mm-title
-			font-size: 1.2rem
-			color: $default-color
+			font-size: 1rem
+			color: #444
 /* КОНЕЦ MOBILE MMENU MENU */
 
 
@@ -188,17 +188,17 @@ h2.inner-title--no-caps
 	.dropdown-menu
 		margin-bottom: 0
 		background-color: #f7f7f7
-		padding: 5px 15px 20px 15px
+		padding: 0.3125rem 0
 		border-radius: 0
 		border: none
 		box-shadow: none
 		li
 			background-color: #f7f7f7
-			border-bottom: 1px solid $dark-line
+			border-bottom: 1px solid #ddd
 			a
 				color: $blue
 				text-transform: none
-				padding: 8px 8px 8px 0px
+				padding: 8px 12px 8px 8px
 				font-family: "OpenSans-Regular", sans-serif
 				border: none
 				transition: all $main-trans
@@ -206,11 +206,12 @@ h2.inner-title--no-caps
 				background-color: transparent !important
 				white-space: normal
 				&:hover
-					color: $blue
-					transform: translateX(8px)
+					color: $accent-links
 					border: none
 			&:last-child
 				border-bottom: none
+
+
 
 .main-menu
 	background-color: $dark-blue
@@ -237,6 +238,7 @@ h2.inner-title--no-caps
 				border: none
 				padding: 18px 15px
 				text-transform: uppercase
+				transition: background-color .24s ease-out
 				&:hover
 					color: $blue
 					background-color: $grey-bgc
@@ -246,30 +248,30 @@ h2.inner-title--no-caps
 					position: relative
 					top: -1px
 					margin-left: 7px
-	.droplist-content
+	ul.droplist-content
 		position: absolute
 		z-index: 1000
 		min-width: 160px
-		padding: 5px 15px 20px 15px
+		padding: 0.3125rem 0
 		background-color: $grey-bgc
 		display: none
 		box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
 		li
 			display: block
-			border-bottom: 1px solid #aaa
+			border-bottom: 1px solid #ddd
 			&:last-child
 				border-bottom: none
 			a
+				display: block
 				color: $blue
-				padding: 10px 8px 10px 0px
+				padding: 0.75rem 1.5rem 0.75rem 0.9375rem
 				font-family: "OpenSans-Regular", sans-serif
 				text-transform: none
 				font-size: 0.875rem
 				line-height: 1.1
-				transition: transform $main-trans
+				transition: color $main-trans
 				&:hover
-					color: $blue
-					transform: translateX(8px)
+					color: $accent-links
 	.droplist-open
 		background-color: $grey-bgc
 		a
@@ -283,11 +285,12 @@ h2.inner-title--no-caps
 		.inner-audit-menu
 			>li
 				>a
-					color: $yellow
+					color: #fff
 					background-color: transparent
+					transition: color $main-trans
 					&:hover
-						background-color: $grey-bgc
-						color: $blue
+						//background-color: $grey-bgc
+						color: $yellow
 
 
 

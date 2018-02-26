@@ -7,6 +7,8 @@ $(function() {
 	// }
 	/*  */
 
+
+	/* Определение расширение файлов */
 	$(".dis-docs a").each(function() { 
 		var getUrl = $(this).attr('href');
 		var checkExt = getUrl.split(".").pop();
