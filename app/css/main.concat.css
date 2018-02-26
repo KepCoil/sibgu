@@ -15041,25 +15041,25 @@ h2.inner-title--no-caps {
   padding: 0 20px; }
   .event-item .wrap-date-event {
     border-bottom: 1px solid #aaa;
-    padding-bottom: 10px; }
+    padding-bottom: 1rem; }
     .event-item .wrap-date-event .calendar-icon {
       display: inline-block;
       position: relative;
-      width: 80px;
-      height: 75px;
+      width: 5rem;
+      height: 4.6875rem;
       background-color: #ebf0f2;
       -webkit-border-radius: 7px;
               border-radius: 7px;
       -webkit-box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
               box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
       overflow: hidden;
-      margin-right: 10px; }
+      margin-right: 0.625rem; }
       .event-item .wrap-date-event .calendar-icon span {
         display: block;
         position: absolute;
         top: 0;
         width: 100%;
-        height: 22px;
+        height: 1.375rem;
         color: #fff;
         background-color: #ff4b39;
         -webkit-box-shadow: 0 2px 0 #ea402e;
@@ -15082,20 +15082,21 @@ h2.inner-title--no-caps {
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%); }
         .event-item .wrap-date-event .calendar-icon span:before {
-          left: 8px; }
+          left: 0.5rem; }
         .event-item .wrap-date-event .calendar-icon span:after {
-          right: 8px; }
+          right: 0.5rem; }
       .event-item .wrap-date-event .calendar-icon strong {
         width: 100%;
+        font-size: 2rem;
         color: #333;
         position: absolute;
         font-family: "MyriadPro-Bold", sans-serif;
-        font-size: 32px;
         height: 100%;
         text-align: center;
-        padding-top: 26px; }
+        padding-top: 1.625rem; }
     .event-item .wrap-date-event .event-month {
-      font-size: 28px;
+      font-size: 1.75rem;
+      line-height: 1;
       font-family: "MyriadPro-Semibold", sans-serif;
       display: inline-block;
       position: relative;
@@ -15105,7 +15106,7 @@ h2.inner-title--no-caps {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
   .event-item .event-content h3 {
-    margin: 15px 0;
+    margin: 0.9375rem 0;
     font-size: 1.3125rem;
     line-height: 1.2; }
     .event-item .event-content h3 a {
