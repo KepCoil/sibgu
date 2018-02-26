@@ -28,7 +28,7 @@ $(function() {
 	$("#js-item-main-audit-menu").append("<ul>"  + commonAuditContent + "</ul>");
 	$("#js-item-res-links-menu").append("<ul>"   + resLinksContent    + "</ul>");
 
-	// Плагин mmenu
+	// Инициализация плагина mmenu
 	$("#js-mobile-mmenu").mmenu({
 		extensions: ['fx-menu-slide', 'pagedim-black', 'border-full', "multiline"],
 		navbar: {
@@ -53,10 +53,16 @@ $(function() {
 	mobileMenuAPI    = $("#js-mobile-mmenu").data("mmenu"),
 	buttonMobileMenu = $("#js-button-mobile-mmenu");
 
+	// Открываем панель меню
 	buttonMobileMenu.click(function() {
-
 		mobileMenuAPI.open();
-		// $(this).toggleClass("is-active");
+	});
+
+	// Изменяет кнопку на крестик и обратно
+	mobileMenuAPI.bind("close:finish", function() {
+		$("#js-button-mobile-mmenu").removeClass("is-active");
+	}), mobileMenuAPI.bind("open:finish", function() {
+		$("#js-button-mobile-mmenu").addClass("is-active");
 	});
 
 	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
