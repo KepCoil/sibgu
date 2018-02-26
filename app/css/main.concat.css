@@ -14468,8 +14468,8 @@ h2.inner-title--no-caps {
   z-index: 999;
   background-color: #fff;
   font-family: "MyriadPro-Bold", sans-serif;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   font-size: 16px;
   color: #212529; }
 
@@ -14485,7 +14485,7 @@ h2.inner-title--no-caps {
     float: left;
     width: 25%;
     text-align: center;
-    border-right: 1px solid #aaa;
+    border-right: 1px solid #ddd;
     padding: 12px 0;
     height: 62px; }
     .spec-panel-controls ul.spec-controls > li:last-child {
@@ -15040,7 +15040,7 @@ h2.inner-title--no-caps {
 .event-item {
   padding: 0 20px; }
   .event-item .wrap-date-event {
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 1rem; }
     .event-item .wrap-date-event .calendar-icon {
       display: inline-block;
@@ -15414,7 +15414,7 @@ h2.inner-title--no-caps {
         display: block;
         width: 40px;
         height: 40px;
-        border: 1px solid #aaa;
+        border: 1px solid #ddd;
         font-family: "OpenSans-SemiBold", sans-serif;
         padding: 0;
         font-size: 1.125rem;
@@ -15508,7 +15508,7 @@ h2.inner-title--no-caps {
 /* END COMMON NEWS PAGE */
 /* EVENTS LIST PAGE */
 .wrap-events-list .wrap-events-date-filter {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
   margin-bottom: 25px; }
   .wrap-events-list .wrap-events-date-filter ul {
     list-style-type: none;
@@ -15532,12 +15532,11 @@ h2.inner-title--no-caps {
       color: #212529;
       font-size: 16px;
       padding: 5px 8px;
-      -webkit-transition: background-color 0.25s ease-out;
-      -o-transition: background-color 0.25s ease-out;
-      transition: background-color 0.25s ease-out; }
+      -webkit-transition: color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out;
+      transition: color 0.25s ease-out; }
       .wrap-events-list .wrap-events-date-filter ul a:hover {
-        background-color: #314177;
-        color: #fff; }
+        color: #ea2f1c; }
 
 .wrap-events-list .wrap-events-content .table-events thead th {
   text-transform: uppercase;
@@ -15576,7 +15575,7 @@ h2.inner-title--no-caps {
     padding: 0; }
   .wrap-category-list li,
   .wrap-events-category li {
-    border-bottom: 1px solid #aaa; }
+    border-bottom: 1px solid #ddd; }
     .wrap-category-list li:last-child,
     .wrap-events-category li:last-child {
       border-bottom: none; }
@@ -15584,23 +15583,27 @@ h2.inner-title--no-caps {
     .wrap-events-category li.active a {
       background-color: #314177;
       color: #fff; }
+      .wrap-category-list li.active a:hover,
+      .wrap-events-category li.active a:hover {
+        color: #fff;
+        background-color: #314177; }
     .wrap-category-list li a,
     .wrap-events-category li a {
       border: none;
       color: #314177;
+      -webkit-transition: color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out;
+      transition: color 0.25s ease-out;
       padding: 1rem 1.25rem;
       text-transform: uppercase;
       position: relative;
       display: block;
       font-size: 1rem;
       font-family: "OpenSans-Semibold", sans-serif;
-      -webkit-transition: background-color 0.25s ease-out;
-      -o-transition: background-color 0.25s ease-out;
-      transition: background-color 0.25s ease-out; }
+      transition: color 0.25s ease-out; }
       .wrap-category-list li a:hover,
       .wrap-events-category li a:hover {
-        background-color: #314177;
-        color: #fff; }
+        color: #ea2f1c; }
       .wrap-category-list li a span,
       .wrap-events-category li a span {
         display: inline-block; }
@@ -15642,7 +15645,7 @@ h2.inner-title--no-caps {
   margin-right: 8px; }
 
 .wrap-dis-page .dis-meta-info {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 5px; }
 
 .wrap-dis-page .dis-text {

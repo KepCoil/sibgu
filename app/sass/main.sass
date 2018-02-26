@@ -848,10 +848,9 @@
 				color: $default-color
 				font-size: 16px
 				padding: 5px 8px
-				transition: background-color $main-trans
+				transition: color $main-trans
 				&:hover
-					background-color: $blue
-					color: #fff
+					color: $accent-links
 	.wrap-events-content
 		.table-events
 			thead
@@ -893,19 +892,22 @@
 			a
 				background-color: $blue
 				color: #fff
+				&:hover
+					color: #fff
+					background-color: $blue
 		a
 			border: none
 			color: $blue
+			transition: color $main-trans
 			padding: 1rem 1.25rem
 			text-transform: uppercase
 			position: relative
 			display: block
 			font-size: 1rem
 			font-family: "OpenSans-Semibold", sans-serif
-			transition: background-color $main-trans
+			transition: color $main-trans
 			&:hover
-				background-color: $blue
-				color: #fff
+				color: $accent-links
 			span
 				display: inline-block
 
