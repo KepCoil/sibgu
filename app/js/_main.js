@@ -149,7 +149,6 @@ $(function() {
 
 	/* Слайдер для парнеров */
 	$("#js-pa-slider").owlCarousel({
-		dots: false,
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 6000,
@@ -161,8 +160,6 @@ $(function() {
 			1200: { items:4 }
 		}
 	});
-
-
 
 	/* Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992 */
 	/*
@@ -190,11 +187,7 @@ $(function() {
 	*/
 
 
-
 	/* Функционал галлереи */
-	
-
-
 	// Масштабирование картинок
 	$(".js-photo-gallery-init").each(function() {
 		var 
@@ -240,8 +233,6 @@ $(function() {
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 		$(".dis-docs").height('auto').equalHeights();
 		$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();
-
-		// $(".filials-page .col-lg-12").height('auto').equalHeights();
 
 
 		/* Функция equalHeights() при мобильной версии */
