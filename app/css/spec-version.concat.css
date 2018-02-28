@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* $blue: #2f4077 */
 html.font-size-normal {
   font-size: 100%; }
 
@@ -9,7 +8,6 @@ html.font-size-medium {
 html.font-size-large {
   font-size: 150%; }
 
-/* $blue: #2f4077 */
 /* white */
 html.white-theme body {
   color: #000;
@@ -296,7 +294,6 @@ html.white-theme #wrapwrap .main-accordion .accordion-item .panel-body {
 html.white-theme #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #ccc; }
 
-/* $blue: #2f4077 */
 /* black */
 html.black-theme body {
   color: #fff;
@@ -591,7 +588,6 @@ html.black-theme #wrapwrap .main-accordion .accordion-item .panel-body {
 html.black-theme #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #333; }
 
-/* $blue: #2f4077 */
 /* blue */
 html.blue-theme body {
   color: #063462;
@@ -870,7 +866,6 @@ html.blue-theme #wrapwrap .main-accordion .accordion-item .panel-body {
 html.blue-theme #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #76baff; }
 
-/* $blue: #2f4077 */
 html.disable-img #wrapwrap {
   /* картинки новостей на главной */
   /* слайдер на главной */

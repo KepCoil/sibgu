@@ -314,8 +314,8 @@ h2.inner-title--no-caps
 		display: block
 		color: #fff
 		border: none
-		padding: 7% 5%
-		background-color: $grey-bgc
+		padding: 10% 5%
+		background-color: $lazure-blue
 		overflow: hidden
 		&:hover
 			.wrap-icon
@@ -324,12 +324,14 @@ h2.inner-title--no-caps
 	.wrap-icon
 		.fa, .icis, .icis::before
 			font-size: 75px
-			color: $blue
+			color: lighten($blue, 5%)
 			transition: transform $main-trans
 	.standart-item-content
 		h3
-			margin: 1.25rem 0 0.875rem 0
+			font-size: 1.25rem
+			margin: 1.5rem 0 1rem 0
 			color: $default-color
+			line-height: 1
 			transition: color $main-trans
 		p
 			font-size: 0.875rem

@@ -7128,7 +7128,6 @@ body.hidden-scroll {
   content: "\e90d";
   color: #fff; }
 
-/* $blue: #2f4077 */
 @font-face {
   font-family: "MyriadPro-Regular";
   font-weight: normal;
@@ -14252,7 +14251,6 @@ body.hidden-scroll {
   content: "\e90d";
   color: #fff; }
 
-/* $blue: #2f4077 */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -14570,8 +14568,8 @@ h2.inner-title--no-caps {
     display: block;
     color: #fff;
     border: none;
-    padding: 7% 5%;
-    background-color: #eee;
+    padding: 10% 5%;
+    background-color: #E3F2FD;
     overflow: hidden; }
     .wrap-standart-item a:hover .wrap-icon .fa, .wrap-standart-item a:hover .wrap-icon .icis, .wrap-standart-item a:hover .wrap-icon .icis::before {
       -webkit-transform: scale(1.1);
@@ -14579,15 +14577,17 @@ h2.inner-title--no-caps {
               transform: scale(1.1); }
   .wrap-standart-item .wrap-icon .fa, .wrap-standart-item .wrap-icon .icis, .wrap-standart-item .wrap-icon .icis::before {
     font-size: 75px;
-    color: #314177;
+    color: #384b89;
     -webkit-transition: -webkit-transform 0.25s ease-out;
     transition: -webkit-transform 0.25s ease-out;
     -o-transition: transform 0.25s ease-out;
     transition: transform 0.25s ease-out;
     transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
   .wrap-standart-item .standart-item-content h3 {
-    margin: 1.25rem 0 0.875rem 0;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem 0;
     color: #212529;
+    line-height: 1;
     -webkit-transition: color 0.25s ease-out;
     -o-transition: color 0.25s ease-out;
     transition: color 0.25s ease-out; }
@@ -16105,7 +16105,6 @@ h2.inner-title--no-caps {
 
 /* end page photo album */
 /* End Gallery section */
-/* $blue: #2f4077 */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
 @media only screen and (max-width: 1900px) {

@@ -15,7 +15,7 @@
 			<div class="row">
 
 
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/studencheskie-organizatsii">
 							<span class="wrap-icon">
@@ -28,7 +28,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="https://timetable.pallada.sibsau.ru/">
 							<span class="wrap-icon">
@@ -41,7 +41,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="https://portfolio.pallada.sibsau.ru/web/login">
 							<span class="wrap-icon">
@@ -54,7 +54,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/hostel">
 							<span class="wrap-icon">
@@ -69,7 +69,7 @@
 				</div>
 
 
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="http://ctsv.sibsau.ru/">
 							<span class="wrap-icon">
@@ -82,7 +82,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/sports-culture">
 							<span class="wrap-icon">
@@ -95,7 +95,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/creativity">
 							<span class="wrap-icon">
@@ -108,7 +108,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-8 col-sm-12">
+				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<!-- Для отключения элемента необходимо добавить класс item-no-work и отключить ссылку onclick="return false"-->
 					<div class="wrap-standart-item item-no-work">
 						<a href="https://antiplagiat.pallada.sibsau.ru/web/login?redirect=http%3A%2F%2Fantiplagiat.pallada.sibsau.ru%2Fantiplagiat" onclick="return false">
