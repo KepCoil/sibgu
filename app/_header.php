@@ -16,7 +16,7 @@
 			<div class="top-line-left-content">
 				<div class="main-logo-wrap clearfix">
 					<a class="main-logo" href="#">
-						<img src="img/main_logo.png" alt="Логотип СибГУ им. М.Ф. Решетнева">
+						<img src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
 					</a>
 				</div>
 
@@ -85,7 +85,7 @@
 			<div class="main-title-wrap clearfix">
 				<a href="#" class="clearfix">
 					<div class="mobile-logo-img-wrap">
-						<img class="mobile-main-logo" src="img/main_logo.png" alt="Логотип СибГУ им. М.Ф. Решетнева">
+						<img class="mobile-main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
 					</div>
 					<h1 class="main-title">Сибирский государственный университет<br> науки и технологий<br>
 						<span class="reshetnev">имени академика М.Ф. Решетнева</span>
