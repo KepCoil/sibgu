@@ -14569,7 +14569,7 @@ h2.inner-title--no-caps {
     color: #fff;
     border: none;
     padding: 10% 5%;
-    background-color: #E3F2FD;
+    background-color: rgba(237, 236, 255, 0.7);
     overflow: hidden; }
     .wrap-standart-item a:hover .wrap-icon .fa, .wrap-standart-item a:hover .wrap-icon .icis, .wrap-standart-item a:hover .wrap-icon .icis::before {
       -webkit-transform: scale(1.1);
@@ -15281,16 +15281,16 @@ h2.inner-title--no-caps {
     .event-item .event-content h3 a {
       color: #212529;
       border-color: transparent;
-      -webkit-transition: border-bottom 0.25s ease-out;
-      -o-transition: border-bottom 0.25s ease-out;
-      transition: border-bottom 0.25s ease-out;
+      -webkit-transition: color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out;
+      transition: color 0.25s ease-out;
       text-decoration: none; }
       .event-item .event-content h3 a:hover, .event-item .event-content h3 a:focus {
-        border-color: #212529;
+        color: #ea2f1c;
         text-decoration: none; }
   .event-item .event-content p {
     margin: 0;
-    font-size: 1.0625rem; }
+    font-size: 1rem; }
 
 /* END SECTION EVENT */
 /* SECTION RECTOR */

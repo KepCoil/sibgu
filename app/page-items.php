@@ -28,6 +28,7 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="https://timetable.pallada.sibsau.ru/">
@@ -41,6 +42,7 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="https://portfolio.pallada.sibsau.ru/web/login">
@@ -54,6 +56,7 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/hostel">
@@ -82,6 +85,7 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/sports-culture">
@@ -95,6 +99,7 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<div class="wrap-standart-item">
 						<a href="/page/creativity">
@@ -108,6 +113,7 @@
 						</a>
 					</div>
 				</div>
+				
 				<div class="col-xxlg-4 col-xlg-6 col-md-8 col-sm-12">
 					<!-- Для отключения элемента необходимо добавить класс item-no-work и отключить ссылку onclick="return false"-->
 					<div class="wrap-standart-item item-no-work">
