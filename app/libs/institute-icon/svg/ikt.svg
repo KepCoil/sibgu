@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg830"
+   version="1.1"
+   viewBox="0 0 52.916668 33.516331"
+   height="33.516331mm"
+   width="52.916668mm">
+  <defs
+     id="defs824" />
+  <metadata
+     id="metadata827">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-17.667429,-64.723267)"
+     id="layer1">
+    <path
+       d="m 44.126251,98.239599 c -0.882047,0 -1.596181,-0.714409 -1.596181,-1.594367 0,-0.696674 0.446047,-1.290944 1.070499,-1.507339 v -0.793336 c -3.934433,-0.03114 -7.866633,-0.294887 -11.80261,-0.759818 0,-4.229188 4.821795,-7.706399 11.014998,-8.14337 v -0.5377 H 38.21957 v -1.328385 h 0.749894 V 68.311113 H 38.21957 v -3.587846 h 0.749894 10.312604 0.749611 v 3.587846 h -0.749611 v 15.264171 h 0.749611 v 1.328385 h -4.59297 v 0.5377 c 6.191114,0.436966 11.015422,3.914182 11.015422,8.14337 -3.932763,0.507934 -7.868315,0.752412 -11.802616,0.764009 v 0.789145 c 0.623605,0.21637 1.070363,0.810665 1.070363,1.507339 0,0.879958 -0.716371,1.594367 -1.595627,1.594367 z M 70.584096,70.534537 H 60.374454 v 10.31302 h 10.209642 z m -10.662262,0 h -9.78356 v 10.31302 h 9.78356 z m -42.254405,0 h 10.210203 v 10.31302 H 17.667429 Z m 10.662824,0 h 9.783566 v 10.31302 h -9.783566 z"
+       style="fill:#003d8f;fill-rule:evenodd;stroke-width:1.39697373"
+       id="path207" />
+  </g>
+</svg>

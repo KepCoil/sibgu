@@ -30,7 +30,7 @@ body
 	font-weight: normal
 
 p
-	margin: 0 0.625rem 0
+	margin: 0 0 0.625rem 0
 @media only screen and (max-width : 991px)
 	p[align=justify]
 		text-align: left
@@ -269,7 +269,7 @@ h2.inner-title--no-caps
 			a
 				display: block
 				color: $blue
-				padding: 0.75rem 1.5rem 0.75rem 0.9375rem
+				padding: 0.75rem 1.5rem 0.75rem 0.75rem
 				font-family: "OpenSans-Regular", sans-serif
 				text-transform: none
 				font-size: 0.875rem
@@ -303,7 +303,7 @@ h2.inner-title--no-caps
 	z-index: 999
 
 
-/* Template standard page items */
+/* Standard items */
 .wrap-standart-item
 	text-align: center
 	margin-bottom: 30px
@@ -314,20 +314,28 @@ h2.inner-title--no-caps
 		display: block
 		color: #fff
 		border: none
-		// border: 10px solid $dark-blue
-		padding: 10% 5%
-		background-color: $blue
+		padding: 7% 5%
+		background-color: $grey-bgc
+		overflow: hidden
 		&:hover
-			i
-				transform: scale(1.1)
-	h3
-		margin: 20px 0 15px 0
-		color: $yellow
+			.wrap-icon
+				.fa, .icis, .icis::before
+					transform: scale(1.1)
 	.wrap-icon
-		i
+		.fa, .icis, .icis::before
 			font-size: 75px
-			color: $yellow
+			color: $blue
 			transition: transform $main-trans
+	.standart-item-content
+		h3
+			margin: 1.25rem 0 0.875rem 0
+			color: $default-color
+			transition: color $main-trans
+		p
+			font-size: 0.875rem
+			margin-bottom: 0
+			color: #333
+
 .item-no-work
 	a
 		cursor: no-drop
