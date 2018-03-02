@@ -130,7 +130,10 @@
 				</div>
 
 			</div>
+			
 
+
+			
 			<div class="news-target-page">
 				<h3>Новости раздела</h3>
 				<div class="wrap-cards-news">
@@ -210,50 +213,13 @@
 
 					</div>
 
-					<!-- <div id="div_nav_panel">
-						<ul id="nav_panel" name="nav_panel" class="pagination">
-					
-							<li id="btn_first_page">
-								<button type="submit" name="page" value="1" class="btn btn-default btn-md" disabled="disabled" data-oe-id="526" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/ul[1]/li[1]/t[1]/button[1]">
-									<span class="fa font-icons-icon fa-angle-double-left"></span>
-								</button>
-							</li>
-					
-							<li id="btn_prv_page">
-								<button type="submit" name="page" class="btn btn-default btn-md" disabled="disabled" data-oe-id="526" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/ul[1]/li[2]/t[1]/button[1]">
-									<span class="fa font-icons-icon fa-angle-left"></span>
-								</button>
-							</li>
-					
-							<li name="page_nav">
-								<button type="submit" name="page" value="1" class="btn btn-default btn-md active">
-									1
-								</button>
-							</li>
-					
-							<li name="page_nav">
-								<button type="submit" name="page" value="2" class="btn btn-default btn-md">
-									2
-								</button>
-							</li>
-					
-							<li id="btn_nxt_page">
-								<button type="submit" name="page" value="2" class="btn btn-default btn-md" data-oe-id="526" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/ul[1]/t[2]/li[1]/t[2]/button[1]">
-									<span class="fa font-icons-icon fa-angle-right"></span>
-								</button>
-					
-							</li>
-							<li id="btn_last_page">
-								<button type="submit" name="page" value="2" class="btn btn-default btn-md" data-oe-id="526" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/div[1]/ul[1]/t[2]/li[2]/t[2]/button[1]">
-									<span class="fa font-icons-icon fa-angle-double-right"></span>
-								</button>
-							</li>
-					
-						</ul>
-					</div> -->
+
 
 				</div>
 			</div>
+
+
+
 		</div>
 	</div>
 </main>

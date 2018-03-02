@@ -95,30 +95,36 @@ $(function() {
 	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
 	function mainSliderResize() {
 
-		var searchSlider = $("div").is(".navaslider");
+		var 
+			searchSlider = $("div").is(".navaslider"),
+			windowSize = $(window).width(),
+			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+			targetMenuWidth = $(".dekstop-target-menu").innerWidth(), 
+			containerWidth = $(".navaslider .container").innerWidth(),
+			sliderWidth = 0,
+			sliderContentWidth = 0;
+			
 		
 		if (!searchSlider) {
 			return;     
 		} 
 		else {
-			var 
-			windowSize = $(window).width(),
-			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
-			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(),   
-			sliderWidth = 0;
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
-			}
-			else {
+				sliderContentWidth = containerWidth - targetMenuWidth;
+			} else {
 				sliderWidth = "100%";
+				sliderContentWidth = "100%";
 			};
 
 			$("#js-main-slider").width(sliderWidth);
+			$(".slide-content-inner").width(sliderContentWidth);
 		}
 		
 	};
+	
 	mainSliderResize();
 	/* Конец функция пересчета ширины слайдера в зависимости от ширины экрана */
 
@@ -128,7 +134,7 @@ $(function() {
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
-		autoplay: true,
+		// autoplay: true,
 		autoplayTimeout: 10000
 	});
 
