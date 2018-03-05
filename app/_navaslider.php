@@ -32,9 +32,9 @@
 				<div class="wrap-main-slide">
 					<div class="slide-img" style="background-image: url(img/slider/slider-1.jpg);"></div>
 					<div class="slide-content-outer">
-						<div class="slide-content-inner">
+						<div class="js-slide-content slide-content-inner">
 							<h3 class="slide-content-inner-title"><a href="#" class="slide-content-inner-link">Далеко-далеко за словесными горами в стране, гласных и согласных</a></h3>
-							<p class="slide-content-inner-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь.</p>
+								<p class="slide-content-inner-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь.</p>
 						</div>
 					</div>
 				</div>
@@ -42,7 +42,7 @@
 				<div class="wrap-main-slide">
 					<div class="slide-img" style="background-image: url(img/slider/slider-2.jpg);"></div>
 					<div class="slide-content-outer">
-						<div class="slide-content-inner">
+						<div class="js-slide-content slide-content-inner">
 							<h3 class="slide-content-inner-title"><a href="#" class="slide-content-inner-link">Далеко-далеко за словесными горами в стране, гласных и согласных</a></h3>
 							<p class="slide-content-inner-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь.</p>
 						</div>
@@ -52,7 +52,7 @@
 				<div class="wrap-main-slide">
 					<div class="slide-img" style="background-image: url(img/slider/slider3.jpg);"></div>
 					<div class="slide-content-outer">
-						<div class="slide-content-inner">
+						<div class="js-slide-content slide-content-inner">
 							<h3 class="slide-content-inner-title"><a href="#" class="slide-content-inner-link">Далеко-далеко за словесными горами в стране, гласных и согласных</a></h3>
 							<p class="slide-content-inner-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Это, журчит, безорфографичный! Которое, семь.</p>
 						</div>

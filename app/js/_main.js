@@ -12,7 +12,7 @@ $(function() {
 	$(".dis-docs a").each(function() { 
 		var getUrl = $(this).attr('href');
 		var checkExt = getUrl.split(".").pop();
-		console.log(checkExt);
+		//console.log(checkExt);
 	});
 
 
@@ -96,35 +96,39 @@ $(function() {
 	function mainSliderResize() {
 
 		var 
-			searchSlider = $("div").is(".navaslider"),
-			windowSize = $(window).width(),
-			marginLeftContainer = $(".navaslider .container").css("margin-left").replace("px", ""),
+			checkSlider 			= $("div").is(".navaslider"),
+			windowSize 				= $(window).width(),
+			marginLeftContainer  = $(".navaslider .container").css("margin-left").replace("px", ""),
 			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth = $(".dekstop-target-menu").innerWidth(), 
-			containerWidth = $(".navaslider .container").innerWidth(),
-			sliderWidth = 0,
-			sliderContentWidth = 0;
-			
+			targetMenuWidth 		= $(".dekstop-target-menu").innerWidth(), 
+			containerWidth 		= $(".navaslider .container").innerWidth(),
+			sliderWidth,
+			slideContentWidth;
 		
-		if (!searchSlider) {
+		if ( !checkSlider ) {
 			return;     
 		} 
 		else {
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
-				sliderContentWidth = containerWidth - targetMenuWidth;
-			} else {
+				slideContentWidth = containerWidth - targetMenuWidth;
+			} 
+			else {
 				sliderWidth = "100%";
-				sliderContentWidth = "100%";
-			};
+				slideContentWidth = "100%";
+				//console.log(slideContentWidth);
+			}
 
 			$("#js-main-slider").width(sliderWidth);
-			$(".slide-content-inner").width(sliderContentWidth);
+			$(".js-slide-content").each(function() {
+				//console.log(slideContentWidth);
+				$(this).css("width", slideContentWidth);
+			});
 		}
 		
 	};
-	
+
 	mainSliderResize();
 	/* Конец функция пересчета ширины слайдера в зависимости от ширины экрана */
 
