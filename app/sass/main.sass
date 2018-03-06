@@ -271,20 +271,6 @@
 				margin-bottom: 0
 				font-family: "MyriadPro-Regular"
 
-	// .owl-dots
-	// 	position: absolute
-	// 	bottom: 5px
-	// 	.owl-dot
-	// 		float: left
-	// 		display: inline-block
-	// 		width: 20px
-	// 		height: 20px
-	// 		margin: 5px
-	// 		border-radius: 50%
-	// 		border: 3px solid $yellow
-	// 		box-shadow: 
-	// 	.owl-dot.active
-	// 		background-color: $yellow
 /* END TARGET NAV and SLIDER */
 
 
@@ -306,6 +292,11 @@
 		overflow: hidden
 		padding: 5px
 		width: 100%
+		.js-photo-responsive
+			height: 100%
+			display: block
+			border: none
+			overflow: hidden
 		a
 			display: block
 			position: relative
@@ -317,12 +308,14 @@
 				.news-img
 					transform: scale(1.08)
 			.news-img
-				width: 100%
+				display: block
 				height: 100%
+				width: 100%
 				background-size: cover
 				background-position: top center
 				position: absolute
 				transition: transform 1.5s ease-out
+				object-fit: cover
 		.wrap-news-content
 			position: absolute
 			top: 0
@@ -357,8 +350,9 @@
 					bottom: 0
 	.wrap-first-news
 		height: 500px
-		img
-			height: 500px
+		.news-img
+			width: 100%
+			height: 100%
 		.wrap-news-content
 			padding: 5%
 			.news-content
@@ -1275,13 +1269,14 @@
 			display: block
 			border: none
 			overflow: hidden
-			height: auto
+			height: 100%
 			&:hover, &:focus
 				border: none
 		&-preview
 			display: inline-block
 			max-width: 100%
 			height: auto
+			object-fit: cover
 
 .sl-overlay
 	opacity: .95

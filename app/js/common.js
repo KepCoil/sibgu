@@ -95,20 +95,21 @@ $(function() {
 	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
 	function mainSliderResize() {
 
-		var 
-			checkSlider 			= $("div").is(".navaslider"),
-			windowSize 				= $(window).width(),
-			marginLeftContainer  = $(".navaslider .container").css("margin-left").replace("px", ""),
-			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-			targetMenuWidth 		= $(".dekstop-target-menu").innerWidth(), 
-			containerWidth 		= $(".navaslider .container").innerWidth(),
-			sliderWidth,
-			slideContentWidth;
+		// var 
+		// 	checkSlider = $("div").is(".navaslider");
 		
-		if ( !checkSlider ) {
+		if ( !($("div").is(".navaslider")) ) {
 			return;     
 		} 
 		else {
+			var
+				windowSize 				= $(window).width(),
+				marginLeftContainer  = $(".navaslider .container").css("margin-left").replace("px", ""),
+				paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
+				targetMenuWidth 		= $(".dekstop-target-menu").innerWidth(), 
+				containerWidth 		= $(".navaslider .container").innerWidth(),
+				sliderWidth,
+				slideContentWidth;
 
 			if (windowSize >= 992) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
@@ -198,8 +199,8 @@ $(function() {
 
 
 	/* Функционал галлереи */
-	// Масштабирование картинок
-	$(".js-photo-gallery-init").each(function() {
+	// Масштабирование картинок img (вместо использования background-image)
+	$(".js-photo-responsive").each(function() {
 		var 
 			th = $(this).height(),
 			tw = $(this).width(),
@@ -255,9 +256,8 @@ $(function() {
 			$(".standart-item-content").height('auto');
 		}
 
-	};
-
-
+	}
+	
 	eqH();
 
 

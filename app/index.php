@@ -16,7 +16,11 @@
 						<div class="col-md-9 col-item-news col-first-news">
 							<div class="wrap-item-news wrap-first-news">
 								<a href="#">
-									<span class="news-img" style="background-image: url(img/news/news1/news_1.jpg)"></span>
+
+									<!-- Для масштабирования пропорций картинок использовать свойство object-fit: cover (не работает в IE и EDGE, но считаю это не критично)
+									<img class="news-img" src="img/news/news1/news_1.jpg" alt="123"> -->
+									<span class="news-img" style="background-image: url(img/news/big-news/mega-news.jpg)"></span>
+									
 									<span class="wrap-news-content">
 										<span class="news-content">
 											<time>27.10.2017</time>
@@ -32,6 +36,7 @@
 								<div class="wrap-item-news">
 									<a href="#">
 										<span class="news-img" style="background-image: url(img/news/news1/news_2.jpg)"></span>
+
 										<span class="wrap-news-content">
 											<span class="news-content">
 												<time>20.10.2017</time>

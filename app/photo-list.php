@@ -46,7 +46,7 @@
 										<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_3.jpg)"></div>
 										<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 										<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_4.jpg)"></div>
-										<div class="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
+										<div class+="phogal-item-img switcher-item" style="background-image: url(img/news/news1/news_1.jpg)"></div>
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
