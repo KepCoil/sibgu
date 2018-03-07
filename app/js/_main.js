@@ -99,7 +99,7 @@ $(function() {
 		// 	checkSlider = $("div").is(".navaslider");
 		
 		if ( !($("div").is(".navaslider")) ) {
-			return;     
+			return;
 		} 
 		else {
 			var
@@ -111,19 +111,21 @@ $(function() {
 				sliderWidth,
 				slideContentWidth;
 
-			if (windowSize >= 992) {
+			if ( (windowSize >= 992) && (windowSize <= 1920) ) {
 				sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
 				slideContentWidth = containerWidth - targetMenuWidth;
 			} 
+			else if (windowSize >= 1920) {
+				sliderWidth = containerWidth - targetMenuWidth;
+				slideContentWidth = containerWidth - targetMenuWidth;
+			}
 			else {
 				sliderWidth = "100%";
 				slideContentWidth = "100%";
-				//console.log(slideContentWidth);
 			}
 
 			$("#js-main-slider").width(sliderWidth);
 			$(".js-slide-content").each(function() {
-				//console.log(slideContentWidth);
 				$(this).css("width", slideContentWidth);
 			});
 		}
@@ -139,12 +141,13 @@ $(function() {
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
-		// autoplay: true,
-		autoplayTimeout: 10000
+		autoplay: true,
+		autoplayTimeout: 7000,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 	});
 
 	
-
 	/* Слайдер секции "Отзывы студентов" */
 	$("#js-comment-student-slider").owlCarousel({
 		loop: true,
@@ -155,7 +158,6 @@ $(function() {
 			992: { items:2 }
 		}
 	});
-
 
 
 	/* Слайдер для парнеров */

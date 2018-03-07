@@ -223,6 +223,23 @@
 			height: 100%
 			.owl-item
 				height: 100%
+	.owl-nav
+		position: absolute
+		top: 40%
+		transform: translateY(-50%)
+		width: 100%
+		.owl-prev, .owl-next
+			position: absolute
+			color: #fff
+			font-size: 3rem
+			transition: color $main-trans
+			&:hover
+				color: $yellow
+		.owl-prev
+			left: 1.5rem
+		.owl-next
+			right: 1.5rem
+
 	.wrap-main-slide
 		height: 100%
 		position: relative
@@ -683,7 +700,7 @@
 				padding: 0
 				li
 					display: inline-block
-					margin-right: 12px
+					margin: 0 12px 12px 0
 				a
 					border: none
 				img
