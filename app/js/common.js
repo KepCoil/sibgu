@@ -20,9 +20,9 @@ $(function() {
 
 	// Перенос оба меню (костыль)
 	var 
-	commonMenuContent  = $("#js-main-common-menu").html(),
-	commonAuditContent = $("#js-main-audit-menu").html(),
-	resLinksContent    = $("#js-res-links").html();
+		commonMenuContent  = $("#js-main-common-menu").html(),
+		commonAuditContent = $("#js-main-audit-menu").html(),
+		resLinksContent    = $("#js-res-links").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent  + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>"  + commonAuditContent + "</ul>");
@@ -95,12 +95,10 @@ $(function() {
 	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
 	function mainSliderResize() {
 
-		// var 
-		// 	checkSlider = $("div").is(".navaslider");
-		
 		if ( !($("div").is(".navaslider")) ) {
 			return;
-		} 
+		}
+
 		else {
 			var
 				windowSize 				= $(window).width(),
@@ -130,7 +128,7 @@ $(function() {
 			});
 		}
 		
-	};
+	}
 
 	mainSliderResize();
 	/* Конец функция пересчета ширины слайдера в зависимости от ширины экрана */
@@ -175,29 +173,27 @@ $(function() {
 	});
 
 	/* Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992 */
-	/*
-	function enablePaSlider() {
+	// function enablePaSlider() {
 		
-		var windowWidth = $(window).width();
+	// 	var windowWidth = $(window).width();
 
-		if (windowWidth <= 992) {
-			$("#js-pa-slider").owlCarousel({
-				loop: true,
-				items: 4,
-				responsiveClass:true,
-				responsive:{
-					0:{
-						items:1,
-					},
-					768:{
-						items:2,
-					}
-				}
-			});
-		}
-	}
-	enablePaSlider();
-	*/
+	// 	if (windowWidth <= 992) {
+	// 		$("#js-pa-slider").owlCarousel({
+	// 			loop: true,
+	// 			items: 4,
+	// 			responsiveClass:true,
+	// 			responsive:{
+	// 				0:{
+	// 					items:1,
+	// 				},
+	// 				768:{
+	// 					items:2,
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+	// }
+	// enablePaSlider();
 
 
 	/* Функционал галлереи */
@@ -250,7 +246,7 @@ $(function() {
 
 		/* Функция equalHeights() при мобильной версии */
 		var windowWidth = $(window).width();
-		if (windowWidth >= 768) {
+		if ( windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
 			$(".standart-item-content").height('auto').equalHeights();
 		} else {

@@ -8013,6 +8013,8 @@ h2.inner-title--no-caps {
   position: absolute;
   height: 550px;
   left: 275px; }
+  .main-slider.owl-carousel:hover .owl-nav .owl-prev, .main-slider.owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1; }
   .main-slider.owl-carousel .owl-stage-outer {
     height: 100%; }
     .main-slider.owl-carousel .owl-stage-outer .owl-stage {
@@ -8021,7 +8023,7 @@ h2.inner-title--no-caps {
         height: 100%; }
   .main-slider.owl-carousel .owl-nav {
     position: absolute;
-    top: 40%;
+    top: 35%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -8029,10 +8031,13 @@ h2.inner-title--no-caps {
     .main-slider.owl-carousel .owl-nav .owl-prev, .main-slider.owl-carousel .owl-nav .owl-next {
       position: absolute;
       color: #fff;
-      font-size: 3rem;
-      -webkit-transition: color 0.25s ease-out;
-      -o-transition: color 0.25s ease-out;
-      transition: color 0.25s ease-out; }
+      opacity: 0.5;
+      font-size: 3.5rem;
+      -webkit-transition: color 0.25s ease-out, opacity 0.25s ease-out;
+      -o-transition: color 0.25s ease-out, opacity 0.25s ease-out;
+      transition: color 0.25s ease-out, opacity 0.25s ease-out; }
+      .main-slider.owl-carousel .owl-nav .owl-prev .fa, .main-slider.owl-carousel .owl-nav .owl-next .fa {
+        text-shadow: 1px 1px 0px transparent; }
       .main-slider.owl-carousel .owl-nav .owl-prev:hover, .main-slider.owl-carousel .owl-nav .owl-next:hover {
         color: #ffe082; }
     .main-slider.owl-carousel .owl-nav .owl-prev {
@@ -8092,7 +8097,7 @@ h2.inner-title--no-caps {
   margin: 0 -5px; }
 
 .news-sect h2 {
-  margin: 0 0 35px 0; }
+  margin: 0 0 2.1875rem 0; }
 
 .news-sect .col-item-news {
   padding: 0; }
@@ -9370,8 +9375,6 @@ h2.inner-title--no-caps {
     #wrapwrap .navaslider .main-slider.owl-carousel {
       left: 0;
       height: 350px; }
-  #wrapwrap .main-slider.owl-carousel .owl-nav {
-    display: none; }
   #wrapwrap > footer .foot-first-level {
     padding: 20px 0; }
     #wrapwrap > footer .foot-first-level .wrap-foot-level {
@@ -9395,8 +9398,8 @@ h2.inner-title--no-caps {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 85%; }
-  #wrapwrap .main-sect h2 {
-    margin-bottom: 30px; }
+  #wrapwrap .main-slider.owl-carousel .owl-nav {
+    display: none; }
   #wrapwrap .foot-first-level .second-foot-line .foot-contacts-content-col-2 {
     margin-top: 0; }
   #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button {

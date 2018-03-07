@@ -217,6 +217,10 @@
 	position: absolute
 	height: 550px
 	left: 275px
+	&:hover
+		.owl-nav
+			.owl-prev, .owl-next
+				opacity: 1
 	.owl-stage-outer
 		height: 100%
 		.owl-stage
@@ -225,14 +229,17 @@
 				height: 100%
 	.owl-nav
 		position: absolute
-		top: 40%
+		top: 35%
 		transform: translateY(-50%)
 		width: 100%
 		.owl-prev, .owl-next
 			position: absolute
 			color: #fff
-			font-size: 3rem
-			transition: color $main-trans
+			opacity: 0.5
+			font-size: 3.5rem
+			transition: color $main-trans, opacity $main-trans
+			.fa
+				text-shadow: 1px 1px 0px transparent
 			&:hover
 				color: $yellow
 		.owl-prev
@@ -297,7 +304,7 @@
 	.row-news
 		margin: 0 -5px
 	h2
-		margin: 0 0 35px 0
+		margin: 0 0 2.1875rem 0
 	.col-item-news
 		padding: 0
 		.other-link
