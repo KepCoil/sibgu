@@ -13,35 +13,160 @@
 			<h2 class="inner-title">Учебные подразделения</h2>
 			<div class="row">
 
+				<div class="page-institute">
 
-				<div class="col-lg-6 col-md-8 col-sm-12">
-					<div class="wrap-standart-item">
-						<a href="#">
-							<span class="wrap-icon">
-								<span class="icis icis-kolledzh"></span>
-							</span>
-							<span class="standart-item-content">
-								<h3>Аэрокосмический колледж</h3>
-								<p>Аэрокосмический колледж создан в апреле 2008 года путем реорганизации двух учебных заведений среднего профессионального образования: Красноярского техникума космического машиностроения и Красноярского машиностроительного колледжа, вошедших в состав ФГБОУ ВО «Сибирский государственный университет науки и технологий имени академика М.Ф. Решетнёва».</p>
-							</span>
-						</a>
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_1.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт гражданской авиации и таможенного дела</h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Cвой взобравшись всемогущая океана если меня парадигматическая однажды. Безопасную текста живет вопроса. Страна текст его ее, предупредила всеми дал всемогущая гор которой, текстами города повстречался выйти переписывается скатился бросил обеспечивает вопроса решила образ текста над.
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
 					</div>
-				</div>
 
-				<div class="col-lg-6 col-md-8 col-sm-12">
-					<div class="wrap-standart-item">
-						<a href="#">
-							<span class="wrap-icon">
-								<span class="icis icis-kolledzh"></span>
-							</span>
-							<span class="standart-item-content">
-								<h3>Институт информатики и телекоммуникаций </h3>
-								<p>Аэрокосмический колледж создан в апреле 2008 года путем реорганизации двух учебных заведений среднего профессионального образования: Красноярского техникума космического машиностроения и Красноярского машиностроительного колледжа, вошедших в состав ФГБОУ ВО «Сибирский государственный университет науки и технологий имени академика М.Ф. Решетнёва».</p>
-							</span>
-						</a>
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_2.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт предпринимательства и международного бизнеса </h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. От всех, возвращайся до щеке прямо, свой взобравшись всемогущая океана если меня парадигматическая однажды. Безопасную текста живет вопроса. Страна текст его ее, предупредила всеми дал всемогущая гор которой, текстами города повстречался выйти переписывается скатился бросил обеспечивает вопроса решила образ текста над.
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
 					</div>
-				</div>
 
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_3.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт гражданской авиации и таможенного дела</h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Страна что силуэт родного подзаголовок всеми прямо, проектах великий то. Своих взобравшись приставка свое которой.
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_4.jpg);"></div>
+							<!-- <div class="inst-item-title">
+								
+							</div> -->
+							<div class="inst-item-content">
+								<h3>Институт менеджмента и социальных технол </h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О букв необходимыми залетают это своих буквенных lorem единственное вопрос моей по всей текст речью приставка предложения запятых, она ручеек меня своего собрал жизни повстречался над!
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_5.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт гражданской авиации и таможенного дела</h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Cвой взобравшись всемогущая океана если меня парадигматическая однажды
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_6.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт предпринимательства и международного бизнеса и международного бизнеса</h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. 
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_7.jpg);"></div>
+							<div class="inst-item-content">
+								<h3>Институт гражданской авиации и таможенного дела</h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Страна что силуэт родного подзаголовок всеми прямо.
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-8 col-sm-12">
+						<div class="wrap-inst-item">
+							<div class="inst-item-img" style="background-image: url(img/news/news1/news_4.jpg);"></div>
+							<!-- <div class="inst-item-title">
+								
+							</div> -->
+							<div class="inst-item-content">
+								<h3>Институт менеджмента и социальных технол </h3>
+								<div class="inst-item-content-preview">
+									<div class="inst-item-content-text">
+										Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О букв необходимыми залетают это своих буквенных lorem единственное вопрос моей по всей текст речью приставка предложения запятых, она ручеек меня своего собрал жизни повстречался над!
+									</div>
+									<div class="inst-item-content-link">
+										<a href="#" class="standart-button">Подробнее</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+
+				</div>
 			</div>
 		</div>
 	</div>

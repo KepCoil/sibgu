@@ -1079,7 +1079,47 @@
 				list-style-type: decimal
 /* END YA MAPS */
 
+/* Page institute */
+.wrap-inst-item
+	position: relative
+	height: 20rem
+	overflow: hidden
+	margin-bottom: 30px
+	&:hover
+		.inst-item-content
+			height: 100%
+			bottom: 0 !important
+	.inst-item-img
+		display: block
+		height: 100%
+		width: 100%
+		background-size: cover
+		background-position: top center
+		position: absolute
+	.inst-item-content
+		background-color: rgba(0, 0, 0, 0.7)
+		position: absolute
+		color: #fff
+		padding: 0 0.75rem
+		height: auto
+		width: 100%
+		transition: bottom 0.35s ease-out
+		h3
+			margin: 0
+			padding-top: 1rem
+			padding-bottom: 1rem
+			font-size: 1.375rem
+			line-height: 1.1
+		&-preview
+			padding-bottom: 1rem 0
+		&-text
+			font-size: 0.875rem
+		.standart-button
+			margin: 1.25rem 0
+			padding: 5px 10px
 
+
+/* End page institute */
 
 /* table-jobs */
 .table-jobs
@@ -1309,6 +1349,7 @@
 /* end page photo album */
 
 /* End Gallery section */
+
 
 
 @import "media"

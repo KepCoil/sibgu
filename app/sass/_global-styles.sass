@@ -51,6 +51,21 @@ a
 button
 	outline: none !important
 
+a.standart-button
+	text-decoration: none
+	display: inline-block
+	padding: 10px 20px
+	color: #fff
+	background-color: #4f8fcd
+	border: 2px solid lighten(#4f8fcd, 5%)
+	border-radius: 2px
+	font-family: "OpenSans-Semibold", sans-serif
+	transition: background-color $main-trans, border-color $main-trans, color $main-trans 
+	&:hover, &:focus, &:active
+		background-color: $accent-links
+		border-color: $accent-links
+		color: #fff
+
 h1, .h1, .main-title
 	font-size: 30px
 	line-height: 1.3

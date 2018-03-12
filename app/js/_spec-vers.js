@@ -220,15 +220,12 @@ $(function() {
 	/* Конец цветовые схемы */
 
 
-
-
-
 	/* Отключаем версию для слабовидящих для мобильных устройств, ширина <= 992px */
 	$(window).resize(function() {
 		var windowWidthCecutient = $(window).width();
 		if ( (windowWidthCecutient <= 992) && ($.cookie("CecutientCookie")=="on") ) {
 			CecutientOff();
-		};
+		}
 	});
 		
 
