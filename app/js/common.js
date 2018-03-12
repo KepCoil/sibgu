@@ -17,7 +17,6 @@ $(function() {
 
 
 	/* МОБИЛЬНОЕ МЕНЮ */
-
 	// Перенос оба меню (костыль)
 	var 
 		commonMenuContent  = $("#js-main-common-menu").html(),
@@ -98,7 +97,6 @@ $(function() {
 		if ( !($("div").is(".navaslider")) ) {
 			return;
 		}
-
 		else {
 			var
 				windowSize 				= $(window).width(),
@@ -236,7 +234,7 @@ $(function() {
 
 
 	/* Функция уравнивания высоты различных элементов */
-	function eqH() {
+	function equalHeightElements() {
 		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
 		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
@@ -249,14 +247,15 @@ $(function() {
 		if ( windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
 			$(".standart-item-content").height('auto').equalHeights();
-		} else {
+		} 
+		else {
 			$(".wrap-cards-news .wrap-news-content").height('auto');
 			$(".standart-item-content").height('auto');
 		}
 
 	}
 	
-	eqH();
+	equalHeightElements();
 
 
 	/* Bootstrap accordion  */
@@ -272,9 +271,9 @@ $(function() {
 
 	// Функция перерасчета высоты карты в завимисимости от высоты экрана
 	function resizeHeightMapFilials() {
-		var heightMapFilials = parseInt($(window).height() * 0.7);
+		var heightMapFilials = parseInt( $(window).height() * 0.7 );
 		$("#js-corpuses-map").css({"height": heightMapFilials});
-	};
+	}
 	resizeHeightMapFilials();
 
 
@@ -304,7 +303,7 @@ $(function() {
 
 	/* Функции при ресайзе экрана */
 	$(window).resize(function() {
-		eqH();
+		equalHeightElements();
 		mainSliderResize();
 		resizeHeightMapFilials();
 		// enablePaSlider();
@@ -535,11 +534,12 @@ $(function() {
 
 
 
+
+
 	/* Отключаем версию для слабовидящих для мобильных устройств, ширина <= 992px */
 	$(window).resize(function() {
 		var windowWidthCecutient = $(window).width();
-		if (windowWidthCecutient <= 992) {
-			console.log('ширина = ' + windowWidthCecutient);
+		if ( (windowWidthCecutient <= 992) && ($.cookie("CecutientCookie")=="on") ) {
 			CecutientOff();
 		};
 	});

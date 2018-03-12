@@ -8031,7 +8031,7 @@ h2.inner-title--no-caps {
     .main-slider.owl-carousel .owl-nav .owl-prev, .main-slider.owl-carousel .owl-nav .owl-next {
       position: absolute;
       color: #fff;
-      opacity: 0.5;
+      opacity: 0.35;
       font-size: 3.5rem;
       -webkit-transition: color 0.25s ease-out, opacity 0.25s ease-out;
       -o-transition: color 0.25s ease-out, opacity 0.25s ease-out;
