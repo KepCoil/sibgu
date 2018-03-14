@@ -9,10 +9,30 @@ $(function() {
 
 
 	/* Определение расширение файлов */
-	$(".dis-docs a").each(function() { 
-		var getUrl = $(this).attr('href');
-		var checkExt = getUrl.split(".").pop();
-		//console.log(checkExt);
+	$("#wrap a").each(function() { 
+		var 
+			getUrl = $(this).attr("href"),
+			checkExt = getUrl.split(".").pop();
+
+		$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+
+		if (checkExt == "pdf") {
+			$(this).addClass("doc-file--pdf");
+			$(this).children(".doc-file-icon").text("pdf");
+		}
+		else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
+			$(this).addClass("doc-file--doc");
+			$(this).children(".doc-file-icon").text("doc");
+		}
+		else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
+			$(this).addClass("doc-file--xlsx");
+			$(this).children(".doc-file-icon").text("xlsx");
+		}
+		else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
+			$(this).addClass("doc-file--pptx");
+			$(this).children(".doc-file-icon").text("pptx");
+		}
+
 	});
 
 
