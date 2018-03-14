@@ -2,10 +2,6 @@
 <?php include("_header.php") ?>
 <?php include("_inner-menu.php") ?>
 
-<!-- 
-	Шаблонная страница, предназначенная для выкладывания в плиточном стиле ссылки с иконками font-awesome,
-	например для "Студенту", "Ученому", "Сотруднику"
--->
 
 <main>
 	<div id="wrap">
@@ -13,7 +9,7 @@
 			<h2 class="inner-title">Учебные подразделения</h2>
 			<div class="row">
 
-				<div class="page-institute">
+				<div class="page-list-institute">
 
 					<div class="col-lg-6 col-md-8 col-sm-12">
 						<div class="wrap-inst-item">

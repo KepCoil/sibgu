@@ -173,12 +173,12 @@ $(function() {
 	function resizeInstituteItems() {
 		$(".inst-item-content").each(function() {
 			var heightPreview =  $(this).children(".inst-item-content-preview").innerHeight();
-			$(this).css("bottom", - heightPreview);
-		});
-			
+			$(this).css("bottom", -heightPreview);
+		});	
 	}
-
 	resizeInstituteItems();
+
+
 
 
 	/* Слайдер секции "Наши партнеры". Срабатывает только на ширене <= 992 */
