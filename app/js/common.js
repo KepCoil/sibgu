@@ -9,12 +9,13 @@ $(function() {
 
 
 	/* Определение расширение файлов */
-	$("#wrap a").each(function() { 
+	$("#wrap .doc-file").each(function() { 
 		var 
 			getUrl = $(this).attr("href"),
 			checkExt = getUrl.split(".").pop();
 
-		$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+		//$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+		$(this).wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
 
 		if (checkExt == "pdf") {
 			$(this).addClass("doc-file--pdf");
