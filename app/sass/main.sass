@@ -1118,6 +1118,11 @@
 			font-family: "OpenSans-Regular"
 			margin: 1.25rem 0
 			padding: 4px 8px
+			border: 1px solid #fff
+			background-color: transparent
+			&:hover, &:focus, &:active
+				background-color: $accent-links
+				border-color: $accent-links
 
 
 /* End page institute */
@@ -1351,7 +1356,28 @@
 
 /* End Gallery section */
 
-
+/* Gorisont paper */
+.gorisont-paper
+	.row-year-gorisont
+		margin-bottom: 2rem
+	.gorisont-item
+		text-align: center
+		a
+			font-family: "OpenSans-SemiBold"
+			border: none
+			color: $blue
+			&:hover
+				color: $accent-links
+		&-img
+			display: block
+			width: auto
+			min-width: 125px
+			max-width: 150px
+			margin: 0 auto
+		&-title
+			display: inline-block
+			margin: 1rem 0 2rem 0
+/* End Gorisont paper */
 
 @import "media"
 

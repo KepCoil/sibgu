@@ -9071,7 +9071,12 @@ h2.inner-title--no-caps {
     .wrap-inst-item .inst-item-content .standart-button {
       font-family: "OpenSans-Regular";
       margin: 1.25rem 0;
-      padding: 4px 8px; }
+      padding: 4px 8px;
+      border: 1px solid #fff;
+      background-color: transparent; }
+      .wrap-inst-item .inst-item-content .standart-button:hover, .wrap-inst-item .inst-item-content .standart-button:focus, .wrap-inst-item .inst-item-content .standart-button:active {
+        background-color: #ea2f1c;
+        border-color: #ea2f1c; }
 
 /* End page institute */
 /* table-jobs */
@@ -9293,6 +9298,29 @@ h2.inner-title--no-caps {
 
 /* end page photo album */
 /* End Gallery section */
+/* Gorisont paper */
+.gorisont-paper .row-year-gorisont {
+  margin-bottom: 2rem; }
+
+.gorisont-paper .gorisont-item {
+  text-align: center; }
+  .gorisont-paper .gorisont-item a {
+    font-family: "OpenSans-SemiBold";
+    border: none;
+    color: #314177; }
+    .gorisont-paper .gorisont-item a:hover {
+      color: #ea2f1c; }
+  .gorisont-paper .gorisont-item-img {
+    display: block;
+    width: auto;
+    min-width: 125px;
+    max-width: 150px;
+    margin: 0 auto; }
+  .gorisont-paper .gorisont-item-title {
+    display: inline-block;
+    margin: 1rem 0 2rem 0; }
+
+/* End Gorisont paper */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
 @media only screen and (max-width: 1900px) {

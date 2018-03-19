@@ -9,29 +9,36 @@ $(function() {
 
 
 	/* Определение расширение файлов */
-	$("#wrap .doc-file").each(function() { 
-		var 
+	$("#wrap a").each(function() { 
+
+		var
+			filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"];
 			getUrl = $(this).attr("href"),
 			checkExt = getUrl.split(".").pop();
 
-		//$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
-		$(this).wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+		if ( !(filesExt.indexOf(checkExt) != -1) ) {
+			return;
+		}
+		else {
+			
+			$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
 
-		if (checkExt == "pdf") {
-			$(this).addClass("doc-file--pdf");
-			$(this).children(".doc-file-icon").text("pdf");
-		}
-		else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
-			$(this).addClass("doc-file--doc");
-			$(this).children(".doc-file-icon").text("doc");
-		}
-		else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
-			$(this).addClass("doc-file--xlsx");
-			$(this).children(".doc-file-icon").text("xlsx");
-		}
-		else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
-			$(this).addClass("doc-file--pptx");
-			$(this).children(".doc-file-icon").text("pptx");
+			if (checkExt == "pdf") {
+				$(this).addClass("doc-file--pdf");
+				$(this).children(".doc-file-icon").text("pdf");
+			}
+			else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
+				$(this).addClass("doc-file--doc");
+				$(this).children(".doc-file-icon").text("doc");
+			}
+			else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
+				$(this).addClass("doc-file--xlsx");
+				$(this).children(".doc-file-icon").text("xlsx");
+			}
+			else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
+				$(this).addClass("doc-file--pptx");
+				$(this).children(".doc-file-icon").text("pptx");
+			}
 		}
 
 	});
