@@ -1,49 +1,5 @@
 $(function() {
 
-	/* СКРИПТ ПРОВЕРКИ НА IE 8 И НИЖЕ */
-	// if(document.all && !document.addEventListener){
-	//    console.log("ie");
-	//    alert("ie");
-	// }
-	/*  */
-
-
-	/* Определение расширение файлов */
-	$("#wrap a").each(function() { 
-
-		var
-			filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"];
-			getUrl = $(this).attr("href"),
-			checkExt = getUrl.split(".").pop();
-
-		if ( !(filesExt.indexOf(checkExt) != -1) ) {
-			return;
-		}
-		else {
-			
-			$(this).addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
-
-			if (checkExt == "pdf") {
-				$(this).addClass("doc-file--pdf");
-				$(this).children(".doc-file-icon").text("pdf");
-			}
-			else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
-				$(this).addClass("doc-file--doc");
-				$(this).children(".doc-file-icon").text("doc");
-			}
-			else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
-				$(this).addClass("doc-file--xlsx");
-				$(this).children(".doc-file-icon").text("xlsx");
-			}
-			else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
-				$(this).addClass("doc-file--pptx");
-				$(this).children(".doc-file-icon").text("pptx");
-			}
-		}
-
-	});
-
-
 	/* МОБИЛЬНОЕ МЕНЮ */
 	// Перенос оба меню (костыль)
 	var 
@@ -233,8 +189,54 @@ $(function() {
 	// enablePaSlider();
 
 
+	/* Определение расширение файлов для подстановки иконки (есть весомые подозрения, что скрипт написан максимально стремно) */
+	$("#wrap a").each(function() {
+		var
+			th = $(this),
+			filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
+			getUrl = $(this).attr("href"),
+			checkExt = getUrl.split(".").pop();
+
+		// Сначала проверяем на наличие классов
+		if ( th.is(".doc-file") ) {
+			th.wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+
+ 			if 	  ( th.is(".doc-file--pdf") ) { th.children(".doc-file-icon").text("pdf");  }
+ 			else if ( th.is(".doc-file--doc") ) { th.children(".doc-file-icon").text("doc");  }
+ 			else if ( th.is(".doc-file--xlsx")) { th.children(".doc-file-icon").text("xlsx"); }
+ 			else if ( th.is(".doc-file--pptx")) { th.children(".doc-file-icon").text("pptx"); }
+		}
+
+		// Если 1 if не отработал, то проверяем куда ведет ссылка
+		else if ( !(filesExt.indexOf(checkExt) != -1) ) {
+			return;	
+		}
+
+		else {
+			th.addClass("doc-file").wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
+
+			if ( (checkExt == "pdf") ) {
+				th.addClass("doc-file--pdf");
+				th.children(".doc-file-icon").text("pdf");
+			}
+			else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
+				th.addClass("doc-file--doc");
+				th.children(".doc-file-icon").text("doc");
+			}
+			else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
+				th.addClass("doc-file--xlsx");
+				th.children(".doc-file-icon").text("xlsx");
+			}
+			else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
+				th.addClass("doc-file--pptx");
+				th.children(".doc-file-icon").text("pptx");
+			}
+		}
+	});
+
+
 	/* Функционал галлереи */
-	// Масштабирование картинок img (вместо использования background-image)
+	// Масштабирование картинок img (вместо использования background-image), для списка фоток альбома
 	$(".js-photo-responsive").each(function() {
 		var 
 			th = $(this).height(),
@@ -268,7 +270,6 @@ $(function() {
 
 	// Активация плагина галлереи
 	$(".js-photo-gallery-init").simpleLightbox();
-
 	/* Конец функционал галлереи */
 
 
@@ -292,7 +293,7 @@ $(function() {
 			$(".standart-item-content").height('auto');
 		}
 
-	}
+	};
 	
 	equalHeightElements();
 
@@ -308,7 +309,7 @@ $(function() {
 
 
 
-	// Функция перерасчета высоты карты в завимисимости от высоты экрана
+	/* Функция перерасчета высоты карты в завимисимости от высоты экрана */
 	function resizeHeightMapFilials() {
 		var heightMapFilials = parseInt( $(window).height() * 0.7 );
 		$("#js-corpuses-map").css({"height": heightMapFilials});
