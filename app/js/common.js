@@ -280,6 +280,7 @@ $(function() {
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
 		$(".dis-docs").height('auto').equalHeights();
 		$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();
+		$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
 
 
 		/* Функция equalHeights() при мобильной версии */

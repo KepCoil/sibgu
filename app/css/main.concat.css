@@ -7377,6 +7377,7 @@ h2.inner-title--no-caps {
     display: inline-block;
     position: relative;
     width: 2.5rem;
+    bottom: 2px;
     color: #fff;
     font-family: "OpenSansCondensed-Bold";
     font-style: normal;
@@ -9316,11 +9317,34 @@ h2.inner-title--no-caps {
     min-width: 125px;
     max-width: 150px;
     margin: 0 auto; }
+    .gorisont-paper .gorisont-item-img img {
+      width: 100%;
+      height: auto; }
   .gorisont-paper .gorisont-item-title {
     display: inline-block;
     margin: 1rem 0 2rem 0; }
 
 /* End Gorisont paper */
+/* Patents */
+.table-patents > thead > tr > th,
+.table-patents > tbody > tr > th,
+.table-patents > tfoot > tr > th,
+.table-patents > thead > tr > td,
+.table-patents > tbody > tr > td,
+.table-patents > tfoot > tr > td {
+  padding: 0.625rem 2rem 0.875rem 0.5rem !important; }
+
+.table-patents > thead > tr > th {
+  text-transform: uppercase; }
+
+.table-patents a {
+  color: #212529;
+  border-color: #212529; }
+  .table-patents a:hover {
+    color: #ea2f1c;
+    border-color: #ea2f1c; }
+
+/* End patents */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
 @media only screen and (max-width: 1900px) {

@@ -102,7 +102,7 @@
 
 				<a class="other-func-item" href="/page/ovz">
 					<i class="fa fa-wheelchair" aria-hidden="true"></i>
-					<span>Доступное образования</span>
+					<span>Доступное образование</span>
 				</a>
 
 				<a class="other-func-item info-uni" href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>

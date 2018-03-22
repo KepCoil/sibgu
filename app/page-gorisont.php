@@ -16,8 +16,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207_2.png" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -25,8 +30,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -34,8 +44,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_197.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -43,8 +58,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_203.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -52,8 +72,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -61,8 +86,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -70,8 +100,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -79,15 +114,19 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
 
 					</div>
 				</div>
-
 
 				<div class="row-year-gorisont">
 					<h3>Выпуск за <time>2017</time> год:</h3>
@@ -96,8 +135,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207_2.png" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -105,8 +149,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -114,8 +163,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_197.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -123,8 +177,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_203.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -132,8 +191,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -141,8 +205,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -150,8 +219,13 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -159,14 +233,22 @@
 						<div class="col-lg-4 col-sm-6 col-xs-12">
 							<div class="gorisont-item">
 								<a href="#">
-									<img class="gorisont-item-img" src="img/gorisont/gorisont1.png" alt="Что-нибудь надо сюда вывести">
-									<span class="gorisont-item-title">"Горизонт" №8 (213), декабрь 2017 г.</span>
+									<span class="gorisont-item-img">
+										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+									</span>
+									
+									<span class="gorisont-item-title">
+										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+									</span>
 								</a>
 							</div>
 						</div>
 
 					</div>
 				</div>
+
+
+				
 
 
 			</div>

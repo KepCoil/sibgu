@@ -1374,10 +1374,33 @@
 			min-width: 125px
 			max-width: 150px
 			margin: 0 auto
+			img
+				width: 100%
+				height: auto
 		&-title
 			display: inline-block
 			margin: 1rem 0 2rem 0
 /* End Gorisont paper */
+
+/* Patents */
+.table-patents
+	> thead > tr > th, 
+	> tbody > tr > th, 
+	> tfoot > tr > th, 
+	> thead > tr > td, 
+	> tbody > tr > td, 
+	> tfoot > tr > td
+		padding: 0.625rem 2rem 0.875rem 0.5rem !important
+	> thead > tr > th
+		text-transform: uppercase
+	a
+		color: $default-color
+		border-color: $default-color
+		&:hover
+			color: $accent-links
+			border-color: $accent-links
+
+/* End patents */
 
 @import "media"
 
