@@ -7216,10 +7216,11 @@ body {
   line-height: 1.4;
   font-weight: normal; }
 
+ul {
+  list-style: square outside; }
+
 #wrap {
   margin: 1.875rem 0 3rem 0; }
-  #wrap ul {
-    list-style: square outside; }
   #wrap ul.style-dots {
     list-style-type: none; }
     #wrap ul.style-dots li {
@@ -7861,7 +7862,7 @@ h2.inner-title--no-caps {
     font-family: "OpenSans-Semibold", sans-serif;
     font-size: 1rem;
     border: 0;
-    padding: 12px 15px;
+    padding: 0.75rem 1rem;
     background-color: #eee;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -9010,7 +9011,7 @@ h2.inner-title--no-caps {
   .map-filials .fialial-item-size {
     width: 100%; }
   .map-filials > ul {
-    list-style-type: none;
+    list-style-type: none !important;
     margin: 0;
     padding: 0; }
     .map-filials > ul > li {
