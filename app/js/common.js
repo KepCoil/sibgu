@@ -306,7 +306,12 @@ $(function() {
 	})
 	.on('hide.bs.collapse', function(e) {
 		$(e.target).prev('.panel-heading').removeClass('active');
-	});   
+	});
+	
+	$(".res-hide >ul").hide();
+	$(".res-hide h3 span").click(function(){
+		$(this).parent().next().slideToggle();
+	});	   
 
 
 

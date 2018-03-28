@@ -14,6 +14,11 @@
 	</ul>
 </div>
 
+
+<!-- id="wrapwrap" -->
+</div>
+
+
 <!-- scripts -->
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -21,7 +26,6 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 <![endif]-->
-
 
 <!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты -->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
@@ -31,11 +35,10 @@
 	<script src="libs/bootstrap-tabs/bootstrap.js"></script>
 <!--  -->
 
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
+<script defer src="js/libs.min.js"></script>
+<script defer src="js/common.js"></script>
+<!-- end  scripts -->
 
-<!-- id="wrapwrap" -->
-</div>
 
 </body>
 </html>

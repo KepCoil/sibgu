@@ -39,7 +39,8 @@
 								<span class="caret"></span>
 							</button>
 
-							<ul id="js-res-links" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<!-- <ul id="js-res-links" class="dropdown-menu">
+
 								<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
 								<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
 								<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
@@ -53,7 +54,36 @@
 								<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
 								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
 								<li><a target="_blank" href="http://zhf.sibsau.ru/">Филиал СибГУ г.Новосибирске</a></li>
-							</ul>
+							</ul> -->
+
+							<div id="js-res-links" class="dropdown-menu">
+
+								<div class="res-hide">
+									<h3><span>Список №2+</span></h3>
+									<ul>
+										<li>1111</li>
+										<li>2222</li>
+										<li>333</li>
+									</ul>
+								</div>
+								<div class="res-hide">
+									<h3><span>Список №2+</span></h3>
+									<ul>
+										<li>1111</li>
+										<li>2222</li>
+										<li>333</li>
+									</ul>
+								</div>
+								<div class="res-hide">
+									<h3><span>Список №2+</span></h3>
+									<ul>
+										<li>1111</li>
+										<li>2222</li>
+										<li>333</li>
+									</ul>
+								</div>
+								
+							</div>
 
 						</div>
 					</div>
@@ -74,7 +104,7 @@
 				</div>
 
 			</div>
-	
+
 
 		</div>
 	</div>

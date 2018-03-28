@@ -54,7 +54,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery-cookie/jquery.cookie.js'
 		])
 	.pipe(concat('libs.min.js'))
-	// .pipe(uglify()) // Минимизация JS
+	//.pipe(uglify()) // Минимизация JS
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
 });

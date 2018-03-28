@@ -7210,36 +7210,38 @@ body {
   overflow-x: hidden;
   opacity: 1;
   background-color: #fff;
-  font-family: "OpenSans-Regular", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   color: #212529;
+  font-family: "OpenSans-Regular", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-size: 0.9375rem;
   line-height: 1.4;
   font-weight: normal; }
 
+/* odoo content tag wrap */
+#wrap {
+  margin: 1.875rem 0 3rem 0; }
+
 ul {
   list-style: square outside; }
 
-#wrap {
-  margin: 1.875rem 0 3rem 0; }
-  #wrap ul.style-dots {
-    list-style-type: none; }
-    #wrap ul.style-dots li {
-      margin-bottom: 0.5rem; }
-      #wrap ul.style-dots li::before {
-        content: '';
-        display: inline-block;
-        width: 7px;
-        height: 7px;
-        top: 7px;
-        background-color: #314177;
-        position: relative;
-        float: left;
-        margin-left: -1.5rem;
-        margin-right: -0.4375rem;
-        overflow: hidden;
-        line-height: inherit;
-        text-align: left;
-        vertical-align: top; }
+ul.ul-accent {
+  list-style-type: none; }
+  ul.ul-accent li {
+    margin-bottom: 0.35rem; }
+    ul.ul-accent li::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      top: 7px;
+      background-color: #314177;
+      position: relative;
+      float: left;
+      margin-left: -1.5rem;
+      margin-right: -0.4375rem;
+      overflow: hidden;
+      line-height: inherit;
+      text-align: left;
+      vertical-align: top; }
 
 p {
   margin: 0 0 0.625rem 0; }
@@ -7275,7 +7277,7 @@ a.standart-button {
   border: 2px solid #639cd3;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  font-family: "OpenSans-Semibold", sans-serif;
+  font-family: "OpenSans-Semibold";
   -webkit-transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, border-color 0.25s ease-out, color 0.25s ease-out; }
@@ -7284,17 +7286,18 @@ a.standart-button {
     border-color: #ea2f1c;
     color: #fff; }
 
-h1, .h1, h1.main-title {
+h1, .h1, .main-title {
   font-size: 30px;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
+  font-weight: normal;
   text-transform: uppercase;
   font-weight: normal; }
 
 h2, .h2 {
   font-size: 1.75rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
   font-weight: normal;
   text-align: left;
   margin-top: 1rem;
@@ -7303,7 +7306,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1.25rem; }
@@ -7311,7 +7314,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1.25rem; }
@@ -7319,7 +7322,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.125rem;
   line-height: 1.2;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
   font-weight: normal;
   margin-top: 0.5rem;
   margin-bottom: 0.625rem; }
@@ -7327,7 +7330,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   line-height: 1.2;
-  font-family: "MyriadPro-SemiBold", sans-serif;
+  font-family: "MyriadPro-SemiBold";
   font-weight: normal;
   margin-top: 0.5rem;
   margin-bottom: 0.625rem; }
@@ -7335,7 +7338,7 @@ h6, .h6 {
 h2.inner-title,
 h2.inner-title--no-caps {
   font-size: 1.75rem;
-  font-family: "OpenSans-Semibold", sans-serif;
+  font-family: "OpenSans-Semibold";
   color: #314177;
   margin: 0.625rem 0 1.875rem 0;
   text-align: left; }
@@ -7346,23 +7349,7 @@ h2.inner-title {
 h2.inner-title--no-caps {
   font-size: 1.5rem; }
 
-.docs-section .wrap-doc-file {
-  margin-bottom: 0.7rem; }
-
-.docs-section-title {
-  font-size: 1.375rem;
-  margin-top: 0; }
-
-.docs-section a {
-  border-bottom: none; }
-
-.docs-section span {
-  vertical-align: bottom;
-  border-bottom: 1px solid #076fc8;
-  -webkit-transition: border-color 0.25s ease-out;
-  -o-transition: border-color 0.25s ease-out;
-  transition: border-color 0.25s ease-out; }
-
+/* иконки для ссылок на файлы */
 .doc-file {
   border: none;
   display: inline-block;
@@ -7438,6 +7425,7 @@ h2.inner-title--no-caps {
     .doc-file--pptx:hover span {
       border-color: #d14424; }
 
+/* иконки для ссылок на файлы */
 /* Секции главной страницы */
 .main-sect {
   padding: 3.125rem 0; }
@@ -7445,7 +7433,7 @@ h2.inner-title--no-caps {
     text-transform: uppercase;
     font-size: 2rem;
     color: #253666;
-    font-family: "OpenSans-Regular", sans-serif;
+    font-family: "OpenSans-Regular";
     font-weight: normal;
     margin: 0 0 2.5rem 0; }
 
@@ -7467,7 +7455,7 @@ h2.inner-title--no-caps {
   margin-top: 1.875rem;
   font-size: 1.25rem;
   color: #253666;
-  font-family: "OpenSans-Regular", sans-serif; }
+  font-family: "OpenSans-Regular"; }
   .other-link .fa {
     -webkit-transition: color 0.25s ease-out;
     -o-transition: color 0.25s ease-out;
@@ -7514,7 +7502,7 @@ h2.inner-title--no-caps {
         display: block;
         font-size: 9px;
         margin-top: 8px;
-        font-family: "MyriadPro-Semibold", sans-serif; }
+        font-family: "MyriadPro-Semibold"; }
   #js-mobile-mmenu .mm-navbar .mm-title {
     font-size: 1rem;
     color: #444; }
@@ -7540,7 +7528,7 @@ h2.inner-title--no-caps {
       color: #314177;
       text-transform: none;
       padding: 8px 12px 8px 8px;
-      font-family: "OpenSans-Regular", sans-serif;
+      font-family: "OpenSans-Regular";
       border: none;
       -webkit-transition: all 0.25s ease-out;
       -o-transition: all 0.25s ease-out;
@@ -7569,7 +7557,7 @@ h2.inner-title--no-caps {
       display: inline-block; }
       .main-menu ul li a {
         display: block;
-        font-family: "OpenSans-SemiBold", sans-serif;
+        font-family: "OpenSans-SemiBold";
         color: #fff;
         border: none;
         padding: 18px 15px;
@@ -7606,7 +7594,7 @@ h2.inner-title--no-caps {
         display: block;
         color: #314177;
         padding: 0.75rem 1.5rem 0.75rem 0.75rem;
-        font-family: "OpenSans-Regular", sans-serif;
+        font-family: "OpenSans-Regular";
         text-transform: none;
         font-size: 0.875rem;
         line-height: 1.1;
@@ -7709,7 +7697,7 @@ h2.inner-title--no-caps {
   top: 0;
   z-index: 999;
   background-color: #fff;
-  font-family: "MyriadPro-Bold", sans-serif;
+  font-family: "MyriadPro-Bold";
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   font-size: 16px;
@@ -7859,7 +7847,7 @@ h2.inner-title--no-caps {
   .tabs-container .nav-tabs > li > a {
     -webkit-border-radius: 0;
             border-radius: 0;
-    font-family: "OpenSans-Semibold", sans-serif;
+    font-family: "OpenSans-Semibold";
     font-size: 1rem;
     border: 0;
     padding: 0.75rem 1rem;
@@ -7903,7 +7891,7 @@ h2.inner-title--no-caps {
     padding: 15px 20px;
     background-color: #eee;
     border: none;
-    font-family: "OpenSans-SemiBold", sans-serif;
+    font-family: "OpenSans-SemiBold";
     font-size: 1.1rem; }
     .main-accordion .accordion-item .panel-title:hover .fa, .main-accordion .accordion-item .panel-title:hover a {
       color: #ea2f1c; }
@@ -7979,7 +7967,7 @@ h2.inner-title--no-caps {
       height: 200px; }
   #wrapwrap .top-line .quick-links a {
     font-size: 0.875rem;
-    font-family: "OpenSans-Regular", sans-serif;
+    font-family: "OpenSans-Regular";
     color: #ffe082;
     margin-right: 25px;
     border-bottom: 1px solid #ffe082;
@@ -8063,7 +8051,7 @@ h2.inner-title--no-caps {
     padding: 12px 25px; }
     .head-content .other-func .other-func-item {
       font-size: 24px;
-      font-family: "MyriadPro-SemiBold", sans-serif;
+      font-family: "MyriadPro-SemiBold";
       display: block;
       margin: 10px 0;
       text-decoration: none;
@@ -8079,7 +8067,7 @@ h2.inner-title--no-caps {
       -o-transition: color 0.25s ease-out;
       transition: color 0.25s ease-out; }
     .head-content .other-func a.info-uni {
-      font-family: "MyriadPro-Regular", sans-serif;
+      font-family: "MyriadPro-Regular";
       font-size: 20px;
       color: #ffe082;
       border-bottom: 1px solid #ffe082;
@@ -8093,7 +8081,7 @@ h2.inner-title--no-caps {
   text-transform: none;
   display: block;
   margin-top: 5px;
-  font-family: "MyriadPro-Regular", sans-serif;
+  font-family: "MyriadPro-Regular";
   font-size: 30px;
   margin-bottom: 0; }
 
@@ -8133,7 +8121,7 @@ h2.inner-title--no-caps {
       display: block;
       font-size: 26px;
       text-transform: uppercase;
-      font-family: "OpenSansCondensed-Bold", sans-serif;
+      font-family: "OpenSansCondensed-Bold";
       letter-spacing: 1px;
       border-bottom: none; }
       .wrap-target-menu li a:hover {
@@ -8302,7 +8290,7 @@ h2.inner-title--no-caps {
         position: absolute;
         font-size: 18px;
         line-height: 1.2;
-        font-family: "MyriadPro-Semibold", sans-serif;
+        font-family: "MyriadPro-Semibold";
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
         margin: 0; }
       .news-sect .wrap-item-news .wrap-news-content .news-content time {
@@ -8339,7 +8327,7 @@ h2.inner-title--no-caps {
       font-size: 24px;
       display: inline-block;
       text-transform: uppercase;
-      font-family: "MyriadPro-Bold", sans-serif;
+      font-family: "MyriadPro-Bold";
       position: relative;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -8404,14 +8392,14 @@ h2.inner-title--no-caps {
         font-size: 2rem;
         color: #333;
         position: absolute;
-        font-family: "MyriadPro-Bold", sans-serif;
+        font-family: "MyriadPro-Bold";
         height: 100%;
         text-align: center;
         padding-top: 1.625rem; }
     .event-item .wrap-date-event .event-month {
       font-size: 1.75rem;
       line-height: 1;
-      font-family: "MyriadPro-Semibold", sans-serif;
+      font-family: "MyriadPro-Semibold";
       display: inline-block;
       position: relative;
       color: #333;
@@ -8445,7 +8433,7 @@ h2.inner-title--no-caps {
 .rector-sect .wrap-rector-content {
   margin: 30px 0 0 0;
   font-size: 1.125rem;
-  font-family: "MyriadPro-Regular", sans-serif;
+  font-family: "MyriadPro-Regular";
   -webkit-border-radius: 1px;
           border-radius: 1px; }
   .rector-sect .wrap-rector-content strong {
@@ -8454,12 +8442,12 @@ h2.inner-title--no-caps {
     display: block;
     margin-bottom: 20px; }
   .rector-sect .wrap-rector-content span {
-    font-family: "MyriadPro-Semibold", sans-serif; }
+    font-family: "MyriadPro-Semibold"; }
 
 .rector-sect .signature-rector {
   display: block;
   text-align: right;
-  font-family: "MyriadPro-SemiBoldItalic", sans-serif;
+  font-family: "MyriadPro-SemiBoldItalic";
   font-size: 1.25rem;
   margin: 40px 0 0 0; }
 
@@ -8481,7 +8469,7 @@ h2.inner-title--no-caps {
       display: block;
       margin: 25px 0 5px 0;
       font-size: 2.25rem;
-      font-family: "MyriadPro-SemiBold", sans-serif; }
+      font-family: "MyriadPro-SemiBold"; }
     .infographics-sect .wrap-infographics-content p {
       margin: 0 0 50px 0;
       font-size: 1.2rem; }
@@ -8524,7 +8512,7 @@ h2.inner-title--no-caps {
     display: block;
     text-align: right;
     font-size: 1rem;
-    font-family: "MyriadPro-Italic", sans-serif; }
+    font-family: "MyriadPro-Italic"; }
 
 /* END SECTION STUDENTS COMMENT */
 /* SECTION COMPANY - PARTNERS */
@@ -8585,7 +8573,7 @@ h2.inner-title--no-caps {
     list-style-type: none; }
   #wrapwrap > footer address {
     font-style: normal;
-    font-family: "OpenSans-Regular", sans-serif; }
+    font-family: "OpenSans-Regular"; }
   #wrapwrap > footer .foot-first-level {
     padding: 50px 0 20px 0; }
   #wrapwrap > footer .wrap-foot-level {
@@ -8605,7 +8593,7 @@ h2.inner-title--no-caps {
       margin: 0 0 15px 0;
       font-size: 1.25rem;
       text-transform: uppercase;
-      font-family: "OpenSans-Semibold", sans-serif; }
+      font-family: "OpenSans-Semibold"; }
     #wrapwrap > footer .second-foot-line .col-md-6:nth-child(2) {
       border-right: 1px solid rgba(255, 255, 255, 0.2); }
   #wrapwrap > footer .wrap-foot-links {
@@ -8623,7 +8611,7 @@ h2.inner-title--no-caps {
     margin-top: 41px; }
     #wrapwrap > footer .second-foot-line .foot-contacts-content-col-2 strong {
       font-weight: normal;
-      font-family: "OpenSans-Semibold", sans-serif; }
+      font-family: "OpenSans-Semibold"; }
   #wrapwrap > footer .wrap-foot-contancts .foot-feedback p {
     font-size: 0.875rem;
     margin: 0; }
@@ -8635,7 +8623,7 @@ h2.inner-title--no-caps {
     -webkit-border-radius: 2px;
             border-radius: 2px;
     text-transform: uppercase;
-    font-family: "OpenSans-Semibold", sans-serif; }
+    font-family: "OpenSans-Semibold"; }
     #wrapwrap > footer .wrap-foot-contancts .foot-feedback .button-light-blue:hover, #wrapwrap > footer .wrap-foot-contancts .foot-feedback .button-light-blue:focus {
       background-color: #5794cf;
       color: #fff; }
@@ -8729,7 +8717,7 @@ h2.inner-title--no-caps {
         width: 40px;
         height: 40px;
         border: 1px solid #aaa;
-        font-family: "OpenSans-SemiBold", sans-serif;
+        font-family: "OpenSans-SemiBold";
         padding: 0;
         font-size: 1.125rem;
         margin: 3px;
@@ -8793,7 +8781,7 @@ h2.inner-title--no-caps {
       right: 0;
       bottom: 0; }
       .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content time, .wrap-mega-news .wrap-mega-img .wrap-mega-img-content .mega-img-content .mega-title {
-        font-family: "MyriadPro-Semibold", sans-serif;
+        font-family: "MyriadPro-Semibold";
         font-size: 2.25rem;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
         position: absolute; }
@@ -8854,7 +8842,7 @@ h2.inner-title--no-caps {
 
 .wrap-events-list .wrap-events-content .table-events thead th {
   text-transform: uppercase;
-  font-family: "OpenSans-Semibold", sans-serif;
+  font-family: "OpenSans-Semibold";
   font-weight: normal; }
 
 .wrap-events-list .wrap-events-content .table-events thead th:first-child {
@@ -8913,7 +8901,7 @@ h2.inner-title--no-caps {
       position: relative;
       display: block;
       font-size: 1rem;
-      font-family: "OpenSans-Semibold", sans-serif;
+      font-family: "OpenSans-Semibold";
       transition: color 0.25s ease-out; }
       .wrap-category-list li a:hover,
       .wrap-events-category li a:hover {
@@ -8973,7 +8961,7 @@ h2.inner-title--no-caps {
     margin-top: 0;
     font-size: 20px;
     text-transform: uppercase;
-    font-family: "OpenSans-SemiBold", sans-serif; }
+    font-family: "OpenSans-SemiBold"; }
   .wrap-dis-page .dis-docs ul {
     padding-left: 15px;
     margin: 0; }
@@ -9020,7 +9008,7 @@ h2.inner-title--no-caps {
         text-transform: uppercase;
         border-bottom: none;
         cursor: default;
-        font-family: "OpenSans-SemiBold", sans-serif;
+        font-family: "OpenSans-SemiBold";
         color: #212529;
         margin-bottom: 5px;
         display: inline-block;
@@ -9526,7 +9514,6 @@ h2.inner-title--no-caps {
     display: inline-block; }
   #wrapwrap .main-title-wrap {
     display: block; }
-    #wrapwrap .main-title-wrap .mobile-logo-img-wrap,
     #wrapwrap .main-title-wrap .main-title {
       float: left;
       padding: 30px 0; }
