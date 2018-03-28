@@ -508,6 +508,7 @@ h2.inner-title--no-caps
 	border-bottom: 1px solid $dark-line
 	font-size: 16px
 	color: $default-color
+	box-shadow: 1px 1px 3px #ccc
 .spec-panel-controls
 	padding: 0 15px
 	ul
@@ -614,8 +615,8 @@ h2.inner-title--no-caps
 		line-height: 2
 		left: -40px
 		font-weight: normal
-	.switch-state-img:empty ~ label:before,
-	.switch-state-img:empty ~ label:after
+	.switch-state-img:empty ~ label::before,
+	.switch-state-img:empty ~ label::after
 		content: ''
 		position: absolute
 		display: block
@@ -626,16 +627,16 @@ h2.inner-title--no-caps
 		transition: all 100ms ease-in
 		background-color: #ff0000
 		font-size: 14px
-	.switch-state-img:empty ~ label:after
+	.switch-state-img:empty ~ label::after
 		content: 'ВЫКЛ'
 		width: 40px
 		top: 2px
 		bottom: 2px
 		margin-left: 2px
 		background-color: #fff
-	.switch-state-img:checked ~ label:before
+	.switch-state-img:checked ~ label::before
 		background-color: #008000
-	.switch-state-img:checked ~ label:after
+	.switch-state-img:checked ~ label::after
 		content: 'ВКЛ'
 		margin-left: 34px
 /* END SPECIAL VERSION */

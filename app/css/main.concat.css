@@ -7701,7 +7701,9 @@ h2.inner-title--no-caps {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   font-size: 16px;
-  color: #212529; }
+  color: #212529;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+          box-shadow: 1px 1px 3px #ccc; }
 
 .spec-panel-controls {
   padding: 0 15px; }
@@ -7789,8 +7791,8 @@ h2.inner-title--no-caps {
     line-height: 2;
     left: -40px;
     font-weight: normal; }
-  .wrap-toggle-img .switch-state-img:empty ~ label:before,
-  .wrap-toggle-img .switch-state-img:empty ~ label:after {
+  .wrap-toggle-img .switch-state-img:empty ~ label::before,
+  .wrap-toggle-img .switch-state-img:empty ~ label::after {
     content: '';
     position: absolute;
     display: block;
@@ -7803,16 +7805,16 @@ h2.inner-title--no-caps {
     transition: all 100ms ease-in;
     background-color: #ff0000;
     font-size: 14px; }
-  .wrap-toggle-img .switch-state-img:empty ~ label:after {
+  .wrap-toggle-img .switch-state-img:empty ~ label::after {
     content: 'ВЫКЛ';
     width: 40px;
     top: 2px;
     bottom: 2px;
     margin-left: 2px;
     background-color: #fff; }
-  .wrap-toggle-img .switch-state-img:checked ~ label:before {
+  .wrap-toggle-img .switch-state-img:checked ~ label::before {
     background-color: #008000; }
-  .wrap-toggle-img .switch-state-img:checked ~ label:after {
+  .wrap-toggle-img .switch-state-img:checked ~ label::after {
     content: 'ВКЛ';
     margin-left: 34px; }
 
@@ -8170,7 +8172,7 @@ h2.inner-title--no-caps {
   .main-slider.owl-carousel .wrap-main-slide {
     height: 100%;
     position: relative; }
-    .main-slider.owl-carousel .wrap-main-slide:before {
+    .main-slider.owl-carousel .wrap-main-slide::before {
       content: '';
       background-color: rgba(0, 0, 0, 0.15);
       top: 0;
@@ -8318,7 +8320,8 @@ h2.inner-title--no-caps {
     height: 100%;
     background-color: #314177;
     border: 10px solid #253666; }
-    .news-sect .wrap-target-other-news .target-other-news:before {
+    .news-sect .wrap-target-other-news .target-other-news::before {
+      content: "";
       background-color: transparent; }
     .news-sect .wrap-target-other-news .target-other-news:hover span, .news-sect .wrap-target-other-news .target-other-news:focus span {
       color: #ffe082; }
@@ -8368,7 +8371,7 @@ h2.inner-title--no-caps {
                 box-shadow: 0 2px 0 #ea402e;
         -webkit-border-radius: 7px 7px 0 0;
                 border-radius: 7px 7px 0 0; }
-        .event-item .wrap-date-event .calendar-icon span:before, .event-item .wrap-date-event .calendar-icon span:after {
+        .event-item .wrap-date-event .calendar-icon span::before, .event-item .wrap-date-event .calendar-icon span::after {
           content: '';
           display: block;
           position: absolute;
@@ -8383,9 +8386,9 @@ h2.inner-title--no-caps {
           -webkit-transform: translateY(-50%);
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%); }
-        .event-item .wrap-date-event .calendar-icon span:before {
+        .event-item .wrap-date-event .calendar-icon span::before {
           left: 0.5rem; }
-        .event-item .wrap-date-event .calendar-icon span:after {
+        .event-item .wrap-date-event .calendar-icon span::after {
           right: 0.5rem; }
       .event-item .wrap-date-event .calendar-icon strong {
         width: 100%;
@@ -8802,16 +8805,16 @@ h2.inner-title--no-caps {
 .common-news .date-public {
   font-size: 1.0625rem;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #555;
   border-bottom: 1px solid #aaa;
-  padding-bottom: 10px; }
+  padding-bottom: 0.625rem; }
 
 /* END COMMON NEWS PAGE */
 /* EVENTS LIST PAGE */
 .wrap-events-list .wrap-events-date-filter {
   border-bottom: 1px solid #aaa;
-  margin-bottom: 25px; }
+  margin-bottom: 1.5625rem; }
   .wrap-events-list .wrap-events-date-filter ul {
     list-style-type: none;
     margin: 0 0 15px 0;
@@ -8832,7 +8835,7 @@ h2.inner-title--no-caps {
       border: none;
       text-transform: lowercase;
       color: #212529;
-      font-size: 16px;
+      font-size: 1rem;
       padding: 5px 8px;
       -webkit-transition: color 0.25s ease-out;
       -o-transition: color 0.25s ease-out;
@@ -8919,24 +8922,24 @@ h2.inner-title--no-caps {
   text-transform: none; }
 
 .wrap-event-content .event-category {
-  font-size: 17px;
+  font-size: 1rem;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #555;
   border-bottom: 1px solid #aaa;
-  padding-bottom: 10px; }
+  padding-bottom: 0.625rem; }
 
 .wrap-event-content .event-date,
 .wrap-event-content .event-location,
 .wrap-event-content .event-contact {
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
   .wrap-event-content .event-date .event-block-title,
   .wrap-event-content .event-location .event-block-title,
   .wrap-event-content .event-contact .event-block-title {
     display: block; }
 
 .wrap-event-content .event-text {
-  margin: 20px 0; }
+  margin: 1.25rem 0; }
 
 /* END EVENT PAGE */
 /* DIS PAGE */
@@ -9204,7 +9207,7 @@ h2.inner-title--no-caps {
 /* photo gallery switch-items */
 .switch-items-daddy {
   position: relative; }
-  .switch-items-daddy:after {
+  .switch-items-daddy::after {
     content: "";
     display: table;
     clear: both; }
@@ -9332,6 +9335,18 @@ h2.inner-title--no-caps {
   .table-patents a:hover {
     color: #ea2f1c;
     border-color: #ea2f1c; }
+
+.patent-decs,
+.patent-authors {
+  margin-bottom: 0.5rem;
+  font-size: 1rem; }
+
+.patent-authors {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #aaa; }
+
+.patent-text {
+  margin: 1rem 0; }
 
 /* End patents */
 /*==========  Desktop First  ==========*/
