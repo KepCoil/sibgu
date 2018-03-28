@@ -7256,14 +7256,14 @@ a {
   -webkit-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out;
   -o-transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out;
   transition: color 0.25s ease-out, border-bottom-color 0.25s ease-out, background-color 0.25s ease-out;
-  color: #076fc8;
-  border-bottom: 1px solid #076fc8; }
-  a:hover, a:active {
+  border-width: 1px;
+  border-bottom-style: solid;
+  color: #084dd8;
+  border-color: #084dd8; }
+  a:hover, a:active, a:focus {
     text-decoration: none;
     color: #ea2f1c;
     border-bottom: 1px solid #ea2f1c; }
-  a:focus {
-    text-decoration: none; }
 
 button {
   outline: none !important; }
@@ -7393,36 +7393,36 @@ h2.inner-title--no-caps {
     visibility: visible; }
     .doc-file--pdf .doc-file-icon::before {
       border-color: #fff #fff #a80505 #a80505; }
-  .doc-file--pdf:hover {
+  .doc-file--pdf:hover, .doc-file--pdf:focus, .doc-file--pdf:active {
     color: #cb0606; }
-    .doc-file--pdf:hover span {
+    .doc-file--pdf:hover span, .doc-file--pdf:focus span, .doc-file--pdf:active span {
       border-color: #cb0606; }
   .doc-file--doc .doc-file-icon {
     background: #2a5699;
     visibility: visible; }
     .doc-file--doc .doc-file-icon::before {
       border-color: #fff #fff #22467d #22467d; }
-  .doc-file--doc:hover {
+  .doc-file--doc:hover, .doc-file--doc:focus, .doc-file--doc:active {
     color: #2a5699; }
-    .doc-file--doc:hover span {
+    .doc-file--doc:hover span, .doc-file--doc:focus span, .doc-file--doc:active span {
       border-color: #2a5699; }
   .doc-file--xlsx .doc-file-icon {
     background: #1f6a41;
     visibility: visible; }
     .doc-file--xlsx .doc-file-icon::before {
       border-color: #fff #fff #174e30 #174e30; }
-  .doc-file--xlsx:hover {
+  .doc-file--xlsx:hover, .doc-file--xlsx:focus, .doc-file--xlsx:active {
     color: #1f6a41; }
-    .doc-file--xlsx:hover span {
+    .doc-file--xlsx:hover span, .doc-file--xlsx:focus span, .doc-file--xlsx:active span {
       border-color: #1f6a41; }
   .doc-file--pptx .doc-file-icon {
     background: #d14424;
     visibility: visible; }
     .doc-file--pptx .doc-file-icon::before {
       border-color: #fff #fff #b33a1f #b33a1f; }
-  .doc-file--pptx:hover {
+  .doc-file--pptx:hover, .doc-file--pptx:focus, .doc-file--pptx:active {
     color: #d14424; }
-    .doc-file--pptx:hover span {
+    .doc-file--pptx:hover span, .doc-file--pptx:focus span, .doc-file--pptx:active span {
       border-color: #d14424; }
 
 /* иконки для ссылок на файлы */
@@ -7873,7 +7873,7 @@ h2.inner-title--no-caps {
 
 /* Accordion */
 .main-accordion .accordion-item {
-  margin: 15px 0;
+  margin: 1rem 0;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none; }
@@ -7885,10 +7885,10 @@ h2.inner-title--no-caps {
     border: 1px solid #ddd;
     padding: 0; }
     .main-accordion .accordion-item .panel-body-padding {
-      padding: 15px; }
+      padding: 0.875rem; }
   .main-accordion .accordion-item .panel-title {
     margin: 0;
-    padding: 15px 20px;
+    padding: 0.875rem 1.25rem;
     background-color: #eee;
     border: none;
     font-family: "OpenSans-SemiBold";
@@ -7897,7 +7897,7 @@ h2.inner-title--no-caps {
       color: #ea2f1c; }
     .main-accordion .accordion-item .panel-title .fa {
       font-size: 1.1rem;
-      margin-right: 5px;
+      margin-right: 0.3125rem;
       -webkit-transform: rotate(0);
           -ms-transform: rotate(0);
               transform: rotate(0);

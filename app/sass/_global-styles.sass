@@ -66,14 +66,17 @@ a
 	text-decoration: none
 	outline: none !important
 	transition: color $main-trans, border-bottom-color $main-trans, background-color $main-trans
-	color: #076fc8
-	border-bottom: 1px solid #076fc8
-	&:hover, &:active
+	// color: #076fc8
+	// border-bottom: 1px solid #076fc8
+	border-width: 1px
+	border-bottom-style: solid
+	color: #084dd8 
+	border-color: #084dd8
+	&:hover, &:active, &:focus
 		text-decoration: none
 		color: $accent-links
 		border-bottom: 1px solid $accent-links
-	&:focus
-		text-decoration: none
+
 			
 button
 	outline: none !important
@@ -193,7 +196,7 @@ h2.inner-title--no-caps
 			visibility: visible
 			&::before
 				border-color: #fff #fff darken(#cb0606, 7%) darken(#cb0606, 7%)
-		&:hover
+		&:hover, &:focus, &:active
 			color: #cb0606
 			span
 				border-color: #cb0606
@@ -203,7 +206,7 @@ h2.inner-title--no-caps
 			visibility: visible
 			&::before
 				border-color: #fff #fff darken(#2a5699, 7%) darken(#2a5699, 7%)
-		&:hover
+		&:hover, &:focus, &:active
 			color: #2a5699
 			span
 				border-color: #2a5699
@@ -213,7 +216,7 @@ h2.inner-title--no-caps
 			visibility: visible
 			&::before
 				border-color: #fff #fff darken(#1f6a41, 7%) darken(#1f6a41, 7%)
-		&:hover
+		&:hover, &:focus, &:active
 			color: #1f6a41
 			span
 				border-color: #1f6a41
@@ -223,7 +226,7 @@ h2.inner-title--no-caps
 			visibility: visible
 			&::before
 				border-color: #fff #fff darken(#d14424, 7%) darken(#d14424, 7%)
-		&:hover
+		&:hover, &:focus, &:active
 			color: #d14424
 			span
 				border-color: #d14424
@@ -700,7 +703,7 @@ h2.inner-title--no-caps
 /* Accordion */
 .main-accordion
 	.accordion-item
-		margin: 15px 0
+		margin: 1rem 0
 		border: none
 		box-shadow: none
 		.panel-heading
@@ -711,10 +714,10 @@ h2.inner-title--no-caps
 			border: 1px solid #ddd
 			padding: 0
 			&-padding
-				padding: 15px
+				padding: 0.875rem
 		.panel-title
 			margin: 0
-			padding: 15px 20px
+			padding: 0.875rem 1.25rem
 			background-color: $grey-bgc
 			border: none
 			font-family: "OpenSans-SemiBold"
@@ -724,7 +727,7 @@ h2.inner-title--no-caps
 					color: $accent-links
 			.fa
 				font-size: 1.1rem
-				margin-right: 5px
+				margin-right: 0.3125rem
 				transform: rotate(0)
 				transition: color $main-trans, transform $main-trans
 			a
