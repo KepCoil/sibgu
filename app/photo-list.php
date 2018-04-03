@@ -22,8 +22,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Торжественная линейка посвещенная 1 сентября</h3>
@@ -50,8 +56,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Экскурсия школьников в лабораторию лесной геномики</h3>
@@ -78,8 +90,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Открытые лекции визит-профессора Евгения Ямбурга (ИППС)</h3>
@@ -106,8 +124,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Заседание Экологического штаба</h3>
@@ -134,8 +158,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Шоу-конкурс «Молодёжное содружество — 2017»</h3>
@@ -162,8 +192,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
@@ -190,8 +226,14 @@
 									</div>
 									<div class="phogal-item-content">
 										<div class="phogal-item-content-info clearfix">
-											<time><i class="fa fa-calendar" aria-hidden="true"></i>24.11.2017</time>
-											<span><i class="fa fa-picture-o" aria-hidden="true"></i>36 фото</span>
+											<time class="phogal-item-content-info-date">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+												<span>24.11.2017</span>
+											</time>
+											<span class="phogal-item-content-info-img-count">
+												<i class="fa fa-picture-o" aria-hidden="true"></i>
+												<span>36 фото</span>
+											</span>
 										</div>
 										<div class="phogal-item-content-title">
 											<h3>Торжественная линейка посвещенная 1 сентября 2017 года</h3>
