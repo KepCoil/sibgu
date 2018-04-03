@@ -1,6 +1,7 @@
 /*!
  * Copyright 2015 WebDesign Master.
  * (http://webdesign-master.ru)
+ * modification
  */
 
 (function($) {

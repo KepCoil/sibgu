@@ -47,13 +47,13 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/mmenu/jquery.mmenu.all.js',
-		'app/libs/equal-heights/jquery.equalheights.min.js',
+		'app/libs/jquery-match-height/jquery.matchHeight-min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
-		'app/libs/switch-items/jQuery.Switch-Items.js',
-		'app/libs/simple-lightbox/simple-lightbox.js',
-		'app/libs/jquery-cookie/jquery.cookie.js'
+		'app/libs/switch-items/jquery.switch-items.min.js',
+		'app/libs/simple-lightbox/simple-lightbox.modification.min.js',
+		'app/libs/jquery-cookie/jquery.cookie.min.js'
 		])
-	.pipe(concat('libs.min.js'))
+	.pipe(concat('jquery-libs.js'))
 	//.pipe(uglify()) // Минимизация JS
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));

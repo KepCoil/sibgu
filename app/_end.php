@@ -27,7 +27,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 
-<!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты -->
+<!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты и стили -->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
@@ -35,7 +35,7 @@
 	<script src="libs/bootstrap-tabs/bootstrap.js"></script>
 <!--  -->
 
-<script defer src="js/libs.min.js"></script>
+<script defer src="js/jquery-libs.js"></script>
 <script defer src="js/common.js"></script>
 <!-- end  scripts -->
 

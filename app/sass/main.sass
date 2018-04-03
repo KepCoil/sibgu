@@ -9,10 +9,10 @@
 	.main-head
 		color: #fff
 	.top-line
-		background-color: $dark-blue
 		position: relative
+		height: 43px
+		background-color: $dark-blue
 		border-bottom: 1px solid $light-line
-		padding: 2px 0
 		.container
 			padding: 0
 		.top-line-left-content
@@ -63,36 +63,93 @@
 					text-decoration: none
 					border-bottom: 1px solid transparent
 		.res-links
-			.dropdown
-				text-align: right
-				z-index: 1000
-				ul.dropdown-menu
-					min-width: 320px
-					right: 0
-					left: auto
-					padding: 0 0 0.5rem
-					margin: 0
-					box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
-					li
-						&:first-child
-							border-top: 1px solid #ddd
-						&:last-child
-							border-bottom: none
-					a
-						font-size: 0.8125rem
-						padding: 0.5rem 1rem 0.5rem 0.75rem
-				.res-links-btn
+			// .dropdown
+			// 	text-align: right
+			// 	z-index: 1000
+			// 	ul.dropdown-menu
+			// 		min-width: 320px
+			// 		right: 0
+			// 		left: auto
+			// 		padding: 0 0 0.5rem
+			// 		margin: 0
+			// 		box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
+			// 		li
+			// 			&:first-child
+			// 				border-top: 1px solid #ddd
+			// 			&:last-child
+			// 				border-bottom: none
+			// 		a
+			// 			font-size: 0.8125rem
+			// 			padding: 0.5rem 1rem 0.5rem 0.75rem
+			// 	.res-links-btn
+			// 		background: none
+			// 		border: none
+			// 		color: $yellow
+			// 		padding: 10px 15px
+			// 		font-size: 0.875rem
+			// 		line-height: 1.5
+			// .dropdown.open
+			// 	.res-links-btn
+			// 		background-color: #f7f7f7
+			// 		color: $blue
+			// 		border-radius: 0
+			.droplist-main
+				position: relative
+				ul
+					list-style-type: none
+				&__btn
 					background: none
 					border: none
 					color: $yellow
 					padding: 10px 15px
 					font-size: 0.875rem
 					line-height: 1.5
-			.dropdown.open
-				.res-links-btn
-					background-color: #f7f7f7
-					color: $blue
-					border-radius: 0
+					i.fa
+						width: 0.625rem
+						height: 0.875rem
+						margin-left: 0.5rem
+				&__btn--active
+					background-color: $grey-bgc
+					color: $dark-blue
+				&__sub
+					display: none
+					position: absolute
+					z-index: 10
+					min-width: 320px
+					right: 0
+					left: auto
+					padding: 0
+					margin: 0
+					box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5)
+					color: $dark-blue
+					font-size: 0.875rem
+					&-sub
+						border-top: 1px solid #ddd
+						&:first-chirld
+							border-top: none
+					&-sub-title
+						display: inline-block
+						width: 100%
+						background-color: $grey-bgc
+						padding: 0.75rem 1rem 0.75rem 0.75rem
+						cursor: pointer
+						line-height: 1
+					&-sub-content
+						display: none
+						padding: 0
+						li
+							border-top: 1px solid #ddd
+						a
+							display: inline-block
+							width: 100%
+							font-size: 0.875rem
+							padding: 0.75rem 1rem 0.75rem 1.25rem
+							color: $blue
+							border: none
+							line-height: 1
+							background-color: #fff
+							&:hover
+								color: $accent-links
 		.flag-links
 			img
 				width: 40px
@@ -235,7 +292,7 @@
 		.owl-prev, .owl-next
 			position: absolute
 			color: #fff
-			opacity: 0.35
+			opacity: 0
 			font-size: 3.5rem
 			transition: color $main-trans, opacity $main-trans
 			.fa
@@ -269,7 +326,7 @@
 			height: auto
 			z-index: 5
 			bottom: 0
-			background: rgba(37, 54, 102, 0.35)
+			// background: rgba(37, 54, 102, 0.35)
 			background: rgba(0, 0, 0, 0.4)
 			color: #fff
 		.slide-content-inner

@@ -33,15 +33,19 @@
 			<div class="top-line-right-content">
 				<div class="res-links-wrap">
 					<div class="res-links">
-						<div class="dropdown">
-							<button id="dropdownMenu1" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+						<!-- <div class="dropdown">
+							<button id="js-btn-res-links" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 								Информационные ресурсы
 								<span class="caret"></span>
 							</button>
 
-							<!-- <ul id="js-res-links" class="dropdown-menu">
+							<ul id="js-res-links" class="dropdown-menu">
 
-								<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
+								<li class="dropdownmenu-submenu">
+									<a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a>
+								</li>
+
 								<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
 								<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
 								<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
@@ -54,38 +58,36 @@
 								<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
 								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
 								<li><a target="_blank" href="http://zhf.sibsau.ru/">Филиал СибГУ г.Новосибирске</a></li>
-							</ul> -->
+							</ul>
 
-							<div id="js-res-links" class="dropdown-menu">
 
-								<div class="res-hide">
-									<h3><span>Список №2+</span></h3>
-									<ul>
-										<li>1111</li>
-										<li>2222</li>
-										<li>333</li>
-									</ul>
-								</div>
-								<div class="res-hide">
-									<h3><span>Список №2+</span></h3>
-									<ul>
-										<li>1111</li>
-										<li>2222</li>
-										<li>333</li>
-									</ul>
-								</div>
-								<div class="res-hide">
-									<h3><span>Список №2+</span></h3>
-									<ul>
-										<li>1111</li>
-										<li>2222</li>
-										<li>333</li>
-									</ul>
-								</div>
-								
-							</div>
+						</div> -->
 
+						<div id="js-res-links" class="droplist-main">
+							<button class="droplist-main__btn">Информационные ресурсы<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+							<ul class="droplist-main__sub">
+
+								<li class="droplist-main__sub-sub">
+									<span class="droplist-main__sub-sub-title">Паллада</span>
+									<ul class="droplist-main__sub-sub-content">
+										<li><a href="https://yandex.ru/">Яндекс</a></li>
+										<li><a href="#">Инфо</a></li>
+										<li><a href="#">Расписание</a></li>
+									</ul>
+								</li>
+
+								<li class="droplist-main__sub-sub">
+									<span class="droplist-main__sub-sub-title">Паллада</span>
+									<ul class="droplist-main__sub-sub-content">
+										<li><a href="#">Поток</a></li>
+										<li><a href="#">Инфо</a></li>
+										<li><a href="#">Расписание</a></li>
+									</ul>
+								</li>
+
+							</ul>
 						</div>
+
 					</div>
 				</div>
 

@@ -60,6 +60,42 @@ $(function() {
 		$(this).children("ul").stop(true, true).slideUp(250);
 		$(this).removeClass("droplist-open");
 	});
+
+
+	/* Вложенный выпадающий список (инф. ресурсы) */
+	function showDropdown(el) {
+		var el_li = $(el).parent().addClass('dropped');
+		el_li.find('.droplist-main__sub').show();
+	}
+
+	$(".droplist-main__btn").click(function() {
+		if ( $(this).is(".droplist-main__btn--active") ) {
+			$(this).removeClass("droplist-main__btn--active");
+			$(this).children(".fa").removeClass("fa-times").addClass("fa-caret-down");
+			hideallDropdowns();
+		} 
+		else {
+			$(this).addClass("droplist-main__btn--active");
+			$(this).children(".fa").removeClass("fa-caret-down").addClass("fa-times");
+			showDropdown(this);
+		}
+	});
+
+	$(".droplist-main__sub-sub-title").click(function() {
+		$(this).parent().children(".droplist-main__sub-sub-content").toggle(100);
+	});
+
+	$(".droplist-main__sub-sub-content >li >a").click(function() {
+		hideallDropdowns();
+	});
+
+	function hideallDropdowns() {
+		$(".dropped").removeClass('dropped');
+		$(".droplist-main__sub").hide();
+		$(".droplist-main__sub-sub-content").hide();
+		$(".droplist-main__btn").removeClass("droplist-main__item--active").children(".fa").removeClass("fa-times").addClass("fa-caret-down");
+	}
+	/**/
 	
 
 	/* Неклибальность ссылок меню на внутренних страницах */
@@ -201,10 +237,10 @@ $(function() {
 		if ( th.is(".doc-file") ) {
 			th.wrapInner('<span></span>').prepend('<i class="doc-file-icon"></i>');
 
- 			if 	  ( th.is(".doc-file--pdf") ) { th.children(".doc-file-icon").text("pdf");  }
- 			else if ( th.is(".doc-file--doc") ) { th.children(".doc-file-icon").text("doc");  }
- 			else if ( th.is(".doc-file--xlsx")) { th.children(".doc-file-icon").text("xlsx"); }
- 			else if ( th.is(".doc-file--pptx")) { th.children(".doc-file-icon").text("pptx"); }
+			if 	  ( th.is(".doc-file--pdf") ) { th.children(".doc-file-icon").text("pdf");  }
+			else if ( th.is(".doc-file--doc") ) { th.children(".doc-file-icon").text("doc");  }
+			else if ( th.is(".doc-file--xlsx")) { th.children(".doc-file-icon").text("xlsx"); }
+			else if ( th.is(".doc-file--pptx")) { th.children(".doc-file-icon").text("pptx"); }
 		}
 
 		// Если 1 if не отработал, то проверяем куда ведет ссылка
@@ -275,29 +311,29 @@ $(function() {
 
 	/* Функция уравнивания высоты различных элементов */
 	function equalHeightElements() {
-		$(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();
-		$(".pa-sect .wrap-pa-item").height('auto').equalHeights();
-		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();
-		$(".dis-docs").height('auto').equalHeights();
-		$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();
-		$(".gorisont-item-img").height('auto').equalHeights();
-
+		$(".infographics-sect .wrap-infographics-content").matchHeight();
+		$(".pa-sect .wrap-pa-item").matchHeight();
+		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").matchHeight();
+		$(".dis-docs").matchHeight();
+		$(".phogal-item .phogal-item-content-title").matchHeight();
+		$(".gorisont-item-img").matchHeight();
+		// $(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();$(".pa-sect .wrap-pa-item").height('auto').equalHeights();$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();$(".dis-docs").height('auto').equalHeights();$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
 
 		/* Функция equalHeights() при мобильной версии */
 		var windowWidth = $(window).width();
-		if ( windowWidth >= 768) {
-			$(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();
-			$(".standart-item-content").height('auto').equalHeights();
+		if (windowWidth >= 768) {
+			$(".wrap-cards-news .wrap-news-content").matchHeight();
+			$(".standart-item-content").matchHeight();
+			// $(".wrap-cards-news .wrap-news-content").height('auto').equalHeights();$(".standart-item-content").height('auto').equalHeights();
 		} 
 		else {
 			$(".wrap-cards-news .wrap-news-content").height('auto');
 			$(".standart-item-content").height('auto');
 		}
 
-	};
-	
+	}
 	equalHeightElements();
-
+	/**/
 
 	/* Bootstrap accordion  */
 	$('#accordion, #bs-collapse')
@@ -321,6 +357,7 @@ $(function() {
 		$("#js-corpuses-map").css({"height": heightMapFilials});
 	}
 	resizeHeightMapFilials();
+	/**/
 
 
 
@@ -344,7 +381,7 @@ $(function() {
 			wrap.css({"marginTop": defaultMarginTop});
 		}
 	});
-
+	/**/
 
 
 	/* Функции при ресайзе экрана */
