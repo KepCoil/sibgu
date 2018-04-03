@@ -9313,8 +9313,20 @@ h2.inner-title--no-caps {
        object-fit: cover; }
 
 .sl-overlay {
-  opacity: .95;
-  filter: alpha(opacity=95); }
+  opacity: .98;
+  filter: alpha(opacity=98); }
+
+.sl-wrapper .sl-close {
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+  .sl-wrapper .sl-close:hover {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 1; }
 
 /* end page photo album */
 /* End Gallery section */

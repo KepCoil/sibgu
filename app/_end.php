@@ -19,7 +19,7 @@
 </div>
 
 
-<!-- scripts -->
+<!-- SCRIPTS -->
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -37,7 +37,7 @@
 
 <script defer src="js/jquery-libs.js"></script>
 <script defer src="js/common.js"></script>
-<!-- end  scripts -->
+<!-- END SCRIPTS -->
 
 
 </body>

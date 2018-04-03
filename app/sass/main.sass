@@ -1407,8 +1407,15 @@
 			object-fit: cover
 
 .sl-overlay
-	opacity: .95
-	filter: alpha(opacity=95)
+	opacity: .98
+	filter: alpha(opacity=98)
+
+.sl-wrapper
+	.sl-close
+		transition: transform $main-trans
+		&:hover
+			transform: rotate(90deg)
+			opacity: 1
 			
 /* end page photo album */
 
