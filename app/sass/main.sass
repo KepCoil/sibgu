@@ -645,6 +645,11 @@
 	.wrap-pa-item
 		text-align: center
 		// display: inline-block
+		a
+			border: none
+			&:hover
+				strong
+					color: $accent-links
 		img
 			width: 210px
 			height: 120px
@@ -656,6 +661,8 @@
 			color: #444
 			display: block
 			margin-top: 25px
+			line-height: 1.2
+			transition: color $main-trans
 	.owl-carousel
 		display: block
 		margin-bottom: 30px
@@ -1243,6 +1250,8 @@
 
 /* Page partners */
 .partners-page
+	.partners-preview
+		margin-bottom: 3rem
 	.partners-item
 		margin-bottom: 2rem
 		padding-bottom: 1rem
@@ -1257,15 +1266,6 @@
 			line-height: 1.1
 			color: $blue
 			margin-top: 0
-		&-tags
-			margin-bottom: 1rem
-			span
-				display: inline-block
-				padding: 5px 8px
-				background-color: $blue
-				color: #fff
-				margin-right: 0.625rem
-				margin-bottom: 0.35rem
 		&-text
 			margin-bottom: 1rem
 		&-links

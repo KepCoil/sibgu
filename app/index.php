@@ -104,6 +104,20 @@
 							</div>
 
 							<div class="col-sm-8 col-xs-12 col-item-news">
+								<div class="wrap-item-news">
+									<a href="#">
+										<span class="news-img" style="background-image: url(img/news/news1/news_2.jpg)"></span>
+										<span class="wrap-news-content">
+											<span class="news-content">
+												<time>25.09.2017</time>
+												<h3>5 профилей Олимпиады «Технологическое предпринимательство» – это «тройственная спираль» науки, экономики и управления</h3>
+											</span>
+										</span>
+									</a>
+								</div>
+							</div>
+
+							<!-- <div class="col-sm-8 col-xs-12 col-item-news">
 								<div class="wrap-item-news wrap-target-other-news">
 									<a href="#" class="target-other-news">
 										<span>Все новости <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
@@ -113,10 +127,17 @@
 									<a href="#">Все новости</a>
 									<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 								</span>
-							</div>
+							</div> -->
+
 
 						</div>
 					</div>
+
+					<span class="other-link">
+						<a href="#">Все новости</a>
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+					</span>
+
 				</div>
 			</div>
 		</div>
@@ -393,38 +414,52 @@
 					<div id="js-pa-slider" class="owl-carousel clearfix">
 
 						<div class="wrap-pa-item">
-							<img src="img/partners/iss.jpg" alt="ОАО ИСС">
-							<strong>АО «Информационные<br/>стутниковые системы»</strong>
+							<a href="https://www.iss-reshetnev.ru/" target="_blank">
+								<img src="img/partners/iss.jpg" alt="ОАО ИСС">
+								<strong>АО «Информационные<br/>стутниковые системы»</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img class="img img-rounded img-responsive" src="img/partners/krasmash.svg" alt="Красмаш">
-							<strong>АО «Красмаш»</strong>
+							<a href="http://krasm.com/news/news.aspx" target="_blank">
+								<img class="img img-rounded img-responsive" src="img/partners/krasmash.svg" alt="Красмаш">
+								<strong>АО «Красмаш»</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img class="img img-rounded img-responsive" src="img/partners/birusa.svg" alt="Бирюса">
-							<strong>ОАО «Красноярский завод<br/>холодильников «Бирюса»</strong>
+							<a href="http://www.biryusa.ru/" target="_blank">
+								<img class="img img-rounded img-responsive" src="img/partners/birusa.svg" alt="Бирюса">
+								<strong>ОАО «Красноярский завод<br/>холодильников «Бирюса»</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img class="img img-rounded img-responsive" src="img/partners/geo-phisic.svg" alt="Геофизика">
-							<strong>АО ЦКБ<br/>«Геофизика»</strong>
+							<a href="http://www.geockb.ru/" target="_blank">
+								<img class="img img-rounded img-responsive" src="img/partners/geo-phisic.svg" alt="Геофизика">
+								<strong>АО ЦКБ<br/>«Геофизика»</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img class="img img-rounded img-responsive" src="img/partners/isk.png" alt="Искра">
-							<strong>АО «КБ «Искра»</strong>
+							<a href="http://iskrakb.ru/" target="_blank">
+								<img class="img img-rounded img-responsive" src="img/partners/isk.png" alt="Искра">
+								<strong>АО «КБ «Искра»</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img src="img/partners/logo-fic-ksc.png" alt="КНЦ СО РАН">
-							<strong>«Красноярский научный<br>центр» СО РАН</strong>
+							<a href="http://ksc.krasn.ru/" target="_blank">
+								<img src="img/partners/logo-fic-ksc.png" alt="КНЦ СО РАН">
+								<strong>«Красноярский научный<br>центр» СО РАН</strong>
+							</a>
 						</div>
 
 						<div class="wrap-pa-item">
-							<img src="img/partners/npp-radio.svg" alt="Радиосвязь">
-							<strong>АО «НПП «Радиосвязь»</strong>
+							<a href="http://кртз.рф/" target="_blank">
+								<img src="img/partners/npp-radio.svg" alt="Радиосвязь">
+								<strong>АО «НПП «Радиосвязь»</strong>
+							</a>
 						</div>
 
 					</div>

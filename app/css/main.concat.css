@@ -62,6 +62,7 @@
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot");
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
 
+/* v1 colors */
 @font-face {
   font-family: "MyriadPro-Regular";
   font-weight: normal;
@@ -125,6 +126,7 @@
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot");
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
 
+/* v1 colors */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2017 Twitter, Inc.
@@ -7852,7 +7854,7 @@ h2.inner-title--no-caps {
     font-family: "OpenSans-Semibold";
     font-size: 1rem;
     border: 0;
-    padding: 0.75rem 1rem;
+    padding: 0.625rem 1rem;
     background-color: #eee;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -8550,6 +8552,10 @@ h2.inner-title--no-caps {
   padding-bottom: 50px; }
   .pa-sect .wrap-pa-item {
     text-align: center; }
+    .pa-sect .wrap-pa-item a {
+      border: none; }
+      .pa-sect .wrap-pa-item a:hover strong {
+        color: #ea2f1c; }
     .pa-sect .wrap-pa-item img {
       width: 210px;
       height: 120px;
@@ -8561,7 +8567,11 @@ h2.inner-title--no-caps {
       font-size: 1.375rem;
       color: #444;
       display: block;
-      margin-top: 25px; }
+      margin-top: 25px;
+      line-height: 1.2;
+      -webkit-transition: color 0.25s ease-out;
+      -o-transition: color 0.25s ease-out;
+      transition: color 0.25s ease-out; }
   .pa-sect .owl-carousel {
     display: block;
     margin-bottom: 30px; }
@@ -9150,6 +9160,9 @@ h2.inner-title--no-caps {
       color: #0096e0; }
 
 /* Page partners */
+.partners-page .partners-preview {
+  margin-bottom: 3rem; }
+
 .partners-page .partners-item {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -9164,15 +9177,6 @@ h2.inner-title--no-caps {
     line-height: 1.1;
     color: #314177;
     margin-top: 0; }
-  .partners-page .partners-item-tags {
-    margin-bottom: 1rem; }
-    .partners-page .partners-item-tags span {
-      display: inline-block;
-      padding: 5px 8px;
-      background-color: #314177;
-      color: #fff;
-      margin-right: 0.625rem;
-      margin-bottom: 0.35rem; }
   .partners-page .partners-item-text {
     margin-bottom: 1rem; }
   .partners-page .partners-item-links {
@@ -9388,6 +9392,7 @@ h2.inner-title--no-caps {
   margin: 1rem 0; }
 
 /* End patents */
+/* v1 colors */
 /*==========  Desktop First  ==========*/
 /* for 1920px */
 @media only screen and (max-width: 1900px) {
