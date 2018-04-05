@@ -42,10 +42,12 @@ html.black-theme
 		.main-footer
 			border-top: 1px solid $white
 		.main-sect.pa-sect
-				border: none
-		h2.inner-title, h2.inner-title--no-caps
+			border: none
+		h2.inner-title, 
+		h2.inner-title--no-caps
 			color: $white
 		.top-line
+			height: auto
 			.quick-links 
 				a
 					color: $white
@@ -58,12 +60,19 @@ html.black-theme
 					-o-filter: grayscale(100%)
 					filter: grayscale(100%)
 			.res-links 
-				.dropdown
-					.res-links-btn
+				.droplist-main
+					&__btn
 						color: $white
-				.dropdown.open
-					.res-links-btn, .dropdown-menu, li
-						background-color: $grey
+						&--active
+							background-color: $grey
+					&__sub-sub
+						&-title
+							background-color: $grey
+							color: $white
+						&-content 
+							a
+								background-color: $light-grey
+								color: $white
 			.flag-links 
 				.btn-ru
 					background-color: $grey

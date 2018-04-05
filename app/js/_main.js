@@ -5,7 +5,7 @@ $(function() {
 	var 
 		commonMenuContent  = $("#js-main-common-menu").html(),
 		commonAuditContent = $("#js-main-audit-menu").html(),
-		resLinksContent    = $("#js-res-links").html();
+		resLinksContent    = $("#js-res-links >ul").html();
 	
 	$("#js-item-main-common-menu").append("<ul>" + commonMenuContent  + "</ul>");
 	$("#js-item-main-audit-menu").append("<ul>"  + commonAuditContent + "</ul>");
@@ -68,7 +68,8 @@ $(function() {
 		el_li.find('.droplist-main__sub').show();
 	}
 
-	$(".droplist-main__btn").click(function() {
+	$(".droplist-main__btn").click(function(e) {
+		e.preventDefault();
 		if ( $(this).is(".droplist-main__btn--active") ) {
 			$(this).removeClass("droplist-main__btn--active");
 			$(this).children(".fa").removeClass("fa-times").addClass("fa-caret-down");
@@ -81,8 +82,9 @@ $(function() {
 		}
 	});
 
-	$(".droplist-main__sub-sub-title").click(function() {
-		$(this).parent().children(".droplist-main__sub-sub-content").toggle(100);
+	$(".droplist-main__sub-sub-title").click(function(e) {
+		e.preventDefault();
+		$(this).parent().children(".droplist-main__sub-sub-content").slideToggle(100);
 	});
 
 	$(".droplist-main__sub-sub-content >li >a").click(function() {

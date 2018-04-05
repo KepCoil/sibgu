@@ -68,20 +68,39 @@
 							<ul class="droplist-main__sub">
 
 								<li class="droplist-main__sub-sub">
-									<span class="droplist-main__sub-sub-title">Паллада</span>
+									<a href="#" class="droplist-main__sub-sub-title">Корпоративные</a>
 									<ul class="droplist-main__sub-sub-content">
-										<li><a href="https://yandex.ru/">Яндекс</a></li>
-										<li><a href="#">Инфо</a></li>
-										<li><a href="#">Расписание</a></li>
+										<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
+										<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
 									</ul>
 								</li>
 
 								<li class="droplist-main__sub-sub">
-									<span class="droplist-main__sub-sub-title">Паллада</span>
+									<a href="#" class="droplist-main__sub-sub-title">Образовательные</a>
 									<ul class="droplist-main__sub-sub-content">
-										<li><a href="#">Поток</a></li>
-										<li><a href="#">Инфо</a></li>
-										<li><a href="#">Расписание</a></li>
+										<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
+										<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
+										<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
+									</ul>
+								</li>
+
+								<li class="droplist-main__sub-sub">
+									<a href="#" class="droplist-main__sub-sub-title">Полезные</a>
+									<ul class="droplist-main__sub-sub-content">
+										<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
+										<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
+										<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
+										<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
+										<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
+									</ul>
+								</li>
+
+								<li class="droplist-main__sub-sub">
+									<a href="#" class="droplist-main__sub-sub-title">Филиалы</a>
+									<ul class="droplist-main__sub-sub-content">
+										<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
+										<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
+										<li><a target="_blank" href="http://zhf.sibsau.ru/">Филиал СибГУ г.Новосибирске</a></li>
 									</ul>
 								</li>
 

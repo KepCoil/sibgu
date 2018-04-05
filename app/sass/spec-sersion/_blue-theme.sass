@@ -40,11 +40,13 @@ html.blue-theme
 		.main-footer
 			border-top: 1px solid $accent_blue
 		.main-sect.pa-sect
-				border: none
-		h2.inner-title, h2.inner-title--no-caps
+			border: none
+		h2.inner-title, 
+		h2.inner-title--no-caps
 			color: $accent_blue
 		.top-line
-			.quick-links 
+			height: auto
+			.quick-links
 				a
 					color: $accent_blue
 					border-color: $accent_blue
@@ -56,9 +58,19 @@ html.blue-theme
 					// -o-filter: grayscale(100%)
 					// filter: grayscale(100%)
 			.res-links 
-				.dropdown
-					.res-links-btn
+				.droplist-main
+					&__btn
 						color: $accent_blue
+						&--active
+							background-color: $blue
+					&__sub-sub
+						&-title
+							background-color: $blue
+							color: $accent_blue
+						&-content 
+							a
+								background-color: $light_blue
+								color: $accent_blue
 				.dropdown.open
 					.res-links-btn, .dropdown-menu, li
 						background-color: $blue

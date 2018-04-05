@@ -35,15 +35,18 @@ html.white-theme
 		.foot-first-level,
 		.top-line
 			border-bottom: 1px solid $black
+			height: auto
 		.main-menu,
 		.navaslider,
 		.main-footer
 			border-top: 1px solid $black
 		.main-sect.pa-sect
-				border: none
-		h2.inner-title, h2.inner-title--no-caps
+			border: none
+		h2.inner-title, 
+		h2.inner-title--no-caps
 			color: $black
 		.top-line
+			height: auto
 			.quick-links 
 				a
 					color: $black
@@ -56,12 +59,15 @@ html.white-theme
 					-o-filter: grayscale(100%)
 					filter: grayscale(100%)
 			.res-links 
-				.dropdown
-					.res-links-btn
+				.droplist-main
+					&__btn
 						color: $black
-				.dropdown.open
-					.res-links-btn, .dropdown-menu, li
-						background-color: $grey
+					&__sub-sub
+						&-title
+							color: $black
+						&-content 
+							a
+								color: $black
 			.flag-links 
 				.btn-ru
 					background-color: $grey
