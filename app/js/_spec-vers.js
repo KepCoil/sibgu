@@ -1,11 +1,11 @@
 
 /************************** ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ **************************/
 /* 
-	Брал отсюда
+	Брал отсюда + доработки
 	http://voltos.ru/jsjquery/versiya-dlya-slabovidyashhix-na-chistom-jquery.html
 	Спасибо большое и низкий поклон
 
-	Изменение настроек просходит путем подстановки определенного класса тегу <html>
+	Изменение настроек просходит путем изменение значения data атрибутов
 */
 
 $(function() {
@@ -43,10 +43,13 @@ $(function() {
 		$.cookie("theme", 			 null, { expires: 365, path: '/' });
 		$.cookie("state-images",  	 null, { expires: 365, path: '/' });
 
+
+		$("html").removeAttr("data-spec-vers", "data-font-size", "data-theme","data-img");
+		$("#img-disable").attr('checked', 'checked');
 		$("#js-button-spec-version").removeClass("active");
 		$("#js-text-button-spec-version").text("Версия для слабовидящих");
 		window.location.reload();
-	};
+	}
 	
 	// Проверяем акивацию версии для слабовидящих (т.е. если пользователь ранее включал ее) и добавляем необходимые прессеты
 	if ($.cookie("CecutientCookie")=="on") {
@@ -66,18 +69,19 @@ $(function() {
 
 		$("#js-button-spec-version").addClass("active");
 		$("#js-text-button-spec-version").text("Версия по умолчанию");
-	};
+	}
 
 
 	// Активации версии для слабовидящих
 	function CecutientOn() {
 
 		$("#js-spec-version").removeClass("hidden");
+		$("html").attr('data-spec-vers', 'enable');
 		$.cookie("CecutientCookie", "on", {
 			expires: 365,
 			path: '/'
 		});
-	};
+	}
 
 
 	/* Обработчики клика */
@@ -105,20 +109,22 @@ $(function() {
 
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("disable-img");
+			//$("html").removeClass("disable-img");
+			$("html").attr('data-img', 'enable');
 			$("#img-disable").attr('checked', 'checked');
 			$.cookie("state-images", "on", {
 				expires: 365,
 				path: '/'
 			});
 		};	
-	};
+	}
 
 	function imageOff() {
 
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").addClass("disable-img");
+			//$("html").addClass("disable-img");
+			$("html").attr('data-img', 'disable');
 			$("#img-disable").removeAttr("checked");
 			$.cookie("state-images", "off", {
 				expires: 365,
@@ -126,7 +132,7 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 	/* Конец картинки */
 
 
@@ -134,8 +140,10 @@ $(function() {
 	function normalFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("font-size-medium font-size-large");
-			$("html").addClass("font-size-normal");
+			// $("html").removeClass("font-size-medium font-size-large");
+			// $("html").addClass("font-size-normal");
+
+			$("html").attr('data-font-size', 'default');
 
 			$.cookie("font-size", "normal", {
 				expires: 365,
@@ -143,13 +151,15 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 
 	function mediumFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("font-size-normal font-size-large");
-			$("html").addClass("font-size-medium");
+			// $("html").removeClass("font-size-normal font-size-large");
+			// $("html").addClass("font-size-medium");
+
+			$("html").attr('data-font-size', 'medium');
 
 			$.cookie("font-size", "medium", {
 				expires: 365,
@@ -157,13 +167,15 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 
 	function largeFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("font-size-normal font-size-medium");
-			$("html").addClass("font-size-large");
+			// $("html").removeClass("font-size-normal font-size-medium");
+			// $("html").addClass("font-size-large");
+
+			$("html").attr('data-font-size', 'large');
 
 			$.cookie("font-size", "large", {
 				expires: 365,
@@ -171,7 +183,7 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 	/* Конец размер шрифта */
 
 
@@ -179,8 +191,11 @@ $(function() {
 	function whiteTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("black-theme blue-theme");
-			$("html").addClass("white-theme");
+			// $("html").removeClass("black-theme blue-theme");
+			// $("html").addClass("white-theme");
+
+			$("html").attr('data-theme', 'white');
+
 
 			$.cookie("theme", "white", {
 				expires: 365,
@@ -188,13 +203,15 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 
 	function blackTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("white-theme blue-theme");
-			$("html").addClass("black-theme");
+			// $("html").removeClass("white-theme blue-theme");
+			// $("html").addClass("black-theme");
+
+			$("html").attr('data-theme', 'black');
 
 			$.cookie("theme", "black", {
 				expires: 365,
@@ -202,13 +219,15 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 
 	function blueTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			$("html").removeClass("white-theme black-theme");
-			$("html").addClass("blue-theme");
+			// $("html").removeClass("white-theme black-theme");
+			// $("html").addClass("blue-theme");
+
+			$("html").attr('data-theme', 'blue');
 
 			$.cookie("theme", "blue", {
 				expires: 365,
@@ -216,7 +235,7 @@ $(function() {
 			});
 
 		};	
-	};
+	}
 	/* Конец цветовые схемы */
 
 
