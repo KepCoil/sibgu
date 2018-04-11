@@ -14,8 +14,9 @@ var
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		// server: {baseDir: 'app'},
-		proxy: 'sibgu',
+		//server: {baseDir: 'app'},
+		proxy: 'localhost:8080/sibgu/app',
+		// port: '3000',
 		notify: false,
 		browser: 'firefox',
 	});
