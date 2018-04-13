@@ -93,9 +93,9 @@ $(function() {
 
 	function hideallDropdowns() {
 		$(".dropped").removeClass('dropped');
+		$(".droplist-main__btn").removeClass("droplist-main__btn--active").children(".fa").removeClass("fa-times").addClass("fa-caret-down");
 		$(".droplist-main__sub").hide();
 		$(".droplist-main__sub-sub-content").hide();
-		$(".droplist-main__btn").removeClass("droplist-main__item--active").children(".fa").removeClass("fa-times").addClass("fa-caret-down");
 	}
 	/**/
 	

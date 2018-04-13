@@ -7212,8 +7212,8 @@ body {
   overflow-x: hidden;
   opacity: 1;
   background-color: #fff;
-  color: #212529, Helvetica, Arial, sans-serif;
-  font-family: "OpenSans-Regular";
+  color: #222;
+  font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
   font-size: 0.9375rem;
   line-height: 1.4;
   font-weight: normal; }
@@ -7654,7 +7654,7 @@ h2.inner-title--no-caps {
   .wrap-standart-item .standart-item-content h3 {
     font-size: 1.25rem;
     margin: 1.5rem 0 1rem 0;
-    color: #212529;
+    color: #222;
     line-height: 1;
     -webkit-transition: color 0.25s ease-out;
     -o-transition: color 0.25s ease-out;
@@ -7703,7 +7703,7 @@ h2.inner-title--no-caps {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   font-size: 16px;
-  color: #212529;
+  color: #222;
   -webkit-box-shadow: 1px 1px 3px #ccc;
           box-shadow: 1px 1px 3px #ccc;
   padding: 0; }
@@ -7860,7 +7860,7 @@ h2.inner-title--no-caps {
     background-color: #f7f7f7;
     margin-right: 5px;
     margin-bottom: 5px;
-    color: #383f45; }
+    color: #3c3c3c; }
     .tabs-container .nav-tabs > li > a:hover, .tabs-container .nav-tabs > li > a:focus {
       color: #ea2f1c; }
   .tabs-container .nav-tabs--min-size > li > a {
@@ -7914,7 +7914,7 @@ h2.inner-title--no-caps {
       transition: color 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
     .main-accordion .accordion-item .panel-title a {
       border: none;
-      color: #212529; }
+      color: #222; }
   .main-accordion .accordion-item .panel-heading.active .panel-title .fa {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -8449,7 +8449,7 @@ h2.inner-title--no-caps {
     font-size: 1.3125rem;
     line-height: 1.2; }
     .event-item .event-content h3 a {
-      color: #212529;
+      color: #222;
       border-color: transparent;
       -webkit-transition: color 0.25s ease-out;
       -o-transition: color 0.25s ease-out;
@@ -8728,7 +8728,7 @@ h2.inner-title--no-caps {
     display: block;
     padding: 0 1rem;
     margin: 1.875rem 0;
-    color: #212529; }
+    color: #222; }
     .wrap-cards-news .wrap-card-item-news .wrap-news-content time {
       display: block;
       font-size: 1.0625rem;
@@ -8876,7 +8876,7 @@ h2.inner-title--no-caps {
       display: block;
       border: none;
       text-transform: lowercase;
-      color: #212529;
+      color: #222;
       font-size: 1rem;
       padding: 5px 8px;
       -webkit-transition: color 0.25s ease-out;
@@ -8906,8 +8906,8 @@ h2.inner-title--no-caps {
     display: inline-block; }
 
 .wrap-events-list .wrap-events-content .table-events tbody .event-title a {
-  color: #212529;
-  border-color: #212529; }
+  color: #222;
+  border-color: #222; }
   .wrap-events-list .wrap-events-content .table-events tbody .event-title a:hover {
     color: #ea2f1c;
     border-color: #ea2f1c; }
@@ -9054,13 +9054,13 @@ h2.inner-title--no-caps {
         border-bottom: none;
         cursor: default;
         font-family: "OpenSans-SemiBold";
-        color: #212529;
+        color: #222;
         margin-bottom: 5px;
         display: inline-block;
         font-size: 17px; }
         .map-filials > ul > li > a:hover, .map-filials > ul > li > a:focus, .map-filials > ul > li > a:active {
-          color: #212529;
-          border-color: #212529; }
+          color: #222;
+          border-color: #222; }
       .map-filials > ul > li > ol {
         padding-left: 40px;
         list-style-type: decimal; }
@@ -9128,7 +9128,7 @@ h2.inner-title--no-caps {
   background-color: #f7f7f7; }
   .filial-item a {
     border: none;
-    color: #212529;
+    color: #222;
     display: block;
     padding: 1rem;
     border-top: 4px solid #f7f7f7; }
@@ -9223,7 +9223,7 @@ h2.inner-title--no-caps {
       line-height: 1.2; }
   .photo-gallery .phogal-item-link {
     display: block;
-    color: #212529;
+    color: #222;
     border: none; }
   .photo-gallery .phogal-item-img-wrap .tmb-wrap-table div {
     border-color: rgba(0, 0, 0, 0.4); }
@@ -9378,8 +9378,8 @@ h2.inner-title--no-caps {
   text-transform: uppercase; }
 
 .table-patents a {
-  color: #212529;
-  border-color: #212529; }
+  color: #222;
+  border-color: #222; }
   .table-patents a:hover {
     color: #ea2f1c;
     border-color: #ea2f1c; }
