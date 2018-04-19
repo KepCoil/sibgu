@@ -14,11 +14,11 @@
 			</div>
 
 			<div class="top-line-left-content">
-				<div class="main-logo-wrap clearfix">
+				<!-- <div class="main-logo-wrap clearfix">
 					<a class="main-logo" href="#">
 						<img src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
 					</a>
-				</div>
+				</div> -->
 
 				<div class="quick-links-wrap">
 					<div class="quick-links">
@@ -34,41 +34,12 @@
 				<div class="res-links-wrap">
 					<div class="res-links">
 
-						<!-- <div class="dropdown">
-							<button id="js-btn-res-links" class="btn btn-default dropdown-toggle res-links-btn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								Информационные ресурсы
-								<span class="caret"></span>
-							</button>
-
-							<ul id="js-res-links" class="dropdown-menu">
-
-								<li class="dropdownmenu-submenu">
-									<a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a>
-								</li>
-
-								<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
-								<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
-								<li><a target="_blank" href="http://library.sibsau.ru/">Электронная библиотека</a></li>
-								<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
-								<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
-								<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
-								<li><a target="_blank" href="http://rckas.pro/">РЦКП "Космические аппараты и системы"</a></li>
-								<li><a target="_blank" href="http://sky.sibsau.ru/">Обсерватория СибГУ</a></li>
-								<li><a target="_blank" href="http://co.sibsau.ru/">Хрустальный апельсин</a></li>
-								<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
-								<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
-								<li><a target="_blank" href="http://zhf.sibsau.ru/">Филиал СибГУ г.Новосибирске</a></li>
-							</ul>
-
-
-						</div> -->
-
 						<div id="js-res-links" class="droplist-main">
 							<button class="droplist-main__btn">Информационные ресурсы<i class="fa fa-caret-down" aria-hidden="true"></i></button>
 							<ul class="droplist-main__sub">
 
 								<li class="droplist-main__sub-sub">
-									<a href="#" class="droplist-main__sub-sub-title">Корпоративные</a>
+									<a href="#" class="droplist-main__sub-sub-title">Корпоративные<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="droplist-main__sub-sub-content">
 										<li><a target="_blank" href="https://pallada.sibsau.ru/">АСУ вузом "Паллада"</a></li>
 										<li><a target="_blank" href="http://ppo-sibsau.ru/">Первичная профсоюзная организация работников</a></li>
@@ -76,7 +47,7 @@
 								</li>
 
 								<li class="droplist-main__sub-sub">
-									<a href="#" class="droplist-main__sub-sub-title">Образовательные</a>
+									<a href="#" class="droplist-main__sub-sub-title">Образовательные<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="droplist-main__sub-sub-content">
 										<li><a target="_blank" href="https://dpo.sibsau.ru/">Дополнительное образование</a></li>
 										<li><a target="_blank" href="http://dl.sibsau.ru/">Сервер дистанционного обучения</a></li>
@@ -85,7 +56,7 @@
 								</li>
 
 								<li class="droplist-main__sub-sub">
-									<a href="#" class="droplist-main__sub-sub-title">Полезные</a>
+									<a href="#" class="droplist-main__sub-sub-title">Полезные<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="droplist-main__sub-sub-content">
 										<li><a target="_blank" href="https://reshetnev.sibsau.ru/main_page">Решетневские чтения</a></li>
 										<li><a target="_blank" href="https://sport.sibsau.ru/">Спортивный комплекс</a></li>
@@ -96,7 +67,7 @@
 								</li>
 
 								<li class="droplist-main__sub-sub">
-									<a href="#" class="droplist-main__sub-sub-title">Филиалы</a>
+									<a href="#" class="droplist-main__sub-sub-title">Филиалы<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="droplist-main__sub-sub-content">
 										<li><a target="_blank" href="http://www.lfsibgu.ru/">Филиал СибГУ г.Лесосибирске</a></li>
 										<li><a target="_blank" href="http://www.ipkrpo.ru/">Филиал СибГУ г.Железногорске</a></li>
@@ -111,7 +82,12 @@
 				</div>
 
 				<div class="flag-links-wrap">
-					<div class="dropdown flag-links">
+
+					<div class="other-func-item btn-active-spec-ver" id="js-button-spec-version">
+						<button><i class="fa fa-eye" aria-hidden="true"></i></button>
+					</div>
+
+					<!-- <div class="dropdown flag-links">
 						<button class="btn btn-default dropdown-toggle btn-ru" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<img class="img-responsive" src="img/flags/ru.svg" alt="RU">
 						</button>
@@ -121,7 +97,7 @@
 							<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN"></a></li>
 							<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG"></a></li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -130,37 +106,139 @@
 		</div>
 	</div>
 
+	<nav class="main-menu">
+		<div class="container clearfix">
+			<div class="wrap-main-menu">
+
+				<ul id="js-main-common-menu" class="ul-inner-menu clearfix">
+					<li class="droplist">
+						<a href="#">Университет<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="droplist-content">
+							<li><a href="#">Миссия</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Управление вузом</a></li>
+							<li><a href="#">Структура</a></li>
+							<li><a href="#">Официальные документы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Сведения о доходах руководителей</a></li>
+							<li><a href="#">Сервис Люди А-Я</a></li>
+							<li><a href="#">Музей</a></li>
+						</ul>
+					</li>
+					<li class="droplist">
+						<a href="#">Образование<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="droplist-content">
+							<li><a href="#">Миссия</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Управление вузом</a></li>
+							<li><a href="#">Структура</a></li>
+							<li><a href="#">Официальные документы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Сведения о доходах руководителей</a></li>
+							<li><a href="#">Сервис Люди А-Я</a></li>
+							<li><a href="#">Музей</a></li>
+						</ul>
+					</li>
+					<li class="droplist">
+						<a href="#">Наука и инновации<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="droplist-content">
+							<li><a href="#">Миссия</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Управление вузом</a></li>
+							<li><a href="#">Структура</a></li>
+							<li><a href="#">Официальные документы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Сведения о доходах руководителей</a></li>
+							<li><a href="#">Сервис Люди А-Я</a></li>
+							<li><a href="#">Музей</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Международное сотрудничество</a></li>
+					<li><a href="#">Социальная сфера</a></li>
+					<li class="droplist">
+						<a href="#">Пресс-служба<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<ul class="droplist-content">
+							<li><a href="#">Миссия</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Управление вузом</a></li>
+							<li><a href="#">Структура</a></li>
+							<li><a href="#">Официальные документы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Сведения о доходах руководителей</a></li>
+							<li><a href="#">Сервис Люди А-Я</a></li>
+							<li><a href="#">Музей</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+
+			<div class="search-area">
+				<form class="search-area-wrap" method="post" role="search">
+					<input type="text" placeholder="Поиск">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+			</div>
+
+
+		</div>
+	</nav>
+
 	<div class="head-content">
-		<div class="container ">
+		<div class="container">
 
 			<div class="main-title-wrap clearfix">
-				<a href="#" class="clearfix">
-					<div class="mobile-logo-img-wrap">
-						<img class="mobile-main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
-					</div>
-					<h1 class="main-title">Сибирский государственный университет<br> науки и технологий<br>
-						<span class="reshetnev">имени академика М.Ф. Решетнева</span>
-					</h1>
+				<a href="#">
+					<!-- <img class="mobile-main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева"> -->
+					<img src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
+					<span class="main-title-container">
+						<h1 class="main-title">
+							Сибирский государственный университет<br> науки и технологий<br>
+							<span class="reshetnev">имени академика М.Ф. Решетнева</span>
+						</h1>
+					</span>
 				</a>
 			</div>
 
 			<div class="other-func">
 				
-				<div class="other-func-item btn-active-spec-ver" id="js-button-spec-version">
-					<i class="fa fa-eye" aria-hidden="true"></i>
-					<span id="js-text-button-spec-version">Версия для слабовидящих</span>
+				<div class="other-func-item clearfix">
+					<ul class="flags-list clearfix">
+						<li><a target="_blank" href="http://en.sibsau.ru/"><img src="img/flags/gb.svg" alt="EN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/NsN3Z7Bsc7qKT9M"><img src="img/flags/cn.svg" alt="CN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/BgcwfBvyWLqFqOr"><img src="img/flags/vn.svg" alt="VN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/1vZN1lyy1HXHvwe"><img src="img/flags/mn.svg" alt="MN"></a></li>
+					</ul>
 				</div>
-
-				<a class="other-func-item" href="/page/ovz">
-					<i class="fa fa-wheelchair" aria-hidden="true"></i>
-					<span>Доступное образование</span>
-				</a>
-
-				<a class="other-func-item info-uni" href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>
+				
+				<div class="other-func-item">
+					<a href="http://sibsau.ru/sveden/common" target="_blank">Сведения об образовательной организации</a>
+				</div>
+				
+				<div class="other-func-item">
+					<a href="/page/ovz">Доступное образование</a>
+				</div>
 
 			</div>
 
 		</div>
 	</div>
+
+	<!-- <div class="dekstop-target-menu">
+		<ul id="js-main-audit-menu" class="wrap-target-menu">
+
+			<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Абитуриенту</a></li>
+			<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>Студенту</a></li>
+			<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a></li>
+			<li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i>Ученому</a></li>
+			<li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Школьнику</a></li>
+			<li><a href="#"><i class="fa fa-graduation-cap icon-academec" aria-hidden="true"></i> Выпускнику</a></li>
+			
+		</ul>
+	</div> -->
 
 </header>
