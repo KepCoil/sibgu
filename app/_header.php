@@ -5,20 +5,17 @@
 	<div class="top-line">
 		<div class="container">
 
-			<div class="mobile-menu-button-wrap">
-				<button id="js-button-mobile-mmenu" class="hamburger hamburger--spin" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
-			</div>
+			
 
 			<div class="top-line-left-content">
-				<!-- <div class="main-logo-wrap clearfix">
-					<a class="main-logo" href="#">
-						<img src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
-					</a>
-				</div> -->
+
+				<div class="mobile-menu-button-wrap">
+					<button id="js-button-mobile-mmenu" class="hamburger hamburger--spin" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
 
 				<div class="quick-links-wrap">
 					<div class="quick-links">
@@ -81,13 +78,13 @@
 					</div>
 				</div>
 
-				<div class="flag-links-wrap">
-
-					<div class="other-func-item btn-active-spec-ver" id="js-button-spec-version">
-						<button><i class="fa fa-eye" aria-hidden="true"></i></button>
+				<div class="spec-vers-wrap">
+					<div class="other-func-item" id="js-button-spec-version">
+						<button class="btn-active-spec-ver"><i class="fa fa-eye" aria-hidden="true"></i></button>
 					</div>
+				</div>
 
-					<!-- <div class="dropdown flag-links">
+				<div class="dropdown flag-links">
 						<button class="btn btn-default dropdown-toggle btn-ru" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<img class="img-responsive" src="img/flags/ru.svg" alt="RU">
 						</button>
@@ -97,8 +94,7 @@
 							<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN"></a></li>
 							<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG"></a></li>
 						</ul>
-					</div> -->
-				</div>
+					</div>
 
 			</div>
 
@@ -228,17 +224,19 @@
 		</div>
 	</div>
 
-	<!-- <div class="dekstop-target-menu">
-		<ul id="js-main-audit-menu" class="wrap-target-menu">
+	<div class="dekstop-target-menu">
+		<div class="container">
+			<ul id="js-main-audit-menu" class="wrap-target-menu clearfix">
 
-			<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Абитуриенту</a></li>
-			<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>Студенту</a></li>
-			<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a></li>
-			<li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i>Ученому</a></li>
-			<li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Школьнику</a></li>
-			<li><a href="#"><i class="fa fa-graduation-cap icon-academec" aria-hidden="true"></i> Выпускнику</a></li>
-			
-		</ul>
-	</div> -->
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Абитуриенту</a></li>
+				<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>Студенту</a></li>
+				<li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Сотруднику</a></li>
+				<li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i>Ученому</a></li>
+				<li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Школьнику</a></li>
+				<li><a href="#"><i class="fa fa-graduation-cap icon-academec" aria-hidden="true"></i> Выпускнику</a></li>
+				
+			</ul>
+		</div>
+	</div>
 
 </header>

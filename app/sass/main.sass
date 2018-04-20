@@ -13,17 +13,18 @@
 		height: 40px
 		background-color: $blue
 		box-shadow: 0 1px 0 $light-border
-		font-size: 0.875rem
+		font-size: 0.9375rem
 		color: $grey-font
+		font-family: "MyriadPro-Regular"
 		a
 			color: $grey-font
 			&:hover
-				color: #fff
+				color: $yellow
 		.top-line-left-content
 			float: left
 		.top-line-right-content
 			float: right
-		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .flag-links-wrap
+		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .spec-vers-wrap
 			position: relative
 			float: left
 			min-height: 1px
@@ -31,17 +32,104 @@
 			width: 226px
 			padding: 0
 		.quick-links-wrap
+			height: 40px
 			line-height: 40px
 			padding: 0 15px
-		.flag-links-wrap
-			width: 80px
+		.quick-links
+			a
+				font-size: 0.9375rem
+				margin-right: 1.5625rem
+				border: none
+				transition: color $main-trans, border-bottom-color $main-trans
+				&:hover,&:focus
+					text-decoration: none
+		.res-links
+			.droplist-main
+				position: relative
+				z-index: 2
+				ul
+					list-style-type: none
+				&__btn
+					background: none
+					border: none
+					color: $grey-font
+					line-height: 40px
+					font-size: 0.9375rem
+					padding: 0 1rem
+					transition: color $main-trans
+					&:hover
+						color: $yellow
+					i.fa
+						position: relative
+						font-size: 0.8rem
+						top: 1px
+						margin-left: 0.5rem
+				&__btn--active
+					background-color: $grey-bgc
+					color: $dark-blue
+					&:hover
+						color: $dark-blue
+				&__sub
+					display: none
+					position: absolute
+					z-index: 10
+					min-width: 320px
+					right: 0
+					left: auto
+					padding: 0
+					margin: 0
+					box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5)
+					color: $dark-blue
+					font-size: 0.9375rem
+					&-sub
+						border-top: 1px solid #ddd
+						&:first-chirld
+							border-top: none
+					&-sub-title
+						display: inline-block
+						border: none
+						color: $dark-blue
+						width: 100%
+						background-color: $grey-bgc
+						padding: 0.75rem 1rem 0.75rem 0.75rem
+						cursor: pointer
+						line-height: 1
+						&:hover
+							color: $accent-links
+						.fa
+							position: relative
+							margin-left: 7px
+							font-size: 0.75rem
+					&-sub-content
+						display: none
+						padding: 0
+						li
+							border-top: 1px solid #ddd
+						a
+							display: inline-block
+							width: 100%
+							font-size: 0.9375rem
+							padding: 0.75rem 1rem 0.75rem 1.25rem
+							color: $blue
+							border: none
+							line-height: 1
+							background-color: #fff
+							&:hover
+								color: $accent-links
+		.spec-vers-wrap
+			margin-left: 1rem
 			padding-right: 0
 			text-align: center
-			button
+			.btn-active-spec-ver
+				position: relative
+				top: -1px
 				border-radius: 0
 				background-color: transparent
 				border: none
 				height: 40px
+				transition: color $main-trans
+				&:hover
+					color: $yellow
 				.fa
 					font-size: 2rem
 		.main-logo
@@ -61,111 +149,8 @@
 				visibility: visible !important
 				width: 200px
 				height: 200px
-		.quick-links
-			a
-				font-size: 0.875rem
-				font-family: "OpenSans-Regular"
-				margin-right: 25px
-				border: none
-				transition: color $main-trans, border-bottom-color $main-trans
-				&:hover,&:focus
-					text-decoration: none
-		.res-links
-			// .dropdown
-			// 	text-align: right
-			// 	z-index: 1000
-			// 	ul.dropdown-menu
-			// 		min-width: 320px
-			// 		right: 0
-			// 		left: auto
-			// 		padding: 0 0 0.5rem
-			// 		margin: 0
-			// 		box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
-			// 		li
-			// 			&:first-child
-			// 				border-top: 1px solid #ddd
-			// 			&:last-child
-			// 				border-bottom: none
-			// 		a
-			// 			font-size: 0.8125rem
-			// 			padding: 0.5rem 1rem 0.5rem 0.75rem
-			// 	.res-links-btn
-			// 		background: none
-			// 		border: none
-			// 		color: $yellow
-			// 		padding: 10px 15px
-			// 		font-size: 0.875rem
-			// 		line-height: 1.5
-			// .dropdown.open
-			// 	.res-links-btn
-			// 		background-color: #f7f7f7
-			// 		color: $blue
-			// 		border-radius: 0
-			.droplist-main
-				position: relative
-				z-index: 2
-				ul
-					list-style-type: none
-				&__btn
-					background: none
-					border: none
-					color: $grey-font
-					line-height: 40px
-					font-size: 0.875rem
-					padding: 0 1rem
-					i.fa
-						width: 0.625rem
-						height: 0.875rem
-						margin-left: 0.5rem
-				&__btn--active
-					background-color: $grey-bgc
-					color: $dark-blue
-				&__sub
-					display: none
-					position: absolute
-					z-index: 10
-					min-width: 320px
-					right: 0
-					left: auto
-					padding: 0
-					margin: 0
-					box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5)
-					color: $dark-blue
-					font-size: 0.875rem
-					&-sub
-						border-top: 1px solid #ddd
-						&:first-chirld
-							border-top: none
-					&-sub-title
-						display: inline-block
-						border: none
-						color: $dark-blue
-						width: 100%
-						background-color: $grey-bgc
-						padding: 0.75rem 1rem 0.75rem 0.75rem
-						cursor: pointer
-						line-height: 1
-						.fa
-							position: relative
-							margin-left: 7px
-							font-size: 0.75rem
-					&-sub-content
-						display: none
-						padding: 0
-						li
-							border-top: 1px solid #ddd
-						a
-							display: inline-block
-							width: 100%
-							font-size: 0.875rem
-							padding: 0.75rem 1rem 0.75rem 1.25rem
-							color: $blue
-							border: none
-							line-height: 1
-							background-color: #fff
-							&:hover
-								color: $accent-links
 		.flag-links
+			display: none
 			img
 				width: 40px
 				height: 30px
@@ -209,7 +194,7 @@
 			font-family: "MyriadPro-Regular"
 			color: $dgrey-font
 			border: none
-			padding: 20px 15px
+			padding: 1.25rem 0.9375rem
 			transition: background-color $main-trans
 			font-size: 1rem
 			&:hover
@@ -229,6 +214,7 @@
 		background-color: $grey-bgc
 		display: none
 		box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
+		border-radius: 0 0 2px 2px
 		li
 			display: block
 			border-bottom: 1px solid #ddd
@@ -270,7 +256,9 @@
 		padding: 15px 0
 		.search-area-wrap
 			position: relative
+			font-family: "MyriadPro-Regular"
 			input
+				width: 220px
 				color: $dgrey-font
 				padding: 3px 40px 3px 8px
 				font-size: 1rem
@@ -309,17 +297,17 @@
 			color: #fff
 			border: none
 		img
-			width: 125px
+			width: 135px
 			display: inline-block
 			vertical-align: top
 		.main-title-container
 			display: inline-block
 			// line-height: 125px
-			margin-top: 0.5rem
+			margin-top: 0.8125rem
 		h1.main-title
 			display: inline-block
 			text-shadow: 1px 1px 1px #eee
-			font-size: 22px
+			font-size: 1.375rem
 			color: $blue
 			margin: 0
 			margin-left: 15px
@@ -372,49 +360,51 @@
 
 /* TARGET NAV and SLIDER */
 .navaslider
-	height: 550px
+	height: 560px
 	position: relative
-	background-color: $dark-blue
-	border-bottom: 1px solid $light-line
+	margin-top: -8.125rem
+	z-index: -1
+	background-color: $blue
 .wrap-navaslider-content
 	position: relative
 	>div
 		float: left
 .dekstop-target-menu
-	z-index: 5
-	height: 550px
-	width: 275px
-	box-shadow: 5px 0px 5px -3px rgba(0, 0, 0, 0.2)
-	padding: 20px 30px 30px 0
 	display: inline-block
+	//background-color: $blue
+	width: 100%
+	height: 12rem
+	// box-shadow: 0 50px 50px $blue
+	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.59) 50%, rgba(44, 67, 143, 0.59) 25%, rgba(44, 67, 143, 0));
 .wrap-target-menu
 	margin: 0
 	padding: 0
 	list-style-type: none
 	li
-		border-bottom: 1px solid $light-line
+		float: left
+		display: inline-block
 		&:last-child
 			border-bottom: none
 		a
 			color: #fff
-			padding: 15px 0
+			padding: 1.125rem 1.375rem
 			display: block
-			font-size: 26px
+			font-size: 1.375rem
 			text-transform: uppercase
 			font-family: "OpenSansCondensed-Bold"
 			letter-spacing: 1px
 			border-bottom: none
+			&:first-child
+				padding-left: 15px
 			&:hover
 				color: $yellow
 			i
 				position: relative
-				width: 45px
-			i.icon-academec
-				width: 38px
+				width: 2rem
 
 .main-slider.owl-carousel
 	position: relative
-	height: 550px
+	height: 560px
 	&:hover
 		.owl-nav
 			.owl-prev, .owl-next
@@ -426,29 +416,24 @@
 			.owl-item
 				height: 100%
 	.owl-nav
-		display: none
-		// position: absolute
-		// top: 0
-		// bottom: 0
-		// left: 0
-		// right: 0
-		.owl-prev, .owl-next
-			position: absolute
-			top: 50%
-			transform: translateY(-50%)
-			// opacity: 0
-			color: #fff
-			font-size: 3.5rem
-			transition: color $main-trans, opacity $main-trans
-			.fa
-				text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6)
-				transform: scaleX(0.75) scaleY(1.5)
-			&:hover
-				color: $yellow
-		.owl-prev
-			left: 1.5rem
-		.owl-next
-			right: 1.5rem
+		display: none !important
+		// .owl-prev, .owl-next
+		// 	position: absolute
+		// 	top: 50%
+		// 	transform: translateY(-50%)
+		// 	// opacity: 0
+		// 	color: #fff
+		// 	font-size: 3.5rem
+		// 	transition: color $main-trans, opacity $main-trans
+		// 	.fa
+		// 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6)
+		// 		transform: scaleX(0.75) scaleY(1.5)
+		// 	&:hover
+		// 		color: $yellow
+		// .owl-prev
+		// 	left: 1.5rem
+		// .owl-next
+		// 	right: 1.5rem
 	.owl-dots
 		bottom: 3%
 		text-align: center
@@ -457,14 +442,18 @@
 		.owl-dot
 			width: 1rem
 			height: 1rem
+			border: 0.2rem solid #fff
 			border-radius: 50%
 			margin: 0 5px
 			display: inline-block
 			background-color: red
-			border: 1px solid #666
-			background-color: rgba(255, 255, 255, 0.6)
+			background-color: #fff
+			box-shadow: 1px 1px 0 #555
+			transition: background-color $main-trans
 			&.active
-				background-color: #fff
+				width: 1rem
+				height: 1rem
+				background-color: $blue
 
 	.wrap-main-slide
 		height: 100%
@@ -492,19 +481,19 @@
 		.slide-content-inner
 			width: 60%
 			padding-left: 4rem
-			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+			text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6)
 			position: relative
 			&-title
 				font-size: 2rem
 				margin-top: 0
-				margin-bottom: 1.25rem
+				margin-bottom: 1.5rem
 				line-height: 1.2
 				font-family: "OpenSans-Semibold"
 			&-btn
 				display: inline-block
 				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
 				box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
-				font-family: "OpenSans-Semibold"
+				font-family: "MyriadPro-Semibold"
 				font-size: 1.125rem
 				padding: 0.375rem 1.25rem
 				border: 2px solid #fff
@@ -854,9 +843,12 @@
 /* FOOTER */
 
 #wrapwrap 
-	>footer
+	>footer.main-footer
+		display: block
+		padding-top: 50px
 		background-color: $blue
 		color: #fff
+		border-bottom: 10px solid $dark-blue
 		a
 			color: #fff
 			border-bottom: 1px solid #fff
@@ -872,8 +864,26 @@
 		address
 			font-style: normal
 			font-family: "OpenSans-Regular"
-		.foot-first-level
-			padding: 50px 0 20px 0
+		.main-footer-bg
+			position: relative
+			padding-bottom: 400px
+			height: 100%
+			overflow: hidden
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				width: auto
+				height: 100%
+				margin-bottom: -180px
+				left: 0
+				right: 0
+				bottom: 0
+				background-image: url(../img/bg_footer-buldings.png)
+				background-repeat: no-repeat
+				background-position: center
+				z-index: 2
+				opacity: 0.2
 		.wrap-foot-level
 			margin: 0
 			.col-md-6
@@ -887,6 +897,7 @@
 			border-bottom: 1px solid $light-line
 		.second-foot-line
 			padding: 40px 0
+
 			h5
 				margin: 0 0 15px 0
 				font-size: 1.25rem
@@ -1563,11 +1574,13 @@
 			border: none
 			overflow: hidden
 			height: 100%
+			text-align: center
 			&:hover, &:focus
 				border: none
 		&-preview
 			display: inline-block
 			max-width: 100%
+			width: 100%
 			height: auto
 			object-fit: cover
 

@@ -5,29 +5,6 @@
 /* for 1920px */
 @media only screen and (max-width : 1900px)
 	#wrapwrap
-		.top-line
-			.main-logo-wrap
-				width: 196px
-			.main-logo
-				width: 196px
-				height: 203px
-				img
-					width: 170px
-					height: 170px
-		.head-content
-			padding: 25px 0 50px 0 
-			.main-title
-				margin-left: 220px
-				font-size: 28px
-				line-height: 32px
-			.reshetnev
-				font-size: 28px
-			.other-func
-				padding: 8px 20px
-				.other-func-item
-					font-size: 22px
-				a.info-uni
-					font-size: 18px
 		.col-rector-img
 			width: 30%
 		.col-rector-content
@@ -42,18 +19,10 @@
 	html
 		font-size: 95%
 	#wrapwrap
-		.main-title
-			font-size: 25px
-			line-height: 29px
-		.reshetnev
-			font-size: 25px
-		.head-content
-			.other-func
-				padding: 12px 20px
-				.other-func-item
-					font-size: 18px
-				a.info-uni
-					font-size: 16px
+		.head-content 
+			.main-title-wrap 
+				img
+					width: 120px
 		.event-item
 			padding: 0 10px
 		.news-sect 
@@ -81,18 +50,6 @@
 				margin: 0
 			.col-md-6
 				padding: 0 15px
-
-		.dekstop-target-menu
-			width: 220px
-			padding: 30px 30px 30px 0
-		.wrap-target-menu
-			li
-				a
-					font-size: 22px
-				i
-					width: 35px
-		.main-slider.owl-carousel
-			left: 220px	
 		.photo-album-list
 			&-item
 				height: 175px
@@ -112,30 +69,20 @@
 				img
 					width: 155px
 					height: 155px
-		.head-content
-			.main-title
-				margin-left: 200px
-				font-size: 20px
-				line-height: 24px
-			.reshetnev
-				font-size: 20px
-			.other-func
-				padding: 10px 15px
-				.other-func-item
-					font-size: 16px
-					margin: 9px 0
-				a.info-uni
-					font-size: 14px
-
-		.navaslider
-			height: 400px
-			// >.container
-			// 	padding: 0px
-			.dekstop-target-menu,
-			.main-slider.owl-carousel
-				height: 400px
-			.dekstop-target-menu
-				padding: 10px 30px 10px 0
+		.wrap-target-menu
+			li
+				a
+					font-size: 1.125rem
+					padding: 1rem 1.25rem
+		// .navaslider
+		// 	height: 400px
+		// 	// >.container
+		// 	// 	padding: 0px
+		// 	.dekstop-target-menu,
+		// 	.main-slider.owl-carousel
+		// 		height: 400px
+		// 	.dekstop-target-menu
+		// 		padding: 10px 30px 10px 0
 
 		.event-item
 			padding: 0
@@ -191,6 +138,10 @@
 
 @media only screen and (max-width : 1260px) and (min-width: 992px)
 	#wrapwrap
+		.head-content 
+			.main-title-wrap 
+				img
+					width: 110px
 		.main-menu
 			ul.ul-inner-menu
 				>li 
@@ -228,27 +179,17 @@
 		.top-line
 			height: auto
 			padding: 2px 0
-			.flag-links-wrap
+			.container
+				padding: 0
+			.quick-links-wrap, .res-links-wrap, .spec-vers-wrap
+				display: none
+			.flag-links
+				display: block
 				padding-right: 15px
-				width: 76px
+		.dekstop-target-menu
+			display: none
 		.mobile-menu-button-wrap
 			display: inline-block
-		.main-title-wrap
-			display: block
-			.main-title
-				float: left
-				padding: 30px 0
-			.mobile-logo-img-wrap
-				width: 140px
-				height: 140px
-				padding: 7px
-				background-color: #fff
-				border-radius: 50%
-				margin-right: 20px
-				float: left
-				img
-					width: 100%
-					height: 100%
 		.head-content
 			padding: 15px 0
 			.container
@@ -259,31 +200,11 @@
 						opacity: 0.85
 			.other-func
 				display: none
-			.main-title
-				margin-left: 0
-				display: block
-			.other-func
-				float: none
-				margin-top: 30px
-				a.info-uni
-					display: inline-block
-					margin-top: 0
-		.top-line
-			.main-logo-wrap
-				display: none
-			.main-logo
-				width: 140px
-				height: 150px
-				padding: 20px 10px 10px 10px
-				img
-					width: 120px
-					height: 120px
-			.quick-links-wrap
-				display: none
-			.res-links-wrap
-				display: none
-			.flag-links-wrap
-				float: right
+		.navaslider
+			height: 350px
+			margin-top: 0
+			.container
+				padding: 0
 		.main-menu
 			display: none
 		.nav
@@ -310,15 +231,6 @@
 			padding-bottom: 20px 
 			.wrap-infographics-content
 				margin-bottom: 30px
-		.navaslider
-			height: 350px
-			.container
-				padding: 0
-			.dekstop-target-menu
-				display: none
-			.main-slider.owl-carousel
-				left: 0
-				height: 350px
 		>footer 		
 			.foot-first-level
 				padding: 20px 0
@@ -352,12 +264,10 @@
 	html
 		font-size: 85%
 	#wrapwrap
-		.main-slider.owl-carousel
-			.owl-nav
-				display: none
-		// .main-sect 
-		// 	h2
-		// 		margin-bottom: 30px
+		.head-content 
+			.main-title-wrap 
+				img
+					width: 110px
 		.foot-first-level
 			.second-foot-line 
 				.foot-contacts-content-col-2
@@ -393,18 +303,16 @@
 		.head-content
 			.main-title-wrap
 				display: block
-				.mobile-logo-img-wrap,
-				.main-title
-					float: left
-					padding: 30px 0
 				.mobile-logo-img-wrap
 					width: 50px
 					height: 50px
 					padding: 3px
 					margin-right: 10px
+				img
+					width: 80px
 				.main-title
-					font-size: 12px
-					line-height: 14px
+					font-size: 14px
+					line-height: 16px
 					padding: 4px 0
 				.reshetnev
 					margin-top: 3px
@@ -427,25 +335,12 @@
 			width: 50%
 			float: left
 
+@media only screen and (max-width : 500px)
+	#wrapwrap
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	#wrapwrap
-		.top-line
-			.main-logo-wrap
-				margin-left: 15px
-				width: 80px
-			.main-logo
-				width: 70px
-				height: 75px
-				padding: 10px 5px 5px 5px
-				img
-					width: 60px
-					height: 60px
-		.head-content
-			.other-func 
-				a.info-uni
-					font-size: 13px
 		.nav
 			.mobile-quick-link
 				a
@@ -553,8 +448,6 @@
 @media only screen and (min-width : 992px)
 	#wrapwrap
 		.mobile-menu-button-wrap
-			display: none
-		.mobile-main-logo
 			display: none
 
 
