@@ -48,8 +48,6 @@ $(function() {
 		$("#js-button-mobile-mmenu").addClass("is-active");
 	});
 
-	$(".mm-navbar").append($(".search-area").html());
-
 	/* КОНЕЦ МОБИЛЬНОГО МЕНЮ */
 
 

@@ -221,6 +221,13 @@
 
 			</div>
 
+			<div class="mobile-search-area">
+				<form class="search-area-wrap" method="post" role="search">
+					<input type="text" placeholder="Поиск">
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
+				</form>
+			</div>
+
 		</div>
 	</div>
 

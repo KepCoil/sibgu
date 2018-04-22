@@ -254,26 +254,27 @@
 	.search-area
 		float: right
 		padding: 15px 0
-		.search-area-wrap
-			position: relative
-			font-family: "MyriadPro-Regular"
-			input
-				width: 220px
-				color: $dgrey-font
-				padding: 3px 40px 3px 8px
-				font-size: 1rem
-				border: 2px solid darken($light-bgc, 7%)
-				height: 32px
-			button
-				position: absolute
-				background-color: transparent
-				border: none
-				height: 32px
-				width: 32px
-				right: 8px
-				top: -1px
-				.fa
-					color: $dgrey-font
+
+.search-area-wrap
+	position: relative
+	font-family: "MyriadPro-Regular"
+	input
+		width: 220px
+		color: $dgrey-font
+		padding: 3px 40px 3px 8px
+		font-size: 1rem
+		border: 2px solid darken($light-bgc, 7%)
+		height: 32px
+	button
+		position: absolute
+		background-color: transparent
+		border: none
+		height: 32px
+		width: 32px
+		right: 8px
+		top: -1px
+		.fa
+			color: $dgrey-font
 
 		
 .head-content
@@ -290,7 +291,7 @@
 		top: 0
 		left: 0
 		z-index: -1
-		opacity: 0.1
+		opacity: 0.075
 	.main-title-wrap
 		display: inline-block
 		a
@@ -353,6 +354,8 @@
 				img
 					width: 46px
 					box-shadow: 1px 1px 0 $grey-font
+	.mobile-search-area
+		display: none 
 		
 	
 /* END HEADER */

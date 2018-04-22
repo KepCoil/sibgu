@@ -19,6 +19,12 @@
 	html
 		font-size: 95%
 	#wrapwrap
+		.main-menu 
+			.search-area
+				padding: 13px 0
+				.search-area-wrap 
+					button
+						top: 0
 		.head-content 
 			.main-title-wrap 
 				img
@@ -69,20 +75,36 @@
 				img
 					width: 155px
 					height: 155px
+		.main-menu 
+			.search-area 
+				padding: 7px 0
+				.search-area-wrap 
+					input
+						width: 175px
+					button
+						top: 0
+						right: 4px
+						
 		.wrap-target-menu
 			li
 				a
 					font-size: 1.125rem
 					padding: 1rem 1.25rem
-		// .navaslider
-		// 	height: 400px
-		// 	// >.container
-		// 	// 	padding: 0px
-		// 	.dekstop-target-menu,
-		// 	.main-slider.owl-carousel
-		// 		height: 400px
-		// 	.dekstop-target-menu
-		// 		padding: 10px 30px 10px 0
+		.head-content 
+			.main-title-wrap 
+				.main-title-container
+					margin-top: 0.5rem
+					h1.main-title
+						font-size: 1.25rem
+					.reshetnev
+						font-size: 1.25rem
+		.navaslider
+			height: 450px
+		.main-slider.owl-carousel
+			height: 450px 
+			.wrap-main-slide 
+				.slide-content-inner-title
+					font-size: 1.5rem
 
 		.event-item
 			padding: 0
@@ -200,11 +222,25 @@
 						opacity: 0.85
 			.other-func
 				display: none
+			.mobile-search-area
+				display: block
+				margin-top: 1.5rem
+				padding: 10px 15px
+				background-color: $light-bgc
+				border-radius: 2px
+				.search-area-wrap 
+					input
+						width: 100%
 		.navaslider
 			height: 350px
 			margin-top: 0
 			.container
 				padding: 0
+		.main-slider.owl-carousel
+			height: 350px
+			.wrap-main-slide 
+				.slide-content-inner
+					width: 75%
 		.main-menu
 			display: none
 		.nav
@@ -268,6 +304,11 @@
 			.main-title-wrap 
 				img
 					width: 110px
+		.main-slider.owl-carousel
+			.wrap-main-slide 
+				.slide-content-inner
+					padding: 0 30px 
+					width: 100%
 		.foot-first-level
 			.second-foot-line 
 				.foot-contacts-content-col-2
@@ -310,13 +351,11 @@
 					margin-right: 10px
 				img
 					width: 80px
-				.main-title
-					font-size: 14px
-					line-height: 16px
-					padding: 4px 0
-				.reshetnev
-					margin-top: 3px
-					font-size: 10px
+				.main-title-container 
+					h1.main-title
+						font-size: 1rem
+					.reshetnev
+						font-size: 1rem
 		.comment-students-sect
 			.comment-student-slider
 				.wrap-comment-img
@@ -335,9 +374,6 @@
 			width: 50%
 			float: left
 
-@media only screen and (max-width : 500px)
-	#wrapwrap
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	#wrapwrap
@@ -349,10 +385,28 @@
 						margin-bottom: 5px
 					span
 						font-size: 10px
+		.head-content
+			.main-title-wrap
+				img
+					width: 65px
+				.main-title-container 
+					h1.main-title
+						margin-left: 10px
+						font-size: 0.75rem
+					.reshetnev
+						font-size: 0.75rem
 		.navaslider
 			height: 250px
 			.main-slider.owl-carousel
 				height: 250px
+				.wrap-main-slide 
+					.slide-content-outer
+						top: 25%
+					.slide-content-inner-title
+						font-size: 1.25rem
+						margin-bottom: 1rem
+					.slide-content-inner-btn
+						font-size: 1rem
 		.infographics-sect
 			.wrap-infographics-content
 				img
@@ -414,12 +468,23 @@
 
 @media only screen and (max-width : 359px)
 	#wrapwrap
-		.head-content 
-			.main-title-wrap 
-				.main-title
-					font-size: 10px
-					line-height: 12px
-					padding: 5px 0
+		.head-content
+			.main-title-wrap
+				img
+					width: 60px
+				.main-title-container 
+					h1.main-title
+						font-size: 0.7rem
+					.reshetnev
+						font-size: 0.7rem
+		.navaslider
+			.main-slider.owl-carousel
+				.wrap-main-slide 
+					.slide-content-inner-title
+						font-size: 1.125rem
+						margin-bottom: 1rem
+					.slide-content-inner-btn
+						font-size: 1rem
 
 
 /* Custom, iPhone Retina */
