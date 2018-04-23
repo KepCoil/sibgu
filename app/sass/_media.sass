@@ -19,12 +19,6 @@
 	html
 		font-size: 95%
 	#wrapwrap
-		.main-menu 
-			.search-area
-				padding: 13px 0
-				.search-area-wrap 
-					button
-						top: 0
 		.head-content 
 			.main-title-wrap 
 				img
@@ -75,16 +69,17 @@
 				img
 					width: 155px
 					height: 155px
-		.main-menu 
+		.main-menu
+			ul.ul-inner-menu
+				>li 
+					>a
+						font-size: 12px 
+						padding: 0 6px
 			.search-area 
-				padding: 7px 0
-				.search-area-wrap 
+				.search-area-form 
 					input
 						width: 175px
-					button
-						top: 0
-						right: 4px
-						
+
 		.wrap-target-menu
 			li
 				a
@@ -164,12 +159,7 @@
 			.main-title-wrap 
 				img
 					width: 110px
-		.main-menu
-			ul.ul-inner-menu
-				>li 
-					>a
-						padding: 15px 6px
-						font-size: 12px 
+
 		.pa-sect
 			.wrap-pa-item
 				img
@@ -222,13 +212,18 @@
 						opacity: 0.85
 			.other-func
 				display: none
-			.mobile-search-area
+			.search-area--mobile
 				display: block
+				float: none
 				margin-top: 1.5rem
 				padding: 10px 15px
 				background-color: $light-bgc
 				border-radius: 2px
-				.search-area-wrap 
+				height: auto
+				line-height: 1
+				.search-area-form
+					height: auto
+					line-height: 1
 					input
 						width: 100%
 		.navaslider

@@ -174,7 +174,7 @@
 			</div>
 
 			<div class="search-area">
-				<form class="search-area-wrap" method="post" role="search">
+				<form class="search-area-form" method="post" role="search">
 					<input type="text" placeholder="Поиск">
 					<button><i class="fa fa-search" aria-hidden="true"></i></button>
 				</form>
@@ -220,8 +220,8 @@
 
 			</div>
 
-			<div class="mobile-search-area">
-				<form class="search-area-wrap" method="post" role="search">
+			<div class="search-area search-area--mobile">
+				<form class="search-area-form" method="post" role="search">
 					<input type="text" placeholder="Поиск">
 					<button><i class="fa fa-search" aria-hidden="true"></i></button>
 				</form>

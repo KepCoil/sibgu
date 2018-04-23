@@ -16,6 +16,7 @@
 		font-size: 0.9375rem
 		color: $grey-font
 		font-family: "MyriadPro-Regular"
+		overflow: hidden
 		a
 			color: $grey-font
 			&:hover
@@ -164,31 +165,34 @@
 
 .main-menu
 	background-color: $light-bgc
-	.ul-inner-menu
-		>li
-			float: left
-			display: inline-block
+	height: 64px
+	overflow: hidden
 	ul
 		list-style-type: none
 		padding: 0
 		margin: 0
-		a
-			display: block
-			font-family: "MyriadPro-Regular"
-			color: $dgrey-font
-			border: none
-			padding: 1.25rem 0.9375rem
-			transition: background-color $main-trans
-			font-size: 1rem
-			&:hover
-				color: $accent-links
-				background-color: $grey-bgc
-			i
-				font-size: 12px
-				margin-top: -1px
-				position: relative
-				top: -1px
-				margin-left: 7px
+	.ul-inner-menu
+		>li
+			float: left
+			display: inline-block
+			>a
+				display: block
+				font-family: "MyriadPro-Regular"
+				color: $dgrey-font
+				border: none
+				padding: 0 0.9375rem
+				transition: background-color $main-trans
+				line-height: 64px
+				font-size: 1rem
+				&:hover
+					color: $accent-links
+					background-color: $grey-bgc
+				>i
+					font-size: 12px
+					margin-top: -1px
+					position: relative
+					top: -1px
+					margin-left: 7px
 	ul.droplist-content
 		position: absolute
 		z-index: 1000
@@ -212,6 +216,7 @@
 				font-size: 0.9375rem
 				line-height: 1.1
 				transition: color $main-trans
+				border: none
 				&:hover
 					color: $accent-links
 	.droplist-open
@@ -234,31 +239,35 @@
 					&:hover
 						//background-color: $grey-bgc
 						color: $yellow
-	.search-area
-		float: right
-		padding: 15px 0
-
-.search-area-wrap
-	position: relative
-	font-family: "MyriadPro-Regular"
-	input
-		width: 220px
-		color: $dgrey-font
-		padding: 3px 40px 3px 8px
-		font-size: 1rem
-		border: 2px solid darken($light-bgc, 7%)
-		height: 32px
-	button
-		position: absolute
-		background-color: transparent
-		border: none
-		height: 32px
-		width: 32px
-		right: 8px
-		top: -1px
-		.fa
+.search-area
+	float: right
+	padding: 0
+	line-height: 64px
+	.search-area-form
+		position: relative
+		font-family: "MyriadPro-Regular"
+		height: 64px
+		input
+			width: 220px
 			color: $dgrey-font
-
+			padding: 3px 40px 3px 8px
+			font-size: 1rem
+			border: 2px solid darken($light-bgc, 7%)
+			height: 32px
+		button
+			position: absolute
+			background-color: transparent
+			border: none
+			height: 32px
+			width: 32px
+			right: 5px
+			top: 50%
+			transform: translateY(-50%)
+			opacity: 0.7
+			.fa
+				color: $dgrey-font
+				vertical-align: top
+				line-height: 32px
 		
 .head-content
 	padding: 2rem 0 3rem 0
@@ -339,7 +348,7 @@
 					visibility: visible !important
 					width: 46px
 					box-shadow: 1px 1px 0 $grey-font
-	.mobile-search-area
+	.search-area.search-area--mobile
 		display: none 
 		
 	

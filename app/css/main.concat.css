@@ -7391,14 +7391,12 @@ h2.inner-title--no-caps {
       border-color: #fff;
       background: #fff;
       display: block;
-      width: 0;
-      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2); }
+      width: 0; }
   .doc-file--pdf .doc-file-icon {
     background: #cb0606;
     visibility: visible; }
     .doc-file--pdf .doc-file-icon::before {
-      border-color: #fff #fff #a80505 #a80505; }
+      border-color: #fff #fff #990505 #990505; }
   .doc-file--pdf:hover, .doc-file--pdf:focus, .doc-file--pdf:active {
     color: #cb0606; }
     .doc-file--pdf:hover span, .doc-file--pdf:focus span, .doc-file--pdf:active span {
@@ -7407,7 +7405,7 @@ h2.inner-title--no-caps {
     background: #2a5699;
     visibility: visible; }
     .doc-file--doc .doc-file-icon::before {
-      border-color: #fff #fff #22467d #22467d; }
+      border-color: #fff #fff #1f4071 #1f4071; }
   .doc-file--doc:hover, .doc-file--doc:focus, .doc-file--doc:active {
     color: #2a5699; }
     .doc-file--doc:hover span, .doc-file--doc:focus span, .doc-file--doc:active span {
@@ -7416,7 +7414,7 @@ h2.inner-title--no-caps {
     background: #1f6a41;
     visibility: visible; }
     .doc-file--xlsx .doc-file-icon::before {
-      border-color: #fff #fff #174e30 #174e30; }
+      border-color: #fff #fff #134329 #134329; }
   .doc-file--xlsx:hover, .doc-file--xlsx:focus, .doc-file--xlsx:active {
     color: #1f6a41; }
     .doc-file--xlsx:hover span, .doc-file--xlsx:focus span, .doc-file--xlsx:active span {
@@ -7425,7 +7423,7 @@ h2.inner-title--no-caps {
     background: #d14424;
     visibility: visible; }
     .doc-file--pptx .doc-file-icon::before {
-      border-color: #fff #fff #b33a1f #b33a1f; }
+      border-color: #fff #fff #a5361d #a5361d; }
   .doc-file--pptx:hover, .doc-file--pptx:focus, .doc-file--pptx:active {
     color: #d14424; }
     .doc-file--pptx:hover span, .doc-file--pptx:focus span, .doc-file--pptx:active span {
@@ -7857,7 +7855,8 @@ h2.inner-title--no-caps {
           box-shadow: 0 1px 0 #b5bfd8;
   font-size: 0.9375rem;
   color: #dcdcdc;
-  font-family: "MyriadPro-Regular"; }
+  font-family: "MyriadPro-Regular";
+  overflow: hidden; }
   #wrapwrap .top-line a {
     color: #dcdcdc; }
     #wrapwrap .top-line a:hover {
@@ -8009,28 +8008,31 @@ h2.inner-title--no-caps {
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
 
 .main-menu {
-  background-color: #e6eaf6; }
-  .main-menu .ul-inner-menu > li {
-    float: left;
-    display: inline-block; }
+  background-color: #e6eaf6;
+  height: 64px;
+  overflow: hidden; }
   .main-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    .main-menu ul a {
+  .main-menu .ul-inner-menu > li {
+    float: left;
+    display: inline-block; }
+    .main-menu .ul-inner-menu > li > a {
       display: block;
       font-family: "MyriadPro-Regular";
       color: #444;
       border: none;
-      padding: 1.25rem 0.9375rem;
+      padding: 0 0.9375rem;
       -webkit-transition: background-color 0.25s ease-out;
       -o-transition: background-color 0.25s ease-out;
       transition: background-color 0.25s ease-out;
+      line-height: 64px;
       font-size: 1rem; }
-      .main-menu ul a:hover {
+      .main-menu .ul-inner-menu > li > a:hover {
         color: #ea2f1c;
         background-color: #f7f7f7; }
-      .main-menu ul a i {
+      .main-menu .ul-inner-menu > li > a > i {
         font-size: 12px;
         margin-top: -1px;
         position: relative;
@@ -8062,7 +8064,8 @@ h2.inner-title--no-caps {
         line-height: 1.1;
         -webkit-transition: color 0.25s ease-out;
         -o-transition: color 0.25s ease-out;
-        transition: color 0.25s ease-out; }
+        transition: color 0.25s ease-out;
+        border: none; }
         .main-menu ul.droplist-content li a:hover {
           color: #ea2f1c; }
   .main-menu .droplist-open {
@@ -8083,30 +8086,38 @@ h2.inner-title--no-caps {
       transition: color 0.25s ease-out; }
       .main-menu .wrap-main-menu .inner-audit-menu > li > a:hover {
         color: #ffe082; }
-  .main-menu .search-area {
-    float: right;
-    padding: 15px 0; }
 
-.search-area-wrap {
-  position: relative;
-  font-family: "MyriadPro-Regular"; }
-  .search-area-wrap input {
-    width: 220px;
-    color: #444;
-    padding: 3px 40px 3px 8px;
-    font-size: 1rem;
-    border: 2px solid #ccd4ed;
-    height: 32px; }
-  .search-area-wrap button {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    height: 32px;
-    width: 32px;
-    right: 8px;
-    top: -1px; }
-    .search-area-wrap button .fa {
-      color: #444; }
+.search-area {
+  float: right;
+  padding: 0;
+  line-height: 64px; }
+  .search-area .search-area-form {
+    position: relative;
+    font-family: "MyriadPro-Regular";
+    height: 64px; }
+    .search-area .search-area-form input {
+      width: 220px;
+      color: #444;
+      padding: 3px 40px 3px 8px;
+      font-size: 1rem;
+      border: 2px solid #ccd4ed;
+      height: 32px; }
+    .search-area .search-area-form button {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      height: 32px;
+      width: 32px;
+      right: 5px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      opacity: 0.7; }
+      .search-area .search-area-form button .fa {
+        color: #444;
+        vertical-align: top;
+        line-height: 32px; }
 
 .head-content {
   padding: 2rem 0 3rem 0;
@@ -8187,7 +8198,7 @@ h2.inner-title--no-caps {
           width: 46px;
           -webkit-box-shadow: 1px 1px 0 #dcdcdc;
                   box-shadow: 1px 1px 0 #dcdcdc; }
-  .head-content .mobile-search-area {
+  .head-content .search-area.search-area--mobile {
     display: none; }
 
 /* END HEADER */
@@ -9515,10 +9526,6 @@ h2.inner-title--no-caps {
 @media only screen and (max-width: 1580px) {
   html {
     font-size: 95%; }
-  #wrapwrap .main-menu .search-area {
-    padding: 13px 0; }
-    #wrapwrap .main-menu .search-area .search-area-wrap button {
-      top: 0; }
   #wrapwrap .head-content .main-title-wrap img {
     width: 120px; }
   #wrapwrap .event-item {
@@ -9556,13 +9563,11 @@ h2.inner-title--no-caps {
     #wrapwrap .top-line .main-logo img {
       width: 155px;
       height: 155px; }
-  #wrapwrap .main-menu .search-area {
-    padding: 7px 0; }
-    #wrapwrap .main-menu .search-area .search-area-wrap input {
-      width: 175px; }
-    #wrapwrap .main-menu .search-area .search-area-wrap button {
-      top: 0;
-      right: 4px; }
+  #wrapwrap .main-menu ul.ul-inner-menu > li > a {
+    font-size: 12px;
+    padding: 0 6px; }
+  #wrapwrap .main-menu .search-area .search-area-form input {
+    width: 175px; }
   #wrapwrap .wrap-target-menu li a {
     font-size: 1.125rem;
     padding: 1rem 1.25rem; }
@@ -9617,9 +9622,6 @@ h2.inner-title--no-caps {
 @media only screen and (max-width: 1260px) and (min-width: 992px) {
   #wrapwrap .head-content .main-title-wrap img {
     width: 110px; }
-  #wrapwrap .main-menu ul.ul-inner-menu > li > a {
-    padding: 15px 6px;
-    font-size: 12px; }
   #wrapwrap .pa-sect .wrap-pa-item img {
     width: 190px;
     height: 110px; }
@@ -9662,15 +9664,21 @@ h2.inner-title--no-caps {
       opacity: 0.85; }
     #wrapwrap .head-content .other-func {
       display: none; }
-    #wrapwrap .head-content .mobile-search-area {
+    #wrapwrap .head-content .search-area--mobile {
       display: block;
+      float: none;
       margin-top: 1.5rem;
       padding: 10px 15px;
       background-color: #e6eaf6;
       -webkit-border-radius: 2px;
-              border-radius: 2px; }
-      #wrapwrap .head-content .mobile-search-area .search-area-wrap input {
-        width: 100%; }
+              border-radius: 2px;
+      height: auto;
+      line-height: 1; }
+      #wrapwrap .head-content .search-area--mobile .search-area-form {
+        height: auto;
+        line-height: 1; }
+        #wrapwrap .head-content .search-area--mobile .search-area-form input {
+          width: 100%; }
   #wrapwrap .navaslider {
     height: 350px;
     margin-top: 0; }
