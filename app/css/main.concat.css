@@ -7855,8 +7855,7 @@ h2.inner-title--no-caps {
           box-shadow: 0 1px 0 #b5bfd8;
   font-size: 0.9375rem;
   color: #dcdcdc;
-  font-family: "MyriadPro-Regular";
-  overflow: hidden; }
+  font-family: "MyriadPro-Regular"; }
   #wrapwrap .top-line a {
     color: #dcdcdc; }
     #wrapwrap .top-line a:hover {
@@ -9207,14 +9206,13 @@ h2.inner-title--no-caps {
     transition: bottom 0.35s ease-out; }
     .wrap-inst-item .inst-item-content h3 {
       margin: 0;
-      padding-top: 1rem;
-      padding-bottom: 1.25rem;
+      padding: 1rem 0;
       font-size: 1.25rem;
       line-height: 1.1; }
     .wrap-inst-item .inst-item-content-preview {
       padding-bottom: 1rem 0; }
     .wrap-inst-item .inst-item-content-text {
-      font-size: 0.8rem; }
+      font-size: 0.8125rem; }
     .wrap-inst-item .inst-item-content .standart-button {
       font-family: "OpenSans-Regular";
       margin: 1.25rem 0;
