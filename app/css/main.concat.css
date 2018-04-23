@@ -8322,9 +8322,9 @@ h2.inner-title--no-caps {
       text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
       position: relative; }
       .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-title {
-        font-size: 2rem;
+        font-size: 32px;
         margin-top: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 25px;
         line-height: 1.2;
         font-family: "OpenSans-Semibold"; }
       .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-btn {
@@ -9571,18 +9571,16 @@ h2.inner-title--no-caps {
   #wrapwrap .wrap-target-menu li a {
     font-size: 1.125rem;
     padding: 1rem 1.25rem; }
-  #wrapwrap .head-content .main-title-wrap .main-title-container {
-    margin-top: 0.5rem; }
-    #wrapwrap .head-content .main-title-wrap .main-title-container h1.main-title {
-      font-size: 1.25rem; }
-    #wrapwrap .head-content .main-title-wrap .main-title-container .reshetnev {
-      font-size: 1.25rem; }
+  #wrapwrap .head-content .main-title-wrap .main-title-container h1.main-title {
+    font-size: 1.25rem; }
+  #wrapwrap .head-content .main-title-wrap .main-title-container .reshetnev {
+    font-size: 1.25rem; }
   #wrapwrap .navaslider {
     height: 450px; }
   #wrapwrap .main-slider.owl-carousel {
     height: 450px; }
     #wrapwrap .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-title {
-      font-size: 1.5rem; }
+      font-size: 24px; }
   #wrapwrap .event-item {
     padding: 0; }
   #wrapwrap .news-sect .wrap-item-news {
@@ -9680,12 +9678,12 @@ h2.inner-title--no-caps {
         #wrapwrap .head-content .search-area--mobile .search-area-form input {
           width: 100%; }
   #wrapwrap .navaslider {
-    height: 350px;
+    height: 375px;
     margin-top: 0; }
     #wrapwrap .navaslider .container {
       padding: 0; }
   #wrapwrap .main-slider.owl-carousel {
-    height: 350px; }
+    height: 375px; }
     #wrapwrap .main-slider.owl-carousel .wrap-main-slide .slide-content-inner {
       width: 75%; }
   #wrapwrap .main-menu {
@@ -9799,21 +9797,21 @@ h2.inner-title--no-caps {
   #wrapwrap .head-content .main-title-wrap img {
     width: 65px; }
   #wrapwrap .head-content .main-title-wrap .main-title-container h1.main-title {
-    margin-left: 10px;
-    font-size: 0.75rem; }
+    margin-left: 7px;
+    font-size: 0.8125rem; }
   #wrapwrap .head-content .main-title-wrap .main-title-container .reshetnev {
-    font-size: 0.75rem; }
+    font-size: 0.8125rem; }
   #wrapwrap .navaslider {
-    height: 250px; }
+    height: 275px; }
     #wrapwrap .navaslider .main-slider.owl-carousel {
-      height: 250px; }
+      height: 275px; }
       #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-outer {
         top: 25%; }
       #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-title {
-        font-size: 1.25rem;
-        margin-bottom: 1rem; }
+        font-size: 20px;
+        margin-bottom: 15px; }
       #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-btn {
-        font-size: 1rem; }
+        font-size: 15px; }
   #wrapwrap .infographics-sect .wrap-infographics-content img {
     width: 135px;
     height: 135px; }
@@ -9865,10 +9863,10 @@ h2.inner-title--no-caps {
   #wrapwrap .head-content .main-title-wrap .main-title-container .reshetnev {
     font-size: 0.7rem; }
   #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-title {
-    font-size: 1.125rem;
-    margin-bottom: 1rem; }
+    font-size: 18px;
+    margin-bottom: 15px; }
   #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-btn {
-    font-size: 1rem; } }
+    font-size: 15px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
