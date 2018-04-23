@@ -1,6 +1,6 @@
 <?php include("_head.php") ?>
 <?php include("_header.php") ?>
-<?php include("_inner-menu.php") ?>
+<?php include("_audit-menu-inner.php") ?>
 
 <!-- 
 	Шаблонная страница, предназначенная для выкладывания в плиточном стиле ссылки с иконками font-awesome,
