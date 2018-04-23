@@ -365,6 +365,10 @@
 	&--inner
 		height: auto
 		background-color: $blue
+		.wrap-target-menu 
+			li 
+				a
+					padding: 1.25rem 1.375rem
 .wrap-target-menu
 	margin: 0
 	padding: 0
@@ -1139,6 +1143,7 @@
 					color: $accent-links
 	.wrap-events-content
 		.table-events
+			table-layout: auto !important
 			thead
 				th
 					text-transform: uppercase
@@ -1196,11 +1201,6 @@
 				color: $accent-links
 			span
 				display: inline-block
-
-#wrapwrap
-	.wrap-events-content
-			table.table-events
-				table-layout: auto
 /* END EVENTS LIST PAGE */
 
 
@@ -1616,6 +1616,7 @@
 
 /* Patents */
 .table-patents
+	table-layout: auto !important
 	> thead > tr > th, 
 	> tbody > tr > th, 
 	> tfoot > tr > th, 

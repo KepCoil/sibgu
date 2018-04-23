@@ -7351,6 +7351,10 @@ h2.inner-title {
 h2.inner-title--no-caps {
   font-size: 1.5rem; }
 
+#wrapwrap table.table,
+#wrapwrap .o_editable table.table {
+  table-layout: auto; }
+
 /* иконки для ссылок на файлы */
 .doc-file {
   border: none;
@@ -8211,6 +8215,8 @@ h2.inner-title--no-caps {
   .dekstop-target-menu--inner {
     height: auto;
     background-color: #2c438f; }
+    .dekstop-target-menu--inner .wrap-target-menu li a {
+      padding: 1.25rem 1.375rem; }
 
 .wrap-target-menu {
   margin: 0;
@@ -8986,32 +8992,29 @@ h2.inner-title--no-caps {
       .wrap-events-list .wrap-events-date-filter ul a:hover {
         color: #ea2f1c; }
 
-.wrap-events-list .wrap-events-content .table-events thead th {
-  text-transform: uppercase;
-  font-family: "OpenSans-Semibold";
-  font-weight: normal; }
-
-.wrap-events-list .wrap-events-content .table-events thead th:first-child {
-  width: 150px; }
-
-.wrap-events-list .wrap-events-content .table-events thead th.fix-width-180 {
-  width: 180px; }
-
-.wrap-events-list .wrap-events-content .table-events tbody td {
-  padding: 16px 8px; }
-
-.wrap-events-list .wrap-events-content .table-events tbody time {
-  display: block; }
-  .wrap-events-list .wrap-events-content .table-events tbody time span:first-child {
-    margin-bottom: 5px;
-    display: inline-block; }
-
-.wrap-events-list .wrap-events-content .table-events tbody .event-title a {
-  color: #222;
-  border-color: #222; }
-  .wrap-events-list .wrap-events-content .table-events tbody .event-title a:hover {
-    color: #ea2f1c;
-    border-color: #ea2f1c; }
+.wrap-events-list .wrap-events-content .table-events {
+  table-layout: auto !important; }
+  .wrap-events-list .wrap-events-content .table-events thead th {
+    text-transform: uppercase;
+    font-family: "OpenSans-Semibold";
+    font-weight: normal; }
+  .wrap-events-list .wrap-events-content .table-events thead th:first-child {
+    width: 150px; }
+  .wrap-events-list .wrap-events-content .table-events thead th.fix-width-180 {
+    width: 180px; }
+  .wrap-events-list .wrap-events-content .table-events tbody td {
+    padding: 16px 8px; }
+  .wrap-events-list .wrap-events-content .table-events tbody time {
+    display: block; }
+    .wrap-events-list .wrap-events-content .table-events tbody time span:first-child {
+      margin-bottom: 5px;
+      display: inline-block; }
+  .wrap-events-list .wrap-events-content .table-events tbody .event-title a {
+    color: #222;
+    border-color: #222; }
+    .wrap-events-list .wrap-events-content .table-events tbody .event-title a:hover {
+      color: #ea2f1c;
+      border-color: #ea2f1c; }
 
 .wrap-category-list,
 .wrap-events-category {
@@ -9055,9 +9058,6 @@ h2.inner-title--no-caps {
       .wrap-category-list li a span,
       .wrap-events-category li a span {
         display: inline-block; }
-
-#wrapwrap .wrap-events-content table.table-events {
-  table-layout: auto; }
 
 /* END EVENTS LIST PAGE */
 /* EVENT PAGE */
@@ -9469,23 +9469,23 @@ h2.inner-title--no-caps {
 
 /* End Gorisont paper */
 /* Patents */
-.table-patents > thead > tr > th,
-.table-patents > tbody > tr > th,
-.table-patents > tfoot > tr > th,
-.table-patents > thead > tr > td,
-.table-patents > tbody > tr > td,
-.table-patents > tfoot > tr > td {
-  padding: 0.625rem 2rem 0.875rem 0.5rem !important; }
-
-.table-patents > thead > tr > th {
-  text-transform: uppercase; }
-
-.table-patents a {
-  color: #222;
-  border-color: #222; }
-  .table-patents a:hover {
-    color: #ea2f1c;
-    border-color: #ea2f1c; }
+.table-patents {
+  table-layout: auto !important; }
+  .table-patents > thead > tr > th,
+  .table-patents > tbody > tr > th,
+  .table-patents > tfoot > tr > th,
+  .table-patents > thead > tr > td,
+  .table-patents > tbody > tr > td,
+  .table-patents > tfoot > tr > td {
+    padding: 0.625rem 2rem 0.875rem 0.5rem !important; }
+  .table-patents > thead > tr > th {
+    text-transform: uppercase; }
+  .table-patents a {
+    color: #222;
+    border-color: #222; }
+    .table-patents a:hover {
+      color: #ea2f1c;
+      border-color: #ea2f1c; }
 
 .patent-decs,
 .patent-authors {
