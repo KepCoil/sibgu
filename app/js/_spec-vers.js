@@ -22,7 +22,7 @@ $(function() {
 			whiteTheme();
 			imageOn(); 
 			$(this).addClass("active");
-			$("#js-text-button-spec-version").text("Версия по умолчанию");
+			$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 		};
 
 		return false;
@@ -46,8 +46,8 @@ $(function() {
 
 		$("html").removeAttr("data-spec-vers", "data-font-size", "data-theme","data-img");
 		$("#img-disable").attr('checked', 'checked');
-		$("#js-button-spec-version").removeClass("active");
-		$("#js-text-button-spec-version").text("Версия для слабовидящих");
+		$("#js-button-spec-version").removeClass("active");;
+		$("#js-button-spec-version .fa").removeClass('fa-eye-slash').addClass('fa-eye');
 		window.location.reload();
 	}
 	
@@ -68,7 +68,7 @@ $(function() {
 		if ($.cookie("state-images")=="off") { imageOff(); };
 
 		$("#js-button-spec-version").addClass("active");
-		$("#js-text-button-spec-version").text("Версия по умолчанию");
+		$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 	}
 
 
