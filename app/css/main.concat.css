@@ -7976,25 +7976,6 @@ h2.inner-title--no-caps {
         color: #ffe082; }
       #wrapwrap .top-line .spec-vers-wrap .btn-active-spec-ver .fa {
         font-size: 2rem; }
-  #wrapwrap .top-line .main-logo {
-    width: 226px;
-    height: 233px;
-    background-color: #fff;
-    -webkit-border-radius: 0 0 50% 50%;
-            border-radius: 0 0 50% 50%;
-    position: absolute;
-    display: block;
-    top: -2px;
-    left: 0;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    padding: 20px 13px 10px 13px;
-    border: none; }
-    #wrapwrap .top-line .main-logo img {
-      display: block !important;
-      visibility: visible !important;
-      width: 200px;
-      height: 200px; }
   #wrapwrap .top-line .flag-links {
     display: none; }
     #wrapwrap .top-line .flag-links img {
@@ -8143,9 +8124,10 @@ h2.inner-title--no-caps {
     .head-content .main-title-wrap a {
       color: #fff;
       border: none; }
-    .head-content .main-title-wrap img {
+    .head-content .main-title-wrap .main-logo {
+      display: inline-block !important;
+      visibility: visible !important;
       width: 135px;
-      display: inline-block;
       vertical-align: top; }
     .head-content .main-title-wrap .main-title-container {
       display: inline-block;
@@ -8197,6 +8179,7 @@ h2.inner-title--no-caps {
         .head-content .other-func .flags-list > li a {
           border: none; }
         .head-content .other-func .flags-list > li img {
+          visibility: visible !important;
           width: 46px;
           -webkit-box-shadow: 1px 1px 0 #dcdcdc;
                   box-shadow: 1px 1px 0 #dcdcdc; }

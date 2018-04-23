@@ -189,8 +189,7 @@
 
 			<div class="main-title-wrap clearfix">
 				<a href="#">
-					<!-- <img class="mobile-main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева"> -->
-					<img src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
+					<img class="main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
 					<span class="main-title-container">
 						<h1 class="main-title">
 							Сибирский государственный университет<br> науки и технологий<br>

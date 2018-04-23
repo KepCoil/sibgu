@@ -132,23 +132,6 @@
 					color: $yellow
 				.fa
 					font-size: 2rem
-		.main-logo
-			width: 226px
-			height: 233px
-			background-color: #fff
-			border-radius: 0 0 50% 50%
-			position: absolute
-			display: block
-			top: -2px
-			left: 0
-			box-shadow: 0 2px 4px rgba(0,0,0,0.3)
-			padding: 20px 13px 10px 13px
-			border: none
-			img
-				display: block !important
-				visibility: visible !important
-				width: 200px
-				height: 200px
 		.flag-links
 			display: none
 			img
@@ -297,9 +280,10 @@
 		a
 			color: #fff
 			border: none
-		img
+		.main-logo
+			display: inline-block !important
+			visibility: visible !important
 			width: 135px
-			display: inline-block
 			vertical-align: top
 		.main-title-container
 			display: inline-block
@@ -352,6 +336,7 @@
 				a
 					border: none
 				img
+					visibility: visible !important
 					width: 46px
 					box-shadow: 1px 1px 0 $grey-font
 	.mobile-search-area
