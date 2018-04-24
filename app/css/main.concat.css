@@ -8671,15 +8671,48 @@ h2.inner-title--no-caps {
 /* END SECTION COMPANY - PARTNERS */
 .links-other {
   padding: 2.5rem 0; }
-  .links-other .owl-carousel .links-other-item {
-    padding: 0 0.75rem;
-    overflow: hidden; }
-    .links-other .owl-carousel .links-other-item img {
-      width: 250px;
-      height: 150px; }
-    .links-other .owl-carousel .links-other-item a {
-      display: block;
-      border: none; }
+  .links-other .container {
+    padding: 0 30px; }
+  .links-other .owl-carousel {
+    position: relative; }
+    .links-other .owl-carousel .owl-stage-outer {
+      z-index: 2; }
+    .links-other .owl-carousel .links-other-item {
+      padding: 0 0.75rem;
+      overflow: hidden; }
+      .links-other .owl-carousel .links-other-item a {
+        display: block;
+        border: none; }
+      .links-other .owl-carousel .links-other-item img {
+        width: 250px;
+        height: 150px;
+        margin: 0 auto; }
+    .links-other .owl-carousel .owl-dots {
+      display: none !important; }
+    .links-other .owl-carousel .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .links-other .owl-carousel .owl-nav .owl-prev,
+      .links-other .owl-carousel .owl-nav .owl-next {
+        position: relative; }
+      .links-other .owl-carousel .owl-nav .owl-prev {
+        float: left;
+        left: -15px; }
+      .links-other .owl-carousel .owl-nav .owl-next {
+        float: right;
+        right: -15px; }
+      .links-other .owl-carousel .owl-nav .fa {
+        font-size: 3rem;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.25s ease-out;
+        -o-transition: opacity 0.25s ease-out;
+        transition: opacity 0.25s ease-out; }
+        .links-other .owl-carousel .owl-nav .fa:hover {
+          opacity: 0.75; }
 
 /* FOOTER */
 #wrapwrap > footer.main-footer {

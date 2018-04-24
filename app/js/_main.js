@@ -104,49 +104,6 @@ $(function() {
 		$(".droplist-main__sub-sub-content").hide();
 	}
 	/**/
-	
-
-
-
-	/* Функция пересчета ширины слайдера в зависимости от ширины экрана */
-	// function mainSliderResize() {
-
-	// 	if ( !($("div").is(".navaslider")) ) {
-	// 		return;
-	// 	}
-	// 	else {
-	// 		var
-	// 			windowSize 				= $(window).width(),
-	// 			marginLeftContainer  = $(".navaslider .container").css("margin-left").replace("px", ""),
-	// 			paddingLeftContainer = $(".navaslider .container").css("padding-left").replace("px", ""),
-	// 			targetMenuWidth 		= $(".dekstop-target-menu").innerWidth(), 
-	// 			containerWidth 		= $(".navaslider .container").innerWidth(),
-	// 			sliderWidth,
-	// 			slideContentWidth;
-
-	// 		if ( (windowSize >= 992) && (windowSize <= 1920) ) {
-	// 			sliderWidth = windowSize - marginLeftContainer - paddingLeftContainer - targetMenuWidth;
-	// 			slideContentWidth = containerWidth - targetMenuWidth;
-	// 		} 
-	// 		else if (windowSize >= 1920) {
-	// 			sliderWidth = containerWidth - targetMenuWidth;
-	// 			slideContentWidth = containerWidth - targetMenuWidth;
-	// 		}
-	// 		else {
-	// 			sliderWidth = "100%";
-	// 			slideContentWidth = "100%";
-	// 		}
-
-	// 		$("#js-main-slider").width(sliderWidth);
-	// 		$(".js-slide-content").each(function() {
-	// 			$(this).css("width", slideContentWidth);
-	// 		});
-	// 	}
-		
-	// }
-
-	// mainSliderResize();
-	/* Конец функция пересчета ширины слайдера в зависимости от ширины экрана */
 
 
 
@@ -190,13 +147,14 @@ $(function() {
 	/**/
 	$("#js-links-other").owlCarousel({
 		loop: true,
-		responsiveClass: true,
 		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+		// responsiveClass: true,
 		responsive: {
 			0:    { items:1 },
 			420:  { items:2 },
-			1260: { items:3 },
-			1400: { items:4 },
+			768:  { items:3 },
+			1260: { items:4 },
 			1580: { items:5 },
 			1800: { items:6 }
 		}
@@ -370,10 +328,8 @@ $(function() {
 	/* Функции при ресайзе экрана */
 	$(window).resize(function() {
 		equalHeightElements();
-		//mainSliderResize();
 		resizeHeightMapFilials();
 		resizeInstituteItems();
-		// enablePaSlider();
 	});
 
 

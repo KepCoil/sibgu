@@ -1,27 +1,4 @@
-<section class="main-sect grey-sect links-other">
-	<div class="container">
-		<div id="js-links-other" class="owl-carousel">
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-			<div class="links-other-item">
-				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-			</div>
-		</div>
-	</div>
-</section>
+
 
 <footer class="main-footer">
 	
