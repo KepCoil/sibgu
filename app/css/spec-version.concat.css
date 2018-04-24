@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* v1 colors */
 html[data-font-size="default"] {
   font-size: 100%; }
 
@@ -9,7 +8,6 @@ html[data-font-size="medium"] {
 html[data-font-size="large"] {
   font-size: 150%; }
 
-/* v1 colors */
 /* white */
 html[data-theme="white"] body {
   color: #000;
@@ -41,7 +39,9 @@ html[data-theme="white"] #wrapwrap .top-line {
 
 html[data-theme="white"] #wrapwrap .dekstop-target-menu {
   height: auto;
-  background: #fff; }
+  background: #fff;
+  -webkit-box-shadow: 0 1px 0 #000;
+          box-shadow: 0 1px 0 #000; }
 
 html[data-theme="white"] #wrapwrap .navaslider {
   margin-top: 0; }
@@ -303,7 +303,6 @@ html[data-theme="white"] #wrapwrap .main-accordion .accordion-item .panel-body {
 html[data-theme="white"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #ccc; }
 
-/* v1 colors */
 /* black */
 html[data-theme="black"] body {
   color: #fff;
@@ -349,7 +348,9 @@ html[data-theme="black"] #wrapwrap .other-func .other-func-item a {
 
 html[data-theme="black"] #wrapwrap .dekstop-target-menu {
   height: auto;
-  background: #000; }
+  background: #000;
+  -webkit-box-shadow: 0 1px 0 #fff;
+          box-shadow: 0 1px 0 #fff; }
 
 html[data-theme="black"] #wrapwrap .navaslider {
   margin-top: 0; }
@@ -610,7 +611,6 @@ html[data-theme="black"] #wrapwrap .main-accordion .accordion-item .panel-body {
 html[data-theme="black"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #333; }
 
-/* v1 colors */
 /* blue */
 html[data-theme="blue"] body {
   color: #063462;
@@ -638,9 +638,9 @@ html[data-theme="blue"] #wrapwrap .foot-second-level {
 
 html[data-theme="blue"] #wrapwrap .foot-first-level,
 html[data-theme="blue"] #wrapwrap .top-line {
-  border-bottom: 1px solid #063462; }
+  -webkit-box-shadow: 0 1px 0 #063462;
+          box-shadow: 0 1px 0 #063462; }
 
-html[data-theme="blue"] #wrapwrap .main-menu,
 html[data-theme="blue"] #wrapwrap .navaslider,
 html[data-theme="blue"] #wrapwrap .main-footer {
   border-top: 1px solid #063462; }
@@ -678,7 +678,9 @@ html[data-theme="blue"] #wrapwrap .top-line {
 
 html[data-theme="blue"] #wrapwrap .dekstop-target-menu {
   height: auto;
-  background: #9dd1ff; }
+  background: #9dd1ff;
+  -webkit-box-shadow: 0 1px 0 #063462;
+          box-shadow: 0 1px 0 #063462; }
 
 html[data-theme="blue"] #wrapwrap .other-func .other-func-item a {
   color: #063462;
@@ -902,7 +904,6 @@ html[data-theme="blue"] #wrapwrap .main-accordion .accordion-item .panel-body {
 html[data-theme="blue"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #76baff; }
 
-/* v1 colors */
 html[data-img="disable"] {
   /* картинки новостей на главной */
   /* слайдер на главной */

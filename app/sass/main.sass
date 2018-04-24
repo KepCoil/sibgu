@@ -337,31 +337,43 @@
 
 
 /* AUDIT MENU */
-.wrap-target-menu
-	margin: 0
-	padding: 0
-	list-style-type: none
-	li
-		float: left
-		display: inline-block
-		&:last-child
-			border-bottom: none
-		a
-			color: #fff
-			padding: 1.125rem 1.375rem
-			display: block
-			font-size: 1.375rem
-			text-transform: uppercase
-			font-family: "OpenSansCondensed-Bold"
-			letter-spacing: 1px
-			border-bottom: none
-			&:first-child
-				padding-left: 15px
-			&:hover
-				color: $yellow
-			i
-				position: relative
-				width: 2rem
+.dekstop-target-menu
+	display: inline-block
+	width: 100%
+	height: 12rem
+	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.60) 50%, rgba(44, 67, 143, 0.60) 25%, rgba(44, 67, 143, 0));
+	.wrap-target-menu
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			float: left
+			display: inline-block
+			&:last-child
+				border-bottom: none
+			a
+				color: #fff
+				padding: 1.125rem 1.375rem
+				display: block
+				font-size: 1.375rem
+				text-transform: uppercase
+				font-family: "OpenSansCondensed-Bold"
+				letter-spacing: 1px
+				border-bottom: none
+				&:first-child
+					padding-left: 15px
+				&:hover
+					color: $yellow
+				i
+					position: relative
+					width: 2rem
+	&--inner
+		height: auto
+		background-color: $blue
+		.wrap-target-menu
+			li
+				a
+					font-size: 1.25rem
 
 
 /* MAIN SLIDER */
@@ -375,18 +387,6 @@
 	position: relative
 	>div
 		float: left
-.dekstop-target-menu
-	display: inline-block
-	width: 100%
-	height: 12rem
-	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.60) 50%, rgba(44, 67, 143, 0.60) 25%, rgba(44, 67, 143, 0));
-	&--inner
-		height: auto
-		background-color: $blue
-		.wrap-target-menu 
-			li 
-				a
-					padding: 1.25rem 1.375rem
 
 .main-slider.owl-carousel
 	position: relative
@@ -815,22 +815,37 @@
 
 /* END SECTION COMPANY - PARTNERS */
 
+.links-other
+	padding: 2.5rem 0
+	// &-container
+	// 	max-width: 1920px
+	// 	margin: 0 auto
+	.owl-carousel
+		.links-other-item
+			padding: 0 0.75rem
+			overflow: hidden
+			img
+				width: 250px
+				height: 150px
+			a
+				display: block
+				border: none
+				
 
 
 /* FOOTER */
-
 #wrapwrap 
 	>footer.main-footer
 		display: block
-		padding-top: 50px
+		padding-top: 3.125rem
 		background-color: $blue
 		color: #fff
-		border-bottom: 10px solid $dark-blue
+		font-family: "OpenSans-Regular"
 		a
 			color: #fff
 			border-bottom: 1px solid #fff
 			transition: color $main-trans, border-bottom-color $main-trans
-			margin-top: 20px
+			margin-top: 1.25rem
 			&:hover, &:focus, &:active
 				border-color: $yellow
 				color: $yellow
@@ -841,27 +856,6 @@
 		address
 			font-style: normal
 			font-family: "OpenSans-Regular"
-		.main-footer-bg
-			position: relative
-			// padding-bottom: 400px
-			height: 453px
-			overflow: hidden
-			//&::after
-				//content: ""
-				//display: block
-			// position: absolute
-			width: 100%
-			// margin-bottom: -180px
-			margin-top: -100px
-			left: 0
-			right: 0
-			bottom: 0
-			background-image: url(../img/bg_footer-buldings.png)
-			background-repeat: no-repeat
-			background-position: center
-			background-size: contain
-			z-index: 2
-			opacity: 0.2
 		.wrap-foot-level
 			margin: 0
 			.col-md-6
@@ -871,11 +865,10 @@
 				&:last-child
 					padding-right: 0
 		.first-foot-line
-			padding-bottom: 50px
+			padding-bottom: 3.125rem
 			border-bottom: 1px solid $light-line
 		.second-foot-line
-			padding: 40px 0
-
+			padding: 3rem 0 4rem 0
 			h5
 				margin: 0 0 15px 0
 				font-size: 1.25rem
@@ -898,7 +891,6 @@
 					margin-bottom: 15px
 					font-size: 0.9375rem
 			.foot-contacts-content-col-2
-				margin-top: 41px
 				strong
 					font-weight: normal
 					font-family: "OpenSans-Semibold"
@@ -934,9 +926,11 @@
 					height: 40px
 					visibility: visible !important
 		.foot-second-level
-			padding: 30px 0
+			padding: 1.5rem 0 
 			background-color: $dark-blue
 			border-top: 1px solid $light-line
+			.copy-sibgu
+				font-family: "OpenSans-Semibold"
 			.uit
 				text-align: right
 /* END FOOTER */

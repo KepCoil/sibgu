@@ -1,7 +1,32 @@
+<section class="main-sect grey-sect links-other">
+	<div class="container">
+		<div id="js-links-other" class="owl-carousel">
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+			<div class="links-other-item">
+				<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <footer class="main-footer">
 	
-	<div class="container">
-		<!-- <div class="main-footer-bg"> -->
+	<div class="foot-first-level">
+		<div class="container">
 			<div class="row wrap-foot-level first-foot-line">
 				<div class="col-md-6">
 					<ul class="wrap-foot-links">
@@ -87,16 +112,12 @@
 						</ul>
 					</div>
 				</div>
-			<!-- </div> -->
+			</div>
+
 		</div>
-		<div class="main-footer-bg"></div>
-
-
 	</div>
 
-</footer>
-
-<!-- <div class="foot-second-level">
+	<div class="foot-second-level">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-17">
@@ -109,4 +130,6 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
+
+</footer>

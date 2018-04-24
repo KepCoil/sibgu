@@ -160,78 +160,77 @@ h2.inner-title--no-caps
 /* иконки для ссылок на файлы */
 .doc-file
 	border: none
-	display: inline-block
-	margin-right: 0.5rem
-	&:hover, &:focus, &:active
+	text-decoration: underline
+	&:hover
 		border: none
-	span
-		border-bottom: 1px solid #076fc8
-		transition: border-color $main-trans
-	.doc-file-icon
-		display: inline-block
-		position: relative
-		width: 2.5rem
-		bottom: 2px
-		color: #fff
-		font-family: "OpenSansCondensed-Bold"
-		font-style: normal
-		font-size: 0.875rem
-		padding: 2px 0 2px 8px
-		margin-right: 0.5rem
-		border-radius: 1px
-		visibility: hidden
-		&::before
-			content: ""
-			position: absolute
-			top: 0
-			right: 0
-			border-width: 0 7px 7px 0
-			border-style: solid
-			border-color: #fff
-			background: #fff
-			display: block
-			width: 0
-			// box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2)
+		text-decoration: underline
 	&--pdf
-		.doc-file-icon
-			background: #cb0606
-			visibility: visible
-			&::before
-				border-color: #fff #fff darken(#cb0606, 10%) darken(#cb0606, 10%)
-		&:hover, &:focus, &:active
-			color: #cb0606
-			span
-				border-color: #cb0606
+		&::before
+			content: "PDF"
+			display: inline-block
+			position: relative
+			width: 2.4rem
+			padding: 2px 0
+			background-color: #cb0606
+			color: #fff
+			text-transform: uppercase
+			font-family: "OpenSansCondensed-Bold"
+			font-style: normal
+			font-size: 0.875rem
+			text-align: center
+			margin-right: 0.5rem
+			border-radius: 1px
 	&--doc
-		.doc-file-icon
-			background: #2a5699
-			visibility: visible
-			&::before
-				border-color: #fff #fff darken(#2a5699, 10%) darken(#2a5699, 10%)
-		&:hover, &:focus, &:active
-			color: #2a5699
-			span
-				border-color: #2a5699
+		&::before
+			content: "DOC"
+			display: inline-block
+			position: relative
+			width: 2.4rem
+			padding: 2px 0
+			background-color: #2a5699
+			color: #fff
+			text-transform: uppercase
+			font-family: "OpenSansCondensed-Bold"
+			font-style: normal
+			font-size: 0.875rem
+			text-align: center
+			margin-right: 0.5rem
+			border-radius: 1px
 	&--xlsx
-		.doc-file-icon
-			background: #1f6a41
-			visibility: visible
-			&::before
-				border-color: #fff #fff darken(#1f6a41, 10%) darken(#1f6a41, 10%)
-		&:hover, &:focus, &:active
-			color: #1f6a41
-			span
-				border-color: #1f6a41
+		&::before
+			content: "xlsx"
+			display: inline-block
+			position: relative
+			width: 2.4rem
+			padding: 2px 0
+			background-color: #1f6a41
+			color: #fff
+			text-transform: uppercase
+			font-family: "OpenSansCondensed-Bold"
+			font-style: normal
+			font-size: 0.875rem
+			text-align: center
+			margin-right: 0.5rem
+			border-radius: 1px
 	&--pptx
-		.doc-file-icon
-			background: #d14424
-			visibility: visible
-			&::before
-				border-color: #fff #fff darken(#d14424, 10%) darken(#d14424, 10%)
-		&:hover, &:focus, &:active
-			color: #d14424
-			span
-				border-color: #d14424
+		&::before
+			content: "xlsx"
+			display: inline-block
+			position: relative
+			width: 2.4rem
+			padding: 2px 0
+			background-color: #d14424
+			color: #fff
+			text-transform: uppercase
+			font-family: "OpenSansCondensed-Bold"
+			font-style: normal
+			font-size: 0.875rem
+			text-align: center
+			margin-right: 0.5rem
+			border-radius: 1px
+
+
+
 /* иконки для ссылок на файлы */
 		
 
