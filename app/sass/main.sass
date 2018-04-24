@@ -6,24 +6,22 @@
 
 /* HEADER */
 #wrapwrap
-	.main-head
-		color: #fff
 	.top-line
 		position: relative
 		height: 40px
 		background-color: $blue
 		box-shadow: 0 1px 0 $light-border
 		font-size: 0.9375rem
-		color: $grey-font
+		color: $light-grey-font
 		font-family: "MyriadPro-Regular"
+		&-left-content
+			float: left
+		&-right-content
+			float: right
 		a
-			color: $grey-font
+			color: $light-grey-font
 			&:hover
 				color: $yellow
-		.top-line-left-content
-			float: left
-		.top-line-right-content
-			float: right
 		.main-logo-wrap, .quick-links-wrap, .res-links-wrap, .spec-vers-wrap
 			position: relative
 			float: left
@@ -35,14 +33,14 @@
 			height: 40px
 			line-height: 40px
 			padding: 0 15px
-		.quick-links
-			a
-				font-size: 0.9375rem
-				margin-right: 1.5625rem
-				border: none
-				transition: color $main-trans, border-bottom-color $main-trans
-				&:hover,&:focus
-					text-decoration: none
+			.quick-links
+				a
+					font-size: 0.9375rem
+					margin-right: 1.5625rem
+					border: none
+					transition: color $main-trans, border-bottom-color $main-trans
+					&:hover,&:focus
+						text-decoration: none
 		.res-links
 			.droplist-main
 				position: relative
@@ -52,7 +50,7 @@
 				&__btn
 					background: none
 					border: none
-					color: $grey-font
+					color: $light-grey-font
 					line-height: 40px
 					font-size: 0.9375rem
 					padding: 0 1rem
@@ -166,18 +164,20 @@
 	background-color: $light-bgc
 	height: 64px
 	overflow: hidden
+	.wrap-main-menu
+		float: left
 	ul
 		list-style-type: none
 		padding: 0
 		margin: 0
-	.ul-inner-menu
+	ul.ul-inner-menu
 		>li
 			float: left
 			display: inline-block
 			>a
 				display: block
 				font-family: "MyriadPro-Regular"
-				color: $dgrey-font
+				color: $grey-font
 				border: none
 				padding: 0 0.9375rem
 				transition: background-color $main-trans
@@ -188,10 +188,14 @@
 					background-color: $grey-bgc
 				>i
 					font-size: 12px
-					margin-top: -1px
-					position: relative
-					top: -1px
 					margin-left: 7px
+			&.droplist-open
+				background-color: $grey-bgc
+				>a
+					color: $accent-links
+					&:hover
+						color: $accent-links
+
 	ul.droplist-content
 		position: absolute
 		z-index: 1000
@@ -201,14 +205,14 @@
 		display: none
 		box-shadow: 0 5px 10px -5px rgba(0,0,0,.5)
 		border-radius: 0 0 2px 2px
-		li
+		>li
 			display: block
 			border-bottom: 1px solid #ddd
 			&:last-child
 				border-bottom: none
-			a
+			>a
 				display: block
-				color: $dgrey-font
+				color: $grey-font
 				padding: 0.6rem 1.5rem 0.6rem 0.75rem
 				font-family: "MyriadPro-Regular"
 				text-transform: none
@@ -218,26 +222,7 @@
 				border: none
 				&:hover
 					color: $accent-links
-	.droplist-open
-		background-color: $grey-bgc
-		a
-			color: $accent-links
-			&:hover
-				color: $accent-links
 
-	.wrap-main-menu
-		float: left
-		.wrap-inner-common-menu
-			border-bottom: 1px solid $light-line
-		.inner-audit-menu
-			>li
-				>a
-					color: #fff
-					background-color: transparent
-					transition: color $main-trans
-					&:hover
-						//background-color: $grey-bgc
-						color: $yellow
 .search-area
 	float: right
 	padding: 0
@@ -248,7 +233,7 @@
 		height: 64px
 		input
 			width: 220px
-			color: $dgrey-font
+			color: $grey-font
 			padding: 3px 40px 3px 8px
 			font-size: 1rem
 			border: 2px solid darken($light-bgc, 7%)
@@ -264,7 +249,7 @@
 			transform: translateY(-50%)
 			opacity: 0.7
 			.fa
-				color: $dgrey-font
+				color: $grey-font
 				vertical-align: top
 				line-height: 32px
 		
@@ -321,12 +306,12 @@
 			display: block
 			text-decoration: none
 			border: none
-			color: $dgrey-font
+			color: $grey-font
 			margin-bottom: 0.625rem
 			a
-				color: $dgrey-font
+				color: $grey-font
 				display: inline-block
-				border-bottom: 1px solid $dgrey-font
+				border-bottom: 1px solid $grey-font
 				&:hover
 					color: $accent-links
 					border-color: $accent-links
@@ -346,37 +331,12 @@
 				img
 					visibility: visible !important
 					width: 46px
-					box-shadow: 1px 1px 0 $grey-font
+					box-shadow: 1px 1px 0 $light-grey-font
 	.search-area.search-area--mobile
 		display: none 
-		
-	
-/* END HEADER */
 
 
-/* TARGET NAV and SLIDER */
-.navaslider
-	height: 560px
-	position: relative
-	margin-top: -8.125rem
-	z-index: -1
-	background-color: $blue
-.wrap-navaslider-content
-	position: relative
-	>div
-		float: left
-.dekstop-target-menu
-	display: inline-block
-	width: 100%
-	height: 12rem
-	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.59) 50%, rgba(44, 67, 143, 0.59) 25%, rgba(44, 67, 143, 0));
-	&--inner
-		height: auto
-		background-color: $blue
-		.wrap-target-menu 
-			li 
-				a
-					padding: 1.25rem 1.375rem
+/* AUDIT MENU */
 .wrap-target-menu
 	margin: 0
 	padding: 0
@@ -402,6 +362,31 @@
 			i
 				position: relative
 				width: 2rem
+
+
+/* MAIN SLIDER */
+.navaslider
+	height: 560px
+	position: relative
+	margin-top: -8.125rem
+	z-index: -1
+	background-color: $blue
+.wrap-navaslider-content
+	position: relative
+	>div
+		float: left
+.dekstop-target-menu
+	display: inline-block
+	width: 100%
+	height: 12rem
+	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.60) 50%, rgba(44, 67, 143, 0.60) 25%, rgba(44, 67, 143, 0));
+	&--inner
+		height: auto
+		background-color: $blue
+		.wrap-target-menu 
+			li 
+				a
+					padding: 1.25rem 1.375rem
 
 .main-slider.owl-carousel
 	position: relative
@@ -505,10 +490,6 @@
 				&:hover
 					background-color: $accent-links
 					border-color: $accent-links
-				
-
-/* END TARGET NAV and SLIDER */
-
 
 
 /* SECTION NEWS */
@@ -620,7 +601,6 @@
 				top: 50%
 				transform: translateY(-50%)
 				transition: color $main-trans, text-indent $main-trans
-/* END SECTION NEWS */
 
 
 /* SECTION EVENT */
@@ -699,7 +679,6 @@
 		p
 			margin: 0
 			font-size: 1rem
-/* END SECTION EVENT */
 
 
 
@@ -725,9 +704,6 @@
 		font-family: "MyriadPro-SemiBoldItalic"
 		font-size: 1.25rem
 		margin: 40px 0 0 0
-
-/* END SECTION RECTOR */
-
 
 
 /* SECTION INFOGRAPFICS */
@@ -867,24 +843,25 @@
 			font-family: "OpenSans-Regular"
 		.main-footer-bg
 			position: relative
-			padding-bottom: 400px
-			height: 100%
+			// padding-bottom: 400px
+			height: 453px
 			overflow: hidden
-			&::after
-				content: ""
-				display: block
-				position: absolute
-				width: auto
-				height: 100%
-				margin-bottom: -180px
-				left: 0
-				right: 0
-				bottom: 0
-				background-image: url(../img/bg_footer-buldings.png)
-				background-repeat: no-repeat
-				background-position: center
-				z-index: 2
-				opacity: 0.2
+			//&::after
+				//content: ""
+				//display: block
+			// position: absolute
+			width: 100%
+			// margin-bottom: -180px
+			margin-top: -100px
+			left: 0
+			right: 0
+			bottom: 0
+			background-image: url(../img/bg_footer-buldings.png)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			z-index: 2
+			opacity: 0.2
 		.wrap-foot-level
 			margin: 0
 			.col-md-6

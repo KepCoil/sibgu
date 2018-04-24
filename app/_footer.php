@@ -1,7 +1,7 @@
 <footer class="main-footer">
 	
 	<div class="container">
-		<div class="main-footer-bg">
+		<!-- <div class="main-footer-bg"> -->
 			<div class="row wrap-foot-level first-foot-line">
 				<div class="col-md-6">
 					<ul class="wrap-foot-links">
@@ -87,8 +87,9 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
+		<div class="main-footer-bg"></div>
 
 
 	</div>
