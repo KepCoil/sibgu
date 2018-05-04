@@ -162,8 +162,7 @@
 
 .main-menu
 	background-color: $light-bgc
-	height: 64px
-	overflow: hidden
+	height: 60px
 	.wrap-main-menu
 		float: left
 	ul
@@ -181,7 +180,7 @@
 				border: none
 				padding: 0 0.9375rem
 				transition: background-color $main-trans
-				line-height: 64px
+				line-height: 60px
 				font-size: 1rem
 				&:hover
 					color: $accent-links
@@ -226,11 +225,11 @@
 .search-area
 	float: right
 	padding: 0
-	line-height: 64px
+	line-height: 60px
 	.search-area-form
 		position: relative
 		font-family: "MyriadPro-Regular"
-		height: 64px
+		height: 60px
 		input
 			width: 220px
 			color: $grey-font
@@ -262,7 +261,8 @@
 		position: absolute
 		width: 100%
 		height: 100%
-		background-image: url(../img/bg_inst.svg)
+		//background-image: url(../img/bg_inst.svg)
+		background-image: url(/sibgu/static/src/images/sibgu/img/bg_inst.svg)
 		background-repeat: repeat-X
 		top: 0
 		left: 0
@@ -276,19 +276,19 @@
 		.main-logo
 			display: inline-block !important
 			visibility: visible !important
-			width: 135px
+			width: 120px
 			vertical-align: top
 		.main-title-container
 			display: inline-block
 			// line-height: 125px
-			margin-top: 0.8125rem
+			line-height: 120px
 		h1.main-title
 			display: inline-block
 			text-shadow: 1px 1px 1px #eee
 			font-size: 1.375rem
 			color: $blue
 			margin: 0
-			margin-left: 15px
+			margin-left: 1rem
 			vertical-align: middle
 			.reshetnev
 				font-size: 22px
@@ -311,10 +311,10 @@
 			a
 				color: $grey-font
 				display: inline-block
-				border-bottom: 1px solid $grey-font
+				border-bottom: none
 				&:hover
 					color: $accent-links
-					border-color: $accent-links
+					// border-color: $accent-links
 		.flags-list
 			list-style-type: none
 			float: right
@@ -338,10 +338,19 @@
 
 /* AUDIT MENU */
 .dekstop-target-menu
-	display: inline-block
+	display: block
 	width: 100%
-	height: 12rem
-	background: linear-gradient($blue 35%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.60) 50%, rgba(44, 67, 143, 0.60) 25%, rgba(44, 67, 143, 0));
+	background-color: $blue
+	// box-shadow: 0 0.5rem 1.25rem 0 #28429b
+	// background: linear-gradient($blue 50%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.6) 50%, rgba(44, 67, 143, 0.6) 25%)
+	&--inner
+		height: auto
+		background-color: $blue
+		box-shadow: none
+		.wrap-target-menu
+			li
+				a
+					font-size: 1.25rem
 	.wrap-target-menu
 		margin: 0
 		padding: 0
@@ -353,7 +362,7 @@
 				border-bottom: none
 			a
 				color: #fff
-				padding: 1.125rem 1.375rem
+				padding: 1.125rem 1.5rem
 				display: block
 				font-size: 1.375rem
 				text-transform: uppercase
@@ -367,30 +376,21 @@
 				i
 					position: relative
 					width: 2rem
-	&--inner
-		height: auto
-		background-color: $blue
-		.wrap-target-menu
-			li
-				a
-					font-size: 1.25rem
-
+	
 
 /* MAIN SLIDER */
 .navaslider
-	height: 560px
+	height: 550px
 	position: relative
-	margin-top: -8.125rem
 	z-index: -1
 	background-color: $blue
 .wrap-navaslider-content
 	position: relative
 	>div
 		float: left
-
 .main-slider.owl-carousel
 	position: relative
-	height: 560px
+	height: 550px
 	&:hover
 		.owl-nav
 			.owl-prev, .owl-next
@@ -403,23 +403,6 @@
 				height: 100%
 	.owl-nav
 		display: none !important
-		// .owl-prev, .owl-next
-		// 	position: absolute
-		// 	top: 50%
-		// 	transform: translateY(-50%)
-		// 	// opacity: 0
-		// 	color: #fff
-		// 	font-size: 3.5rem
-		// 	transition: color $main-trans, opacity $main-trans
-		// 	.fa
-		// 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6)
-		// 		transform: scaleX(0.75) scaleY(1.5)
-		// 	&:hover
-		// 		color: $yellow
-		// .owl-prev
-		// 	left: 1.5rem
-		// .owl-next
-		// 	right: 1.5rem
 	.owl-dots
 		bottom: 3%
 		text-align: center
@@ -462,7 +445,6 @@
 			width: 100%
 			height: auto
 			top: 35%
-			z-index: 5
 			color: #fff
 		.slide-content-inner
 			width: 60%
@@ -833,8 +815,8 @@
 				display: block
 				border: none
 			img
-				width: 250px
-				height: 150px
+				width: 200px
+				height: auto
 				margin: 0 auto
 		.owl-dots
 			display: none !important
@@ -865,7 +847,9 @@
 
 /* FOOTER */
 #wrapwrap 
-	>footer.main-footer
+	>footer
+		display: block
+	.main-footer
 		display: block
 		padding-top: 3.125rem
 		background-color: $blue
@@ -951,10 +935,10 @@
 					margin: 0 12px 12px 0
 				a
 					border: none
-				img
-					width: 40px
-					height: 40px
-					visibility: visible !important
+					img
+						width: 40px
+						height: 40px
+						visibility: visible !important
 		.foot-second-level
 			padding: 1.5rem 0 
 			background-color: $dark-blue
@@ -1033,7 +1017,7 @@
 				margin: 3px
 				transition: background-color $main-trans, color $main-trans
 				cursor: pointer
-				border-radius: 0
+				border-radius: 2px
 				&:hover
 					// background-color: $blue
 					color: $accent-links
@@ -1572,12 +1556,12 @@
 			overflow: hidden
 			height: 100%
 			text-align: center
+			background-color: rgba(0,0,0,0.1)
 			&:hover, &:focus
 				border: none
 		&-preview
 			display: inline-block
 			max-width: 100%
-			width: 100%
 			height: auto
 			object-fit: cover
 
@@ -1597,6 +1581,8 @@
 /* End Gallery section */
 
 /* Gorisont paper */
+.gorisont-paper-text
+	margin-bottom: 2rem
 .gorisont-paper
 	.row-year-gorisont
 		margin-bottom: 2rem

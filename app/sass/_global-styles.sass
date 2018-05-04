@@ -19,6 +19,7 @@ html
 
 body
 	min-width: 320px
+	height: auto
 	position: relative
 	overflow-x: hidden
 	opacity: 1
@@ -26,8 +27,9 @@ body
 	color: $default-color
 	font-family: $default-font,  Helvetica, Arial, sans-serif
 	font-size: 0.9375rem
-	line-height: 1.4
 	font-weight: normal
+	line-height: 1.4
+	
 
 /* odoo content tag wrap */
 #wrap
@@ -74,11 +76,15 @@ a
 		text-decoration: none
 		color: $accent-links
 		border-bottom: 1px solid $accent-links
+	// &:visited
+	// 	text-decoration: none
+	// 	color: #900060
+	// 	border-bottom: #900060
 
 button
 	outline: none !important
 
-a.standart-button
+.standart-button
 	text-decoration: none
 	display: inline-block
 	padding: 10px 20px
@@ -161,7 +167,7 @@ h2.inner-title--no-caps
 .doc-file
 	border: none
 	text-decoration: underline
-	&:hover
+	&:hover, &:focus, &:active
 		border: none
 		text-decoration: underline
 	&--pdf
@@ -599,12 +605,13 @@ h2.inner-title--no-caps
 				font-size: 1rem
 				border: 0
 				padding: 0.625rem 1rem
-				background-color: $grey-bgc
+				background-color: $light-grey-font
 				margin-right: 5px
 				margin-bottom: 5px
 				color: lighten($default-color, 10%)
 				&:hover, &:focus
 					color: $accent-links
+					background-color: $light-grey-font
 		&--min-size
 			>li
 				>a
@@ -618,7 +625,7 @@ h2.inner-title--no-caps
 
 /* Snippet Odoo "Well" */
 .well
-	border-radius: 0
+	border-radius: 2px
 	
 
 /* Accordion */

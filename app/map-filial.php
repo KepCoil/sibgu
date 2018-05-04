@@ -13,8 +13,7 @@
 		<div id="js-corpuses-map" class="ya-maps" style="width: 100%; height: 500px; margin-bottom: -50px;"></div>
 		
 		
-		<!-- <script src="libs/yandex-map/yandex-api.js"></script> -->
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="libs/yandex-map/yandex-api.js"></script>
 		<script src="libs/yandex-map/filial.js"></script>
 
 </div>

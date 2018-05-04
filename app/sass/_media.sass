@@ -19,10 +19,6 @@
 	html
 		font-size: 95%
 	#wrapwrap
-		.head-content 
-			.main-title-wrap 
-				img
-					width: 120px
 		.event-item
 			padding: 0 10px
 		.news-sect 
@@ -59,16 +55,6 @@
 	html
 		font-size: 90%
 	#wrapwrap
-		.top-line
-			.main-logo-wrap
-				width: 181px
-			.res-links
-			.main-logo
-				width: 181px
-				height: 188px
-				img
-					width: 155px
-					height: 155px
 		.main-menu
 			ul.ul-inner-menu
 				>li 
@@ -158,6 +144,8 @@
 			.main-title-wrap 
 				img
 					width: 110px
+				.main-title-container
+					line-height: 110px
 
 		.pa-sect
 			.wrap-pa-item
@@ -187,6 +175,14 @@
 			display: none !important
 		#wrap
 			margin-top: 0.5rem
+		.head-content
+			&::after
+				background-image: none
+			.main-title-wrap 
+				img
+					width: 110px
+				.main-title-container
+					line-height: 110px	
 		.top-line
 			height: auto
 			padding: 2px 0
@@ -333,23 +329,23 @@
 				height: 180px
 		.wrap-inst-item
 			margin-bottom: 15px
-			
+
+@media only screen and (max-width : 768px) and (min-width : 520px)
+	#wrapwrap 
+		.photo-album-list-item
+			width: 50%
+			float: left			
 
 @media only screen and (max-width : 620px)
 	#wrapwrap
-		.head-content
-			.main-title-wrap
-				display: block
-				.mobile-logo-img-wrap
-					width: 50px
-					height: 50px
-					padding: 3px
-					margin-right: 10px
+		.head-content 
+			.main-title-wrap 
 				img
-					width: 80px
-				.main-title-container 
+					width: 110px
+				.main-title-container
+					line-height: 110px
 					h1.main-title
-						font-size: 1rem
+						font-size: 1.125rem
 					.reshetnev
 						font-size: 1rem
 		.comment-students-sect
@@ -364,11 +360,6 @@
 					width: 204px
 					height: 294px
 
-@media only screen and (max-width : 768px) and (min-width : 520px)
-	#wrapwrap 
-		.photo-album-list-item
-			width: 50%
-			float: left
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -386,8 +377,9 @@
 				img
 					width: 65px
 				.main-title-container 
+					line-height: 65px
 					h1.main-title
-						margin-left: 7px
+						margin-left: 0.5rem
 						font-size: 0.8125rem
 					.reshetnev
 						font-size: 0.8125rem
@@ -469,10 +461,11 @@
 				img
 					width: 60px
 				.main-title-container 
+					line-height: 60px
 					h1.main-title
-						font-size: 0.7rem
+						font-size: 0.75rem
 					.reshetnev
-						font-size: 0.7rem
+						font-size: 0.75rem
 		.navaslider
 			.main-slider.owl-carousel
 				.wrap-main-slide 

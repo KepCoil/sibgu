@@ -38,13 +38,16 @@ html[data-theme="white"]
 		.dekstop-target-menu
 			height: auto
 			background: $white
-			box-shadow: 0 1px 0 $black
+			box-shadow: none
+			border-top: 1px solid $black
+			border-bottom: 1px solid $black
 		.navaslider
 			margin-top: 0
 		.main-menu,
-		.navaslider,
 		.main-footer
 			border-top: 1px solid $black
+		.main-menu
+			border-bottom: 1px solid $black
 		.main-sect.pa-sect
 			border: none
 		h2.inner-title, 
@@ -165,7 +168,8 @@ html[data-theme="white"]
 			a
 				color: $black
 				border-color: $black
-		footer
+
+		.main-footer
 			color: $black
 			a
 				color: $black
