@@ -1,8 +1,17 @@
 
+// Файл для касстомизации и правок админский панелей odoo
+
 #oe_main_menu_navbar,
 #oe_snippets 
 	a
 		border: inherit
+
+// баг с отсутствие прокрутки блока снипетов
+.editor_enable.editor_has_snippets
+	#oe_snippets
+		#o_left_bar
+			width: 228px
+			overflow-y: scroll
 
 #oe_main_menu_navbar 
 	.dropdown-menu 
@@ -23,7 +32,9 @@
 	.input-group.ui-sortable-handle
 		margin-bottom: 8px
 
-.ul-inner-menu
-	.dropdown
-		position: absolute
-		right: 0
+.main-menu
+	.ul-inner-menu
+		.dropdown
+			position: absolute
+			right: 0
+

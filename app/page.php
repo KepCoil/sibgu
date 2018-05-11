@@ -93,11 +93,11 @@
 
 
 	
-	<section class="s_text_block">
+	<!-- <section class="s_text_block">
 		<div class="container">
 			<?php include ("__accordion.php"); ?>
 		</div>
-	</section>
+	</section> -->
 
 </div>
 

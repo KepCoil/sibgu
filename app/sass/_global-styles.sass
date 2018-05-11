@@ -58,6 +58,25 @@ ul.ul-accent
 			text-align: left
 			vertical-align: top
 
+ul.ul-docs
+	list-style-type: none
+	li
+		margin-bottom: 0.6125rem
+		&::before
+			font-family: FontAwesome
+			content: "\f15c"
+			display: inline-block
+			color: $blue
+			top: 0
+			font-size: 1.125rem
+			position: relative
+			float: left
+			margin-left: -1.5rem
+			margin-right: -0.5rem
+			overflow: hidden
+			line-height: inherit
+			text-align: left
+
 p
 	margin: 0 0 0.625rem 0
 @media only screen and (max-width : 991px)
@@ -167,6 +186,7 @@ h2.inner-title--no-caps
 .doc-file
 	border: none
 	text-decoration: underline
+	margin-right: 7px
 	&:hover, &:focus, &:active
 		border: none
 		text-decoration: underline
@@ -235,10 +255,42 @@ h2.inner-title--no-caps
 			margin-right: 0.5rem
 			border-radius: 1px
 
-
-
 /* иконки для ссылок на файлы */
-		
+
+/* Пагинация Odoo */
+#div_nav_panel
+	padding: 0
+	margin: 15px 0 0 0
+	ul#nav_panel
+		margin: 0
+		padding: 0
+		text-align: center
+		li
+			display: inline-block
+			.btn
+				display: block
+				width: 2.75rem
+				height: 2.75rem
+				border: 1px solid $dark-line
+				font-family: "OpenSans-Regular"
+				padding: 0
+				font-size: 1.125rem
+				margin: 3px
+				transition: background-color $main-trans, color $main-trans
+				cursor: pointer
+				border-radius: 3px
+				&:hover
+					background-color: $grey-bgc
+					color: $accent-links
+				&.active
+					background-color: $blue
+					color: #fff
+				&.disabled, &[disabled]
+					cursor: default
+					color: $default-color
+					background-color: transparent
+				
+/*  */		
 
 /* Секции главной страницы */
 .main-sect
@@ -649,7 +701,7 @@ h2.inner-title--no-caps
 			background-color: $grey-bgc
 			border: none
 			font-family: "OpenSans-SemiBold"
-			font-size: 1.1rem
+			font-size: 1rem
 			&:hover
 				.fa, a
 					color: $accent-links

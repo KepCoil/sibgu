@@ -220,13 +220,14 @@
 
 			</div>
 
-			<div class="search-area search-area--mobile">
-				<form class="search-area-form" method="post" role="search">
-					<input type="text" placeholder="Поиск">
-					<button><i class="fa fa-search" aria-hidden="true"></i></button>
-				</form>
-			</div>
+			
 
+		</div>
+		<div class="search-area search-area--mobile">
+			<form class="search-area-form" method="post" role="search">
+				<input type="text" placeholder="Поиск">
+				<button><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
 		</div>
 	</div>
 

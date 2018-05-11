@@ -142,6 +142,7 @@
 				margin: 0
 			.btn-ru
 				padding: 5px 3px
+				border-radius: 0
 				background-color: transparent
 			.dropdown-flags
 				top: auto
@@ -309,12 +310,12 @@
 			color: $grey-font
 			margin-bottom: 0.625rem
 			a
-				color: $grey-font
 				display: inline-block
-				border-bottom: none
+				color: $grey-font
+				border-bottom: 1px solid lighten($grey-font, 25%)
 				&:hover
 					color: $accent-links
-					// border-color: $accent-links
+					border-color: $accent-links
 		.flags-list
 			list-style-type: none
 			float: right
@@ -449,7 +450,7 @@
 		.slide-content-inner
 			width: 60%
 			padding-left: 4rem
-			text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6)
+			text-shadow: $bg-text-shadow
 			position: relative
 			&-title
 				font-size: 32px
@@ -459,7 +460,7 @@
 				font-family: "OpenSans-Semibold"
 			&-btn
 				display: inline-block
-				text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+				text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6)
 				box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
 				font-family: "MyriadPro-Semibold"
 				font-size: 1.125rem
@@ -541,7 +542,7 @@
 					font-size: 18px
 					line-height: 1.2
 					font-family: "MyriadPro-Semibold"
-					text-shadow: 3px 3px 3px rgba(0,0,0,.9)
+					text-shadow: 3px 3px 2px rgba(0,0,0,.8)
 					margin: 0
 				time
 					top: 0
@@ -851,7 +852,7 @@
 		display: block
 	.main-footer
 		display: block
-		padding-top: 3.125rem
+		padding-top: 2.5rem
 		background-color: $blue
 		color: #fff
 		font-family: "OpenSans-Regular"
@@ -940,7 +941,7 @@
 						height: 40px
 						visibility: visible !important
 		.foot-second-level
-			padding: 1.5rem 0 
+			padding: 1.25rem 0 
 			background-color: $dark-blue
 			border-top: 1px solid $light-line
 			.copy-sibgu
@@ -995,35 +996,6 @@
 						color: $accent-links
 			p
 				margin: 0
-				
-
-#div_nav_panel
-	padding: 0
-	margin: 15px 0 0 0
-	#nav_panel
-		margin: 0
-		padding: 0
-		text-align: center
-		li
-			display: inline-block
-			button
-				display: block
-				width: 40px
-				height: 40px
-				border: 1px solid $dark-line
-				font-family: "OpenSans-SemiBold"
-				padding: 0
-				font-size: 1.125rem
-				margin: 3px
-				transition: background-color $main-trans, color $main-trans
-				cursor: pointer
-				border-radius: 2px
-				&:hover
-					// background-color: $blue
-					color: $accent-links
-			button.active
-				background-color: $blue
-				color: #fff
 		
 /* END NEWS PAGE */
 
@@ -1077,7 +1049,7 @@
 				time, .mega-title
 					font-family: "MyriadPro-Semibold"
 					font-size: 2.25rem
-					text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9)
+					text-shadow: 3px 3px 2px rgba(0,0,0,.8)
 					position: absolute
 				time
 					top: 0
@@ -1086,6 +1058,7 @@
 					margin-bottom: 0
 	.wrap-mega-content
 		margin-top: -10px
+
 /* END MEGA NEWS PAGE */
 
 
@@ -1096,10 +1069,13 @@
 	.date-public
 		font-size: 1.0625rem
 		display: block
-		margin-bottom: 1.875rem
-		color: #555
-		border-bottom: 1px solid #aaa
+		margin-bottom: 1.25rem
+		color: $grey-font
+		border-bottom: 1px solid $dark-line
 		padding-bottom: 0.625rem
+
+.news-photos
+	margin-top: 1.5rem
 /* END COMMON NEWS PAGE */
 
 
@@ -1143,7 +1119,7 @@
 					font-family: "OpenSans-Semibold"
 					font-weight: normal
 				th:first-child
-					width: 150px
+					width: 120px
 				th.fix-width-180
 					width: 180px
 			tbody
@@ -1161,6 +1137,7 @@
 						&:hover
 							color: $accent-links
 							border-color: $accent-links
+				
 .wrap-category-list,
 .wrap-events-category
 	background-color: $grey-bgc
@@ -1202,16 +1179,16 @@
 	.inner-title
 		text-transform: none
 	.event-category
-		font-size: 1rem
+		font-size: 1.0625rem
 		display: block
-		margin-bottom: 1.875rem
-		color: #555
-		border-bottom: 1px solid #aaa
+		margin-bottom: 1.25rem
+		color: $grey-font
+		border-bottom: 1px solid $dark-line
 		padding-bottom: 0.625rem
 	.event-date,
 	.event-location,
 	.event-contact
-		margin-bottom: 0.625rem
+		margin-bottom: 1rem
 		.event-block-title
 			display: block
 	.event-text
@@ -1444,6 +1421,10 @@
 
 /* Gallery section */
 .photo-gallery
+	.wh
+		height:100% !important
+	.ww
+		width:100% !important
 	.phogal-item
 		display: block
 		background-color: $grey-bgc
