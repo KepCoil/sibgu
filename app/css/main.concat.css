@@ -7225,7 +7225,8 @@ ul {
   list-style: square outside; }
 
 ul.ul-accent {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0.625rem 0; }
   ul.ul-accent li {
     margin-bottom: 0.35rem; }
     ul.ul-accent li::before {
@@ -7245,9 +7246,10 @@ ul.ul-accent {
       vertical-align: top; }
 
 ul.ul-docs {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0.625rem 0; }
   ul.ul-docs li {
-    margin-bottom: 0.6125rem; }
+    margin-bottom: 0.625rem; }
     ul.ul-docs li::before {
       font-family: FontAwesome;
       content: "\f15c";
@@ -7721,7 +7723,9 @@ h2.inner-title--no-caps {
     border: 1px solid #000;
     vertical-align: middle;
     display: inline-block;
-    line-height: 16px; }
+    line-height: 16px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
   .spec-panel-controls .font-size-controls > li:first-child {
     margin-right: 8px; }
   .spec-panel-controls .font-size-controls > li:nth-child(2) button {
@@ -7740,7 +7744,9 @@ h2.inner-title--no-caps {
     background-color: red;
     padding: 0;
     vertical-align: middle;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
   .spec-panel-controls .color-controls > li:first-child {
     margin-right: 8px; }
   .spec-panel-controls .color-controls > li:nth-child(2) button {
@@ -7784,7 +7790,9 @@ h2.inner-title--no-caps {
     -o-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
     background-color: #ff0000;
-    font-size: 14px; }
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
   .wrap-toggle-img .switch-state-img:empty ~ label::after {
     content: 'ВЫКЛ';
     width: 40px;
@@ -9358,9 +9366,9 @@ h2.inner-title--no-caps {
     .photo-gallery .phogal-item-content-info {
       font-size: 0.9rem;
       color: #555; }
-      .photo-gallery .phogal-item-content-info time {
+      .photo-gallery .phogal-item-content-info-date {
         float: left; }
-      .photo-gallery .phogal-item-content-info span {
+      .photo-gallery .phogal-item-content-info-img-count {
         float: right; }
       .photo-gallery .phogal-item-content-info .fa {
         margin-right: 5px;
@@ -9451,8 +9459,8 @@ h2.inner-title--no-caps {
   margin-right: -10px; }
 
 .photo-album-list-item {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 0;
   height: 175px;
   overflow: hidden; }
   .photo-album-list-item-link {
@@ -9486,6 +9494,10 @@ h2.inner-title--no-caps {
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
     opacity: 1; }
+
+.sl-wrapper .sl-spinner {
+  z-index: 1070;
+  border-color: #aaa; }
 
 /* end page photo album */
 /* End Gallery section */

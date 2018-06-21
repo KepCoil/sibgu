@@ -8,6 +8,9 @@ html[data-font-size="medium"] {
 html[data-font-size="large"] {
   font-size: 150%; }
 
+html[data-spec-vers="enable"] .main-menu {
+  height: auto; }
+
 /* white */
 html[data-theme="white"] body {
   color: #000;
@@ -62,34 +65,30 @@ html[data-theme="white"] #wrapwrap h2.inner-title,
 html[data-theme="white"] #wrapwrap h2.inner-title--no-caps {
   color: #000; }
 
-html[data-theme="white"] #wrapwrap .top-line .quick-links a {
-  color: #000;
-  border-color: #000; }
-
-html[data-theme="white"] #wrapwrap .top-line .spec-vers-wrap .btn-active-spec-ver {
-  color: #000; }
-
-html[data-theme="white"] #wrapwrap .top-line .main-logo img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%); }
-
-html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__btn {
-  color: #000; }
-
-html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__sub-sub-title {
-  color: #000; }
-
-html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__sub-sub-content a {
-  color: #000; }
-
-html[data-theme="white"] #wrapwrap .top-line .flag-links .btn-ru {
-  background-color: #ccc; }
-
-html[data-theme="white"] #wrapwrap .top-line .flag-links li {
-  background-color: #ccc; }
+html[data-theme="white"] #wrapwrap .top-line {
+  -webkit-box-shadow: 0 1px 0 #000;
+          box-shadow: 0 1px 0 #000; }
+  html[data-theme="white"] #wrapwrap .top-line .quick-links a {
+    color: #000;
+    border-color: #000; }
+  html[data-theme="white"] #wrapwrap .top-line .spec-vers-wrap .btn-active-spec-ver {
+    color: #000; }
+  html[data-theme="white"] #wrapwrap .top-line .main-logo img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__btn {
+    color: #000; }
+  html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__sub-sub-title {
+    color: #000; }
+  html[data-theme="white"] #wrapwrap .top-line .res-links .droplist-main__sub-sub-content a {
+    color: #000; }
+  html[data-theme="white"] #wrapwrap .top-line .flag-links .btn-ru {
+    background-color: #ccc; }
+  html[data-theme="white"] #wrapwrap .top-line .flag-links li {
+    background-color: #ccc; }
 
 html[data-theme="white"] #wrapwrap .dropdown-menu li {
   border-color: #000; }
@@ -306,6 +305,9 @@ html[data-theme="white"] #wrapwrap .main-accordion .accordion-item .panel-body {
 
 html[data-theme="white"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #ccc; }
+
+html[data-theme="white"] #wrapwrap .search-area .search-area-form input {
+  border-color: #999; }
 
 /* black */
 html[data-theme="black"] body {
@@ -619,6 +621,9 @@ html[data-theme="black"] #wrapwrap .main-accordion .accordion-item .panel-body {
 html[data-theme="black"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #333; }
 
+html[data-theme="black"] #wrapwrap .search-area .search-area-form input {
+  border-color: #999; }
+
 /* blue */
 html[data-theme="blue"] body {
   color: #063462;
@@ -915,6 +920,9 @@ html[data-theme="blue"] #wrapwrap .main-accordion .accordion-item .panel-body {
 
 html[data-theme="blue"] #wrapwrap .wrap-dis-page .dis-docs {
   background-color: #76baff; }
+
+html[data-theme="blue"] #wrapwrap .search-area .search-area-form input {
+  border-color: #6193c6; }
 
 html[data-img="disable"] {
   /* картинки новостей на главной */

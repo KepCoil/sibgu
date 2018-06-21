@@ -1434,9 +1434,9 @@
 			&-info
 				font-size: 0.9rem
 				color: #555
-				time
+				&-date
 					float: left
-				span
+				&-img-count
 					float: right
 				.fa
 					margin-right: 5px
@@ -1527,8 +1527,8 @@
 		margin-left: -10px
 		margin-right: -10px
 	&-item
-		padding: 10px
-		margin-bottom: 10px
+		padding: 5px
+		margin-bottom: 0
 		height: 175px
 		overflow: hidden
 		&-link
@@ -1556,6 +1556,9 @@
 		&:hover
 			transform: rotate(90deg)
 			opacity: 1
+	.sl-spinner
+		z-index: 1070
+		border-color: $dark-line
 			
 /* end page photo album */
 

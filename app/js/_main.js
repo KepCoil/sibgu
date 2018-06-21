@@ -246,7 +246,8 @@ $(function() {
 		}
 		else {
 			im.css({
-				marginTop: '-' + 5 + '%',
+				//marginTop: '-' + 5 + '%',
+				marginTop: 0,
 				marginLeft: 0
 			});
 		}
