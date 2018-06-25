@@ -7479,7 +7479,8 @@ h2.inner-title--no-caps {
           color: #ea2f1c; }
         #div_nav_panel ul#nav_panel li .btn.active {
           background-color: #28429b;
-          color: #fff; }
+          color: #fff;
+          cursor: default; }
         #div_nav_panel ul#nav_panel li .btn.disabled, #div_nav_panel ul#nav_panel li .btn[disabled] {
           cursor: default;
           color: #222;

@@ -15,7 +15,7 @@
 				<div class="photo-album-info">
 					<div class="photo-album-info-meta">
 						<div class="table-responsive">
-							<table class="table table-bordered table-info-album">
+								<table class="table table-bordered table-info-album">
 								<tbody>
 									<tr>
 										<th>Дата съёмки:</th>

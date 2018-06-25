@@ -204,7 +204,7 @@ $(function() {
 
 
 	/* Функционал галлереи */
-	// Масштабирование картинок img (вместо использования background-image), для списка фоток альбома
+	// Масштабирование картинок img (вместо использования background-image с background-size: cover), для списка фоток альбома
 	$(".js-photo-responsive").each(function() {
 		var 
 			th = $(this).height(),
@@ -343,6 +343,13 @@ $(function() {
 	// 	}
 	// });
 	/**/
+
+	/* Пагинация */
+	// Некликабельность активной кнопки
+	$('#nav_panel .btn.active').click(function() {
+		return false;
+	});
+	/*  */
 
 
 	/* Функции при ресайзе экрана */
