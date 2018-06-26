@@ -9265,7 +9265,10 @@ h2.inner-title--no-caps {
         border-color: #ea2f1c; }
 
 /* End page institute */
-/* table-jobs */
+/* Вакансии */
+.jobs-list .main-accordion .accordion-item .panel-body {
+  border: none; }
+
 .table-jobs th {
   background-color: #f7f7f7;
   width: 200px; }
