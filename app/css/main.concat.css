@@ -9096,8 +9096,7 @@ h2.inner-title--no-caps {
       -webkit-transition: color 0.25s ease-out;
       -o-transition: color 0.25s ease-out;
       transition: color 0.25s ease-out;
-      padding: 1rem 1.25rem;
-      text-transform: uppercase;
+      padding: 0.9375rem 1.125rem;
       position: relative;
       display: block;
       font-size: 1rem;
