@@ -7858,12 +7858,7 @@ h2.inner-title--no-caps {
     color: #fff;
     border: 0; }
 
-/* Snippet Odoo "Well" */
-.well {
-  -webkit-border-radius: 2px;
-          border-radius: 2px; }
-
-/* Accordion */
+/* Accordion (bootstrap) */
 .main-accordion .accordion-item {
   margin: 1rem 0;
   border: none;
@@ -7907,6 +7902,11 @@ h2.inner-title--no-caps {
             transform: rotate(90deg); }
 
 /* End accordion */
+/* Snippet Odoo "Well" */
+.well {
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
 /* HEADER */
 #wrapwrap .top-line {
   position: relative;

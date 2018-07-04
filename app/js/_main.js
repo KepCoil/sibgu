@@ -172,11 +172,10 @@ $(function() {
 
 	/* Определение расширение файлов для подстановки иконки (есть весомые подозрения, что скрипт написан максимально стремно) */
 	$("#wrap a").each(function() {
-		var
-			th = $(this),
-			filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
-			getUrl = $(this).attr("href"),
-			checkExt = getUrl.split(".").pop();
+		var th = $(this),
+      filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
+      getUrl = th.attr("href").toLowerCase(),
+      checkExt = getUrl.split(".").pop();
 
 		// Проверяем, если ли нужное расширения файла
 		if ( !(filesExt.indexOf(checkExt) != -1) ) {

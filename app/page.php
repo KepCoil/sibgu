@@ -8,7 +8,7 @@
 			<h2 class="inner-title">Диссертационные советы</h2>
 		</div>
 		<div class="container">
-			<p><a class="" href="file.pdf">file.pdf</a></p>
+			<p><a href="FILE.PDF">file.pdf</a></p>
 			<p><a class="doc-file doc-file--pdf" href="file/fasa/fafa">Привет</a></p>
 			<p><a class="doc-file doc-file--pptx" href="#">Презентация</a></p>
 			<p><a class="doc-file doc-file--xlsx" href="41241saaf">Таблица</a></p>
@@ -32,6 +32,21 @@
 				}
 				.table-rec tbody td {
 					max-width: 950px;
+				}
+			</style>
+
+			<div class="table-responsive">
+				<table style="max-width: 1200px;"  class="table table-bordered table-events table-rec">
+					<tbody>
+						<tr>
+							<th>Полное наименование</th>
+							<td>Федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет науки и технологий имени академика М.Ф. Решетнева»</td>
+						</tr>
+						<tr>
+							<th>Сокращенные наименования</th>
+							<td>Сибирский университет науки и технологий; СибГУ им. М.Ф. Решетнева; Сибирский государственный университет.</td>
+						</tr>
+						<tr>x-width: 950px;
 				}
 			</style>
 
@@ -93,11 +108,11 @@
 
 
 	
-	<!-- <section class="s_text_block">
+	<section class="s_text_block">
 		<div class="container">
 			<?php include ("__accordion.php"); ?>
 		</div>
-	</section> -->
+	</section>
 
 </div>
 

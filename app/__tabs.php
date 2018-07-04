@@ -40,7 +40,6 @@
 
 		<div role="tabpanel" class="tab-pane fade" id="of-docs-tab-2">
 			<h3>Отчеты о научно-исследовательской работе</h3>
-			<?php include ("__accordion.php"); ?>
 		</div>
 
 	</div>
