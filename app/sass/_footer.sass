@@ -1,0 +1,105 @@
+@import "vars"
+   
+/* FOOTER */
+#wrapwrap 
+	>footer
+		display: block
+	.main-footer
+		display: block
+		padding-top: 2.5rem
+		background-color: $blue
+		color: #fff
+		font-family: "OpenSans-Regular"
+		a
+			color: #fff
+			border-bottom: 1px solid #fff
+			transition: color $main-trans, border-bottom-color $main-trans
+			margin-top: 1.25rem
+			&:hover, &:focus, &:active
+				border-color: $yellow
+				color: $yellow
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+		address
+			font-style: normal
+			font-family: "OpenSans-Regular"
+		.wrap-foot-level
+			margin: 0
+			.col-md-6
+				padding: 0 30px
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+		.first-foot-line
+			padding-bottom: 3.125rem
+			border-bottom: 1px solid $light-line
+		.second-foot-line
+			padding: 3rem 0 4rem 0
+			h5
+				margin: 0 0 15px 0
+				font-size: 1.25rem
+				text-transform: uppercase
+				font-family: "OpenSans-Semibold"
+			.col-md-6
+				&:nth-child(2)
+					border-right: 1px solid $light-line
+		.wrap-foot-links
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: block
+				padding: 7px 0
+		.second-foot-line
+			.foot-contacts-content
+				li
+					display: block
+					margin-bottom: 15px
+					font-size: 0.9375rem
+			.foot-contacts-content-col-2
+				strong
+					font-weight: normal
+					font-family: "OpenSans-Semibold"
+		.wrap-foot-contancts
+			.foot-feedback
+				p
+					font-size: 0.875rem
+					margin: 0
+				.button-light-blue
+					padding: 8px 16px
+					background-color: #4f8fcd
+					display: inline-block
+					border: 2px solid lighten(#4f8fcd, 5%)
+					border-radius: 2px
+					text-transform: uppercase
+					font-family: "OpenSans-Semibold"
+					&:hover, &:focus
+						background-color: lighten(#4f8fcd, 2%)
+						color: #fff
+					&:active
+						background-color: darken(#4f8fcd, 5%)
+						color: #fff
+			.foot-social-list
+				margin: 0
+				padding: 0
+				li
+					display: inline-block
+					margin: 0 12px 12px 0
+				a
+					border: none
+					img
+						width: 40px
+						height: 40px
+						visibility: visible !important
+		.foot-second-level
+			padding: 1.25rem 0 
+			background-color: $dark-blue
+			border-top: 1px solid $light-line
+			.copy-sibgu
+				font-family: "OpenSans-Semibold"
+			.uit
+				text-align: right
+/* END FOOTER */

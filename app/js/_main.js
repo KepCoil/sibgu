@@ -186,7 +186,6 @@ $(function() {
 		// Добавляем нужные классы для создания иконки
 		else {
 			th.addClass("doc-file");
-			console.log(checkExt);
 
 			switch (checkExt) {
 				case "pdf":

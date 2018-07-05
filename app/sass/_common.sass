@@ -1,0 +1,1049 @@
+@import "vars"
+   
+
+/* SECTION NEWS */
+.news-sect
+	.row-news
+		margin: 0 -5px
+	h2
+		margin: 0 0 2.1875rem 0
+	.col-item-news
+		padding: 0
+		.other-link
+			display: none
+	.wrap-item-news
+		height: 250px
+		position: relative
+		display: block
+		overflow: hidden
+		padding: 5px
+		width: 100%
+		.js-photo-responsive
+			height: 100%
+			display: block
+			border: none
+			overflow: hidden
+		a
+			display: block
+			position: relative
+			overflow: hidden
+			border-bottom: none
+			height: 100%
+			width: 100%
+			&:hover
+				.news-img
+					transform: scale(1.08)
+			.news-img
+				display: block
+				height: 100%
+				width: 100%
+				background-size: cover
+				background-position: top center
+				position: absolute
+				transition: transform 1.5s ease-out
+				object-fit: cover
+		.wrap-news-content
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			padding: 5%
+			color: #fff
+			&::before
+				content: ''
+				background-color: rgba(0,0,0,.2)
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				position: absolute
+			.news-content
+				position: relative
+				display: block
+				width: 100%
+				height: 100%
+				time,h3
+					position: absolute
+					font-size: 18px
+					line-height: 1.2
+					font-family: "MyriadPro-Semibold"
+					text-shadow: 3px 3px 2px rgba(0,0,0,.8)
+					margin: 0
+				time
+					top: 0
+				h3
+					bottom: 0
+	.wrap-first-news
+		height: 500px
+		.news-img
+			width: 100%
+			height: 100%
+		.wrap-news-content
+			padding: 5%
+			.news-content
+				time,h3
+					font-size: 28px
+					line-height: 1.2
+	.wrap-target-other-news
+		width: 100%
+		text-align: center
+		.target-other-news
+			display: block
+			width: 100%
+			height: 100%
+			background-color: $blue
+			border: 10px solid $dark-blue
+			&::before
+				content: ""
+				background-color: transparent
+			&:hover, &:focus
+				span
+					color: $yellow
+			span
+				color: #fff
+				font-size: 24px
+				display: inline-block
+				text-transform: uppercase
+				font-family: "MyriadPro-Bold"
+				position: relative
+				top: 50%
+				transform: translateY(-50%)
+				transition: color $main-trans, text-indent $main-trans
+
+
+/* SECTION EVENT */
+.event-item
+	padding: 0 20px
+	.wrap-date-event
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 1rem
+		.calendar-icon
+			display: inline-block
+			position: relative
+			width: 5rem
+			height: 4.6875rem
+			background-color: #ebf0f2
+			border-radius: 7px
+			box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+			overflow: hidden
+			margin-right: 0.625rem
+			span
+				display: block
+				position: absolute
+				top: 0
+				width: 100%
+				height: 1.375rem
+				color: #fff
+				background-color: #ff4b39
+				box-shadow: 0 2px 0 #ea402e
+				border-radius: 7px 7px 0 0
+				&::before, &::after
+					content: ''
+					display: block
+					position: absolute
+					width: 12px
+					height: 12px
+					background-color: #eee
+					border: 5px solid #ea402e
+					border-radius: 50%
+					z-index: 3
+					top: 55%
+					transform: translateY(-50%)
+				&::before
+					left: 0.5rem
+				&::after
+					right: 0.5rem
+			strong
+				width: 100%
+				font-size: 2rem
+				color: #333
+				position: absolute
+				font-family: "MyriadPro-Bold"
+				height: 100%
+				text-align: center
+				padding-top: 1.625rem
+		.event-month
+			font-size: 1.75rem
+			line-height: 1
+			font-family: "MyriadPro-Semibold"
+			display: inline-block
+			position: relative
+			color: #333;
+			top: 50%
+			transform: translateY(-50%)
+	.event-content
+		h3
+			margin: 0.9375rem 0
+			font-size: 1.3125rem
+			line-height: 1.2
+			a
+				color: $default-color
+				border-color: transparent
+				transition: color $main-trans
+				text-decoration: none
+				&:hover, &:focus
+					color: $accent-links
+					text-decoration: none
+		p
+			margin: 0
+			font-size: 1rem
+
+
+
+/* SECTION RECTOR */
+.rector-sect
+	.wrap-rector-img
+		border: 16px solid $dark-blue
+	.wrap-rector-content
+		margin: 30px 0 0 0
+		font-size: 1.125rem
+		font-family: "MyriadPro-Regular"
+		border-radius: 1px
+		strong
+			font-size: 1.25rem
+			font-size: 20px
+			display: block
+			margin-bottom: 20px
+		span
+			font-family: "MyriadPro-Semibold"
+	.signature-rector
+		display: block
+		text-align: right
+		font-family: "MyriadPro-SemiBoldItalic"
+		font-size: 1.25rem
+		margin: 40px 0 0 0
+
+
+/* SECTION INFOGRAPFICS */
+.infographics-sect
+	padding-bottom: 0
+	.wrap-infographics-items
+		text-align: center
+	.wrap-infographics-content
+		text-align: center
+		color: #444
+		margin-bottom: 50px
+		img
+			width: 170px
+			height: 170px
+			display: inline-block
+		strong
+			display: block
+			margin: 25px 0 5px 0
+			font-size: 2.25rem
+			font-family: "MyriadPro-SemiBold"
+		p
+			margin: 0 0 50px 0
+			font-size: 1.2rem
+/* END SECTION INFOGRAPFICS */
+
+
+
+/* SECTION STUDENTS COMMENT */
+.comment-students-sect
+	.comment-student-slider
+		.owl-dots
+			margin-top: 30px
+			text-align: center
+			.owl-dot
+				width: 15px
+				height: 15px
+				background-color: #fff
+				display: inline-block
+				border-radius: 50%
+				margin: 0 5px
+			.owl-dot.active
+				background-color: $yellow
+	.wrap-comment
+		padding: 0 20px
+	.wrap-comment-img
+		float: left
+		margin: 0 15px 15px 0
+		border: 12px solid $dark-blue
+		border-radius: 1px
+		img
+			width: 180px
+			height: 270px
+	.wrap-comment-content
+		font-size: 0.9375rem
+		p
+			margin: 0
+			padding: 20px 0
+		span
+			display: block
+			text-align: right
+			font-size: 1rem
+			font-family: "MyriadPro-Italic"
+/* END SECTION STUDENTS COMMENT */
+
+
+
+/* SECTION COMPANY - PARTNERS */
+.pa-sect
+	padding-bottom: 50px
+	.wrap-pa-item
+		text-align: center
+		// display: inline-block
+		a
+			border: none
+			&:hover
+				strong
+					color: $accent-links
+		img
+			width: 210px
+			height: 120px
+			margin: 0 auto
+			border-radius: 0
+		strong
+			font-weight: 500
+			font-size: 1.375rem
+			color: #444
+			display: block
+			margin-top: 25px
+			line-height: 1.2
+			transition: color $main-trans
+	.owl-carousel
+		display: block
+		margin-bottom: 30px
+	.owl-dots
+		text-align: center
+		margin-top: 30px
+		.owl-dot
+			width: 15px
+			height: 15px
+			background-color: #fff
+			display: inline-block
+			border-radius: 50%
+			border: 1px solid $blue
+			margin: 0 5px
+		.owl-dot.active
+			background-color: $blue
+	.other-link
+		margin-top: 0
+
+/* END SECTION COMPANY - PARTNERS */
+
+.links-other
+	padding: 2.5rem 0
+	.container
+		padding: 0 30px
+	// &-container
+	// 	max-width: 1920px
+	// 	margin: 0 auto
+	.owl-carousel
+		position: relative
+		.owl-stage-outer
+			z-index: 2
+		.links-other-item
+			padding: 0 0.75rem
+			overflow: hidden
+			a
+				display: block
+				border: none
+			img
+				width: 200px
+				height: auto
+				margin: 0 auto
+		.owl-dots
+			display: none !important
+		.owl-nav
+			position: absolute
+			width: 100%
+			top: 50%
+			transform: translateY(-50%)
+			.owl-prev,
+			.owl-next
+				position: relative
+			.owl-prev
+				float: left
+				left: -15px
+			.owl-next
+				float: right
+				right: -15px
+			.fa
+				font-size: 3rem
+				opacity: 0.5
+				transition: opacity $main-trans
+				&:hover
+					opacity: 0.75
+		
+
+
+/* NEWS PAGE */
+.wrap-cards-news
+	.wrap-card-item-news
+		background-color: $grey-bgc
+		margin-bottom: 1.875rem
+		.wrap-news-img
+			overflow: hidden
+			display: block
+			position: relative
+		.news-img
+			display: block
+			width: 100%
+			height: 100%
+			padding: 30%
+			background-size: cover
+			background-position: top center
+			transition: transform 1.5s ease-out
+		a
+			display: block
+			overflow: hidden
+			border: none
+			&:hover
+				.news-img
+					transform: scale(1.08)
+		.wrap-news-content
+			display: block
+			padding: 0 1rem
+			margin: 1.875rem 0
+			color: $default-color
+			time
+				display: block
+				font-size: 1.0625rem
+				color: #555
+			.wrap-news-title
+				display: block
+				margin: 1rem 0
+				h3
+					font-size: 1.2rem
+					line-height: 1.2
+					border-bottom: 1px solid transparent
+					transition: color $main-trans
+					&:hover
+						color: $accent-links
+			p
+				margin: 0
+		
+/* END NEWS PAGE */
+
+
+/* MEGA NEWS PAGE */
+.wrap-mega-news
+	.wrap-mega-img
+		height: 800px
+		position: relative
+		overflow: hidden
+		top: -30px
+		.mega-img
+			width: 100%
+			height: 100%
+			background-position: center -50px
+			background-size: cover
+			position: absolute
+			background-repeat: no-repeat
+			&::before
+				content: ''
+				background-color: rgba(0, 0, 0, 0.2)
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				position: absolute
+		.container
+			position: relative
+			height: 100%
+			padding: 0
+		.wrap-mega-img-content
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			color: #fff
+			padding: 30px 15px
+			.mega-img-content
+				position: relative
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				time, .mega-title
+					font-family: "MyriadPro-Semibold"
+					font-size: 2.25rem
+					text-shadow: 3px 3px 2px rgba(0,0,0,.8)
+					position: absolute
+				time
+					top: 0
+				.mega-title
+					bottom: 0
+					margin-bottom: 0
+	.wrap-mega-content
+		margin-top: -10px
+
+/* END MEGA NEWS PAGE */
+
+
+/* COMMON NEWS PAGE */
+.common-news
+	.inner-title
+		text-transform: none
+	.date-public
+		font-size: 1.0625rem
+		display: block
+		margin-bottom: 1.25rem
+		color: $grey-font
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 0.625rem
+
+.news-photos
+	margin-top: 1.5rem
+/* END COMMON NEWS PAGE */
+
+
+/* EVENTS LIST PAGE */
+.wrap-events-list
+	.wrap-events-date-filter
+		border-bottom: 1px solid $dark-line
+		margin-bottom: 1.5625rem
+		ul
+			list-style-type: none
+			margin: 0 0 15px 0
+			padding: 0
+			margin-bottom: 10px
+			li
+				display: block
+				float: left
+				margin-right: 10px
+				margin-bottom: 5px
+				&:last-child
+					margin-right: 0
+			li.active
+				a
+					color: #fff
+					background-color: $blue
+			a
+				display: block
+				border: none
+				text-transform: lowercase 
+				color: $default-color
+				font-size: 1rem
+				padding: 5px 8px
+				transition: color $main-trans
+				&:hover
+					color: $accent-links
+	.wrap-events-content
+		.table-events
+			table-layout: auto !important
+			thead
+				th
+					text-transform: uppercase
+					font-family: "OpenSans-Semibold"
+					font-weight: normal
+				th:first-child
+					width: 120px
+				th.fix-width-180
+					width: 180px
+			tbody
+				td
+					padding: 16px 8px
+				time
+					display: block
+					span:first-child
+						margin-bottom: 5px
+						display: inline-block
+				.event-title
+					a
+						color: $default-color
+						border-color: $default-color
+						&:hover
+							color: $accent-links
+							border-color: $accent-links
+				
+.wrap-category-list,
+.wrap-events-category
+	background-color: $grey-bgc
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		border-bottom: 1px solid $dark-line
+		&:last-child
+			border-bottom: none
+		&.active
+			a
+				background-color: $blue
+				color: #fff
+				&:hover
+					color: #fff
+					background-color: $blue
+		a
+			border: none
+			color: $blue
+			transition: color $main-trans
+			padding: 0.9375rem 1.125rem
+			position: relative
+			display: block
+			font-size: 1rem
+			font-family: "OpenSans-Semibold"
+			transition: color $main-trans
+			&:hover
+				color: $accent-links
+			span
+				display: inline-block
+/* END EVENTS LIST PAGE */
+
+
+/* EVENT PAGE */
+.wrap-event-content
+	.inner-title
+		text-transform: none
+	.event-category
+		font-size: 1.0625rem
+		display: block
+		margin-bottom: 1.25rem
+		color: $grey-font
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 0.625rem
+	.event-date,
+	.event-location,
+	.event-contact
+		margin-bottom: 1rem
+		.event-block-title
+			display: block
+	.event-text
+		margin: 1.25rem 0
+
+/* END EVENT PAGE */
+
+
+/* DIS PAGE */
+.wrap-dis-page
+	.dis-title
+		text-transform: none
+	.dis-meta-info
+		i
+			margin-right: 8px
+	.dis-meta-info
+		border-bottom: 1px solid $dark-line
+		padding-bottom: 5px
+		.dis-link
+			a
+	.dis-text
+		margin: 20px 0 30px 0
+	.dis-docs
+		background-color: $grey-bgc
+		padding: 25px
+		margin-bottom: 15px
+		h3
+			margin-top: 0
+			font-size: 20px
+			text-transform: uppercase
+			font-family: "OpenSans-SemiBold"
+		ul
+			padding-left: 15px
+			margin: 0
+			li
+				margin-bottom: 5px
+				a
+					color: $blue
+					border-color: $blue
+					&:hover
+						color: $accent-links
+						border-color: $accent-links
+/* END DIS PAGE */
+
+/* YA MAPS */
+.map-filials
+	margin-bottom: 15px
+	.fialial-item
+		background-color: #f7f7f7
+		padding: 15px
+		margin-bottom: 15px
+		border-left-width: 15px
+		border-left-style: solid
+		&:first-child
+			border-color: darken(#1e98ff, 10%)
+		&:nth-child(2)
+			border-color: darken(#56db40, 10%)
+		&:nth-child(3)
+			border-color: darken(#ed4543, 10%)
+		&:nth-child(4)
+			border-color: darken(#b3b3b3, 10%)
+		&:nth-child(5)
+			border-color: darken(#ffd21e, 10%)
+		&:nth-child(6)
+			border-color: darken(#ff931e, 10%)
+	.fialial-item-size
+		width: 100%
+	>ul
+		list-style-type: none !important
+		margin: 0
+		padding: 0
+		>li
+			margin-bottom: 30px
+			>a
+				text-transform: uppercase
+				border-bottom: none
+				cursor: default
+				font-family: "OpenSans-SemiBold"
+				color: $default-color
+				margin-bottom: 5px
+				display: inline-block
+				font-size: 17px
+				&:hover, &:focus, &:active
+					color: $default-color
+					border-color: $default-color
+			>ol
+				padding-left: 40px
+				list-style-type: decimal
+/* END YA MAPS */
+
+/* Page institute */
+.wrap-inst-item
+	position: relative
+	height: 18rem
+	overflow: hidden
+	margin-bottom: 30px
+	&:hover
+		.inst-item-content
+			height: 100%
+			bottom: 0 !important
+	.inst-item-img
+		display: block
+		height: 100%
+		width: 100%
+		background-size: cover
+		background-position: top center
+		position: absolute
+	.inst-item-content
+		background-color: rgba(0, 0, 0, 0.7)
+		position: absolute
+		color: #fff
+		padding: 0 0.75rem
+		height: auto
+		width: 100%
+		transition: bottom 0.35s ease-out
+		h3
+			margin: 0
+			padding: 1rem 0
+			font-size: 1.25rem
+			line-height: 1.1
+		&-preview
+			padding-bottom: 1rem 0
+		&-text
+			font-size: 0.8125rem
+		.standart-button
+			font-family: "OpenSans-Regular"
+			margin: 1.25rem 0
+			padding: 4px 8px
+			border: 1px solid #fff
+			background-color: transparent
+			&:hover, &:focus, &:active
+				background-color: $accent-links
+				border-color: $accent-links
+
+
+/* End page institute */
+
+/* Вакансии */
+.jobs-list
+	.main-accordion 
+		.accordion-item 
+			.panel-body
+				border: none
+.table-jobs
+	th
+		background-color: $grey-bgc
+		width: 200px
+	ul
+		padding-left: 20px
+
+
+/* Filials page */
+.filial-item
+	margin-bottom: 20px
+	background-color: $grey-bgc
+	a
+		border: none
+		color: $default-color
+		display: block
+		padding: 1rem
+		border-top: 4px solid $grey-bgc
+	&-img
+		float: left
+		margin-right: 1rem
+		img
+			width: 3rem
+			height: 3.75rem
+			display: block
+			max-width: 100%
+	&-content
+		h3
+			font-size: 1.5rem
+			line-height: 3.75rem
+			margin: 0
+			transition: color $main-trans
+	&-lesosib
+		a
+			border-color: #00923f
+			&:hover h3
+				color: #00923f
+	&-zhelez
+		a
+			border-color: #ff1824
+			&:hover h3
+				color: #ff1824
+	&-novosib
+		a
+			border-color: #0036aa
+			&:hover h3
+				color: #0036aa
+	&-saratov
+		a
+			border-color: #0096e0
+			&:hover h3
+				color: #0096e0
+
+
+
+/* Page partners */
+.partners-page
+	.partners-preview
+		margin-bottom: 3rem
+	.partners-item
+		margin-bottom: 2rem
+		padding-bottom: 1rem
+		border-bottom: 1px solid #eee
+		&:last-child
+			border-bottom: none
+			margin-bottom: 0
+			padding-bottom: 0
+		&-title
+			font-size: 1.5rem
+			margin-bottom: 1rem
+			line-height: 1.1
+			color: $blue
+			margin-top: 0
+		&-text
+			margin-bottom: 1rem
+		&-links
+			color: $blue
+			&-item
+				margin-right: 1.5rem
+				display: inline-block
+				.fa
+					margin-right: 4px
+					position: relative
+					top: 1px
+				a
+					color: $blue
+					border-color: $blue
+					&:hover
+						color: $accent-links
+						border-color: $accent-links
+
+
+/* Gallery section */
+.photo-gallery
+	.wh
+		height:100% !important
+	.ww
+		width:100% !important
+	.phogal-item
+		display: block
+		background-color: $grey-bgc
+		margin-bottom: 30px
+		&-content
+			padding: 20px 15px
+			&-info
+				font-size: 0.9rem
+				color: #555
+				&-date
+					float: left
+				&-img-count
+					float: right
+				.fa
+					margin-right: 5px
+					position: relative
+					top: -1px
+			&-title
+				h3
+					font-size: 1.1rem
+					line-height: 1.2
+		&-link
+			display: block
+			color: $default-color
+			border: none
+		&-img-wrap
+			.tmb-wrap-table div
+				border-color: rgba(0, 0, 0, 0.4)
+			.tmb-wrap-table div.active
+				border-color: #FBB254
+		&-img
+			width: 100%
+			height: 100%
+			padding: 30%
+			background-size: cover
+			background-position: top center
+			transition: all $main-trans
+
+
+/* photo gallery switch-items */
+.switch-items-daddy 
+	position: relative
+	&::after 
+		content: ""
+		display: table
+		clear: both
+	.switcher-item
+		width: 100%
+		position: relative
+		display: none
+		top: 0
+		left: 0
+		&:first-child 
+			display: block
+
+.tmb-wrap 
+	position: absolute
+	z-index: 2
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	.tmb-wrap-table 
+		display: table
+		height: 100%
+		width: 100%
+
+.tmb-wrap-table 
+	.switcher-col
+		display: table-cell
+		transition: all .3s ease
+		border-bottom: 5px solid transparent
+		padding-top: 10px
+		-webkit-transition: all .25s ease
+		-o-transition: all .25s ease
+		transition: all .25s ease
+		&.active 
+			border-color: #ffe082
+		&:first-child:last-child 
+			border-color: transparent
+/* end photo gallery switch-items */
+
+
+/* page photo album  */
+.photo-album-info
+	&-meta
+		margin-bottom: 1.5rem
+	.table-info-album
+		width: auto
+		margin-bottom: 10px
+		th, td
+			padding: 10px 30px 10px 10px
+		th
+			background-color: $grey-bgc
+
+.photo-album-list
+	.row
+		margin-left: -10px
+		margin-right: -10px
+	&-item
+		padding: 5px
+		margin-bottom: 0
+		height: 175px
+		overflow: hidden
+		&-link
+			display: block
+			border: none
+			overflow: hidden
+			height: 100%
+			text-align: center
+			background-color: rgba(0,0,0,0.1)
+			&:hover, &:focus
+				border: none
+		&-preview
+			display: inline-block
+			max-width: 100%
+			height: auto
+			object-fit: cover
+
+.sl-overlay
+	opacity: .98
+	filter: alpha(opacity=98)
+
+.sl-wrapper
+	.sl-close
+		transition: transform $main-trans
+		&:hover
+			transform: rotate(90deg)
+			opacity: 1
+	.sl-spinner
+		z-index: 1070
+		border-color: $dark-line
+			
+/* end page photo album */
+
+/* End Gallery section */
+
+/* Gorisont paper */
+.gorisont-paper-text
+	margin-bottom: 2rem
+.gorisont-paper
+	.row-year-gorisont
+		margin-bottom: 2rem
+	.gorisont-item
+		text-align: center
+		a
+			font-family: "OpenSans-SemiBold"
+			border: none
+			color: $blue
+			&:hover
+				color: $accent-links
+		&-img
+			display: block
+			width: auto
+			min-width: 125px
+			max-width: 150px
+			margin: 0 auto
+			img
+				width: 100%
+				height: auto
+		&-title
+			display: inline-block
+			margin: 1rem 0 2rem 0
+/* End Gorisont paper */
+
+/* Patents */
+.table-patents
+	table-layout: auto !important
+	> thead > tr > th, 
+	> tbody > tr > th, 
+	> tfoot > tr > th, 
+	> thead > tr > td, 
+	> tbody > tr > td, 
+	> tfoot > tr > td
+		padding: 0.625rem 2rem 0.875rem 0.5rem !important
+	> thead > tr > th
+		text-transform: uppercase
+	a
+		color: $default-color
+		border-color: $default-color
+		&:hover
+			color: $accent-links
+			border-color: $accent-links
+
+.patent-decs,
+.patent-authors,
+	margin-bottom: 0.5rem
+	font-size: 1rem
+
+.patent-authors
+	padding-bottom: 0.5rem
+	border-bottom: 1px solid #aaa
+
+.patent-text
+	margin: 1rem 0
+
+/* End patents */
