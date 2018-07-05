@@ -105,6 +105,7 @@ a
 button
 	outline: none !important
 
+
 .standart-button
 	text-decoration: none
 	display: inline-block
@@ -192,70 +193,35 @@ h2.inner-title--no-caps
 	&:hover, &:focus, &:active
 		border: none
 		text-decoration: underline
+	&::before
+		display: inline-block
+		position: relative
+		width: 2.4rem
+		padding: 2px 0
+		text-transform: uppercase
+		font-family: "OpenSansCondensed-Bold"
+		font-style: normal
+		font-size: 0.875rem
+		text-align: center
+		margin-right: 0.5rem
+		border-radius: 1px
+		color: #fff
 	&--pdf
 		&::before
-			content: "PDF"
-			display: inline-block
-			position: relative
-			width: 2.4rem
-			padding: 2px 0
+			content: "pdf"
 			background-color: #cb0606
-			color: #fff
-			text-transform: uppercase
-			font-family: "OpenSansCondensed-Bold"
-			font-style: normal
-			font-size: 0.875rem
-			text-align: center
-			margin-right: 0.5rem
-			border-radius: 1px
 	&--doc
 		&::before
-			content: "DOC"
-			display: inline-block
-			position: relative
-			width: 2.4rem
-			padding: 2px 0
+			content: "doc"
 			background-color: #2a5699
-			color: #fff
-			text-transform: uppercase
-			font-family: "OpenSansCondensed-Bold"
-			font-style: normal
-			font-size: 0.875rem
-			text-align: center
-			margin-right: 0.5rem
-			border-radius: 1px
 	&--xlsx
 		&::before
 			content: "xlsx"
-			display: inline-block
-			position: relative
-			width: 2.4rem
-			padding: 2px 0
 			background-color: #1f6a41
-			color: #fff
-			text-transform: uppercase
-			font-family: "OpenSansCondensed-Bold"
-			font-style: normal
-			font-size: 0.875rem
-			text-align: center
-			margin-right: 0.5rem
-			border-radius: 1px
 	&--pptx
 		&::before
 			content: "xlsx"
-			display: inline-block
-			position: relative
-			width: 2.4rem
-			padding: 2px 0
 			background-color: #d14424
-			color: #fff
-			text-transform: uppercase
-			font-family: "OpenSansCondensed-Bold"
-			font-style: normal
-			font-size: 0.875rem
-			text-align: center
-			margin-right: 0.5rem
-			border-radius: 1px
 
 /* иконки для ссылок на файлы */
 
@@ -626,31 +592,6 @@ h2.inner-title--no-caps
 /* END SPECIAL VERSION */
 
 
-
-/* Carousel Odoo gallery  */
-.o_gallery.o_slideshow 
-	.carousel 
-		.carousel-full-width
-			img
-				width: 100%
-				max-height: none
-				max-width: none
-			ul.carousel-indicators
-				bottom: 40px
-				margin-bottom: 0
-				li
-					border: 2px solid $yellow
-			.carousel-control.left,
-			.carousel-control.right
-				border: none
-				width: 10%
-				font-size: 2.25rem
-				opacity: 0.8
-				&:hover
-					color: $yellow
-/* End Carousel Odoo gallery */
-
-
 /* Tabs content */
 .tabs-container
 	.nav-tabs 
@@ -723,6 +664,3 @@ h2.inner-title--no-caps
 /* End accordion */
 
 
-/* Snippet Odoo "Well" */
-.well
-	border-radius: 2px

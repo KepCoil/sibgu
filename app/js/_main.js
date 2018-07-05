@@ -170,12 +170,13 @@ $(function() {
 
 
 
-	/* Определение расширение файлов для подстановки иконки (есть весомые подозрения, что скрипт написан максимально стремно) */
+	/* Определение расширение файлов для подстановки иконки в блоке основного контента страницы */
 	$("#wrap a").each(function() {
-		var th = $(this),
-      filesExt = ["pdf", "doc", "docs", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
-      getUrl = th.attr("href").toLowerCase(),
-      checkExt = getUrl.split(".").pop();
+		var 
+			th = $(this),
+			filesExt = ["pdf", "doc", "docx", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
+			getUrl = th.attr("href").toLowerCase(),
+			checkExt = getUrl.split(".").pop();
 
 		// Проверяем, если ли нужное расширения файла
 		if ( !(filesExt.indexOf(checkExt) != -1) ) {
@@ -185,18 +186,30 @@ $(function() {
 		// Добавляем нужные классы для создания иконки
 		else {
 			th.addClass("doc-file");
+			console.log(checkExt);
 
-			if ( (checkExt == "pdf") ) {
-				th.addClass("doc-file--pdf");
-			}
-			else if ( (checkExt == "doc") || (checkExt == "docs") || (checkExt == "rtf")  || (checkExt == "odt") ) {
-				th.addClass("doc-file--doc");
-			}
-			else if ( (checkExt == "xlsx") || (checkExt == "xlsm") || (checkExt == "ods") ) {
-				th.addClass("doc-file--xlsx");
-			}
-			else if ( (checkExt == "pptx") || (checkExt == "odp") ) {
-				th.addClass("doc-file--pptx");
+			switch (checkExt) {
+				case "pdf":
+					th.addClass("doc-file--pdf");
+					break;
+				
+				case "doc": 
+				case "docx":
+				case "rtf":
+				case "odt":
+					th.addClass("doc-file--doc");
+					break;
+				
+				case "xlsx":
+				case "xlsm":
+				case "ods":
+					th.addClass("doc-file--xlsx");
+					break;
+
+				case "pptx":
+				case "odp":
+					th.addClass("doc-file--pptx");
+					break;
 			}
 		}
 	});

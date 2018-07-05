@@ -23,7 +23,7 @@
 						<div class="js-slide-content slide-content-inner">
 							<h3 class="slide-content-inner-title">ХII Региональная научно-практическая конференция</h3>
 							<a class="slide-content-inner-btn" href="#">Подробнее</a>
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>

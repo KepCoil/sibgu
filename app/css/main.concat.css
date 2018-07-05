@@ -7383,70 +7383,32 @@ h2.inner-title--no-caps {
   .doc-file:hover, .doc-file:focus, .doc-file:active {
     border: none;
     text-decoration: underline; }
+  .doc-file::before {
+    display: inline-block;
+    position: relative;
+    width: 2.4rem;
+    padding: 2px 0;
+    text-transform: uppercase;
+    font-family: "OpenSansCondensed-Bold";
+    font-style: normal;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    -webkit-border-radius: 1px;
+            border-radius: 1px;
+    color: #fff; }
   .doc-file--pdf::before {
-    content: "PDF";
-    display: inline-block;
-    position: relative;
-    width: 2.4rem;
-    padding: 2px 0;
-    background-color: #cb0606;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "OpenSansCondensed-Bold";
-    font-style: normal;
-    font-size: 0.875rem;
-    text-align: center;
-    margin-right: 0.5rem;
-    -webkit-border-radius: 1px;
-            border-radius: 1px; }
+    content: "pdf";
+    background-color: #cb0606; }
   .doc-file--doc::before {
-    content: "DOC";
-    display: inline-block;
-    position: relative;
-    width: 2.4rem;
-    padding: 2px 0;
-    background-color: #2a5699;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "OpenSansCondensed-Bold";
-    font-style: normal;
-    font-size: 0.875rem;
-    text-align: center;
-    margin-right: 0.5rem;
-    -webkit-border-radius: 1px;
-            border-radius: 1px; }
+    content: "doc";
+    background-color: #2a5699; }
   .doc-file--xlsx::before {
     content: "xlsx";
-    display: inline-block;
-    position: relative;
-    width: 2.4rem;
-    padding: 2px 0;
-    background-color: #1f6a41;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "OpenSansCondensed-Bold";
-    font-style: normal;
-    font-size: 0.875rem;
-    text-align: center;
-    margin-right: 0.5rem;
-    -webkit-border-radius: 1px;
-            border-radius: 1px; }
+    background-color: #1f6a41; }
   .doc-file--pptx::before {
     content: "xlsx";
-    display: inline-block;
-    position: relative;
-    width: 2.4rem;
-    padding: 2px 0;
-    background-color: #d14424;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "OpenSansCondensed-Bold";
-    font-style: normal;
-    font-size: 0.875rem;
-    text-align: center;
-    margin-right: 0.5rem;
-    -webkit-border-radius: 1px;
-            border-radius: 1px; }
+    background-color: #d14424; }
 
 /* иконки для ссылок на файлы */
 /* Пагинация Odoo */
@@ -7808,29 +7770,6 @@ h2.inner-title--no-caps {
     margin-left: 34px; }
 
 /* END SPECIAL VERSION */
-/* Carousel Odoo gallery  */
-.o_gallery.o_slideshow .carousel .carousel-full-width img {
-  width: 100%;
-  max-height: none;
-  max-width: none; }
-
-.o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators {
-  bottom: 40px;
-  margin-bottom: 0; }
-  .o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators li {
-    border: 2px solid #ffe082; }
-
-.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left,
-.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right {
-  border: none;
-  width: 10%;
-  font-size: 2.25rem;
-  opacity: 0.8; }
-  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left:hover,
-  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right:hover {
-    color: #ffe082; }
-
-/* End Carousel Odoo gallery */
 /* Tabs content */
 .tabs-container .nav-tabs {
   border: none;
@@ -7902,11 +7841,6 @@ h2.inner-title--no-caps {
             transform: rotate(90deg); }
 
 /* End accordion */
-/* Snippet Odoo "Well" */
-.well {
-  -webkit-border-radius: 2px;
-          border-radius: 2px; }
-
 /* HEADER */
 #wrapwrap .top-line {
   position: relative;
@@ -9950,6 +9884,99 @@ h2.inner-title--no-caps {
 /* for 1920px */
 @media only screen and (min-width: 1900px) {
   /**/ }
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-Italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.eot");
+  src: url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-SemiBoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+  src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"), url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-BoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+  src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansCondensed-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot");
+  src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
+
+/* ODOO snippets */
+.img-rounded {
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important; }
+
+.well {
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.o_gallery.o_slideshow .carousel .carousel-full-width img {
+  width: 100%;
+  max-height: none;
+  max-width: none; }
+
+.o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators {
+  bottom: 40px;
+  margin-bottom: 0; }
+  .o_gallery.o_slideshow .carousel .carousel-full-width ul.carousel-indicators li {
+    border: 2px solid #ffe082; }
+
+.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left,
+.o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right {
+  border: none;
+  width: 10%;
+  font-size: 2.25rem;
+  opacity: 0.8; }
+  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.left:hover,
+  .o_gallery.o_slideshow .carousel .carousel-full-width .carousel-control.right:hover {
+    color: #ffe082; }
 
 #oe_main_menu_navbar a,
 #oe_snippets a {
