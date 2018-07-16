@@ -293,6 +293,13 @@ $(function() {
 		// 	$(".second-foot-line .col-sm-12").height('auto');
 		// }
 
+		if (windowWidth <= 991 && windowWidth >= 768) {
+			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").matchHeight();
+		}
+		else {
+			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").height('auto');
+		}
+
 		if (windowWidth >= 768) {
 			$(".wrap-cards-news .wrap-news-content").matchHeight();
 			$(".standart-item-content").matchHeight();

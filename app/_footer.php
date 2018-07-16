@@ -62,9 +62,9 @@
 				<div class="col-md-6 col-sm-12">
 					<div class="wrap-foot-contancts">
 						<ul class="foot-contacts-content foot-contacts-content-col-2">
-							<li>Приемная ректора: <strong>8 (391) 264-00-14</strong></li>
-							<li>Приемная комиссия: <strong>8 (391) 262-95-96</strong></li>
-							<li>Факс: <strong>8 (391) 264-47-09</strong></li>
+							<li>Приемная ректора: <strong class="foot-contacts-tel"><a href="tel:+73912640014">+7 (391) 264-00-14</a></strong></li>
+							<li>Приемная комиссия: <strong class="foot-contacts-tel"><a href="tel:+73912629596">+7 (391) 262-95-96</a></strong></li>
+							<li>Факс: <strong class="foot-contacts-tel"><a href="fax:+73912644709">+7 (391) 264-47-09</a></strong></li>
 							<li>E-mail: <strong><a href="mailto:info@sibsau.ru">info@sibsau.ru</a></strong></li>
 						</ul>
 					</div>

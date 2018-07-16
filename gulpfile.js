@@ -14,13 +14,13 @@ var
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		//server: {baseDir: 'app'},
-		//port: '3000',
-		//proxy: 'sibgu-front.loc',
-		proxy: 'localhost:8080/sibgu_front/app', //xampp local server
 		notify: false,
-		open: false,
-		//browser: '/opt/firefox-dev/firefox'
+		browser: 'firefox',
+		open: true,
+		// server: {baseDir: 'app'},
+		proxy: 'sibgu',
+		// proxy: 'localhost:8080/sibgu_front/app', //xampp local server
+		// port: '3000',
 	});
 });
 
