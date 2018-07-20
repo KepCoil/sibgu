@@ -293,7 +293,7 @@ $(function() {
 		// 	$(".second-foot-line .col-sm-12").height('auto');
 		// }
 
-		if (windowWidth <= 991 && windowWidth >= 768) {
+		if ( (windowWidth <= 991) && (windowWidth >= 768) ) {
 			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").matchHeight();
 		}
 		else {

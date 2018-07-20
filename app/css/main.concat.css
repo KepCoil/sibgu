@@ -259,7 +259,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 /*body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -8114,7 +8114,7 @@ h2.inner-title--no-caps {
           border: none; }
         .head-content .other-func .flags-list > li img {
           visibility: visible !important;
-          width: 46px;
+          width: 2.875rem;
           -webkit-box-shadow: 1px 1px 0 #dcdcdc;
                   box-shadow: 1px 1px 0 #dcdcdc; }
   .head-content .search-area.search-area--mobile {
@@ -8521,11 +8521,11 @@ h2.inner-title--no-caps {
 /* END SECTION INFOGRAPFICS */
 /* SECTION STUDENTS COMMENT */
 .comment-students-sect .comment-student-slider .owl-dots {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   text-align: center; }
   .comment-students-sect .comment-student-slider .owl-dots .owl-dot {
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     background-color: #fff;
     display: inline-block;
     -webkit-border-radius: 50%;
@@ -8589,10 +8589,10 @@ h2.inner-title--no-caps {
     margin-bottom: 30px; }
   .pa-sect .owl-dots {
     text-align: center;
-    margin-top: 30px; }
+    margin-top: 1.875rem; }
     .pa-sect .owl-dots .owl-dot {
-      width: 15px;
-      height: 15px;
+      width: 1rem;
+      height: 1rem;
       background-color: #fff;
       display: inline-block;
       -webkit-border-radius: 50%;
@@ -8748,6 +8748,8 @@ h2.inner-title--no-caps {
     padding: 1.25rem 0;
     background-color: #233987;
     border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    #wrapwrap .main-footer .foot-second-level .col-md-17, #wrapwrap .main-footer .foot-second-level .col-md-7 {
+      min-height: auto; }
     #wrapwrap .main-footer .foot-second-level .uit {
       text-align: right; }
       #wrapwrap .main-footer .foot-second-level .uit a {
@@ -9046,49 +9048,71 @@ h2.inner-title--no-caps {
 
 /* END DIS PAGE */
 /* YA MAPS */
-.map-filials {
-  margin-bottom: 15px; }
-  .map-filials .fialial-item {
-    background-color: #f7f7f7;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-left-width: 15px;
+.wrap-corpuses-map .col-md-6 {
+  padding-right: 0; }
+
+.wrap-corpuses-map .col-md-18 {
+  padding-left: 0; }
+
+.wrap-corpuses-map .map-corpuses {
+  height: 600px;
+  overflow-y: scroll; }
+
+.wrap-corpuses-map .ya-maps {
+  height: 600px !important; }
+
+ul.corpuses-list {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; }
+  ul.corpuses-list > li.corpuses-item {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 0.625rem 0;
+    border-left-width: 0.35rem;
     border-left-style: solid; }
-    .map-filials .fialial-item:first-child {
+    ul.corpuses-list > li.corpuses-item:first-child {
       border-color: #007fea; }
-    .map-filials .fialial-item:nth-child(2) {
+    ul.corpuses-list > li.corpuses-item:nth-child(2) {
       border-color: #3bc325; }
-    .map-filials .fialial-item:nth-child(3) {
+    ul.corpuses-list > li.corpuses-item:nth-child(3) {
       border-color: #e71916; }
-    .map-filials .fialial-item:nth-child(4) {
+    ul.corpuses-list > li.corpuses-item:nth-child(4) {
       border-color: #9a9a9a; }
-    .map-filials .fialial-item:nth-child(5) {
+    ul.corpuses-list > li.corpuses-item:nth-child(5) {
       border-color: #eabb00; }
-    .map-filials .fialial-item:nth-child(6) {
+    ul.corpuses-list > li.corpuses-item:nth-child(6) {
       border-color: #ea7a00; }
-  .map-filials .fialial-item-size {
-    width: 100%; }
-  .map-filials > ul {
-    list-style-type: none !important;
-    margin: 0;
-    padding: 0; }
-    .map-filials > ul > li {
-      margin-bottom: 30px; }
-      .map-filials > ul > li > a {
-        text-transform: uppercase;
-        border-bottom: none;
-        cursor: default;
-        font-family: "OpenSans-SemiBold";
+    ul.corpuses-list > li.corpuses-item:last-child {
+      margin-bottom: 0; }
+    ul.corpuses-list > li.corpuses-item > a.corpuses-item-title {
+      border: none;
+      cursor: default;
+      font-family: "OpenSans-SemiBold";
+      color: #222;
+      margin-bottom: 0.75rem;
+      margin-left: 1rem;
+      display: inline-block;
+      font-size: 1rem; }
+      ul.corpuses-list > li.corpuses-item > a.corpuses-item-title:hover, ul.corpuses-list > li.corpuses-item > a.corpuses-item-title:focus, ul.corpuses-list > li.corpuses-item > a.corpuses-item-title:active {
         color: #222;
-        margin-bottom: 5px;
-        display: inline-block;
-        font-size: 17px; }
-        .map-filials > ul > li > a:hover, .map-filials > ul > li > a:focus, .map-filials > ul > li > a:active {
-          color: #222;
-          border-color: #222; }
-      .map-filials > ul > li > ol {
-        padding-left: 40px;
-        list-style-type: decimal; }
+        border-color: #222; }
+    ul.corpuses-list > li.corpuses-item > ol.corpuses-item-submenu {
+      padding-left: 0;
+      list-style-type: none;
+      margin: 0 1rem; }
+      ul.corpuses-list > li.corpuses-item > ol.corpuses-item-submenu > li {
+        display: block; }
+        ul.corpuses-list > li.corpuses-item > ol.corpuses-item-submenu > li:last-child > a {
+          border-bottom: none; }
+        ul.corpuses-list > li.corpuses-item > ol.corpuses-item-submenu > li > a {
+          font-size: 0.875rem;
+          line-height: 1.2;
+          display: block;
+          margin-bottom: 0.3rem;
+          padding: 5px 0;
+          border-bottom: 1px solid #dedede; }
 
 /* END YA MAPS */
 /* Page institute */
@@ -9593,7 +9617,10 @@ h2.inner-title--no-caps {
   #wrapwrap .wrap-toggle-img .switch-state-img:empty ~ label {
     font-size: 15px; }
   #wrapwrap .photo-album-list-item {
-    height: 150px; } }
+    height: 150px; }
+  #wrapwrap .wrap-corpuses-map .map-corpuses,
+  #wrapwrap .wrap-corpuses-map .ya-maps {
+    height: 450px !important; } }
 
 @media only screen and (max-width: 1260px) and (min-width: 992px) {
   #wrapwrap .head-content .main-title-wrap img {
@@ -9711,7 +9738,15 @@ h2.inner-title--no-caps {
   #wrapwrap .main-footer .uit {
     display: none; }
   #wrapwrap .main-footer .photo-album-list-item {
-    height: 160px; } }
+    height: 160px; }
+  #wrapwrap .wrap-corpuses-map .col-md-6 {
+    padding-right: 15px;
+    margin-bottom: 15px; }
+  #wrapwrap .wrap-corpuses-map .col-md-18 {
+    padding-left: 15px; }
+  #wrapwrap .wrap-corpuses-map .map-corpuses,
+  #wrapwrap .wrap-corpuses-map .ya-maps {
+    height: 300px !important; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {

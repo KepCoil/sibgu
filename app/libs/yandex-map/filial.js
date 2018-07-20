@@ -3,7 +3,7 @@
 // Группы объектов
 var groups = [
 	{
-		name: 'Учебные объекты (правый берег)',
+		name: 'Учебные объекты (правый берег):',
 		color: 'islands#blueIcon',
 		items: [
 		{
@@ -86,7 +86,7 @@ var groups = [
 		},
 		{
 			center: [55.99935221241152,92.95020144802034],
-			name: 'Корпус «С1», «С2»',
+			name: 'Корпус «С»',
 			address: 'ул. Семафорная, 433/1',
 			caption: 'Корпус «С1», «С2»'
 		},
@@ -136,7 +136,7 @@ var groups = [
 	},
 
 	{
-		name: 'Учебные объекты (левый берег)',
+		name: 'Учебные объекты (левый берег):',
 		color: 'islands#greenIcon',
 		items: [
 		{
@@ -197,7 +197,7 @@ var groups = [
 	},
 
 	{
-		name: 'Спортивно-оздоровительные объекты',
+		name: 'Спортивно-оздоровительные объекты:',
 		color: 'islands#redIcon',
 		items: [
 		{
@@ -245,7 +245,7 @@ var groups = [
 		]
 	},
 	{
-		name: 'Социальные объекты',
+		name: 'Социальные объекты:',
 		color: 'islands#greyIcon',
 		items: [
 		{
@@ -281,7 +281,7 @@ var groups = [
 		]
 	},
 	{
-		name: 'Общежития (правый берег)',
+		name: 'Общежития (правый берег):',
 		color: 'islands#yellowIcon',
 		items: [
 		{
@@ -304,7 +304,7 @@ var groups = [
 		}]
 	},
 	{
-		name: 'Общежития (левый берег)',
+		name: 'Общежития (левый берег):',
 		color: 'islands#orangeIcon',
 		items: [
 		{
@@ -354,32 +354,33 @@ var groups = [
 ];
 
 ymaps.ready(init);
+
 function init() {
 
 	// Создаем карты
-	var mapFilials = new ymaps.Map('js-corpuses-map', {
+	var mapCorpuses = new ymaps.Map('js-corpuses-map', {
 		center: [56.01839, 92.86717],
 		zoom: 13,
-		controls : ["zoomControl", "fullscreenControl"]
+		controls: ["zoomControl", "fullscreenControl"],
 	});
-	mapFilials.behaviors.enable('scrollZoom');
+	mapCorpuses.behaviors.enable('scrollZoom');
 
-	var menu = $('<ul class="filials-list"></ul>');
+	var menu = $('<ul class="corpuses-list"></ul>');
       
 	for (var i = 0, l = groups.length; i < l; i++) {
 		createMenuGroup(groups[i]);
 	}
 
-	function createMenuGroup (group) {
+	function createMenuGroup(group) {
 		// Пункт меню.
 		var 
-			menuItem = $('<li class="fialial-item"><a href="#">' + group.name + '</a></li>'),
-			submenu = $('<ol class="submenu"></ol>'),
+			menuItem = $('<li class="corpuses-item"><a class="corpuses-item-title" href="#">' + group.name + '</a></li>'),
+			submenu = $('<ol class="corpuses-item-submenu"></ol>'),
 			// Коллекция для геообъектов группы.
 			collection = new ymaps.GeoObjectCollection(null, { preset: group.color});
 
 		// Добавляем коллекцию на карту.
-		mapFilials.geoObjects.add(collection);
+		mapCorpuses.geoObjects.add(collection);
 		// Добавляем подменю.
 		menuItem
          .append(submenu)
@@ -387,14 +388,14 @@ function init() {
 			.find('a')
 			.bind('click', function () {
 				return false;
-			});
+		});
 
 		for (var j = 0, m = group.items.length; j < m; j++) {
 			createSubMenu(group.items[j], collection, submenu);
 		}
-   };
+   }
 
-	function createSubMenu (item, collection, submenu) {
+	function createSubMenu(item, collection, submenu) {
 		var 
 			submenuItem = $('<li><a href="#">' + item.name + ' (' + item.address + ')' + '</a></li>'),
 			// Метка
@@ -420,5 +421,5 @@ function init() {
 	}
 
 	// Добавим меню в нужный блок
-	menu.appendTo($('.map-filials'));
-};
+	menu.appendTo($('.map-corpuses'));
+}
