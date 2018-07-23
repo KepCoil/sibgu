@@ -213,6 +213,12 @@ $(function() {
 		}
 	});
 
+	/*Breadcrumbs */
+	$(".js-breadcrumbs__link--disabled").click(function(e) {
+		e.preventDefault();
+		return false;
+	});
+
 
 	/* Функционал галлереи */
 	// Масштабирование картинок img (вместо использования background-image с background-size: cover), для списка фоток альбома

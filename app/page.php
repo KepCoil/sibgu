@@ -5,6 +5,9 @@
 <main>
 	<div id="wrap">
 		<div class="container">
+			<?php include("__breadcrumbs.php") ?>
+		</div>
+		<div class="container">
 			<h2 class="inner-title">Диссертационные советы</h2>
 		</div>
 		<div class="container">

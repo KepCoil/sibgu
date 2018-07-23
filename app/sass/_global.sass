@@ -31,7 +31,9 @@ body
 
 /* odoo content tag wrap */
 #wrap
-	margin: 1.875rem 0 3rem 0
+	padding: 2rem 0 2.5rem 0
+.wrap-bg-grey
+	background-color: #f7f7f7
 
 ul
 	list-style: square outside
@@ -164,7 +166,7 @@ h2.inner-title--no-caps
 	font-size: 1.75rem
 	font-family: "OpenSans-Semibold"
 	color: $blue
-	margin: 0.5rem 0 1.875rem 0
+	margin: 0 0 1.625rem 0
 	text-align: left
 
 h2.inner-title
@@ -172,6 +174,18 @@ h2.inner-title
 
 h2.inner-title--no-caps
 	font-size: 1.5rem
+
+.title-border
+	border-bottom: 1px solid $light-grey-font
+	margin-bottom: 1.5rem
+	h2.inner-title
+		display: inline-block
+		position: relative
+		border-bottom: 2px solid $blue
+		bottom: -1px
+		margin-bottom: 0
+		padding-bottom: 0.5rem
+		font-size: 1.625rem
 
 #wrapwrap 
 	table.table, 
@@ -252,6 +266,100 @@ h2.inner-title--no-caps
 					cursor: default
 					color: $default-color
 					background-color: transparent
+
+.page-sidebars
+	&__sidebar,
+	&__content
+		background-color: #fff
+		// border: 1px solid #ddd
+		border-radius: 3px
+		box-shadow: 0 1px 0 0 #bcbcbc, 0 0 0 1px #dbdbdb
+	&__content
+		padding: 1.25rem 1.5rem
+	&__sidebar
+		padding: 0.5rem 0
+
+
+.sidebar
+	&-navigation
+		&__list
+			display: block
+			list-style-type: none
+			padding: 0
+			margin: 0
+		&__item
+			// margin: 0 0 1px 0
+			border-bottom: 1px solid #ececec
+			&:last-child
+				// margin-bottom: 0
+				border-bottom: 0
+		&__link
+			display: block
+			padding: 0.75rem 1rem
+			border-left: 3px solid transparent
+			border-bottom: none
+			color: #000
+			font-size: 1rem
+			&:hover, &:focus, &:active
+				border-bottom: none
+				background-color: $purple-bgc
+				color: #000
+			&--active
+				border-left-color: $blue
+				font-family: "OpenSans-Semibold"
+				background-color: $purple-bgc
+
+
+.breadcrumbs
+	margin-bottom: 1.25rem
+	&__line
+		list-style-type: none
+		margin: 0
+		padding: 0
+		&-element
+			float: left
+			margin-bottom: 0.75rem
+			margin-right: 0.625rem
+			&::after
+				display: inline-block
+				font-family: FontAwesome
+				content: "\f105"
+				color: $grey-font
+				margin-left: 0.525rem
+			&:last-child
+				&::after
+					display: none
+	&__link
+		color: $grey-font
+		border-color: $grey-font
+		font-size: 0.875rem
+		&--home
+			border: none
+			&:hover, &:focus, &:active
+				border: none
+				.breadcrumbs__link--home-icon,
+				.breadcrumbs__link--home-text
+					color: $accent-links
+				.breadcrumbs__link--home-text
+					border-color: $accent-links
+			&-icon
+				display: inline-block
+				color: $grey-font
+				margin-right: 0.2rem
+				transition: color $main-trans
+			&-text
+				display: inline-block
+				border-bottom: 1px solid $grey-font
+				transition: color $main-trans, border-color $main-trans
+				&:hover, &:focus, &:active
+					border-color: $accent-links
+		&--disabled
+			border: none
+			cursor: default
+			&:hover, &:focus, &:active
+				color: $grey-font
+				border: none
+
 				
 /*  */		
 
