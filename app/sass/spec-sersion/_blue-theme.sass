@@ -30,8 +30,27 @@ html[data-theme="blue"]
 		.navaslider,
 		.main-footer,
 		.foot-first-level,
-		.foot-second-level
+		.foot-second-level,
+		.wrap-bg-grey
 			background-color: $bgc_blue
+		.page-sidebars
+			&__sidebar,
+			&__content
+				background-color: $bgc_blue
+				box-shadow: 0 1px 0 0 $accent_blue, 0 0 0 1px $accent_blue
+		.sidebar
+			&-navigation
+				&__item
+					border-color: $accent_blue
+				&__link
+					border-left: 3px solid transparent
+					&:hover, &:focus, &:active
+						border-bottom: none
+						background-color: $light-blue
+						color: $accent_blue
+					&--active
+						border-left-color: $accent_blue
+						background-color: $light-blue
 		.foot-first-level,
 		.top-line
 			box-shadow: 0 1px 0 $accent_blue
@@ -47,9 +66,39 @@ html[data-theme="blue"]
 			border-top: 1px solid $accent_blue
 		.main-sect.pa-sect
 			border: none
+		.breadcrumbs
+			&__line
+				&-element
+					&::after
+						color: $accent_blue
+			&__link
+				color: $accent_blue
+				border-color: $accent_blue
+				&--home
+					&:hover, &:focus, &:active
+						.breadcrumbs__link--home-icon,
+						.breadcrumbs__link--home-text
+							color: $accent_blue
+						.breadcrumbs__link--home-text
+							border-color: $accent_blue
+					&-icon
+						color: $accent_blue
+					&-text
+						border-bottom: 1px solid $accent_blue
+						&:hover, &:focus, &:active
+							border-color: $accent_blue
+				&--disabled
+					color: $accent_blue
+					&:hover, &:focus, &:active
+						color: $accent_blue
 		h2.inner-title, 
 		h2.inner-title--no-caps
 			color: $accent_blue
+		.title-border 
+			border-color: $light-blue
+			h2.inner-title
+				border-color: $accent_blue
+				color: $accent_blue
 		.top-line
 			height: auto
 			.quick-links

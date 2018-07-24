@@ -182,8 +182,18 @@
 	#wrapwrap
 		.wrap-spec-panel-controls
 			display: none !important
-		#wrap
-			// margin-top: 0.5rem
+		.wrap-bg-grey
+			background-color: #fff
+		h2.inner-title,
+		h2.inner-title--no-caps
+			font-size: 1.25rem
+			margin-bottom: 1.5
+		.title-border
+			border: none
+			h2.inner-title
+				border: none
+				padding-bottom: 0
+				font-size: 1.25rem
 		.top-line
 			height: auto
 			padding: 2px 0
@@ -291,6 +301,18 @@
 			.photo-album-list
 				&-item
 					height: 160px
+		.page-sidebars
+			// &__colums
+			// 	padding-left: 0
+			// 	padding-right: 0
+			&__sidebar,
+			&__content
+				background-color: #fff
+				border-radius: 0
+			&__content
+				padding: 0
+				box-shadow: none
+				margin-bottom: 1.5rem
 		.wrap-corpuses-map
 			.col-md-6
 				padding-right: 15px
@@ -300,9 +322,7 @@
 			.map-corpuses,
 			.ya-maps
 				height: 300px !important
-		.page-sidebars
-			&__content
-				margin-bottom: 15px
+				
 
 			
 

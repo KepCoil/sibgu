@@ -35,9 +35,8 @@
 	<script src="libs/bootstrap-tabs/bootstrap.js"></script>
 <!--  -->
 
-<script defer src="js/jquery-libs.js"></script>
-<script defer src="js/common.js"></script>
-<!-- END SCRIPTS -->
+<script defer="defer" src="js/jquery-libs.js"></script>
+<script defer="defer" src="js/common.js"></script>
 
 
 </body>

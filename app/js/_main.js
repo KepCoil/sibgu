@@ -1,5 +1,10 @@
 $(function() {
 
+	/* Глобальный переменные */
+	var windowWidth = $(window).width();
+
+
+
 	/* МОБИЛЬНОЕ МЕНЮ */
 	// Перенос оба меню (костыль)
 	var 
@@ -61,6 +66,7 @@ $(function() {
 		$(this).removeClass("droplist-open");
 	});
 
+
 	/* Неклибальность ссылок главного меню, если оно выпадающее */
 	$(".main-menu ul.ul-inner-menu >li.droplist >a").click(function() {
 		return false;
@@ -107,7 +113,7 @@ $(function() {
 
 
 
-	/* Слайдер на главной странице */
+	/* Слайдеры с использованием owlCarousel */
 	$('#js-main-slider').owlCarousel({
 		loop: true,
 		items: 1,
@@ -144,7 +150,7 @@ $(function() {
 		}
 	});
 
-	/**/
+
 	$("#js-links-other").owlCarousel({
 		loop: true,
 		nav: true,
@@ -159,7 +165,11 @@ $(function() {
 			1800: { items:6 }
 		}
 	});
+	/**/
 
+
+	
+	/* Карточка превью учебного подразделения */
 	function resizeInstituteItems() {
 		$(".inst-item-content").each(function() {
 			var heightPreview =  $(this).children(".inst-item-content-preview").innerHeight();
@@ -212,6 +222,7 @@ $(function() {
 			}
 		}
 	});
+
 
 	/*Breadcrumbs */
 	$(".js-breadcrumbs__link--disabled").click(function(e) {
@@ -278,7 +289,21 @@ $(function() {
 	/* Конец функционал галлереи */
 
 
-	/* Функция уравнивания высоты различных элементов */
+	/* Функция для создания "липких" блоков с использованием stickySidebar */
+	function stickyBlocks() {
+		
+		if (windowWidth >= 992) {
+			$('#js-sticky-sidebar').stickySidebar({
+				topSpacing: 20,
+				bottomSpacing: 40,
+			});
+		}		
+	}
+	stickyBlocks();
+
+
+
+	/* Функция уравнивания высоты различных элементов через плагин "matchHeigh" */
 	function equalHeightElements() {
 		$(".infographics-sect .wrap-infographics-content").matchHeight();
 		$(".pa-sect .wrap-pa-item").matchHeight();
@@ -287,18 +312,9 @@ $(function() {
 		$(".phogal-item .phogal-item-content-title").matchHeight();
 		$(".gorisont-item-img").matchHeight();
 		// $(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();$(".pa-sect .wrap-pa-item").height('auto').equalHeights();$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();$(".dis-docs").height('auto').equalHeights();$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
-
-		/* Функция equalHeights() при мобильной версии */
 		
-		var windowWidth = $(window).width();
-		
-		// if (windowWidth < 922) {
-		// 	$(".second-foot-line .col-sm-12").matchHeight();
-		// }
-		// else {
-		// 	$(".second-foot-line .col-sm-12").height('auto');
-		// }
 
+		// "matchHeigh") при мобильной версии различной ширине экрана
 		if ( (windowWidth <= 991) && (windowWidth >= 768) ) {
 			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").matchHeight();
 		}
@@ -319,6 +335,7 @@ $(function() {
 	}
 	equalHeightElements();
 	/**/
+
 
 	/* Bootstrap accordion  */
 	$('#accordion, #bs-collapse')
@@ -368,12 +385,13 @@ $(function() {
 	// });
 	/**/
 
+
 	/* Пагинация */
 	// Некликабельность активной кнопки
 	$('#nav_panel .btn.active').click(function() {
 		return false;
 	});
-	/*  */
+	/* */
 
 
 	/* Функции при ресайзе экрана */
@@ -381,6 +399,7 @@ $(function() {
 		equalHeightElements();
 		resizeHeightMapFilials();
 		resizeInstituteItems();
+		stickyBlocks();
 	});
 
 

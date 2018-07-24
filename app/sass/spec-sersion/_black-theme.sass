@@ -32,8 +32,27 @@ html[data-theme="black"]
 		.navaslider,
 		.main-footer,
 		.foot-first-level,
-		.foot-second-level
+		.foot-second-level,
+		.wrap-bg-grey,
 			background-color: $black
+		.page-sidebars
+			&__sidebar,
+			&__content
+				background-color: $black
+				box-shadow: 0 1px 0 0 $white, 0 0 0 1px $white
+		.sidebar
+			&-navigation
+				&__item
+					border-color: $white
+				&__link
+					border-left: 3px solid transparent
+					&:hover, &:focus, &:active
+						border-bottom: none
+						background-color: $grey
+						color: $white
+					&--active
+						border-left-color: $white
+						background-color: $grey
 		.foot-first-level
 			border-bottom: 1px solid $white
 		.main-menu,
@@ -58,8 +77,36 @@ html[data-theme="black"]
 			margin-top: 0
 		.main-sect.pa-sect
 			border: none
+		.breadcrumbs
+			&__line
+				&-element
+					&::after
+						color: $white
+			&__link
+				color: $white
+				border-color: $white
+				&--home
+					&:hover, &:focus, &:active
+						.breadcrumbs__link--home-icon,
+						.breadcrumbs__link--home-text
+							color: $white
+						.breadcrumbs__link--home-text
+							border-color: $white
+					&-icon
+						color: $white
+					&-text
+						border-bottom: 1px solid $white
+						&:hover, &:focus, &:active
+							border-color: $white
+				&--disabled
+					color: $white
+					&:hover, &:focus, &:active
+						color: $white
 		h2.inner-title, 
-		h2.inner-title--no-caps
+		h2.inner-title--no-caps,
+		.title-border 
+			h2.inner-title
+			border-color: $white
 			color: $white
 		.top-line
 			height: auto

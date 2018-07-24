@@ -16,10 +16,10 @@ gulp.task('browser-sync', function() {
 	browserSync({
 		notify: false,
 		//browser: 'firefox',
-		open: false,
+		open: true,
 		// server: {baseDir: 'app'},
-		// proxy: 'sibgu',
-		proxy: 'localhost:8080/sibgu_front/app', //xampp local server
+		proxy: 'sibgu',
+		//proxy: 'localhost:8080/sibgu_front/app', //xampp local server
 		// port: '3000',
 	});
 });
@@ -52,6 +52,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/jquery-match-height/jquery.matchHeight-min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
+		'app/libs/sticky-sidebar/jquery.sticky-sidebar.min.js',
 		'app/libs/switch-items/jquery.switch-items.min.js',
 		'app/libs/simple-lightbox/simple-lightbox.modification.min.js',
 		'app/libs/jquery-cookie/jquery.cookie.min.js'

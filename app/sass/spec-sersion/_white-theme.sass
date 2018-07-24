@@ -30,8 +30,52 @@ html[data-theme="white"]
 		.navaslider,
 		.main-footer,
 		.foot-first-level,
-		.foot-second-level
+		.foot-second-level,
+		.wrap-bg-grey,
+		.page-sidebars
 			background-color: $white
+			&__sidebar,
+			&__content	
+				background-color: $white
+				box-shadow: 0 1px 0 0 $black, 0 0 0 1px $black
+		.sidebar
+			&-navigation
+				&__item
+					border-color: $grey
+				&__link
+					border-left: 3px solid transparent
+					&:hover, &:focus, &:active
+						border-bottom: none
+						background-color: $grey
+						color: $black
+					&--active
+						border-left-color: $black
+						background-color: $grey
+		.breadcrumbs
+			&__line
+				&-element
+					&::after
+						color: $black
+			&__link
+				color: $black
+				border-color: $black
+				&--home
+					&:hover, &:focus, &:active
+						.breadcrumbs__link--home-icon,
+						.breadcrumbs__link--home-text
+							color: $black
+						.breadcrumbs__link--home-text
+							border-color: $black
+					&-icon
+						color: $black
+					&-text
+						border-bottom: 1px solid $black
+						&:hover, &:focus, &:active
+							border-color: $black
+				&--disabled
+					color: $black
+					&:hover, &:focus, &:active
+						color: $black
 		.foot-first-level,
 		.top-line
 			height: auto
@@ -51,8 +95,10 @@ html[data-theme="white"]
 		.main-sect.pa-sect
 			border: none
 		h2.inner-title, 
-		h2.inner-title--no-caps
-			color: $black
+		h2.inner-title--no-caps,
+		.title-border 
+			h2.inner-title
+			border-color: $black
 		.top-line
 			box-shadow: 0 1px 0 #000
 			.quick-links 
