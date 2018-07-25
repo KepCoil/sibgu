@@ -1,21 +1,26 @@
-<div id="js-mobile-mmenu" class="mobile-mmenu">
-	<ul>
-		<li id="js-item-main-common-menu" class="droplist">
-			<a href="#">Меню</a>
-		</li>
-		<li id="js-item-main-audit-menu" class="droplist">
-			<a href="#">Целевые разделы</a>
-		</li>
-		<li><a href="#">Сведения об образовательной организации</a></li>
-		<li><a href="#">Доступное образование</a></li>
-		<li id="js-item-res-links-menu" class="droplist">
-			<a href="#">Информационные ресурсы</a>
-		</li>
-	</ul>
-</div>
+	<div id="js-mobile-mmenu" class="mobile-mmenu">
+		<ul>
+			<li id="js-item-main-common-menu" class="droplist">
+				<a href="#">Меню</a>
+			</li>
+			<li id="js-item-main-audit-menu" class="droplist">
+				<a href="#">Целевые разделы</a>
+			</li>
+			<li><a href="#">Сведения об образовательной организации</a></li>
+			<li><a href="#">Доступное образование</a></li>
+			<li id="js-item-res-links-menu" class="droplist">
+				<a href="#">Информационные ресурсы</a>
+			</li>
+		</ul>
+	</div>
 
 
-<!-- id="wrapwrap" -->
+	
+	<div id="js-button-top-scroll" class="button-top-scroll" title="Прокрутить к началу страницы">
+		<i class="fa fa-arrow-up button-top-scroll__icon" aria-hidden="true"></i>
+	</div>
+
+<!-- id="wrapwrap" -->	
 </div>
 
 

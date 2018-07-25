@@ -194,7 +194,7 @@ h2.inner-title--no-caps
 	&__content
 		background-color: #fff
 		border-radius: 3px
-		box-shadow: 0 2px 0 0 #ddd, 0 0 0 1px #dbdbdb
+		box-shadow: 0 2px 0 0 $light-grey-line, 0 0 0 1px $light-grey-line
 	&__content
 		padding: 2rem 1.75rem
 	&__sidebar
@@ -210,7 +210,7 @@ h2.inner-title--no-caps
 			margin: 0
 		&__item
 			// margin: 0 0 1px 0
-			border-bottom: 1px solid $light-bgc
+			border-bottom: 1px solid $light-grey-line
 			&:last-child
 				// margin-bottom: 0
 				border-bottom: 0
@@ -221,6 +221,7 @@ h2.inner-title--no-caps
 			border-bottom: none
 			color: #000
 			font-size: 1rem
+			line-height: 1.2
 			&:hover, &:focus, &:active
 				border-bottom: none
 				background-color: $purple-bgc
@@ -293,21 +294,21 @@ h2.inner-title--no-caps
 .doc-file
 	border: none
 	text-decoration: underline
-	margin-right: 7px
+	margin-right: 0.4rem
 	&:hover, &:focus, &:active
 		border: none
 		text-decoration: underline
 	&::before
 		display: inline-block
 		position: relative
-		width: 2.4rem
+		width: 2.2rem
 		padding: 2px 0
 		text-transform: uppercase
 		font-family: "OpenSansCondensed-Bold"
 		font-style: normal
 		font-size: 0.875rem
 		text-align: center
-		margin-right: 0.5rem
+		margin-right: 0.4rem
 		border-radius: 1px
 		color: #fff
 	&--pdf
@@ -765,7 +766,37 @@ h2.inner-title--no-caps
 		.panel-heading.active
 			.panel-title
 				.fa
-					transform: rotate(90deg)				
+					transform: rotate(90deg)
+				
 /* End accordion */
 
 
+/* Scroll Top Button */	
+.button-top-scroll
+	position: fixed
+	z-index: 3
+	width: 3.25rem
+	height: 3.25rem
+	bottom: 2rem
+	right: -100px
+	background-color: $light-grey-font
+	border-radius: 50%
+	opacity: 0.9
+	text-align: center
+	cursor: pointer
+	-webkit-transition: all $main-trans
+	transition: all $main-trans
+	box-shadow: 1px 1px 3px rgba(0,0,0,.5)
+	&--active
+		right: 1.5rem
+	&:hover
+		opacity: 1
+		.button-top-scroll__icon
+			transform: translateY(-70%)
+	&__icon
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 1.5rem
+		color: darken($light-grey-font, 50%)
+		transition: all .15s ease-out

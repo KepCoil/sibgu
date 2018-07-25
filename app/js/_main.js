@@ -1,9 +1,5 @@
 $(function() {
 
-	/* Глобальный переменные */
-	var windowWidth = $(window).width();
-
-
 
 	/* МОБИЛЬНОЕ МЕНЮ */
 	// Перенос оба меню (костыль)
@@ -291,6 +287,7 @@ $(function() {
 
 	/* Функция для создания "липких" блоков с использованием stickySidebar */
 	function stickyBlocks() {
+		var windowWidth  = $(window).width();
 		
 		if (windowWidth >= 992) {
 			$('#js-sticky-sidebar').stickySidebar({
@@ -313,8 +310,9 @@ $(function() {
 		$(".gorisont-item-img").matchHeight();
 		// $(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();$(".pa-sect .wrap-pa-item").height('auto').equalHeights();$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();$(".dis-docs").height('auto').equalHeights();$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
 		
+		var windowWidth  = $(window).width();
 
-		// "matchHeigh") при мобильной версии различной ширине экрана
+		// "matchHeigh" при мобильной версии различной ширине экрана
 		if ( (windowWidth <= 991) && (windowWidth >= 768) ) {
 			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").matchHeight();
 		}
@@ -393,6 +391,30 @@ $(function() {
 	});
 	/* */
 
+	/* Scroll Top Button */
+	function activateButtonScrollTop() {
+		var
+			windowHeight = $(window).height(),
+			scrollTop    = $(window).scrollTop();
+
+		if ( scrollTop > (windowHeight * 0.75) ) {
+			$("#js-button-top-scroll").addClass("button-top-scroll--active");
+		} else {
+			$("#js-button-top-scroll").removeClass("button-top-scroll--active");
+		}
+	}
+
+	$("#js-button-top-scroll").click(function(e) {
+		e.preventDefault();
+
+		$("html, body").animate({
+			scrollTop: 0
+		}, "slow");
+
+		return false;
+	});
+	/* */
+
 
 	/* Функции при ресайзе экрана */
 	$(window).resize(function() {
@@ -400,6 +422,11 @@ $(function() {
 		resizeHeightMapFilials();
 		resizeInstituteItems();
 		stickyBlocks();
+	});
+
+	// Функции при скролее окна
+	$(window).scroll(function() {
+		activateButtonScrollTop();
 	});
 
 
