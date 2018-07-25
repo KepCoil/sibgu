@@ -482,10 +482,10 @@
 					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
 				</div>
 				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+					<a href="#"><img src="img/partners/krasmash.svg" alt=""></a>
 				</div>
 				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
+					<a href="#"><img src="img/partners/geo-phisic.svg" alt=""></a>
 				</div>
 				<div class="links-other-item">
 					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>

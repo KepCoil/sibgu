@@ -1131,24 +1131,18 @@ html[data-theme="blue"] #wrapwrap .search-area .search-area-form input {
   border-color: #6193c6; }
 
 html[data-img="disable"] {
-  /* Логотип */
   /* картинки новостей на главной */
   /* слайдер на главной */
   /* карточки новостей */
   /* mega новость */
   /* остальные улучшения */
+  /* Логотип */
   /* Флаги */
   /* Иконки соц. сетей */
   /* Иконки документов */
   /* Секция баннеров other-links */ }
   html[data-img="disable"] img {
     visibility: hidden !important; }
-  html[data-img="disable"] .head-content .main-title-wrap .main-logo {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
   html[data-img="disable"] .news-sect .wrap-item-news a .news-img {
     visibility: hidden !important; }
   html[data-img="disable"] .main-slider.owl-carousel .owl-stage-outer .owl-stage .owl-item .wrap-main-slide .slide-img {
@@ -1166,6 +1160,12 @@ html[data-img="disable"] {
   html[data-img="disable"] .comment-students-sect .wrap-comment-img {
     border-color: transparent;
     display: none; }
+  html[data-img="disable"] .head-content .main-title-wrap .main-logo {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
   html[data-img="disable"] .head-content .other-func .flags-list > li img {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -1184,7 +1184,7 @@ html[data-img="disable"] {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%); }
-  html[data-img="disable"] .owl-carousel .links-other-item img {
+  html[data-img="disable"] .links-other .owl-carousel .links-other-item img {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);

@@ -23,7 +23,9 @@ $(function() {
 			imageOn(); 
 			$(this).addClass("active");
 			$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
-		};
+			// window.location.reload();
+		}
+
 
 		return false;
 	});
@@ -48,6 +50,7 @@ $(function() {
 		$("#img-disable").attr('checked', 'checked');
 		$("#js-button-spec-version").removeClass("active");;
 		$("#js-button-spec-version .fa").removeClass('fa-eye-slash').addClass('fa-eye');
+		
 		window.location.reload();
 	}
 	
@@ -69,6 +72,8 @@ $(function() {
 
 		$("#js-button-spec-version").addClass("active");
 		$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
+
+
 	}
 
 
@@ -81,6 +86,7 @@ $(function() {
 			expires: 365,
 			path: '/'
 		});
+
 	}
 
 

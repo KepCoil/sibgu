@@ -800,3 +800,46 @@ h2.inner-title--no-caps
 		font-size: 1.5rem
 		color: darken($light-grey-font, 45%)
 		transition: all .15s ease-out
+
+.personal-info
+	position: relative
+	margin-bottom: 1.5rem
+	&__left
+		display: inline-block
+		position: relative
+		vertical-align: top
+	&__photo-wrap
+		display: inline-block
+		position: relative
+		width: 8rem
+		height: 10rem
+		margin-right: 1rem
+		border: 0.1875rem solid $dark-line
+		vertical-align: top
+		overflow: hidden
+		border-radius: 2px
+	&__photo
+		width: 100%
+	&__right
+		width: calc(100% - 10rem)
+		display: inline-block
+		vertical-align: top
+		margin-top: 0.5rem
+	&__item
+		margin-bottom: 0.25rem
+		font-size: 1rem
+		&--name
+			margin-bottom: 0
+			font-family: "OpenSans-SemiBold"
+		&--job
+			margin-bottom: 0.5rem
+	&__icon
+		margin-right: 0.4rem
+		width: 1rem
+	&__link
+		border: none
+		color: $default-color
+		&:hover
+			border: none
+
+
