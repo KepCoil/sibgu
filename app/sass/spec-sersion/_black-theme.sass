@@ -53,8 +53,12 @@ html[data-theme="black"]
 					&--active
 						border-left-color: $white
 						background-color: $grey
-		.foot-first-level
+		.foot-first-level,
+		.first-foot-line
 			border-bottom: 1px solid $white
+		.second-foot-line 
+			.col-md-6:nth-child(2)
+				border-right-color: $white
 		.main-menu,
 		.main-footer
 			border-top: 1px solid $white
@@ -75,8 +79,6 @@ html[data-theme="black"]
 			border-bottom: 1px solid $white
 		.navaslider
 			margin-top: 0
-		.main-sect.pa-sect
-			border: none
 		.breadcrumbs
 			&__line
 				&-element
@@ -162,6 +164,8 @@ html[data-theme="black"]
 			border-bottom: 1px solid $white
 		.main-sect 
 			border-bottom: 1px solid $white
+			&:last-child
+				border-bottom: none
 			h2
 				color: $white
 		.grey-sect

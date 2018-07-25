@@ -54,6 +54,12 @@ html[data-theme="blue"]
 		.foot-first-level,
 		.top-line
 			box-shadow: 0 1px 0 $accent_blue
+		.foot-first-level,
+		.first-foot-line
+			border-bottom: 1px solid $accent_blue
+		.second-foot-line 
+			.col-md-6:nth-child(2)
+				border-right-color: $accent_blue
 		.main-menu
 			border-bottom: 1px solid $accent_blue
 		.dekstop-target-menu
@@ -64,8 +70,6 @@ html[data-theme="blue"]
 			border-bottom: 1px solid $accent_blue
 		.main-footer
 			border-top: 1px solid $accent_blue
-		.main-sect.pa-sect
-			border: none
 		.breadcrumbs
 			&__line
 				&-element
@@ -164,6 +168,8 @@ html[data-theme="blue"]
 			border-bottom: 1px solid $accent_blue
 		.main-sect 
 			border-bottom: 1px solid $accent_blue
+			&:last-child
+				border-bottom: none
 			h2
 				color: $accent_blue
 		.grey-sect

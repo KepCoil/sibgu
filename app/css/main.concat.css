@@ -7923,7 +7923,7 @@ h2.inner-title--no-caps {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     font-size: 1.5rem;
-    color: #6f6f6f;
+    color: #7b7b7b;
     -webkit-transition: all .15s ease-out;
     -o-transition: all .15s ease-out;
     transition: all .15s ease-out; }
@@ -8757,7 +8757,7 @@ h2.inner-title--no-caps {
 /* END SECTION COMPANY - PARTNERS */
 /* SECTION LINKS OTHER */
 .links-other {
-  padding: 2.5rem 0; }
+  padding: 1.25rem 0; }
   .links-other .container {
     padding: 0 30px; }
   .links-other .owl-carousel {
@@ -8771,7 +8771,7 @@ h2.inner-title--no-caps {
         display: block;
         border: none; }
       .links-other .owl-carousel .links-other-item img {
-        width: 200px;
+        width: 220px;
         height: auto;
         margin: 0 auto; }
     .links-other .owl-carousel .owl-dots {
