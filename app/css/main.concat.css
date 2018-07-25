@@ -8134,8 +8134,8 @@ h2.inner-title--no-caps {
     display: none;
     -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
             box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 0 0 2px 2px;
-            border-radius: 0 0 2px 2px; }
+    -webkit-border-radius: 3px 0 3px 3px;
+            border-radius: 3px 0 3px 3px; }
     .main-menu ul.droplist-content > li {
       display: block;
       border-bottom: 1px solid #ddd; }
@@ -8773,7 +8773,8 @@ h2.inner-title--no-caps {
       .links-other .owl-carousel .links-other-item img {
         width: 220px;
         height: auto;
-        margin: 0 auto; }
+        margin: 0 auto;
+        visibility: visible !important; }
     .links-other .owl-carousel .owl-dots {
       display: none !important; }
     .links-other .owl-carousel .owl-nav {

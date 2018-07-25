@@ -89,10 +89,10 @@
 							<img class="img-responsive" src="img/flags/ru.svg" alt="RU">
 						</button>
 						<ul class="dropdown-menu dropdown-flags" aria-labelledby="dropdownMenu1">
-							<li><a href="#"><img class="img-responsive" src="img/flags/gb.svg" alt="EN"></a></li>
-							<li><a href="#"><img class="img-responsive" src="img/flags/cn.svg" alt="CH"></a></li>
-							<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN"></a></li>
-							<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/gb.svg" alt="EN" title="EN"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/cn.svg" alt="CH" title="CH"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/vn.svg" alt="VN" title="VN"></a></li>
+							<li><a href="#"><img class="img-responsive" src="img/flags/mn.svg" alt="MG" title="MG"></a></li>
 						</ul>
 					</div>
 
@@ -203,10 +203,10 @@
 				
 				<div class="other-func-item clearfix">
 					<ul class="flags-list clearfix">
-						<li><a target="_blank" href="http://en.sibsau.ru/"><img src="img/flags/gb.svg" alt="EN"></a></li>
-						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/NsN3Z7Bsc7qKT9M"><img src="img/flags/cn.svg" alt="CN"></a></li>
-						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/BgcwfBvyWLqFqOr"><img src="img/flags/vn.svg" alt="VN"></a></li>
-						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/1vZN1lyy1HXHvwe"><img src="img/flags/mn.svg" alt="MN"></a></li>
+						<li><a target="_blank" href="http://en.sibsau.ru/"><img src="img/flags/gb.svg" alt="EN" title="EN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/NsN3Z7Bsc7qKT9M"><img src="img/flags/cn.svg" alt="CN" title="CN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/BgcwfBvyWLqFqOr"><img src="img/flags/vn.svg" alt="VN" title="VN"></a></li>
+						<li><a target="_blank" href="https://disk.sibsau.ru/index.php/s/1vZN1lyy1HXHvwe"><img src="img/flags/mn.svg" alt="MN" title="MN"></a></li>
 					</ul>
 				</div>
 				

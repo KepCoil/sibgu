@@ -220,6 +220,17 @@ html[data-theme="white"] #wrapwrap .comment-students-sect .comment-student-slide
 html[data-theme="white"] #wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot.active {
   background-color: #333; }
 
+html[data-theme="white"] #wrapwrap .pa-sect .owl-dots .owl-dot,
+html[data-theme="white"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot {
+  background-color: #ccc;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+html[data-theme="white"] #wrapwrap .pa-sect .owl-dots .owl-dot.active,
+html[data-theme="white"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #333; }
+
 html[data-theme="white"] #wrapwrap .main-menu .wrap-main-menu .wrap-inner-common-menu {
   border-color: #000; }
 
@@ -576,6 +587,17 @@ html[data-theme="black"] #wrapwrap .comment-students-sect .comment-student-slide
   background-color: #333; }
 
 html[data-theme="black"] #wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot.active {
+  background-color: #222; }
+
+html[data-theme="black"] #wrapwrap .pa-sect .owl-dots .owl-dot,
+html[data-theme="black"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot {
+  background-color: #333;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+html[data-theme="black"] #wrapwrap .pa-sect .owl-dots .owl-dot.active,
+html[data-theme="black"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot.active {
   background-color: #222; }
 
 html[data-theme="black"] #wrapwrap .main-menu .wrap-main-menu .wrap-inner-common-menu {
@@ -939,6 +961,17 @@ html[data-theme="blue"] #wrapwrap .comment-students-sect .comment-student-slider
 html[data-theme="blue"] #wrapwrap .comment-students-sect .comment-student-slider .owl-dots .owl-dot.active {
   background-color: #4f8ecf; }
 
+html[data-theme="blue"] #wrapwrap .pa-sect .owl-dots .owl-dot,
+html[data-theme="blue"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot {
+  background-color: #76baff;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+html[data-theme="blue"] #wrapwrap .pa-sect .owl-dots .owl-dot.active,
+html[data-theme="blue"] #wrapwrap .main-slider.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #4f8ecf; }
+
 html[data-theme="blue"] #wrapwrap .main-menu .wrap-main-menu .wrap-inner-common-menu {
   border-color: #063462; }
 
@@ -1098,15 +1131,18 @@ html[data-theme="blue"] #wrapwrap .search-area .search-area-form input {
   border-color: #6193c6; }
 
 html[data-img="disable"] {
+  /* Логотип */
   /* картинки новостей на главной */
   /* слайдер на главной */
   /* карточки новостей */
   /* mega новость */
   /* остальные улучшения */
-  /* Иконки соц. сетей */ }
+  /* Флаги */
+  /* Иконки соц. сетей */
+  /* Иконки документов */
+  /* Секция баннеров other-links */ }
   html[data-img="disable"] img {
-    visibility: hidden !important;
-    /* Логотип */ }
+    visibility: hidden !important; }
   html[data-img="disable"] .head-content .main-title-wrap .main-logo {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -1130,7 +1166,25 @@ html[data-img="disable"] {
   html[data-img="disable"] .comment-students-sect .wrap-comment-img {
     border-color: transparent;
     display: none; }
+  html[data-img="disable"] .head-content .other-func .flags-list > li img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
   html[data-img="disable"] footer .wrap-foot-contancts .foot-social-list img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  html[data-img="disable"] .doc-file::before {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  html[data-img="disable"] .owl-carousel .links-other-item img {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);

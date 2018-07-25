@@ -6,7 +6,7 @@ html[data-img="disable"]
 	img
 		visibility: hidden !important
 
-		/* Логотип */
+	/* Логотип */
 	.head-content 
 		.main-title-wrap 
 			.main-logo
@@ -57,6 +57,18 @@ html[data-img="disable"]
 			border-color: transparent
 			display: none
 
+	/* Флаги */
+	.head-content 
+		.other-func 
+			.flags-list 
+				>li 
+					img
+						-webkit-filter: grayscale(100%)
+						-moz-filter: grayscale(100%)
+						-ms-filter: grayscale(100%)
+						-o-filter: grayscale(100%)
+						filter: grayscale(100%)
+	
 	/* Иконки соц. сетей */
 	footer
 		.wrap-foot-contancts 
@@ -67,3 +79,23 @@ html[data-img="disable"]
 					-ms-filter: grayscale(100%)
 					-o-filter: grayscale(100%)
 					filter: grayscale(100%)
+	
+	/* Иконки документов */
+	.doc-file
+		&::before
+			-webkit-filter: grayscale(100%)
+			-moz-filter: grayscale(100%)
+			-ms-filter: grayscale(100%)
+			-o-filter: grayscale(100%)
+			filter: grayscale(100%)
+
+	/* Секция баннеров other-links */
+	.links-other
+	.owl-carousel
+		.links-other-item
+			img
+				-webkit-filter: grayscale(100%)
+				-moz-filter: grayscale(100%)
+				-ms-filter: grayscale(100%)
+				-o-filter: grayscale(100%)
+				filter: grayscale(100%)
