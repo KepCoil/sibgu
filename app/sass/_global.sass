@@ -808,23 +808,25 @@ h2.inner-title--no-caps
 		display: inline-block
 		position: relative
 		vertical-align: top
-	&__photo-wrap
-		display: inline-block
-		position: relative
-		width: 8rem
-		height: 10rem
-		margin-right: 1rem
-		border: 0.1875rem solid $dark-line
-		vertical-align: top
-		overflow: hidden
-		border-radius: 2px
-	&__photo
-		width: 100%
 	&__right
 		width: calc(100% - 10rem)
 		display: inline-block
 		vertical-align: top
-		margin-top: 0.5rem
+
+	&__photo
+		&-wrap
+			display: inline-block
+			position: relative
+			width: 8.5rem
+			height: 11rem
+			margin-right: 1rem
+			border: 0.1875rem solid $dark-line
+			vertical-align: top
+			overflow: hidden
+			border-radius: 2px
+		&-img
+			width: 100%
+
 	&__item
 		margin-bottom: 0.25rem
 		font-size: 1rem
@@ -833,13 +835,13 @@ h2.inner-title--no-caps
 			font-family: "OpenSans-SemiBold"
 		&--job
 			margin-bottom: 0.5rem
-	&__icon
-		margin-right: 0.4rem
-		width: 1rem
-	&__link
-		border: none
-		color: $default-color
-		&:hover
+		&-icon
+			margin-right: 0.4rem
+			width: 1rem
+		&-link
 			border: none
+			color: $default-color
+			&:hover
+				border: none
 
 

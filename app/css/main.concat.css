@@ -7935,25 +7935,24 @@ h2.inner-title--no-caps {
     display: inline-block;
     position: relative;
     vertical-align: top; }
+  .personal-info__right {
+    width: -webkit-calc(100% - 10rem);
+    width: calc(100% - 10rem);
+    display: inline-block;
+    vertical-align: top; }
   .personal-info__photo-wrap {
     display: inline-block;
     position: relative;
-    width: 8rem;
-    height: 10rem;
+    width: 8.5rem;
+    height: 11rem;
     margin-right: 1rem;
     border: 0.1875rem solid #aaa;
     vertical-align: top;
     overflow: hidden;
     -webkit-border-radius: 2px;
             border-radius: 2px; }
-  .personal-info__photo {
+  .personal-info__photo-img {
     width: 100%; }
-  .personal-info__right {
-    width: -webkit-calc(100% - 10rem);
-    width: calc(100% - 10rem);
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 0.5rem; }
   .personal-info__item {
     margin-bottom: 0.25rem;
     font-size: 1rem; }
@@ -7962,14 +7961,14 @@ h2.inner-title--no-caps {
       font-family: "OpenSans-SemiBold"; }
     .personal-info__item--job {
       margin-bottom: 0.5rem; }
-  .personal-info__icon {
-    margin-right: 0.4rem;
-    width: 1rem; }
-  .personal-info__link {
-    border: none;
-    color: #222; }
-    .personal-info__link:hover {
-      border: none; }
+    .personal-info__item-icon {
+      margin-right: 0.4rem;
+      width: 1rem; }
+    .personal-info__item-link {
+      border: none;
+      color: #222; }
+      .personal-info__item-link:hover {
+        border: none; }
 
 /* HEADER */
 #wrapwrap .top-line {
@@ -10073,8 +10072,7 @@ ul.corpuses-list {
     font-size: 18px; }
   #wrapwrap .wrap-standart-item .wrap-icon i {
     font-size: 50px; }
-  #wrapwrap .personal-info__left,
-  #wrapwrap .personal-info__right {
+  #wrapwrap .personal-info__left, #wrapwrap .personal-info__right {
     display: block; }
   #wrapwrap .personal-info__right {
     width: 100%; } }
