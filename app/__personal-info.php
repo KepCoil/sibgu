@@ -11,7 +11,9 @@
 	<!-- Иконки возможно стоит вещать на before -->
 	<div class="personal-info__right">
 		<div class="personal-info__content">
+			
 
+			<!-- name -->
 			<div class="personal-info__item personal-info__item--name">
 				<span>Кустова Елена Александровна</span>
 			</div>
@@ -20,6 +22,7 @@
 			</div>
 
 
+			<!-- main -->
 			<div class="personal-info__item personal-info__item--location">
 				<i class="fa fa-map-marker personal-info__item-icon" aria-hidden="true"></i>
 				<span class="personal-info__item-text">
@@ -45,12 +48,33 @@
 					<a class="personal-info__item-link" href="#" target="_blank">website.sibsau.ru</a>
 				</span>
 			</div>
+
+
+			<!-- social -->
 			<div class="personal-info__item personal-info__item--soc-vk">
 				<i class="fa fa-vk personal-info__item-icon" aria-hidden="true"></i>
 				<span class="personal-info__item-text">
 					<a class="personal-info__item-link" href="#" target="_blank">vk.com/sibsau</a>
 				</span>
-			</div>	
+			</div>
+			<div class="personal-info__item personal-info__item--soc-instagram">
+				<i class="fa fa-instagram personal-info__item-icon" aria-hidden="true"></i>
+				<span class="personal-info__item-text">
+					<a class="personal-info__item-link" href="#" target="_blank">instagram.com/sibsau</a>
+				</span>
+			</div>
+			<div class="personal-info__item personal-info__item--soc-facebook">
+				<i class="fa fa-facebook personal-info__item-icon" aria-hidden="true"></i>
+				<span class="personal-info__item-text">
+					<a class="personal-info__item-link" href="#" target="_blank">facebook.com/sibsau</a>
+				</span>
+			</div>
+			<div class="personal-info__item personal-info__item--soc-twitter">
+				<i class="fa fa-twitter personal-info__item-icon" aria-hidden="true"></i>
+				<span class="personal-info__item-text">
+					<a class="personal-info__item-link" href="#" target="_blank">twitter.com/sibsau</a>
+				</span>
+			</div>
 
 		</div>
 	</div>
