@@ -61,6 +61,7 @@
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="wrap-foot-contancts">
+						<h5>Контакты</h5>
 						<ul class="foot-contacts-content foot-contacts-content-col-2">
 							<li>Приемная ректора: <strong class="foot-contacts-item"><a href="tel:+73912640014">+7 (391) 264-00-14</a></strong></li>
 							<li>Приемная комиссия: <strong class="foot-contacts-item"><a href="tel:+73912629596">+7 (391) 262-95-96</a></strong></li>

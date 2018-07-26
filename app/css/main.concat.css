@@ -7969,7 +7969,7 @@ h2.inner-title--no-caps {
     .personal-info__item-link {
       border: none;
       color: #222; }
-      .personal-info__item-link:hover {
+      .personal-info__item-link:hover, .personal-info__item-link:focus, .personal-info__item-link:active {
         border: none; }
 
 /* HEADER */
@@ -8893,6 +8893,8 @@ h2.inner-title--no-caps {
       font-family: "OpenSans-Semibold"; }
     #wrapwrap .main-footer .second-foot-line .col-md-6:nth-child(2) {
       border-right: 1px solid rgba(255, 255, 255, 0.2); }
+      #wrapwrap .main-footer .second-foot-line .col-md-6:nth-child(2) h5 {
+        visibility: hidden; }
   #wrapwrap .main-footer .wrap-foot-links {
     list-style-type: none;
     padding: 0;
@@ -8904,10 +8906,10 @@ h2.inner-title--no-caps {
     display: block;
     margin-bottom: 15px;
     font-size: 0.9375rem; }
-  #wrapwrap .main-footer .second-foot-line .foot-contacts-content-col-2 strong {
+  #wrapwrap .main-footer .second-foot-line .foot-contacts-content strong {
     font-weight: normal;
     font-family: "OpenSans-Semibold"; }
-  #wrapwrap .main-footer .second-foot-line .foot-contacts-content-col-2 a {
+  #wrapwrap .main-footer .second-foot-line .foot-contacts-content a {
     border-bottom: none; }
   #wrapwrap .main-footer .wrap-foot-contancts .foot-feedback p {
     font-size: 0.875rem;

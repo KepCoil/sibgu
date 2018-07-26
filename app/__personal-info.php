@@ -29,51 +29,56 @@
 					Учебный корпус "Л" , каб. 123 (г. Красноярск, ул. Мира, д.2 стр.5)
 				</span>
 			</div>
+
+			<!-- Вариант размертки если требуется указать более одно телефона. 
+				Если один телефон не должен быть кликабельным, например внутренний, нужно убрать ссылку -->
 			<div class="personal-info__item personal-info__item--phone">
 				<i class="fa fa-phone personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#">+7 (3822) 426173</a>;  
-					вн. т. <a class="personal-info__item-link" href="#">2901</a>
-				</span>
+				<a class="personal-info__item-link" href="tel:+73822426173">	
+					<span class="personal-info__item-text">+7 (3822) 426173</span>
+				</a>
+				
+				<span class="personal-info__item-text">вн. т. 2901</span>
 			</div>
+
 			<div class="personal-info__item personal-info__item--email">
-				<i class="fa fa-at personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#">webmail@sibsau.ru</a>
-				</span>
+				<a class="personal-info__item-link" href="mailto:webmail@sibsau.ru">
+					<i class="fa fa-at personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">webmail@sibsau.ru</span>
+				</a>
 			</div>
 			<div class="personal-info__item personal-info__item--site">
-				<i class="fa fa-globe personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#" target="_blank">website.sibsau.ru</a>
-				</span>
+				<a class="personal-info__item-link" href="#" target="_blank">
+					<i class="fa fa-globe personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">website.sibsau.ru</span>
+				</a>
 			</div>
 
 
 			<!-- social -->
 			<div class="personal-info__item personal-info__item--soc-vk">
-				<i class="fa fa-vk personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#" target="_blank">vk.com/sibsau</a>
-				</span>
+				<a class="personal-info__item-link" href="#" target="_blank">
+					<i class="fa fa-vk personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">vk.com/sibsau</span>	
+				</a>
 			</div>
 			<div class="personal-info__item personal-info__item--soc-instagram">
-				<i class="fa fa-instagram personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#" target="_blank">instagram.com/sibsau</a>
-				</span>
+				<a class="personal-info__item-link" href="#" target="_blank">
+					<i class="fa fa-instagram personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">instagram.com/sibsau</span>
+				</a>
 			</div>
 			<div class="personal-info__item personal-info__item--soc-facebook">
-				<i class="fa fa-facebook personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#" target="_blank">facebook.com/sibsau</a>
-				</span>
+				<a class="personal-info__item-link" href="#" target="_blank">
+					<i class="fa fa-facebook personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">facebook.com/sibsau</span>
+				</a>
 			</div>
 			<div class="personal-info__item personal-info__item--soc-twitter">
-				<i class="fa fa-twitter personal-info__item-icon" aria-hidden="true"></i>
-				<span class="personal-info__item-text">
-					<a class="personal-info__item-link" href="#" target="_blank">twitter.com/sibsau</a>
-				</span>
+				<a class="personal-info__item-link" href="#" target="_blank">
+					<i class="fa fa-twitter personal-info__item-icon" aria-hidden="true"></i>
+					<span class="personal-info__item-text">twitter.com/sibsau</span>
+				</a>
 			</div>
 
 		</div>
