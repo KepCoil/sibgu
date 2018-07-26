@@ -15,10 +15,10 @@
 
 			<!-- name -->
 			<div class="personal-info__item personal-info__item--name">
-				<span>Кустова Елена Александровна</span>
+				<span class="personal-info__item-text">Кустова Елена Александровна</span>
 			</div>
 			<div class="personal-info__item personal-info__item--job">
-				<span>Директор Аэрокосмического колледжа</span>
+				<span class="personal-info__item-text">Директор Аэрокосмического колледжа</span>
 			</div>
 
 

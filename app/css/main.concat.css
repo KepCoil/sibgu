@@ -7939,7 +7939,8 @@ h2.inner-title--no-caps {
     width: -webkit-calc(100% - 10rem);
     width: calc(100% - 10rem);
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    margin-top: 0.5rem; }
   .personal-info__photo-wrap {
     display: inline-block;
     position: relative;
@@ -7954,13 +7955,14 @@ h2.inner-title--no-caps {
   .personal-info__photo-img {
     width: 100%; }
   .personal-info__item {
-    margin-bottom: 0.25rem;
-    font-size: 1rem; }
+    margin-bottom: 0.25rem; }
     .personal-info__item--name {
       margin-bottom: 0;
-      font-family: "OpenSans-SemiBold"; }
+      font-family: "OpenSans-SemiBold";
+      font-size: 1rem; }
     .personal-info__item--job {
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      font-size: 1rem; }
     .personal-info__item-icon {
       margin-right: 0.4rem;
       width: 1rem; }
