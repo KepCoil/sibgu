@@ -25,6 +25,7 @@
 	<style>body { opacity: 0; overflow-x: hidden;}</style>
 	<link rel="stylesheet" href="css/main.concat.css">
 	<link rel="stylesheet" href="css/spec-version.concat.css">
+
 </head>
 
 <body class="main-site-sibgu">

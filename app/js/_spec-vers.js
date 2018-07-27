@@ -122,7 +122,7 @@ $(function() {
 				expires: 365,
 				path: '/'
 			});
-		};	
+		}
 	}
 
 	function imageOff() {
@@ -137,7 +137,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 	/* Конец картинки */
 
@@ -156,7 +156,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 
 	function mediumFontSize() {
@@ -172,7 +172,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 
 	function largeFontSize() {
@@ -188,7 +188,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 	/* Конец размер шрифта */
 
@@ -208,7 +208,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 
 	function blackTheme() {
@@ -240,7 +240,7 @@ $(function() {
 				path: '/'
 			});
 
-		};	
+		}
 	}
 	/* Конец цветовые схемы */
 
