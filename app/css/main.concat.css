@@ -7773,50 +7773,6 @@ h2.inner-title--no-caps {
     background-color: #0000ff;
     color: #fff; }
 
-.wrap-toggle-img {
-  position: relative;
-  top: 5px; }
-  .wrap-toggle-img .switch-state-img:empty {
-    visibility: hidden; }
-  .wrap-toggle-img .switch-state-img:empty ~ label {
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    line-height: 2;
-    left: -40px;
-    font-weight: normal; }
-  .wrap-toggle-img .switch-state-img:empty ~ label::before,
-  .wrap-toggle-img .switch-state-img:empty ~ label::after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 120px;
-    width: 76px;
-    -webkit-transition: all 100ms ease-in;
-    -o-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
-    background-color: #ff0000;
-    font-size: 14px;
-    -webkit-border-radius: 2px;
-            border-radius: 2px; }
-  .wrap-toggle-img .switch-state-img:empty ~ label::after {
-    content: 'ВЫКЛ';
-    width: 40px;
-    top: 2px;
-    bottom: 2px;
-    margin-left: 2px;
-    background-color: #fff; }
-  .wrap-toggle-img .switch-state-img:checked ~ label::before {
-    background-color: #008000; }
-  .wrap-toggle-img .switch-state-img:checked ~ label::after {
-    content: 'ВКЛ';
-    margin-left: 34px; }
-
 /* END SPECIAL VERSION */
 /* Tabs content */
 .tabs-container .nav-tabs {
@@ -7953,7 +7909,8 @@ h2.inner-title--no-caps {
     -webkit-border-radius: 2px;
             border-radius: 2px; }
   .personal-info__photo-img {
-    width: 100%; }
+    width: 100%;
+    visibility: visible !important; }
   .personal-info__item {
     margin-bottom: 0.25rem; }
     .personal-info__item--name {
@@ -7971,6 +7928,160 @@ h2.inner-title--no-caps {
       color: #222; }
       .personal-info__item-link:hover, .personal-info__item-link:focus, .personal-info__item-link:active {
         border: none; }
+
+.special-version {
+  position: fixed;
+  right: -382px;
+  top: 105px;
+  z-index: 999;
+  font-size: 18px;
+  color: #000;
+  -webkit-transition: right 0.25s ease-out, opacity 0.25s ease-out;
+  -o-transition: right 0.25s ease-out, opacity 0.25s ease-out;
+  transition: right 0.25s ease-out, opacity 0.25s ease-out; }
+  .special-version--active {
+    right: 0; }
+  .special-version:hover {
+    opacity: 1; }
+  .special-version__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 1; }
+  .special-version__button-toggle-wrap {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    right: -4px;
+    -webkit-box-shadow: 0 0 0 1px #c9c9c9;
+            box-shadow: 0 0 0 1px #c9c9c9; }
+  .special-version__button-toggle {
+    border: none;
+    padding: 15px;
+    background-color: #e3e3e3; }
+  .special-version__button-toggle-icon {
+    font-size: 50px; }
+  .special-version__content {
+    display: inline-block;
+    padding: 15px 10px;
+    width: 380px;
+    vertical-align: top;
+    background-color: #e3e3e3;
+    -webkit-box-shadow: 0 2px 0 0 #c9c9c9, 0 0 0 1px #c9c9c9;
+            box-shadow: 0 2px 0 0 #c9c9c9, 0 0 0 1px #c9c9c9; }
+    .special-version__content-item {
+      margin-bottom: 25px; }
+      .special-version__content-item:last-child {
+        margin-bottom: 0; }
+  .special-version__title {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    vertical-align: top;
+    font-family: "MyriadPro-SemiBold"; }
+  .special-version__settings {
+    width: -webkit-calc(100% - 160px);
+    width: calc(100% - 160px);
+    display: inline-block; }
+  .special-version__list {
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .special-version__list-item:last-child .special-version__button {
+      margin-bottom: 0; }
+  .special-version__font {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #000;
+    border: none;
+    font-family: "MyriadPro-SemiBold"; }
+    .special-version__font:hover {
+      border: none;
+      color: #000; }
+    .special-version__font--small {
+      font-size: 15px; }
+    .special-version__font--medium {
+      font-size: 20px; }
+    .special-version__font--large {
+      font-size: 25px; }
+  .special-version__theme {
+    display: inline-block;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border: none;
+    font-size: 16px;
+    font-family: "MyriadPro-SemiBold"; }
+    .special-version__theme:hover {
+      border: none;
+      color: #000; }
+    .special-version__theme--white {
+      background-color: #fff;
+      color: #000; }
+      .special-version__theme--white:hover {
+        color: #000; }
+    .special-version__theme--black {
+      background-color: #000;
+      color: #fff; }
+      .special-version__theme--black:hover {
+        color: #fff; }
+    .special-version__theme--blue {
+      background-color: #9dd1ff;
+      color: #063462; }
+      .special-version__theme--blue:hover {
+        color: #063462; }
+  .special-version__button-off-wrap {
+    text-align: center; }
+  .special-version__button-off {
+    font-size: 15px;
+    font-family: "MyriadPro-SemiBold";
+    padding: 5px 15px;
+    line-height: 1; }
+
+.wrap-toggle-img {
+  position: relative; }
+  .wrap-toggle-img .switch-state-img:empty {
+    visibility: hidden; }
+  .wrap-toggle-img .switch-state-img:empty ~ label {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    line-height: 1.75;
+    left: -21px;
+    font-weight: normal; }
+  .wrap-toggle-img .switch-state-img:empty ~ label::before,
+  .wrap-toggle-img .switch-state-img:empty ~ label::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 76px;
+    -webkit-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    background-color: #ff0000;
+    font-size: 14px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    font-family: "MyriadPro-SemiBold";
+    line-height: 2;
+    text-align: center; }
+  .wrap-toggle-img .switch-state-img:empty ~ label::after {
+    content: 'ВЫКЛ';
+    width: 40px;
+    top: 2px;
+    bottom: 2px;
+    margin-left: 2px;
+    background-color: #fff; }
+  .wrap-toggle-img .switch-state-img:checked ~ label::before {
+    background-color: #008000; }
+  .wrap-toggle-img .switch-state-img:checked ~ label::after {
+    content: 'ВКЛ';
+    margin-left: 34px; }
 
 /* HEADER */
 #wrapwrap .top-line {

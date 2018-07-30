@@ -23,6 +23,7 @@ $(function() {
 			imageOn(); 
 			$(this).addClass("active");
 			$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
+			$('#js-spec-version').addClass('special-version--active');
 			// window.location.reload();
 		}
 
@@ -48,9 +49,9 @@ $(function() {
 
 		$("html").removeAttr("data-spec-vers", "data-font-size", "data-theme","data-img");
 		$("#img-disable").attr('checked', 'checked');
-		$("#js-button-spec-version").removeClass("active");;
+		// $("#js-button-spec-version").removeClass("active");
 		$("#js-button-spec-version .fa").removeClass('fa-eye-slash').addClass('fa-eye');
-		
+	
 		window.location.reload();
 	}
 	
@@ -72,7 +73,7 @@ $(function() {
 
 		$("#js-button-spec-version").addClass("active");
 		$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
-
+		$('#js-spec-version').addClass('special-version--active');
 
 	}
 
@@ -88,6 +89,20 @@ $(function() {
 		});
 
 	}
+
+	// Кнопка показа панели настроек версии для слабовидящих
+	$('#js-button-toggle').click(function(e) {
+		e.preventDefault();
+		
+		if ( $('#js-spec-version').hasClass("special-version--active") ) {
+			$('#js-spec-version').removeClass('special-version--active');
+		} 
+		else {
+			$('#js-spec-version').addClass('special-version--active');
+		}
+
+		return false;
+	});
 
 
 	/* Обработчики клика */
@@ -105,7 +120,7 @@ $(function() {
 		} 
 		else {
 			imageOff();
-		};
+		}
 	});
 	/* Конец обработчики клика */
 
