@@ -1,4 +1,3 @@
-<?php include '_spec-version.php'; ?>
 
 <header class="main-head">
 	
@@ -80,7 +79,7 @@
 
 				<div class="spec-vers-wrap">
 					<div class="other-func-item" id="js-button-spec-version">
-						<button class="btn-active-spec-ver"><i class="fa fa-eye" aria-hidden="true"></i></button>
+						<button class="btn-active-spec-ver" title="Версия для слабовидящих"><i class="fa fa-eye" aria-hidden="true"></i></button>
 					</div>
 				</div>
 

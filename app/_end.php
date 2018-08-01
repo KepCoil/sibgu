@@ -20,6 +20,8 @@
 		<i class="fa fa-arrow-up button-top-scroll__icon" aria-hidden="true"></i>
 	</div>
 
+	<?php include '_spec-version.php'; ?>
+
 <!-- id="wrapwrap" -->	
 </div>
 

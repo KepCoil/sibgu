@@ -44,6 +44,7 @@ $(function() {
 		$.cookie("CecutientCookie", null, { expires: 365, path: '/' });
 		$.cookie("font-size",  		 null, { expires: 365, path: '/' });
 		$.cookie("theme", 			 null, { expires: 365, path: '/' });
+		$.cookie("letter-spacing",  null, { expires: 365, path: '/' });
 		$.cookie("state-images",  	 null, { expires: 365, path: '/' });
 
 
@@ -67,6 +68,10 @@ $(function() {
 		if ($.cookie("theme")=="white") { whiteTheme(); };
 		if ($.cookie("theme")=="black") { blackTheme(); };
 		if ($.cookie("theme")=="blue")  { blueTheme(); };
+
+		if ($.cookie("letter-spacing")=="default") { defaultLetterSpacing(); };
+		if ($.cookie("letter-spacing")=="medium")  { mediumLetterSpacing(); };
+		if ($.cookie("letter-spacing")=="large")   { largeLetterSpacing(); };
 
 		if ($.cookie("state-images")=="on")  { imageOn(); };
 		if ($.cookie("state-images")=="off") { imageOff(); };
@@ -113,6 +118,10 @@ $(function() {
 	$("#theme-white").click(function() { whiteTheme(); });
 	$("#theme-black").click(function() { blackTheme(); });
 	$("#theme-blue").click(function()  { blueTheme(); });
+
+	$("#letter-spacing-default").click(function() { defaultLetterSpacing(); });
+	$("#letter-spacing-medium").click(function()  { mediumLetterSpacing(); });
+	$("#letter-spacing-large").click(function()   { largeLetterSpacing(); });
 	
 	$("#img-disable").click(function (){
 		if ( $("#img-disable").prop("checked") ) {
@@ -130,7 +139,6 @@ $(function() {
 
 		if ($.cookie("CecutientCookie")=="on") {
 
-			//$("html").removeClass("disable-img");
 			$("html").attr('data-img', 'enable');
 			$("#img-disable").attr('checked', 'checked');
 			$.cookie("state-images", "on", {
@@ -143,8 +151,7 @@ $(function() {
 	function imageOff() {
 
 		if ($.cookie("CecutientCookie")=="on") {
-
-			//$("html").addClass("disable-img");
+			
 			$("html").attr('data-img', 'disable');
 			$("#img-disable").removeAttr("checked");
 			$.cookie("state-images", "off", {
@@ -161,9 +168,6 @@ $(function() {
 	function normalFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			// $("html").removeClass("font-size-medium font-size-large");
-			// $("html").addClass("font-size-normal");
-
 			$("html").attr('data-font-size', 'default');
 
 			$.cookie("font-size", "normal", {
@@ -177,9 +181,6 @@ $(function() {
 	function mediumFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			// $("html").removeClass("font-size-normal font-size-large");
-			// $("html").addClass("font-size-medium");
-
 			$("html").attr('data-font-size', 'medium');
 
 			$.cookie("font-size", "medium", {
@@ -192,9 +193,6 @@ $(function() {
 
 	function largeFontSize() {
 		if ($.cookie("CecutientCookie")=="on") {
-
-			// $("html").removeClass("font-size-normal font-size-medium");
-			// $("html").addClass("font-size-large");
 
 			$("html").attr('data-font-size', 'large');
 
@@ -212,9 +210,6 @@ $(function() {
 	function whiteTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			// $("html").removeClass("black-theme blue-theme");
-			// $("html").addClass("white-theme");
-
 			$("html").attr('data-theme', 'white');
 
 
@@ -229,9 +224,6 @@ $(function() {
 	function blackTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			// $("html").removeClass("white-theme blue-theme");
-			// $("html").addClass("black-theme");
-
 			$("html").attr('data-theme', 'black');
 
 			$.cookie("theme", "black", {
@@ -245,9 +237,6 @@ $(function() {
 	function blueTheme() {
 		if ($.cookie("CecutientCookie")=="on") {
 
-			// $("html").removeClass("white-theme black-theme");
-			// $("html").addClass("blue-theme");
-
 			$("html").attr('data-theme', 'blue');
 
 			$.cookie("theme", "blue", {
@@ -260,6 +249,49 @@ $(function() {
 	/* Конец цветовые схемы */
 
 
+	/* Межстрочный интервал */
+	function defaultLetterSpacing() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").attr('data-letter-spacing', 'standart');
+
+
+			$.cookie("letter-spacing", "standart", {
+				expires: 365,
+				path: '/'
+			});
+
+		}
+	}
+
+	function mediumLetterSpacing() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").attr('data-letter-spacing', 'medium');
+
+			$.cookie("letter-spacing", "medium", {
+				expires: 365,
+				path: '/'
+			});
+
+		};	
+	}
+
+	function largeLetterSpacing() {
+		if ($.cookie("CecutientCookie")=="on") {
+
+			$("html").attr('data-letter-spacing', 'large');
+
+			$.cookie("letter-spacing", "large", {
+				expires: 365,
+				path: '/'
+			});
+
+		}
+	}
+	/* Конец межстрочного интервала */
+
+
 	/* Отключаем версию для слабовидящих для мобильных устройств, ширина <= 992px */
 	$(window).resize(function() {
 		var windowWidthCecutient = $(window).width();
@@ -267,7 +299,6 @@ $(function() {
 			CecutientOff();
 		}
 	});
-		
 
 
 	/**************************   КОНЕЦ ВЕРСИИ ДЛЯ СЛАБОВИДЯЩИХ   **************************/

@@ -214,7 +214,7 @@
 
 	
 		<script src="libs/yandex-map/yandex-api.js"></script>
-		<script src="libs/yandex-map/filial.js"></script>
+		<script src="libs/yandex-map/map.js"></script>
 
 	</div>
 </main>

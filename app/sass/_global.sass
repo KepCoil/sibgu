@@ -27,6 +27,7 @@ body
 	font-size: 0.9375rem
 	font-weight: normal
 	line-height: 1.4
+	letter-spacing: normal
 	
 
 /* odoo content tag wrap */
@@ -175,6 +176,9 @@ h2.inner-title
 h2.inner-title--no-caps
 	font-size: 1.5rem
 
+i.fa
+	letter-spacing: normal
+
 .title-border
 	border-bottom: 1px solid $light-grey-font
 	margin-bottom: 1.5rem
@@ -295,6 +299,7 @@ h2.inner-title--no-caps
 	border: none
 	text-decoration: underline
 	margin-right: 0.4rem
+	letter-spacing: normal
 	&:hover, &:focus, &:active
 		border: none
 		text-decoration: underline
@@ -543,153 +548,6 @@ h2.inner-title--no-caps
 
 
 
-/* SPECIAL VERSION */
-#wrapwrap
-	#js-spec-version.wrap-spec-panel-controls
-		display: block
-			
-.wrap-spec-panel-controls
-	position: relative
-	top: 0
-	z-index: 999
-	background-color: #fff
-	font-family: "MyriadPro-Bold"
-	border-top: 1px solid $dark-line
-	border-bottom: 1px solid $dark-line
-	font-size: 16px
-	color: $default-color
-	box-shadow: 1px 1px 3px #ccc
-	padding: 0
-	.container
-		padding: 0
-
-.spec-panel-controls
-	padding: 0
-	ul
-		list-style-type: none
-		margin: 0
-		padding: 0
-	strong
-		font-weight: normal
-	ul.spec-controls
-		>li
-			float: left
-			width: 25%
-			text-align: center
-			border-right: 1px solid $dark-line
-			padding: 12px 0
-			height: 62px
-			&:last-child
-				border-right: none
-	.font-size-controls, 
-	.color-controls
-		>li
-			display: inline-block
-			vertical-align: middle	
-	.btn-standart-version
-		padding: 3px 15px
-		height: 38px
-		i
-			margin-right: 7px
-			font-size: 20px	
-	.font-size-controls
-		>li
-			button
-				border: none
-				background-color: #fff
-				width: 38px
-				height: 38px
-				border: 1px solid #000
-				vertical-align: middle
-				display: inline-block
-				line-height: 16px
-				border-radius: 2px
-		>li:first-child
-			margin-right: 8px
-		>li:nth-child(2)
-			button
-				font-size: 16px
-		>li:nth-child(3)
-			button
-				font-size: 20px
-		>li:nth-child(4)
-			button
-				font-size: 24px
-
-	.color-controls
-		>li
-			&:last-child
-				margin-right: 0
-			button
-				width: 38px
-				height: 38px
-				line-height: 16px
-				font-size: 16px
-				background-color: red
-				padding: 0
-				vertical-align: middle
-				display: inline-block
-				border-radius: 2px
-		>li:first-child
-			margin-right: 8px
-		>li:nth-child(2)
-			button
-				border: 1px solid #000
-				background-color: #fff
-				color: #000
-		>li:nth-child(3)
-			button
-				border: 1px solid #fff
-				background-color: #000
-				color: #fff
-		>li:nth-child(4)
-			button
-				border: 1px solid #fff
-				background-color: #0000ff
-				color: #fff
-
-// .wrap-toggle-img
-// 	position: relative
-// 	top: 5px
-// 	.switch-state-img:empty
-// 		visibility: hidden
-// 	.switch-state-img:empty ~ label
-// 		position: relative
-// 		cursor: pointer
-// 		user-select: none
-// 		line-height: 2
-// 		left: -40px
-// 		font-weight: normal
-// 	.switch-state-img:empty ~ label::before,
-// 	.switch-state-img:empty ~ label::after
-// 		content: ''
-// 		position: absolute
-// 		display: block
-// 		top: 0
-// 		bottom: 0
-// 		left: 120px
-// 		width: 76px
-// 		transition: all 100ms ease-in
-// 		background-color: #ff0000
-// 		font-size: 14px
-// 		border-radius: 2px
-// 	.switch-state-img:empty ~ label::after
-// 		content: 'ВЫКЛ'
-// 		width: 40px
-// 		top: 2px
-// 		bottom: 2px
-// 		margin-left: 2px
-// 		background-color: #fff
-// 	.switch-state-img:checked ~ label::before
-// 		background-color: #008000
-// 	.switch-state-img:checked ~ label::after
-// 		content: 'ВКЛ'
-// 		margin-left: 34px
-/* END SPECIAL VERSION */
-
-
-
-
 /* Tabs content */
 .tabs-container
 	.nav-tabs 
@@ -779,6 +637,7 @@ h2.inner-title--no-caps
 	-webkit-transition: all $main-trans
 	transition: all $main-trans
 	box-shadow: 1px 1px 3px rgba(0,0,0,.5)
+
 	&--active
 		right: 1.5rem
 	&:hover
@@ -839,16 +698,16 @@ h2.inner-title--no-caps
 			&:hover, &:focus, &:active
 				border: none
 
-
+/* ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
 .special-version
 	position: fixed
-	right: -382px
+	right: -397px
 	top: 105px
 	z-index: 999
-	// border: 3px solid #000
 	font-size: 18px
 	color: #000
 	transition: right $main-trans, opacity $main-trans
+	letter-spacing: normal !important
 	&--active
 		right: 0
 	&:hover
@@ -862,18 +721,25 @@ h2.inner-title--no-caps
 		display: inline-block
 		vertical-align: top
 		position: relative
-		right: -4px
-		box-shadow: 0 0 0 1px #c9c9c9
+		right: -5px
+		top: -1px
+		border-top: 1px solid #c9c9c9
+		border-bottom: 1px solid #c9c9c9
+		border-left: 1px solid #c9c9c9
 	&__button-toggle
 		border: none
 		padding: 15px
 		background-color: #e3e3e3
+		&:hover
+			.special-version__button-toggle-icon
+				transform: rotate(45deg)
 	&__button-toggle-icon
-		font-size: 50px
+		font-size: 45px
+		transition: transform $main-trans
 	&__content
 		display: inline-block
-		padding: 15px 10px
-		width: 380px
+		padding: 15px 15px
+		width: 395px
 		vertical-align: top
 		background-color: #e3e3e3
 		box-shadow: 0 2px 0 0 #c9c9c9, 0 0 0 1px #c9c9c9
@@ -899,12 +765,15 @@ h2.inner-title--no-caps
 			&:last-child
 				.special-version__button
 					margin-bottom: 0
-	&__font
+	&__button
 		display: inline-block
-		margin-bottom: 15px
-		color: #000
+		margin-bottom: 10px
+		font-size: 16px
 		border: none
 		font-family: "MyriadPro-SemiBold"
+	&__font
+		margin-bottom: 15px
+		color: #000
 		&:hover
 			border: none
 			color: #000
@@ -918,9 +787,6 @@ h2.inner-title--no-caps
 		display: inline-block
 		padding: 8px 10px
 		margin-bottom: 8px
-		border: none
-		font-size: 16px
-		font-family: "MyriadPro-SemiBold"
 		&:hover
 			border: none
 			color: #000
@@ -939,6 +805,15 @@ h2.inner-title--no-caps
 			color: #063462
 			&:hover
 				color: #063462
+	&__letter-spacing
+		margin-bottom: 10px
+		font-size: 18px
+		&--default
+			letter-spacing: normal
+		&--medium
+			letter-spacing: 2px
+		&--large
+			letter-spacing: 5px
 	&__button-off-wrap
 		text-align: center
 	&__button-off
@@ -947,6 +822,8 @@ h2.inner-title--no-caps
 		padding: 5px 15px
 		line-height: 1
 
+
+// Переключатель видимости изображений
 .wrap-toggle-img
 	position: relative
 	.switch-state-img:empty
@@ -985,3 +862,5 @@ h2.inner-title--no-caps
 	.switch-state-img:checked ~ label::after
 		content: 'ВКЛ'
 		margin-left: 34px
+
+/* КОНЕЦ ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ */
