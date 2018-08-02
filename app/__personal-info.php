@@ -15,10 +15,10 @@
 
 			<!-- name -->
 			<div class="personal-info__item personal-info__item--name">
-				<span class="personal-info__item-text">Кустова Елена Александровна</span>
+				<span class="personal-info__item-text">Жарова Алла Викторовна</span>
 			</div>
 			<div class="personal-info__item personal-info__item--job">
-				<span class="personal-info__item-text">Директор Аэрокосмического колледжа</span>
+				<span class="personal-info__item-text">Директор</span>
 			</div>
 
 
@@ -26,7 +26,7 @@
 			<div class="personal-info__item personal-info__item--location">
 				<i class="fa fa-map-marker personal-info__item-icon" aria-hidden="true"></i>
 				<span class="personal-info__item-text">
-					Учебный корпус "Л" , каб. 123 (г. Красноярск, ул. Мира, д.2 стр.5)
+					Корпус "Цл", ауд. Цл-209, пр.Мира, 82, г.Красноярск (режим работы: с понедельника по пятницу с 11:00 до 18:00)
 				</span>
 			</div>
 
@@ -34,11 +34,10 @@
 				Если один телефон не должен быть кликабельным, например внутренний, нужно убрать ссылку -->
 			<div class="personal-info__item personal-info__item--phone">
 				<i class="fa fa-phone personal-info__item-icon" aria-hidden="true"></i>
-				<a class="personal-info__item-link" href="tel:+73822426173">	
-					<span class="personal-info__item-text">+7 (3822) 426173</span>
+				<a class="personal-info__item-link" href="tel:+73912278949">	
+					<span class="personal-info__item-text">+7(391) 227-89-49</span>
 				</a>
-				
-				<span class="personal-info__item-text">вн. т. 2901</span>
+				  <span class="personal-info__item-text">Предварительная запись, работает автоответчик (круглосуточно)</span>
 			</div>
 
 			<div class="personal-info__item personal-info__item--email">
@@ -57,9 +56,9 @@
 
 			<!-- social -->
 			<div class="personal-info__item personal-info__item--soc-vk">
-				<a class="personal-info__item-link" href="#" target="_blank">
+				<a class="personal-info__item-link" href="https://vk.com/club148652228" target="_blank">
 					<i class="fa fa-vk personal-info__item-icon" aria-hidden="true"></i>
-					<span class="personal-info__item-text">vk.com/sibsau</span>	
+					<span class="personal-info__item-text">https://vk.com/club148652228</span>	
 				</a>
 			</div>
 			<div class="personal-info__item personal-info__item--soc-instagram">
