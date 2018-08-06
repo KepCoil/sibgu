@@ -20,8 +20,8 @@ gulp.task('browser-sync', function() {
 		// port: '3000',
 
 		// server: {baseDir: 'app'},
-		proxy: 'sibgu', //openserver local server
-		// proxy: 'localhost:8080/sibgu_front/app', //xampp local server
+		// proxy: 'sibgu', //openserver local server
+		proxy: 'localhost:8080/sibgu_front/app', //xampp local server
 		
 	});
 });

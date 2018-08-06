@@ -259,7 +259,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 /*body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10050,7 +10050,12 @@ ul.corpuses-list {
   #wrapwrap .photo-album-list-item {
     height: 180px; }
   #wrapwrap .wrap-inst-item {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .button-top-scroll__icon {
+    top: 30%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; } }
 
 @media only screen and (max-width: 768px) and (min-width: 520px) {
   #wrapwrap .photo-album-list-item {
