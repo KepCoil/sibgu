@@ -10,6 +10,11 @@
 		<div class="container">
 			<h2 class="inner-title">Диссертационные советы</h2>
 		</div>
+
+		<div class="container">
+			<?php include ("__accordion.php") ?>
+		</div>
+
 		<div class="container">
 			<p><a href="#" class="doc-file doc-file--pptx">Документ pptx</a></p>
 			<p><a href="FILE.PDF">file.pdf</a></p>

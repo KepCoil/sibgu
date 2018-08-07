@@ -128,7 +128,7 @@ h1, .h1, .main-title
 h2, .h2
 	font-size: 1.75rem
 	line-height: 1.3
-	font-family: "MyriadPro-SemiBold"
+	font-family: "OpenSans-SemiBold"
 	font-weight: normal
 	text-align: left
 	margin-top: 1rem
@@ -136,28 +136,28 @@ h2, .h2
 h3, .h3
 	font-size: 1.5rem
 	line-height: 1.3
-	font-family: "MyriadPro-SemiBold"
+	font-family: "OpenSans-SemiBold"
 	font-weight: normal
 	margin-top: 1rem
 	margin-bottom: 1.25rem
 h4, .h4
 	font-size: 1.25rem
 	line-height: 1.3
-	font-family: "MyriadPro-SemiBold"
+	font-family: "OpenSans-SemiBold"
 	font-weight: normal
 	margin-top: 1rem
 	margin-bottom: 1.25rem
 h5, .h5
 	font-size: 1.125rem
 	line-height: 1.2
-	font-family: "MyriadPro-SemiBold"
+	font-family: "OpenSans-SemiBold"
 	font-weight: normal
 	margin-top: 0.5rem
 	margin-bottom: 0.625rem
 h6, .h6
 	font-size: 1rem
 	line-height: 1.2
-	font-family: "MyriadPro-SemiBold"
+	font-family: "OpenSans-SemiBold"
 	font-weight: normal
 	margin-top: 0.5rem
 	margin-bottom: 0.625rem
@@ -165,7 +165,8 @@ h6, .h6
 h2.inner-title, 
 h2.inner-title--no-caps
 	font-size: 1.75rem
-	font-family: "OpenSans-Semibold"
+	// font-family: "OpenSansCondensed-Bold"
+	// font-family: "OpenSans-SemiBold"
 	color: $blue
 	margin: 0 0 1.625rem 0
 	text-align: left
@@ -582,25 +583,27 @@ i.fa
 
 /* Accordion (bootstrap) */
 .main-accordion
+	margin-bottom: 1.5rem
 	.accordion-item
-		margin: 1rem 0
+		margin-bottom: 1rem
 		border: none
 		box-shadow: none
 		.panel-heading
+			display: inline-block
 			padding: 0
 			border: none
 		.panel-body
-			background-color: #fefefe
-			border: 1px solid #ddd
+			display: inline-block
+			margin-top: 10px
+			background-color: $purple-bgc
 			padding: 0
+			border-radius: 2px
 			&-padding
-				padding: 0.875rem
+				padding: 1.25rem 1.75rem
 		.panel-title
 			margin: 0
-			padding: 0.875rem 1.25rem
-			background-color: $grey-bgc
 			border: none
-			font-family: "OpenSans-SemiBold"
+			font-family: "OpenSans-Semibold"
 			font-size: 1rem
 			&:hover
 				.fa, a
@@ -613,6 +616,7 @@ i.fa
 			a
 				border: none
 				color: $default-color
+				border-bottom: 1px solid $dark-line
 		.panel-heading.active
 			.panel-title
 				.fa

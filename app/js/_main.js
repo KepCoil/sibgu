@@ -427,6 +427,7 @@ $(function() {
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
+		stickyBlocks();
 	});
 
 

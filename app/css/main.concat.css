@@ -7260,7 +7260,7 @@ h1, .h1, .main-title {
 h2, .h2 {
   font-size: 1.75rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "OpenSans-SemiBold";
   font-weight: normal;
   text-align: left;
   margin-top: 1rem;
@@ -7269,7 +7269,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "OpenSans-SemiBold";
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1.25rem; }
@@ -7277,7 +7277,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "OpenSans-SemiBold";
   font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1.25rem; }
@@ -7285,7 +7285,7 @@ h4, .h4 {
 h5, .h5 {
   font-size: 1.125rem;
   line-height: 1.2;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "OpenSans-SemiBold";
   font-weight: normal;
   margin-top: 0.5rem;
   margin-bottom: 0.625rem; }
@@ -7293,7 +7293,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   line-height: 1.2;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "OpenSans-SemiBold";
   font-weight: normal;
   margin-top: 0.5rem;
   margin-bottom: 0.625rem; }
@@ -7301,7 +7301,6 @@ h6, .h6 {
 h2.inner-title,
 h2.inner-title--no-caps {
   font-size: 1.75rem;
-  font-family: "OpenSans-Semibold";
   color: #28429b;
   margin: 0 0 1.625rem 0;
   text-align: left; }
@@ -7712,47 +7711,52 @@ i.fa {
     border: 0; }
 
 /* Accordion (bootstrap) */
-.main-accordion .accordion-item {
-  margin: 1rem 0;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-  .main-accordion .accordion-item .panel-heading {
-    padding: 0;
-    border: none; }
-  .main-accordion .accordion-item .panel-body {
-    background-color: #fefefe;
-    border: 1px solid #ddd;
-    padding: 0; }
-    .main-accordion .accordion-item .panel-body-padding {
-      padding: 0.875rem; }
-  .main-accordion .accordion-item .panel-title {
-    margin: 0;
-    padding: 0.875rem 1.25rem;
-    background-color: #f7f7f7;
+.main-accordion {
+  margin-bottom: 1.5rem; }
+  .main-accordion .accordion-item {
+    margin-bottom: 1rem;
     border: none;
-    font-family: "OpenSans-SemiBold";
-    font-size: 1rem; }
-    .main-accordion .accordion-item .panel-title:hover .fa, .main-accordion .accordion-item .panel-title:hover a {
-      color: #ea2f1c; }
-    .main-accordion .accordion-item .panel-title .fa {
-      font-size: 1.1rem;
-      margin-right: 0.3125rem;
-      -webkit-transform: rotate(0);
-          -ms-transform: rotate(0);
-              transform: rotate(0);
-      -webkit-transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
-      transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
-      -o-transition: color 0.25s ease-out, transform 0.25s ease-out;
-      transition: color 0.25s ease-out, transform 0.25s ease-out;
-      transition: color 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
-    .main-accordion .accordion-item .panel-title a {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .main-accordion .accordion-item .panel-heading {
+      display: inline-block;
+      padding: 0;
+      border: none; }
+    .main-accordion .accordion-item .panel-body {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: rgba(237, 236, 255, 0.7);
+      padding: 0;
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+      .main-accordion .accordion-item .panel-body-padding {
+        padding: 1.25rem 1.75rem; }
+    .main-accordion .accordion-item .panel-title {
+      margin: 0;
       border: none;
-      color: #222; }
-  .main-accordion .accordion-item .panel-heading.active .panel-title .fa {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
+      font-family: "OpenSans-Semibold";
+      font-size: 1rem; }
+      .main-accordion .accordion-item .panel-title:hover .fa, .main-accordion .accordion-item .panel-title:hover a {
+        color: #ea2f1c; }
+      .main-accordion .accordion-item .panel-title .fa {
+        font-size: 1.1rem;
+        margin-right: 0.3125rem;
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
+        transition: color 0.25s ease-out, -webkit-transform 0.25s ease-out;
+        -o-transition: color 0.25s ease-out, transform 0.25s ease-out;
+        transition: color 0.25s ease-out, transform 0.25s ease-out;
+        transition: color 0.25s ease-out, transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+      .main-accordion .accordion-item .panel-title a {
+        border: none;
+        color: #222;
+        border-bottom: 1px solid #aaa; }
+    .main-accordion .accordion-item .panel-heading.active .panel-title .fa {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
 
 /* End accordion */
 /* Scroll Top Button */
@@ -8381,12 +8385,11 @@ i.fa {
         border-bottom: none; }
       .dekstop-target-menu .wrap-target-menu li a {
         color: #fff;
-        padding: 1.125rem 1.5rem;
+        padding: 1.125rem 1.75rem;
         display: block;
         font-size: 1.375rem;
         text-transform: uppercase;
         font-family: "OpenSansCondensed-Bold";
-        letter-spacing: 1px;
         border-bottom: none; }
         .dekstop-target-menu .wrap-target-menu li a:first-child {
           padding-left: 15px; }
