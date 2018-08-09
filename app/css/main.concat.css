@@ -7728,7 +7728,8 @@ i.fa {
       background-color: rgba(237, 236, 255, 0.7);
       padding: 0;
       -webkit-border-radius: 2px;
-              border-radius: 2px; }
+              border-radius: 2px;
+      border-top: none; }
       .main-accordion .accordion-item .panel-body-padding {
         padding: 1.25rem 1.75rem; }
     .main-accordion .accordion-item .panel-title {
@@ -8865,7 +8866,7 @@ i.fa {
         display: block;
         border: none; }
       .links-other .owl-carousel .links-other-item img {
-        width: 220px;
+        width: 240px;
         height: auto;
         margin: 0 auto;
         visibility: visible !important; }
@@ -9307,6 +9308,8 @@ i.fa {
 
 .wrap-corpuses-map .ya-maps {
   height: 600px !important; }
+  .wrap-corpuses-map .ya-maps a {
+    border: inherit; }
 
 ul.corpuses-list {
   list-style-type: none !important;
@@ -9411,14 +9414,16 @@ ul.corpuses-list {
 /* End page institute */
 /* Вакансии */
 .jobs-list .main-accordion .accordion-item .panel-body {
-  border: none; }
+  border: none;
+  background-color: #fff; }
 
-.table-jobs th {
-  background-color: #f7f7f7;
-  width: 200px; }
-
-.table-jobs ul {
-  padding-left: 20px; }
+.table-jobs {
+  margin-bottom: 0; }
+  .table-jobs th {
+    background-color: #f7f7f7;
+    width: 200px; }
+  .table-jobs ul {
+    padding-left: 20px; }
 
 /* Filials page */
 .filial-item {

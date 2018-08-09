@@ -475,36 +475,7 @@
 		</div>
 	</section>
 
-	<section class="main-sect light-sect links-other">
-		<div class="container">
-			<div id="js-links-other" class="owl-carousel">
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/krasmash.svg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/geo-phisic.svg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-				<div class="links-other-item">
-					<a href="#"><img src="img/partners/iss.jpg" alt=""></a>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php include ("_bottom_banners.php"); ?>
 
 </main>
 

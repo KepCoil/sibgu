@@ -241,21 +241,14 @@ $(function() {
 		if ( ih < iw/2 ) {
 			im.removeClass('wh').removeClass('ww');
 			im.height('100%');
-			// console.log(3);
 		}
 		else if ( ih > iw ) {
 			im.addClass('ww').removeClass('wh').removeClass('www');
-			// console.log(1);
 		}
 		else if ( ih < iw ) { 
 			im.addClass('wh').removeClass('ww').removeClass('www');
-			// console.log(2);
 		}
 		
-		// console.log(iw);
-		// console.log(ih);
-		// console.log('-----');
-
 		var 
 			nh = im.height(),
 	      nw = im.width(),
@@ -270,7 +263,6 @@ $(function() {
 		}
 		else {
 			im.css({
-				//marginTop: '-' + 5 + '%',
 				marginTop: 0,
 				marginLeft: 0
 			});
@@ -292,9 +284,11 @@ $(function() {
 		if (windowWidth >= 992) {
 			$('#js-sticky-sidebar').stickySidebar({
 				topSpacing: 20,
-				bottomSpacing: 40,
+				bottomSpacing: 40
 			});
-		}		
+		}
+
+		console.log("липкий сайдбар");		
 	}
 	stickyBlocks();
 
@@ -307,7 +301,7 @@ $(function() {
 		$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").matchHeight();
 		$(".dis-docs").matchHeight();
 		$(".phogal-item .phogal-item-content-title").matchHeight();
-		$(".gorisont-item-img").matchHeight();
+		$(".gorisont-paper .gorisont-item").matchHeight();
 		// $(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();$(".pa-sect .wrap-pa-item").height('auto').equalHeights();$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();$(".dis-docs").height('auto').equalHeights();$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
 		
 		var windowWidth  = $(window).width();
@@ -421,14 +415,21 @@ $(function() {
 		equalHeightElements();
 		resizeHeightMapFilials();
 		resizeInstituteItems();
-		stickyBlocks();
+		// stickyBlocks();
+		
 	});
 
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
-		stickyBlocks();
+		// var perem = $('#js-sticky-sidebar').stickySidebar({
+		// 		topSpacing: 20,
+		// 		bottomSpacing: 40
+		// 	});
+		// perem.updateSticky();
+		updateSticky();
 	});
+
 
 
 });
