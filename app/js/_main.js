@@ -151,7 +151,8 @@ $(function() {
 		loop: true,
 		nav: true,
 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-		// responsiveClass: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
 		responsive: {
 			0:    { items:1 },
 			420:  { items:2 },
@@ -279,18 +280,25 @@ $(function() {
 
 	/* Функция для создания "липких" блоков с использованием stickySidebar */
 	function stickyBlocks() {
-		var windowWidth  = $(window).width();
+		var 
+			windowWidth  	 = $(window).width(),
+			windowScrollTop = $(window).scrollTop();
+
+		// console.log(windowWidth);
+		// console.log(windowScrollTop);
 		
-		if (windowWidth >= 992) {
+		if ( (windowWidth >= 992) && (windowScrollTop >= 300) ) {
 			$('#js-sticky-sidebar').stickySidebar({
 				topSpacing: 20,
 				bottomSpacing: 40
 			});
+			// console.log("липкий сайдбар");
 		}
 
-		console.log("липкий сайдбар");		
+				
 	}
-	stickyBlocks();
+
+	
 
 
 
@@ -409,25 +417,28 @@ $(function() {
 	});
 	/* */
 
+	// Автоматическая нумерация ячеек
+	$('.table-auto-num tbody tr').each(function(i) {
+		var numbRow = i + 1;
+		if (numbRow == 1) {
+			$('.table-auto-num thead tr').prepend('<th>№</th>');
+		}
+		$(this).prepend('<td>' + numbRow + '</td>');
+	});
+
 
 	/* Функции при ресайзе экрана */
 	$(window).resize(function() {
 		equalHeightElements();
 		resizeHeightMapFilials();
 		resizeInstituteItems();
-		// stickyBlocks();
 		
 	});
 
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
-		// var perem = $('#js-sticky-sidebar').stickySidebar({
-		// 		topSpacing: 20,
-		// 		bottomSpacing: 40
-		// 	});
-		// perem.updateSticky();
-		updateSticky();
+		stickyBlocks();
 	});
 
 
