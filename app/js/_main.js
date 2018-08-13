@@ -426,7 +426,6 @@ $(function() {
 			}
 			$(this).prepend('<td>' + numbRow + '</td>');
 		});
-
 	});
 
 

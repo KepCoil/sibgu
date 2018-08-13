@@ -62,6 +62,13 @@
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot");
   src: url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"), url("../fonts/OpenSansCondensed/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "OpenSansCondensed-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-CondLight.eot");
+  src: url("../fonts/OpenSans-CondLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondLight.woff") format("woff"), url("../fonts/OpenSans-CondLight.ttf") format("truetype"); }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2017 Twitter, Inc.
@@ -9716,6 +9723,31 @@ ul.corpuses-list {
   margin: 1rem 0; }
 
 /* End patents */
+/* photo block */
+.photo-block {
+  margin-bottom: 2rem; }
+  .photo-block__link {
+    display: block;
+    border: none; }
+    .photo-block__link:hover, .photo-block__link:focus, .photo-block__link:active {
+      border: none; }
+    .photo-block__link--main {
+      margin-bottom: 10px; }
+    .photo-block__link--common {
+      float: left;
+      width: 32%;
+      margin-right: 2%; }
+      .photo-block__link--common:last-child {
+        margin-right: 0; }
+  .photo-block__img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover; }
+    .photo-block__img--common {
+      height: 7rem;
+      width: 100%; }
+
 /* ODOO snippets */
 .img-rounded {
   -webkit-border-radius: 0 !important;
