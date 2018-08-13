@@ -417,14 +417,18 @@ $(function() {
 	});
 	/* */
 
-	// Автоматическая нумерация ячеек
-	$('.table-auto-num tbody tr').each(function(i) {
-		var numbRow = i + 1;
-		if (numbRow == 1) {
-			$('.table-auto-num thead tr').prepend('<th>№</th>');
-		}
-		$(this).prepend('<td>' + numbRow + '</td>');
+	// Автоматическая нумерация ячеек таблиц
+	$('.table-auto-num').each(function() {
+		$(this).children('tbody').children('tr').each(function(i) {
+			var numbRow = i + 1;
+			if (numbRow == 1) {
+				$(this).parent('tbody').parent('table').children('thead').children('tr').prepend('<th>№</th>');
+			}
+			$(this).prepend('<td>' + numbRow + '</td>');
+		});
+
 	});
+
 
 
 	/* Функции при ресайзе экрана */
