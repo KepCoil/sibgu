@@ -39,7 +39,7 @@ body
 ul
 	list-style: square outside
 
-ul.ul-accent
+.ul-accent
 	list-style-type: none
 	margin: 0.625rem 0
 	li
@@ -292,6 +292,7 @@ i.fa
 
 #wrapwrap 
 	table.table, 
+		margin-bottom: 0
 	.o_editable table.table
 		table-layout: auto
 
@@ -623,7 +624,11 @@ i.fa
 			.panel-title
 				.fa
 					transform: rotate(90deg)
-				
+
+.main-accordion.main-accordion--bg-dis
+	.accordion-item 
+		.panel-body
+			background-color: transparent			
 /* End accordion */
 
 
@@ -660,7 +665,7 @@ i.fa
 
 .personal-info
 	position: relative
-	margin-bottom: 1.5rem
+	margin-bottom: 2rem
 	&__left
 		display: inline-block
 		position: relative
@@ -675,15 +680,15 @@ i.fa
 		&-wrap
 			display: inline-block
 			position: relative
-			width: 8.5rem
+			width: 8.125rem
 			height: auto
 			margin-right: 1rem
-			border: 0.1875rem solid $dark-line
 			vertical-align: top
 			overflow: hidden
 			border-radius: 2px
 		&-img
 			width: 100%
+			border-radius: 50%
 			visibility: visible !important
 
 	&__item
@@ -694,7 +699,6 @@ i.fa
 			font-size: 1rem
 		&--job
 			margin-bottom: 0.5rem
-			font-size: 1rem
 		&-icon
 			margin-right: 0.4rem
 			width: 1rem

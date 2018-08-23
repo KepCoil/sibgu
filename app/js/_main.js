@@ -162,6 +162,11 @@ $(function() {
 			1800: { items:6 }
 		}
 	});
+
+	$(".photo-block__list-gallery--common").owlCarousel({
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+	});
 	/**/
 
 
@@ -274,29 +279,25 @@ $(function() {
 	$(".js-phogal-preview-img").switchItems();
 
 	// Активация плагина галлереи
+	// $(".js-photo-gallery-init").simpleLightbox();
 	$(".js-photo-gallery-init").simpleLightbox();
 	/* Конец функционал галлереи */
 
 
 	/* Функция для создания "липких" блоков с использованием stickySidebar */
-	function stickyBlocks() {
-		var 
-			windowWidth  	 = $(window).width(),
-			windowScrollTop = $(window).scrollTop();
-
-		// console.log(windowWidth);
-		// console.log(windowScrollTop);
+	// function stickyBlocks() {
+	// 	var 
+	// 		windowWidth  	 = $(window).width(),
+	// 		windowScrollTop = $(window).scrollTop();
 		
-		if ( (windowWidth >= 992) && (windowScrollTop >= 300) ) {
-			$('#js-sticky-sidebar').stickySidebar({
-				topSpacing: 20,
-				bottomSpacing: 40
-			});
-			// console.log("липкий сайдбар");
-		}
-
+	// 	if ( (windowWidth >= 992) && (windowScrollTop >= 300) ) {
+	// 		$('#js-sticky-sidebar').stickySidebar({
+	// 			topSpacing: 20,
+	// 			bottomSpacing: 40
+	// 		});
+	// 	}
 				
-	}
+	// }
 
 	
 
@@ -441,7 +442,7 @@ $(function() {
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
-		stickyBlocks();
+		// stickyBlocks();
 	});
 
 

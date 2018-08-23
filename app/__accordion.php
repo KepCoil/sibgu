@@ -1,4 +1,4 @@
-<div id="accordion" class="panel-group main-accordion" role="tablist">
+<div id="accordion" class="panel-group main-accordion main-accordion--bg-dis" role="tablist">
 
 
 	<div class="panel accordion-item">

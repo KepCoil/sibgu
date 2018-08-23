@@ -34,8 +34,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 
-<!-- НЕ ПОДКЛЮЧАТЬ. Odoo уже содержит данные скрипты и стили -->
-	<script src="libs/jquery/dist/jquery.min.js"></script>
+<!-- НЕ ПОДКЛЮЧАТЬ на бэкэнде. Odoo уже содержит данные скрипты и стили -->
 	<link rel="stylesheet" href="libs/bootstrap-menu-dropdown/css/bootstrap.css">
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-table/bootstrap-table.css">

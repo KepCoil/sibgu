@@ -145,6 +145,9 @@
 			.map-corpuses,
 			.ya-maps
 				height: 450px !important
+		.photo-block
+			&__img--common
+				height: 75px
 
 
 @media only screen and (max-width : 1260px) and (min-width: 992px)
@@ -184,10 +187,6 @@
 			display: none !important
 		.wrap-bg-grey
 			background-color: #fff
-		h2.inner-title,
-		h2.inner-title--no-caps
-			font-size: 1.25rem
-			margin-bottom: 1.5
 		.title-border
 			border: none
 			h2.inner-title
@@ -276,7 +275,6 @@
 				margin-bottom: 30px
 		.main-footer		
 			.foot-first-level
-				// padding: 20px 0
 				.wrap-foot-level
 					padding: 0
 					.col-md-6
@@ -285,9 +283,6 @@
 							padding-top: 0
 					.col-sm-12
 						padding-right: 15px
-					li
-						a
-							// font-size: 15px
 				.second-foot-line
 					padding: 1.25rem 0 0 0
 					margin-bottom: 1.25rem
@@ -302,9 +297,6 @@
 				&-item
 					height: 160px
 		.page-sidebars
-			// &__colums
-			// 	padding-left: 0
-			// 	padding-right: 0
 			&__sidebar,
 			&__content
 				background-color: #fff
@@ -385,12 +377,15 @@
 		&__icon
 			top: 30%
 			transform: none
-
+	
 @media only screen and (max-width : 768px) and (min-width : 520px)
 	#wrapwrap 
 		.photo-album-list-item
 			width: 50%
-			float: left			
+			float: left
+		.photo-block
+			&__img--common
+				height: 120px		
 
 @media only screen and (max-width : 620px)
 	#wrapwrap

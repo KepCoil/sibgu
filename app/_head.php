@@ -26,6 +26,9 @@
 	<link rel="stylesheet" href="css/main.concat.css">
 	<link rel="stylesheet" href="css/spec-version.concat.css">
 
+	<!-- НЕ ПОДКЛЮЧАТЬ на бэкэнде. Odoo уже содержит jquery -->
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+
 </head>
 
 <body class="main-site-sibgu">

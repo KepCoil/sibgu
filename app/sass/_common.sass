@@ -608,7 +608,7 @@ ul.corpuses-list
 	&-item
 		padding: 5px
 		margin-bottom: 0
-		height: 175px
+		height: 160px
 		overflow: hidden
 		&-link
 			display: block
@@ -622,7 +622,7 @@ ul.corpuses-list
 		&-preview
 			display: inline-block
 			max-width: 100%
-			height: auto
+			height: 100%
 			object-fit: cover
 
 .sl-overlay
@@ -708,38 +708,83 @@ ul.corpuses-list
 /* photo block */
 // photo-block__img photo-block__img--common
 .photo-block
+	padding-bottom: 1rem
 	margin-bottom: 2rem
+	border-bottom: 1px solid $light-grey-line
+	&:last-child
+		border-bottom: none
+		padding-bottom: 0
+	&__list-gallery
+		margin-bottom: 10px
+		&--common
+			overflow: hidden
+			position: relative
 	&__link
 		display: block
 		border: none
 		&:hover, &:focus, &:active
 			border: none
 		&--main
-			margin-bottom: 10px
+			margin-bottom: 4px
 		&--common
-			float: left
-			width: 32%
-			margin-right: 2%
-			&:last-child
-				margin-right: 0
+			position: relative
 	&__img
 		display: inline-block
-		max-width: 100%
+		width: 100%
 		height: auto
-		-o-object-fit: cover
+		object-fit: cover
 		&--common
-			height: 7rem
+			height: 100px
 			width: 100%
-		// &-main
-			
-		// 	margin-bottom: 10px
-		// &-common
-		// 	display: block
-		// 	float: left
-		// 	width: 32%
-		// 	margin-right: 2%
-			
-		// 	img
-		// 		height: 8rem
-		// img
-		// 	
+	&__content-item
+		margin-bottom: 0.5rem
+		i
+			width: 18px
+		ul
+			margin: 0.35rem 0
+	// jquery slider owl		
+	.owl-item
+		float: left
+		padding: 0 2px
+	.owl-nav
+		&::after
+			display: block
+			content: ""
+			clear: both
+		.owl-prev, .owl-next
+			position: absolute
+			cursor: pointer
+			height: 100%
+			background-color: rgba(0, 0, 0, .5)
+			padding: 0 0.75rem
+			i.fa
+				color: #fff
+				font-size: 2rem
+				top: 50%
+				position: relative
+				transform: translateY(-50%)
+		.owl-prev
+			float: left
+			left: 0
+		.owl-next
+			float: right
+			right: 0
+	.owl-dots
+		display: none !important
+
+
+/* Проектная деятельность */
+.project-learn-page
+	&__tab-item
+	&__local
+		&-list
+			margin-bottom: 2rem
+			li
+				a
+					color: $default-color
+					font-size: 1rem
+					border-bottom-color: $default-color
+					&:hover
+						color: $accent-links
+						border-bottom-color: $accent-links
+// project-learn-page__local-list
