@@ -9806,6 +9806,16 @@ ul.corpuses-list {
       color: #ea2f1c;
       border-bottom-color: #ea2f1c; }
 
+.project-learn-list .main-accordion .accordion-item:last-child .panel-body {
+  margin-bottom: 0; }
+
+.project-learn-list .main-accordion .accordion-item .panel-body {
+  display: block;
+  margin-bottom: 3rem; }
+
+.project-learn-list .fix-width-250 {
+  width: 250px; }
+
 /* ODOO snippets */
 .img-rounded {
   -webkit-border-radius: 0 !important;
