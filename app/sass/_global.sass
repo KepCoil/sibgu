@@ -32,7 +32,7 @@ body
 
 /* odoo content tag wrap */
 #wrap
-	padding: 2rem 0 2.5rem 0
+	padding: 2rem 0 3rem 0
 .wrap-bg-grey
 	background-color: $grey-bgc
 
@@ -164,18 +164,19 @@ h6, .h6
 
 h2.inner-title, 
 h2.inner-title--no-caps
-	font-size: 1.75rem
+	font-family: "OpenSansCondensed-Bold"
+	font-size: 1.875rem
 	// font-family: "OpenSansCondensed-Bold"
 	// font-family: "OpenSans-SemiBold"
 	color: $blue
-	margin: 0 0 1.625rem 0
+	margin: 0 0 2rem 0
 	text-align: left
 
 h2.inner-title
 	text-transform: uppercase
 
 h2.inner-title--no-caps
-	font-size: 1.5rem
+	font-size: 1.75rem
 	text-transform: inherit
 
 i.fa
@@ -184,7 +185,7 @@ i.fa
 .title-border
 	border-bottom: 1px solid $light-grey-font
 	margin-bottom: 1.5rem
-	h2.inner-title
+	h2.inner-title, h2.inner-title--no-caps
 		display: inline-block
 		position: relative
 		border-bottom: 2px solid $blue
@@ -192,6 +193,10 @@ i.fa
 		margin-bottom: 0
 		padding-bottom: 0.5rem
 		font-size: 1.5rem
+	h2.inner-title--no-caps
+		text-transform: inherit
+	
+
 
 .page-sidebars
 	&__page-sidebars__colums
@@ -247,7 +252,7 @@ i.fa
 		margin: 0
 		padding: 0
 		&-element
-			float: left
+			display: inline-block
 			margin-bottom: 0.75rem
 			margin-right: 0.625rem
 			&::after
@@ -380,7 +385,7 @@ i.fa
 	padding: 3.125rem 0
 	h2
 		text-transform: uppercase
-		font-size: 2rem
+		font-size: 1.875rem
 		color: $dark-blue
 		font-family: "OpenSans-Regular"
 		font-weight: normal
@@ -555,6 +560,7 @@ i.fa
 .tabs-container
 	.nav-tabs 
 		border: none
+		margin-top: 0
 		margin-bottom: 1.5625rem
 		>li
 			>a
@@ -586,6 +592,9 @@ i.fa
 /* Accordion (bootstrap) */
 .main-accordion
 	margin-bottom: 1.5rem
+	.panel-group .panel-heading + .panel-collapse > .panel-body, 
+	.panel-group .panel-heading + .panel-collapse > .list-group
+		border-top: none
 	.accordion-item
 		margin-bottom: 1rem
 		border: none
@@ -598,9 +607,9 @@ i.fa
 			display: inline-block
 			margin-top: 10px
 			background-color: $purple-bgc
+			border-top: 2px solid $green
 			padding: 0
 			border-radius: 2px
-			border-top: none
 			&-padding
 				padding: 1.25rem 1.75rem
 		.panel-title
@@ -611,6 +620,8 @@ i.fa
 			&:hover
 				.fa, a
 					color: $accent-links
+				a
+					border-bottom-color: $accent-links
 			.fa
 				font-size: 1.1rem
 				margin-right: 0.3125rem

@@ -92,25 +92,15 @@
 
 						<div role="tabpanel" class="tab-pane fade" id="project-learn-students">
 							<div class="project-learn-page__tab-item project-learn-page__tab-item--learn-department">
-								<h3>Студенту</h3>
 
-								<h5 class="project-learn-page__local-title">Институты</h5>
+								<h5 class="project-learn-page__local-title">Направления подготовки:</h5>
 								<ul class="ul-accent project-learn-page__local-list">
-									<li><a href="#">Институт космической техники</a></li>
-									<li><a href="#">Институт информатики и телекоммуникаций</a></li>
-									<li><a href="#">Институт машиноведения и мехатроники </a></li>
-									<li><a href="#">Институт гражданской авиации и таможенного дела </a></li>
-									<li><a href="#">Институт социального инжиниринга </a></li>
-									<li><a href="#">Инженерно-экономический институт </a></li>
-								</ul>
-								<h5 class="project-learn-page__local-title">Факультеты</h5>
-								<ul class="ul-accent project-learn-page__local-list">
-									<li><a href="#">Лесохозяйственный факультет</a></li>
-									<li><a href="#">Лесоинженерный факультет</a></li>
-									<li><a href="#">Факультет механической технологии древесины</a></li>
-									<li><a href="#">Факультет химических технологий</a></li>
-									<li><a href="#">Факультет переработки природных соединений</a></li>
-									<li><a href="#">Факультет экономики и управления бизнес-процессами</a></li>
+									<li><a href="#">01.03.04 Прикладная математика</a></li>
+									<li><a href="#">03.03.02 Физика</a></li>
+									<li><a href="#">09.03.01 Информатика и вычислительная техника</a></li>
+									<li><a href="#">09.03.02 Информационные системы и технологии</a></li>
+									<li><a href="#">09.03.03 Прикладная информатика</a></li>
+									<li><a href="#">11.03.02 Инфокоммуникационные технологии и системы связи</a></li>
 								</ul>
 							</div>
 						</div>
@@ -118,8 +108,7 @@
 
 						<div role="tabpanel" class="tab-pane fade" id="project-learn-clients">
 							<div class="project-learn-page__tab-item">
-								<h3>Заказчику</h3>
-								<p>Информация и документы для заказчика. Возможно статические данные</p>
+								<p>Информация и документы для заказчика. Скорее всего статические данные</p>
 							</div>
 						</div>
 

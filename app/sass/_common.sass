@@ -773,6 +773,7 @@ ul.corpuses-list
 		display: none !important
 
 
+
 /* Проектная деятельность */
 .project-learn-page
 	&__tab-item
@@ -782,7 +783,6 @@ ul.corpuses-list
 			li
 				a
 					color: $default-color
-					font-size: 1rem
 					border-bottom-color: $default-color
 					&:hover
 						color: $accent-links
@@ -799,5 +799,15 @@ ul.corpuses-list
 				margin-bottom: 3rem
 	.fix-width-250
 		width: 250px
+
+.project-learn-item
+	.table-responsive
+		margin-bottom: 1.5rem
+		.table
+			max-width: 1000px
+		th
+			width: 250px
+	&__content
+		margin-bottom: 2rem
 
 // project-learn-page__local-list

@@ -10,11 +10,11 @@
 		</li>
 
 		<li class="breadcrumbs__line-element">
-			<a href="#" class="breadcrumbs__link breadcrumbs__link--disabled js-breadcrumbs__link--disabled">Наука и инновации</a>
+			<a href="#" class="breadcrumbs__link breadcrumbs__link--disabled js-breadcrumbs__link--disabled">Образование</a>
 		</li>
 
 		<li class="breadcrumbs__line-element">
-			<a href="#" class="breadcrumbs__link breadcrumbs__link--disabled js-breadcrumbs__link--disabled">Онлайн-курсы МООК</a>
+			<a href="#" class="breadcrumbs__link breadcrumbs__link--disabled js-breadcrumbs__link--disabled">Проектная деятельность</a>
 		</li>
 
 	</ul>
