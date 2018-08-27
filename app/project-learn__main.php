@@ -91,16 +91,20 @@
 
 
 						<div role="tabpanel" class="tab-pane fade" id="project-learn-students">
-							<div class="project-learn-page__tab-item project-learn-page__tab-item--learn-department">
-
+							<div id="users" class="project-learn-page__tab-item project-learn-page__tab-item--learn-department">
 								<h5 class="project-learn-page__local-title">Направления подготовки:</h5>
-								<ul class="ul-accent project-learn-page__local-list">
-									<li><a href="#">01.03.04 Прикладная математика</a></li>
-									<li><a href="#">03.03.02 Физика</a></li>
-									<li><a href="#">09.03.01 Информатика и вычислительная техника</a></li>
-									<li><a href="#">09.03.02 Информационные системы и технологии</a></li>
-									<li><a href="#">09.03.03 Прикладная информатика</a></li>
-									<li><a href="#">11.03.02 Инфокоммуникационные технологии и системы связи</a></li>
+
+								<div class="project-learn-page__search-wrap">
+									<input id="js-project-learn-page__search" class="search project-learn-page__search" placeholder="Введите направление для поиска" />
+								</div>
+
+								<ul class="ul-accent project-learn-page__local-list list">
+									<li><a href="#" class="name">01.03.04 Прикладная математика</a></li>
+									<li><a href="#" class="name">03.03.02 Физика</a></li>
+									<li><a href="#" class="name">09.03.01 Информатика и вычислительная техника</a></li>
+									<li><a href="#" class="name">09.03.02 Информационные системы и технологии</a></li>
+									<li><a href="#" class="name">09.03.03 Прикладная информатика</a></li>
+									<li><a href="#" class="name">11.03.02 Инфокоммуникационные технологии и системы связи</a></li>
 								</ul>
 							</div>
 						</div>
@@ -120,6 +124,17 @@
 		</div>
 	</div>
 </main>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script>
+	var options = {
+		valueNames: [ 'name' ]
+	};
+
+	var userList = new List('users', options);
+
+</script>
+
 
 <?php include ("_footer.php"); ?>
 <?php include ("_end.php"); ?>

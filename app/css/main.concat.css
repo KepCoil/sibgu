@@ -9814,6 +9814,19 @@ ul.corpuses-list {
       color: #e73124;
       border-bottom-color: #e73124; }
 
+.project-learn-page__search-wrap {
+  margin-bottom: 1.5rem;
+  min-width: 280px;
+  max-width: 400px; }
+
+.project-learn-page__search {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 2px solid #aaa;
+  padding: 5px 12px; }
+
 .project-learn-list .main-accordion .accordion-item:last-child .panel-body {
   margin-bottom: 0; }
 
