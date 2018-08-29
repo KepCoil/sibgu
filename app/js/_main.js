@@ -400,7 +400,7 @@ $(function() {
 			windowHeight = $(window).height(),
 			scrollTop    = $(window).scrollTop();
 
-		if ( scrollTop > (windowHeight * 0.75) ) {
+		if ( scrollTop > (windowHeight * 0.5) ) {
 			$("#js-button-top-scroll").addClass("button-top-scroll--active");
 		} else {
 			$("#js-button-top-scroll").removeClass("button-top-scroll--active");

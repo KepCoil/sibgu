@@ -7,6 +7,27 @@
 	<div id="wrap">
 		<div class="container">
 
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__line clearfix">
+
+					<li class="breadcrumbs__line-element">
+						<a href="/" class="breadcrumbs__link breadcrumbs__link--home">
+							<i class="fa fa-home breadcrumbs__link--home-icon"></i>
+							<span class="breadcrumbs__link--home-text">Главная</span>
+						</a>
+					</li>
+
+					<li class="breadcrumbs__line-element">
+						<a href="#" class="breadcrumbs__link">Мероприятия</a>
+					</li>
+
+					<li class="breadcrumbs__line-element">
+						<a href="#" class="breadcrumbs__link breadcrumbs__link--disabled js-breadcrumbs__link--disabled">ХII Региональная научно-практическая конференция «Основные тенденции развития Российского законодательства»</a>
+					</li>
+
+				</ul>
+			</div>
+
 			<article class="wrap-event-content">
 				<h2 class="inner-title">ХII Региональная научно-практическая конференция «Основные тенденции развития Российского законодательства»</h2>
 				<div class="event-category">Конференции</div>
