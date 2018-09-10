@@ -57,6 +57,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/sticky-sidebar/jquery.sticky-sidebar.min.js',
 		'app/libs/switch-items/jquery.switch-items.min.js',
 		'app/libs/simple-lightbox/simple-lightbox.modification.min.js',
+		'app/libs/list.js/list.min.js',
 		'app/libs/jquery-cookie/jquery.cookie.min.js'
 		])
 	.pipe(concat('jquery-libs.js'))

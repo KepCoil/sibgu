@@ -17,9 +17,9 @@
 	<link rel="manifest" href="img/favicon/manifest.json">
 
 	<!-- Themes -->
-	<meta name="theme-color" content="#253666">
-	<meta name="msapplication-navbutton-color" content="#253666">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#253666">
+	<meta name="theme-color" content="#0060a1">
+	<meta name="msapplication-navbutton-color" content="#0060a1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0060a1">
 
 	<!-- style -->
 	<style>body { opacity: 0; overflow-x: hidden;}</style>

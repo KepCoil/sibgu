@@ -23,7 +23,7 @@
 							<a href="#project-learn-students" aria-controls="profile" role="tab" data-toggle="tab">Студенту</a>
 						</li>
 						<li role="presentation">
-							<a href="#project-learn-clients" aria-controls="profile" role="tab" data-toggle="tab">Заказчику</a>
+							<a href="#project-learn-clients" aria-controls="profile" role="tab" data-toggle="tab">Заказчику/Руководителю</a>
 						</li>
 					</ul>
 
@@ -49,22 +49,24 @@
 												<span class="personal-info__item-text">Соколов Владислав Львович</span>
 											</div>
 											<div class="personal-info__item personal-info__item--job">
-												<span class="personal-info__item-text">Начальник отдела основных образовательных программ и современных образовательных технологий</span>
+												<span class="personal-info__item-text">Заместитель начальника учебно-методического управления – начальник отдела основных образовательных программ и современных образовательных технологий</span>
 											</div>
 
 
 											<div class="personal-info__item personal-info__item--location">
 												<i class="fa fa-map-marker personal-info__item-icon" aria-hidden="true"></i>
 												<span class="personal-info__item-text">
-													Корпус «Цл», проспект Мира, 82, каб. Цл-201
+													Корпус «Цл», проспект Мира, 82, каб. Цл-201;
+													<br/> 
+													корпус «П», проспект имени газеты Красноярский рабочий, 31, каб. П312
 												</span>
 											</div>
-											<div class="personal-info__item personal-info__item--phone">
+											<!-- <div class="personal-info__item personal-info__item--phone">
 												<a class="personal-info__item-link" href="tel:227-51-60">
 													<i class="fa fa-phone personal-info__item-icon" aria-hidden="true"></i>	
 													<span class="personal-info__item-text">227-51-60</span>
 												</a>
-											</div>
+											</div> -->
 
 											<div class="personal-info__item personal-info__item--email">
 												<a class="personal-info__item-link" href="mailto:sokolov@sibsau.ru">
@@ -77,14 +79,12 @@
 									</div>
 								</div>
 
-								<p><strong>Проектная деятельность</strong> - это ...</p>
+								<p><strong>Проектная деятельность</strong> студентов Университета являются неотъемлемой частью образовательного процесса. Реализация проектной деятельности направлена на создание условий, при которых обучающиеся смогут применять на практике полученные ими теоретические знания, развивать универсальные, в том числе проектные компетенции, профессиональные компетенции, предусмотренные образовательными стандартами. </p>
+								<p>Формой реализации проектной деятельности является проект. Проект – это вид самостоятельной деятельности студентов, имеющий основной целью решение определенной практической и/или теоретической задачи. Проект имеет четко поставленные задачи, критерии оценки результата и ограниченные сроки выполнения. </p>
+								<p>Особой формой организации проектной деятельности является участие студентов в проектных группах, лабораториях, студенческих конструкторских бюро и иных структурных подразделениях, целью которых является вовлечение обучающихся в проектную деятельность.</p>
+								<p>Предусматривается участие в проектной деятельности как студентов одного направления, так  и студентов разных направлений подготовки (комплексные, междисциплинарные проекты), студентов одного курса, студентов разных курсов и уровней образования.</p>
+								<p>Уважаемые студенты, участие в проектной деятельности позволит Вам лучше адаптироваться к требованиям рынка труда, повысит Вашу конкурентоспособность, а выпускники проектно-ориентированных образовательных программ будут обладать всеми компетенциями для открытия собственного бизнеса.</p>
 								<br/>
-								<h5 class="project-learn-page__local-title">Цели проектной деятельности</h5>
-								<ul class="ul-accent project-learn-page__local-list">
-									<li>Цель 1</li>
-									<li>Цель 2</li>
-									<li>Цель 3</li>
-								</ul>
 								<p><a href="#" class="doc-file doc-file--pdf">Положение об организации и осуществлении проектной деятельности</a></p>
 							</div>
 						</div>
@@ -124,16 +124,6 @@
 		</div>
 	</div>
 </main>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script>
-	var options = {
-		valueNames: [ 'name' ]
-	};
-
-	var userList = new List('users', options);
-
-</script>
 
 
 <?php include ("_footer.php"); ?>

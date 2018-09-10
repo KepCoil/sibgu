@@ -121,8 +121,6 @@
 				<div class="project-learn-item__docs">
 					<h5>Документы:</h5>
 					<p><a href="#" class="doc-file doc-file--pdf">Паспорт проекта</a></p>
-					<p><a href="#" class="doc-file doc-file--pdf">Ещё документ .pdf</a></p>
-					<p><a href="#" class="doc-file doc-file--pdf">Ещё документ .pdf</a></p>
 				</div>
 
 

@@ -234,14 +234,18 @@
 		color: $grey-font
 		border-bottom: 1px solid $light-grey-line
 		padding-bottom: 0.625rem
+	.event-content
+		.fa
+			width: 22px
 	.event-date,
+	.event-time,
 	.event-location,
 	.event-contact
 		margin-bottom: 1rem
 		.event-block-title
 			display: block
 	.event-text
-		margin: 1.25rem 0
+		margin: 1.75rem 0
 
 /* END EVENT PAGE */
 
@@ -416,49 +420,40 @@ ul.corpuses-list
 
 
 /* Filials page */
-.filial-item
-	margin-bottom: 20px
-	background-color: $grey-bgc
-	a
-		border: none
-		color: $default-color
-		display: block
-		padding: 1rem
-		border-top: 4px solid $grey-bgc
-	&-img
-		float: left
-		margin-right: 1rem
-		img
-			width: 3rem
-			height: 3.75rem
+.filials-page
+	&__item
+		a
 			display: block
-			max-width: 100%
-	&-content
-		h3
-			font-size: 1.5rem
-			line-height: 3.75rem
+			border: none
+			color: $default-color
+			font-size: 1.25rem
+			
+		&-content
+			font-size: 1.25rem
 			margin: 0
 			transition: color $main-trans
-	&-lesosib
-		a
-			border-color: #00923f
-			&:hover h3
-				color: #00923f
-	&-zhelez
-		a
-			border-color: #ff1824
-			&:hover h3
-				color: #ff1824
-	&-novosib
-		a
-			border-color: #0036aa
-			&:hover h3
-				color: #0036aa
-	&-saratov
-		a
-			border-color: #0096e0
-			&:hover h3
-				color: #0096e0
+
+
+		// &-lesosib
+		// 	a
+		// 		border-color: #00923f
+		// 		&:hover h3
+		// 			color: #00923f
+		// &-zhelez
+		// 	a
+		// 		border-color: #ff1824
+		// 		&:hover h3
+		// 			color: #ff1824
+		// &-novosib
+		// 	a
+		// 		border-color: #0036aa
+		// 		&:hover h3
+		// 			color: #0036aa
+		// &-saratov
+		// 	a
+		// 		border-color: #0096e0
+		// 		&:hover h3
+		// 			color: #0096e0
 
 
 
@@ -609,7 +604,7 @@ ul.corpuses-list
 	&-item
 		padding: 5px
 		margin-bottom: 0
-		height: 160px
+		height: 180px
 		overflow: hidden
 		&-link
 			display: block
@@ -623,7 +618,6 @@ ul.corpuses-list
 		&-preview
 			display: inline-block
 			max-width: 100%
-			height: 100%
 			object-fit: cover
 
 .sl-overlay

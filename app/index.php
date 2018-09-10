@@ -271,7 +271,7 @@
 
 					<div class="col-md-6 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-1.svg" alt="Студенты">
+							<img class="img-responsive" src="img/infographics/students.svg" alt="Студенты">
 							<strong class="statistics-counter">20000</strong>
 							<p>Обучающихся студентов</p>
 						</div>
@@ -279,7 +279,7 @@
 
 					<div class="col-md-6 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-2.svg" alt="Преподаватели">
+							<img class="img-responsive" src="img/infographics/teacher.svg" alt="Преподаватели">
 							<strong class="statistics-counter">1200</strong>
 							<p>Квалифицированных преподавателей</p>
 						</div>
@@ -287,7 +287,7 @@
 
 					<div class="col-md-6 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-3.svg" alt="Творчество и спорт">
+							<img class="img-responsive" src="img/infographics/hobbi.svg" alt="Творчество и спорт">
 							<strong class="statistics-counter">50</strong>
 							<p>Групп для спортивной и творческой<br>реализации</p>
 						</div>
@@ -295,7 +295,7 @@
 
 					<div class="col-md-6 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-4.svg" alt="Компании - работадатели">
+							<img class="img-responsive" src="img/infographics/partner.svg" alt="Компании - работадатели">
 							<strong class="statistics-counter">1200</strong>
 							<p>Соглашений о сотрудничестве <br>с компаниями-работодателями</p>
 						</div>
@@ -303,15 +303,15 @@
 
 					<div class="col-md-6 col-md-offset-3 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-5.svg" alt="Институты и колледжи">
-							<strong>13</strong>
-							<p>Институтов и колледжей</p>
+							<img class="img-responsive" src="img/infographics/inst.svg" alt="Институты и колледжи">
+							<strong>18</strong>
+							<p>Институтов, факультетов и колледжей</p>
 						</div>
 					</div>
 
 					<div class="col-md-6 col-xs-12">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-6.svg" alt="Учебно-лабораторные корпуса">
+							<img class="img-responsive" src="img/infographics/corp.svg" alt="Учебно-лабораторные корпуса">
 							<strong>28</strong>
 							<p >Учебно-лабораторных корпусов</p>
 						</div>
@@ -319,7 +319,7 @@
 
 					<div class="col-md-6 col-xs-24">
 						<div class="wrap-infographics-content">
-							<img class="img-responsive" src="img/infographics/info-7.svg" alt="Общежитий для иногородних студентов">
+							<img class="img-responsive" src="img/infographics/hostel.svg" alt="Общежитий для иногородних студентов">
 							<strong>10</strong>
 							<p>Общежитий для иногородних<br>студентов</p>
 						</div>

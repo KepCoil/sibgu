@@ -246,7 +246,6 @@ $(function() {
 		
 		if ( ih < iw/2 ) {
 			im.removeClass('wh').removeClass('ww');
-			im.height('100%');
 		}
 		else if ( ih > iw ) {
 			im.addClass('ww').removeClass('wh').removeClass('www');
@@ -428,6 +427,15 @@ $(function() {
 			$(this).prepend('<td>' + numbRow + '</td>');
 		});
 	});
+
+
+	/* list.js */
+	var options = {
+		valueNames: [ 'name' ]
+	};
+
+	var userList = new List('users', options);
+	/* */
 
 
 

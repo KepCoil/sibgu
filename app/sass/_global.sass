@@ -90,10 +90,10 @@ a
 	text-decoration: none
 	outline: none !important
 	transition: color $main-trans, border-bottom-color $main-trans, background-color $main-trans
-	color: #084dd8
+	color: #0863d8
 	border-width: 1px
 	border-bottom-style: solid
-	border-color: #084dd8
+	border-color: #0863d8
 	&:hover, &:active, &:focus
 		text-decoration: none
 		color: $accent-links
@@ -298,6 +298,13 @@ i.fa
 		margin-bottom: 0
 	.o_editable table.table
 		table-layout: auto
+	.table-responsive > .table > thead > tr > th, 
+	.table-responsive > .table > tbody > tr > th, 
+	.table-responsive > .table > tfoot > tr > th, 
+	.table-responsive > .table > thead > tr > td, 
+	.table-responsive > .table > tbody > tr > td, 
+	.table-responsive > .table > tfoot > tr > td
+		white-space: normal
 
 
 /* иконки для ссылок на файлы */
@@ -385,7 +392,7 @@ i.fa
 		text-transform: uppercase
 		font-size: 1.875rem
 		color: $dark-blue
-		font-family: "OpenSans-Regular"
+		font-family: "OpenSansCondensed-Bold"
 		font-weight: normal
 		margin: 0 0 2.5rem 0
 .white-sect
