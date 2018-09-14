@@ -18,26 +18,25 @@
 
 
 			<div class="personal-info__item personal-info__item--name">
-				<span class="personal-info__item-text">Гильмудинов Юрий Григорьевич</span>
+				<span class="personal-info__item-text">Иван Паночкин</span>
 			</div>
 			<div class="personal-info__item personal-info__item--job">
-				<span class="personal-info__item-text">Директор</span>
+				<span class="personal-info__item-text">Руководитель</span>
 			</div>
-
 
 			<div class="personal-info__item personal-info__item--location">
 				<i class="fa fa-map-marker personal-info__item-icon" aria-hidden="true"></i>
 				<span class="personal-info__item-text">
-					Дворец водного спорта, Центральный проезд, 7, г. Красноярск 
+					Корпус "Цл", ауд. Цл-209, пр.Мира, 82, г.Красноярск (режим работы: с понедельника по пятницу с 11:00 до 18:00)
 				</span>
 			</div>
 
 			<!-- Вариант размертки если требуется указать более одно телефона. 
 				Если один телефон не должен быть кликабельным, например внутренний, нужно убрать ссылку -->
 				<div class="personal-info__item personal-info__item--phone">
-					<a class="personal-info__item-link" href="tel:+73912645751">
+					<a class="personal-info__item-link" href="tel:+79831612643">
 						<i class="fa fa-phone personal-info__item-icon" aria-hidden="true"></i>	
-						<span class="personal-info__item-text">+7(391) 264-57-51</span>
+						<span class="personal-info__item-text">+7 (983) 161-26-43</span>
 					</a>
 				</div>
 
@@ -57,6 +56,12 @@
 					<a class="personal-info__item-link" href="sport.sibsau.ru" target="_blank">
 						<i class="fa fa-globe personal-info__item-icon" aria-hidden="true"></i>
 						<span class="personal-info__item-text">sport.sibsau.ru</span>
+					</a>
+				</div>
+				<div class="personal-info__item personal-info__item--soc-vk">
+					<a class="personal-info__item-link" href="https://vk.com/sibsu_tournament" target="_blank">
+						<i class="fa fa-vk personal-info__item-icon" aria-hidden="true"></i>
+						<span class="personal-info__item-text">https://vk.com/sibsu_tournament </span>	
 					</a>
 				</div>
 

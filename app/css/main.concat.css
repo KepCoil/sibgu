@@ -7170,11 +7170,12 @@ body {
   background-color: #f7f7f7; }
 
 ul {
-  list-style: square outside; }
+  list-style: square outside;
+  margin-bottom: 1.5rem; }
 
 .ul-accent {
   list-style-type: none;
-  margin: 0.625rem 0; }
+  margin: 0.625rem 0 1.5rem 0; }
   .ul-accent li {
     margin-bottom: 0.35rem; }
     .ul-accent li::before {
@@ -10006,7 +10007,7 @@ ul.corpuses-list {
   #wrapwrap .mobile-menu-button-wrap {
     display: inline-block; }
   #wrapwrap .head-content {
-    padding: 1.25rem 0 0 0; }
+    padding: 1.25rem 0; }
     #wrapwrap .head-content::after {
       background-image: none; }
     #wrapwrap .head-content .container {
