@@ -603,9 +603,6 @@ i.fa
 		background-color: transparent
 	.panel-group .panel
 		border-radius: 2px
-	.panel-group .panel-heading + .panel-collapse > .panel-body, 
-	.panel-group .panel-heading + .panel-collapse > .list-group
-		border-top: none
 	.accordion-item
 		margin-bottom: 1rem
 		border: none
@@ -618,11 +615,14 @@ i.fa
 			display: inline-block
 			margin-top: 10px
 			background-color: $purple-bgc
-			border-top: 2px solid $green
+			
 			padding: 0
 			border-radius: 2px
 			&-padding
 				padding: 1.25rem 1.75rem
+		.panel-group .panel-heading + .panel-collapse > .panel-body, 
+		.panel-group .panel-heading + .panel-collapse > .list-group
+			border-top: 2px solid $green
 		.panel-title
 			margin: 0
 			border: none

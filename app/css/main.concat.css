@@ -7743,9 +7743,6 @@ i.fa {
   .main-accordion .panel-group .panel {
     -webkit-border-radius: 2px;
             border-radius: 2px; }
-  .main-accordion .panel-group .panel-heading + .panel-collapse > .panel-body,
-  .main-accordion .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: none; }
   .main-accordion .accordion-item {
     margin-bottom: 1rem;
     border: none;
@@ -7759,12 +7756,14 @@ i.fa {
       display: inline-block;
       margin-top: 10px;
       background-color: rgba(233, 238, 255, 0.5);
-      border-top: 2px solid #7DC71C;
       padding: 0;
       -webkit-border-radius: 2px;
               border-radius: 2px; }
       .main-accordion .accordion-item .panel-body-padding {
         padding: 1.25rem 1.75rem; }
+    .main-accordion .accordion-item .panel-group .panel-heading + .panel-collapse > .panel-body,
+    .main-accordion .accordion-item .panel-group .panel-heading + .panel-collapse > .list-group {
+      border-top: 2px solid #7DC71C; }
     .main-accordion .accordion-item .panel-title {
       margin: 0;
       border: none;
@@ -8064,7 +8063,7 @@ i.fa {
 /* HEADER */
 #wrapwrap .top-line {
   position: relative;
-  height: 36px;
+  height: 34px;
   background-color: #006CB5;
   -webkit-box-shadow: 0 1px 0 #b5bfd8;
           box-shadow: 0 1px 0 #b5bfd8;
@@ -8087,8 +8086,8 @@ i.fa {
     width: 226px;
     padding: 0; }
   #wrapwrap .top-line .quick-links-wrap {
-    height: 36px;
-    line-height: 36px;
+    height: 34px;
+    line-height: 34px;
     padding: 0 15px; }
     #wrapwrap .top-line .quick-links-wrap .quick-links a {
       font-size: 0.875rem;
@@ -8108,7 +8107,7 @@ i.fa {
       background: none;
       border: none;
       color: #eee;
-      line-height: 36px;
+      line-height: 34px;
       font-size: 0.875rem;
       padding: 0 1rem;
       -webkit-transition: color 0.25s ease-out;
@@ -8185,7 +8184,7 @@ i.fa {
               border-radius: 0;
       background-color: transparent;
       border: none;
-      height: 36px;
+      height: 34px;
       -webkit-transition: color 0.25s ease-out;
       -o-transition: color 0.25s ease-out;
       transition: color 0.25s ease-out; }
@@ -8225,7 +8224,7 @@ i.fa {
 
 .main-menu {
   background-color: #e6eaf6;
-  height: 56px; }
+  height: 54px; }
   .main-menu .wrap-main-menu {
     float: left; }
   .main-menu ul {
@@ -8244,7 +8243,7 @@ i.fa {
       -webkit-transition: background-color 0.25s ease-out;
       -o-transition: background-color 0.25s ease-out;
       transition: background-color 0.25s ease-out;
-      line-height: 57px;
+      line-height: 55px;
       font-size: 1rem; }
       .main-menu ul.ul-inner-menu > li > a:hover {
         color: #e73124;
@@ -8292,11 +8291,11 @@ i.fa {
 .search-area {
   float: right;
   padding: 0;
-  line-height: 55px; }
+  line-height: 54px; }
   .search-area .search-area-form {
     position: relative;
     font-family: "MyriadPro-Regular";
-    height: 56px; }
+    height: 54px; }
     .search-area .search-area-form input {
       width: 220px;
       color: #444;
@@ -8426,7 +8425,7 @@ i.fa {
         border-bottom: none; }
       .dekstop-target-menu .wrap-target-menu li a {
         color: #fff;
-        padding: 1rem 1.75rem;
+        padding: 0.8rem 1.75rem;
         display: block;
         font-size: 1.375rem;
         text-transform: uppercase;
@@ -9031,7 +9030,9 @@ i.fa {
       #wrapwrap .main-footer .wrap-foot-contancts .foot-social-list a img {
         width: 40px;
         height: 40px;
-        visibility: visible !important; }
+        visibility: visible !important;
+        -webkit-border-radius: 3px;
+                border-radius: 3px; }
   #wrapwrap .main-footer .foot-second-level {
     padding: 1.25rem 0;
     background-color: #0060a1;
@@ -9573,7 +9574,7 @@ ul.corpuses-list {
 /* end photo gallery switch-items */
 /* page photo album  */
 .photo-album-info-meta {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem; }
 
 .photo-album-info .table-info-album {
   width: auto;
@@ -9582,6 +9583,9 @@ ul.corpuses-list {
     padding: 10px 30px 10px 10px; }
   .photo-album-info .table-info-album th {
     background-color: #f7f7f7; }
+
+.photo-album-info .photo-album-info-text {
+  margin-top: 1rem; }
 
 .photo-album-list .row {
   margin-left: -10px;
@@ -9597,8 +9601,7 @@ ul.corpuses-list {
     border: none;
     overflow: hidden;
     height: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.1); }
+    text-align: center; }
     .photo-album-list-item-link:hover, .photo-album-list-item-link:focus {
       border: none; }
   .photo-album-list-item-preview {

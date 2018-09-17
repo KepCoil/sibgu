@@ -54,7 +54,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/mmenu/jquery.mmenu.all.js',
 		'app/libs/jquery-match-height/jquery.matchHeight-min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
-		'app/libs/sticky-sidebar/jquery.sticky-sidebar.min.js',
+		'app/libs/jquery-sticky/jquery.sticky.js',
 		'app/libs/switch-items/jquery.switch-items.min.js',
 		'app/libs/simple-lightbox/simple-lightbox.modification.min.js',
 		'app/libs/list.js/list.min.js',

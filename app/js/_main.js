@@ -298,9 +298,26 @@ $(function() {
 				
 	// }
 
+	/* Функция для создания "липких" блоков с использованием sticky */
+	function stickyBlocks() {
+		var
+			windowWidth  	 				= $(window).width(), 
+			innerHeightFooter 			= $('.main-footer').innerHeight(),
+			bottomPaddingWrap 			= parseInt( $("#wrap").css("padding-bottom") ),
+			bottomStickySidebarOffset 	= innerHeightFooter + bottomPaddingWrap;
+		
+		if (windowWidth >= 992) {
+			$('.page-sidebars__sidebar').sticky({
+				topSpacing: 20,
+				bottomSpacing: bottomStickySidebarOffset
+			});
+		}
+			
+	}
+
+	stickyBlocks();
+
 	
-
-
 
 	/* Функция уравнивания высоты различных элементов через плагин "matchHeigh" */
 	function equalHeightElements() {
@@ -444,13 +461,12 @@ $(function() {
 		equalHeightElements();
 		resizeHeightMapFilials();
 		resizeInstituteItems();
-		
+		stickyBlocks();
 	});
 
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
-		// stickyBlocks();
 	});
 
 
