@@ -3,6 +3,13 @@
   font-family: "MyriadPro-Regular";
   font-weight: normal;
   font-style: normal;
+  src: url("../fonts/Oswald/OswaldRegular/Oswald-Regular.eot");
+  src: url("../fonts/Oswald/OswaldRegular/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald/OswaldRegular/Oswald-Regular.woff") format("woff"), url("../fonts/Oswald/OswaldRegular/Oswald-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  font-weight: normal;
+  font-style: normal;
   src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
   src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
 
@@ -21,25 +28,11 @@
   src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "MyriadPro-SemiBoldItalic";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
-  src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"), url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype"); }
-
-@font-face {
   font-family: "MyriadPro-Bold";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
   src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "MyriadPro-BoldItalic";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot");
-  src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "OpenSans-Regular";
@@ -7164,7 +7157,7 @@ body {
 
 /* odoo content tag wrap */
 #wrap {
-  padding: 2rem 0 3rem 0; }
+  padding: 2.5rem 0 3.125rem 0; }
 
 .wrap-bg-grey {
   background-color: #f7f7f7; }
@@ -7260,7 +7253,7 @@ button {
 h1, .h1, .main-title {
   font-size: 30px;
   line-height: 1.3;
-  font-family: "MyriadPro-SemiBold";
+  font-family: "Oswald-Regular";
   font-weight: normal;
   text-transform: uppercase;
   font-weight: normal; }
@@ -7840,6 +7833,8 @@ i.fa {
   position: relative;
   margin-bottom: 2rem;
   max-width: 980px; }
+  .personal-info-full-width {
+    max-width: 100%; }
   .personal-info__left {
     display: inline-block;
     position: relative;
@@ -8361,7 +8356,7 @@ i.fa {
         text-transform: none;
         display: block;
         margin-top: 3px;
-        font-family: "MyriadPro-Regular";
+        font-family: "Oswald-Regular";
         margin-bottom: 0; }
   .head-content .other-func {
     float: right;
@@ -8493,7 +8488,7 @@ i.fa {
     position: relative; }
     .main-slider.owl-carousel .wrap-main-slide::before {
       content: '';
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
       top: 0;
       left: 0;
       width: 100%;
@@ -8604,7 +8599,7 @@ i.fa {
     color: #fff; }
     .news-sect .wrap-item-news .wrap-news-content::before {
       content: '';
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.25);
       top: 0;
       left: 0;
       width: 100%;
@@ -8672,6 +8667,7 @@ i.fa {
 .event-item {
   padding: 0 20px; }
   .event-item .wrap-date-event {
+    position: relative;
     border-bottom: 1px solid #aaa;
     padding-bottom: 1rem; }
     .event-item .wrap-date-event .calendar-icon {
@@ -8685,7 +8681,7 @@ i.fa {
       -webkit-box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
               box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
       overflow: hidden;
-      margin-right: 0.625rem; }
+      margin-right: 0.75rem; }
       .event-item .wrap-date-event .calendar-icon span {
         display: block;
         position: absolute;
@@ -8725,21 +8721,21 @@ i.fa {
         font-family: "MyriadPro-Bold";
         height: 100%;
         text-align: center;
-        padding-top: 1.625rem; }
+        padding-top: 1.75rem; }
     .event-item .wrap-date-event .event-month {
       font-size: 1.75rem;
       line-height: 1;
       font-family: "MyriadPro-Semibold";
       display: inline-block;
-      position: relative;
+      position: absolute;
       color: #333;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
+      -webkit-transform: translateY(-45%);
+          -ms-transform: translateY(-45%);
+              transform: translateY(-45%); }
   .event-item .event-content h3 {
     margin: 0.9375rem 0;
-    font-size: 1.3125rem;
+    font-size: 1.1875rem;
     line-height: 1.2; }
     .event-item .event-content h3 a {
       color: #222;
@@ -9103,8 +9099,7 @@ i.fa {
 .wrap-mega-news .wrap-mega-img {
   height: 800px;
   position: relative;
-  overflow: hidden;
-  top: -30px; }
+  overflow: hidden; }
   .wrap-mega-news .wrap-mega-img .mega-img {
     width: 100%;
     height: 100%;

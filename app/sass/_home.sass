@@ -52,7 +52,7 @@
 		position: relative
 		&::before
 			content: ''
-			background-color: rgba(0,0,0,0.2)
+			background-color: rgba(0,0,0,0.1)
 			top: 0
 			left: 0
 			width: 100%
@@ -151,7 +151,7 @@
 			color: #fff
 			&::before
 				content: ''
-				background-color: rgba(0,0,0,.2)
+				background-color: rgba(0,0,0,.25)
 				top: 0
 				left: 0
 				width: 100%
@@ -216,6 +216,7 @@
 .event-item
 	padding: 0 20px
 	.wrap-date-event
+		position: relative
 		border-bottom: 1px solid $dark-line
 		padding-bottom: 1rem
 		.calendar-icon
@@ -227,7 +228,7 @@
 			border-radius: 7px
 			box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
 			overflow: hidden
-			margin-right: 0.625rem
+			margin-right: 0.75rem
 			span
 				display: block
 				position: absolute
@@ -262,20 +263,20 @@
 				font-family: "MyriadPro-Bold"
 				height: 100%
 				text-align: center
-				padding-top: 1.625rem
+				padding-top: 1.75rem
 		.event-month
 			font-size: 1.75rem
 			line-height: 1
 			font-family: "MyriadPro-Semibold"
 			display: inline-block
-			position: relative
-			color: #333;
+			position: absolute
+			color: #333
 			top: 50%
-			transform: translateY(-50%)
+			transform: translateY(-45%)
 	.event-content
 		h3
 			margin: 0.9375rem 0
-			font-size: 1.3125rem
+			font-size: 1.1875rem
 			line-height: 1.2
 			a
 				color: $default-color

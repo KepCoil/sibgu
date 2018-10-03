@@ -5,7 +5,7 @@
 		<div id="js-main-slider" class="main-slider owl-carousel">
 			
 			<div class="wrap-main-slide">
-				<div class="slide-img" style="background-image: url(img/slider/slider-1.jpg);"></div>
+				<div class="slide-img" style="background-image: url(img/slider/Brendbuk.jpg);"></div>
 				<div class="slide-content-outer">
 					<div class="container">
 						<div class="js-slide-content slide-content-inner">
@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="wrap-main-slide">
-				<div class="slide-img" style="background-image: url(img/slider/slider-2.jpg);"></div>
+				<div class="slide-img" style="background-image: url(img/slider/Dni_Roskosmosa.jpg);"></div>
 				<div class="slide-content-outer">
 					<div class="container">
 						<div class="js-slide-content slide-content-inner">
@@ -29,7 +29,7 @@
 			</div>
 
 			<div class="wrap-main-slide">
-				<div class="slide-img" style="background-image: url(img/slider/slider3.jpg);"></div>
+				<div class="slide-img" style="background-image: url(img/slider/Fond.jpg);"></div>
 				<div class="slide-content-outer">
 					<div class="container">
 						<div class="js-slide-content slide-content-inner">

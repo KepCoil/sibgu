@@ -28,37 +28,56 @@
 					<div role="tabpanel" class="tab-pane fade active in" id="inst-tab-1">
 						<div class="inst-block">
 							<h3>Общая информация</h3>
-							<div class="table-responsive">
-								<table style="max-width: 1200px;" class="table table-bordered table-events table-rec">
-									<tbody>
-										<tr>
-											<th>Директор</th>
-											<td>Попов Алексей Михайлович</td>
-										</tr>
-										<tr>
-											<th>Местонахождение</th>
-											<td>660037, Сибирский федеральный округ, Красноярский край, г. Красноярск, проспект им. газеты Красноярский рабочий, 31, корпус "Н", каб. 206 </td>
-										</tr>
-										<tr>
-											<!-- Может быть сюда документы все, которые о себе нахочет прикрепить институт? И через запятую их ссылками -->
-											<th>Положение</th>
-											<td><a href="#">Положение об тратра тра ыыы</a></td>
-										</tr>
-										<tr>
-											<th>Сайт</th>
-											<td><a href="http://iitk.sibsau.ru/" target="_blank">iitk.sibsau.ru</a></td>
-										</tr>
-										<!-- Добавил такое поле, возможно оно будет? -->
-										<tr>
-											<th>Телефон</th>
-											<td>8 (123) 555-55-55</td>
-										</tr>
-										<tr>
-											<th>E-mail</th>
-											<td><a href="#">123@mail.ru</a></td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="personal-info personal-info-full-width">
+
+								<div class="personal-info__left">
+									<div class="personal-info__photo-wrap">
+										<img class="personal-info__photo-img" src="img/sibgu_no_photo.png" />
+									</div>
+								</div>
+
+								<div class="personal-info__right">
+									<div class="personal-info__content">
+
+
+										<div class="personal-info__item personal-info__item--name">
+											<span class="personal-info__item-text">Левко Валерий Анатольевич</span>
+										</div>
+										<div class="personal-info__item personal-info__item--job">
+											<span class="personal-info__item-text">Директор / декан</span>
+										</div>
+
+										<div class="personal-info__item personal-info__item--location">
+											<i class="fa fa-map-marker personal-info__item-icon" aria-hidden="true"></i>
+											<span class="personal-info__item-text">
+												Корпус "Цл", ауд. Цл-209, пр.Мира, 82, г.Красноярск (режим работы: с понедельника по пятницу с 11:00 до 18:00)
+											</span>
+										</div>
+
+
+										<div class="personal-info__item personal-info__item--phone">
+											<a class="personal-info__item-link" href="tel:+79831612643">
+												<i class="fa fa-phone personal-info__item-icon" aria-hidden="true"></i>	
+												<span class="personal-info__item-text">+7 (123) 456-78-99</span>
+											</a>
+										</div>
+
+										<div class="personal-info__item personal-info__item--email">
+											<a class="personal-info__item-link" href="mailto:mail@sibsau.ru">
+												<i class="fa fa-at personal-info__item-icon" aria-hidden="true"></i>
+												<span class="personal-info__item-text">mail@sibsau.ru</span>
+											</a>
+										</div>
+										<div class="personal-info__item personal-info__item--site">
+											<a class="personal-info__item-link" href="domen.sibsau.ru" target="_blank">
+												<i class="fa fa-globe personal-info__item-icon" aria-hidden="true"></i>
+												<span class="personal-info__item-text">domen.sibsau.ru</span>
+											</a>
+										</div>
+
+
+									</div>
+								</div>
 							</div>
 						</div>
 
