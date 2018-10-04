@@ -253,7 +253,7 @@
 									<br><span>Добро пожаловать в СибГУ им. М.Ф. Решетнева!</span>
 								</p>
 							</div>
-							<span class="signature-rector">Деревянных Дмитрий Николаевич</span>
+							<span class="signature-rector">Акбулатов Эдхам Шукриевич</span>
 						</div>
 
 					</div>

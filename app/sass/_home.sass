@@ -6,7 +6,7 @@
 	height: 550px
 	position: relative
 	z-index: -1
-	background-color: $blue
+	background-color: $grey-bgc
 .wrap-navaslider-content
 	position: relative
 	>div
@@ -40,7 +40,7 @@
 			display: inline-block
 			background-color: red
 			background-color: #fff
-			box-shadow: 1px 1px 0 #555
+			box-shadow: 1px 1px 1px $grey-font
 			transition: background-color $main-trans
 			&.active
 				width: 1rem
@@ -205,7 +205,7 @@
 				font-size: 24px
 				display: inline-block
 				text-transform: uppercase
-				font-family: "MyriadPro-Bold"
+				font-family: "MyriadPro-SemiBold"
 				position: relative
 				top: 50%
 				transform: translateY(-50%)
@@ -260,7 +260,7 @@
 				font-size: 2rem
 				color: #333
 				position: absolute
-				font-family: "MyriadPro-Bold"
+				font-family: "MyriadPro-SemiBold"
 				height: 100%
 				text-align: center
 				padding-top: 1.75rem
@@ -295,25 +295,25 @@
 /* SECTION RECTOR */
 .rector-sect
 	.wrap-rector-img
-		border: 0.75rem solid $dark-blue
+		border-radius: 50%
+		overflow: hidden
+		border: 0.6rem solid $dark-blue
 	.wrap-rector-content
-		margin: 30px 0 0 0
-		font-size: 1.125rem
+		margin: 1rem 0 0 0
+		font-size: 1.0625rem
 		font-family: "MyriadPro-Regular"
 		border-radius: 2px
 		strong
 			font-size: 1.25rem
-			font-size: 20px
 			display: block
-			margin-bottom: 20px
+			margin-bottom: 1.25rem
 		span
 			font-family: "MyriadPro-Semibold"
 	.signature-rector
 		display: block
-		text-align: right
-		font-family: "MyriadPro-SemiBoldItalic"
-		font-size: 1.25rem
-		margin: 40px 0 0 0
+		font-size: 1.0625rem
+		margin: 2rem 0 0 0
+		font-family: "MyriadPro-Semibold"
 
 
 /* SECTION INFOGRAPFICS */

@@ -191,7 +191,7 @@
 					<img class="main-logo" src="img/main_logo.svg" alt="Логотип СибГУ им. М.Ф. Решетнева">
 					<span class="main-title-container">
 						<h1 class="main-title">
-							Сибирский государственный университет<br> науки и технологий<br>
+							Сибирский государственный университет<br/> науки и технологий
 							<span class="reshetnev">имени академика М.Ф. Решетнева</span>
 						</h1>
 					</span>
@@ -219,15 +219,29 @@
 
 			</div>
 
-			
-
 		</div>
+
+
 		<div class="search-area search-area--mobile">
 			<form class="search-area-form" method="post" role="search">
 				<input type="text" placeholder="Поиск">
 				<button><i class="fa fa-search" aria-hidden="true"></i></button>
 			</form>
 		</div>
+
+
+		<div>
+			<div class="container">
+				
+				<div class="no-ready-preview" style="margin-top: 2rem; font-size: 1.0625rem; color: #444; border-left: 3px solid #77787B; padding: 0 0 9px 10px">
+					Приветствуем вас на новой версии официального сайта СибГУ им. М.Ф. Решетнева.<br/>
+					В настоящее время ведутся работы по тестированию и наполнению сайта актуальной информацией. Приносим извинения за временные неудобства.
+				</div>
+				<span style="display: inline-block; height: 3px; width: 25px; background-color: #77787B; position: relative; top: -15px"></span>
+				
+			</div>
+		</div>
+
 	</div>
 
 
