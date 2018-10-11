@@ -125,7 +125,7 @@
 					<div class="personal-info__item personal-info__item--email">
 						<a class="personal-info__item-link" href="mailto:webmail@sibsau.ru">
 							<i class="fa fa-at personal-info__item-icon" aria-hidden="true"></i>
-							<span class="personal-info__item-text">webmail@sibsau.ru</span>
+							<span class="personal-info__item-text">cspp@sibsau.ru</span>
 						</a>
 					</div>
 					<div class="personal-info__item personal-info__item--site">
@@ -145,9 +145,9 @@
 						</a>
 					</div>
 					<div class="personal-info__item personal-info__item--soc-instagram">
-						<a class="personal-info__item-link" href="#" target="_blank">
+						<a class="personal-info__item-link" href="https://www.instagram.com/aerosmisibsu/" target="_blank">
 							<i class="fa fa-instagram personal-info__item-icon" aria-hidden="true"></i>
-							<span class="personal-info__item-text">instagram.com/sibsau</span>
+							<span class="personal-info__item-text">instagram.com/aerosmisibsu/</span>
 						</a>
 					</div>
 					<!-- social -->

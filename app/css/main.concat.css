@@ -7142,20 +7142,22 @@ body {
   background-color: #f7f7f7; }
 
 ul {
-  list-style: square outside;
+  list-style: disc;
   margin-bottom: 1.5rem; }
 
 .ul-accent {
   list-style-type: none;
   margin: 0.625rem 0 1.5rem 0; }
   .ul-accent li {
-    margin-bottom: 0.35rem; }
+    margin-bottom: 0.5rem; }
     .ul-accent li::before {
       content: '';
       display: inline-block;
       width: 7px;
       height: 7px;
       top: 7px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
       background-color: #006CB5;
       position: relative;
       float: left;
@@ -7232,13 +7234,13 @@ button {
 h1, .h1 {
   font-size: 30px;
   line-height: 1.3;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal; }
 
 h2, .h2 {
   font-size: 1.5625rem;
   line-height: 1.3;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal;
   text-align: left;
   margin-top: 1rem;
@@ -7247,34 +7249,34 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.3;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1.25rem; }
 
 h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.3;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.25rem; }
 
 h5, .h5 {
   font-size: 1.125rem;
   line-height: 1.2;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal;
-  margin-top: 0.5rem;
-  margin-bottom: 0.625rem; }
+  margin-top: 1rem;
+  margin-bottom: 0.75rem; }
 
 h6, .h6 {
   font-size: 1rem;
   line-height: 1.2;
-  font-family: "OpenSans-SemiBold";
+  font-family: "OpenSansCondensed-Bold";
   font-weight: normal;
   margin-top: 0.5rem;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.5rem; }
 
 h2.inner-title,
 h2.inner-title--no-caps {
@@ -8248,10 +8250,10 @@ i.fa {
       .main-menu ul.droplist-content > li > a {
         display: block;
         color: #444;
-        padding: 0.6rem 1.5rem 0.6rem 0.75rem;
+        padding: 0.8rem 1.75rem 0.65rem 1rem;
         font-family: "MyriadPro-Regular";
         text-transform: none;
-        font-size: 0.9375rem;
+        font-size: 1rem;
         line-height: 1.1;
         -webkit-transition: color 0.25s ease-out;
         -o-transition: color 0.25s ease-out;
@@ -8693,8 +8695,8 @@ i.fa {
               transform: translateY(-45%); }
   .event-item .event-content h3 {
     margin: 0.9375rem 0;
-    font-size: 1.1875rem;
-    line-height: 1.2; }
+    font-size: 1.125rem;
+    font-family: "OpenSans-Regular"; }
     .event-item .event-content h3 a {
       color: #222;
       border-color: transparent;
@@ -8707,7 +8709,7 @@ i.fa {
         text-decoration: none; }
   .event-item .event-content p {
     margin: 0;
-    font-size: 1rem; }
+    font-size: 0.9375rem; }
 
 /* SECTION RECTOR */
 .rector-sect .wrap-rector-img {
@@ -9042,6 +9044,7 @@ i.fa {
       display: block;
       margin: 1rem 0; }
       .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title h3 {
+        font-family: "OpenSans-SemiBold";
         font-size: 1.2rem;
         line-height: 1.2;
         border-bottom: 1px solid transparent;
@@ -9459,6 +9462,7 @@ ul.corpuses-list {
         position: relative;
         top: -1px; }
     .photo-gallery .phogal-item-content-title h3 {
+      font-family: "OpenSans-Semibold";
       font-size: 1.1rem;
       line-height: 1.2; }
   .photo-gallery .phogal-item-link {
@@ -9542,8 +9546,8 @@ ul.corpuses-list {
   margin-top: 1rem; }
 
 .photo-album-list .row {
-  margin-left: -10px;
-  margin-right: -10px; }
+  margin-left: -5px;
+  margin-right: -5px; }
 
 .photo-album-list-item {
   padding: 5px;
@@ -9613,6 +9617,8 @@ ul.corpuses-list {
   .gorisont-paper .gorisont-item-title {
     display: inline-block;
     margin: 1rem 0 2rem 0; }
+    .gorisont-paper .gorisont-item-title-name, .gorisont-paper .gorisont-item-title-date {
+      display: block; }
 
 /* End Gorisont paper */
 /* Patents */
@@ -10177,6 +10183,8 @@ ul.corpuses-list {
         margin-bottom: 15px; }
       #wrapwrap .navaslider .main-slider.owl-carousel .wrap-main-slide .slide-content-inner-btn {
         font-size: 15px; }
+  #wrapwrap .news-sect .wrap-first-news {
+    height: 280px; }
   #wrapwrap .infographics-sect .wrap-infographics-content img {
     width: 135px;
     height: 135px; }
@@ -10200,6 +10208,8 @@ ul.corpuses-list {
     font-size: 50px; }
   #wrapwrap .personal-info__left, #wrapwrap .personal-info__right {
     display: block; }
+  #wrapwrap .personal-info__left {
+    text-align: center; }
   #wrapwrap .personal-info__right {
     width: 100%; } }
 

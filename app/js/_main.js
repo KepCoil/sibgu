@@ -55,10 +55,10 @@ $(function() {
 
 	/* Выпадающие меню */
 	$(".ul-inner-menu >li.droplist").hover(function() {
-		$(this).children("ul").stop(true, true).delay(250).slideToggle(250);
+		$(this).children("ul").stop(true, true).slideToggle(250);
 		$(this).toggleClass("droplist-open");
 	}, function() {
-		$(this).children("ul").stop(true, true).slideUp(250);
+		$(this).children("ul").stop(true, true).fadeOut(100);
 		$(this).removeClass("droplist-open");
 	});
 

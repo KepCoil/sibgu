@@ -405,6 +405,11 @@ function init() {
 			.appendTo(menu)
 			.find('a')
 			.bind('click', function () {
+				if (!placemark.balloon.isOpen()) {
+	         	placemark.balloon.open();
+	         } else {
+	        		placemark.balloon.close();
+	         }
 				return false;
 		});
 

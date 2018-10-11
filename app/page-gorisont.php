@@ -17,11 +17,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207_2.png" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207_2.png">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -31,11 +32,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.21 декабря.21 декабря.21 декабря.21 декабря.21 декабря.21 декабря.21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря21 декабря21 декабря21 декабря21 декабря21 декабря21 декабря21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -45,11 +47,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_197.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_197.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -59,11 +62,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_203.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_203.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -73,11 +77,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -87,11 +92,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -101,11 +107,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -115,11 +122,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -136,11 +144,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207_2.png" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207_2.png">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -150,11 +159,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -164,11 +174,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_197.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_197.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -178,11 +189,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_203.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_203.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -192,11 +204,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -206,11 +219,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -220,11 +234,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_207.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_207.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
@@ -234,11 +249,12 @@
 							<div class="gorisont-item">
 								<a href="#">
 									<span class="gorisont-item-img">
-										<img src="img/gorisont/gorisont_196.jpg" alt="Что-нибудь надо сюда вывести">
+										<img src="img/gorisont/gorisont_196.jpg">
 									</span>
 									
 									<span class="gorisont-item-title">
-										<span>"Горизонт" №8 (213)</span>,<span>21 декабря.</span>
+										<span class="gorisont-item-title-name">"Горизонт" №8 (213)</span>
+										<span class="gorisont-item-title-date">21 декабря</span>
 									</span>
 								</a>
 							</div>
