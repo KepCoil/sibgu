@@ -308,7 +308,7 @@ $(function() {
 		
 		if (windowWidth >= 992) {
 			$('.page-sidebars__sidebar').sticky({
-				topSpacing: 20,
+				topSpacing: 30,
 				bottomSpacing: bottomStickySidebarOffset
 			});
 		}
@@ -317,7 +317,7 @@ $(function() {
 
 	stickyBlocks();
 
-	
+
 
 	/* Функция уравнивания высоты различных элементов через плагин "matchHeigh" */
 	function equalHeightElements() {

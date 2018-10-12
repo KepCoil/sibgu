@@ -7136,7 +7136,7 @@ body {
 
 /* odoo content tag wrap */
 #wrap {
-  padding: 2.5rem 0 3.125rem 0; }
+  padding: 2.2rem 0 3rem 0; }
 
 .wrap-bg-grey {
   background-color: #f7f7f7; }
@@ -7145,12 +7145,12 @@ ul {
   list-style: disc;
   margin-bottom: 1.5rem; }
 
-.ul-accent {
+.ul-accent, .page-sidebars__content ul {
   list-style-type: none;
   margin: 0.625rem 0 1.5rem 0; }
-  .ul-accent li {
+  .ul-accent li, .page-sidebars__content ul li {
     margin-bottom: 0.5rem; }
-    .ul-accent li::before {
+    .ul-accent li::before, .page-sidebars__content ul li::before {
       content: '';
       display: inline-block;
       width: 7px;
@@ -7306,7 +7306,7 @@ i.fa {
     bottom: -1px;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
-    font-size: 1.5625rem; }
+    font-size: 1.625rem; }
   .title-border h2.inner-title--no-caps {
     text-transform: inherit; }
 
@@ -9881,6 +9881,13 @@ ul.corpuses-list {
   #wrapwrap .photo-album-list-item {
     height: 175px; } }
 
+/* for 1366 (laptop) & 1280px width */
+@media only screen and (max-width: 1380px) {
+  #wrapwrap .navaslider {
+    height: 370px; }
+  #wrapwrap .main-slider.owl-carousel {
+    height: 370px; } }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1260px) {
   html {
@@ -9960,6 +9967,13 @@ ul.corpuses-list {
   #wrapwrap .foot-first-level .wrap-foot-contancts .foot-social-list img {
     width: 35px;
     height: 35px; } }
+
+/* for 1024 and 1080px width */
+@media only screen and (max-width: 1100px) {
+  #wrapwrap .navaslider {
+    height: 300px; }
+  #wrapwrap .main-slider.owl-carousel {
+    height: 300px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {

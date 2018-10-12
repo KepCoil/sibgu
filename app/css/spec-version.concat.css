@@ -20,6 +20,10 @@ html[data-letter-spacing="large"] body #wrapwrap {
 html[data-spec-vers="enable"] .main-menu {
   height: auto; }
 
+html[data-spec-vers="enable"] .personal-info__photo-wrap {
+  width: 130px !important;
+  height: 130px !important; }
+
 /* white */
 html[data-theme="white"] body {
   color: #000;
