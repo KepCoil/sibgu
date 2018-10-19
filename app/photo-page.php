@@ -15,7 +15,7 @@
 				<div class="photo-album-info">
 					<div class="photo-album-info-meta">
 						<div class="table-responsive">
-								<table class="table table-bordered table-info-album">
+							<table class="table table-bordered table-info-album">
 								<tbody>
 									<tr>
 										<th>Дата съёмки:</th>
@@ -383,6 +383,78 @@
 
 						</div>
 					</div>
+
+					<div class="photo-album-list clearfix">
+						<div class="row">
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4710" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4710" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4706" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4706" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4708" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4708" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4705" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4705" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4707" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4707" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4709" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4709" class="photo-album-list-item-preview">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="photo-album-list clearfix">
+						<div class="row">
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4702" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4702" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4704" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4704" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4700" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4700" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4699" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4699" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4701" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4701" class="photo-album-list-item-preview">
+								</a>
+							</div>
+							<div class="col-xlg-4 col-md-6 col-sm-8 photo-album-list-item">
+								<a href="http://91.216.164.240:8069/web/image/4703" class="photo-album-list-item-link js-photo-gallery-init js-photo-responsive">
+									<img src="http://91.216.164.240:8069/web/image/4703" class="photo-album-list-item-preview">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					
 					<!-- Конец инициализация галлереи  -->
 
 

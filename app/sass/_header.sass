@@ -336,8 +336,7 @@
 	display: block
 	width: 100%
 	background-color: $blue
-	// box-shadow: 0 0.5rem 1.25rem 0 #28429b
-	// background: linear-gradient($blue 50%, rgba(44, 67, 143, 0.6) 75%, rgba(44, 67, 143, 0.6) 50%, rgba(44, 67, 143, 0.6) 25%)
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15)
 	&--inner
 		height: auto
 		background-color: $blue
@@ -353,18 +352,19 @@
 		li
 			float: left
 			display: inline-block
+			&:first-child
+				a
+					padding-left: 5px
 			&:last-child
 				border-bottom: none
 			a
 				color: #fff
-				padding: 0.8rem 1.75rem
+				padding: 0.8rem 1.25rem
 				display: block
 				font-size: 1.375rem
 				text-transform: uppercase
 				font-family: "OpenSansCondensed-Bold"
 				border-bottom: none
-				&:first-child
-					padding-left: 15px
 				&:hover
 					color: $yellow
 				i

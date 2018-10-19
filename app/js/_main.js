@@ -235,44 +235,44 @@ $(function() {
 
 	/* Функционал галлереи */
 	// Масштабирование картинок img (вместо использования background-image с background-size: cover), для списка фоток альбома
-	$(".js-photo-responsive").each(function() {
-		var 
-			th = $(this).height(),
-			tw = $(this).width(),
-			im = $(this).children('img'),
-			ih = im.height(),
-			iw = im.width();
+	// $(".js-photo-responsive").each(function() {
+	// 	var 
+	// 		th = $(this).height(),
+	// 		tw = $(this).width(),
+	// 		im = $(this).children('img'),
+	// 		ih = im.height(),
+	// 		iw = im.width();
 
 		
-		if ( ih < iw/2 ) {
-			im.removeClass('wh').removeClass('ww');
-		}
-		else if ( ih > iw ) {
-			im.addClass('ww').removeClass('wh').removeClass('www');
-		}
-		else if ( ih < iw ) { 
-			im.addClass('wh').removeClass('ww').removeClass('www');
-		}
+	// 	if ( ih < iw/2 ) {
+	// 		im.removeClass('wh').removeClass('ww');
+	// 	}
+	// 	else if ( ih > iw ) {
+	// 		im.addClass('ww').removeClass('wh').removeClass('www');
+	// 	}
+	// 	else if ( ih < iw ) { 
+	// 		im.addClass('wh').removeClass('ww').removeClass('www');
+	// 	}
 		
-		var 
-			nh = im.height(),
-	      nw = im.width(),
-	      hd = (nh-th) / 2,
-	      wd = (nw-tw) / 2;
+	// 	var 
+	// 		nh = im.height(),
+	//       nw = im.width(),
+	//       hd = (nh-th) / 2,
+	//       wd = (nw-tw) / 2;
 
-		if ( nh < nw ) {
-			im.css({
-				marginLeft: ('-' + wd + 'px'), 
-				marginTop: 0,
-			});
-		}
-		else {
-			im.css({
-				marginTop: 0,
-				marginLeft: 0
-			});
-		}
-	});
+	// 	if ( nh < nw ) {
+	// 		im.css({
+	// 			marginLeft: ('-' + wd + 'px'), 
+	// 			marginTop: 0,
+	// 		});
+	// 	}
+	// 	else {
+	// 		im.css({
+	// 			marginTop: 0,
+	// 			marginLeft: 0
+	// 		});
+	// 	}
+	// });
 
 	// Превью альбома
 	$(".js-phogal-preview-img").switchItems();
