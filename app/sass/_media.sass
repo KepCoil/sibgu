@@ -242,7 +242,7 @@
 			display: inline-block
 
 		.head-content
-			padding: 1.25rem 0
+			padding: 1.25rem 0 0 0
 			.container
 				padding: 0 15px
 			.main-title-wrap
@@ -270,7 +270,7 @@
 					line-height: 1
 					input
 						width: 100%
-						padding: 4px 40px 2px 8px
+						padding: 0 40px 0 15px
 		.navaslider
 			height: 300px
 			margin-top: 0
@@ -524,6 +524,34 @@
 				text-align: center	
 			&__right
 				width: 100%
+		.tabs-container
+			.nav-tabs
+				margin-right: -5px 
+				>li
+					width: 50%
+					white-space: nowrap
+					overflow: hidden
+					>a
+						white-space: nowrap
+						overflow: hidden
+						transition: none !important
+						&::after
+							content: ''
+							position: absolute
+							right: 0 
+							top: 0
+							width: 40px
+							height: 100%
+							white-space: nowrap
+							overflow: hidden
+							background: linear-gradient(to right, rgba(238, 238, 238, 0.2), #eee 100%)
+							// transition: background-color $main-trans
+					&.active, &.focus
+						>a
+							&::after
+								background: linear-gradient(to right, rgba(0, 108, 181, 0.2), $blue 100%)
+
+
 			
 
 @media only screen and (max-width : 375px)

@@ -8,7 +8,7 @@
 	Изменение настроек просходит путем изменение значения data атрибутов
 */
 
-$(function() {
+
 
 	// Ссылка ВКЛ./ВЫКЛ. версии для слабовидящих
 	$("#js-button-spec-version").click(function() { 
@@ -20,13 +20,12 @@ $(function() {
 			CecutientOn();
 			mediumFontSize();
 			whiteTheme();
-			imageOn(); 
+			imageOn();
+			stickyBlocks();
 			$(this).addClass("active");
 			$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 			$('#js-spec-version').addClass('special-version--active');
-			// window.location.reload();
 		}
-
 
 		return false;
 	});
@@ -80,6 +79,9 @@ $(function() {
 		$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 		$('#js-spec-version').addClass('special-version--active');
 
+		stickyBlocks();
+
+
 	}
 
 
@@ -98,7 +100,7 @@ $(function() {
 	// Кнопка показа панели настроек версии для слабовидящих
 	$('#js-button-toggle').click(function(e) {
 		e.preventDefault();
-		
+
 		if ( $('#js-spec-version').hasClass("special-version--active") ) {
 			$('#js-spec-version').removeClass('special-version--active');
 		} 
@@ -130,6 +132,12 @@ $(function() {
 		else {
 			imageOff();
 		}
+	});
+
+	// Переинициализация плагинов
+	$(".special-version__button").click(function() { 
+		equalHeightElements();
+		stickyBlocks();
 	});
 	/* Конец обработчики клика */
 

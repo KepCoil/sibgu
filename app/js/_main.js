@@ -233,7 +233,7 @@ $(function() {
 	});
 
 
-	/* Функционал галлереи */
+	/* РЕФАКТОРИНГ. */
 	// Масштабирование картинок img (вместо использования background-image с background-size: cover), для списка фоток альбома
 	// $(".js-photo-responsive").each(function() {
 	// 	var 
@@ -283,20 +283,6 @@ $(function() {
 	/* Конец функционал галлереи */
 
 
-	/* Функция для создания "липких" блоков с использованием stickySidebar */
-	// function stickyBlocks() {
-	// 	var 
-	// 		windowWidth  	 = $(window).width(),
-	// 		windowScrollTop = $(window).scrollTop();
-		
-	// 	if ( (windowWidth >= 992) && (windowScrollTop >= 300) ) {
-	// 		$('#js-sticky-sidebar').stickySidebar({
-	// 			topSpacing: 20,
-	// 			bottomSpacing: 40
-	// 		});
-	// 	}
-				
-	// }
 
 	/* Функция для создания "липких" блоков с использованием sticky */
 	function stickyBlocks() {
@@ -311,6 +297,8 @@ $(function() {
 				topSpacing: 30,
 				bottomSpacing: bottomStickySidebarOffset
 			});
+		} else {
+			$('.page-sidebars__sidebar').unstick();
 		}
 			
 	}
@@ -331,7 +319,7 @@ $(function() {
 		
 		var windowWidth  = $(window).width();
 
-		// "matchHeigh" при мобильной версии различной ширине экрана
+		// "matchHeight" при разной ширине экрана
 		if ( (windowWidth <= 991) && (windowWidth >= 768) ) {
 			$(".main-footer .foot-first-level .wrap-foot-level .col-md-6").matchHeight();
 		}
@@ -380,7 +368,7 @@ $(function() {
 
 
 
-	/* Фиксация меню на внутр. страницах при скролле */
+	/* РЕФАКТОРИНГ. Фиксация меню на внутр. страницах при скролле */
 	// var
 	// marginTopMainContent = ( $(".inner-menu").outerHeight() + parseInt($("#wrap").css("marginTop")) ),
 	// defaultMarginTop     = parseInt($("#wrap").css("marginTop"));
@@ -434,7 +422,7 @@ $(function() {
 	});
 	/* */
 
-	// Автоматическая нумерация ячеек таблиц
+	// Автоматическая нумерация ячеек таблиц (надо хорошо протестировать)
 	$('.table-auto-num').each(function() {
 		$(this).children('tbody').children('tr').each(function(i) {
 			var numbRow = i + 1;
@@ -467,8 +455,8 @@ $(function() {
 	// Функции при скролее окна
 	$(window).scroll(function() {
 		activateButtonScrollTop();
+		if ( $('#js-spec-version').hasClass("special-version--active") ) {
+			$('#js-spec-version').removeClass('special-version--active');
+		}
+		
 	});
-
-
-
-});
