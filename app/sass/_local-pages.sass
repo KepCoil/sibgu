@@ -1,0 +1,35 @@
+// страница опорный университет
+.slider-re-uni
+  position: relative
+  .owl-nav
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    .owl-prev, .owl-next
+      position: absolute
+      color: rgba(0, 0, 0, 0.35)
+      transition: color $main-trans
+    .owl-prev:hover, .owl-next:hover
+      color: rgba(0, 0, 0, 0.75)
+    .owl-prev
+      left: 1rem
+    .owl-next
+      right: 1rem
+    .fa
+      font-size: 3rem
+  .owl-dots
+    position: absolute
+    width: 100%
+    text-align: center
+    bottom: 1rem
+    .owl-dot
+      width: 0.75rem
+      height: 0.75rem
+      background-color: #fff
+      display: inline-block
+      border-radius: 50%
+      border: 1px solid $blue
+      margin: 0 0.25rem
+      &.active
+        background-color: $blue

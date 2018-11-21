@@ -39,6 +39,15 @@
 					line-height: 130px
 					h1.main-title
 						font-size: 1.875rem
+		.main-menu 
+			ul.ul-inner-menu 
+				>li 
+					&:first-child
+						>a
+							padding-left: 15px
+					>a
+						font-size: 1rem
+						padding: 0 0.75rem
 		.navaslider
 			height: 400px
 		.main-slider.owl-carousel
@@ -240,9 +249,14 @@
 			display: none
 		.mobile-menu-button-wrap
 			display: inline-block
+		.breadcrumbs
+			white-space: nowrap
+			overflow-x: auto
+			padding-bottom: 0.5rem
+			margin-bottom: 1rem
 
 		.head-content
-			padding: 1.25rem 0 0 0
+			padding: 1.25rem 0
 			.container
 				padding: 0 15px
 			.main-title-wrap
@@ -334,7 +348,6 @@
 			&__sidebar,
 			&__content
 				background-color: #fff
-				border-radius: 0
 			&__content
 				padding: 0
 				box-shadow: none
@@ -418,6 +431,15 @@
 		&__icon
 			top: 30%
 			transform: none
+	.modal-honor-pesonal
+		.modal-body
+			padding: 1.5rem
+		&__header
+			flex-direction: column
+			text-align: center
+			&-left
+				margin-right: 0
+				margin-bottom: 1	rem
 	
 @media only screen and (max-width : 768px) and (min-width : 520px)
 	#wrapwrap 
@@ -550,6 +572,10 @@
 						>a
 							&::after
 								background: linear-gradient(to right, rgba(0, 108, 181, 0.2), $blue 100%)
+		.wrap-events-list 
+			.wrap-events-date-filter
+				border-bottom: none
+				margin-bottom: 0
 
 
 			

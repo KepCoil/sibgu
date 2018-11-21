@@ -2,8 +2,8 @@
 
 
 /* blue */
-$bgc_blue: #9dd1ff
-$accent_blue: #063462
+$bgc-blue: #9dd1ff
+$accent-blue: #063462
 
 $blue: #76baff
 $light-blue: #7bb5f0
@@ -12,13 +12,13 @@ $dark-blue: #4f8ecf
 
 html[data-theme="blue"]
 	body
-		color: $accent_blue
-		background-color: $bgc_blue
+		color: $accent-blue
+		background-color: $bgc-blue
 	h2.inner-title
-		color: $accent_blue
+		color: $accent-blue
 	a
-		color: $accent_blue
-		border-color: $accent_blue
+		color: $accent-blue
+		border-color: $accent-blue
 		&:hover
 			border-color: transparent
 	#wrapwrap
@@ -32,86 +32,90 @@ html[data-theme="blue"]
 		.foot-first-level,
 		.foot-second-level,
 		.wrap-bg-grey
-			background-color: $bgc_blue
+			background-color: $bgc-blue
 		.page-sidebars
 			&__sidebar,
 			&__content
-				background-color: $bgc_blue
-				box-shadow: 0 1px 0 0 $accent_blue, 0 0 0 1px $accent_blue
+				background-color: $bgc-blue
+				box-shadow: 0 1px 0 0 $accent-blue, 0 0 0 1px $accent-blue
 		.sidebar
 			&-navigation
 				&__item
-					border-color: $accent_blue
+					border-color: $accent-blue
 				&__link
 					border-left: 3px solid transparent
 					&:hover, &:focus, &:active
 						border-bottom: none
 						background-color: $light-blue
-						color: $accent_blue
+						color: $accent-blue
 					&--active
-						border-left-color: $accent_blue
+						border-left-color: $accent-blue
 						background-color: $light-blue
+		.ul-accent 
+			li
+				&::before
+					background-color: $accent-blue	
 		.foot-first-level,
 		.top-line
-			box-shadow: 0 1px 0 $accent_blue
+			box-shadow: 0 1px 0 $accent-blue
 		.foot-first-level,
 		.first-foot-line
-			border-bottom: 1px solid $accent_blue
+			border-bottom: 1px solid $accent-blue
 		.second-foot-line 
 			.col-md-6:nth-child(2)
-				border-right-color: $accent_blue
+				border-right-color: $accent-blue
 		.main-menu
-			border-bottom: 1px solid $accent_blue
+			border-bottom: 1px solid $accent-blue
 		.dekstop-target-menu
 			height: auto
-			background: $bgc_blue
+			background: $bgc-blue
 			box-shadow: none
-			border-top: 1px solid $accent_blue
-			border-bottom: 1px solid $accent_blue
+			border-top: 1px solid $accent-blue
+			border-bottom: 1px solid $accent-blue
 		.main-footer
-			border-top: 1px solid $accent_blue
+			border-top: 1px solid $accent-blue
 		.breadcrumbs
 			&__line
 				&-element
 					&::after
-						color: $accent_blue
+						color: $accent-blue
 			&__link
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 				&--home
 					&:hover, &:focus, &:active
 						.breadcrumbs__link--home-icon,
 						.breadcrumbs__link--home-text
-							color: $accent_blue
+							color: $accent-blue
 						.breadcrumbs__link--home-text
-							border-color: $accent_blue
+							border-color: $accent-blue
 					&-icon
-						color: $accent_blue
+						color: $accent-blue
 					&-text
-						border-bottom: 1px solid $accent_blue
+						border-bottom: 1px solid $accent-blue
 						&:hover, &:focus, &:active
-							border-color: $accent_blue
+							border-color: $accent-blue
 				&--disabled
-					color: $accent_blue
+					color: $accent-blue
 					&:hover, &:focus, &:active
-						color: $accent_blue
+						color: $accent-blue
 		h2.inner-title, 
 		h2.inner-title--no-caps
-			color: $accent_blue
+			color: $accent-blue
 		.title-border 
 			border-color: $light-blue
 			h2.inner-title
-				border-color: $accent_blue
-				color: $accent_blue
+				border-color: $accent-blue
+				color: $accent-blue
 		.top-line
 			height: auto
 			.quick-links
 				a
-					color: $accent_blue
-					border-color: $accent_blue
+					color: $accent-blue
+					border-color: $accent-blue
 			.spec-vers-wrap 
 				.btn-active-spec-ver
-					color: $accent_blue
+					color: $accent-blue
 			.main-logo 
 				img
 					// -webkit-filter: grayscale(100%)
@@ -122,17 +126,17 @@ html[data-theme="blue"]
 			.res-links 
 				.droplist-main
 					&__btn
-						color: $accent_blue
+						color: $accent-blue
 						&--active
 							background-color: $blue
 					&__sub-sub
 						&-title
 							background-color: $blue
-							color: $accent_blue
+							color: $accent-blue
 						&-content 
 							a
 								background-color: $light_blue
-								color: $accent_blue
+								color: $accent-blue
 				.dropdown.open
 					.res-links-btn, .dropdown-menu, li
 						background-color: $blue
@@ -146,58 +150,58 @@ html[data-theme="blue"]
 		.other-func 
 			.other-func-item 
 				a
-					color: $accent_blue
-					border-color: $accent_blue
+					color: $accent-blue
+					border-color: $accent-blue
 		.navaslider
 			margin-top: 0
 		.dropdown-menu
 			li
-				border-color: $accent_blue
+				border-color: $accent-blue
 				a
-					color: $accent_blue
+					color: $accent-blue
 		.head-content 
 			.main-title
-				color: $accent_blue
+				color: $accent-blue
 				text-shadow: none
 		.wrap-target-menu 
 			li
-				border-color: $accent_blue
+				border-color: $accent-blue
 				a
-					color: $accent_blue
+					color: $accent-blue
 		.wrap-inner-audit-menu
-			border-bottom: 1px solid $accent_blue
+			border-bottom: 1px solid $accent-blue
 		.main-sect 
-			border-bottom: 1px solid $accent_blue
+			border-bottom: 1px solid $accent-blue
 			&:last-child
 				border-bottom: none
 			h2
-				color: $accent_blue
+				color: $accent-blue
 		.grey-sect
-			background-color: $bgc_blue	
+			background-color: $bgc-blue	
 		.blue-sect
-			color: $accent_blue
+			color: $accent-blue
 		.news-sect
 			.wrap-target-other-news 
 				.target-other-news
 					border-color: $blue
 					background-color: $light-blue
 					span
-						color: $accent_blue
+						color: $accent-blue
 		.wrap-cards-news 
 			.wrap-card-item-news
 				background-color: $blue
 			.wrap-news-content
-				color: $accent_blue
+				color: $accent-blue
 				time
-					color: $accent_blue
+					color: $accent-blue
 				.wrap-news-title 
 					h3
 						border: none
-						color: $accent_blue
+						color: $accent-blue
 		.common-news 
 			.date-public
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 		
 		.rector-sect 
 			.wrap-rector-img
@@ -223,35 +227,35 @@ html[data-theme="blue"]
 		.main-menu 
 			.wrap-main-menu 
 				.wrap-inner-common-menu
-					border-color: $accent_blue
+					border-color: $accent-blue
 				ul
 					>li
 						&.droplist-open
 							a
 								background-color: $blue
 						a
-							color: $accent_blue
+							color: $accent-blue
 							&:hover
 								background-color: $blue
 						.droplist-content
 							background-color: $blue
 							li
-								border-color: $accent_blue
+								border-color: $accent-blue
 		.wrap-target-menu 
 			li 
 				a.head-content
-					color: $accent_blue
+					color: $accent-blue
 		.other-link
-			color: $accent_blue
-			border-color: $accent_blue
+			color: $accent-blue
+			border-color: $accent-blue
 			a
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 		.main-footer
-			color: $accent_blue
+			color: $accent-blue
 			a
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 			.wrap-foot-contancts 
 				.foot-social-list 
 					img
@@ -263,7 +267,7 @@ html[data-theme="blue"]
 				.foot-feedback 
 					.button-light-blue
 						background-color: $blue
-						color: $accent_blue
+						color: $accent-blue
 						border-color: darken($blue, 10%)
 
 		.tabs-container 
@@ -274,60 +278,60 @@ html[data-theme="blue"]
 							background-color: $light-blue
 					>a
 						background-color: $dark-blue
-						color: $accent_blue
+						color: $accent-blue
 						&:hover, &:focus
 							background-color: $blue
 			
 		.wrap-dis-page
 			.dis-meta-info
-				border-color: $accent_blue
+				border-color: $accent-blue
 			.dis-docs 
 				ul
 					li
 						a
-							color: $accent_blue
-							border-color: $accent_blue
+							color: $accent-blue
+							border-color: $accent-blue
 
 		.wrap-events-list 
 			.wrap-events-date-filter
-				border-color: $accent_blue
+				border-color: $accent-blue
 				ul 
 					li
 						&.active
 							a
-								color: $accent_blue
+								color: $accent-blue
 								background-color: $blue
 						a
-							color: $accent_blue
+							color: $accent-blue
 							&:hover
-								color: $accent_blue
+								color: $accent-blue
 								background-color: $light-blue
 			.wrap-events-category 
 				li
-					border-color: $accent_blue
+					border-color: $accent-blue
 					&.active
 						a
 							background-color: $dark-blue
 					a
-						color: $accent_blue
+						color: $accent-blue
 						background-color: $blue
 						&:hover
 							background-color: $light-blue
 			
 		.wrap-event-content 
 			.event-category
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 			.table-events tbody .event-title a
-				color: $accent_blue
-				border-color: $accent_blue
+				color: $accent-blue
+				border-color: $accent-blue
 		.table > thead > tr > th, 
 		.table > tbody > tr > th, 
 		.table > tfoot > tr > th, 
 		.table > thead > tr > td, 
 		.table > tbody > tr > td, 
 		.table > tfoot > tr > td
-			border-color: $accent_blue
+			border-color: $accent-blue
 
 		.table-striped > tbody > tr:nth-of-type(2n+1)
 			background-color: $dark-blue
@@ -338,42 +342,42 @@ html[data-theme="blue"]
 			#nav_panel 
 				li 
 					button
-						color: $accent_blue
+						color: $accent-blue
 						background-color: $dark-blue
-						border-color: $accent_blue
+						border-color: $accent-blue
 						&.active, &:hover
 							background-color: $light-blue
-							color: $accent_blue
+							color: $accent-blue
 		.wrap-standart-item
 			a
 				background-color: $blue
 			.wrap-icon i
-				color: $accent_blue
+				color: $accent-blue
 			h3
-				color: $accent_blue
+				color: $accent-blue
 		.pa-sect 
 			.wrap-pa-item 
 				strong
-					color: $accent_blue
+					color: $accent-blue
 		.infographics-sect 
 			.wrap-infographics-content
-				color: $accent_blue
+				color: $accent-blue
 
 		.event-item 
 			.wrap-date-event
-				border-color: $accent_blue
+				border-color: $accent-blue
 				.event-month
-					color: $accent_blue
+					color: $accent-blue
 			.event-content h3 a
-				color: $accent_blue
+				color: $accent-blue
 				&:hover
-					border-color: $accent_blue
+					border-color: $accent-blue
 			.calendar-icon
 				strong
-					color: $accent_blue
+					color: $accent-blue
 				span
 					background-color: $dark-blue
-					box-shadow: 0 2px 0 $accent_blue
+					box-shadow: 0 2px 0 $accent-blue
 				span::before,
 				span::after
 					border-color: $blue
@@ -382,14 +386,14 @@ html[data-theme="blue"]
 		.tabs-container .nav-tabs > li.active > a, 
 		.tabs-container .nav-tabs > li.active > a:hover, 
 		.tabs-container .nav-tabs > li.active > a:focus
-			color: $accent_blue
+			color: $accent-blue
 
 		.main-accordion 
 			.accordion-item 
 				.panel-title
-					color: $accent_blue
+					color: $accent-blue
 					a, .fa
-						color: $accent_blue
+						color: $accent-blue
 						border-color: $light-blue
 				.panel-body
 					background-color: $light-blue

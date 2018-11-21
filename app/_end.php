@@ -39,6 +39,8 @@
 	<script src="libs/bootstrap-menu-dropdown/js/bootstrap.js"></script>
 	<link rel="stylesheet" href="libs/bootstrap-table/bootstrap-table.css">
 	<script src="libs/bootstrap-tabs/bootstrap.js"></script>
+	<link rel="stylesheet" href="libs/bootstrap-modal/bootstrap.css">
+	<script src="libs/bootstrap-modal/bootstrap.js"></script>
 <!--  -->
 
 <script defer="defer" src="js/jquery-libs.js"></script>

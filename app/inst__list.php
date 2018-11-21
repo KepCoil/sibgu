@@ -7,10 +7,11 @@
 	<div id="wrap">
 		<div class="container">
 			<h2 class="inner-title">Учебные подразделения</h2>
-			<div class="row">
+			
 
-				<div class="page-list-institute">
-
+			<div class="page-list-institute">
+				<div class="row">
+					
 					<div class="col-lg-6 col-md-8 col-sm-12">
 						<div class="wrap-inst-item">
 							<div class="inst-item-img" style="background-image: url(img/news/news1/news_1.jpg);"></div>

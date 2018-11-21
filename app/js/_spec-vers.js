@@ -22,6 +22,7 @@
 			whiteTheme();
 			imageOn();
 			stickyBlocks();
+			equalHeightElements();
 			$(this).addClass("active");
 			$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 			$('#js-spec-version').addClass('special-version--active');
@@ -79,9 +80,8 @@
 		$("#js-button-spec-version .fa").removeClass('fa-eye').addClass('fa-eye-slash');
 		$('#js-spec-version').addClass('special-version--active');
 
+		equalHeightElements();
 		stickyBlocks();
-
-
 	}
 
 

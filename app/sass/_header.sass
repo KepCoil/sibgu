@@ -126,40 +126,46 @@
 				color: $yellow
 			.fa
 				font-size: 2rem
-	.flag-links
-		display: none
-		img
-			width: 40px
-			height: 30px
-			visibility: visible !important
-		.btn-ru, .dropdown-flags, a, li
-			padding: 0
-			border: 0
-			margin: 0
-		.btn-ru
-			padding: 5px 3px
-			border-radius: 0
-			background-color: transparent
-		.dropdown-flags
-			top: auto
-			min-width: auto
-			li
+
+#wrapwrap	
+	.top-line
+		.flag-links
+			display: none
+			img
+				width: 40px
+				height: 30px
+				visibility: visible !important
+			.btn-ru, .dropdown-flags, a, li
+				padding: 0
+				border: 0
+				margin: 0
+			.btn-ru
 				padding: 5px 3px
-				a
-					&:hover,
-					&:focus,
-					&:active
-						transform: none
-	.flag-links.open
-		.btn-ru
-			background-color: #f7f7f7
-		img
-			box-shadow: 0 0 3px rgba(0,0,0,.6)
+				border-radius: 0
+				background-color: transparent
+			.dropdown-flags
+				top: auto
+				min-width: auto
+				box-shadow: 0px 0px 3px rgba(0,0,0,.6)
+				li
+					padding: 0
+					a
+						padding: 5px 3px
+						&:hover,
+						&:focus,
+						&:active
+							transform: none
+		.flag-links.open
+			.btn-ru
+				background-color: #f7f7f7
+			img
+				box-shadow: 0 0 3px rgba(0,0,0,.6)
 
 
 .main-menu
 	background-color: $light-bgc
 	height: 54px
+	overflow: hidden
 	.wrap-main-menu
 		float: left
 	ul
@@ -170,6 +176,11 @@
 		>li
 			float: left
 			display: inline-block
+			overflow: hidden
+			height: 54px
+			&:first-child
+				>a
+					padding-left: 15px
 			>a
 				display: block
 				font-family: "MyriadPro-Regular"
@@ -177,14 +188,20 @@
 				border: none
 				padding: 0 0.9375rem
 				transition: background-color $main-trans
-				line-height: 55px
-				font-size: 1rem
+				font-size: 1.0625rem
+				line-height: 54px
 				&:hover
 					color: $accent-links
 					background-color: $grey-bgc
+				>span, >i 	
+					position: relative
+				>span,
+					top: 2px					
 				>i
-					font-size: 12px
-					margin-left: 7px
+					font-size: 0.75rem
+					margin-left: 0.4375rem
+					top: 1px	
+				
 			&.droplist-open
 				background-color: $grey-bgc
 				>a

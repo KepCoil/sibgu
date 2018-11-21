@@ -116,7 +116,6 @@ $(function() {
 		autoplay: true,
 		autoplayTimeout: 7000,
 		nav: true,
-		// navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 	});
 
 	
@@ -167,6 +166,15 @@ $(function() {
 		nav: true,
 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 	});
+
+	$('#js-re-uni').owlCarousel({
+		loop: false,
+		items: 1,
+		autoplay: false,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+	});
+
 	/**/
 
 
@@ -183,12 +191,13 @@ $(function() {
 
 
 	/* Определение расширение файлов для подстановки иконки в блоке основного контента страницы */
-	$("#wrap a").each(function() {
+	$("#wrap a[data-name]").each(function() {
 		var 
 			th = $(this),
 			filesExt = ["pdf", "doc", "docx", "rtf", "odt", "xlsx", "xlsm", "ods", "pptx", "odp"],
-			getUrl = th.attr("href").toLowerCase(),
+			getUrl = th.attr("data-name").toLowerCase(),
 			checkExt = getUrl.split(".").pop();
+
 
 		// Проверяем, если ли нужное расширения файла
 		if ( !(filesExt.indexOf(checkExt) != -1) ) {
@@ -197,7 +206,7 @@ $(function() {
 
 		// Добавляем нужные классы для создания иконки
 		else {
-			th.addClass("doc-file");
+			// th.addClass("doc-file");
 
 			switch (checkExt) {
 				case "pdf":
@@ -315,6 +324,7 @@ $(function() {
 		$(".dis-docs").matchHeight();
 		$(".phogal-item .phogal-item-content-title").matchHeight();
 		$(".gorisont-paper .gorisont-item").matchHeight();
+		$(".honor-persons .honor-persons__item").matchHeight();
 		// $(".infographics-sect .wrap-infographics-content").height('auto').equalHeights();$(".pa-sect .wrap-pa-item").height('auto').equalHeights();$(".foot-first-level .wrap-foot-level .col-md-6 .wrap-foot-contacts").height('auto').equalHeights();$(".dis-docs").height('auto').equalHeights();$(".phogal-item .phogal-item-content-title").height('auto').equalHeights();$(".row-year-gorisont .gorisont-item-img").height('auto').equalHeights();
 		
 		var windowWidth  = $(window).width();

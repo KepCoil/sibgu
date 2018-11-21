@@ -107,7 +107,7 @@
 
 				<ul id="js-main-common-menu" class="ul-inner-menu clearfix">
 					<li class="droplist">
-						<a href="#">Университет<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="#"><span>Университет</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 						<ul class="droplist-content">
 							<li><a href="#">Миссия</a></li>
 							<li><a href="#">История</a></li>
@@ -122,7 +122,7 @@
 						</ul>
 					</li>
 					<li class="droplist">
-						<a href="#">Образование<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="#"><span>Образование</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 						<ul class="droplist-content">
 							<li><a href="#">Миссия</a></li>
 							<li><a href="#">История</a></li>
@@ -137,7 +137,7 @@
 						</ul>
 					</li>
 					<li class="droplist">
-						<a href="#">Наука и инновации<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="#"><span>Наука и инновации</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 						<ul class="droplist-content">
 							<li><a href="#">Миссия</a></li>
 							<li><a href="#">История</a></li>
@@ -151,10 +151,10 @@
 							<li><a href="#">Музей</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Международное сотрудничество</a></li>
-					<li><a href="#">Социальная сфера</a></li>
+					<li><a href="#"><span>Международное сотрудничество</span></a></li>
+					<li><a href="#"><span>Социальная сфера</span></a></li>
 					<li class="droplist">
-						<a href="#">Пресс-служба<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						<a href="#"><span>Пресс-служба</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
 						<ul class="droplist-content">
 							<li><a href="#">Миссия</a></li>
 							<li><a href="#">История</a></li>

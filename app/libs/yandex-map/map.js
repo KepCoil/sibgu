@@ -317,7 +317,7 @@ var groups = [
 		{
 			center: [56.00694506872687,92.96912799999993],
 			name: 'Общежитие №3',
-			address: 'ул. Ленина, 73',
+			address: 'ул. Волгоградская, 35',
 			caption: 'Общежитие №3'
 		}]
 	},
@@ -376,12 +376,15 @@ ymaps.ready(init);
 function init() {
 
 	// Создаем карты
-	var mapCorpuses = new ymaps.Map('js-corpuses-map', {
-		center: [56.01839, 92.86717],
-		zoom: 13,
-		controls: ["zoomControl", "fullscreenControl"],
-	});
+	var 
+		mapCorpuses = new ymaps.Map('js-corpuses-map', {
+			center: [56.01839, 92.86717],
+			zoom: 13,
+			controls: ["zoomControl", "fullscreenControl"],
+		});
+
 	mapCorpuses.behaviors.enable('scrollZoom');
+
 
 	var menu = $('<ul class="corpuses-list"></ul>');
       
@@ -399,6 +402,7 @@ function init() {
 
 		// Добавляем коллекцию на карту.
 		mapCorpuses.geoObjects.add(collection);
+
 		// Добавляем подменю.
 		menuItem
          .append(submenu)
@@ -442,6 +446,7 @@ function init() {
 				return false;
 			});
 	}
+
 
 	// Добавим меню в нужный блок
 	menu.appendTo($('.map-corpuses'));

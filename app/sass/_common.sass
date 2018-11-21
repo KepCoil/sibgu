@@ -32,7 +32,7 @@
 					transform: scale(1.08)
 		.wrap-news-content
 			display: block
-			padding: 0 1rem
+			padding: 0 15px
 			margin: 1.875rem 0
 			color: $default-color
 			time
@@ -121,6 +121,11 @@
 
 /* COMMON NEWS PAGE */
 .common-news
+	font-size: 1rem
+	.wrap-mega-content
+		ul, ol
+			li
+				margin-bottom: 0.25rem
 	.inner-title
 		text-transform: none
 	.date-public
@@ -130,6 +135,13 @@
 		color: $grey-font
 		border-bottom: 1px solid $dark-line
 		padding-bottom: 0.625rem
+	blockquote
+		margin: 1.25rem 0
+		background-color: $light-grey-font
+		padding: 1.25rem 
+		font-size: 1rem
+		border-left: 0.3125rem solid $green
+	
 
 .news-photos
 	margin-top: 1.5rem
@@ -296,82 +308,99 @@
 						border-color: $accent-links
 /* END DIS PAGE */
 
-/* YA MAPS */
-.wrap-corpuses-map
-	.col-md-6
-		padding-right: 0
-	.col-md-18
-		padding-left: 0
-	.map-corpuses
-		height: 600px
-		overflow-y: scroll
-	.ya-maps
-		height: 600px !important
-		a
-			border: inherit
-
-ul.corpuses-list
-	list-style-type: none !important
-	margin: 0
-	padding: 0
-	background-color: darken($grey-bgc, 2%)
-	>li.corpuses-item
-		margin-bottom: 1rem
-		background-color: #fff
-		padding: 0.625rem 0
-		border-left-width: 0.35rem
-		border-left-style: solid
-		&:first-child
-			border-color: darken(#1e98ff, 10%)
-		&:nth-child(2)
-			border-color: darken(#56db40, 10%)
-		&:nth-child(3)
-			border-color: darken(#ed4543, 10%)
-		&:nth-child(4)
-			border-color: darken(#b3b3b3, 10%)
-		&:nth-child(5)
-			border-color: darken(#ffd21e, 10%)
-		&:nth-child(6)
-			border-color: darken(#ff931e, 10%)
-		&:last-child
-			margin-bottom: 0
-		>a.corpuses-item-title
-			border: none
-			cursor: default
-			font-family: "OpenSans-SemiBold"
-			color: $default-color
-			margin-bottom: 0.75rem
-			margin-left: 1rem
-			display: inline-block
-			font-size: 1rem
-			&:hover, &:focus, &:active
-				color: $default-color
-				border-color: $default-color
-		>ol.corpuses-item-submenu
+/* yandex corpuses-map */
+.ya-corpuses-map
+	.wrap-corpuses-map
+		.col-md-6
+			padding-right: 0
+		.col-md-18
 			padding-left: 0
-			list-style-type: none
-			margin: 0 1rem
-			>li
-				display: block
-				&:last-child
-					>a
-						border-bottom: none
-				>a
-					font-size: 0.875rem
-					line-height: 1.2
+		.map-corpuses
+			height: 600px
+			overflow-y: scroll
+		.ya-maps
+			height: 600px !important
+			a
+				border: inherit
+
+	ul.corpuses-list
+		list-style-type: none !important
+		margin: 0
+		padding: 0
+		background-color: darken($grey-bgc, 2%)
+		>li.corpuses-item
+			margin-bottom: 1rem
+			background-color: #fff
+			padding: 0.625rem 0
+			border-left-width: 0.35rem
+			border-left-style: solid
+			&:first-child
+				border-color: darken(#1e98ff, 10%)
+			&:nth-child(2)
+				border-color: darken(#56db40, 10%)
+			&:nth-child(3)
+				border-color: darken(#ed4543, 10%)
+			&:nth-child(4)
+				border-color: darken(#b3b3b3, 10%)
+			&:nth-child(5)
+				border-color: darken(#ffd21e, 10%)
+			&:nth-child(6)
+				border-color: darken(#ff931e, 10%)
+			&:last-child
+				margin-bottom: 0
+			>a.corpuses-item-title
+				border: none
+				cursor: default
+				font-family: "OpenSansCondensed-Bold"
+				color: $default-color
+				margin-bottom: 0.75rem
+				margin-left: 1rem
+				display: inline-block
+				font-size: 1.125rem
+				&:hover, &:focus, &:active
+					color: $default-color
+					border-color: $default-color
+			>ol.corpuses-item-submenu
+				padding-left: 0
+				list-style-type: none
+				margin: 0 1rem
+				>li
 					display: block
-					margin-bottom: 0.3rem
-					padding: 5px 0
-					border-bottom: 1px solid darken($grey-bgc, 10%)								
-/* END YA MAPS */
+					&:last-child
+						>a
+							border-bottom: none
+					>a
+						font-size: 0.875rem
+						line-height: 1.2
+						display: block
+						margin-bottom: 0.25rem
+						padding: 0.5rem 0
+						border-bottom: 1px solid darken($grey-bgc, 10%)		
+.corpuses-map-feedback-text
+	color: #555
+	margin: 2rem 0 3rem 0
+.table-map-edu-item
+	h4
+		margin: 1.25rem 0
+
+
+
+/* yandex corpuses-map */
 
 
 /* Page institute */
+.page-list-institute
+	.row
+		margin-left: -10px
+		margin-right: -10px
+	.col-sm-12
+		padding-left: 10px
+		padding-right: 10px
 .wrap-inst-item
 	position: relative
 	height: 18rem
 	overflow: hidden
-	margin-bottom: 30px
+	margin-bottom: 20px
 	&:hover
 		.inst-item-content
 			height: 100%
@@ -400,11 +429,13 @@ ul.corpuses-list
 			padding-bottom: 1rem 0
 		&-text
 			font-size: 0.8125rem
+			margin-bottom: 1.25rem
 		.standart-button
 			font-family: "OpenSans-Regular"
-			margin: 1.25rem 0
-			padding: 4px 10px 5px 10px
+			padding: 0.5rem 0.8rem
 			border: 1px solid #fff
+			border-radius: 1rem
+			line-height: 1
 			background-color: transparent
 			&:hover, &:focus, &:active
 				background-color: #fff
@@ -529,6 +560,7 @@ ul.corpuses-list
 					font-family: "OpenSans-Semibold"
 					font-size: 1.1rem
 					line-height: 1.2
+					margin: 1.25rem 0 1.5rem 0
 		&-link
 			display: block
 			color: $default-color
@@ -835,3 +867,82 @@ ul.corpuses-list
 		margin-bottom: 2rem
 
 // project-learn-page__local-list
+
+// honor persons
+.honor-persons
+	&__item
+		padding: 1.5rem 1rem
+		background-color: $purple-bgc
+		box-shadow: 0 2px 0 0 darken($light-bgc, 7%), 0 0 0 1px darken($light-bgc, 7%)
+		border-radius: 3px
+		transition: box-shadow $main-trans
+		margin-bottom: 30px
+		&:hover
+			box-shadow: 0 0 7px darken($light-bgc, 30%)
+		&-wrap-img
+			width: 14rem
+			height: 14rem
+			margin: 0 auto
+			border-radius: 50%
+			overflow: hidden
+			margin-bottom: 1.25rem
+		&-img
+			border-radius: 50%
+		&-content
+			&-name
+				font-size: 1.25rem
+				font-family: 'OpenSansCondensed-Bold'
+				text-align: center
+				margin-bottom: 0.75rem
+			&-text
+				font-size: 0.875rem
+				margin-bottom: 1.25rem
+			&-wrap-btn
+				text-align: center
+			.standart-button
+				padding: 0.35rem 1rem
+
+.modal-open .modal
+	display: flex
+
+.modal-honor-pesonal
+	.modal-body
+		padding: 3rem
+	.modal-dialog
+		margin: auto
+		padding: 15px
+	&__header
+		display: flex
+		align-items: center
+		margin-bottom: 2rem
+		&-left
+			margin-right: 1.5rem
+	&__img-wrap
+			width: 15rem
+			height: 15rem
+			margin: 0 auto
+			border-radius: 50%
+			overflow: hidden
+	&__name
+		font-size: 2rem
+		font-family: 'OpenSansCondensed-Bold'
+		margin-bottom: 0.75rem
+	&__text
+		font-size: 1.125rem
+	&__body
+		font-size: 1rem
+		line-height: 1.5
+		p
+			margin-bottom: 1.5rem
+	&__close-btn
+		position: absolute
+		top: 1rem
+		right: 1rem
+		border: none
+		background-color: transparent
+		transition: transform $main-trans
+		&:hover
+			transform: rotate(90deg)
+		&-icon
+			font-size: 2rem
+// honor persons
