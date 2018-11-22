@@ -886,21 +886,47 @@
 			border-radius: 50%
 			overflow: hidden
 			margin-bottom: 1.25rem
+			position: relative
+			cursor: pointer
 		&-img
 			border-radius: 50%
-		&-content
-			&-name
-				font-size: 1.25rem
-				font-family: 'OpenSansCondensed-Bold'
-				text-align: center
-				margin-bottom: 0.75rem
-			&-text
-				font-size: 0.875rem
-				margin-bottom: 1.25rem
-			&-wrap-btn
-				text-align: center
-			.standart-button
+		.standart-button
 				padding: 0.35rem 1rem
+
+				
+	&__content
+		&-name
+			font-size: 1.25rem
+			font-family: 'OpenSansCondensed-Bold'
+			text-align: center
+			margin-bottom: 1.25rem
+		&-text
+			font-size: 0.875rem
+			&-item
+				margin-bottom: 0.5rem
+				&:last-child
+					margin-bottom: 0
+				&-title
+					font-family: 'OpenSans-Semibold'
+		&-wrap-btn
+			text-align: center
+			
+	&__modal-content
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			right: 0
+			background-image: url("../img/patterns/green-small.svg")
+			background-repeat: no-repeat
+			transform: rotate(270deg)
+			height: 9rem
+			width: 9rem
+			z-index: 1
+			opacity: 0.9
+
+
 
 .modal-open .modal
 	display: flex
@@ -914,21 +940,28 @@
 	&__header
 		display: flex
 		align-items: center
-		margin-bottom: 2rem
+		// margin-bottom: 2rem
 		&-left
 			margin-right: 1.5rem
 	&__img-wrap
-			width: 15rem
-			height: 15rem
+			width: 20rem
+			height: 20rem
 			margin: 0 auto
 			border-radius: 50%
 			overflow: hidden
+
 	&__name
 		font-size: 2rem
 		font-family: 'OpenSansCondensed-Bold'
-		margin-bottom: 0.75rem
+		margin-bottom: 1.5rem
+		line-height: 1.1
+		
 	&__text
 		font-size: 1.125rem
+		&-item
+			margin-bottom: 0.5rem
+			&:last-child
+				margin-bottom: 0
 	&__body
 		font-size: 1rem
 		line-height: 1.5

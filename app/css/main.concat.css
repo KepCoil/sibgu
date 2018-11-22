@@ -7492,16 +7492,17 @@ blockquote {
     padding: 0;
     text-align: center; }
     #div_nav_panel ul#nav_panel li {
-      display: inline-block; }
+      display: inline;
+      float: left; }
       #div_nav_panel ul#nav_panel li .btn {
         display: block;
         width: 2.75rem;
         height: 2.75rem;
         border: 1px solid #aaa;
-        font-family: "OpenSans-Regular";
+        font-family: "OpenSans-Semibold";
         padding: 0;
         font-size: 1.125rem;
-        margin: 3px;
+        margin: 0 0.3125rem;
         -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
         -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
         transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -7511,10 +7512,12 @@ blockquote {
         #div_nav_panel ul#nav_panel li .btn:hover {
           background-color: #f7f7f7;
           color: #e73124; }
-        #div_nav_panel ul#nav_panel li .btn.active {
+        #div_nav_panel ul#nav_panel li .btn.active, #div_nav_panel ul#nav_panel li .btn:active {
           background-color: #006CB5;
           color: #fff;
-          cursor: default; }
+          cursor: default;
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
         #div_nav_panel ul#nav_panel li .btn.disabled, #div_nav_panel ul#nav_panel li .btn[disabled] {
           cursor: default;
           color: #222;
@@ -9883,22 +9886,48 @@ blockquote {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    position: relative;
+    cursor: pointer; }
   .honor-persons__item-img {
     -webkit-border-radius: 50%;
             border-radius: 50%; }
-  .honor-persons__item-content-name {
-    font-size: 1.25rem;
-    font-family: 'OpenSansCondensed-Bold';
-    text-align: center;
-    margin-bottom: 0.75rem; }
-  .honor-persons__item-content-text {
-    font-size: 0.875rem;
-    margin-bottom: 1.25rem; }
-  .honor-persons__item-content-wrap-btn {
-    text-align: center; }
-  .honor-persons__item-content .standart-button {
+  .honor-persons__item .standart-button {
     padding: 0.35rem 1rem; }
+
+.honor-persons__content-name {
+  font-size: 1.25rem;
+  font-family: 'OpenSansCondensed-Bold';
+  text-align: center;
+  margin-bottom: 1.25rem; }
+
+.honor-persons__content-text {
+  font-size: 0.875rem; }
+  .honor-persons__content-text-item {
+    margin-bottom: 0.5rem; }
+    .honor-persons__content-text-item:last-child {
+      margin-bottom: 0; }
+    .honor-persons__content-text-item-title {
+      font-family: 'OpenSans-Semibold'; }
+
+.honor-persons__content-wrap-btn {
+  text-align: center; }
+
+.honor-persons__modal-content::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/patterns/green-small.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  height: 9rem;
+  width: 9rem;
+  z-index: 1;
+  opacity: 0.9; }
 
 .modal-open .modal {
   display: -webkit-box;
@@ -9921,14 +9950,13 @@ blockquote {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem; }
+          align-items: center; }
   .modal-honor-pesonal__header-left {
     margin-right: 1.5rem; }
 
 .modal-honor-pesonal__img-wrap {
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   margin: 0 auto;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -9937,10 +9965,15 @@ blockquote {
 .modal-honor-pesonal__name {
   font-size: 2rem;
   font-family: 'OpenSansCondensed-Bold';
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1.5rem;
+  line-height: 1.1; }
 
 .modal-honor-pesonal__text {
   font-size: 1.125rem; }
+  .modal-honor-pesonal__text-item {
+    margin-bottom: 0.5rem; }
+    .modal-honor-pesonal__text-item:last-child {
+      margin-bottom: 0; }
 
 .modal-honor-pesonal__body {
   font-size: 1rem;
@@ -10356,7 +10389,10 @@ blockquote {
     .button-top-scroll--active {
       right: 1rem; }
     .button-top-scroll__icon {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem; }
+  .modal-honor-pesonal__img-wrap {
+    width: 17rem;
+    height: 17rem; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -10375,11 +10411,17 @@ blockquote {
     margin-top: 0; }
   #wrapwrap .foot-first-level .second-foot-line .col-md-6:nth-child(2) h5 {
     display: none; }
-  #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button {
+  #wrapwrap #div_nav_panel ul#nav_panel li .btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem; }
+  #wrapwrap #div_nav_panel ul#nav_panel li[name="page_nav"] button {
     display: none; }
-  #wrapwrap #div_nav_panel #nav_panel li[name="page_nav"] button.active {
-    display: block;
-    margin: 0 0 0 3px; }
+  #wrapwrap #div_nav_panel ul#nav_panel li[name="page_nav"] button.active {
+    display: block; }
+  #wrapwrap #div_nav_panel ul#nav_panel #btn_first_page,
+  #wrapwrap #div_nav_panel ul#nav_panel #btn_last_page {
+    display: none; }
   #wrapwrap .wrap-mega-news .wrap-mega-img {
     height: 320px; }
     #wrapwrap .wrap-mega-news .wrap-mega-img .wrap-mega-img-content {
@@ -10583,7 +10625,8 @@ blockquote {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1260px) {
-  /**/ }
+  #wrapwrap .honor-persons__modal .modal-lg {
+    width: 1200px; } }
 
 /* for 1600px */
 @media only screen and (min-width: 1580px) {

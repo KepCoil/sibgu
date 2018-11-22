@@ -390,26 +390,28 @@ blockquote
 		padding: 0
 		text-align: center
 		li
-			display: inline-block
+			display: inline
+			float: left
 			.btn
 				display: block
 				width: 2.75rem
 				height: 2.75rem
 				border: 1px solid $dark-line
-				font-family: "OpenSans-Regular"
+				font-family: "OpenSans-Semibold"
 				padding: 0
 				font-size: 1.125rem
-				margin: 3px
+				margin: 0 0.3125rem
 				transition: background-color $main-trans, color $main-trans
 				cursor: pointer
 				border-radius: 3px
 				&:hover
 					background-color: $grey-bgc
 					color: $accent-links
-				&.active
+				&.active, &:active
 					background-color: $blue
 					color: #fff
 					cursor: default
+					box-shadow: none
 				&.disabled, &[disabled]
 					cursor: default
 					color: $default-color

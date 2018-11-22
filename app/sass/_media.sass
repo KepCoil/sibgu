@@ -372,6 +372,10 @@
 			right: 1rem
 		&__icon
 			font-size: 1.25rem
+	.modal-honor-pesonal
+		&__img-wrap
+			width: 17rem
+			height: 17rem
 
 				
 
@@ -404,13 +408,21 @@
 						h5
 							display: none
 		#div_nav_panel
-			#nav_panel
+			ul#nav_panel
+				li
+					.btn
+						width: 3rem
+						height: 3rem
+						font-size: 1.25rem
 				li[name="page_nav"]
 					button
 						display: none
 					button.active
 						display: block
-						margin: 0 0 0 3px
+				#btn_first_page,
+				#btn_last_page
+					display: none
+
 		.wrap-mega-news
 			.wrap-mega-img
 				height: 320px
@@ -662,7 +674,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1260px)
-	/**/
+	#wrapwrap
+		.honor-persons
+			&__modal
+				.modal-lg
+					width: 1200px
 
 
 /* for 1600px */
