@@ -27,11 +27,11 @@
 								<div class="row honor-persons__row">
 
 									<div class="col-xlg-6 col-lg-8 col-md-12 col-sm-8 honor-persons__col">
-										<div class="honor-persons__item">
+										<div class="honor-persons__item" data-toggle="modal" data-target="#honor-persons__modal-1">
 											<!-- Фотка обязательно с соотношением сторон 1:1 (квадрат) -->
 											<div class="honor-persons__item-wrap-img">
 												<!-- Размер фотки 220-250 пикселей ширина и высота -->
-												<img src="img/rector.jpg" alt="" class="img-responsive honor-persons__item-img" data-toggle="modal" data-target="#honor-persons__modal-1">
+												<img src="img/rector.jpg" alt="" class="img-responsive honor-persons__item-img">
 											</div>
 											<div class="honor-persons__content">
 												<div class="honor-persons__content-name">Акбулатов Эдхам Шукриевич</div>
@@ -48,11 +48,11 @@
 									</div>
 
 									<div class="col-xlg-6 col-lg-8 col-md-12 col-sm-8 honor-persons__col">
-										<div class="honor-persons__item">
+										<div class="honor-persons__item" data-toggle="modal" data-target="#honor-persons__modal-1">
 											<!-- Фотка обязательно с соотношением сторон 1:1 (квадрат) -->
 											<div class="honor-persons__item-wrap-img">
 												<!-- Размер фотки 220-250 пикселей ширина и высота -->
-												<img src="img/rector.jpg" alt="" class="img-responsive honor-persons__item-img" data-toggle="modal" data-target="#honor-persons__modal-1">
+												<img src="img/rector.jpg" alt="" class="img-responsive honor-persons__item-img">
 											</div>
 											<div class="honor-persons__content">
 												<div class="honor-persons__content-name">Акбулатов Эдхам Шукриевич</div>

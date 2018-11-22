@@ -9875,7 +9875,8 @@ blockquote {
   -o-transition: box-shadow 0.25s ease-out;
   transition: box-shadow 0.25s ease-out;
   transition: box-shadow 0.25s ease-out, -webkit-box-shadow 0.25s ease-out;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  cursor: pointer; }
   .honor-persons__item:hover {
     -webkit-box-shadow: 0 0 7px #768cce;
             box-shadow: 0 0 7px #768cce; }
@@ -9887,8 +9888,7 @@ blockquote {
             border-radius: 50%;
     overflow: hidden;
     margin-bottom: 1.25rem;
-    position: relative;
-    cursor: pointer; }
+    position: relative; }
   .honor-persons__item-img {
     -webkit-border-radius: 50%;
             border-radius: 50%; }
