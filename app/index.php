@@ -462,6 +462,13 @@
 							</a>
 						</div>
 
+						<div class="wrap-pa-item">
+							<a href="http://krasnoyarsk.rcfh.ru/" target="_blank">
+								<img src="img/partners/rczc.png" alt="Российский центр защиты леса">
+								<strong>ФБУ «Российский центр защиты леса»</strong>
+							</a>
+						</div>
+
 					</div>
 					
 				</div>

@@ -2,6 +2,18 @@
 	<div class="wrap-navaslider-content clearfix">
 
 		<div id="js-main-slider" class="main-slider owl-carousel">
+
+			<div class="wrap-main-slide">
+				<div class="slide-img" style="background-image: url(img/slider/1.jpg);"></div>
+				<div class="slide-content-outer">
+					<div class="container">
+						<div class="js-slide-content slide-content-inner">
+							<h3 class="slide-content-inner-title">XXII Международная научная конференция «Решетневские чтения» в СибГУ им. М.Ф. Решетнева<br/>12-16 ноября 2018 года</h3>
+							<a class="slide-content-inner-btn" target="_blank" href="https://reshetnev.sibsau.ru/"><span>Подробнее</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			<div class="wrap-main-slide">
 				<div class="slide-img" style="background-image: url(img/slider/slide_reshetnev_reading.jpg);"></div>

@@ -18,7 +18,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -47,7 +47,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -76,7 +76,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -105,7 +105,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -134,7 +134,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -163,7 +163,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -192,7 +192,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>
@@ -221,7 +221,7 @@
 									</a>
 								</span>
 
-								<span class="wrap-news-content">
+								<span class="wrap-news-content clearfix">
 									<time>24.11.2017</time>
 									<span class="wrap-news-title">
 										<a href="#"><h3>В СибГУ им. М.Ф. Решетнева подвели промежуточные итоги приемной кампании 2017 года</h3></a>

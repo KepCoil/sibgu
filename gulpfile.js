@@ -44,7 +44,7 @@ gulp.task('common-js', function() {
 		'app/js/_spec-vers.js'
 		])
 	.pipe(concat('common.js'))
-	.pipe(uglify()) // Минимизация JS
+	// .pipe(uglify()) // Минимизация JS
 	.pipe(gulp.dest('app/js'));
 });
 

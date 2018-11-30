@@ -7555,15 +7555,15 @@ blockquote {
   display: inline-block;
   margin-top: 1.875rem;
   font-size: 1.25rem;
-  color: #0060a1;
+  color: #0863d8;
   font-family: "OpenSans-Regular"; }
   .other-link .fa {
     -webkit-transition: color 0.25s ease-out;
     -o-transition: color 0.25s ease-out;
     transition: color 0.25s ease-out; }
   .other-link a {
-    color: #0060a1;
-    border-color: #0060a1; }
+    color: #0863d8;
+    border-color: #0863d8; }
     .other-link a:hover {
       color: #e73124;
       border-color: #e73124; }
@@ -7582,7 +7582,7 @@ blockquote {
     -webkit-transition: color 0.25s ease-out, border-color 0.25s ease-out;
     -o-transition: color 0.25s ease-out, border-color 0.25s ease-out;
     transition: color 0.25s ease-out, border-color 0.25s ease-out;
-    border-bottom: 1px solid #0060a1;
+    border-bottom: 1px solid #0863d8;
     font-size: 1rem; }
 
 /* MOBILE MMENU MENU */
@@ -8452,8 +8452,8 @@ blockquote {
 .navaslider {
   height: 550px;
   position: relative;
-  z-index: -1;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  z-index: 2; }
 
 .wrap-navaslider-content {
   position: relative; }
@@ -9105,16 +9105,25 @@ blockquote {
     padding: 0 15px;
     margin: 1.875rem 0;
     color: #222; }
-    .wrap-cards-news .wrap-card-item-news .wrap-news-content time {
+    .wrap-cards-news .wrap-card-item-news .wrap-news-content time,
+    .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__smi-about,
+    .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__date {
       display: block;
-      font-size: 1.0625rem;
+      font-size: 1rem;
       color: #444; }
+      .wrap-cards-news .wrap-card-item-news .wrap-news-content time time,
+      .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__smi-about time,
+      .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__date time {
+        display: inline; }
+    .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__smi-about,
+    .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-content__date {
+      margin-bottom: 0.125rem; }
     .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title {
       display: block;
       margin: 1rem 0; }
       .wrap-cards-news .wrap-card-item-news .wrap-news-content .wrap-news-title h3 {
         font-family: "OpenSans-SemiBold";
-        font-size: 1.2rem;
+        font-size: 1.125rem;
         line-height: 1.2;
         border-bottom: 1px solid transparent;
         -webkit-transition: color 0.25s ease-out;
@@ -9919,7 +9928,6 @@ blockquote {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url("../img/patterns/green-small.svg");
   background-repeat: no-repeat;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
@@ -9929,11 +9937,11 @@ blockquote {
   z-index: 1;
   opacity: 0.9; }
 
-.modal-open .modal {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+.modal-honor-pesonal.in {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .modal-honor-pesonal .modal-body {
   padding: 3rem; }
@@ -9942,24 +9950,16 @@ blockquote {
   margin: auto;
   padding: 15px; }
 
-.modal-honor-pesonal__header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .modal-honor-pesonal__header-left {
-    margin-right: 1.5rem; }
+.modal-honor-pesonal__header-left {
+  margin-right: 0; }
+
+.modal-honor-pesonal__header-right {
+  display: none; }
 
 .modal-honor-pesonal__img-wrap {
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: auto;
   margin: 0 auto;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
   overflow: hidden; }
 
 .modal-honor-pesonal__name {
@@ -9983,8 +9983,8 @@ blockquote {
 
 .modal-honor-pesonal__close-btn {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.6rem;
+  right: 0.6rem;
   border: none;
   background-color: transparent;
   -webkit-transition: -webkit-transform 0.25s ease-out;

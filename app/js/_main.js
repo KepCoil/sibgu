@@ -146,6 +146,7 @@ $(function() {
 	});
 
 
+	// Слайдер баннера внизу на главной
 	$("#js-links-other").owlCarousel({
 		loop: true,
 		nav: true,
